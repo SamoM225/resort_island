@@ -1,0 +1,36 @@
+# --- Secrets / local config (never commit) ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.keystore
+*.jks
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+desktop.ini
+.vs/
+.vscode/
+.idea/
+*.swp
+
+# --- Backend (common stacks) ---
+backend/node_modules/
+backend/vendor/
+backend/dist/
+backend/build/
+backend/storage/logs/
+backend/bootstrap/cache/*.php
+backend/**/__pycache__/
+backend/.venv/
+backend/venv/
+backend/bin/
+backend/obj/
+*.log
+*.sqlite
+*.sqlite3
+
+# --- Frontend (Unity) rules live in frontend/.gitignore ---

@@ -1,0 +1,42 @@
+# Unity-generated folders (rebuilt automatically when the project opens)
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/[Mm]emoryCaptures/
+/[Rr]ecordings/
+
+# .meta files MUST be committed - they hold import settings and GUIDs that link assets together
+!/[Aa]ssets/**/*.meta
+
+# IDE / generated solution files
+.vs/
+.vscode/
+.idea/
+*.csproj
+*.sln
+*.slnx
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+*.tmp
+
+# crash reports + build outputs
+sysinfo.txt
+crashlytics-buildsettings.json
+*.apk
+*.aab
+*.unitypackage
+
+# art generator: previews and Blender/Python caches are regenerable
+/Tools/*.png
+/Tools/blender/__pycache__/
+/Tools/out/
