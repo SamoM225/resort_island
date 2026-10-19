@@ -10,6 +10,10 @@ namespace ResortIsland.Economy
 
         public int Coins { get; private set; }
         public int Gems { get; private set; }
+        public int Energy { get; private set; }
+        public int MaxEnergy { get; private set; }
+        public int ResortValue { get; private set; }
+        public int Reputation { get; private set; }
 
         public event Action<int> OnCoinsChanged;
         public event Action<int> OnGemsChanged;
@@ -29,6 +33,10 @@ namespace ResortIsland.Economy
 
             Coins = config.StartingCoins;
             Gems = config.StartingGems;
+            Energy = config.StartingEnergy;
+            MaxEnergy = config.MaxEnergy;
+            ResortValue = config.StartingResortValue;
+            Reputation = config.StartingReputation;
 
             OnCoinsChanged?.Invoke(Coins);
             OnGemsChanged?.Invoke(Gems);
