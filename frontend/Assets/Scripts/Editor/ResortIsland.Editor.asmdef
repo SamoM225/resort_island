@@ -1,0 +1,18 @@
+{
+    "name": "ResortIsland.Editor",
+    "rootNamespace": "ResortIsland.Editor",
+    "references": [
+        "ResortIsland"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
