@@ -5,18 +5,21 @@ namespace ResortIsland.Config
     [CreateAssetMenu(fileName = "PlayerEconomyConfig", menuName = "ResortIsland/Config/PlayerEconomyConfig")]
     public class PlayerEconomyConfig : ScriptableObject
     {
-        private const int StartingCoinsValue = 1000;
-        private const int StartingGemsValue = 10;
-        private const int StartingEnergyValue = 82;
-        private const int MaxEnergyValue = 100;
-        private const int StartingResortValueValue = 24500;
-        private const int StartingReputationValue = 4;
+        [Header("Starting Capital")]
+        [SerializeField] private int startingCoins = 1000;
+        [SerializeField] private int startingGems = 10;
 
-        public int StartingCoins => StartingCoinsValue;
-        public int StartingGems => StartingGemsValue;
-        public int StartingEnergy => StartingEnergyValue;
-        public int MaxEnergy => MaxEnergyValue;
-        public int StartingResortValue => StartingResortValueValue;
-        public int StartingReputation => StartingReputationValue;
+        [Header("Resort Status")]
+        [SerializeField] private int startingEnergy = 82;
+        [SerializeField] private int maxEnergy = 100;
+        [SerializeField] private int startingResortValue = 24500;
+        [SerializeField, Range(0, 5)] private int startingReputation = 4;
+
+        public int StartingCoins => startingCoins;
+        public int StartingGems => startingGems;
+        public int StartingEnergy => startingEnergy;
+        public int MaxEnergy => maxEnergy;
+        public int StartingResortValue => startingResortValue;
+        public int StartingReputation => startingReputation;
     }
 }

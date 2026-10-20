@@ -17,6 +17,9 @@ namespace ResortIsland.Economy
 
         public event Action<int> OnCoinsChanged;
         public event Action<int> OnGemsChanged;
+        public event Action<int> OnEnergyChanged;
+        public event Action<int> OnResortValueChanged;
+        public event Action<int> OnReputationChanged;
 
         private void Awake()
         {
@@ -40,6 +43,9 @@ namespace ResortIsland.Economy
 
             OnCoinsChanged?.Invoke(Coins);
             OnGemsChanged?.Invoke(Gems);
+            OnEnergyChanged?.Invoke(Energy);
+            OnResortValueChanged?.Invoke(ResortValue);
+            OnReputationChanged?.Invoke(Reputation);
 
             Debug.Log($"[PlayerEconomy] New player initialized with {Coins} Coins and {Gems} Gems (from {config.name}).");
         }
@@ -72,6 +78,36 @@ namespace ResortIsland.Economy
             Gems -= amount;
             OnGemsChanged?.Invoke(Gems);
             return true;
+        }
+
+        public bool TrySpendEnergy(int amount)
+        {
+            if (amount <= 0 || Energy < amount) return false;
+            Energy -= amount;
+            OnEnergyChanged?.Invoke(Energy);
+            return true;
+        }
+
+        public void RestoreEnergy(int amount)
+        {
+            if (amount <= 0) return;
+            Energy = Mathf.Min(Energy + amount, MaxEnergy);
+            OnEnergyChanged?.Invoke(Energy);
+        }
+
+        public void AddResortValue(int amount)
+        {
+            if (amount <= 0) return;
+            ResortValue += amount;
+            OnResortValueChanged?.Invoke(ResortValue);
+        }
+
+        public void SetReputation(int value)
+        {
+            int nextValue = Mathf.Clamp(value, 0, 5);
+            if (nextValue == Reputation) return;
+            Reputation = nextValue;
+            OnReputationChanged?.Invoke(Reputation);
         }
     }
 }

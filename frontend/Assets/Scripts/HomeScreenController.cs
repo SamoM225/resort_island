@@ -5,6 +5,11 @@ namespace ResortIsland.UI
 {
     public class HomeScreenController : MonoBehaviour
     {
+        [Header("Optional artwork")]
+        [SerializeField] private Texture2D backgroundArt;
+        [SerializeField] private Sprite islandArt;
+        [SerializeField] private Sprite[] buildingArt;
+
         private int displayedCoins;
         private int displayedGems;
         private int displayedEnergy;
@@ -20,8 +25,34 @@ namespace ResortIsland.UI
 
         private void Awake()
         {
-            CreateIsland();
-            CreateBuildings();
+            if (backgroundArt != null)
+            {
+                CreateBackground();
+            }
+            else
+            {
+                CreateIsland();
+                CreateBuildings();
+            }
+        }
+
+        private void CreateBackground()
+        {
+            Sprite backgroundSprite = Sprite.Create(
+                backgroundArt,
+                new Rect(0, 0, backgroundArt.width, backgroundArt.height),
+                new Vector2(0.5f, 0.5f),
+                100f);
+            GameObject background = new GameObject("Start Screen Background");
+            background.transform.position = new Vector3(0f, 0f, 5f);
+            SpriteRenderer renderer = background.AddComponent<SpriteRenderer>();
+            renderer.sprite = backgroundSprite;
+            renderer.sortingOrder = -100;
+
+            float targetHeight = Camera.main.orthographicSize * 2f;
+            float targetWidth = targetHeight * Camera.main.aspect;
+            float scale = Mathf.Max(targetWidth / renderer.bounds.size.x, targetHeight / renderer.bounds.size.y);
+            background.transform.localScale = Vector3.one * scale;
         }
 
         private void Start()
@@ -37,10 +68,16 @@ namespace ResortIsland.UI
             displayedReputation = economy.Reputation;
             economy.OnCoinsChanged += UpdateCoins;
             economy.OnGemsChanged += UpdateGems;
+            economy.OnEnergyChanged += UpdateEnergy;
+            economy.OnResortValueChanged += UpdateResortValue;
+            economy.OnReputationChanged += UpdateReputation;
         }
 
         private void UpdateCoins(int value) => displayedCoins = value;
         private void UpdateGems(int value) => displayedGems = value;
+        private void UpdateEnergy(int value) => displayedEnergy = value;
+        private void UpdateResortValue(int value) => displayedResortValue = value;
+        private void UpdateReputation(int value) => displayedReputation = value;
 
         private void OnDestroy()
         {
@@ -49,11 +86,16 @@ namespace ResortIsland.UI
 
             economy.OnCoinsChanged -= UpdateCoins;
             economy.OnGemsChanged -= UpdateGems;
+            economy.OnEnergyChanged -= UpdateEnergy;
+            economy.OnResortValueChanged -= UpdateResortValue;
+            economy.OnReputationChanged -= UpdateReputation;
         }
 
         private void CreateIsland()
         {
-            islandSprite = Sprite.Create(CreateIslandTexture(), new Rect(0, 0, 512, 300), new Vector2(0.5f, 0.5f), 100);
+            islandSprite = islandArt != null
+                ? islandArt
+                : Sprite.Create(CreateIslandTexture(), new Rect(0, 0, 512, 300), new Vector2(0.5f, 0.5f), 100);
             GameObject island = new GameObject("Island");
             island.transform.position = new Vector3(0f, -0.25f, 1f);
             SpriteRenderer renderer = island.AddComponent<SpriteRenderer>();
@@ -63,7 +105,9 @@ namespace ResortIsland.UI
 
         private void CreateBuildings()
         {
-            buildingSprites = new[]
+            buildingSprites = buildingArt != null && buildingArt.Length >= 3
+                ? new[] { buildingArt[0], buildingArt[1], buildingArt[2] }
+                : new[]
             {
                 Sprite.Create(CreateBuildingTexture(new Color(0.95f, 0.64f, 0.25f), new Color(0.83f, 0.28f, 0.25f)), new Rect(0, 0, 128, 160), new Vector2(0.5f, 0.12f), 100),
                 Sprite.Create(CreateBuildingTexture(new Color(0.37f, 0.75f, 0.84f), new Color(0.16f, 0.37f, 0.58f)), new Rect(0, 0, 128, 160), new Vector2(0.5f, 0.12f), 100),
