@@ -7,8 +7,6 @@ namespace ResortIsland.UI
     {
         [Header("Optional artwork")]
         [SerializeField] private Texture2D backgroundArt;
-        [SerializeField] private Sprite islandArt;
-        [SerializeField] private Sprite[] buildingArt;
 
         private int displayedCoins;
         private int displayedGems;
@@ -16,8 +14,6 @@ namespace ResortIsland.UI
         private int displayedMaxEnergy;
         private int displayedResortValue;
         private int displayedReputation;
-        private Sprite islandSprite;
-        private Sprite[] buildingSprites;
         private GUIStyle panelStyle;
         private GUIStyle labelStyle;
         private GUIStyle valueStyle;
@@ -26,14 +22,7 @@ namespace ResortIsland.UI
         private void Awake()
         {
             if (backgroundArt != null)
-            {
                 CreateBackground();
-            }
-            else
-            {
-                CreateIsland();
-                CreateBuildings();
-            }
         }
 
         private void CreateBackground()
@@ -89,92 +78,6 @@ namespace ResortIsland.UI
             economy.OnEnergyChanged -= UpdateEnergy;
             economy.OnResortValueChanged -= UpdateResortValue;
             economy.OnReputationChanged -= UpdateReputation;
-        }
-
-        private void CreateIsland()
-        {
-            islandSprite = islandArt != null
-                ? islandArt
-                : Sprite.Create(CreateIslandTexture(), new Rect(0, 0, 512, 300), new Vector2(0.5f, 0.5f), 100);
-            GameObject island = new GameObject("Island");
-            island.transform.position = new Vector3(0f, -0.25f, 1f);
-            SpriteRenderer renderer = island.AddComponent<SpriteRenderer>();
-            renderer.sprite = islandSprite;
-            renderer.sortingLayerName = "Ground";
-        }
-
-        private void CreateBuildings()
-        {
-            buildingSprites = buildingArt != null && buildingArt.Length >= 3
-                ? new[] { buildingArt[0], buildingArt[1], buildingArt[2] }
-                : new[]
-            {
-                Sprite.Create(CreateBuildingTexture(new Color(0.95f, 0.64f, 0.25f), new Color(0.83f, 0.28f, 0.25f)), new Rect(0, 0, 128, 160), new Vector2(0.5f, 0.12f), 100),
-                Sprite.Create(CreateBuildingTexture(new Color(0.37f, 0.75f, 0.84f), new Color(0.16f, 0.37f, 0.58f)), new Rect(0, 0, 128, 160), new Vector2(0.5f, 0.12f), 100),
-                Sprite.Create(CreateBuildingTexture(new Color(0.96f, 0.82f, 0.36f), new Color(0.28f, 0.58f, 0.38f)), new Rect(0, 0, 128, 160), new Vector2(0.5f, 0.12f), 100)
-            };
-
-            CreateBuilding("Beach Villas", buildingSprites[0], new Vector3(-1.2f, 0.25f, 0f), 4);
-            CreateBuilding("Lagoon Hotel", buildingSprites[1], new Vector3(0.15f, 0.72f, -0.5f), 5);
-            CreateBuilding("Palm Club", buildingSprites[2], new Vector3(1.15f, -0.05f, -1f), 6);
-        }
-
-        private static void CreateBuilding(string name, Sprite sprite, Vector3 position, int order)
-        {
-            GameObject building = new GameObject(name);
-            building.transform.position = position;
-            SpriteRenderer renderer = building.AddComponent<SpriteRenderer>();
-            renderer.sprite = sprite;
-            renderer.sortingLayerName = "World";
-            renderer.sortingOrder = order;
-        }
-
-        private static Texture2D CreateIslandTexture()
-        {
-            Texture2D texture = NewTexture(512, 300, new Color(0, 0, 0, 0));
-            for (int y = 0; y < 300; y++)
-            {
-                float halfWidth = 16f + (y < 150 ? y : 299 - y) * 1.65f;
-                int center = 256;
-                for (int x = Mathf.Max(0, Mathf.FloorToInt(center - halfWidth)); x <= Mathf.Min(511, Mathf.CeilToInt(center + halfWidth)); x++)
-                {
-                    float edge = Mathf.Abs(x - center) / halfWidth;
-                    Color color = edge > 0.9f ? new Color(0.92f, 0.72f, 0.3f) : new Color(0.27f, 0.67f, 0.38f);
-                    if (y < 14 || y > 285) color = new Color(0.12f, 0.45f, 0.55f);
-                    texture.SetPixel(x, y, color);
-                }
-            }
-            texture.Apply();
-            return texture;
-        }
-
-        private static Texture2D CreateBuildingTexture(Color wall, Color roof)
-        {
-            Texture2D texture = NewTexture(128, 160, new Color(0, 0, 0, 0));
-            FillRect(texture, 35, 18, 58, 75, wall);
-            FillRect(texture, 43, 94, 42, 42, roof);
-            FillRect(texture, 48, 45, 13, 22, new Color(0.15f, 0.48f, 0.6f));
-            FillRect(texture, 68, 45, 13, 22, new Color(0.15f, 0.48f, 0.6f));
-            FillRect(texture, 58, 18, 12, 28, new Color(0.42f, 0.25f, 0.14f));
-            FillRect(texture, 28, 12, 72, 7, new Color(0.12f, 0.36f, 0.3f));
-            texture.Apply();
-            return texture;
-        }
-
-        private static Texture2D NewTexture(int width, int height, Color clear)
-        {
-            Texture2D texture = new Texture2D(width, height) { filterMode = FilterMode.Point };
-            Color[] pixels = new Color[width * height];
-            for (int i = 0; i < pixels.Length; i++) pixels[i] = clear;
-            texture.SetPixels(pixels);
-            return texture;
-        }
-
-        private static void FillRect(Texture2D texture, int x, int y, int width, int height, Color color)
-        {
-            for (int px = x; px < x + width; px++)
-                for (int py = y; py < y + height; py++)
-                    texture.SetPixel(px, py, color);
         }
 
         private void OnGUI()
