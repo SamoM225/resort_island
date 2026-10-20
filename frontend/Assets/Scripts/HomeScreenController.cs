@@ -17,7 +17,6 @@ namespace ResortIsland.UI
         private GUIStyle panelStyle;
         private GUIStyle labelStyle;
         private GUIStyle valueStyle;
-        private GUIStyle titleStyle;
 
         private void Awake()
         {
@@ -87,13 +86,13 @@ namespace ResortIsland.UI
             float margin = 18f * scale;
             float panelHeight = 78f * scale;
             GUI.Box(new Rect(margin, margin, Screen.width - margin * 2f, panelHeight), GUIContent.none, panelStyle);
-            GUI.Label(new Rect(margin + 18f * scale, margin + 8f * scale, 210f * scale, 24f * scale), "ISLAND RESORT", titleStyle);
 
             string[] labels = { "COINS", "GEMS", "ENERGY", "RESORT VALUE", "REPUTATION" };
             string[] values = { displayedCoins.ToString("N0"), displayedGems.ToString("N0"), displayedEnergy + " / " + displayedMaxEnergy, displayedResortValue.ToString("N0"), displayedReputation + " / 5" };
             Color[] colors = { new Color(1f, 0.73f, 0.22f), new Color(0.48f, 0.86f, 1f), new Color(0.35f, 0.9f, 0.57f), new Color(1f, 0.86f, 0.42f), new Color(1f, 0.55f, 0.4f) };
-            float startX = margin + 240f * scale;
-            float itemWidth = (Screen.width - startX - margin) / labels.Length;
+            float contentPadding = 36f * scale;
+            float startX = margin + contentPadding;
+            float itemWidth = (Screen.width - margin * 2f - contentPadding * 2f) / labels.Length;
             for (int i = 0; i < labels.Length; i++)
             {
                 Rect item = new Rect(startX + itemWidth * i, margin + 12f * scale, itemWidth - 8f * scale, panelHeight - 20f * scale);
@@ -111,7 +110,6 @@ namespace ResortIsland.UI
             panelStyle = new GUIStyle(GUI.skin.box) { normal = { background = MakeBackground(new Color(0.04f, 0.13f, 0.2f, 0.92f)) } };
             labelStyle = new GUIStyle(GUI.skin.label) { fontSize = 11, fontStyle = FontStyle.Bold, normal = { textColor = new Color(0.63f, 0.77f, 0.82f) } };
             valueStyle = new GUIStyle(GUI.skin.label) { fontSize = 18, fontStyle = FontStyle.Bold, normal = { textColor = Color.white } };
-            titleStyle = new GUIStyle(GUI.skin.label) { fontSize = 16, fontStyle = FontStyle.Bold, normal = { textColor = new Color(0.72f, 0.94f, 0.96f) } };
         }
 
         private static Texture2D MakeBackground(Color color)
