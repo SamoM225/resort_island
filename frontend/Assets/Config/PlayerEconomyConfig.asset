@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83a487d396e21ee2c82fff9f9ec6470f, type: 3}
   m_Name: PlayerEconomyConfig
   m_EditorClassIdentifier:
+  configVersion: 1
   startingCoins: 1000
   startingGems: 10
   startingEnergy: 82
