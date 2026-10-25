@@ -1,7 +1,9 @@
 {
     "name": "ResortIsland",
     "rootNamespace": "ResortIsland",
-    "references": [],
+    "references": [
+        "UnityEngine.UI"
+    ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
