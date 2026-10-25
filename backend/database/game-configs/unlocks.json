@@ -1,0 +1,9 @@
+{
+    "version": 1,
+    "data": {
+        "unlocks": [
+            { "id": "pool", "after_wave": 3, "cost": 1200, "building": "pool", "workers_added": 1 },
+            { "id": "bungalows", "after_wave": 6, "cost": 2500, "building": "bungalows", "workers_added": 1 }
+        ]
+    }
+}

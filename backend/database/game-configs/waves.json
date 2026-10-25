@@ -1,0 +1,15 @@
+{
+    "version": 1,
+    "data": {
+        "waves": [
+            { "wave": 1, "guests": 12, "demand": { "rooms": 8, "drinks": 8, "food": 6 } },
+            { "wave": 2, "guests": 18, "demand": { "rooms": 12, "drinks": 16, "food": 10 } },
+            { "wave": 3, "guests": 24, "demand": { "rooms": 16, "drinks": 18, "food": 14 } },
+            { "wave": 4, "guests": 26, "demand": { "rooms": 16, "drinks": 18, "food": 14, "relax": 8 } },
+            { "wave": 5, "guests": 34, "demand": { "rooms": 20, "drinks": 22, "food": 18, "relax": 16 } },
+            { "wave": 6, "guests": 40, "demand": { "rooms": 25, "drinks": 28, "food": 22, "relax": 20 } },
+            { "wave": 7, "guests": 42, "demand": { "rooms": 25, "drinks": 28, "food": 22, "relax": 20, "ocean_view": 10 } },
+            { "wave": 8, "guests": 52, "demand": { "rooms": 31, "drinks": 35, "food": 28, "relax": 25, "ocean_view": 16 } }
+        ]
+    }
+}
