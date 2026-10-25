@@ -56,5 +56,8 @@ TagManager:
   - name: FX
     uniqueID: 3128576753
     locked: 0
+  - name: Buildings
+    uniqueID: 1689318531
+    locked: 0
   m_RenderingLayers:
   - Default
