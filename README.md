@@ -5,6 +5,17 @@ Monorepo pre hru Resort Island.
 - `frontend/` – Unity klient (URP 2D)
 - `backend/` – Laravel API (herné configy, hráči)
 
+## Branching (GitFlow)
+
+| Vetva | Účel | Čo spustí CI/CD |
+| --- | --- | --- |
+| `feature/*`, `SCRUM-*` | práca na tasku, PR do `develop` | testy BE na PR |
+| `develop` | integrácia | testy → Docker image → deploy BE na **dev** |
+| `release/*`, `hotfix/*` | príprava vydania, PR do `main` | testy BE na PR |
+| `main` | **prod** | testy → image → deploy BE na **prod** + Android build (`.aab` + `.apk`) ako artefakt |
+
+Manuálne spustenie workflowu (Actions → CI/CD → Run workflow) zbehne testy a Android build vybranej vetvy.
+
 ## Prostredia
 
 | | Lokálne | dev | prod |
@@ -14,7 +25,7 @@ Monorepo pre hru Resort Island.
 | Konfigurácia BE | `backend/.env` z `.env.example` | `.env` na serveri z `backend/deploy/server.env.example` | to isté |
 | Hra | Editor | Development Build | release build |
 
-V repozitári nie sú žiadne secrets — všetko sa nastavuje env premennými (`.env` lokálne a na serveri).
+V repozitári nie sú žiadne secrets — všetko sa nastavuje env premennými (`.env` lokálne a na serveri, v CI GitHub secrets).
 
 Hra si prostredie vyberá podľa typu buildu (`frontend/Assets/Scripts/Backend/BackendEnvironment.cs`): Editor a Development Build → dev, release build → prod. URL sú v `frontend/Assets/Resources/BackendConfig.asset`; v Editore sa dá cez `editorOverrideUrl` pripojiť na lokálny BE.
 
@@ -60,3 +71,38 @@ Zmena configu = upraviť JSON **a zvýšiť `version`**. Pri deployi sa nová ve
 ```
 
 Cachovanie: odpoveď sa drží v Laravel cache (zmaže sa pri každom zápise configu) a má `Cache-Control: public, max-age=60` + `ETag`. Klient pošle `If-None-Match` s posledným ETagom a ak sa nič nezmenilo, dostane `304 Not Modified` bez tela.
+
+## CI/CD — nastavenie (raz, robí admin repa)
+
+Workflow: `.github/workflows/ci-cd.yml`. Chýbajúce nastavenie nechá job spadnúť so správou, čo chýba.
+
+### Deploy BE
+
+Pri pushi na `develop` / `main` pipeline zostaví image do GHCR, nahrá `docker-compose.yml` + `deploy.sh` do `DEPLOY_PATH` na serveri a spustí `deploy.sh` (migrácie bežia tu). Adresár musí mať pripravený `.env`, viď *Server (dev / prod)*.
+
+Settings → Environments → vytvoriť `development` a `production`, v každom:
+
+| Názov | Typ | Hodnota |
+| --- | --- | --- |
+| `DEPLOY_SSH_HOST` | secret | adresa servera |
+| `DEPLOY_SSH_USER` | secret | používateľ s prístupom k Dockeru |
+| `DEPLOY_SSH_KEY` | secret | privátny SSH kľúč (verejný v `~/.ssh/authorized_keys` na serveri) |
+| `DEPLOY_SSH_KNOWN_HOSTS` | secret, voliteľné | výstup `ssh-keyscan <host>`; bez neho sa host kľúč zoberie automaticky |
+| `DEPLOY_PATH` | variable | absolútna cesta na serveri, napr. `/srv/resort-island-dev` |
+| `DEPLOY_SSH_PORT` | variable, voliteľné | default `22` |
+| `BACKEND_URL` | variable, voliteľné | verejná URL, po deployi sa skontroluje `/up` |
+
+Pre `production` odporúčame v environmente zapnúť *Required reviewers*.
+
+### Android build
+
+Repository secrets:
+
+| Názov | Povinné | Popis |
+| --- | --- | --- |
+| `UNITY_EMAIL`, `UNITY_PASSWORD` | áno | Unity účet |
+| `UNITY_LICENSE` | áno pri Personal licencii | obsah `Unity_lic.ulf` z počítača s aktivovanou Unity (macOS: `/Library/Application Support/Unity/Unity_lic.ulf`) |
+| `UNITY_SERIAL` | namiesto `UNITY_LICENSE` pri Pro | sériové číslo |
+| `ANDROID_KEYSTORE_BASE64`, `ANDROID_KEYSTORE_PASS`, `ANDROID_KEYALIAS_NAME`, `ANDROID_KEYALIAS_PASS` | pre Google Play | upload keystore (`base64 -i user.keystore`); bez nich sa build podpíše debug kľúčom |
+
+Verzia buildu sa odvodzuje z git tagov (`v0.1.0` na `main`). Výsledné `.aab` a `.apk` sú v behu workflowu v sekcii *Artifacts* (30 dní). Release build sa pripája na prod BE.
