@@ -24,7 +24,7 @@ backend/dist/
 backend/build/
 backend/storage/logs/
 backend/bootstrap/cache/*.php
-backend/**/__pycache__/
+**/__pycache__/
 backend/.venv/
 backend/venv/
 backend/bin/
