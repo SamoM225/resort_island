@@ -1,0 +1,17 @@
+{
+    "version": 1,
+    "data": {
+        "levels": [
+            { "level": 1, "capacity": 3, "upgrade_cost": 0 },
+            { "level": 2, "capacity": 5, "upgrade_cost": 500 },
+            { "level": 3, "capacity": 7, "upgrade_cost": 1200 }
+        ],
+        "buildings": [
+            { "id": "reception", "need": "rooms", "unlock": null },
+            { "id": "restaurant", "need": "food", "unlock": null },
+            { "id": "beachbar", "need": "drinks", "unlock": null },
+            { "id": "pool", "need": "relax", "unlock": "pool" },
+            { "id": "bungalows", "need": "ocean_view", "unlock": "bungalows" }
+        ]
+    }
+}

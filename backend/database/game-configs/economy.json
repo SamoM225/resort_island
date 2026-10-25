@@ -1,0 +1,13 @@
+{
+    "version": 1,
+    "data": {
+        "starting_coins": 1000,
+        "starting_gems": 10,
+        "starting_energy": 82,
+        "max_energy": 100,
+        "starting_resort_value": 24500,
+        "starting_reputation": 4,
+        "coins_per_unit": 16,
+        "coins_rating_mult": [0.4, 0.6, 0.8, 1.0, 1.2, 1.3]
+    }
+}

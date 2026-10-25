@@ -1,0 +1,12 @@
+{
+    "version": 1,
+    "data": {
+        "needs": [
+            { "id": "rooms", "satisfaction_weight": 1.0 },
+            { "id": "food", "satisfaction_weight": 1.0 },
+            { "id": "drinks", "satisfaction_weight": 1.0 },
+            { "id": "relax", "satisfaction_weight": 1.0 },
+            { "id": "ocean_view", "satisfaction_weight": 1.5 }
+        ]
+    }
+}
