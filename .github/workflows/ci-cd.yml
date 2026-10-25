@@ -83,9 +83,24 @@ jobs:
       - name: Tests
         run: php artisan test --compact
 
+  wave-sim:
+    name: Wave simulation · WR7 + WR8
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Tests
+        run: python3 -m unittest discover -s tools/wave_sim -v
+
+      - name: Backend configs
+        run: python3 tools/wave_sim/wave_sim.py --configs backend/database/game-configs
+
+      - name: Configs bundled in the game
+        run: python3 tools/wave_sim/wave_sim.py --configs frontend/Assets/Resources/GameConfigs.json
+
   backend-image:
     name: Backend · Docker image
-    needs: backend-test
+    needs: [backend-test, wave-sim]
     if: github.event_name == 'push'
     runs-on: ubuntu-latest
     permissions:
@@ -208,6 +223,7 @@ jobs:
 
   android-build:
     name: Android · aab + apk
+    needs: wave-sim
     if: github.event_name == 'workflow_dispatch' || (github.event_name == 'push' && github.ref_name == 'main')
     runs-on: ubuntu-latest
     timeout-minutes: 120
