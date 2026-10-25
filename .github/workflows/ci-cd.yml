@@ -1,0 +1,282 @@
+# GitFlow pipeline:
+#   pull request → develop / main   backend tests
+#   push develop                    backend tests → image → deploy to the "development" environment
+#   push main (prod)                backend tests → image → deploy to the "production" environment
+#                                   + Android build (aab + apk) stored as a workflow artifact
+#   manual run                      backend tests + Android build of the selected branch
+# Required secrets and variables are listed in the root README.
+name: CI/CD
+
+on:
+  push:
+    branches: [develop, main]
+  pull_request:
+    branches: [develop, main]
+  workflow_dispatch:
+
+concurrency:
+  group: ci-cd-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+permissions:
+  contents: read
+
+env:
+  DEPLOY_ENVIRONMENT: ${{ github.ref_name == 'main' && 'production' || 'development' }}
+
+jobs:
+  backend-test:
+    name: Backend · tests
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: backend
+    services:
+      postgres:
+        image: postgres:17-alpine
+        env:
+          POSTGRES_USER: resort
+          POSTGRES_PASSWORD: resort
+          POSTGRES_DB: resort_test
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U resort -d resort_test"
+          --health-interval 5s
+          --health-timeout 3s
+          --health-retries 20
+    env:
+      DB_CONNECTION: pgsql
+      DB_HOST: 127.0.0.1
+      DB_PORT: 5432
+      DB_DATABASE: resort_test
+      DB_USERNAME: resort
+      DB_PASSWORD: resort
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.4'
+          extensions: pdo_pgsql
+          coverage: none
+
+      - id: composer-cache
+        run: echo "dir=$(composer config cache-files-dir)" >> "$GITHUB_OUTPUT"
+
+      - uses: actions/cache@v4
+        with:
+          path: ${{ steps.composer-cache.outputs.dir }}
+          key: composer-${{ hashFiles('backend/composer.lock') }}
+          restore-keys: composer-
+
+      - run: composer install --no-interaction --no-progress --prefer-dist
+
+      - run: cp .env.example .env && php artisan key:generate
+
+      - name: Code style
+        run: vendor/bin/pint --test
+
+      - name: Migrate and seed an empty database with one command
+        run: php artisan migrate:fresh --seed --force
+
+      - name: Tests
+        run: php artisan test --compact
+
+  backend-image:
+    name: Backend · Docker image
+    needs: backend-test
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    outputs:
+      image: ${{ steps.ref.outputs.image }}
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: docker/setup-buildx-action@v3
+
+      - uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - id: meta
+        uses: docker/metadata-action@v5
+        with:
+          images: ghcr.io/${{ github.repository }}-backend
+          tags: |
+            type=sha,format=long
+            type=raw,value=${{ env.DEPLOY_ENVIRONMENT }}
+
+      - id: build
+        uses: docker/build-push-action@v6
+        with:
+          context: backend
+          push: true
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
+          cache-from: type=gha,scope=backend
+          cache-to: type=gha,mode=max,scope=backend
+
+      - id: ref
+        name: Pin the image by digest
+        run: echo "image=ghcr.io/${GITHUB_REPOSITORY,,}-backend@${{ steps.build.outputs.digest }}" >> "$GITHUB_OUTPUT"
+
+  backend-deploy:
+    name: Backend · deploy
+    needs: backend-image
+    runs-on: ubuntu-latest
+    environment: ${{ github.ref_name == 'main' && 'production' || 'development' }}
+    concurrency:
+      group: deploy-${{ github.ref_name }}
+      cancel-in-progress: false
+    permissions:
+      contents: read
+      packages: read
+    env:
+      SSH_HOST: ${{ secrets.DEPLOY_SSH_HOST }}
+      SSH_USER: ${{ secrets.DEPLOY_SSH_USER }}
+      SSH_PORT: ${{ vars.DEPLOY_SSH_PORT || '22' }}
+      DEPLOY_PATH: ${{ vars.DEPLOY_PATH }}
+    steps:
+      - name: Check deploy configuration
+        env:
+          SSH_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
+        run: |
+          missing=""
+          [ -n "$SSH_HOST" ] || missing="$missing DEPLOY_SSH_HOST (secret)"
+          [ -n "$SSH_USER" ] || missing="$missing DEPLOY_SSH_USER (secret)"
+          [ -n "$SSH_KEY" ] || missing="$missing DEPLOY_SSH_KEY (secret)"
+          [ -n "$DEPLOY_PATH" ] || missing="$missing DEPLOY_PATH (variable)"
+          if [ -n "$missing" ]; then
+            echo "::error title=Deploy target not configured::GitHub environment '$DEPLOY_ENVIRONMENT' is missing:$missing. See README → CI/CD."
+            exit 1
+          fi
+
+      - uses: actions/checkout@v5
+        with:
+          sparse-checkout: backend/deploy
+
+      - name: Set up SSH
+        env:
+          SSH_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
+          SSH_KNOWN_HOSTS: ${{ secrets.DEPLOY_SSH_KNOWN_HOSTS }}
+        run: |
+          install -m 700 -d ~/.ssh
+          printf '%s\n' "$SSH_KEY" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          if [ -n "$SSH_KNOWN_HOSTS" ]; then
+            printf '%s\n' "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
+          else
+            echo "::warning::DEPLOY_SSH_KNOWN_HOSTS is not set, trusting the host key returned by ssh-keyscan."
+            ssh-keyscan -p "$SSH_PORT" "$SSH_HOST" > ~/.ssh/known_hosts
+          fi
+          cat > ~/.ssh/config <<EOF
+          Host deploy
+            HostName $SSH_HOST
+            User $SSH_USER
+            Port $SSH_PORT
+            IdentityFile ~/.ssh/deploy_key
+            IdentitiesOnly yes
+          EOF
+
+      - name: Upload deploy files
+        run: |
+          ssh deploy "mkdir -p '$DEPLOY_PATH'"
+          scp backend/deploy/docker-compose.yml backend/deploy/deploy.sh "deploy:$DEPLOY_PATH/"
+
+      - id: deploy
+        name: Deploy (migrations run here)
+        env:
+          IMAGE: ${{ needs.backend-image.outputs.image }}
+          GHCR_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          printf '%s' "$GHCR_TOKEN" | ssh deploy "docker login ghcr.io --username '${{ github.actor }}' --password-stdin"
+          ssh deploy "sh '$DEPLOY_PATH/deploy.sh' '$IMAGE'"
+
+      - name: Log out of GHCR on the server
+        if: always() && steps.deploy.conclusion != 'skipped'
+        run: ssh deploy "docker logout ghcr.io" || true
+
+      - name: Check the public URL
+        if: vars.BACKEND_URL != ''
+        run: curl --fail --silent --show-error --retry 5 --retry-delay 5 --retry-all-errors "${{ vars.BACKEND_URL }}/up" > /dev/null
+
+  android-build:
+    name: Android · aab + apk
+    if: github.event_name == 'workflow_dispatch' || (github.event_name == 'push' && github.ref_name == 'main')
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    env:
+      UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+      UNITY_SERIAL: ${{ secrets.UNITY_SERIAL }}
+      UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
+      UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+    steps:
+      - name: Check Unity license
+        run: |
+          if [ -z "$UNITY_EMAIL" ] || [ -z "$UNITY_PASSWORD" ] || { [ -z "$UNITY_LICENSE" ] && [ -z "$UNITY_SERIAL" ]; }; then
+            echo "::error title=Unity license missing::Set secrets UNITY_EMAIL, UNITY_PASSWORD and UNITY_LICENSE (Personal) or UNITY_SERIAL (Pro). See README → CI/CD."
+            exit 1
+          fi
+
+      - uses: actions/checkout@v5
+        with:
+          # Semantic versioning derives the version from git tags.
+          fetch-depth: 0
+
+      - uses: jlumbroso/free-disk-space@v1.3.1
+        with:
+          tool-cache: false
+          large-packages: false
+
+      - uses: actions/cache@v4
+        with:
+          path: frontend/Library
+          key: unity-library-android-${{ hashFiles('frontend/Assets/**', 'frontend/Packages/**', 'frontend/ProjectSettings/**') }}
+          restore-keys: unity-library-android-
+
+      # Release build → the game talks to the production backend (BackendEnvironment.cs).
+      - id: aab
+        name: Build aab
+        uses: game-ci/unity-builder@v4
+        with:
+          projectPath: frontend
+          targetPlatform: Android
+          androidExportType: androidAppBundle
+          buildName: ResortIsland
+          buildsPath: build/aab
+          versioning: Semantic
+          androidKeystoreName: ${{ secrets.ANDROID_KEYSTORE_BASE64 != '' && 'user.keystore' || '' }}
+          androidKeystoreBase64: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
+          androidKeystorePass: ${{ secrets.ANDROID_KEYSTORE_PASS }}
+          androidKeyaliasName: ${{ secrets.ANDROID_KEYALIAS_NAME }}
+          androidKeyaliasPass: ${{ secrets.ANDROID_KEYALIAS_PASS }}
+
+      - name: Build apk
+        uses: game-ci/unity-builder@v4
+        with:
+          projectPath: frontend
+          targetPlatform: Android
+          androidExportType: androidPackage
+          buildName: ResortIsland
+          buildsPath: build/apk
+          versioning: Semantic
+          androidKeystoreName: ${{ secrets.ANDROID_KEYSTORE_BASE64 != '' && 'user.keystore' || '' }}
+          androidKeystoreBase64: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
+          androidKeystorePass: ${{ secrets.ANDROID_KEYSTORE_PASS }}
+          androidKeyaliasName: ${{ secrets.ANDROID_KEYALIAS_NAME }}
+          androidKeyaliasPass: ${{ secrets.ANDROID_KEYALIAS_PASS }}
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ResortIsland-android-${{ steps.aab.outputs.buildVersion }}
+          path: |
+            build/aab/Android/*.aab
+            build/apk/Android/*.apk
+          if-no-files-found: error
+          retention-days: 30
