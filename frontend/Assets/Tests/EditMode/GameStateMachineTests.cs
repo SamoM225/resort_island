@@ -13,6 +13,7 @@ namespace ResortIsland.Tests
 
             Assert.AreEqual(GameState.AwaitingWave, machine.Current);
             Assert.IsTrue(machine.CanStartWave);
+            Assert.AreEqual(1, machine.NextWave);
         }
 
         [Test]
