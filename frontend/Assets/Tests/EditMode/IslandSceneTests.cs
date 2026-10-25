@@ -47,6 +47,15 @@ namespace ResortIsland.Tests
         }
 
         [Test]
+        public void WaveController_HasWaveForecastAssigned()
+        {
+            WaveController controller = FindInScene<WaveController>();
+
+            Assert.IsNotNull(controller, "Island scene has no WaveController.");
+            Assert.IsNotNull(new SerializedObject(controller).FindProperty("waveForecast").objectReferenceValue);
+        }
+
+        [Test]
         public void Scene_HasEventSystemForButtonInput()
         {
             EventSystem eventSystem = FindInScene<EventSystem>();

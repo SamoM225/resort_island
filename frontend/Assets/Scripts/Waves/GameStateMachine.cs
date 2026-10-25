@@ -6,6 +6,8 @@ namespace ResortIsland.Waves
     {
         public GameState Current { get; private set; } = GameState.AwaitingWave;
 
+        public int NextWave { get; } = 1;
+
         public event Action<GameState> Changed;
 
         public bool CanStartWave => Current == GameState.AwaitingWave;
