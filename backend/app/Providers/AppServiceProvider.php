@@ -27,5 +27,7 @@ class AppServiceProvider extends ServiceProvider
         RateLimiter::for('player-login', fn (Request $request) => Limit::perMinute(5)->by(
             $request->string('email')->lower()->append('|', $request->ip())->value()
         ));
+
+        RateLimiter::for('analytics', fn (Request $request) => Limit::perMinute(30)->by($request->user()?->id ?: $request->ip()));
     }
 }

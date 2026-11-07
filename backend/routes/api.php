@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Api\V1\AnalyticsEventController;
 use App\Http\Controllers\Api\V1\Auth\AnonymousRegistrationController;
 use App\Http\Controllers\Api\V1\Auth\CurrentPlayerController;
 use App\Http\Controllers\Api\V1\Auth\LinkEmailController;
@@ -24,5 +25,9 @@ Route::prefix('v1')->name('api.v1.')->group(function () {
         Route::post('auth/logout', LogoutController::class)->name('auth.logout');
         Route::get('me', CurrentPlayerController::class)->name('me');
         Route::post('me/email', LinkEmailController::class)->name('me.email');
+
+        Route::post('analytics/events', AnalyticsEventController::class)
+            ->middleware('throttle:analytics')
+            ->name('analytics.events.store');
     });
 });
