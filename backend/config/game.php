@@ -15,6 +15,13 @@ return [
 
     'configs' => [
         'cache_ttl' => (int) env('GAME_CONFIGS_CACHE_TTL', 3600),
+
+        /*
+        | Free editing (local and dev): an admin change overwrites the current
+        | version and may change anything. Otherwise (prod) every change is a
+        | new version and only numbers may change, so the game cannot break.
+        */
+        'free_editing' => (bool) env('GAME_CONFIGS_FREE_EDITING', in_array(env('APP_ENV', 'production'), ['local', 'development'], true)),
     ],
 
 ];
