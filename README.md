@@ -57,7 +57,21 @@ Testy: `php artisan test --compact`, formátovanie: `vendor/bin/pint`.
 
 - Schéma sa mení **len migráciami** (`php artisan make:migration ...`). Nasadenú migráciu už neupravujeme, pridáme novú.
 - `php artisan migrate --seed` je bezpečné spúšťať opakovane — deploy ho spúšťa vždy. Testovací používateľ `test@example.com` a admin `admin@example.com` (heslo `password`) sa seedujú len lokálne.
-- Tabuľky: `users` (hráči), `admins` (účty do admin panelu), `game_configs` (verzované herné configy).
+- Tabuľky: `users` (hráči), `admins` (účty do admin panelu), `personal_access_tokens` (API tokeny hráčov), `game_configs` (verzované herné configy).
+
+### Hráči a API tokeny
+
+Hra sa pri prvom spustení zaregistruje anonymne a dostane token (Laravel Sanctum). Token posiela v hlavičke `Authorization: Bearer <token>`.
+
+| Endpoint | Auth | Popis |
+| --- | --- | --- |
+| `POST /api/v1/auth/anonymous` | — | nový anonymný hráč, vráti `{ data: player, token }` (max 10/min z IP) |
+| `POST /api/v1/me/email` | token | prepojí email + heslo (`password_confirmation`, voliteľne `name`) s anonymným účtom |
+| `POST /api/v1/auth/login` | — | email + heslo → nový token toho istého účtu, napr. na inom zariadení (max 5/min) |
+| `POST /api/v1/auth/logout` | token | zruší aktuálny token |
+| `GET /api/v1/me` | token | aktuálny hráč |
+
+Zabanovaný hráč dostane na každý endpoint s tokenom aj na login `403 { "message": "This account is banned.", "reason": "..." }`. Ban a unban robí admin v paneli (*Players*); tokeny ostávajú platné, takže po unbane hra funguje ďalej.
 
 ### Herné configy
 

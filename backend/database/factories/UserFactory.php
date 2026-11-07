@@ -42,4 +42,26 @@ class UserFactory extends Factory
             'email_verified_at' => null,
         ]);
     }
+
+    /**
+     * A player registered by the game who has not linked an email yet.
+     */
+    public function anonymous(): static
+    {
+        return $this->state(fn (array $attributes) => [
+            'name' => null,
+            'email' => null,
+            'email_verified_at' => null,
+            'password' => null,
+            'remember_token' => null,
+        ]);
+    }
+
+    public function banned(string $reason = 'Cheating'): static
+    {
+        return $this->state(fn (array $attributes) => [
+            'banned_at' => now(),
+            'ban_reason' => $reason,
+        ]);
+    }
 }
