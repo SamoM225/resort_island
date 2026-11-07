@@ -15,7 +15,7 @@ class DatabaseSeeder extends Seeder
         $this->call(GameConfigSeeder::class);
 
         if (app()->environment(['local', 'testing'])) {
-            $this->call(UserSeeder::class);
+            $this->call([UserSeeder::class, AdminSeeder::class]);
         }
     }
 }
