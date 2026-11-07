@@ -269,6 +269,7 @@ GameObject:
   - component: {fileID: 553181433}
   - component: {fileID: 553181432}
   - component: {fileID: 553181436}
+  - component: {fileID: 553181437}
   m_Layer: 0
   m_Name: ResortManager
   m_TagString: Untagged
@@ -317,6 +318,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ResortIsland.Resort.ResortManager
   grid: {fileID: 1397287497}
   groundTilemap: {fileID: 0}
+  islandGenerator: {fileID: 553181437}
   startConfig: {fileID: 11400000, guid: e039509613ad9354da0346b11f0806b8, type: 2}
   catalog:
   - {fileID: 11400000, guid: 781a73c1bb0b7894691bde068c673304, type: 2}
@@ -337,6 +339,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &553181437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 553181431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d95a2e3b2fb4b9ca1eb3fd4aab7ec41, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::ResortIsland.Resort.IslandGenerator
+  mapWidth: 64
+  mapHeight: 64
+  tileSize: 0.25
+  seed: 1337
+  islandRadius: 0.4
+  coastlineIrregularity: 0.07
+  noiseScale: 1.8
+  beachWidth: 0.055
+  hillThreshold: 0.54
+  mountainThreshold: 0.7
+  rockThreshold: 0.84
+  mountainDensity: 0.85
+  sandBuildable: 1
+  grassBuildable: 1
+  hillsBuildable: 1
+  generateOnStart: 1
+  showGrid: 0
+  highlightBuildable: 0
 --- !u!114 &553181436
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -11,6 +11,7 @@ namespace ResortIsland.Resort
         [Header("Scene")]
         [SerializeField] private Grid grid;
         [SerializeField] private Tilemap groundTilemap;   
+        [SerializeField] private IslandGenerator islandGenerator;
 
         [Header("Config")]
         [SerializeField] private ResortStartConfig startConfig;
@@ -63,6 +64,8 @@ namespace ResortIsland.Resort
         {
             if (occupied.ContainsKey(cell)) return false;
             if (groundTilemap != null && !groundTilemap.HasTile(cell)) return false;
+            if (islandGenerator != null &&
+                (!islandGenerator.TryGetTile(cell, out var tile) || !tile.isBuildable)) return false;
             return true;
         }
 
@@ -161,6 +164,7 @@ namespace ResortIsland.Resort
             }
             save.unlocks.AddRange(Unlocks.All);
 
+            Directory.CreateDirectory(Application.persistentDataPath);
             File.WriteAllText(SavePath, JsonUtility.ToJson(save, true));
         }
 
