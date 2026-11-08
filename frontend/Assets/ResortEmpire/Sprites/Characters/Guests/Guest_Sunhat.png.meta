@@ -4,10 +4,10 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: 745679511681930679
-    second: Guest_Sunhat_SE_Idle_0
+    second: Guest_Sunhat_SE_Rest_0
   - first:
       213: 145388144778847545
-    second: Guest_Sunhat_SE_Idle_1
+    second: Guest_Sunhat_SE_Rest_1
   - first:
       213: 345871921331279208
     second: Guest_Sunhat_SE_Walk_0
@@ -28,10 +28,10 @@ TextureImporter:
     second: Guest_Sunhat_SE_Cheer_1
   - first:
       213: 984610654078235993
-    second: Guest_Sunhat_SW_Idle_0
+    second: Guest_Sunhat_SW_Rest_0
   - first:
       213: 736135614982247913
-    second: Guest_Sunhat_SW_Idle_1
+    second: Guest_Sunhat_SW_Rest_1
   - first:
       213: 969532595034822029
     second: Guest_Sunhat_SW_Walk_0
@@ -52,10 +52,10 @@ TextureImporter:
     second: Guest_Sunhat_SW_Cheer_1
   - first:
       213: 729629273405810137
-    second: Guest_Sunhat_NW_Idle_0
+    second: Guest_Sunhat_NW_Rest_0
   - first:
       213: 816339301153854973
-    second: Guest_Sunhat_NW_Idle_1
+    second: Guest_Sunhat_NW_Rest_1
   - first:
       213: 135562678643393852
     second: Guest_Sunhat_NW_Walk_0
@@ -76,10 +76,10 @@ TextureImporter:
     second: Guest_Sunhat_NW_Cheer_1
   - first:
       213: 714384526980810185
-    second: Guest_Sunhat_NE_Idle_0
+    second: Guest_Sunhat_NE_Rest_0
   - first:
       213: 344762444100797905
-    second: Guest_Sunhat_NE_Idle_1
+    second: Guest_Sunhat_NE_Rest_1
   - first:
       213: 1076944773753308554
     second: Guest_Sunhat_NE_Walk_0
@@ -180,7 +180,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Guest_Sunhat_SE_Idle_0
+      name: Guest_Sunhat_SE_Rest_0
       rect:
         serializedVersion: 2
         x: 0
@@ -202,7 +202,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Guest_Sunhat_SE_Idle_1
+      name: Guest_Sunhat_SE_Rest_1
       rect:
         serializedVersion: 2
         x: 276
@@ -356,7 +356,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Guest_Sunhat_SW_Idle_0
+      name: Guest_Sunhat_SW_Rest_0
       rect:
         serializedVersion: 2
         x: 0
@@ -378,7 +378,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Guest_Sunhat_SW_Idle_1
+      name: Guest_Sunhat_SW_Rest_1
       rect:
         serializedVersion: 2
         x: 276
@@ -532,7 +532,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Guest_Sunhat_NW_Idle_0
+      name: Guest_Sunhat_NW_Rest_0
       rect:
         serializedVersion: 2
         x: 0
@@ -554,7 +554,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Guest_Sunhat_NW_Idle_1
+      name: Guest_Sunhat_NW_Rest_1
       rect:
         serializedVersion: 2
         x: 276
@@ -708,7 +708,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Guest_Sunhat_NE_Idle_0
+      name: Guest_Sunhat_NE_Rest_0
       rect:
         serializedVersion: 2
         x: 0
@@ -730,7 +730,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Guest_Sunhat_NE_Idle_1
+      name: Guest_Sunhat_NE_Rest_1
       rect:
         serializedVersion: 2
         x: 276
@@ -894,32 +894,32 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Guest_Sunhat_SE_Idle_0: 745679511681930679
-      Guest_Sunhat_SE_Idle_1: 145388144778847545
+      Guest_Sunhat_SE_Rest_0: 745679511681930679
+      Guest_Sunhat_SE_Rest_1: 145388144778847545
       Guest_Sunhat_SE_Walk_0: 345871921331279208
       Guest_Sunhat_SE_Walk_1: 424326961119163824
       Guest_Sunhat_SE_Walk_2: 787456185075578354
       Guest_Sunhat_SE_Walk_3: 899668405542163861
       Guest_Sunhat_SE_Cheer_0: 452070804740322784
       Guest_Sunhat_SE_Cheer_1: 783067233777730817
-      Guest_Sunhat_SW_Idle_0: 984610654078235993
-      Guest_Sunhat_SW_Idle_1: 736135614982247913
+      Guest_Sunhat_SW_Rest_0: 984610654078235993
+      Guest_Sunhat_SW_Rest_1: 736135614982247913
       Guest_Sunhat_SW_Walk_0: 969532595034822029
       Guest_Sunhat_SW_Walk_1: 645084736898373079
       Guest_Sunhat_SW_Walk_2: 1058898599988991363
       Guest_Sunhat_SW_Walk_3: 886792075006973307
       Guest_Sunhat_SW_Cheer_0: 1076556101054612769
       Guest_Sunhat_SW_Cheer_1: 133485507618288992
-      Guest_Sunhat_NW_Idle_0: 729629273405810137
-      Guest_Sunhat_NW_Idle_1: 816339301153854973
+      Guest_Sunhat_NW_Rest_0: 729629273405810137
+      Guest_Sunhat_NW_Rest_1: 816339301153854973
       Guest_Sunhat_NW_Walk_0: 135562678643393852
       Guest_Sunhat_NW_Walk_1: 714666923888923982
       Guest_Sunhat_NW_Walk_2: 1014253504200373713
       Guest_Sunhat_NW_Walk_3: 746192577009780152
       Guest_Sunhat_NW_Cheer_0: 852086636608226805
       Guest_Sunhat_NW_Cheer_1: 417297519643501872
-      Guest_Sunhat_NE_Idle_0: 714384526980810185
-      Guest_Sunhat_NE_Idle_1: 344762444100797905
+      Guest_Sunhat_NE_Rest_0: 714384526980810185
+      Guest_Sunhat_NE_Rest_1: 344762444100797905
       Guest_Sunhat_NE_Walk_0: 1076944773753308554
       Guest_Sunhat_NE_Walk_1: 216488569669621105
       Guest_Sunhat_NE_Walk_2: 361214398565283273

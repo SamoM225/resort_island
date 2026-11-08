@@ -4,10 +4,10 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: 1126352850760275274
-    second: VIP_BellRapper_SE_Idle_0
+    second: VIP_BellRapper_SE_Rest_0
   - first:
       213: 941673758784706005
-    second: VIP_BellRapper_SE_Idle_1
+    second: VIP_BellRapper_SE_Rest_1
   - first:
       213: 430708954191996402
     second: VIP_BellRapper_SE_Walk_0
@@ -28,10 +28,10 @@ TextureImporter:
     second: VIP_BellRapper_SE_Wave_1
   - first:
       213: 213412952474617263
-    second: VIP_BellRapper_SW_Idle_0
+    second: VIP_BellRapper_SW_Rest_0
   - first:
       213: 787486202292979020
-    second: VIP_BellRapper_SW_Idle_1
+    second: VIP_BellRapper_SW_Rest_1
   - first:
       213: 107287292606465378
     second: VIP_BellRapper_SW_Walk_0
@@ -52,10 +52,10 @@ TextureImporter:
     second: VIP_BellRapper_SW_Wave_1
   - first:
       213: 639719052539160050
-    second: VIP_BellRapper_NW_Idle_0
+    second: VIP_BellRapper_NW_Rest_0
   - first:
       213: 112904786076472582
-    second: VIP_BellRapper_NW_Idle_1
+    second: VIP_BellRapper_NW_Rest_1
   - first:
       213: 300607608187536751
     second: VIP_BellRapper_NW_Walk_0
@@ -76,10 +76,10 @@ TextureImporter:
     second: VIP_BellRapper_NW_Wave_1
   - first:
       213: 405747845503677934
-    second: VIP_BellRapper_NE_Idle_0
+    second: VIP_BellRapper_NE_Rest_0
   - first:
       213: 495915851063739796
-    second: VIP_BellRapper_NE_Idle_1
+    second: VIP_BellRapper_NE_Rest_1
   - first:
       213: 167745728544355827
     second: VIP_BellRapper_NE_Walk_0
@@ -180,7 +180,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: VIP_BellRapper_SE_Idle_0
+      name: VIP_BellRapper_SE_Rest_0
       rect:
         serializedVersion: 2
         x: 0
@@ -202,7 +202,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VIP_BellRapper_SE_Idle_1
+      name: VIP_BellRapper_SE_Rest_1
       rect:
         serializedVersion: 2
         x: 276
@@ -356,7 +356,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VIP_BellRapper_SW_Idle_0
+      name: VIP_BellRapper_SW_Rest_0
       rect:
         serializedVersion: 2
         x: 0
@@ -378,7 +378,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VIP_BellRapper_SW_Idle_1
+      name: VIP_BellRapper_SW_Rest_1
       rect:
         serializedVersion: 2
         x: 276
@@ -532,7 +532,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VIP_BellRapper_NW_Idle_0
+      name: VIP_BellRapper_NW_Rest_0
       rect:
         serializedVersion: 2
         x: 0
@@ -554,7 +554,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VIP_BellRapper_NW_Idle_1
+      name: VIP_BellRapper_NW_Rest_1
       rect:
         serializedVersion: 2
         x: 276
@@ -708,7 +708,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VIP_BellRapper_NE_Idle_0
+      name: VIP_BellRapper_NE_Rest_0
       rect:
         serializedVersion: 2
         x: 0
@@ -730,7 +730,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VIP_BellRapper_NE_Idle_1
+      name: VIP_BellRapper_NE_Rest_1
       rect:
         serializedVersion: 2
         x: 276
@@ -894,32 +894,32 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      VIP_BellRapper_SE_Idle_0: 1126352850760275274
-      VIP_BellRapper_SE_Idle_1: 941673758784706005
+      VIP_BellRapper_SE_Rest_0: 1126352850760275274
+      VIP_BellRapper_SE_Rest_1: 941673758784706005
       VIP_BellRapper_SE_Walk_0: 430708954191996402
       VIP_BellRapper_SE_Walk_1: 262172712896877936
       VIP_BellRapper_SE_Walk_2: 1104325807130973641
       VIP_BellRapper_SE_Walk_3: 1033914301170656729
       VIP_BellRapper_SE_Wave_0: 280055925507204526
       VIP_BellRapper_SE_Wave_1: 809884665335297357
-      VIP_BellRapper_SW_Idle_0: 213412952474617263
-      VIP_BellRapper_SW_Idle_1: 787486202292979020
+      VIP_BellRapper_SW_Rest_0: 213412952474617263
+      VIP_BellRapper_SW_Rest_1: 787486202292979020
       VIP_BellRapper_SW_Walk_0: 107287292606465378
       VIP_BellRapper_SW_Walk_1: 154127064578004285
       VIP_BellRapper_SW_Walk_2: 890947744670352853
       VIP_BellRapper_SW_Walk_3: 895030972072854904
       VIP_BellRapper_SW_Wave_0: 672784965871346951
       VIP_BellRapper_SW_Wave_1: 886897411201426808
-      VIP_BellRapper_NW_Idle_0: 639719052539160050
-      VIP_BellRapper_NW_Idle_1: 112904786076472582
+      VIP_BellRapper_NW_Rest_0: 639719052539160050
+      VIP_BellRapper_NW_Rest_1: 112904786076472582
       VIP_BellRapper_NW_Walk_0: 300607608187536751
       VIP_BellRapper_NW_Walk_1: 624919937097422099
       VIP_BellRapper_NW_Walk_2: 752591016850523602
       VIP_BellRapper_NW_Walk_3: 1007239799042155799
       VIP_BellRapper_NW_Wave_0: 955000310530770382
       VIP_BellRapper_NW_Wave_1: 277738146530362769
-      VIP_BellRapper_NE_Idle_0: 405747845503677934
-      VIP_BellRapper_NE_Idle_1: 495915851063739796
+      VIP_BellRapper_NE_Rest_0: 405747845503677934
+      VIP_BellRapper_NE_Rest_1: 495915851063739796
       VIP_BellRapper_NE_Walk_0: 167745728544355827
       VIP_BellRapper_NE_Walk_1: 268198932930835920
       VIP_BellRapper_NE_Walk_2: 996251987481814384

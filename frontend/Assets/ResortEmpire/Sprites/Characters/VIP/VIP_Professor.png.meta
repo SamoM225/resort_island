@@ -4,10 +4,10 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: 423952713749673398
-    second: VIP_Professor_SE_Idle_0
+    second: VIP_Professor_SE_Rest_0
   - first:
       213: 485819983237514557
-    second: VIP_Professor_SE_Idle_1
+    second: VIP_Professor_SE_Rest_1
   - first:
       213: 754694112515814901
     second: VIP_Professor_SE_Walk_0
@@ -28,10 +28,10 @@ TextureImporter:
     second: VIP_Professor_SE_Wave_1
   - first:
       213: 1145677084163753451
-    second: VIP_Professor_SW_Idle_0
+    second: VIP_Professor_SW_Rest_0
   - first:
       213: 769190909342172632
-    second: VIP_Professor_SW_Idle_1
+    second: VIP_Professor_SW_Rest_1
   - first:
       213: 321589614405563690
     second: VIP_Professor_SW_Walk_0
@@ -52,10 +52,10 @@ TextureImporter:
     second: VIP_Professor_SW_Wave_1
   - first:
       213: 1099720203245171993
-    second: VIP_Professor_NW_Idle_0
+    second: VIP_Professor_NW_Rest_0
   - first:
       213: 82122707530593542
-    second: VIP_Professor_NW_Idle_1
+    second: VIP_Professor_NW_Rest_1
   - first:
       213: 913077360036054334
     second: VIP_Professor_NW_Walk_0
@@ -76,10 +76,10 @@ TextureImporter:
     second: VIP_Professor_NW_Wave_1
   - first:
       213: 383707984677721474
-    second: VIP_Professor_NE_Idle_0
+    second: VIP_Professor_NE_Rest_0
   - first:
       213: 784730674040468895
-    second: VIP_Professor_NE_Idle_1
+    second: VIP_Professor_NE_Rest_1
   - first:
       213: 1081962960067650990
     second: VIP_Professor_NE_Walk_0
@@ -180,7 +180,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: VIP_Professor_SE_Idle_0
+      name: VIP_Professor_SE_Rest_0
       rect:
         serializedVersion: 2
         x: 0
@@ -202,7 +202,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VIP_Professor_SE_Idle_1
+      name: VIP_Professor_SE_Rest_1
       rect:
         serializedVersion: 2
         x: 276
@@ -356,7 +356,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VIP_Professor_SW_Idle_0
+      name: VIP_Professor_SW_Rest_0
       rect:
         serializedVersion: 2
         x: 0
@@ -378,7 +378,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VIP_Professor_SW_Idle_1
+      name: VIP_Professor_SW_Rest_1
       rect:
         serializedVersion: 2
         x: 276
@@ -532,7 +532,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VIP_Professor_NW_Idle_0
+      name: VIP_Professor_NW_Rest_0
       rect:
         serializedVersion: 2
         x: 0
@@ -554,7 +554,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VIP_Professor_NW_Idle_1
+      name: VIP_Professor_NW_Rest_1
       rect:
         serializedVersion: 2
         x: 276
@@ -708,7 +708,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VIP_Professor_NE_Idle_0
+      name: VIP_Professor_NE_Rest_0
       rect:
         serializedVersion: 2
         x: 0
@@ -730,7 +730,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VIP_Professor_NE_Idle_1
+      name: VIP_Professor_NE_Rest_1
       rect:
         serializedVersion: 2
         x: 276
@@ -894,32 +894,32 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      VIP_Professor_SE_Idle_0: 423952713749673398
-      VIP_Professor_SE_Idle_1: 485819983237514557
+      VIP_Professor_SE_Rest_0: 423952713749673398
+      VIP_Professor_SE_Rest_1: 485819983237514557
       VIP_Professor_SE_Walk_0: 754694112515814901
       VIP_Professor_SE_Walk_1: 1012645953796875730
       VIP_Professor_SE_Walk_2: 632421829612569923
       VIP_Professor_SE_Walk_3: 980155693124814123
       VIP_Professor_SE_Wave_0: 151935098691065223
       VIP_Professor_SE_Wave_1: 1134674380836611394
-      VIP_Professor_SW_Idle_0: 1145677084163753451
-      VIP_Professor_SW_Idle_1: 769190909342172632
+      VIP_Professor_SW_Rest_0: 1145677084163753451
+      VIP_Professor_SW_Rest_1: 769190909342172632
       VIP_Professor_SW_Walk_0: 321589614405563690
       VIP_Professor_SW_Walk_1: 598173627727955308
       VIP_Professor_SW_Walk_2: 655926886384489764
       VIP_Professor_SW_Walk_3: 630665893670765968
       VIP_Professor_SW_Wave_0: 400013610680296723
       VIP_Professor_SW_Wave_1: 797468642402325951
-      VIP_Professor_NW_Idle_0: 1099720203245171993
-      VIP_Professor_NW_Idle_1: 82122707530593542
+      VIP_Professor_NW_Rest_0: 1099720203245171993
+      VIP_Professor_NW_Rest_1: 82122707530593542
       VIP_Professor_NW_Walk_0: 913077360036054334
       VIP_Professor_NW_Walk_1: 158586901381682433
       VIP_Professor_NW_Walk_2: 910381441198228909
       VIP_Professor_NW_Walk_3: 377524325067064579
       VIP_Professor_NW_Wave_0: 636549952225506701
       VIP_Professor_NW_Wave_1: 798470264289646075
-      VIP_Professor_NE_Idle_0: 383707984677721474
-      VIP_Professor_NE_Idle_1: 784730674040468895
+      VIP_Professor_NE_Rest_0: 383707984677721474
+      VIP_Professor_NE_Rest_1: 784730674040468895
       VIP_Professor_NE_Walk_0: 1081962960067650990
       VIP_Professor_NE_Walk_1: 110447674396611894
       VIP_Professor_NE_Walk_2: 694965347418850581

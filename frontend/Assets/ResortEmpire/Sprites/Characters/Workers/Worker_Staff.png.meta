@@ -4,10 +4,10 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: 719018938711229726
-    second: Worker_Staff_SE_Idle_0
+    second: Worker_Staff_SE_Rest_0
   - first:
       213: 52785305911621073
-    second: Worker_Staff_SE_Idle_1
+    second: Worker_Staff_SE_Rest_1
   - first:
       213: 212184887181792591
     second: Worker_Staff_SE_Walk_0
@@ -28,10 +28,10 @@ TextureImporter:
     second: Worker_Staff_SE_Work_1
   - first:
       213: 716916546989352293
-    second: Worker_Staff_SW_Idle_0
+    second: Worker_Staff_SW_Rest_0
   - first:
       213: 849460112470525385
-    second: Worker_Staff_SW_Idle_1
+    second: Worker_Staff_SW_Rest_1
   - first:
       213: 701968360721925428
     second: Worker_Staff_SW_Walk_0
@@ -52,10 +52,10 @@ TextureImporter:
     second: Worker_Staff_SW_Work_1
   - first:
       213: 1096461731241629023
-    second: Worker_Staff_NW_Idle_0
+    second: Worker_Staff_NW_Rest_0
   - first:
       213: 496742347014227264
-    second: Worker_Staff_NW_Idle_1
+    second: Worker_Staff_NW_Rest_1
   - first:
       213: 227007415004886291
     second: Worker_Staff_NW_Walk_0
@@ -76,10 +76,10 @@ TextureImporter:
     second: Worker_Staff_NW_Work_1
   - first:
       213: 736658963705894366
-    second: Worker_Staff_NE_Idle_0
+    second: Worker_Staff_NE_Rest_0
   - first:
       213: 151870555923039631
-    second: Worker_Staff_NE_Idle_1
+    second: Worker_Staff_NE_Rest_1
   - first:
       213: 721882666647209273
     second: Worker_Staff_NE_Walk_0
@@ -180,7 +180,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Worker_Staff_SE_Idle_0
+      name: Worker_Staff_SE_Rest_0
       rect:
         serializedVersion: 2
         x: 0
@@ -202,7 +202,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Worker_Staff_SE_Idle_1
+      name: Worker_Staff_SE_Rest_1
       rect:
         serializedVersion: 2
         x: 276
@@ -356,7 +356,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Worker_Staff_SW_Idle_0
+      name: Worker_Staff_SW_Rest_0
       rect:
         serializedVersion: 2
         x: 0
@@ -378,7 +378,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Worker_Staff_SW_Idle_1
+      name: Worker_Staff_SW_Rest_1
       rect:
         serializedVersion: 2
         x: 276
@@ -532,7 +532,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Worker_Staff_NW_Idle_0
+      name: Worker_Staff_NW_Rest_0
       rect:
         serializedVersion: 2
         x: 0
@@ -554,7 +554,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Worker_Staff_NW_Idle_1
+      name: Worker_Staff_NW_Rest_1
       rect:
         serializedVersion: 2
         x: 276
@@ -708,7 +708,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Worker_Staff_NE_Idle_0
+      name: Worker_Staff_NE_Rest_0
       rect:
         serializedVersion: 2
         x: 0
@@ -730,7 +730,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Worker_Staff_NE_Idle_1
+      name: Worker_Staff_NE_Rest_1
       rect:
         serializedVersion: 2
         x: 276
@@ -894,32 +894,32 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Worker_Staff_SE_Idle_0: 719018938711229726
-      Worker_Staff_SE_Idle_1: 52785305911621073
+      Worker_Staff_SE_Rest_0: 719018938711229726
+      Worker_Staff_SE_Rest_1: 52785305911621073
       Worker_Staff_SE_Walk_0: 212184887181792591
       Worker_Staff_SE_Walk_1: 1055740903953876384
       Worker_Staff_SE_Walk_2: 344927296611919288
       Worker_Staff_SE_Walk_3: 969266909558502719
       Worker_Staff_SE_Work_0: 141338002815743450
       Worker_Staff_SE_Work_1: 810024179975988687
-      Worker_Staff_SW_Idle_0: 716916546989352293
-      Worker_Staff_SW_Idle_1: 849460112470525385
+      Worker_Staff_SW_Rest_0: 716916546989352293
+      Worker_Staff_SW_Rest_1: 849460112470525385
       Worker_Staff_SW_Walk_0: 701968360721925428
       Worker_Staff_SW_Walk_1: 735170318487885140
       Worker_Staff_SW_Walk_2: 575252137139758493
       Worker_Staff_SW_Walk_3: 869085076714562914
       Worker_Staff_SW_Work_0: 100555711259502042
       Worker_Staff_SW_Work_1: 1113347084349179274
-      Worker_Staff_NW_Idle_0: 1096461731241629023
-      Worker_Staff_NW_Idle_1: 496742347014227264
+      Worker_Staff_NW_Rest_0: 1096461731241629023
+      Worker_Staff_NW_Rest_1: 496742347014227264
       Worker_Staff_NW_Walk_0: 227007415004886291
       Worker_Staff_NW_Walk_1: 312306556187563371
       Worker_Staff_NW_Walk_2: 1079216410241091022
       Worker_Staff_NW_Walk_3: 62640282846659970
       Worker_Staff_NW_Work_0: 220316817485198653
       Worker_Staff_NW_Work_1: 95395645049157060
-      Worker_Staff_NE_Idle_0: 736658963705894366
-      Worker_Staff_NE_Idle_1: 151870555923039631
+      Worker_Staff_NE_Rest_0: 736658963705894366
+      Worker_Staff_NE_Rest_1: 151870555923039631
       Worker_Staff_NE_Walk_0: 721882666647209273
       Worker_Staff_NE_Walk_1: 103271450998441225
       Worker_Staff_NE_Walk_2: 906693105346245972

@@ -4,10 +4,10 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: 1071600262670505409
-    second: Guest_Backpacker_SE_Idle_0
+    second: Guest_Backpacker_SE_Rest_0
   - first:
       213: 123047559721289125
-    second: Guest_Backpacker_SE_Idle_1
+    second: Guest_Backpacker_SE_Rest_1
   - first:
       213: 889144589783717316
     second: Guest_Backpacker_SE_Walk_0
@@ -28,10 +28,10 @@ TextureImporter:
     second: Guest_Backpacker_SE_Cheer_1
   - first:
       213: 915236325518677273
-    second: Guest_Backpacker_SW_Idle_0
+    second: Guest_Backpacker_SW_Rest_0
   - first:
       213: 986064155223729663
-    second: Guest_Backpacker_SW_Idle_1
+    second: Guest_Backpacker_SW_Rest_1
   - first:
       213: 866814358650426709
     second: Guest_Backpacker_SW_Walk_0
@@ -52,10 +52,10 @@ TextureImporter:
     second: Guest_Backpacker_SW_Cheer_1
   - first:
       213: 392423025803117923
-    second: Guest_Backpacker_NW_Idle_0
+    second: Guest_Backpacker_NW_Rest_0
   - first:
       213: 256125780738131413
-    second: Guest_Backpacker_NW_Idle_1
+    second: Guest_Backpacker_NW_Rest_1
   - first:
       213: 1013375181394474343
     second: Guest_Backpacker_NW_Walk_0
@@ -76,10 +76,10 @@ TextureImporter:
     second: Guest_Backpacker_NW_Cheer_1
   - first:
       213: 20296221066261916
-    second: Guest_Backpacker_NE_Idle_0
+    second: Guest_Backpacker_NE_Rest_0
   - first:
       213: 203175879802357217
-    second: Guest_Backpacker_NE_Idle_1
+    second: Guest_Backpacker_NE_Rest_1
   - first:
       213: 700407910412785008
     second: Guest_Backpacker_NE_Walk_0
@@ -180,7 +180,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Guest_Backpacker_SE_Idle_0
+      name: Guest_Backpacker_SE_Rest_0
       rect:
         serializedVersion: 2
         x: 0
@@ -202,7 +202,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Guest_Backpacker_SE_Idle_1
+      name: Guest_Backpacker_SE_Rest_1
       rect:
         serializedVersion: 2
         x: 276
@@ -356,7 +356,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Guest_Backpacker_SW_Idle_0
+      name: Guest_Backpacker_SW_Rest_0
       rect:
         serializedVersion: 2
         x: 0
@@ -378,7 +378,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Guest_Backpacker_SW_Idle_1
+      name: Guest_Backpacker_SW_Rest_1
       rect:
         serializedVersion: 2
         x: 276
@@ -532,7 +532,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Guest_Backpacker_NW_Idle_0
+      name: Guest_Backpacker_NW_Rest_0
       rect:
         serializedVersion: 2
         x: 0
@@ -554,7 +554,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Guest_Backpacker_NW_Idle_1
+      name: Guest_Backpacker_NW_Rest_1
       rect:
         serializedVersion: 2
         x: 276
@@ -708,7 +708,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Guest_Backpacker_NE_Idle_0
+      name: Guest_Backpacker_NE_Rest_0
       rect:
         serializedVersion: 2
         x: 0
@@ -730,7 +730,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Guest_Backpacker_NE_Idle_1
+      name: Guest_Backpacker_NE_Rest_1
       rect:
         serializedVersion: 2
         x: 276
@@ -894,32 +894,32 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Guest_Backpacker_SE_Idle_0: 1071600262670505409
-      Guest_Backpacker_SE_Idle_1: 123047559721289125
+      Guest_Backpacker_SE_Rest_0: 1071600262670505409
+      Guest_Backpacker_SE_Rest_1: 123047559721289125
       Guest_Backpacker_SE_Walk_0: 889144589783717316
       Guest_Backpacker_SE_Walk_1: 1098511680328758692
       Guest_Backpacker_SE_Walk_2: 89659177598940482
       Guest_Backpacker_SE_Walk_3: 140119375067014550
       Guest_Backpacker_SE_Cheer_0: 249196925877351704
       Guest_Backpacker_SE_Cheer_1: 732080540809807309
-      Guest_Backpacker_SW_Idle_0: 915236325518677273
-      Guest_Backpacker_SW_Idle_1: 986064155223729663
+      Guest_Backpacker_SW_Rest_0: 915236325518677273
+      Guest_Backpacker_SW_Rest_1: 986064155223729663
       Guest_Backpacker_SW_Walk_0: 866814358650426709
       Guest_Backpacker_SW_Walk_1: 775252113836553645
       Guest_Backpacker_SW_Walk_2: 228819461205419411
       Guest_Backpacker_SW_Walk_3: 692713848271652176
       Guest_Backpacker_SW_Cheer_0: 397426762591327489
       Guest_Backpacker_SW_Cheer_1: 305279145644311820
-      Guest_Backpacker_NW_Idle_0: 392423025803117923
-      Guest_Backpacker_NW_Idle_1: 256125780738131413
+      Guest_Backpacker_NW_Rest_0: 392423025803117923
+      Guest_Backpacker_NW_Rest_1: 256125780738131413
       Guest_Backpacker_NW_Walk_0: 1013375181394474343
       Guest_Backpacker_NW_Walk_1: 21545474496296223
       Guest_Backpacker_NW_Walk_2: 607291646507062536
       Guest_Backpacker_NW_Walk_3: 928067231091127571
       Guest_Backpacker_NW_Cheer_0: 382438377047979506
       Guest_Backpacker_NW_Cheer_1: 395193831008105776
-      Guest_Backpacker_NE_Idle_0: 20296221066261916
-      Guest_Backpacker_NE_Idle_1: 203175879802357217
+      Guest_Backpacker_NE_Rest_0: 20296221066261916
+      Guest_Backpacker_NE_Rest_1: 203175879802357217
       Guest_Backpacker_NE_Walk_0: 700407910412785008
       Guest_Backpacker_NE_Walk_1: 63995278957905385
       Guest_Backpacker_NE_Walk_2: 56985331190637838

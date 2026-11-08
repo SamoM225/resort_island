@@ -4,10 +4,10 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: 849495918913566098
-    second: VIP_RockKing_SE_Idle_0
+    second: VIP_RockKing_SE_Rest_0
   - first:
       213: 729755544027485608
-    second: VIP_RockKing_SE_Idle_1
+    second: VIP_RockKing_SE_Rest_1
   - first:
       213: 1105002215453390318
     second: VIP_RockKing_SE_Walk_0
@@ -28,10 +28,10 @@ TextureImporter:
     second: VIP_RockKing_SE_Wave_1
   - first:
       213: 845211933443241438
-    second: VIP_RockKing_SW_Idle_0
+    second: VIP_RockKing_SW_Rest_0
   - first:
       213: 548234600236246464
-    second: VIP_RockKing_SW_Idle_1
+    second: VIP_RockKing_SW_Rest_1
   - first:
       213: 193902194722190625
     second: VIP_RockKing_SW_Walk_0
@@ -52,10 +52,10 @@ TextureImporter:
     second: VIP_RockKing_SW_Wave_1
   - first:
       213: 321788194975593807
-    second: VIP_RockKing_NW_Idle_0
+    second: VIP_RockKing_NW_Rest_0
   - first:
       213: 1045864684730889671
-    second: VIP_RockKing_NW_Idle_1
+    second: VIP_RockKing_NW_Rest_1
   - first:
       213: 358271025624307074
     second: VIP_RockKing_NW_Walk_0
@@ -76,10 +76,10 @@ TextureImporter:
     second: VIP_RockKing_NW_Wave_1
   - first:
       213: 298868127631377769
-    second: VIP_RockKing_NE_Idle_0
+    second: VIP_RockKing_NE_Rest_0
   - first:
       213: 695526377119397359
-    second: VIP_RockKing_NE_Idle_1
+    second: VIP_RockKing_NE_Rest_1
   - first:
       213: 1099422974538315213
     second: VIP_RockKing_NE_Walk_0
@@ -180,7 +180,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: VIP_RockKing_SE_Idle_0
+      name: VIP_RockKing_SE_Rest_0
       rect:
         serializedVersion: 2
         x: 0
@@ -202,7 +202,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VIP_RockKing_SE_Idle_1
+      name: VIP_RockKing_SE_Rest_1
       rect:
         serializedVersion: 2
         x: 276
@@ -356,7 +356,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VIP_RockKing_SW_Idle_0
+      name: VIP_RockKing_SW_Rest_0
       rect:
         serializedVersion: 2
         x: 0
@@ -378,7 +378,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VIP_RockKing_SW_Idle_1
+      name: VIP_RockKing_SW_Rest_1
       rect:
         serializedVersion: 2
         x: 276
@@ -532,7 +532,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VIP_RockKing_NW_Idle_0
+      name: VIP_RockKing_NW_Rest_0
       rect:
         serializedVersion: 2
         x: 0
@@ -554,7 +554,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VIP_RockKing_NW_Idle_1
+      name: VIP_RockKing_NW_Rest_1
       rect:
         serializedVersion: 2
         x: 276
@@ -708,7 +708,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VIP_RockKing_NE_Idle_0
+      name: VIP_RockKing_NE_Rest_0
       rect:
         serializedVersion: 2
         x: 0
@@ -730,7 +730,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VIP_RockKing_NE_Idle_1
+      name: VIP_RockKing_NE_Rest_1
       rect:
         serializedVersion: 2
         x: 276
@@ -894,32 +894,32 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      VIP_RockKing_SE_Idle_0: 849495918913566098
-      VIP_RockKing_SE_Idle_1: 729755544027485608
+      VIP_RockKing_SE_Rest_0: 849495918913566098
+      VIP_RockKing_SE_Rest_1: 729755544027485608
       VIP_RockKing_SE_Walk_0: 1105002215453390318
       VIP_RockKing_SE_Walk_1: 283681460905301279
       VIP_RockKing_SE_Walk_2: 725569552806081978
       VIP_RockKing_SE_Walk_3: 807615927513240975
       VIP_RockKing_SE_Wave_0: 312727139450881440
       VIP_RockKing_SE_Wave_1: 66952807931270517
-      VIP_RockKing_SW_Idle_0: 845211933443241438
-      VIP_RockKing_SW_Idle_1: 548234600236246464
+      VIP_RockKing_SW_Rest_0: 845211933443241438
+      VIP_RockKing_SW_Rest_1: 548234600236246464
       VIP_RockKing_SW_Walk_0: 193902194722190625
       VIP_RockKing_SW_Walk_1: 615823137464497652
       VIP_RockKing_SW_Walk_2: 536673321720948215
       VIP_RockKing_SW_Walk_3: 972052238579635490
       VIP_RockKing_SW_Wave_0: 566518735567365385
       VIP_RockKing_SW_Wave_1: 39575668488705398
-      VIP_RockKing_NW_Idle_0: 321788194975593807
-      VIP_RockKing_NW_Idle_1: 1045864684730889671
+      VIP_RockKing_NW_Rest_0: 321788194975593807
+      VIP_RockKing_NW_Rest_1: 1045864684730889671
       VIP_RockKing_NW_Walk_0: 358271025624307074
       VIP_RockKing_NW_Walk_1: 788232355709723929
       VIP_RockKing_NW_Walk_2: 398711719954777385
       VIP_RockKing_NW_Walk_3: 938981027240199427
       VIP_RockKing_NW_Wave_0: 692055035416049137
       VIP_RockKing_NW_Wave_1: 269748877812253955
-      VIP_RockKing_NE_Idle_0: 298868127631377769
-      VIP_RockKing_NE_Idle_1: 695526377119397359
+      VIP_RockKing_NE_Rest_0: 298868127631377769
+      VIP_RockKing_NE_Rest_1: 695526377119397359
       VIP_RockKing_NE_Walk_0: 1099422974538315213
       VIP_RockKing_NE_Walk_1: 1020980050261857642
       VIP_RockKing_NE_Walk_2: 696149481025332605

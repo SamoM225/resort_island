@@ -4,10 +4,10 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: 991194140964140395
-    second: Worker_Housekeeper_SE_Idle_0
+    second: Worker_Housekeeper_SE_Rest_0
   - first:
       213: 263477765054498220
-    second: Worker_Housekeeper_SE_Idle_1
+    second: Worker_Housekeeper_SE_Rest_1
   - first:
       213: 114516492883043763
     second: Worker_Housekeeper_SE_Walk_0
@@ -28,10 +28,10 @@ TextureImporter:
     second: Worker_Housekeeper_SE_Work_1
   - first:
       213: 886002626938119470
-    second: Worker_Housekeeper_SW_Idle_0
+    second: Worker_Housekeeper_SW_Rest_0
   - first:
       213: 652683379305162038
-    second: Worker_Housekeeper_SW_Idle_1
+    second: Worker_Housekeeper_SW_Rest_1
   - first:
       213: 574556043505128722
     second: Worker_Housekeeper_SW_Walk_0
@@ -52,10 +52,10 @@ TextureImporter:
     second: Worker_Housekeeper_SW_Work_1
   - first:
       213: 70561256631498232
-    second: Worker_Housekeeper_NW_Idle_0
+    second: Worker_Housekeeper_NW_Rest_0
   - first:
       213: 431110613073204549
-    second: Worker_Housekeeper_NW_Idle_1
+    second: Worker_Housekeeper_NW_Rest_1
   - first:
       213: 714919484465071611
     second: Worker_Housekeeper_NW_Walk_0
@@ -76,10 +76,10 @@ TextureImporter:
     second: Worker_Housekeeper_NW_Work_1
   - first:
       213: 731109320411227541
-    second: Worker_Housekeeper_NE_Idle_0
+    second: Worker_Housekeeper_NE_Rest_0
   - first:
       213: 369819563219731935
-    second: Worker_Housekeeper_NE_Idle_1
+    second: Worker_Housekeeper_NE_Rest_1
   - first:
       213: 848958558164686224
     second: Worker_Housekeeper_NE_Walk_0
@@ -180,7 +180,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Worker_Housekeeper_SE_Idle_0
+      name: Worker_Housekeeper_SE_Rest_0
       rect:
         serializedVersion: 2
         x: 0
@@ -202,7 +202,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Worker_Housekeeper_SE_Idle_1
+      name: Worker_Housekeeper_SE_Rest_1
       rect:
         serializedVersion: 2
         x: 276
@@ -356,7 +356,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Worker_Housekeeper_SW_Idle_0
+      name: Worker_Housekeeper_SW_Rest_0
       rect:
         serializedVersion: 2
         x: 0
@@ -378,7 +378,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Worker_Housekeeper_SW_Idle_1
+      name: Worker_Housekeeper_SW_Rest_1
       rect:
         serializedVersion: 2
         x: 276
@@ -532,7 +532,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Worker_Housekeeper_NW_Idle_0
+      name: Worker_Housekeeper_NW_Rest_0
       rect:
         serializedVersion: 2
         x: 0
@@ -554,7 +554,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Worker_Housekeeper_NW_Idle_1
+      name: Worker_Housekeeper_NW_Rest_1
       rect:
         serializedVersion: 2
         x: 276
@@ -708,7 +708,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Worker_Housekeeper_NE_Idle_0
+      name: Worker_Housekeeper_NE_Rest_0
       rect:
         serializedVersion: 2
         x: 0
@@ -730,7 +730,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Worker_Housekeeper_NE_Idle_1
+      name: Worker_Housekeeper_NE_Rest_1
       rect:
         serializedVersion: 2
         x: 276
@@ -894,32 +894,32 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Worker_Housekeeper_SE_Idle_0: 991194140964140395
-      Worker_Housekeeper_SE_Idle_1: 263477765054498220
+      Worker_Housekeeper_SE_Rest_0: 991194140964140395
+      Worker_Housekeeper_SE_Rest_1: 263477765054498220
       Worker_Housekeeper_SE_Walk_0: 114516492883043763
       Worker_Housekeeper_SE_Walk_1: 748061248826074592
       Worker_Housekeeper_SE_Walk_2: 283019647669216603
       Worker_Housekeeper_SE_Walk_3: 833767156240774595
       Worker_Housekeeper_SE_Work_0: 878957826387666309
       Worker_Housekeeper_SE_Work_1: 767494229852931488
-      Worker_Housekeeper_SW_Idle_0: 886002626938119470
-      Worker_Housekeeper_SW_Idle_1: 652683379305162038
+      Worker_Housekeeper_SW_Rest_0: 886002626938119470
+      Worker_Housekeeper_SW_Rest_1: 652683379305162038
       Worker_Housekeeper_SW_Walk_0: 574556043505128722
       Worker_Housekeeper_SW_Walk_1: 714222252849890566
       Worker_Housekeeper_SW_Walk_2: 263429939552413046
       Worker_Housekeeper_SW_Walk_3: 159586171953902999
       Worker_Housekeeper_SW_Work_0: 852598244686001637
       Worker_Housekeeper_SW_Work_1: 444800495512163803
-      Worker_Housekeeper_NW_Idle_0: 70561256631498232
-      Worker_Housekeeper_NW_Idle_1: 431110613073204549
+      Worker_Housekeeper_NW_Rest_0: 70561256631498232
+      Worker_Housekeeper_NW_Rest_1: 431110613073204549
       Worker_Housekeeper_NW_Walk_0: 714919484465071611
       Worker_Housekeeper_NW_Walk_1: 453794754510783861
       Worker_Housekeeper_NW_Walk_2: 632691913381590486
       Worker_Housekeeper_NW_Walk_3: 512037244029089072
       Worker_Housekeeper_NW_Work_0: 1071315777959777551
       Worker_Housekeeper_NW_Work_1: 185239635552089501
-      Worker_Housekeeper_NE_Idle_0: 731109320411227541
-      Worker_Housekeeper_NE_Idle_1: 369819563219731935
+      Worker_Housekeeper_NE_Rest_0: 731109320411227541
+      Worker_Housekeeper_NE_Rest_1: 369819563219731935
       Worker_Housekeeper_NE_Walk_0: 848958558164686224
       Worker_Housekeeper_NE_Walk_1: 580403017108800811
       Worker_Housekeeper_NE_Walk_2: 93605883281220946

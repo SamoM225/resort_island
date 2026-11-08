@@ -8,7 +8,7 @@ namespace ResortIsland.Resort
     {
         private enum Phase
         {
-            Idle,
+            Hidden,
             Arriving,
             Docked,
             Departing
@@ -52,7 +52,7 @@ namespace ResortIsland.Resort
 
         private void Update()
         {
-            if (phase == Phase.Idle)
+            if (phase == Phase.Hidden)
                 return;
 
             elapsed += Time.deltaTime;
@@ -73,7 +73,7 @@ namespace ResortIsland.Resort
                     Sail(Phase.Departing, berth, sea);
                     break;
                 default:
-                    phase = Phase.Idle;
+                    phase = Phase.Hidden;
                     ferry.gameObject.SetActive(false);
                     break;
             }

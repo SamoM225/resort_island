@@ -4,10 +4,10 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: 664583346172843368
-    second: Guest_Swimmer_SE_Idle_0
+    second: Guest_Swimmer_SE_Rest_0
   - first:
       213: 71135398234375643
-    second: Guest_Swimmer_SE_Idle_1
+    second: Guest_Swimmer_SE_Rest_1
   - first:
       213: 50980595649865104
     second: Guest_Swimmer_SE_Walk_0
@@ -28,10 +28,10 @@ TextureImporter:
     second: Guest_Swimmer_SE_Cheer_1
   - first:
       213: 219443611442296121
-    second: Guest_Swimmer_SW_Idle_0
+    second: Guest_Swimmer_SW_Rest_0
   - first:
       213: 533438191221278151
-    second: Guest_Swimmer_SW_Idle_1
+    second: Guest_Swimmer_SW_Rest_1
   - first:
       213: 489095186517435836
     second: Guest_Swimmer_SW_Walk_0
@@ -52,10 +52,10 @@ TextureImporter:
     second: Guest_Swimmer_SW_Cheer_1
   - first:
       213: 468455947184154014
-    second: Guest_Swimmer_NW_Idle_0
+    second: Guest_Swimmer_NW_Rest_0
   - first:
       213: 1011825183931823409
-    second: Guest_Swimmer_NW_Idle_1
+    second: Guest_Swimmer_NW_Rest_1
   - first:
       213: 281358948471477517
     second: Guest_Swimmer_NW_Walk_0
@@ -76,10 +76,10 @@ TextureImporter:
     second: Guest_Swimmer_NW_Cheer_1
   - first:
       213: 242309036954625417
-    second: Guest_Swimmer_NE_Idle_0
+    second: Guest_Swimmer_NE_Rest_0
   - first:
       213: 79364994789623242
-    second: Guest_Swimmer_NE_Idle_1
+    second: Guest_Swimmer_NE_Rest_1
   - first:
       213: 662916023646041564
     second: Guest_Swimmer_NE_Walk_0
@@ -180,7 +180,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Guest_Swimmer_SE_Idle_0
+      name: Guest_Swimmer_SE_Rest_0
       rect:
         serializedVersion: 2
         x: 0
@@ -202,7 +202,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Guest_Swimmer_SE_Idle_1
+      name: Guest_Swimmer_SE_Rest_1
       rect:
         serializedVersion: 2
         x: 276
@@ -356,7 +356,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Guest_Swimmer_SW_Idle_0
+      name: Guest_Swimmer_SW_Rest_0
       rect:
         serializedVersion: 2
         x: 0
@@ -378,7 +378,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Guest_Swimmer_SW_Idle_1
+      name: Guest_Swimmer_SW_Rest_1
       rect:
         serializedVersion: 2
         x: 276
@@ -532,7 +532,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Guest_Swimmer_NW_Idle_0
+      name: Guest_Swimmer_NW_Rest_0
       rect:
         serializedVersion: 2
         x: 0
@@ -554,7 +554,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Guest_Swimmer_NW_Idle_1
+      name: Guest_Swimmer_NW_Rest_1
       rect:
         serializedVersion: 2
         x: 276
@@ -708,7 +708,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Guest_Swimmer_NE_Idle_0
+      name: Guest_Swimmer_NE_Rest_0
       rect:
         serializedVersion: 2
         x: 0
@@ -730,7 +730,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Guest_Swimmer_NE_Idle_1
+      name: Guest_Swimmer_NE_Rest_1
       rect:
         serializedVersion: 2
         x: 276
@@ -894,32 +894,32 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Guest_Swimmer_SE_Idle_0: 664583346172843368
-      Guest_Swimmer_SE_Idle_1: 71135398234375643
+      Guest_Swimmer_SE_Rest_0: 664583346172843368
+      Guest_Swimmer_SE_Rest_1: 71135398234375643
       Guest_Swimmer_SE_Walk_0: 50980595649865104
       Guest_Swimmer_SE_Walk_1: 397079435557557703
       Guest_Swimmer_SE_Walk_2: 892920411330336219
       Guest_Swimmer_SE_Walk_3: 256370483277706674
       Guest_Swimmer_SE_Cheer_0: 710342914877842748
       Guest_Swimmer_SE_Cheer_1: 70405406807246170
-      Guest_Swimmer_SW_Idle_0: 219443611442296121
-      Guest_Swimmer_SW_Idle_1: 533438191221278151
+      Guest_Swimmer_SW_Rest_0: 219443611442296121
+      Guest_Swimmer_SW_Rest_1: 533438191221278151
       Guest_Swimmer_SW_Walk_0: 489095186517435836
       Guest_Swimmer_SW_Walk_1: 706862121421870407
       Guest_Swimmer_SW_Walk_2: 464191342361523705
       Guest_Swimmer_SW_Walk_3: 68421858813191500
       Guest_Swimmer_SW_Cheer_0: 341914943949784538
       Guest_Swimmer_SW_Cheer_1: 484703536280790284
-      Guest_Swimmer_NW_Idle_0: 468455947184154014
-      Guest_Swimmer_NW_Idle_1: 1011825183931823409
+      Guest_Swimmer_NW_Rest_0: 468455947184154014
+      Guest_Swimmer_NW_Rest_1: 1011825183931823409
       Guest_Swimmer_NW_Walk_0: 281358948471477517
       Guest_Swimmer_NW_Walk_1: 480936941177603509
       Guest_Swimmer_NW_Walk_2: 343319562894620105
       Guest_Swimmer_NW_Walk_3: 783804718214305198
       Guest_Swimmer_NW_Cheer_0: 25011108498056508
       Guest_Swimmer_NW_Cheer_1: 218666275976152529
-      Guest_Swimmer_NE_Idle_0: 242309036954625417
-      Guest_Swimmer_NE_Idle_1: 79364994789623242
+      Guest_Swimmer_NE_Rest_0: 242309036954625417
+      Guest_Swimmer_NE_Rest_1: 79364994789623242
       Guest_Swimmer_NE_Walk_0: 662916023646041564
       Guest_Swimmer_NE_Walk_1: 772451926309012741
       Guest_Swimmer_NE_Walk_2: 607232085505062238
