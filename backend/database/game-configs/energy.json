@@ -1,0 +1,10 @@
+{
+    "version": 1,
+    "data": {
+        "boost_cost": 3,
+        "speed_reduction_pct": 0.5,
+        "speed_duration_s": 15,
+        "max_boosts_per_building_per_wave": 1,
+        "drop_by_rating": [0, 1, 2, 3, 5]
+    }
+}

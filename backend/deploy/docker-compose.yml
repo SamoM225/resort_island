@@ -1,0 +1,30 @@
+# Backend stack on a server. One copy per environment (dev / prod), each in its own directory
+# next to its own .env and deploy.sh — see "Server" in the root README.
+services:
+  app:
+    image: ${BACKEND_IMAGE:?BACKEND_IMAGE is set by deploy.sh}
+    restart: unless-stopped
+    env_file: .env
+    ports:
+      - "${APP_PORT:-8080}:8080"
+    depends_on:
+      db:
+        condition: service_healthy
+
+  db:
+    image: postgres:17-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${DB_DATABASE:?}
+      POSTGRES_USER: ${DB_USERNAME:?}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:?}
+    volumes:
+      - db-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U \"$$POSTGRES_USER\" -d \"$$POSTGRES_DB\""]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+volumes:
+  db-data:

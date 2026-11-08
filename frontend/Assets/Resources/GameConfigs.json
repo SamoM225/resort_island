@@ -1,0 +1,262 @@
+{
+    "data": [
+        {
+            "key": "buildings",
+            "version": 1,
+            "data": {
+                "levels": [
+                    {
+                        "level": 1,
+                        "capacity": 3,
+                        "upgrade_cost": 0
+                    },
+                    {
+                        "level": 2,
+                        "capacity": 5,
+                        "upgrade_cost": 500
+                    },
+                    {
+                        "level": 3,
+                        "capacity": 7,
+                        "upgrade_cost": 1200
+                    }
+                ],
+                "buildings": [
+                    {
+                        "id": "reception",
+                        "need": "rooms",
+                        "unlock": null
+                    },
+                    {
+                        "id": "restaurant",
+                        "need": "food",
+                        "unlock": null
+                    },
+                    {
+                        "id": "beachbar",
+                        "need": "drinks",
+                        "unlock": null
+                    },
+                    {
+                        "id": "pool",
+                        "need": "relax",
+                        "unlock": "pool"
+                    },
+                    {
+                        "id": "bungalows",
+                        "need": "ocean_view",
+                        "unlock": "bungalows"
+                    }
+                ]
+            }
+        },
+        {
+            "key": "economy",
+            "version": 1,
+            "data": {
+                "starting_coins": 1000,
+                "starting_gems": 10,
+                "starting_energy": 82,
+                "max_energy": 100,
+                "starting_resort_value": 24500,
+                "starting_reputation": 4,
+                "coins_per_unit": 16,
+                "coins_rating_mult": [
+                    0.4,
+                    0.6,
+                    0.8,
+                    1,
+                    1.2,
+                    1.3
+                ]
+            }
+        },
+        {
+            "key": "energy",
+            "version": 1,
+            "data": {
+                "boost_cost": 3,
+                "speed_reduction_pct": 0.5,
+                "speed_duration_s": 15,
+                "max_boosts_per_building_per_wave": 1,
+                "drop_by_rating": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    5
+                ]
+            }
+        },
+        {
+            "key": "needs",
+            "version": 1,
+            "data": {
+                "needs": [
+                    {
+                        "id": "rooms",
+                        "satisfaction_weight": 1
+                    },
+                    {
+                        "id": "food",
+                        "satisfaction_weight": 1
+                    },
+                    {
+                        "id": "drinks",
+                        "satisfaction_weight": 1
+                    },
+                    {
+                        "id": "relax",
+                        "satisfaction_weight": 1
+                    },
+                    {
+                        "id": "ocean_view",
+                        "satisfaction_weight": 1.5
+                    }
+                ]
+            }
+        },
+        {
+            "key": "unlocks",
+            "version": 1,
+            "data": {
+                "unlocks": [
+                    {
+                        "id": "pool",
+                        "after_wave": 3,
+                        "cost": 1200,
+                        "building": "pool",
+                        "workers_added": 1
+                    },
+                    {
+                        "id": "bungalows",
+                        "after_wave": 6,
+                        "cost": 2500,
+                        "building": "bungalows",
+                        "workers_added": 1
+                    }
+                ]
+            }
+        },
+        {
+            "key": "wave_system",
+            "version": 1,
+            "data": {
+                "wave_timer_s": 90,
+                "service_time_s": 12,
+                "utilization_staffed": 1,
+                "utilization_empty": 0.33,
+                "worker_slots": 1,
+                "bottleneck_threshold": 4,
+                "bottleneck_hysteresis_s": 3,
+                "patience_grace_s": 10,
+                "patience_floor_after_s": 30,
+                "unit_floor": 0.25,
+                "wave_floor": 0.4,
+                "rating_thresholds": [
+                    0.4,
+                    0.55,
+                    0.7,
+                    0.8,
+                    0.9,
+                    1
+                ],
+                "new_need_debut_ratio": 0.5,
+                "demand_growth_per_wave": 0.25,
+                "rush": {
+                    "wave": 2,
+                    "time_s": 45,
+                    "units": 6,
+                    "duration_s": 10
+                }
+            }
+        },
+        {
+            "key": "waves",
+            "version": 1,
+            "data": {
+                "waves": [
+                    {
+                        "wave": 1,
+                        "guests": 12,
+                        "demand": {
+                            "rooms": 8,
+                            "drinks": 8,
+                            "food": 6
+                        }
+                    },
+                    {
+                        "wave": 2,
+                        "guests": 18,
+                        "demand": {
+                            "rooms": 12,
+                            "drinks": 16,
+                            "food": 10
+                        }
+                    },
+                    {
+                        "wave": 3,
+                        "guests": 24,
+                        "demand": {
+                            "rooms": 16,
+                            "drinks": 18,
+                            "food": 14
+                        }
+                    },
+                    {
+                        "wave": 4,
+                        "guests": 26,
+                        "demand": {
+                            "rooms": 16,
+                            "drinks": 18,
+                            "food": 14,
+                            "relax": 8
+                        }
+                    },
+                    {
+                        "wave": 5,
+                        "guests": 34,
+                        "demand": {
+                            "rooms": 20,
+                            "drinks": 22,
+                            "food": 18,
+                            "relax": 16
+                        }
+                    },
+                    {
+                        "wave": 6,
+                        "guests": 40,
+                        "demand": {
+                            "rooms": 25,
+                            "drinks": 28,
+                            "food": 22,
+                            "relax": 20
+                        }
+                    },
+                    {
+                        "wave": 7,
+                        "guests": 42,
+                        "demand": {
+                            "rooms": 25,
+                            "drinks": 28,
+                            "food": 22,
+                            "relax": 20,
+                            "ocean_view": 10
+                        }
+                    },
+                    {
+                        "wave": 8,
+                        "guests": 52,
+                        "demand": {
+                            "rooms": 31,
+                            "drinks": 35,
+                            "food": 28,
+                            "relax": 25,
+                            "ocean_view": 16
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

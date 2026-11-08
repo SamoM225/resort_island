@@ -1,0 +1,12 @@
+{
+  "saveVersion": 1,
+  "configVersion": 1,
+  "savedAtUtc": "2026-10-20T12:00:00.0000000Z",
+  "economy": {
+    "coins": 4321,
+    "gems": 37,
+    "energy": 55,
+    "resortValue": 31000,
+    "reputation": 3
+  }
+}
