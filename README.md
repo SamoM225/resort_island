@@ -114,8 +114,18 @@ Návrh udalostí pre metriky z nefunkčných požiadaviek:
 
 ### Herné configy
 
-Počiatočné dáta sú v `backend/database/game-configs/{key}.json` (`economy`, `wave_system`, `energy`, `needs`, `buildings`, `unlocks`, `waves`).
-Zmena configu = upraviť JSON **a zvýšiť `version`**. Pri deployi sa nová verzia pridá, staré ostanú v DB. Ak niekto zmení dáta bez zvýšenia verzie, seed (a tým deploy) zlyhá.
+Zdroj pravdy je databáza; configy sa menia v admin paneli (*Game configs*). Súbory `backend/database/game-configs/{key}.json` (`economy`, `wave_system`, `energy`, `needs`, `buildings`, `unlocks`, `waves`) sú počiatočné dáta: seed zo súboru pridá config, ktorý v DB ešte nie je, alebo verziu vyššiu než má DB. Úpravy z admin panelu nikdy neprepíše (len vypíše, že ponechal verziu z DB).
+
+| | dev (aj lokálne) | prod |
+| --- | --- | --- |
+| Úprava / upload | prepíše aktuálnu verziu, zmeniť sa dá čokoľvek | vytvorí novú verziu |
+| Čo sa smie zmeniť | všetko, aj nové configy | len čísla: celé ostane celým, nezáporné nezáporným; kľúče, dĺžky zoznamov a texty (napr. `id` budov) ostávajú |
+
+Režim určuje `APP_ENV` (`local`/`development` = dev), dá sa prepísať premennou `GAME_CONFIGS_FREE_EDITING=true|false`.
+
+V admin paneli: zoznam najnovších verzií, detail s rozbaľovacím stromom a históriou verzií, úprava v JSON editore (chyby s cestou, napr. `buildings.0.id`), **Download** jedného configu (formát súborov v repe), **Download all** (formát `GET /api/v1/configs`) a **Upload** jedného/viacerých súborov alebo celého „Download all“ — publikuje sa všetko alebo nič.
+
+Wave sim v CI kontroluje len súbory v repe. Zmenu z admin panelu over pred playtestom: *Download all* → `python3 tools/wave_sim/wave_sim.py --configs <stiahnutý súbor>` → *Upload*.
 
 `GET /api/v1/configs` vráti najnovšiu verziu každého configu:
 

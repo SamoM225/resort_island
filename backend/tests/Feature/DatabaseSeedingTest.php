@@ -30,15 +30,32 @@ test('seeding can run on every deploy without duplicating data', function () {
         ->and(User::count())->toBe(1);
 });
 
-test('seeding fails when a published config version was edited in place', function () {
-    GameConfig::factory()->create([
+test('seeding keeps a config changed in the admin panel', function () {
+    $edited = GameConfig::factory()->create([
         'key' => 'economy',
         'version' => gameConfigFileVersions()['economy'],
-        'data' => ['starting_coins' => 1],
+        'data' => ['starting_coins' => 1500],
     ]);
 
     $this->seed(GameConfigSeeder::class);
-})->throws(RuntimeException::class, 'Bump its version');
+
+    expect(GameConfig::query()->where('key', 'economy')->sole()->data)->toBe($edited->data);
+});
+
+test('seeding publishes a config file with a newer version', function () {
+    $directory = storage_path('framework/testing/game-configs-'.uniqid());
+    File::ensureDirectoryExists($directory);
+    File::put("{$directory}/economy.json", json_encode(['version' => 2, 'data' => ['starting_coins' => 2000]]));
+    GameConfig::factory()->create(['key' => 'economy', 'version' => 1, 'data' => ['starting_coins' => 1000]]);
+
+    $seeder = new GameConfigSeeder;
+    $seeder->directory = $directory;
+    $seeder->run();
+    File::deleteDirectory($directory);
+
+    expect(GameConfig::query()->where('key', 'economy')->orderBy('version')->pluck('data', 'version')->all())
+        ->toBe([1 => ['starting_coins' => 1000], 2 => ['starting_coins' => 2000]]);
+});
 
 test('servers get configs but no test user', function () {
     app()->detectEnvironment(fn () => 'production');
