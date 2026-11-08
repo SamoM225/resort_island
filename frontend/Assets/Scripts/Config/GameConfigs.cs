@@ -84,10 +84,10 @@ namespace ResortIsland.Config
 
     public class NeedsConfig
     {
-        public List<NeedConfig> Needs { get; set; }
+        public List<NeedDefinition> Needs { get; set; }
     }
 
-    public class NeedConfig
+    public class NeedDefinition
     {
         public string Id { get; set; }
         public float SatisfactionWeight { get; set; }
@@ -96,7 +96,7 @@ namespace ResortIsland.Config
     public class BuildingsConfig
     {
         public List<BuildingLevelConfig> Levels { get; set; }
-        public List<BuildingConfig> Buildings { get; set; }
+        public List<BuildingDefinition> Buildings { get; set; }
     }
 
     public class BuildingLevelConfig
@@ -106,7 +106,7 @@ namespace ResortIsland.Config
         public int UpgradeCost { get; set; }
     }
 
-    public class BuildingConfig
+    public class BuildingDefinition
     {
         public string Id { get; set; }
         public string Need { get; set; }
