@@ -1,0 +1,933 @@
+fileFormatVersion: 2
+guid: 28514df58c6259a39cc0c197a328c960
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 544209516842808777
+    second: Worker_Receptionist_SE_Idle_0
+  - first:
+      213: 1029560706696730025
+    second: Worker_Receptionist_SE_Idle_1
+  - first:
+      213: 1032746435671987692
+    second: Worker_Receptionist_SE_Walk_0
+  - first:
+      213: 305240378928653647
+    second: Worker_Receptionist_SE_Walk_1
+  - first:
+      213: 993933807221839282
+    second: Worker_Receptionist_SE_Walk_2
+  - first:
+      213: 280557866183714095
+    second: Worker_Receptionist_SE_Walk_3
+  - first:
+      213: 177261615977620872
+    second: Worker_Receptionist_SE_Work_0
+  - first:
+      213: 531640567266473429
+    second: Worker_Receptionist_SE_Work_1
+  - first:
+      213: 443984772217415159
+    second: Worker_Receptionist_SW_Idle_0
+  - first:
+      213: 1152815411631371548
+    second: Worker_Receptionist_SW_Idle_1
+  - first:
+      213: 297779692752963013
+    second: Worker_Receptionist_SW_Walk_0
+  - first:
+      213: 313311957668287758
+    second: Worker_Receptionist_SW_Walk_1
+  - first:
+      213: 414994981951251897
+    second: Worker_Receptionist_SW_Walk_2
+  - first:
+      213: 55093378495350198
+    second: Worker_Receptionist_SW_Walk_3
+  - first:
+      213: 125461613642466758
+    second: Worker_Receptionist_SW_Work_0
+  - first:
+      213: 571604728642245978
+    second: Worker_Receptionist_SW_Work_1
+  - first:
+      213: 506066125591024940
+    second: Worker_Receptionist_NW_Idle_0
+  - first:
+      213: 756661981072242005
+    second: Worker_Receptionist_NW_Idle_1
+  - first:
+      213: 592029906077578541
+    second: Worker_Receptionist_NW_Walk_0
+  - first:
+      213: 755271382910735623
+    second: Worker_Receptionist_NW_Walk_1
+  - first:
+      213: 1043045156507686173
+    second: Worker_Receptionist_NW_Walk_2
+  - first:
+      213: 1065728550966412675
+    second: Worker_Receptionist_NW_Walk_3
+  - first:
+      213: 381355583163798820
+    second: Worker_Receptionist_NW_Work_0
+  - first:
+      213: 276726142851437882
+    second: Worker_Receptionist_NW_Work_1
+  - first:
+      213: 422482856452257043
+    second: Worker_Receptionist_NE_Idle_0
+  - first:
+      213: 95490310228882920
+    second: Worker_Receptionist_NE_Idle_1
+  - first:
+      213: 180247321747109206
+    second: Worker_Receptionist_NE_Walk_0
+  - first:
+      213: 821275963954312450
+    second: Worker_Receptionist_NE_Walk_1
+  - first:
+      213: 415820128452453634
+    second: Worker_Receptionist_NE_Walk_2
+  - first:
+      213: 1140922039777564000
+    second: Worker_Receptionist_NE_Walk_3
+  - first:
+      213: 286767871839868338
+    second: Worker_Receptionist_NE_Work_0
+  - first:
+      213: 820548305389987077
+    second: Worker_Receptionist_NE_Work_1
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 4096
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Worker_Receptionist_SE_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 555
+        width: 276
+        height: 185
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.400000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db06848efa415c7ca7c79ad35bb6568b
+      internalID: 544209516842808777
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Receptionist_SE_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 555
+        width: 276
+        height: 185
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.400000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c03fa73e7f0583eb01817463f1df7dc
+      internalID: 1029560706696730025
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Receptionist_SE_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 555
+        width: 276
+        height: 185
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.400000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3bf7cebb72254f7bc7ed7d048ebf8fd
+      internalID: 1032746435671987692
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Receptionist_SE_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 555
+        width: 276
+        height: 185
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.400000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a272758fc2295c678ca9d8673a80ec93
+      internalID: 305240378928653647
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Receptionist_SE_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 555
+        width: 276
+        height: 185
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.400000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e23bdfee62c35938aa3f8d57adbe36c3
+      internalID: 993933807221839282
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Receptionist_SE_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 555
+        width: 276
+        height: 185
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.400000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e11bb7a6be8f51ab83d5e5704d8af34d
+      internalID: 280557866183714095
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Receptionist_SE_Work_0
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 555
+        width: 276
+        height: 185
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.400000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27387459b25a5a7da45e1a2fb55db910
+      internalID: 177261615977620872
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Receptionist_SE_Work_1
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 555
+        width: 276
+        height: 185
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.400000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f34538e8a72658a4b193fa89076db708
+      internalID: 531640567266473429
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Receptionist_SW_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 370
+        width: 276
+        height: 185
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.400000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf0bb8e8a94c543ea60eeb4105f25f79
+      internalID: 443984772217415159
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Receptionist_SW_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 370
+        width: 276
+        height: 185
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.400000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f34891eb99ca54d08a42e45737282a94
+      internalID: 1152815411631371548
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Receptionist_SW_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 370
+        width: 276
+        height: 185
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.400000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aed3e93c2b0c57c8983e0da49a976fdd
+      internalID: 297779692752963013
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Receptionist_SW_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 370
+        width: 276
+        height: 185
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.400000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e27b609e2da05150883ab34db9951ec8
+      internalID: 313311957668287758
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Receptionist_SW_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 370
+        width: 276
+        height: 185
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.400000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac140e15c3275b0fae7a34075fad498a
+      internalID: 414994981951251897
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Receptionist_SW_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 370
+        width: 276
+        height: 185
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.400000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3760bcb1137052498ecf4935d3539e3a
+      internalID: 55093378495350198
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Receptionist_SW_Work_0
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 370
+        width: 276
+        height: 185
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.400000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4122eaf4122b5d83aff459029395cc16
+      internalID: 125461613642466758
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Receptionist_SW_Work_1
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 370
+        width: 276
+        height: 185
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.400000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5958148c274f5c049044b08c94e70c80
+      internalID: 571604728642245978
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Receptionist_NW_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 185
+        width: 276
+        height: 185
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.400000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c30e3e35c3656c489cc68c35bb02d93
+      internalID: 506066125591024940
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Receptionist_NW_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 185
+        width: 276
+        height: 185
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.400000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 970ef58d1afd554097be93ce2e003b32
+      internalID: 756661981072242005
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Receptionist_NW_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 185
+        width: 276
+        height: 185
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.400000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 879c0dfa950d5aad9a591f934593d8f1
+      internalID: 592029906077578541
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Receptionist_NW_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 185
+        width: 276
+        height: 185
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.400000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 308740888f6c5b5cb005dc25f69094fc
+      internalID: 755271382910735623
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Receptionist_NW_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 185
+        width: 276
+        height: 185
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.400000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae9ae167990d536ea86e93e9027461eb
+      internalID: 1043045156507686173
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Receptionist_NW_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 185
+        width: 276
+        height: 185
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.400000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e3a5d784a845dff8807fa7104496c28
+      internalID: 1065728550966412675
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Receptionist_NW_Work_0
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 185
+        width: 276
+        height: 185
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.400000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09db98d562ec5268a5dd5b3a801982db
+      internalID: 381355583163798820
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Receptionist_NW_Work_1
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 185
+        width: 276
+        height: 185
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.400000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4382f446f1c6508ba219a431d586e93f
+      internalID: 276726142851437882
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Receptionist_NE_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 276
+        height: 185
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.400000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b13edd3d8355e23bde14d1fd0a128b2
+      internalID: 422482856452257043
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Receptionist_NE_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 0
+        width: 276
+        height: 185
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.400000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4dfd09675f6e5f8387e5257cf79068d6
+      internalID: 95490310228882920
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Receptionist_NE_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 0
+        width: 276
+        height: 185
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.400000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0ac5c2c65eb583eb7b1f07cb0e3ad91
+      internalID: 180247321747109206
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Receptionist_NE_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 0
+        width: 276
+        height: 185
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.400000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efff99510e52588fab6a1b276c5b97e3
+      internalID: 821275963954312450
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Receptionist_NE_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 0
+        width: 276
+        height: 185
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.400000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6655387fa8b855778d2cc09aad55b846
+      internalID: 415820128452453634
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Receptionist_NE_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 0
+        width: 276
+        height: 185
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.400000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bae667f470d853ccb8ca282c196282a0
+      internalID: 1140922039777564000
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Receptionist_NE_Work_0
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 0
+        width: 276
+        height: 185
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.400000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0da5416f1e6b5162a81ef07c62901de1
+      internalID: 286767871839868338
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Receptionist_NE_Work_1
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 0
+        width: 276
+        height: 185
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.400000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2c13b44483e5878820d50251ed3d76b
+      internalID: 820548305389987077
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: c0cfef0161125497ba4219e5a90835b4
+    internalID: 0
+    vertices: []
+    indices:
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Worker_Receptionist_SE_Idle_0: 544209516842808777
+      Worker_Receptionist_SE_Idle_1: 1029560706696730025
+      Worker_Receptionist_SE_Walk_0: 1032746435671987692
+      Worker_Receptionist_SE_Walk_1: 305240378928653647
+      Worker_Receptionist_SE_Walk_2: 993933807221839282
+      Worker_Receptionist_SE_Walk_3: 280557866183714095
+      Worker_Receptionist_SE_Work_0: 177261615977620872
+      Worker_Receptionist_SE_Work_1: 531640567266473429
+      Worker_Receptionist_SW_Idle_0: 443984772217415159
+      Worker_Receptionist_SW_Idle_1: 1152815411631371548
+      Worker_Receptionist_SW_Walk_0: 297779692752963013
+      Worker_Receptionist_SW_Walk_1: 313311957668287758
+      Worker_Receptionist_SW_Walk_2: 414994981951251897
+      Worker_Receptionist_SW_Walk_3: 55093378495350198
+      Worker_Receptionist_SW_Work_0: 125461613642466758
+      Worker_Receptionist_SW_Work_1: 571604728642245978
+      Worker_Receptionist_NW_Idle_0: 506066125591024940
+      Worker_Receptionist_NW_Idle_1: 756661981072242005
+      Worker_Receptionist_NW_Walk_0: 592029906077578541
+      Worker_Receptionist_NW_Walk_1: 755271382910735623
+      Worker_Receptionist_NW_Walk_2: 1043045156507686173
+      Worker_Receptionist_NW_Walk_3: 1065728550966412675
+      Worker_Receptionist_NW_Work_0: 381355583163798820
+      Worker_Receptionist_NW_Work_1: 276726142851437882
+      Worker_Receptionist_NE_Idle_0: 422482856452257043
+      Worker_Receptionist_NE_Idle_1: 95490310228882920
+      Worker_Receptionist_NE_Walk_0: 180247321747109206
+      Worker_Receptionist_NE_Walk_1: 821275963954312450
+      Worker_Receptionist_NE_Walk_2: 415820128452453634
+      Worker_Receptionist_NE_Walk_3: 1140922039777564000
+      Worker_Receptionist_NE_Work_0: 286767871839868338
+      Worker_Receptionist_NE_Work_1: 820548305389987077
+  mipmapLimitGroupName:
+  pSDRemoveMatte: 0
+  userData:
+  assetBundleName:
+  assetBundleVariant:

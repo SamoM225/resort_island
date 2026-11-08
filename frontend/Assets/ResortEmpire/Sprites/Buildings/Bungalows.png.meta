@@ -1,0 +1,413 @@
+fileFormatVersion: 2
+guid: 8426d2e96ab7578b8989b97f30501df2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 195415344566814128
+    second: Bungalows_Lv1_R0
+  - first:
+      213: 983725060537185651
+    second: Bungalows_Lv1_R1
+  - first:
+      213: 36775431820047871
+    second: Bungalows_Lv1_R2
+  - first:
+      213: 602006660515280376
+    second: Bungalows_Lv1_R3
+  - first:
+      213: 1052280213305730539
+    second: Bungalows_Lv2_R0
+  - first:
+      213: 120769027963569479
+    second: Bungalows_Lv2_R1
+  - first:
+      213: 261094045540820311
+    second: Bungalows_Lv2_R2
+  - first:
+      213: 284223750798149087
+    second: Bungalows_Lv2_R3
+  - first:
+      213: 139600753527911762
+    second: Bungalows_Lv3_R0
+  - first:
+      213: 44489768691746092
+    second: Bungalows_Lv3_R1
+  - first:
+      213: 1866503163696625
+    second: Bungalows_Lv3_R2
+  - first:
+      213: 791704962486236506
+    second: Bungalows_Lv3_R3
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 4096
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 128
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Bungalows_Lv1_R0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 546
+        width: 429
+        height: 269
+      alignment: 9
+      pivot: {x: 0.461538, y: 0.379182}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4765039dd225f11a61911337edbb15a
+      internalID: 195415344566814128
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bungalows_Lv1_R1
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 546
+        width: 429
+        height: 269
+      alignment: 9
+      pivot: {x: 0.461538, y: 0.379182}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad2dde8bc790564ca71287188e5ef9df
+      internalID: 983725060537185651
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bungalows_Lv1_R2
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 546
+        width: 429
+        height: 205
+      alignment: 9
+      pivot: {x: 0.461538, y: 0.497561}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 453b588128265eeca9256a975b8c9743
+      internalID: 36775431820047871
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bungalows_Lv1_R3
+      rect:
+        serializedVersion: 2
+        x: 1317
+        y: 546
+        width: 396
+        height: 269
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.379182}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 486c9bf50f6e5f089bceba4c5398d40b
+      internalID: 602006660515280376
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bungalows_Lv2_R0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 273
+        width: 429
+        height: 269
+      alignment: 9
+      pivot: {x: 0.461538, y: 0.379182}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e76a786c07e15e80bfe3c575c478d4d3
+      internalID: 1052280213305730539
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bungalows_Lv2_R1
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 273
+        width: 429
+        height: 269
+      alignment: 9
+      pivot: {x: 0.461538, y: 0.379182}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ade036f9a045dd9877dd155fcaca4fd
+      internalID: 120769027963569479
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bungalows_Lv2_R2
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 273
+        width: 429
+        height: 205
+      alignment: 9
+      pivot: {x: 0.461538, y: 0.497561}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64d92f6d5a5c5bbe80d6c2085211da92
+      internalID: 261094045540820311
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bungalows_Lv2_R3
+      rect:
+        serializedVersion: 2
+        x: 1317
+        y: 273
+        width: 396
+        height: 269
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.379182}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 628bb2791dad5bfaa0ef78fe54d7ddb4
+      internalID: 284223750798149087
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bungalows_Lv3_R0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 0
+        width: 429
+        height: 269
+      alignment: 9
+      pivot: {x: 0.461538, y: 0.379182}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea2b820e8d1b57208019ccbf99e643ec
+      internalID: 139600753527911762
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bungalows_Lv3_R1
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 0
+        width: 429
+        height: 269
+      alignment: 9
+      pivot: {x: 0.461538, y: 0.379182}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 872edd7224215219b29b31d083de4db2
+      internalID: 44489768691746092
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bungalows_Lv3_R2
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 0
+        width: 429
+        height: 269
+      alignment: 9
+      pivot: {x: 0.461538, y: 0.379182}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a8c86c7abd45831aab4919771001361
+      internalID: 1866503163696625
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bungalows_Lv3_R3
+      rect:
+        serializedVersion: 2
+        x: 1301
+        y: 0
+        width: 429
+        height: 269
+      alignment: 9
+      pivot: {x: 0.461538, y: 0.379182}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3249949fce265fb59e7c1f4c727be103
+      internalID: 791704962486236506
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: dbd19e71cf33597bae3be71649fb6a3f
+    internalID: 0
+    vertices: []
+    indices:
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Bungalows_Lv1_R0: 195415344566814128
+      Bungalows_Lv1_R1: 983725060537185651
+      Bungalows_Lv1_R2: 36775431820047871
+      Bungalows_Lv1_R3: 602006660515280376
+      Bungalows_Lv2_R0: 1052280213305730539
+      Bungalows_Lv2_R1: 120769027963569479
+      Bungalows_Lv2_R2: 261094045540820311
+      Bungalows_Lv2_R3: 284223750798149087
+      Bungalows_Lv3_R0: 139600753527911762
+      Bungalows_Lv3_R1: 44489768691746092
+      Bungalows_Lv3_R2: 1866503163696625
+      Bungalows_Lv3_R3: 791704962486236506
+  mipmapLimitGroupName:
+  pSDRemoveMatte: 0
+  userData:
+  assetBundleName:
+  assetBundleVariant:

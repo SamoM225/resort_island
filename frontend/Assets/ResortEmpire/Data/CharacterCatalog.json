@@ -1,0 +1,1305 @@
+{
+ "directions": {
+  "SE": "+x",
+  "SW": "+y",
+  "NW": "-x",
+  "NE": "-y"
+ },
+ "pivot": "feet (characters), tail tip (bubbles)",
+ "characterHeightUnits": 0.56,
+ "animations": {
+  "Guest_Tourist": {
+   "Idle": {
+    "frames": 2,
+    "fps": 2,
+    "loop": true
+   },
+   "Walk": {
+    "frames": 4,
+    "fps": 8,
+    "loop": true
+   },
+   "Cheer": {
+    "frames": 2,
+    "fps": 4,
+    "loop": true
+   }
+  },
+  "Guest_Sunhat": {
+   "Idle": {
+    "frames": 2,
+    "fps": 2,
+    "loop": true
+   },
+   "Walk": {
+    "frames": 4,
+    "fps": 8,
+    "loop": true
+   },
+   "Cheer": {
+    "frames": 2,
+    "fps": 4,
+    "loop": true
+   }
+  },
+  "Guest_Backpacker": {
+   "Idle": {
+    "frames": 2,
+    "fps": 2,
+    "loop": true
+   },
+   "Walk": {
+    "frames": 4,
+    "fps": 8,
+    "loop": true
+   },
+   "Cheer": {
+    "frames": 2,
+    "fps": 4,
+    "loop": true
+   }
+  },
+  "Guest_Grandpa": {
+   "Idle": {
+    "frames": 2,
+    "fps": 2,
+    "loop": true
+   },
+   "Walk": {
+    "frames": 4,
+    "fps": 8,
+    "loop": true
+   },
+   "Cheer": {
+    "frames": 2,
+    "fps": 4,
+    "loop": true
+   }
+  },
+  "Guest_Swimmer": {
+   "Idle": {
+    "frames": 2,
+    "fps": 2,
+    "loop": true
+   },
+   "Walk": {
+    "frames": 4,
+    "fps": 8,
+    "loop": true
+   },
+   "Cheer": {
+    "frames": 2,
+    "fps": 4,
+    "loop": true
+   }
+  },
+  "Guest_Striped": {
+   "Idle": {
+    "frames": 2,
+    "fps": 2,
+    "loop": true
+   },
+   "Walk": {
+    "frames": 4,
+    "fps": 8,
+    "loop": true
+   },
+   "Cheer": {
+    "frames": 2,
+    "fps": 4,
+    "loop": true
+   }
+  },
+  "Worker_Staff": {
+   "Idle": {
+    "frames": 2,
+    "fps": 2,
+    "loop": true
+   },
+   "Walk": {
+    "frames": 4,
+    "fps": 8,
+    "loop": true
+   },
+   "Work": {
+    "frames": 2,
+    "fps": 4,
+    "loop": true
+   },
+   "building": null
+  },
+  "Worker_Receptionist": {
+   "Idle": {
+    "frames": 2,
+    "fps": 2,
+    "loop": true
+   },
+   "Walk": {
+    "frames": 4,
+    "fps": 8,
+    "loop": true
+   },
+   "Work": {
+    "frames": 2,
+    "fps": 4,
+    "loop": true
+   },
+   "building": "Reception"
+  },
+  "Worker_Chef": {
+   "Idle": {
+    "frames": 2,
+    "fps": 2,
+    "loop": true
+   },
+   "Walk": {
+    "frames": 4,
+    "fps": 8,
+    "loop": true
+   },
+   "Work": {
+    "frames": 2,
+    "fps": 4,
+    "loop": true
+   },
+   "building": "Restaurant"
+  },
+  "Worker_Bartender": {
+   "Idle": {
+    "frames": 2,
+    "fps": 2,
+    "loop": true
+   },
+   "Walk": {
+    "frames": 4,
+    "fps": 8,
+    "loop": true
+   },
+   "Work": {
+    "frames": 2,
+    "fps": 4,
+    "loop": true
+   },
+   "building": "BeachBar"
+  },
+  "Worker_Lifeguard": {
+   "Idle": {
+    "frames": 2,
+    "fps": 2,
+    "loop": true
+   },
+   "Walk": {
+    "frames": 4,
+    "fps": 8,
+    "loop": true
+   },
+   "Work": {
+    "frames": 2,
+    "fps": 4,
+    "loop": true
+   },
+   "building": "Pool"
+  },
+  "Worker_Housekeeper": {
+   "Idle": {
+    "frames": 2,
+    "fps": 2,
+    "loop": true
+   },
+   "Walk": {
+    "frames": 4,
+    "fps": 8,
+    "loop": true
+   },
+   "Work": {
+    "frames": 2,
+    "fps": 4,
+    "loop": true
+   },
+   "building": "Bungalows"
+  },
+  "VIP_RockKing": {
+   "Idle": {
+    "frames": 2,
+    "fps": 2,
+    "loop": true
+   },
+   "Walk": {
+    "frames": 4,
+    "fps": 8,
+    "loop": true
+   },
+   "Wave": {
+    "frames": 2,
+    "fps": 4,
+    "loop": true
+   }
+  },
+  "VIP_FilmStar": {
+   "Idle": {
+    "frames": 2,
+    "fps": 2,
+    "loop": true
+   },
+   "Walk": {
+    "frames": 4,
+    "fps": 8,
+    "loop": true
+   },
+   "Wave": {
+    "frames": 2,
+    "fps": 4,
+    "loop": true
+   }
+  },
+  "VIP_PopDancer": {
+   "Idle": {
+    "frames": 2,
+    "fps": 2,
+    "loop": true
+   },
+   "Walk": {
+    "frames": 4,
+    "fps": 8,
+    "loop": true
+   },
+   "Wave": {
+    "frames": 2,
+    "fps": 4,
+    "loop": true
+   }
+  },
+  "VIP_Spy": {
+   "Idle": {
+    "frames": 2,
+    "fps": 2,
+    "loop": true
+   },
+   "Walk": {
+    "frames": 4,
+    "fps": 8,
+    "loop": true
+   },
+   "Wave": {
+    "frames": 2,
+    "fps": 4,
+    "loop": true
+   }
+  },
+  "VIP_Professor": {
+   "Idle": {
+    "frames": 2,
+    "fps": 2,
+    "loop": true
+   },
+   "Walk": {
+    "frames": 4,
+    "fps": 8,
+    "loop": true
+   },
+   "Wave": {
+    "frames": 2,
+    "fps": 4,
+    "loop": true
+   }
+  },
+  "VIP_RockSinger": {
+   "Idle": {
+    "frames": 2,
+    "fps": 2,
+    "loop": true
+   },
+   "Walk": {
+    "frames": 4,
+    "fps": 8,
+    "loop": true
+   },
+   "Wave": {
+    "frames": 2,
+    "fps": 4,
+    "loop": true
+   }
+  },
+  "VIP_BellRapper": {
+   "Idle": {
+    "frames": 2,
+    "fps": 2,
+    "loop": true
+   },
+   "Walk": {
+    "frames": 4,
+    "fps": 8,
+    "loop": true
+   },
+   "Wave": {
+    "frames": 2,
+    "fps": 4,
+    "loop": true
+   }
+  },
+  "VIP_SneakerStar": {
+   "Idle": {
+    "frames": 2,
+    "fps": 2,
+    "loop": true
+   },
+   "Walk": {
+    "frames": 4,
+    "fps": 8,
+    "loop": true
+   },
+   "Wave": {
+    "frames": 2,
+    "fps": 4,
+    "loop": true
+   }
+  }
+ },
+ "sheets": [
+  {
+   "path": "Assets/ResortEmpire/Sprites/Characters/Guests/Guest_Tourist.png",
+   "size": [
+    2208,
+    764
+   ],
+   "cell": [
+    276,
+    191
+   ],
+   "pixelsPerUnit": 256,
+   "sprites": [
+    "Guest_Tourist_SE_Idle_0",
+    "Guest_Tourist_SE_Idle_1",
+    "Guest_Tourist_SE_Walk_0",
+    "Guest_Tourist_SE_Walk_1",
+    "Guest_Tourist_SE_Walk_2",
+    "Guest_Tourist_SE_Walk_3",
+    "Guest_Tourist_SE_Cheer_0",
+    "Guest_Tourist_SE_Cheer_1",
+    "Guest_Tourist_SW_Idle_0",
+    "Guest_Tourist_SW_Idle_1",
+    "Guest_Tourist_SW_Walk_0",
+    "Guest_Tourist_SW_Walk_1",
+    "Guest_Tourist_SW_Walk_2",
+    "Guest_Tourist_SW_Walk_3",
+    "Guest_Tourist_SW_Cheer_0",
+    "Guest_Tourist_SW_Cheer_1",
+    "Guest_Tourist_NW_Idle_0",
+    "Guest_Tourist_NW_Idle_1",
+    "Guest_Tourist_NW_Walk_0",
+    "Guest_Tourist_NW_Walk_1",
+    "Guest_Tourist_NW_Walk_2",
+    "Guest_Tourist_NW_Walk_3",
+    "Guest_Tourist_NW_Cheer_0",
+    "Guest_Tourist_NW_Cheer_1",
+    "Guest_Tourist_NE_Idle_0",
+    "Guest_Tourist_NE_Idle_1",
+    "Guest_Tourist_NE_Walk_0",
+    "Guest_Tourist_NE_Walk_1",
+    "Guest_Tourist_NE_Walk_2",
+    "Guest_Tourist_NE_Walk_3",
+    "Guest_Tourist_NE_Cheer_0",
+    "Guest_Tourist_NE_Cheer_1"
+   ]
+  },
+  {
+   "path": "Assets/ResortEmpire/Sprites/Characters/Guests/Guest_Sunhat.png",
+   "size": [
+    2208,
+    780
+   ],
+   "cell": [
+    276,
+    195
+   ],
+   "pixelsPerUnit": 256,
+   "sprites": [
+    "Guest_Sunhat_SE_Idle_0",
+    "Guest_Sunhat_SE_Idle_1",
+    "Guest_Sunhat_SE_Walk_0",
+    "Guest_Sunhat_SE_Walk_1",
+    "Guest_Sunhat_SE_Walk_2",
+    "Guest_Sunhat_SE_Walk_3",
+    "Guest_Sunhat_SE_Cheer_0",
+    "Guest_Sunhat_SE_Cheer_1",
+    "Guest_Sunhat_SW_Idle_0",
+    "Guest_Sunhat_SW_Idle_1",
+    "Guest_Sunhat_SW_Walk_0",
+    "Guest_Sunhat_SW_Walk_1",
+    "Guest_Sunhat_SW_Walk_2",
+    "Guest_Sunhat_SW_Walk_3",
+    "Guest_Sunhat_SW_Cheer_0",
+    "Guest_Sunhat_SW_Cheer_1",
+    "Guest_Sunhat_NW_Idle_0",
+    "Guest_Sunhat_NW_Idle_1",
+    "Guest_Sunhat_NW_Walk_0",
+    "Guest_Sunhat_NW_Walk_1",
+    "Guest_Sunhat_NW_Walk_2",
+    "Guest_Sunhat_NW_Walk_3",
+    "Guest_Sunhat_NW_Cheer_0",
+    "Guest_Sunhat_NW_Cheer_1",
+    "Guest_Sunhat_NE_Idle_0",
+    "Guest_Sunhat_NE_Idle_1",
+    "Guest_Sunhat_NE_Walk_0",
+    "Guest_Sunhat_NE_Walk_1",
+    "Guest_Sunhat_NE_Walk_2",
+    "Guest_Sunhat_NE_Walk_3",
+    "Guest_Sunhat_NE_Cheer_0",
+    "Guest_Sunhat_NE_Cheer_1"
+   ]
+  },
+  {
+   "path": "Assets/ResortEmpire/Sprites/Characters/Guests/Guest_Backpacker.png",
+   "size": [
+    2208,
+    768
+   ],
+   "cell": [
+    276,
+    192
+   ],
+   "pixelsPerUnit": 256,
+   "sprites": [
+    "Guest_Backpacker_SE_Idle_0",
+    "Guest_Backpacker_SE_Idle_1",
+    "Guest_Backpacker_SE_Walk_0",
+    "Guest_Backpacker_SE_Walk_1",
+    "Guest_Backpacker_SE_Walk_2",
+    "Guest_Backpacker_SE_Walk_3",
+    "Guest_Backpacker_SE_Cheer_0",
+    "Guest_Backpacker_SE_Cheer_1",
+    "Guest_Backpacker_SW_Idle_0",
+    "Guest_Backpacker_SW_Idle_1",
+    "Guest_Backpacker_SW_Walk_0",
+    "Guest_Backpacker_SW_Walk_1",
+    "Guest_Backpacker_SW_Walk_2",
+    "Guest_Backpacker_SW_Walk_3",
+    "Guest_Backpacker_SW_Cheer_0",
+    "Guest_Backpacker_SW_Cheer_1",
+    "Guest_Backpacker_NW_Idle_0",
+    "Guest_Backpacker_NW_Idle_1",
+    "Guest_Backpacker_NW_Walk_0",
+    "Guest_Backpacker_NW_Walk_1",
+    "Guest_Backpacker_NW_Walk_2",
+    "Guest_Backpacker_NW_Walk_3",
+    "Guest_Backpacker_NW_Cheer_0",
+    "Guest_Backpacker_NW_Cheer_1",
+    "Guest_Backpacker_NE_Idle_0",
+    "Guest_Backpacker_NE_Idle_1",
+    "Guest_Backpacker_NE_Walk_0",
+    "Guest_Backpacker_NE_Walk_1",
+    "Guest_Backpacker_NE_Walk_2",
+    "Guest_Backpacker_NE_Walk_3",
+    "Guest_Backpacker_NE_Cheer_0",
+    "Guest_Backpacker_NE_Cheer_1"
+   ]
+  },
+  {
+   "path": "Assets/ResortEmpire/Sprites/Characters/Guests/Guest_Grandpa.png",
+   "size": [
+    2208,
+    764
+   ],
+   "cell": [
+    276,
+    191
+   ],
+   "pixelsPerUnit": 256,
+   "sprites": [
+    "Guest_Grandpa_SE_Idle_0",
+    "Guest_Grandpa_SE_Idle_1",
+    "Guest_Grandpa_SE_Walk_0",
+    "Guest_Grandpa_SE_Walk_1",
+    "Guest_Grandpa_SE_Walk_2",
+    "Guest_Grandpa_SE_Walk_3",
+    "Guest_Grandpa_SE_Cheer_0",
+    "Guest_Grandpa_SE_Cheer_1",
+    "Guest_Grandpa_SW_Idle_0",
+    "Guest_Grandpa_SW_Idle_1",
+    "Guest_Grandpa_SW_Walk_0",
+    "Guest_Grandpa_SW_Walk_1",
+    "Guest_Grandpa_SW_Walk_2",
+    "Guest_Grandpa_SW_Walk_3",
+    "Guest_Grandpa_SW_Cheer_0",
+    "Guest_Grandpa_SW_Cheer_1",
+    "Guest_Grandpa_NW_Idle_0",
+    "Guest_Grandpa_NW_Idle_1",
+    "Guest_Grandpa_NW_Walk_0",
+    "Guest_Grandpa_NW_Walk_1",
+    "Guest_Grandpa_NW_Walk_2",
+    "Guest_Grandpa_NW_Walk_3",
+    "Guest_Grandpa_NW_Cheer_0",
+    "Guest_Grandpa_NW_Cheer_1",
+    "Guest_Grandpa_NE_Idle_0",
+    "Guest_Grandpa_NE_Idle_1",
+    "Guest_Grandpa_NE_Walk_0",
+    "Guest_Grandpa_NE_Walk_1",
+    "Guest_Grandpa_NE_Walk_2",
+    "Guest_Grandpa_NE_Walk_3",
+    "Guest_Grandpa_NE_Cheer_0",
+    "Guest_Grandpa_NE_Cheer_1"
+   ]
+  },
+  {
+   "path": "Assets/ResortEmpire/Sprites/Characters/Guests/Guest_Swimmer.png",
+   "size": [
+    2208,
+    784
+   ],
+   "cell": [
+    276,
+    196
+   ],
+   "pixelsPerUnit": 256,
+   "sprites": [
+    "Guest_Swimmer_SE_Idle_0",
+    "Guest_Swimmer_SE_Idle_1",
+    "Guest_Swimmer_SE_Walk_0",
+    "Guest_Swimmer_SE_Walk_1",
+    "Guest_Swimmer_SE_Walk_2",
+    "Guest_Swimmer_SE_Walk_3",
+    "Guest_Swimmer_SE_Cheer_0",
+    "Guest_Swimmer_SE_Cheer_1",
+    "Guest_Swimmer_SW_Idle_0",
+    "Guest_Swimmer_SW_Idle_1",
+    "Guest_Swimmer_SW_Walk_0",
+    "Guest_Swimmer_SW_Walk_1",
+    "Guest_Swimmer_SW_Walk_2",
+    "Guest_Swimmer_SW_Walk_3",
+    "Guest_Swimmer_SW_Cheer_0",
+    "Guest_Swimmer_SW_Cheer_1",
+    "Guest_Swimmer_NW_Idle_0",
+    "Guest_Swimmer_NW_Idle_1",
+    "Guest_Swimmer_NW_Walk_0",
+    "Guest_Swimmer_NW_Walk_1",
+    "Guest_Swimmer_NW_Walk_2",
+    "Guest_Swimmer_NW_Walk_3",
+    "Guest_Swimmer_NW_Cheer_0",
+    "Guest_Swimmer_NW_Cheer_1",
+    "Guest_Swimmer_NE_Idle_0",
+    "Guest_Swimmer_NE_Idle_1",
+    "Guest_Swimmer_NE_Walk_0",
+    "Guest_Swimmer_NE_Walk_1",
+    "Guest_Swimmer_NE_Walk_2",
+    "Guest_Swimmer_NE_Walk_3",
+    "Guest_Swimmer_NE_Cheer_0",
+    "Guest_Swimmer_NE_Cheer_1"
+   ]
+  },
+  {
+   "path": "Assets/ResortEmpire/Sprites/Characters/Guests/Guest_Striped.png",
+   "size": [
+    2208,
+    776
+   ],
+   "cell": [
+    276,
+    194
+   ],
+   "pixelsPerUnit": 256,
+   "sprites": [
+    "Guest_Striped_SE_Idle_0",
+    "Guest_Striped_SE_Idle_1",
+    "Guest_Striped_SE_Walk_0",
+    "Guest_Striped_SE_Walk_1",
+    "Guest_Striped_SE_Walk_2",
+    "Guest_Striped_SE_Walk_3",
+    "Guest_Striped_SE_Cheer_0",
+    "Guest_Striped_SE_Cheer_1",
+    "Guest_Striped_SW_Idle_0",
+    "Guest_Striped_SW_Idle_1",
+    "Guest_Striped_SW_Walk_0",
+    "Guest_Striped_SW_Walk_1",
+    "Guest_Striped_SW_Walk_2",
+    "Guest_Striped_SW_Walk_3",
+    "Guest_Striped_SW_Cheer_0",
+    "Guest_Striped_SW_Cheer_1",
+    "Guest_Striped_NW_Idle_0",
+    "Guest_Striped_NW_Idle_1",
+    "Guest_Striped_NW_Walk_0",
+    "Guest_Striped_NW_Walk_1",
+    "Guest_Striped_NW_Walk_2",
+    "Guest_Striped_NW_Walk_3",
+    "Guest_Striped_NW_Cheer_0",
+    "Guest_Striped_NW_Cheer_1",
+    "Guest_Striped_NE_Idle_0",
+    "Guest_Striped_NE_Idle_1",
+    "Guest_Striped_NE_Walk_0",
+    "Guest_Striped_NE_Walk_1",
+    "Guest_Striped_NE_Walk_2",
+    "Guest_Striped_NE_Walk_3",
+    "Guest_Striped_NE_Cheer_0",
+    "Guest_Striped_NE_Cheer_1"
+   ]
+  },
+  {
+   "path": "Assets/ResortEmpire/Sprites/Characters/Workers/Worker_Staff.png",
+   "size": [
+    2208,
+    740
+   ],
+   "cell": [
+    276,
+    185
+   ],
+   "pixelsPerUnit": 256,
+   "sprites": [
+    "Worker_Staff_SE_Idle_0",
+    "Worker_Staff_SE_Idle_1",
+    "Worker_Staff_SE_Walk_0",
+    "Worker_Staff_SE_Walk_1",
+    "Worker_Staff_SE_Walk_2",
+    "Worker_Staff_SE_Walk_3",
+    "Worker_Staff_SE_Work_0",
+    "Worker_Staff_SE_Work_1",
+    "Worker_Staff_SW_Idle_0",
+    "Worker_Staff_SW_Idle_1",
+    "Worker_Staff_SW_Walk_0",
+    "Worker_Staff_SW_Walk_1",
+    "Worker_Staff_SW_Walk_2",
+    "Worker_Staff_SW_Walk_3",
+    "Worker_Staff_SW_Work_0",
+    "Worker_Staff_SW_Work_1",
+    "Worker_Staff_NW_Idle_0",
+    "Worker_Staff_NW_Idle_1",
+    "Worker_Staff_NW_Walk_0",
+    "Worker_Staff_NW_Walk_1",
+    "Worker_Staff_NW_Walk_2",
+    "Worker_Staff_NW_Walk_3",
+    "Worker_Staff_NW_Work_0",
+    "Worker_Staff_NW_Work_1",
+    "Worker_Staff_NE_Idle_0",
+    "Worker_Staff_NE_Idle_1",
+    "Worker_Staff_NE_Walk_0",
+    "Worker_Staff_NE_Walk_1",
+    "Worker_Staff_NE_Walk_2",
+    "Worker_Staff_NE_Walk_3",
+    "Worker_Staff_NE_Work_0",
+    "Worker_Staff_NE_Work_1"
+   ]
+  },
+  {
+   "path": "Assets/ResortEmpire/Sprites/Characters/Workers/Worker_Receptionist.png",
+   "size": [
+    2208,
+    740
+   ],
+   "cell": [
+    276,
+    185
+   ],
+   "pixelsPerUnit": 256,
+   "sprites": [
+    "Worker_Receptionist_SE_Idle_0",
+    "Worker_Receptionist_SE_Idle_1",
+    "Worker_Receptionist_SE_Walk_0",
+    "Worker_Receptionist_SE_Walk_1",
+    "Worker_Receptionist_SE_Walk_2",
+    "Worker_Receptionist_SE_Walk_3",
+    "Worker_Receptionist_SE_Work_0",
+    "Worker_Receptionist_SE_Work_1",
+    "Worker_Receptionist_SW_Idle_0",
+    "Worker_Receptionist_SW_Idle_1",
+    "Worker_Receptionist_SW_Walk_0",
+    "Worker_Receptionist_SW_Walk_1",
+    "Worker_Receptionist_SW_Walk_2",
+    "Worker_Receptionist_SW_Walk_3",
+    "Worker_Receptionist_SW_Work_0",
+    "Worker_Receptionist_SW_Work_1",
+    "Worker_Receptionist_NW_Idle_0",
+    "Worker_Receptionist_NW_Idle_1",
+    "Worker_Receptionist_NW_Walk_0",
+    "Worker_Receptionist_NW_Walk_1",
+    "Worker_Receptionist_NW_Walk_2",
+    "Worker_Receptionist_NW_Walk_3",
+    "Worker_Receptionist_NW_Work_0",
+    "Worker_Receptionist_NW_Work_1",
+    "Worker_Receptionist_NE_Idle_0",
+    "Worker_Receptionist_NE_Idle_1",
+    "Worker_Receptionist_NE_Walk_0",
+    "Worker_Receptionist_NE_Walk_1",
+    "Worker_Receptionist_NE_Walk_2",
+    "Worker_Receptionist_NE_Walk_3",
+    "Worker_Receptionist_NE_Work_0",
+    "Worker_Receptionist_NE_Work_1"
+   ]
+  },
+  {
+   "path": "Assets/ResortEmpire/Sprites/Characters/Workers/Worker_Chef.png",
+   "size": [
+    2208,
+    808
+   ],
+   "cell": [
+    276,
+    202
+   ],
+   "pixelsPerUnit": 256,
+   "sprites": [
+    "Worker_Chef_SE_Idle_0",
+    "Worker_Chef_SE_Idle_1",
+    "Worker_Chef_SE_Walk_0",
+    "Worker_Chef_SE_Walk_1",
+    "Worker_Chef_SE_Walk_2",
+    "Worker_Chef_SE_Walk_3",
+    "Worker_Chef_SE_Work_0",
+    "Worker_Chef_SE_Work_1",
+    "Worker_Chef_SW_Idle_0",
+    "Worker_Chef_SW_Idle_1",
+    "Worker_Chef_SW_Walk_0",
+    "Worker_Chef_SW_Walk_1",
+    "Worker_Chef_SW_Walk_2",
+    "Worker_Chef_SW_Walk_3",
+    "Worker_Chef_SW_Work_0",
+    "Worker_Chef_SW_Work_1",
+    "Worker_Chef_NW_Idle_0",
+    "Worker_Chef_NW_Idle_1",
+    "Worker_Chef_NW_Walk_0",
+    "Worker_Chef_NW_Walk_1",
+    "Worker_Chef_NW_Walk_2",
+    "Worker_Chef_NW_Walk_3",
+    "Worker_Chef_NW_Work_0",
+    "Worker_Chef_NW_Work_1",
+    "Worker_Chef_NE_Idle_0",
+    "Worker_Chef_NE_Idle_1",
+    "Worker_Chef_NE_Walk_0",
+    "Worker_Chef_NE_Walk_1",
+    "Worker_Chef_NE_Walk_2",
+    "Worker_Chef_NE_Walk_3",
+    "Worker_Chef_NE_Work_0",
+    "Worker_Chef_NE_Work_1"
+   ]
+  },
+  {
+   "path": "Assets/ResortEmpire/Sprites/Characters/Workers/Worker_Bartender.png",
+   "size": [
+    2208,
+    732
+   ],
+   "cell": [
+    276,
+    183
+   ],
+   "pixelsPerUnit": 256,
+   "sprites": [
+    "Worker_Bartender_SE_Idle_0",
+    "Worker_Bartender_SE_Idle_1",
+    "Worker_Bartender_SE_Walk_0",
+    "Worker_Bartender_SE_Walk_1",
+    "Worker_Bartender_SE_Walk_2",
+    "Worker_Bartender_SE_Walk_3",
+    "Worker_Bartender_SE_Work_0",
+    "Worker_Bartender_SE_Work_1",
+    "Worker_Bartender_SW_Idle_0",
+    "Worker_Bartender_SW_Idle_1",
+    "Worker_Bartender_SW_Walk_0",
+    "Worker_Bartender_SW_Walk_1",
+    "Worker_Bartender_SW_Walk_2",
+    "Worker_Bartender_SW_Walk_3",
+    "Worker_Bartender_SW_Work_0",
+    "Worker_Bartender_SW_Work_1",
+    "Worker_Bartender_NW_Idle_0",
+    "Worker_Bartender_NW_Idle_1",
+    "Worker_Bartender_NW_Walk_0",
+    "Worker_Bartender_NW_Walk_1",
+    "Worker_Bartender_NW_Walk_2",
+    "Worker_Bartender_NW_Walk_3",
+    "Worker_Bartender_NW_Work_0",
+    "Worker_Bartender_NW_Work_1",
+    "Worker_Bartender_NE_Idle_0",
+    "Worker_Bartender_NE_Idle_1",
+    "Worker_Bartender_NE_Walk_0",
+    "Worker_Bartender_NE_Walk_1",
+    "Worker_Bartender_NE_Walk_2",
+    "Worker_Bartender_NE_Walk_3",
+    "Worker_Bartender_NE_Work_0",
+    "Worker_Bartender_NE_Work_1"
+   ]
+  },
+  {
+   "path": "Assets/ResortEmpire/Sprites/Characters/Workers/Worker_Lifeguard.png",
+   "size": [
+    2208,
+    748
+   ],
+   "cell": [
+    276,
+    187
+   ],
+   "pixelsPerUnit": 256,
+   "sprites": [
+    "Worker_Lifeguard_SE_Idle_0",
+    "Worker_Lifeguard_SE_Idle_1",
+    "Worker_Lifeguard_SE_Walk_0",
+    "Worker_Lifeguard_SE_Walk_1",
+    "Worker_Lifeguard_SE_Walk_2",
+    "Worker_Lifeguard_SE_Walk_3",
+    "Worker_Lifeguard_SE_Work_0",
+    "Worker_Lifeguard_SE_Work_1",
+    "Worker_Lifeguard_SW_Idle_0",
+    "Worker_Lifeguard_SW_Idle_1",
+    "Worker_Lifeguard_SW_Walk_0",
+    "Worker_Lifeguard_SW_Walk_1",
+    "Worker_Lifeguard_SW_Walk_2",
+    "Worker_Lifeguard_SW_Walk_3",
+    "Worker_Lifeguard_SW_Work_0",
+    "Worker_Lifeguard_SW_Work_1",
+    "Worker_Lifeguard_NW_Idle_0",
+    "Worker_Lifeguard_NW_Idle_1",
+    "Worker_Lifeguard_NW_Walk_0",
+    "Worker_Lifeguard_NW_Walk_1",
+    "Worker_Lifeguard_NW_Walk_2",
+    "Worker_Lifeguard_NW_Walk_3",
+    "Worker_Lifeguard_NW_Work_0",
+    "Worker_Lifeguard_NW_Work_1",
+    "Worker_Lifeguard_NE_Idle_0",
+    "Worker_Lifeguard_NE_Idle_1",
+    "Worker_Lifeguard_NE_Walk_0",
+    "Worker_Lifeguard_NE_Walk_1",
+    "Worker_Lifeguard_NE_Walk_2",
+    "Worker_Lifeguard_NE_Walk_3",
+    "Worker_Lifeguard_NE_Work_0",
+    "Worker_Lifeguard_NE_Work_1"
+   ]
+  },
+  {
+   "path": "Assets/ResortEmpire/Sprites/Characters/Workers/Worker_Housekeeper.png",
+   "size": [
+    2208,
+    768
+   ],
+   "cell": [
+    276,
+    192
+   ],
+   "pixelsPerUnit": 256,
+   "sprites": [
+    "Worker_Housekeeper_SE_Idle_0",
+    "Worker_Housekeeper_SE_Idle_1",
+    "Worker_Housekeeper_SE_Walk_0",
+    "Worker_Housekeeper_SE_Walk_1",
+    "Worker_Housekeeper_SE_Walk_2",
+    "Worker_Housekeeper_SE_Walk_3",
+    "Worker_Housekeeper_SE_Work_0",
+    "Worker_Housekeeper_SE_Work_1",
+    "Worker_Housekeeper_SW_Idle_0",
+    "Worker_Housekeeper_SW_Idle_1",
+    "Worker_Housekeeper_SW_Walk_0",
+    "Worker_Housekeeper_SW_Walk_1",
+    "Worker_Housekeeper_SW_Walk_2",
+    "Worker_Housekeeper_SW_Walk_3",
+    "Worker_Housekeeper_SW_Work_0",
+    "Worker_Housekeeper_SW_Work_1",
+    "Worker_Housekeeper_NW_Idle_0",
+    "Worker_Housekeeper_NW_Idle_1",
+    "Worker_Housekeeper_NW_Walk_0",
+    "Worker_Housekeeper_NW_Walk_1",
+    "Worker_Housekeeper_NW_Walk_2",
+    "Worker_Housekeeper_NW_Walk_3",
+    "Worker_Housekeeper_NW_Work_0",
+    "Worker_Housekeeper_NW_Work_1",
+    "Worker_Housekeeper_NE_Idle_0",
+    "Worker_Housekeeper_NE_Idle_1",
+    "Worker_Housekeeper_NE_Walk_0",
+    "Worker_Housekeeper_NE_Walk_1",
+    "Worker_Housekeeper_NE_Walk_2",
+    "Worker_Housekeeper_NE_Walk_3",
+    "Worker_Housekeeper_NE_Work_0",
+    "Worker_Housekeeper_NE_Work_1"
+   ]
+  },
+  {
+   "path": "Assets/ResortEmpire/Sprites/Characters/VIP/VIP_RockKing.png",
+   "size": [
+    2208,
+    776
+   ],
+   "cell": [
+    276,
+    194
+   ],
+   "pixelsPerUnit": 256,
+   "sprites": [
+    "VIP_RockKing_SE_Idle_0",
+    "VIP_RockKing_SE_Idle_1",
+    "VIP_RockKing_SE_Walk_0",
+    "VIP_RockKing_SE_Walk_1",
+    "VIP_RockKing_SE_Walk_2",
+    "VIP_RockKing_SE_Walk_3",
+    "VIP_RockKing_SE_Wave_0",
+    "VIP_RockKing_SE_Wave_1",
+    "VIP_RockKing_SW_Idle_0",
+    "VIP_RockKing_SW_Idle_1",
+    "VIP_RockKing_SW_Walk_0",
+    "VIP_RockKing_SW_Walk_1",
+    "VIP_RockKing_SW_Walk_2",
+    "VIP_RockKing_SW_Walk_3",
+    "VIP_RockKing_SW_Wave_0",
+    "VIP_RockKing_SW_Wave_1",
+    "VIP_RockKing_NW_Idle_0",
+    "VIP_RockKing_NW_Idle_1",
+    "VIP_RockKing_NW_Walk_0",
+    "VIP_RockKing_NW_Walk_1",
+    "VIP_RockKing_NW_Walk_2",
+    "VIP_RockKing_NW_Walk_3",
+    "VIP_RockKing_NW_Wave_0",
+    "VIP_RockKing_NW_Wave_1",
+    "VIP_RockKing_NE_Idle_0",
+    "VIP_RockKing_NE_Idle_1",
+    "VIP_RockKing_NE_Walk_0",
+    "VIP_RockKing_NE_Walk_1",
+    "VIP_RockKing_NE_Walk_2",
+    "VIP_RockKing_NE_Walk_3",
+    "VIP_RockKing_NE_Wave_0",
+    "VIP_RockKing_NE_Wave_1"
+   ]
+  },
+  {
+   "path": "Assets/ResortEmpire/Sprites/Characters/VIP/VIP_FilmStar.png",
+   "size": [
+    2208,
+    748
+   ],
+   "cell": [
+    276,
+    187
+   ],
+   "pixelsPerUnit": 256,
+   "sprites": [
+    "VIP_FilmStar_SE_Idle_0",
+    "VIP_FilmStar_SE_Idle_1",
+    "VIP_FilmStar_SE_Walk_0",
+    "VIP_FilmStar_SE_Walk_1",
+    "VIP_FilmStar_SE_Walk_2",
+    "VIP_FilmStar_SE_Walk_3",
+    "VIP_FilmStar_SE_Wave_0",
+    "VIP_FilmStar_SE_Wave_1",
+    "VIP_FilmStar_SW_Idle_0",
+    "VIP_FilmStar_SW_Idle_1",
+    "VIP_FilmStar_SW_Walk_0",
+    "VIP_FilmStar_SW_Walk_1",
+    "VIP_FilmStar_SW_Walk_2",
+    "VIP_FilmStar_SW_Walk_3",
+    "VIP_FilmStar_SW_Wave_0",
+    "VIP_FilmStar_SW_Wave_1",
+    "VIP_FilmStar_NW_Idle_0",
+    "VIP_FilmStar_NW_Idle_1",
+    "VIP_FilmStar_NW_Walk_0",
+    "VIP_FilmStar_NW_Walk_1",
+    "VIP_FilmStar_NW_Walk_2",
+    "VIP_FilmStar_NW_Walk_3",
+    "VIP_FilmStar_NW_Wave_0",
+    "VIP_FilmStar_NW_Wave_1",
+    "VIP_FilmStar_NE_Idle_0",
+    "VIP_FilmStar_NE_Idle_1",
+    "VIP_FilmStar_NE_Walk_0",
+    "VIP_FilmStar_NE_Walk_1",
+    "VIP_FilmStar_NE_Walk_2",
+    "VIP_FilmStar_NE_Walk_3",
+    "VIP_FilmStar_NE_Wave_0",
+    "VIP_FilmStar_NE_Wave_1"
+   ]
+  },
+  {
+   "path": "Assets/ResortEmpire/Sprites/Characters/VIP/VIP_PopDancer.png",
+   "size": [
+    2208,
+    764
+   ],
+   "cell": [
+    276,
+    191
+   ],
+   "pixelsPerUnit": 256,
+   "sprites": [
+    "VIP_PopDancer_SE_Idle_0",
+    "VIP_PopDancer_SE_Idle_1",
+    "VIP_PopDancer_SE_Walk_0",
+    "VIP_PopDancer_SE_Walk_1",
+    "VIP_PopDancer_SE_Walk_2",
+    "VIP_PopDancer_SE_Walk_3",
+    "VIP_PopDancer_SE_Wave_0",
+    "VIP_PopDancer_SE_Wave_1",
+    "VIP_PopDancer_SW_Idle_0",
+    "VIP_PopDancer_SW_Idle_1",
+    "VIP_PopDancer_SW_Walk_0",
+    "VIP_PopDancer_SW_Walk_1",
+    "VIP_PopDancer_SW_Walk_2",
+    "VIP_PopDancer_SW_Walk_3",
+    "VIP_PopDancer_SW_Wave_0",
+    "VIP_PopDancer_SW_Wave_1",
+    "VIP_PopDancer_NW_Idle_0",
+    "VIP_PopDancer_NW_Idle_1",
+    "VIP_PopDancer_NW_Walk_0",
+    "VIP_PopDancer_NW_Walk_1",
+    "VIP_PopDancer_NW_Walk_2",
+    "VIP_PopDancer_NW_Walk_3",
+    "VIP_PopDancer_NW_Wave_0",
+    "VIP_PopDancer_NW_Wave_1",
+    "VIP_PopDancer_NE_Idle_0",
+    "VIP_PopDancer_NE_Idle_1",
+    "VIP_PopDancer_NE_Walk_0",
+    "VIP_PopDancer_NE_Walk_1",
+    "VIP_PopDancer_NE_Walk_2",
+    "VIP_PopDancer_NE_Walk_3",
+    "VIP_PopDancer_NE_Wave_0",
+    "VIP_PopDancer_NE_Wave_1"
+   ]
+  },
+  {
+   "path": "Assets/ResortEmpire/Sprites/Characters/VIP/VIP_Spy.png",
+   "size": [
+    2208,
+    756
+   ],
+   "cell": [
+    276,
+    189
+   ],
+   "pixelsPerUnit": 256,
+   "sprites": [
+    "VIP_Spy_SE_Idle_0",
+    "VIP_Spy_SE_Idle_1",
+    "VIP_Spy_SE_Walk_0",
+    "VIP_Spy_SE_Walk_1",
+    "VIP_Spy_SE_Walk_2",
+    "VIP_Spy_SE_Walk_3",
+    "VIP_Spy_SE_Wave_0",
+    "VIP_Spy_SE_Wave_1",
+    "VIP_Spy_SW_Idle_0",
+    "VIP_Spy_SW_Idle_1",
+    "VIP_Spy_SW_Walk_0",
+    "VIP_Spy_SW_Walk_1",
+    "VIP_Spy_SW_Walk_2",
+    "VIP_Spy_SW_Walk_3",
+    "VIP_Spy_SW_Wave_0",
+    "VIP_Spy_SW_Wave_1",
+    "VIP_Spy_NW_Idle_0",
+    "VIP_Spy_NW_Idle_1",
+    "VIP_Spy_NW_Walk_0",
+    "VIP_Spy_NW_Walk_1",
+    "VIP_Spy_NW_Walk_2",
+    "VIP_Spy_NW_Walk_3",
+    "VIP_Spy_NW_Wave_0",
+    "VIP_Spy_NW_Wave_1",
+    "VIP_Spy_NE_Idle_0",
+    "VIP_Spy_NE_Idle_1",
+    "VIP_Spy_NE_Walk_0",
+    "VIP_Spy_NE_Walk_1",
+    "VIP_Spy_NE_Walk_2",
+    "VIP_Spy_NE_Walk_3",
+    "VIP_Spy_NE_Wave_0",
+    "VIP_Spy_NE_Wave_1"
+   ]
+  },
+  {
+   "path": "Assets/ResortEmpire/Sprites/Characters/VIP/VIP_Professor.png",
+   "size": [
+    2208,
+    756
+   ],
+   "cell": [
+    276,
+    189
+   ],
+   "pixelsPerUnit": 256,
+   "sprites": [
+    "VIP_Professor_SE_Idle_0",
+    "VIP_Professor_SE_Idle_1",
+    "VIP_Professor_SE_Walk_0",
+    "VIP_Professor_SE_Walk_1",
+    "VIP_Professor_SE_Walk_2",
+    "VIP_Professor_SE_Walk_3",
+    "VIP_Professor_SE_Wave_0",
+    "VIP_Professor_SE_Wave_1",
+    "VIP_Professor_SW_Idle_0",
+    "VIP_Professor_SW_Idle_1",
+    "VIP_Professor_SW_Walk_0",
+    "VIP_Professor_SW_Walk_1",
+    "VIP_Professor_SW_Walk_2",
+    "VIP_Professor_SW_Walk_3",
+    "VIP_Professor_SW_Wave_0",
+    "VIP_Professor_SW_Wave_1",
+    "VIP_Professor_NW_Idle_0",
+    "VIP_Professor_NW_Idle_1",
+    "VIP_Professor_NW_Walk_0",
+    "VIP_Professor_NW_Walk_1",
+    "VIP_Professor_NW_Walk_2",
+    "VIP_Professor_NW_Walk_3",
+    "VIP_Professor_NW_Wave_0",
+    "VIP_Professor_NW_Wave_1",
+    "VIP_Professor_NE_Idle_0",
+    "VIP_Professor_NE_Idle_1",
+    "VIP_Professor_NE_Walk_0",
+    "VIP_Professor_NE_Walk_1",
+    "VIP_Professor_NE_Walk_2",
+    "VIP_Professor_NE_Walk_3",
+    "VIP_Professor_NE_Wave_0",
+    "VIP_Professor_NE_Wave_1"
+   ]
+  },
+  {
+   "path": "Assets/ResortEmpire/Sprites/Characters/VIP/VIP_RockSinger.png",
+   "size": [
+    2208,
+    744
+   ],
+   "cell": [
+    276,
+    186
+   ],
+   "pixelsPerUnit": 256,
+   "sprites": [
+    "VIP_RockSinger_SE_Idle_0",
+    "VIP_RockSinger_SE_Idle_1",
+    "VIP_RockSinger_SE_Walk_0",
+    "VIP_RockSinger_SE_Walk_1",
+    "VIP_RockSinger_SE_Walk_2",
+    "VIP_RockSinger_SE_Walk_3",
+    "VIP_RockSinger_SE_Wave_0",
+    "VIP_RockSinger_SE_Wave_1",
+    "VIP_RockSinger_SW_Idle_0",
+    "VIP_RockSinger_SW_Idle_1",
+    "VIP_RockSinger_SW_Walk_0",
+    "VIP_RockSinger_SW_Walk_1",
+    "VIP_RockSinger_SW_Walk_2",
+    "VIP_RockSinger_SW_Walk_3",
+    "VIP_RockSinger_SW_Wave_0",
+    "VIP_RockSinger_SW_Wave_1",
+    "VIP_RockSinger_NW_Idle_0",
+    "VIP_RockSinger_NW_Idle_1",
+    "VIP_RockSinger_NW_Walk_0",
+    "VIP_RockSinger_NW_Walk_1",
+    "VIP_RockSinger_NW_Walk_2",
+    "VIP_RockSinger_NW_Walk_3",
+    "VIP_RockSinger_NW_Wave_0",
+    "VIP_RockSinger_NW_Wave_1",
+    "VIP_RockSinger_NE_Idle_0",
+    "VIP_RockSinger_NE_Idle_1",
+    "VIP_RockSinger_NE_Walk_0",
+    "VIP_RockSinger_NE_Walk_1",
+    "VIP_RockSinger_NE_Walk_2",
+    "VIP_RockSinger_NE_Walk_3",
+    "VIP_RockSinger_NE_Wave_0",
+    "VIP_RockSinger_NE_Wave_1"
+   ]
+  },
+  {
+   "path": "Assets/ResortEmpire/Sprites/Characters/VIP/VIP_BellRapper.png",
+   "size": [
+    2208,
+    816
+   ],
+   "cell": [
+    276,
+    204
+   ],
+   "pixelsPerUnit": 256,
+   "sprites": [
+    "VIP_BellRapper_SE_Idle_0",
+    "VIP_BellRapper_SE_Idle_1",
+    "VIP_BellRapper_SE_Walk_0",
+    "VIP_BellRapper_SE_Walk_1",
+    "VIP_BellRapper_SE_Walk_2",
+    "VIP_BellRapper_SE_Walk_3",
+    "VIP_BellRapper_SE_Wave_0",
+    "VIP_BellRapper_SE_Wave_1",
+    "VIP_BellRapper_SW_Idle_0",
+    "VIP_BellRapper_SW_Idle_1",
+    "VIP_BellRapper_SW_Walk_0",
+    "VIP_BellRapper_SW_Walk_1",
+    "VIP_BellRapper_SW_Walk_2",
+    "VIP_BellRapper_SW_Walk_3",
+    "VIP_BellRapper_SW_Wave_0",
+    "VIP_BellRapper_SW_Wave_1",
+    "VIP_BellRapper_NW_Idle_0",
+    "VIP_BellRapper_NW_Idle_1",
+    "VIP_BellRapper_NW_Walk_0",
+    "VIP_BellRapper_NW_Walk_1",
+    "VIP_BellRapper_NW_Walk_2",
+    "VIP_BellRapper_NW_Walk_3",
+    "VIP_BellRapper_NW_Wave_0",
+    "VIP_BellRapper_NW_Wave_1",
+    "VIP_BellRapper_NE_Idle_0",
+    "VIP_BellRapper_NE_Idle_1",
+    "VIP_BellRapper_NE_Walk_0",
+    "VIP_BellRapper_NE_Walk_1",
+    "VIP_BellRapper_NE_Walk_2",
+    "VIP_BellRapper_NE_Walk_3",
+    "VIP_BellRapper_NE_Wave_0",
+    "VIP_BellRapper_NE_Wave_1"
+   ]
+  },
+  {
+   "path": "Assets/ResortEmpire/Sprites/Characters/VIP/VIP_SneakerStar.png",
+   "size": [
+    2208,
+    744
+   ],
+   "cell": [
+    276,
+    186
+   ],
+   "pixelsPerUnit": 256,
+   "sprites": [
+    "VIP_SneakerStar_SE_Idle_0",
+    "VIP_SneakerStar_SE_Idle_1",
+    "VIP_SneakerStar_SE_Walk_0",
+    "VIP_SneakerStar_SE_Walk_1",
+    "VIP_SneakerStar_SE_Walk_2",
+    "VIP_SneakerStar_SE_Walk_3",
+    "VIP_SneakerStar_SE_Wave_0",
+    "VIP_SneakerStar_SE_Wave_1",
+    "VIP_SneakerStar_SW_Idle_0",
+    "VIP_SneakerStar_SW_Idle_1",
+    "VIP_SneakerStar_SW_Walk_0",
+    "VIP_SneakerStar_SW_Walk_1",
+    "VIP_SneakerStar_SW_Walk_2",
+    "VIP_SneakerStar_SW_Walk_3",
+    "VIP_SneakerStar_SW_Wave_0",
+    "VIP_SneakerStar_SW_Wave_1",
+    "VIP_SneakerStar_NW_Idle_0",
+    "VIP_SneakerStar_NW_Idle_1",
+    "VIP_SneakerStar_NW_Walk_0",
+    "VIP_SneakerStar_NW_Walk_1",
+    "VIP_SneakerStar_NW_Walk_2",
+    "VIP_SneakerStar_NW_Walk_3",
+    "VIP_SneakerStar_NW_Wave_0",
+    "VIP_SneakerStar_NW_Wave_1",
+    "VIP_SneakerStar_NE_Idle_0",
+    "VIP_SneakerStar_NE_Idle_1",
+    "VIP_SneakerStar_NE_Walk_0",
+    "VIP_SneakerStar_NE_Walk_1",
+    "VIP_SneakerStar_NE_Walk_2",
+    "VIP_SneakerStar_NE_Walk_3",
+    "VIP_SneakerStar_NE_Wave_0",
+    "VIP_SneakerStar_NE_Wave_1"
+   ]
+  },
+  {
+   "path": "Assets/ResortEmpire/Sprites/Bubbles/Bubbles.png",
+   "size": [
+    816,
+    272
+   ],
+   "cell": [
+    136,
+    136
+   ],
+   "pixelsPerUnit": 320,
+   "sprites": [
+    "Bubble_Alert",
+    "Bubble_Angry",
+    "Bubble_Happy",
+    "Bubble_Love",
+    "Bubble_NeedDrinks",
+    "Bubble_NeedFood",
+    "Bubble_NeedOceanview",
+    "Bubble_NeedRelax",
+    "Bubble_NeedRooms",
+    "Bubble_Vip",
+    "Bubble_Waiting"
+   ]
+  }
+ ]
+}

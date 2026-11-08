@@ -1,0 +1,933 @@
+fileFormatVersion: 2
+guid: 84044792228a5d6f835ac7c4972330e9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 441346735345194473
+    second: Worker_Lifeguard_SE_Idle_0
+  - first:
+      213: 42171702567720416
+    second: Worker_Lifeguard_SE_Idle_1
+  - first:
+      213: 592195529606563175
+    second: Worker_Lifeguard_SE_Walk_0
+  - first:
+      213: 180575242720572811
+    second: Worker_Lifeguard_SE_Walk_1
+  - first:
+      213: 974649715601249545
+    second: Worker_Lifeguard_SE_Walk_2
+  - first:
+      213: 523073913102181852
+    second: Worker_Lifeguard_SE_Walk_3
+  - first:
+      213: 237134497327531479
+    second: Worker_Lifeguard_SE_Work_0
+  - first:
+      213: 881148551247852900
+    second: Worker_Lifeguard_SE_Work_1
+  - first:
+      213: 411882306342454585
+    second: Worker_Lifeguard_SW_Idle_0
+  - first:
+      213: 354035796511835614
+    second: Worker_Lifeguard_SW_Idle_1
+  - first:
+      213: 256746711295366621
+    second: Worker_Lifeguard_SW_Walk_0
+  - first:
+      213: 964297433126090006
+    second: Worker_Lifeguard_SW_Walk_1
+  - first:
+      213: 658923222350321110
+    second: Worker_Lifeguard_SW_Walk_2
+  - first:
+      213: 559230126462477669
+    second: Worker_Lifeguard_SW_Walk_3
+  - first:
+      213: 819922833473549631
+    second: Worker_Lifeguard_SW_Work_0
+  - first:
+      213: 37682479163987452
+    second: Worker_Lifeguard_SW_Work_1
+  - first:
+      213: 78905296005068240
+    second: Worker_Lifeguard_NW_Idle_0
+  - first:
+      213: 870481043649893802
+    second: Worker_Lifeguard_NW_Idle_1
+  - first:
+      213: 460836462698763751
+    second: Worker_Lifeguard_NW_Walk_0
+  - first:
+      213: 878691848606434782
+    second: Worker_Lifeguard_NW_Walk_1
+  - first:
+      213: 33395817316234649
+    second: Worker_Lifeguard_NW_Walk_2
+  - first:
+      213: 731213609976116587
+    second: Worker_Lifeguard_NW_Walk_3
+  - first:
+      213: 804590548048749924
+    second: Worker_Lifeguard_NW_Work_0
+  - first:
+      213: 749998396139091377
+    second: Worker_Lifeguard_NW_Work_1
+  - first:
+      213: 1006973343894742323
+    second: Worker_Lifeguard_NE_Idle_0
+  - first:
+      213: 287963792852399464
+    second: Worker_Lifeguard_NE_Idle_1
+  - first:
+      213: 518092449324103121
+    second: Worker_Lifeguard_NE_Walk_0
+  - first:
+      213: 223879510216426987
+    second: Worker_Lifeguard_NE_Walk_1
+  - first:
+      213: 1072678628030817693
+    second: Worker_Lifeguard_NE_Walk_2
+  - first:
+      213: 1106937904220824922
+    second: Worker_Lifeguard_NE_Walk_3
+  - first:
+      213: 151975905310696841
+    second: Worker_Lifeguard_NE_Work_0
+  - first:
+      213: 568820013060593081
+    second: Worker_Lifeguard_NE_Work_1
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 4096
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Worker_Lifeguard_SE_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 561
+        width: 276
+        height: 187
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.395722}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c81c1e991ad5aaf8672934bd0d22efd
+      internalID: 441346735345194473
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Lifeguard_SE_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 561
+        width: 276
+        height: 187
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.395722}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b509c61c079856b493c6d811053cb2f3
+      internalID: 42171702567720416
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Lifeguard_SE_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 561
+        width: 276
+        height: 187
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.395722}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e950b19cd7f5e00a8bb46ec03d86493
+      internalID: 592195529606563175
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Lifeguard_SE_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 561
+        width: 276
+        height: 187
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.395722}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f1f56b907ad5bfb8259539e77d4cb8b
+      internalID: 180575242720572811
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Lifeguard_SE_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 561
+        width: 276
+        height: 187
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.395722}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ccac03976e55d0e8a2e38a48c4f8db8
+      internalID: 974649715601249545
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Lifeguard_SE_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 561
+        width: 276
+        height: 187
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.395722}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b33a80d42b7c50359680a64c1a366810
+      internalID: 523073913102181852
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Lifeguard_SE_Work_0
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 561
+        width: 276
+        height: 187
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.395722}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26fa44b62593556289bf2cdbfe05fb82
+      internalID: 237134497327531479
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Lifeguard_SE_Work_1
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 561
+        width: 276
+        height: 187
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.395722}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4284f2cb44b55a59de6863015532a2e
+      internalID: 881148551247852900
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Lifeguard_SW_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 374
+        width: 276
+        height: 187
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.395722}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b037de675e38574ba8438a9e979522c0
+      internalID: 411882306342454585
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Lifeguard_SW_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 374
+        width: 276
+        height: 187
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.395722}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0900631360b5b7aa5a903f59568cff8
+      internalID: 354035796511835614
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Lifeguard_SW_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 374
+        width: 276
+        height: 187
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.395722}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41150b04c99d59f8955bcb5e283c27c1
+      internalID: 256746711295366621
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Lifeguard_SW_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 374
+        width: 276
+        height: 187
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.395722}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d0b27e7f0955d09ba8a4b2f4c660ab0
+      internalID: 964297433126090006
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Lifeguard_SW_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 374
+        width: 276
+        height: 187
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.395722}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af09fe3144785ac794750cfc15faf900
+      internalID: 658923222350321110
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Lifeguard_SW_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 374
+        width: 276
+        height: 187
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.395722}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe06a1bc3c7a53e6b88d10eb143af7af
+      internalID: 559230126462477669
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Lifeguard_SW_Work_0
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 374
+        width: 276
+        height: 187
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.395722}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4700fc60bc855a3be08797e416fd228
+      internalID: 819922833473549631
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Lifeguard_SW_Work_1
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 374
+        width: 276
+        height: 187
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.395722}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22bcd0527d3354c5a577e2d830b2fe2a
+      internalID: 37682479163987452
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Lifeguard_NW_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 187
+        width: 276
+        height: 187
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.395722}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae19215cf2645009941c2f7f020c8447
+      internalID: 78905296005068240
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Lifeguard_NW_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 187
+        width: 276
+        height: 187
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.395722}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6628e0385b858ea8a518ce61b949f00
+      internalID: 870481043649893802
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Lifeguard_NW_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 187
+        width: 276
+        height: 187
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.395722}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3167d39b46ef5d30a904a7f96f706327
+      internalID: 460836462698763751
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Lifeguard_NW_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 187
+        width: 276
+        height: 187
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.395722}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbab294bfb8354cb949431adf9b464fa
+      internalID: 878691848606434782
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Lifeguard_NW_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 187
+        width: 276
+        height: 187
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.395722}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cf2c46683a7580094b3f1638cd0744d
+      internalID: 33395817316234649
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Lifeguard_NW_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 187
+        width: 276
+        height: 187
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.395722}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af2a09a7de6557da9a422807da0ad24f
+      internalID: 731213609976116587
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Lifeguard_NW_Work_0
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 187
+        width: 276
+        height: 187
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.395722}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94a12664ecfa5c299a152b1623603d11
+      internalID: 804590548048749924
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Lifeguard_NW_Work_1
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 187
+        width: 276
+        height: 187
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.395722}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6567a48badfd539f808f6a2dfe803e0b
+      internalID: 749998396139091377
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Lifeguard_NE_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 276
+        height: 187
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.395722}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff2d9d6d7952580eb660f88223b730f1
+      internalID: 1006973343894742323
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Lifeguard_NE_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 0
+        width: 276
+        height: 187
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.395722}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c72d32c50455b0d82eb83086379699d
+      internalID: 287963792852399464
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Lifeguard_NE_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 0
+        width: 276
+        height: 187
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.395722}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 856aa8a587555d6d9a3fdea322f6d854
+      internalID: 518092449324103121
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Lifeguard_NE_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 0
+        width: 276
+        height: 187
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.395722}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20793264277e51c5989dc39d179f5843
+      internalID: 223879510216426987
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Lifeguard_NE_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 0
+        width: 276
+        height: 187
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.395722}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fddc8528d57b53968babf06235e645e4
+      internalID: 1072678628030817693
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Lifeguard_NE_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 0
+        width: 276
+        height: 187
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.395722}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4668f72054e45ad28ecfab44b5e9884f
+      internalID: 1106937904220824922
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Lifeguard_NE_Work_0
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 0
+        width: 276
+        height: 187
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.395722}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a4cad36b61f58619a8a53867f41ea7e
+      internalID: 151975905310696841
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Lifeguard_NE_Work_1
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 0
+        width: 276
+        height: 187
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.395722}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46191be14df850d1956bb3e00ff1f04f
+      internalID: 568820013060593081
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: fe798978d8985a359d6a61fb04be47b7
+    internalID: 0
+    vertices: []
+    indices:
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Worker_Lifeguard_SE_Idle_0: 441346735345194473
+      Worker_Lifeguard_SE_Idle_1: 42171702567720416
+      Worker_Lifeguard_SE_Walk_0: 592195529606563175
+      Worker_Lifeguard_SE_Walk_1: 180575242720572811
+      Worker_Lifeguard_SE_Walk_2: 974649715601249545
+      Worker_Lifeguard_SE_Walk_3: 523073913102181852
+      Worker_Lifeguard_SE_Work_0: 237134497327531479
+      Worker_Lifeguard_SE_Work_1: 881148551247852900
+      Worker_Lifeguard_SW_Idle_0: 411882306342454585
+      Worker_Lifeguard_SW_Idle_1: 354035796511835614
+      Worker_Lifeguard_SW_Walk_0: 256746711295366621
+      Worker_Lifeguard_SW_Walk_1: 964297433126090006
+      Worker_Lifeguard_SW_Walk_2: 658923222350321110
+      Worker_Lifeguard_SW_Walk_3: 559230126462477669
+      Worker_Lifeguard_SW_Work_0: 819922833473549631
+      Worker_Lifeguard_SW_Work_1: 37682479163987452
+      Worker_Lifeguard_NW_Idle_0: 78905296005068240
+      Worker_Lifeguard_NW_Idle_1: 870481043649893802
+      Worker_Lifeguard_NW_Walk_0: 460836462698763751
+      Worker_Lifeguard_NW_Walk_1: 878691848606434782
+      Worker_Lifeguard_NW_Walk_2: 33395817316234649
+      Worker_Lifeguard_NW_Walk_3: 731213609976116587
+      Worker_Lifeguard_NW_Work_0: 804590548048749924
+      Worker_Lifeguard_NW_Work_1: 749998396139091377
+      Worker_Lifeguard_NE_Idle_0: 1006973343894742323
+      Worker_Lifeguard_NE_Idle_1: 287963792852399464
+      Worker_Lifeguard_NE_Walk_0: 518092449324103121
+      Worker_Lifeguard_NE_Walk_1: 223879510216426987
+      Worker_Lifeguard_NE_Walk_2: 1072678628030817693
+      Worker_Lifeguard_NE_Walk_3: 1106937904220824922
+      Worker_Lifeguard_NE_Work_0: 151975905310696841
+      Worker_Lifeguard_NE_Work_1: 568820013060593081
+  mipmapLimitGroupName:
+  pSDRemoveMatte: 0
+  userData:
+  assetBundleName:
+  assetBundleVariant:

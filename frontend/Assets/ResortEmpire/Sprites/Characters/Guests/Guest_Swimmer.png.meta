@@ -1,0 +1,933 @@
+fileFormatVersion: 2
+guid: 77e1279d42795a52b42eec6870b3b756
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 664583346172843368
+    second: Guest_Swimmer_SE_Idle_0
+  - first:
+      213: 71135398234375643
+    second: Guest_Swimmer_SE_Idle_1
+  - first:
+      213: 50980595649865104
+    second: Guest_Swimmer_SE_Walk_0
+  - first:
+      213: 397079435557557703
+    second: Guest_Swimmer_SE_Walk_1
+  - first:
+      213: 892920411330336219
+    second: Guest_Swimmer_SE_Walk_2
+  - first:
+      213: 256370483277706674
+    second: Guest_Swimmer_SE_Walk_3
+  - first:
+      213: 710342914877842748
+    second: Guest_Swimmer_SE_Cheer_0
+  - first:
+      213: 70405406807246170
+    second: Guest_Swimmer_SE_Cheer_1
+  - first:
+      213: 219443611442296121
+    second: Guest_Swimmer_SW_Idle_0
+  - first:
+      213: 533438191221278151
+    second: Guest_Swimmer_SW_Idle_1
+  - first:
+      213: 489095186517435836
+    second: Guest_Swimmer_SW_Walk_0
+  - first:
+      213: 706862121421870407
+    second: Guest_Swimmer_SW_Walk_1
+  - first:
+      213: 464191342361523705
+    second: Guest_Swimmer_SW_Walk_2
+  - first:
+      213: 68421858813191500
+    second: Guest_Swimmer_SW_Walk_3
+  - first:
+      213: 341914943949784538
+    second: Guest_Swimmer_SW_Cheer_0
+  - first:
+      213: 484703536280790284
+    second: Guest_Swimmer_SW_Cheer_1
+  - first:
+      213: 468455947184154014
+    second: Guest_Swimmer_NW_Idle_0
+  - first:
+      213: 1011825183931823409
+    second: Guest_Swimmer_NW_Idle_1
+  - first:
+      213: 281358948471477517
+    second: Guest_Swimmer_NW_Walk_0
+  - first:
+      213: 480936941177603509
+    second: Guest_Swimmer_NW_Walk_1
+  - first:
+      213: 343319562894620105
+    second: Guest_Swimmer_NW_Walk_2
+  - first:
+      213: 783804718214305198
+    second: Guest_Swimmer_NW_Walk_3
+  - first:
+      213: 25011108498056508
+    second: Guest_Swimmer_NW_Cheer_0
+  - first:
+      213: 218666275976152529
+    second: Guest_Swimmer_NW_Cheer_1
+  - first:
+      213: 242309036954625417
+    second: Guest_Swimmer_NE_Idle_0
+  - first:
+      213: 79364994789623242
+    second: Guest_Swimmer_NE_Idle_1
+  - first:
+      213: 662916023646041564
+    second: Guest_Swimmer_NE_Walk_0
+  - first:
+      213: 772451926309012741
+    second: Guest_Swimmer_NE_Walk_1
+  - first:
+      213: 607232085505062238
+    second: Guest_Swimmer_NE_Walk_2
+  - first:
+      213: 576703430940800359
+    second: Guest_Swimmer_NE_Walk_3
+  - first:
+      213: 228863663191962942
+    second: Guest_Swimmer_NE_Cheer_0
+  - first:
+      213: 83792856573752762
+    second: Guest_Swimmer_NE_Cheer_1
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 4096
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Guest_Swimmer_SE_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 588
+        width: 276
+        height: 196
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.377551}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5cb4d867879522e912856f4350fc990
+      internalID: 664583346172843368
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Swimmer_SE_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 588
+        width: 276
+        height: 196
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.377551}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ed10c69a67358fba8d22c083269517a
+      internalID: 71135398234375643
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Swimmer_SE_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 588
+        width: 276
+        height: 196
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.377551}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4769fa89e08d540788af494a0d57b8d9
+      internalID: 50980595649865104
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Swimmer_SE_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 588
+        width: 276
+        height: 196
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.377551}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71d99db886aa536fb9816a47593d2efb
+      internalID: 397079435557557703
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Swimmer_SE_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 588
+        width: 276
+        height: 196
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.377551}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e249b279cfe5fdea25c0ec930ce232e
+      internalID: 892920411330336219
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Swimmer_SE_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 588
+        width: 276
+        height: 196
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.377551}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c9ecc44e9a052f0979ea4dc3e22cd82
+      internalID: 256370483277706674
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Swimmer_SE_Cheer_0
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 588
+        width: 276
+        height: 196
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.377551}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53ea460bd25056e89e50822f68adb2b5
+      internalID: 710342914877842748
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Swimmer_SE_Cheer_1
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 588
+        width: 276
+        height: 196
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.377551}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcf4ded5cac058539d49cea1bc03d510
+      internalID: 70405406807246170
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Swimmer_SW_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 392
+        width: 276
+        height: 196
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.377551}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e24c5846d565458b25e481b3af6e608
+      internalID: 219443611442296121
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Swimmer_SW_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 392
+        width: 276
+        height: 196
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.377551}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e39b9eaef9f45d73b93f047d99481058
+      internalID: 533438191221278151
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Swimmer_SW_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 392
+        width: 276
+        height: 196
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.377551}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e0910b6071e5824a71910b704dfe7da
+      internalID: 489095186517435836
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Swimmer_SW_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 392
+        width: 276
+        height: 196
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.377551}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e53a95039f0e583fa61e0fc839199b68
+      internalID: 706862121421870407
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Swimmer_SW_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 392
+        width: 276
+        height: 196
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.377551}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6d1b3c048af5dc0aa092f5b4559f3c3
+      internalID: 464191342361523705
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Swimmer_SW_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 392
+        width: 276
+        height: 196
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.377551}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4492dab5b565ac8822f13811d84000e
+      internalID: 68421858813191500
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Swimmer_SW_Cheer_0
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 392
+        width: 276
+        height: 196
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.377551}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25b36d18758d5cc39a9841607df83268
+      internalID: 341914943949784538
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Swimmer_SW_Cheer_1
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 392
+        width: 276
+        height: 196
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.377551}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7badea6922ee5bc0887ec57e1db10178
+      internalID: 484703536280790284
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Swimmer_NW_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 196
+        width: 276
+        height: 196
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.377551}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f33fab02a6ec5677879ebd9f80cf7dbb
+      internalID: 468455947184154014
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Swimmer_NW_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 196
+        width: 276
+        height: 196
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.377551}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b7b757f7ca1532ba9cc19e32284f018
+      internalID: 1011825183931823409
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Swimmer_NW_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 196
+        width: 276
+        height: 196
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.377551}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85334a3ad8fb5b27960b938c5765b178
+      internalID: 281358948471477517
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Swimmer_NW_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 196
+        width: 276
+        height: 196
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.377551}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42a52c1d6b54501e97aa0a67d95049b3
+      internalID: 480936941177603509
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Swimmer_NW_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 196
+        width: 276
+        height: 196
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.377551}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5574a229c6dc527e90795a09a00c8337
+      internalID: 343319562894620105
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Swimmer_NW_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 196
+        width: 276
+        height: 196
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.377551}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b1783a873ee5ba2bf6cbb33d9fbfc47
+      internalID: 783804718214305198
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Swimmer_NW_Cheer_0
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 196
+        width: 276
+        height: 196
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.377551}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce9953c972a058ac96e5813efd051a53
+      internalID: 25011108498056508
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Swimmer_NW_Cheer_1
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 196
+        width: 276
+        height: 196
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.377551}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edc7257c17f15a64a6a074aabcc7382c
+      internalID: 218666275976152529
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Swimmer_NE_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 276
+        height: 196
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.377551}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34aa03197861591aa21cac22f410b2d8
+      internalID: 242309036954625417
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Swimmer_NE_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 0
+        width: 276
+        height: 196
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.377551}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dcd1f782b1f55bb8b3e8d7905dee1c7
+      internalID: 79364994789623242
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Swimmer_NE_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 0
+        width: 276
+        height: 196
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.377551}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fc988a0bd245cc2a224bc304cac4756
+      internalID: 662916023646041564
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Swimmer_NE_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 0
+        width: 276
+        height: 196
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.377551}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8981662505aa5fa194b6f4f6ea82d659
+      internalID: 772451926309012741
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Swimmer_NE_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 0
+        width: 276
+        height: 196
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.377551}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11a3cdf6510b5eb6b12a01de77564c64
+      internalID: 607232085505062238
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Swimmer_NE_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 0
+        width: 276
+        height: 196
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.377551}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea6eec6175775a769a20af6c6efbb29b
+      internalID: 576703430940800359
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Swimmer_NE_Cheer_0
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 0
+        width: 276
+        height: 196
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.377551}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be1e1ea9a51150e3860cf0b70437769e
+      internalID: 228863663191962942
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Swimmer_NE_Cheer_1
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 0
+        width: 276
+        height: 196
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.377551}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b57abf2e734a5745a20b23178a151910
+      internalID: 83792856573752762
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 93068c45416e5e099e26ecf85c7bd532
+    internalID: 0
+    vertices: []
+    indices:
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Guest_Swimmer_SE_Idle_0: 664583346172843368
+      Guest_Swimmer_SE_Idle_1: 71135398234375643
+      Guest_Swimmer_SE_Walk_0: 50980595649865104
+      Guest_Swimmer_SE_Walk_1: 397079435557557703
+      Guest_Swimmer_SE_Walk_2: 892920411330336219
+      Guest_Swimmer_SE_Walk_3: 256370483277706674
+      Guest_Swimmer_SE_Cheer_0: 710342914877842748
+      Guest_Swimmer_SE_Cheer_1: 70405406807246170
+      Guest_Swimmer_SW_Idle_0: 219443611442296121
+      Guest_Swimmer_SW_Idle_1: 533438191221278151
+      Guest_Swimmer_SW_Walk_0: 489095186517435836
+      Guest_Swimmer_SW_Walk_1: 706862121421870407
+      Guest_Swimmer_SW_Walk_2: 464191342361523705
+      Guest_Swimmer_SW_Walk_3: 68421858813191500
+      Guest_Swimmer_SW_Cheer_0: 341914943949784538
+      Guest_Swimmer_SW_Cheer_1: 484703536280790284
+      Guest_Swimmer_NW_Idle_0: 468455947184154014
+      Guest_Swimmer_NW_Idle_1: 1011825183931823409
+      Guest_Swimmer_NW_Walk_0: 281358948471477517
+      Guest_Swimmer_NW_Walk_1: 480936941177603509
+      Guest_Swimmer_NW_Walk_2: 343319562894620105
+      Guest_Swimmer_NW_Walk_3: 783804718214305198
+      Guest_Swimmer_NW_Cheer_0: 25011108498056508
+      Guest_Swimmer_NW_Cheer_1: 218666275976152529
+      Guest_Swimmer_NE_Idle_0: 242309036954625417
+      Guest_Swimmer_NE_Idle_1: 79364994789623242
+      Guest_Swimmer_NE_Walk_0: 662916023646041564
+      Guest_Swimmer_NE_Walk_1: 772451926309012741
+      Guest_Swimmer_NE_Walk_2: 607232085505062238
+      Guest_Swimmer_NE_Walk_3: 576703430940800359
+      Guest_Swimmer_NE_Cheer_0: 228863663191962942
+      Guest_Swimmer_NE_Cheer_1: 83792856573752762
+  mipmapLimitGroupName:
+  pSDRemoveMatte: 0
+  userData:
+  assetBundleName:
+  assetBundleVariant:

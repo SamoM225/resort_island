@@ -1,0 +1,157 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &54141917371313809
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 27280236395906198}
+  - component: {fileID: 56108697840442902}
+  - component: {fileID: 16380353218056264}
+  - component: {fileID: 65641183193929402}
+  m_Layer: 0
+  m_Name: Guest_Backpacker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &27280236395906198
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 54141917371313809}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &56108697840442902
+SpriteRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 54141917371313809}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_Sprite: {fileID: 1071600262670505409, guid: 61688ce3f8c6561581ebce1e94fcd3a4, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_SpriteSortPoint: 0
+--- !u!114 &16380353218056264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 54141917371313809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d601f62389c0cb68bdb4c468e4143c6, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: ResortIsland::ResortIsland.Characters.CharacterView
+  frames:
+  - {fileID: 1071600262670505409, guid: 61688ce3f8c6561581ebce1e94fcd3a4, type: 3}
+  - {fileID: 123047559721289125, guid: 61688ce3f8c6561581ebce1e94fcd3a4, type: 3}
+  - {fileID: 889144589783717316, guid: 61688ce3f8c6561581ebce1e94fcd3a4, type: 3}
+  - {fileID: 1098511680328758692, guid: 61688ce3f8c6561581ebce1e94fcd3a4, type: 3}
+  - {fileID: 89659177598940482, guid: 61688ce3f8c6561581ebce1e94fcd3a4, type: 3}
+  - {fileID: 140119375067014550, guid: 61688ce3f8c6561581ebce1e94fcd3a4, type: 3}
+  - {fileID: 249196925877351704, guid: 61688ce3f8c6561581ebce1e94fcd3a4, type: 3}
+  - {fileID: 732080540809807309, guid: 61688ce3f8c6561581ebce1e94fcd3a4, type: 3}
+  - {fileID: 915236325518677273, guid: 61688ce3f8c6561581ebce1e94fcd3a4, type: 3}
+  - {fileID: 986064155223729663, guid: 61688ce3f8c6561581ebce1e94fcd3a4, type: 3}
+  - {fileID: 866814358650426709, guid: 61688ce3f8c6561581ebce1e94fcd3a4, type: 3}
+  - {fileID: 775252113836553645, guid: 61688ce3f8c6561581ebce1e94fcd3a4, type: 3}
+  - {fileID: 228819461205419411, guid: 61688ce3f8c6561581ebce1e94fcd3a4, type: 3}
+  - {fileID: 692713848271652176, guid: 61688ce3f8c6561581ebce1e94fcd3a4, type: 3}
+  - {fileID: 397426762591327489, guid: 61688ce3f8c6561581ebce1e94fcd3a4, type: 3}
+  - {fileID: 305279145644311820, guid: 61688ce3f8c6561581ebce1e94fcd3a4, type: 3}
+  - {fileID: 392423025803117923, guid: 61688ce3f8c6561581ebce1e94fcd3a4, type: 3}
+  - {fileID: 256125780738131413, guid: 61688ce3f8c6561581ebce1e94fcd3a4, type: 3}
+  - {fileID: 1013375181394474343, guid: 61688ce3f8c6561581ebce1e94fcd3a4, type: 3}
+  - {fileID: 21545474496296223, guid: 61688ce3f8c6561581ebce1e94fcd3a4, type: 3}
+  - {fileID: 607291646507062536, guid: 61688ce3f8c6561581ebce1e94fcd3a4, type: 3}
+  - {fileID: 928067231091127571, guid: 61688ce3f8c6561581ebce1e94fcd3a4, type: 3}
+  - {fileID: 382438377047979506, guid: 61688ce3f8c6561581ebce1e94fcd3a4, type: 3}
+  - {fileID: 395193831008105776, guid: 61688ce3f8c6561581ebce1e94fcd3a4, type: 3}
+  - {fileID: 20296221066261916, guid: 61688ce3f8c6561581ebce1e94fcd3a4, type: 3}
+  - {fileID: 203175879802357217, guid: 61688ce3f8c6561581ebce1e94fcd3a4, type: 3}
+  - {fileID: 700407910412785008, guid: 61688ce3f8c6561581ebce1e94fcd3a4, type: 3}
+  - {fileID: 63995278957905385, guid: 61688ce3f8c6561581ebce1e94fcd3a4, type: 3}
+  - {fileID: 56985331190637838, guid: 61688ce3f8c6561581ebce1e94fcd3a4, type: 3}
+  - {fileID: 710089812762830140, guid: 61688ce3f8c6561581ebce1e94fcd3a4, type: 3}
+  - {fileID: 987889896447620491, guid: 61688ce3f8c6561581ebce1e94fcd3a4, type: 3}
+  - {fileID: 1116356497796896247, guid: 61688ce3f8c6561581ebce1e94fcd3a4, type: 3}
+  idleFps: 2
+  walkFps: 8
+  actionFps: 4
+--- !u!114 &65641183193929402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 54141917371313809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbfc8975fbf7bbb780f9e03cc66bfc22, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: ResortIsland::ResortIsland.Characters.CharacterWander
+  speed: 0.6
+  restSeconds: {x: 0.5, y: 2.5}

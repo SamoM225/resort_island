@@ -1,0 +1,933 @@
+fileFormatVersion: 2
+guid: 9a7c960eddfd5a6dac23caa4719d5d0e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 745679511681930679
+    second: Guest_Sunhat_SE_Idle_0
+  - first:
+      213: 145388144778847545
+    second: Guest_Sunhat_SE_Idle_1
+  - first:
+      213: 345871921331279208
+    second: Guest_Sunhat_SE_Walk_0
+  - first:
+      213: 424326961119163824
+    second: Guest_Sunhat_SE_Walk_1
+  - first:
+      213: 787456185075578354
+    second: Guest_Sunhat_SE_Walk_2
+  - first:
+      213: 899668405542163861
+    second: Guest_Sunhat_SE_Walk_3
+  - first:
+      213: 452070804740322784
+    second: Guest_Sunhat_SE_Cheer_0
+  - first:
+      213: 783067233777730817
+    second: Guest_Sunhat_SE_Cheer_1
+  - first:
+      213: 984610654078235993
+    second: Guest_Sunhat_SW_Idle_0
+  - first:
+      213: 736135614982247913
+    second: Guest_Sunhat_SW_Idle_1
+  - first:
+      213: 969532595034822029
+    second: Guest_Sunhat_SW_Walk_0
+  - first:
+      213: 645084736898373079
+    second: Guest_Sunhat_SW_Walk_1
+  - first:
+      213: 1058898599988991363
+    second: Guest_Sunhat_SW_Walk_2
+  - first:
+      213: 886792075006973307
+    second: Guest_Sunhat_SW_Walk_3
+  - first:
+      213: 1076556101054612769
+    second: Guest_Sunhat_SW_Cheer_0
+  - first:
+      213: 133485507618288992
+    second: Guest_Sunhat_SW_Cheer_1
+  - first:
+      213: 729629273405810137
+    second: Guest_Sunhat_NW_Idle_0
+  - first:
+      213: 816339301153854973
+    second: Guest_Sunhat_NW_Idle_1
+  - first:
+      213: 135562678643393852
+    second: Guest_Sunhat_NW_Walk_0
+  - first:
+      213: 714666923888923982
+    second: Guest_Sunhat_NW_Walk_1
+  - first:
+      213: 1014253504200373713
+    second: Guest_Sunhat_NW_Walk_2
+  - first:
+      213: 746192577009780152
+    second: Guest_Sunhat_NW_Walk_3
+  - first:
+      213: 852086636608226805
+    second: Guest_Sunhat_NW_Cheer_0
+  - first:
+      213: 417297519643501872
+    second: Guest_Sunhat_NW_Cheer_1
+  - first:
+      213: 714384526980810185
+    second: Guest_Sunhat_NE_Idle_0
+  - first:
+      213: 344762444100797905
+    second: Guest_Sunhat_NE_Idle_1
+  - first:
+      213: 1076944773753308554
+    second: Guest_Sunhat_NE_Walk_0
+  - first:
+      213: 216488569669621105
+    second: Guest_Sunhat_NE_Walk_1
+  - first:
+      213: 361214398565283273
+    second: Guest_Sunhat_NE_Walk_2
+  - first:
+      213: 546207895124354507
+    second: Guest_Sunhat_NE_Walk_3
+  - first:
+      213: 1021266280977438180
+    second: Guest_Sunhat_NE_Cheer_0
+  - first:
+      213: 35664686339908897
+    second: Guest_Sunhat_NE_Cheer_1
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 4096
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Guest_Sunhat_SE_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 585
+        width: 276
+        height: 195
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.379487}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2a32778be5f5ad8bac9f993c7e42659
+      internalID: 745679511681930679
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Sunhat_SE_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 585
+        width: 276
+        height: 195
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.379487}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ad44fd9f37056eba593ad74d0e6351e
+      internalID: 145388144778847545
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Sunhat_SE_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 585
+        width: 276
+        height: 195
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.379487}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3e8d1220086519d8b53ba3a1654a764
+      internalID: 345871921331279208
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Sunhat_SE_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 585
+        width: 276
+        height: 195
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.379487}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe34d697b4e15db2b3a35a785c17330d
+      internalID: 424326961119163824
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Sunhat_SE_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 585
+        width: 276
+        height: 195
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.379487}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d9ff78247b45df88cd93cfed677e605
+      internalID: 787456185075578354
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Sunhat_SE_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 585
+        width: 276
+        height: 195
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.379487}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ae162e7d2a3573dbab2446c0df9b331
+      internalID: 899668405542163861
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Sunhat_SE_Cheer_0
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 585
+        width: 276
+        height: 195
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.379487}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0063bcfa7e885453944bdbec7845e866
+      internalID: 452070804740322784
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Sunhat_SE_Cheer_1
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 585
+        width: 276
+        height: 195
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.379487}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c564582220b526da5572fdde700e630
+      internalID: 783067233777730817
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Sunhat_SW_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 390
+        width: 276
+        height: 195
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.379487}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ceaa298e1dbe5688b802d9686673ceaa
+      internalID: 984610654078235993
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Sunhat_SW_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 390
+        width: 276
+        height: 195
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.379487}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 991f04d0e07c5212b334bd6dfcea922b
+      internalID: 736135614982247913
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Sunhat_SW_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 390
+        width: 276
+        height: 195
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.379487}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 261abf6d97da5bada93e52a97c848eab
+      internalID: 969532595034822029
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Sunhat_SW_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 390
+        width: 276
+        height: 195
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.379487}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 031f6990847159158cab3e34fb97a331
+      internalID: 645084736898373079
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Sunhat_SW_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 390
+        width: 276
+        height: 195
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.379487}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41dbddfe5cdb58a087e77cf79d62c03b
+      internalID: 1058898599988991363
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Sunhat_SW_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 390
+        width: 276
+        height: 195
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.379487}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2efef42dfd175351a64f5da14c2439f7
+      internalID: 886792075006973307
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Sunhat_SW_Cheer_0
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 390
+        width: 276
+        height: 195
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.379487}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a372a366c26e590cb8fe9604ecb84da0
+      internalID: 1076556101054612769
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Sunhat_SW_Cheer_1
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 390
+        width: 276
+        height: 195
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.379487}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0b36af4b8235acf85c9ad23fcbc99a5
+      internalID: 133485507618288992
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Sunhat_NW_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 195
+        width: 276
+        height: 195
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.379487}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2f1432e0f8e5f81b017a640ed67811d
+      internalID: 729629273405810137
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Sunhat_NW_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 195
+        width: 276
+        height: 195
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.379487}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed8ce8141bd75f0ea9a06f76329b8cd9
+      internalID: 816339301153854973
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Sunhat_NW_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 195
+        width: 276
+        height: 195
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.379487}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cad94c4fae3576cb4d7a6917effc055
+      internalID: 135562678643393852
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Sunhat_NW_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 195
+        width: 276
+        height: 195
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.379487}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45e4f31a8cd353269639e4e8b11edc16
+      internalID: 714666923888923982
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Sunhat_NW_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 195
+        width: 276
+        height: 195
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.379487}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed39013dab2058d7b40cba4a2bc43cb3
+      internalID: 1014253504200373713
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Sunhat_NW_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 195
+        width: 276
+        height: 195
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.379487}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7bedf90264750e2aa80541c07f3ae06
+      internalID: 746192577009780152
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Sunhat_NW_Cheer_0
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 195
+        width: 276
+        height: 195
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.379487}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fac5c561f34518bb53634b50a51da2e
+      internalID: 852086636608226805
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Sunhat_NW_Cheer_1
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 195
+        width: 276
+        height: 195
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.379487}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a685c9e706125cf38dfc80e465666dab
+      internalID: 417297519643501872
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Sunhat_NE_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 276
+        height: 195
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.379487}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6919faabe7bb51139dba016675b521c1
+      internalID: 714384526980810185
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Sunhat_NE_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 0
+        width: 276
+        height: 195
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.379487}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c15e19bc28b58fa96d7dee9e39103fb
+      internalID: 344762444100797905
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Sunhat_NE_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 0
+        width: 276
+        height: 195
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.379487}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be3da663f291586ebefe7bcc8d7d2142
+      internalID: 1076944773753308554
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Sunhat_NE_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 0
+        width: 276
+        height: 195
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.379487}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be9d1b1ee2395b65ae8c9db7609617a4
+      internalID: 216488569669621105
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Sunhat_NE_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 0
+        width: 276
+        height: 195
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.379487}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a638ff271a2c5dfda689105c7d43c604
+      internalID: 361214398565283273
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Sunhat_NE_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 0
+        width: 276
+        height: 195
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.379487}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dbe4f8c6dba59daaeb1dc66e1b21513
+      internalID: 546207895124354507
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Sunhat_NE_Cheer_0
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 0
+        width: 276
+        height: 195
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.379487}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f62c34bb7a65a6b908319f78f082e5e
+      internalID: 1021266280977438180
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Sunhat_NE_Cheer_1
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 0
+        width: 276
+        height: 195
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.379487}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6456e53035475aef9d505579159a3d4f
+      internalID: 35664686339908897
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: f042ce2345aa54d68f4765eab6f8d2ff
+    internalID: 0
+    vertices: []
+    indices:
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Guest_Sunhat_SE_Idle_0: 745679511681930679
+      Guest_Sunhat_SE_Idle_1: 145388144778847545
+      Guest_Sunhat_SE_Walk_0: 345871921331279208
+      Guest_Sunhat_SE_Walk_1: 424326961119163824
+      Guest_Sunhat_SE_Walk_2: 787456185075578354
+      Guest_Sunhat_SE_Walk_3: 899668405542163861
+      Guest_Sunhat_SE_Cheer_0: 452070804740322784
+      Guest_Sunhat_SE_Cheer_1: 783067233777730817
+      Guest_Sunhat_SW_Idle_0: 984610654078235993
+      Guest_Sunhat_SW_Idle_1: 736135614982247913
+      Guest_Sunhat_SW_Walk_0: 969532595034822029
+      Guest_Sunhat_SW_Walk_1: 645084736898373079
+      Guest_Sunhat_SW_Walk_2: 1058898599988991363
+      Guest_Sunhat_SW_Walk_3: 886792075006973307
+      Guest_Sunhat_SW_Cheer_0: 1076556101054612769
+      Guest_Sunhat_SW_Cheer_1: 133485507618288992
+      Guest_Sunhat_NW_Idle_0: 729629273405810137
+      Guest_Sunhat_NW_Idle_1: 816339301153854973
+      Guest_Sunhat_NW_Walk_0: 135562678643393852
+      Guest_Sunhat_NW_Walk_1: 714666923888923982
+      Guest_Sunhat_NW_Walk_2: 1014253504200373713
+      Guest_Sunhat_NW_Walk_3: 746192577009780152
+      Guest_Sunhat_NW_Cheer_0: 852086636608226805
+      Guest_Sunhat_NW_Cheer_1: 417297519643501872
+      Guest_Sunhat_NE_Idle_0: 714384526980810185
+      Guest_Sunhat_NE_Idle_1: 344762444100797905
+      Guest_Sunhat_NE_Walk_0: 1076944773753308554
+      Guest_Sunhat_NE_Walk_1: 216488569669621105
+      Guest_Sunhat_NE_Walk_2: 361214398565283273
+      Guest_Sunhat_NE_Walk_3: 546207895124354507
+      Guest_Sunhat_NE_Cheer_0: 1021266280977438180
+      Guest_Sunhat_NE_Cheer_1: 35664686339908897
+  mipmapLimitGroupName:
+  pSDRemoveMatte: 0
+  userData:
+  assetBundleName:
+  assetBundleVariant:

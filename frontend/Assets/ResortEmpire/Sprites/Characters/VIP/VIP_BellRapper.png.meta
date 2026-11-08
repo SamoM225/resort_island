@@ -1,0 +1,933 @@
+fileFormatVersion: 2
+guid: e923d2c27d1253daa80edae0ab5ae846
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1126352850760275274
+    second: VIP_BellRapper_SE_Idle_0
+  - first:
+      213: 941673758784706005
+    second: VIP_BellRapper_SE_Idle_1
+  - first:
+      213: 430708954191996402
+    second: VIP_BellRapper_SE_Walk_0
+  - first:
+      213: 262172712896877936
+    second: VIP_BellRapper_SE_Walk_1
+  - first:
+      213: 1104325807130973641
+    second: VIP_BellRapper_SE_Walk_2
+  - first:
+      213: 1033914301170656729
+    second: VIP_BellRapper_SE_Walk_3
+  - first:
+      213: 280055925507204526
+    second: VIP_BellRapper_SE_Wave_0
+  - first:
+      213: 809884665335297357
+    second: VIP_BellRapper_SE_Wave_1
+  - first:
+      213: 213412952474617263
+    second: VIP_BellRapper_SW_Idle_0
+  - first:
+      213: 787486202292979020
+    second: VIP_BellRapper_SW_Idle_1
+  - first:
+      213: 107287292606465378
+    second: VIP_BellRapper_SW_Walk_0
+  - first:
+      213: 154127064578004285
+    second: VIP_BellRapper_SW_Walk_1
+  - first:
+      213: 890947744670352853
+    second: VIP_BellRapper_SW_Walk_2
+  - first:
+      213: 895030972072854904
+    second: VIP_BellRapper_SW_Walk_3
+  - first:
+      213: 672784965871346951
+    second: VIP_BellRapper_SW_Wave_0
+  - first:
+      213: 886897411201426808
+    second: VIP_BellRapper_SW_Wave_1
+  - first:
+      213: 639719052539160050
+    second: VIP_BellRapper_NW_Idle_0
+  - first:
+      213: 112904786076472582
+    second: VIP_BellRapper_NW_Idle_1
+  - first:
+      213: 300607608187536751
+    second: VIP_BellRapper_NW_Walk_0
+  - first:
+      213: 624919937097422099
+    second: VIP_BellRapper_NW_Walk_1
+  - first:
+      213: 752591016850523602
+    second: VIP_BellRapper_NW_Walk_2
+  - first:
+      213: 1007239799042155799
+    second: VIP_BellRapper_NW_Walk_3
+  - first:
+      213: 955000310530770382
+    second: VIP_BellRapper_NW_Wave_0
+  - first:
+      213: 277738146530362769
+    second: VIP_BellRapper_NW_Wave_1
+  - first:
+      213: 405747845503677934
+    second: VIP_BellRapper_NE_Idle_0
+  - first:
+      213: 495915851063739796
+    second: VIP_BellRapper_NE_Idle_1
+  - first:
+      213: 167745728544355827
+    second: VIP_BellRapper_NE_Walk_0
+  - first:
+      213: 268198932930835920
+    second: VIP_BellRapper_NE_Walk_1
+  - first:
+      213: 996251987481814384
+    second: VIP_BellRapper_NE_Walk_2
+  - first:
+      213: 213124039465514412
+    second: VIP_BellRapper_NE_Walk_3
+  - first:
+      213: 891584691078972693
+    second: VIP_BellRapper_NE_Wave_0
+  - first:
+      213: 161179410981516612
+    second: VIP_BellRapper_NE_Wave_1
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 4096
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: VIP_BellRapper_SE_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 612
+        width: 276
+        height: 204
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.362745}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d65c578dad4c58b6842845ee3378a6ed
+      internalID: 1126352850760275274
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_BellRapper_SE_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 612
+        width: 276
+        height: 204
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.362745}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43be6787f04b5b30aa5cb8e2e6373ee4
+      internalID: 941673758784706005
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_BellRapper_SE_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 612
+        width: 276
+        height: 204
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.362745}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9c736c0b10b58d68380cd767755ddbf
+      internalID: 430708954191996402
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_BellRapper_SE_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 612
+        width: 276
+        height: 204
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.362745}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9548e6cc86f05a97a39d341c64a8e921
+      internalID: 262172712896877936
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_BellRapper_SE_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 612
+        width: 276
+        height: 204
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.362745}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b84c9eaafa49584c8d96e636e336c697
+      internalID: 1104325807130973641
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_BellRapper_SE_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 612
+        width: 276
+        height: 204
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.362745}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8e1cf6fda9159b28ebf2623bdc951fc
+      internalID: 1033914301170656729
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_BellRapper_SE_Wave_0
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 612
+        width: 276
+        height: 204
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.362745}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a40fd31297df5407af72c39b738af45c
+      internalID: 280055925507204526
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_BellRapper_SE_Wave_1
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 612
+        width: 276
+        height: 204
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.362745}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a832b3de60f8586c836046c39d45d556
+      internalID: 809884665335297357
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_BellRapper_SW_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 408
+        width: 276
+        height: 204
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.362745}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32777c6b54925394a0b9859eb36199e5
+      internalID: 213412952474617263
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_BellRapper_SW_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 408
+        width: 276
+        height: 204
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.362745}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c9d14a92f495b31801e1664db0e6787
+      internalID: 787486202292979020
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_BellRapper_SW_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 408
+        width: 276
+        height: 204
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.362745}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46979c7b86615309bee2960bed563ee7
+      internalID: 107287292606465378
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_BellRapper_SW_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 408
+        width: 276
+        height: 204
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.362745}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 781499df7843542c8833a709ba1c171b
+      internalID: 154127064578004285
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_BellRapper_SW_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 408
+        width: 276
+        height: 204
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.362745}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79696429a0f558209950e7e1c855804a
+      internalID: 890947744670352853
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_BellRapper_SW_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 408
+        width: 276
+        height: 204
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.362745}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e174ccabd0b5baba9a3b6382f8602f9
+      internalID: 895030972072854904
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_BellRapper_SW_Wave_0
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 408
+        width: 276
+        height: 204
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.362745}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c2d0f1de281590aa30d6b33a2564f4f
+      internalID: 672784965871346951
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_BellRapper_SW_Wave_1
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 408
+        width: 276
+        height: 204
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.362745}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b3df90eac8d5f919d2791b49ff988be
+      internalID: 886897411201426808
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_BellRapper_NW_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 204
+        width: 276
+        height: 204
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.362745}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf22d678061d5e5a898a0a74d75f5f5f
+      internalID: 639719052539160050
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_BellRapper_NW_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 204
+        width: 276
+        height: 204
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.362745}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 285e7cc45eca523a8ba1031472f32a0b
+      internalID: 112904786076472582
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_BellRapper_NW_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 204
+        width: 276
+        height: 204
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.362745}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 814c5c4e8f1e5c2da1a1d289f84922eb
+      internalID: 300607608187536751
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_BellRapper_NW_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 204
+        width: 276
+        height: 204
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.362745}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1aa71f08624954bb95f4ea87c67a430c
+      internalID: 624919937097422099
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_BellRapper_NW_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 204
+        width: 276
+        height: 204
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.362745}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 334045b1abdd53d0acec92f71e4c00c9
+      internalID: 752591016850523602
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_BellRapper_NW_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 204
+        width: 276
+        height: 204
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.362745}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b887609321be539e8174eb423d0540ea
+      internalID: 1007239799042155799
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_BellRapper_NW_Wave_0
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 204
+        width: 276
+        height: 204
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.362745}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9f3ca8b23525c1d9965d9a86e3ec92b
+      internalID: 955000310530770382
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_BellRapper_NW_Wave_1
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 204
+        width: 276
+        height: 204
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.362745}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b200732eaea45091b22d75f0c3471370
+      internalID: 277738146530362769
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_BellRapper_NE_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 276
+        height: 204
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.362745}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b54987865edd540aba49e038f7ba86ff
+      internalID: 405747845503677934
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_BellRapper_NE_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 0
+        width: 276
+        height: 204
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.362745}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c03d278a73335e83add9bc5341af2fdb
+      internalID: 495915851063739796
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_BellRapper_NE_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 0
+        width: 276
+        height: 204
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.362745}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c4445923296580b9db6fb3a1a0cff60
+      internalID: 167745728544355827
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_BellRapper_NE_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 0
+        width: 276
+        height: 204
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.362745}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d8b4e6b45a55cf2866c15ff9b180f59
+      internalID: 268198932930835920
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_BellRapper_NE_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 0
+        width: 276
+        height: 204
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.362745}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b55c0df8865f5c10b90340c8ce01b64b
+      internalID: 996251987481814384
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_BellRapper_NE_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 0
+        width: 276
+        height: 204
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.362745}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6151e4b0be253aabaa2ae88a9c2be26
+      internalID: 213124039465514412
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_BellRapper_NE_Wave_0
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 0
+        width: 276
+        height: 204
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.362745}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7f122f55bff518e98e2417ec0b14f88
+      internalID: 891584691078972693
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_BellRapper_NE_Wave_1
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 0
+        width: 276
+        height: 204
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.362745}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 138ded2a1d975874911add83c2b1f208
+      internalID: 161179410981516612
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 90870498288556d9a34a32052910970a
+    internalID: 0
+    vertices: []
+    indices:
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      VIP_BellRapper_SE_Idle_0: 1126352850760275274
+      VIP_BellRapper_SE_Idle_1: 941673758784706005
+      VIP_BellRapper_SE_Walk_0: 430708954191996402
+      VIP_BellRapper_SE_Walk_1: 262172712896877936
+      VIP_BellRapper_SE_Walk_2: 1104325807130973641
+      VIP_BellRapper_SE_Walk_3: 1033914301170656729
+      VIP_BellRapper_SE_Wave_0: 280055925507204526
+      VIP_BellRapper_SE_Wave_1: 809884665335297357
+      VIP_BellRapper_SW_Idle_0: 213412952474617263
+      VIP_BellRapper_SW_Idle_1: 787486202292979020
+      VIP_BellRapper_SW_Walk_0: 107287292606465378
+      VIP_BellRapper_SW_Walk_1: 154127064578004285
+      VIP_BellRapper_SW_Walk_2: 890947744670352853
+      VIP_BellRapper_SW_Walk_3: 895030972072854904
+      VIP_BellRapper_SW_Wave_0: 672784965871346951
+      VIP_BellRapper_SW_Wave_1: 886897411201426808
+      VIP_BellRapper_NW_Idle_0: 639719052539160050
+      VIP_BellRapper_NW_Idle_1: 112904786076472582
+      VIP_BellRapper_NW_Walk_0: 300607608187536751
+      VIP_BellRapper_NW_Walk_1: 624919937097422099
+      VIP_BellRapper_NW_Walk_2: 752591016850523602
+      VIP_BellRapper_NW_Walk_3: 1007239799042155799
+      VIP_BellRapper_NW_Wave_0: 955000310530770382
+      VIP_BellRapper_NW_Wave_1: 277738146530362769
+      VIP_BellRapper_NE_Idle_0: 405747845503677934
+      VIP_BellRapper_NE_Idle_1: 495915851063739796
+      VIP_BellRapper_NE_Walk_0: 167745728544355827
+      VIP_BellRapper_NE_Walk_1: 268198932930835920
+      VIP_BellRapper_NE_Walk_2: 996251987481814384
+      VIP_BellRapper_NE_Walk_3: 213124039465514412
+      VIP_BellRapper_NE_Wave_0: 891584691078972693
+      VIP_BellRapper_NE_Wave_1: 161179410981516612
+  mipmapLimitGroupName:
+  pSDRemoveMatte: 0
+  userData:
+  assetBundleName:
+  assetBundleVariant:

@@ -1,0 +1,517 @@
+fileFormatVersion: 2
+guid: dc6230d9e7bd551580963519405f8284
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 667795250307249581
+    second: Path_Gravel_00
+  - first:
+      213: 482072507809600843
+    second: Path_Gravel_01
+  - first:
+      213: 956257087892731213
+    second: Path_Gravel_02
+  - first:
+      213: 1143100985276306765
+    second: Path_Gravel_03
+  - first:
+      213: 434179836063421851
+    second: Path_Gravel_04
+  - first:
+      213: 1110117632834684281
+    second: Path_Gravel_05
+  - first:
+      213: 635787371151963587
+    second: Path_Gravel_06
+  - first:
+      213: 596057716641338866
+    second: Path_Gravel_07
+  - first:
+      213: 957923713607271857
+    second: Path_Gravel_08
+  - first:
+      213: 1050177600846533904
+    second: Path_Gravel_09
+  - first:
+      213: 150744134553327066
+    second: Path_Gravel_10
+  - first:
+      213: 66923416315364797
+    second: Path_Gravel_11
+  - first:
+      213: 810457659956643103
+    second: Path_Gravel_12
+  - first:
+      213: 1128946350231438819
+    second: Path_Gravel_13
+  - first:
+      213: 585709636077831586
+    second: Path_Gravel_14
+  - first:
+      213: 275506121396380932
+    second: Path_Gravel_15
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 4096
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 128
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Path_Gravel_00
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 80
+        width: 140
+        height: 76
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.500000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 426fa0eaaf785992b0a92a7317db309c
+      internalID: 667795250307249581
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Path_Gravel_01
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 80
+        width: 140
+        height: 76
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.500000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38bd3b1e743f51649fbc0bd0775c47d5
+      internalID: 482072507809600843
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Path_Gravel_02
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 80
+        width: 140
+        height: 76
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.500000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78e2060554215972939a536e998d029d
+      internalID: 956257087892731213
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Path_Gravel_03
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 80
+        width: 140
+        height: 76
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.500000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bca72035f8d55120bdd545a5b4f96fc7
+      internalID: 1143100985276306765
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Path_Gravel_04
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 80
+        width: 140
+        height: 76
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.500000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e9ccb12ef805e509ce3e01b30e4c14b
+      internalID: 434179836063421851
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Path_Gravel_05
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 80
+        width: 140
+        height: 76
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.500000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 254b3b4ae02f5e989cb19a3ea0e0d3ff
+      internalID: 1110117632834684281
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Path_Gravel_06
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 80
+        width: 140
+        height: 76
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.500000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1487dfa179275754991f3ce81fe77640
+      internalID: 635787371151963587
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Path_Gravel_07
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 80
+        width: 140
+        height: 76
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.500000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 881298830d495a09b96ffc40637d3925
+      internalID: 596057716641338866
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Path_Gravel_08
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 0
+        width: 140
+        height: 76
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.500000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d3d483dfe3f5e009e83df5431474e33
+      internalID: 957923713607271857
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Path_Gravel_09
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 0
+        width: 140
+        height: 76
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.500000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5eda9ebb14a85122b8a6ec29a5bce583
+      internalID: 1050177600846533904
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Path_Gravel_10
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 0
+        width: 140
+        height: 76
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.500000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ec51e82f61255cba84497757f267ff1
+      internalID: 150744134553327066
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Path_Gravel_11
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 0
+        width: 140
+        height: 76
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.500000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69899edebf05525ca39add0335067179
+      internalID: 66923416315364797
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Path_Gravel_12
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 0
+        width: 140
+        height: 76
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.500000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 361af13d6af4586a9a1994d97b80496a
+      internalID: 810457659956643103
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Path_Gravel_13
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 0
+        width: 140
+        height: 76
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.500000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cad345c8188565a9a1a15ae7c9c3bc8
+      internalID: 1128946350231438819
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Path_Gravel_14
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 0
+        width: 140
+        height: 76
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.500000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af558aba58045cd8bee9cc05e9ad2fd8
+      internalID: 585709636077831586
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Path_Gravel_15
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 0
+        width: 140
+        height: 76
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.500000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e04a8fd70a8c5402b4b7f93460c02589
+      internalID: 275506121396380932
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 2a73cf9aa47d529db727a57fc1e863fa
+    internalID: 0
+    vertices: []
+    indices:
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Path_Gravel_00: 667795250307249581
+      Path_Gravel_01: 482072507809600843
+      Path_Gravel_02: 956257087892731213
+      Path_Gravel_03: 1143100985276306765
+      Path_Gravel_04: 434179836063421851
+      Path_Gravel_05: 1110117632834684281
+      Path_Gravel_06: 635787371151963587
+      Path_Gravel_07: 596057716641338866
+      Path_Gravel_08: 957923713607271857
+      Path_Gravel_09: 1050177600846533904
+      Path_Gravel_10: 150744134553327066
+      Path_Gravel_11: 66923416315364797
+      Path_Gravel_12: 810457659956643103
+      Path_Gravel_13: 1128946350231438819
+      Path_Gravel_14: 585709636077831586
+      Path_Gravel_15: 275506121396380932
+  mipmapLimitGroupName:
+  pSDRemoveMatte: 0
+  userData:
+  assetBundleName:
+  assetBundleVariant:

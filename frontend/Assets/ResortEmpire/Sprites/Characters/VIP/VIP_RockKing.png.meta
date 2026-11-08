@@ -1,0 +1,933 @@
+fileFormatVersion: 2
+guid: abf4f2e4450256e88be69bef374768d6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 849495918913566098
+    second: VIP_RockKing_SE_Idle_0
+  - first:
+      213: 729755544027485608
+    second: VIP_RockKing_SE_Idle_1
+  - first:
+      213: 1105002215453390318
+    second: VIP_RockKing_SE_Walk_0
+  - first:
+      213: 283681460905301279
+    second: VIP_RockKing_SE_Walk_1
+  - first:
+      213: 725569552806081978
+    second: VIP_RockKing_SE_Walk_2
+  - first:
+      213: 807615927513240975
+    second: VIP_RockKing_SE_Walk_3
+  - first:
+      213: 312727139450881440
+    second: VIP_RockKing_SE_Wave_0
+  - first:
+      213: 66952807931270517
+    second: VIP_RockKing_SE_Wave_1
+  - first:
+      213: 845211933443241438
+    second: VIP_RockKing_SW_Idle_0
+  - first:
+      213: 548234600236246464
+    second: VIP_RockKing_SW_Idle_1
+  - first:
+      213: 193902194722190625
+    second: VIP_RockKing_SW_Walk_0
+  - first:
+      213: 615823137464497652
+    second: VIP_RockKing_SW_Walk_1
+  - first:
+      213: 536673321720948215
+    second: VIP_RockKing_SW_Walk_2
+  - first:
+      213: 972052238579635490
+    second: VIP_RockKing_SW_Walk_3
+  - first:
+      213: 566518735567365385
+    second: VIP_RockKing_SW_Wave_0
+  - first:
+      213: 39575668488705398
+    second: VIP_RockKing_SW_Wave_1
+  - first:
+      213: 321788194975593807
+    second: VIP_RockKing_NW_Idle_0
+  - first:
+      213: 1045864684730889671
+    second: VIP_RockKing_NW_Idle_1
+  - first:
+      213: 358271025624307074
+    second: VIP_RockKing_NW_Walk_0
+  - first:
+      213: 788232355709723929
+    second: VIP_RockKing_NW_Walk_1
+  - first:
+      213: 398711719954777385
+    second: VIP_RockKing_NW_Walk_2
+  - first:
+      213: 938981027240199427
+    second: VIP_RockKing_NW_Walk_3
+  - first:
+      213: 692055035416049137
+    second: VIP_RockKing_NW_Wave_0
+  - first:
+      213: 269748877812253955
+    second: VIP_RockKing_NW_Wave_1
+  - first:
+      213: 298868127631377769
+    second: VIP_RockKing_NE_Idle_0
+  - first:
+      213: 695526377119397359
+    second: VIP_RockKing_NE_Idle_1
+  - first:
+      213: 1099422974538315213
+    second: VIP_RockKing_NE_Walk_0
+  - first:
+      213: 1020980050261857642
+    second: VIP_RockKing_NE_Walk_1
+  - first:
+      213: 696149481025332605
+    second: VIP_RockKing_NE_Walk_2
+  - first:
+      213: 519897057385158042
+    second: VIP_RockKing_NE_Walk_3
+  - first:
+      213: 914322058429867464
+    second: VIP_RockKing_NE_Wave_0
+  - first:
+      213: 111393613635761554
+    second: VIP_RockKing_NE_Wave_1
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 4096
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: VIP_RockKing_SE_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 582
+        width: 276
+        height: 194
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.381443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 506ec36014c656b3b598f939244aaa9d
+      internalID: 849495918913566098
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_RockKing_SE_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 582
+        width: 276
+        height: 194
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.381443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5f110d8191555a9844f996efe284a45
+      internalID: 729755544027485608
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_RockKing_SE_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 582
+        width: 276
+        height: 194
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.381443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d0a992fc1385fc2b98ba43a98dc6348
+      internalID: 1105002215453390318
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_RockKing_SE_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 582
+        width: 276
+        height: 194
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.381443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92c21d9f815256d9a4d804e651c77b10
+      internalID: 283681460905301279
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_RockKing_SE_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 582
+        width: 276
+        height: 194
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.381443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ad4bd87def1541d83e7243b472adc62
+      internalID: 725569552806081978
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_RockKing_SE_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 582
+        width: 276
+        height: 194
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.381443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a2256a6702955ec883f4990f9faedd0
+      internalID: 807615927513240975
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_RockKing_SE_Wave_0
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 582
+        width: 276
+        height: 194
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.381443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20890ccd43f8510fa02b05e8e3abade2
+      internalID: 312727139450881440
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_RockKing_SE_Wave_1
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 582
+        width: 276
+        height: 194
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.381443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8de2160b10b536d8afef1e5beca2014
+      internalID: 66952807931270517
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_RockKing_SW_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 388
+        width: 276
+        height: 194
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.381443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c03f95273d9588391e331437b91ddbd
+      internalID: 845211933443241438
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_RockKing_SW_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 388
+        width: 276
+        height: 194
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.381443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 117dec918eb15022ac412cf0f13b4337
+      internalID: 548234600236246464
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_RockKing_SW_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 388
+        width: 276
+        height: 194
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.381443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0679370732a05133b7d5f123413d20e6
+      internalID: 193902194722190625
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_RockKing_SW_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 388
+        width: 276
+        height: 194
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.381443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 876007f887f557648a5ee977f7d91382
+      internalID: 615823137464497652
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_RockKing_SW_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 388
+        width: 276
+        height: 194
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.381443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11ceb0300e7750e8bccdb108fc672742
+      internalID: 536673321720948215
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_RockKing_SW_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 388
+        width: 276
+        height: 194
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.381443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e88b11f51ee5cc3bdf1b30f661db087
+      internalID: 972052238579635490
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_RockKing_SW_Wave_0
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 388
+        width: 276
+        height: 194
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.381443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cc254db38b75916bbc60cdbbef15d77
+      internalID: 566518735567365385
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_RockKing_SW_Wave_1
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 388
+        width: 276
+        height: 194
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.381443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5037f4cf0ed25b99b9c6398bb55a7fb3
+      internalID: 39575668488705398
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_RockKing_NW_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 194
+        width: 276
+        height: 194
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.381443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 109a4bc9906950e5bf3c3671d32a8f90
+      internalID: 321788194975593807
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_RockKing_NW_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 194
+        width: 276
+        height: 194
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.381443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54b6e8ceddae5f5ba848e827a2e6d59d
+      internalID: 1045864684730889671
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_RockKing_NW_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 194
+        width: 276
+        height: 194
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.381443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52ad7f77e799571abfbe8eb31a63ac42
+      internalID: 358271025624307074
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_RockKing_NW_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 194
+        width: 276
+        height: 194
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.381443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d621ad0051f5493b1cf2109d5a57425
+      internalID: 788232355709723929
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_RockKing_NW_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 194
+        width: 276
+        height: 194
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.381443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20d7f0baf600530cac3ddb0838ddc5a3
+      internalID: 398711719954777385
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_RockKing_NW_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 194
+        width: 276
+        height: 194
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.381443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 003409d1cd05512a9a3c89dc02aa53b9
+      internalID: 938981027240199427
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_RockKing_NW_Wave_0
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 194
+        width: 276
+        height: 194
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.381443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9040cb5d9aa500b9954690c9bb84a7d
+      internalID: 692055035416049137
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_RockKing_NW_Wave_1
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 194
+        width: 276
+        height: 194
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.381443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3735a53debf55e8a6bdbf32108eee56
+      internalID: 269748877812253955
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_RockKing_NE_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 276
+        height: 194
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.381443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fafb04cc7ef35262a648180913eae900
+      internalID: 298868127631377769
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_RockKing_NE_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 0
+        width: 276
+        height: 194
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.381443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c136f1969d2959d8a1bdd83501f659d7
+      internalID: 695526377119397359
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_RockKing_NE_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 0
+        width: 276
+        height: 194
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.381443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b1cd934db6c5dfeb87aa5ea4ae47127
+      internalID: 1099422974538315213
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_RockKing_NE_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 0
+        width: 276
+        height: 194
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.381443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a847a076c655db3a394d2adf4c7bc66
+      internalID: 1020980050261857642
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_RockKing_NE_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 0
+        width: 276
+        height: 194
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.381443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9478efde1ca859eb99bf1473e670be04
+      internalID: 696149481025332605
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_RockKing_NE_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 0
+        width: 276
+        height: 194
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.381443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de2da4a9a57b56a988ee7adcd1c390dc
+      internalID: 519897057385158042
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_RockKing_NE_Wave_0
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 0
+        width: 276
+        height: 194
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.381443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4728b1e277e5f218c2b31de1402d26a
+      internalID: 914322058429867464
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_RockKing_NE_Wave_1
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 0
+        width: 276
+        height: 194
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.381443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8dd6c4d8c7e5840b2acf39272a9f133
+      internalID: 111393613635761554
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 479ca94954b85f56bda29257be3e6e27
+    internalID: 0
+    vertices: []
+    indices:
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      VIP_RockKing_SE_Idle_0: 849495918913566098
+      VIP_RockKing_SE_Idle_1: 729755544027485608
+      VIP_RockKing_SE_Walk_0: 1105002215453390318
+      VIP_RockKing_SE_Walk_1: 283681460905301279
+      VIP_RockKing_SE_Walk_2: 725569552806081978
+      VIP_RockKing_SE_Walk_3: 807615927513240975
+      VIP_RockKing_SE_Wave_0: 312727139450881440
+      VIP_RockKing_SE_Wave_1: 66952807931270517
+      VIP_RockKing_SW_Idle_0: 845211933443241438
+      VIP_RockKing_SW_Idle_1: 548234600236246464
+      VIP_RockKing_SW_Walk_0: 193902194722190625
+      VIP_RockKing_SW_Walk_1: 615823137464497652
+      VIP_RockKing_SW_Walk_2: 536673321720948215
+      VIP_RockKing_SW_Walk_3: 972052238579635490
+      VIP_RockKing_SW_Wave_0: 566518735567365385
+      VIP_RockKing_SW_Wave_1: 39575668488705398
+      VIP_RockKing_NW_Idle_0: 321788194975593807
+      VIP_RockKing_NW_Idle_1: 1045864684730889671
+      VIP_RockKing_NW_Walk_0: 358271025624307074
+      VIP_RockKing_NW_Walk_1: 788232355709723929
+      VIP_RockKing_NW_Walk_2: 398711719954777385
+      VIP_RockKing_NW_Walk_3: 938981027240199427
+      VIP_RockKing_NW_Wave_0: 692055035416049137
+      VIP_RockKing_NW_Wave_1: 269748877812253955
+      VIP_RockKing_NE_Idle_0: 298868127631377769
+      VIP_RockKing_NE_Idle_1: 695526377119397359
+      VIP_RockKing_NE_Walk_0: 1099422974538315213
+      VIP_RockKing_NE_Walk_1: 1020980050261857642
+      VIP_RockKing_NE_Walk_2: 696149481025332605
+      VIP_RockKing_NE_Walk_3: 519897057385158042
+      VIP_RockKing_NE_Wave_0: 914322058429867464
+      VIP_RockKing_NE_Wave_1: 111393613635761554
+  mipmapLimitGroupName:
+  pSDRemoveMatte: 0
+  userData:
+  assetBundleName:
+  assetBundleVariant:

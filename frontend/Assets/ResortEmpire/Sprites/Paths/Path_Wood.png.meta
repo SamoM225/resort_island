@@ -1,0 +1,517 @@
+fileFormatVersion: 2
+guid: 5b0f103fb720527abe4a13c16bb7d6a8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 560992592656238055
+    second: Path_Wood_00
+  - first:
+      213: 129725427753673990
+    second: Path_Wood_01
+  - first:
+      213: 997119632111682997
+    second: Path_Wood_02
+  - first:
+      213: 285124907121444111
+    second: Path_Wood_03
+  - first:
+      213: 27455877525349859
+    second: Path_Wood_04
+  - first:
+      213: 209704834782979554
+    second: Path_Wood_05
+  - first:
+      213: 784925186424919467
+    second: Path_Wood_06
+  - first:
+      213: 777899726876046740
+    second: Path_Wood_07
+  - first:
+      213: 337626692655949098
+    second: Path_Wood_08
+  - first:
+      213: 310012802704090544
+    second: Path_Wood_09
+  - first:
+      213: 1093400518998979868
+    second: Path_Wood_10
+  - first:
+      213: 388529089782961644
+    second: Path_Wood_11
+  - first:
+      213: 884490433698903532
+    second: Path_Wood_12
+  - first:
+      213: 552696449168790977
+    second: Path_Wood_13
+  - first:
+      213: 1091885200598402523
+    second: Path_Wood_14
+  - first:
+      213: 350582956824130995
+    second: Path_Wood_15
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 4096
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 128
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Path_Wood_00
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 80
+        width: 140
+        height: 76
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.500000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f9917bc889f5d9e8e4d8455ff50e81c
+      internalID: 560992592656238055
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Path_Wood_01
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 80
+        width: 140
+        height: 76
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.500000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 778a1da023f45057aab1002a3bd8acf1
+      internalID: 129725427753673990
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Path_Wood_02
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 80
+        width: 140
+        height: 76
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.500000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31d6eb0414c150009d87d5564e429fa9
+      internalID: 997119632111682997
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Path_Wood_03
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 80
+        width: 140
+        height: 76
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.500000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bdad76ffb435b2bb15ade3f181857dc
+      internalID: 285124907121444111
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Path_Wood_04
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 80
+        width: 140
+        height: 76
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.500000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44ae2f0c33405a919d305c0810c4b318
+      internalID: 27455877525349859
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Path_Wood_05
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 80
+        width: 140
+        height: 76
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.500000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14b81ec8d10b571e9b6c6e039f620c08
+      internalID: 209704834782979554
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Path_Wood_06
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 80
+        width: 140
+        height: 76
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.500000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddf6558eb7f158d682b4427155793d9f
+      internalID: 784925186424919467
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Path_Wood_07
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 80
+        width: 140
+        height: 76
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.500000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0e7200161ab5aa3831a9a197699cabb
+      internalID: 777899726876046740
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Path_Wood_08
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 0
+        width: 140
+        height: 76
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.500000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ad5899f9ca25ea587eb22ee9a3aaeed
+      internalID: 337626692655949098
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Path_Wood_09
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 0
+        width: 140
+        height: 76
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.500000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2feb309552b75fa89aa1e70d2b64ec01
+      internalID: 310012802704090544
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Path_Wood_10
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 0
+        width: 140
+        height: 76
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.500000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b9ab7a30fef5acca6e55e4663b7846a
+      internalID: 1093400518998979868
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Path_Wood_11
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 0
+        width: 140
+        height: 76
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.500000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cefef325b32537d85d3e37cb1ed31fd
+      internalID: 388529089782961644
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Path_Wood_12
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 0
+        width: 140
+        height: 76
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.500000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1aa526715dd5d7a9741ddf6568d7e0c
+      internalID: 884490433698903532
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Path_Wood_13
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 0
+        width: 140
+        height: 76
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.500000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68f1bb2e92a95528ae9305275bd80b18
+      internalID: 552696449168790977
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Path_Wood_14
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 0
+        width: 140
+        height: 76
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.500000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 039059ad8d4b5d239719e7bbef52821f
+      internalID: 1091885200598402523
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Path_Wood_15
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 0
+        width: 140
+        height: 76
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.500000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93418016477f544e8786e0484aa5009c
+      internalID: 350582956824130995
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 994bd9b0fc21518fb30b80bc2b25d1bc
+    internalID: 0
+    vertices: []
+    indices:
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Path_Wood_00: 560992592656238055
+      Path_Wood_01: 129725427753673990
+      Path_Wood_02: 997119632111682997
+      Path_Wood_03: 285124907121444111
+      Path_Wood_04: 27455877525349859
+      Path_Wood_05: 209704834782979554
+      Path_Wood_06: 784925186424919467
+      Path_Wood_07: 777899726876046740
+      Path_Wood_08: 337626692655949098
+      Path_Wood_09: 310012802704090544
+      Path_Wood_10: 1093400518998979868
+      Path_Wood_11: 388529089782961644
+      Path_Wood_12: 884490433698903532
+      Path_Wood_13: 552696449168790977
+      Path_Wood_14: 1091885200598402523
+      Path_Wood_15: 350582956824130995
+  mipmapLimitGroupName:
+  pSDRemoveMatte: 0
+  userData:
+  assetBundleName:
+  assetBundleVariant:

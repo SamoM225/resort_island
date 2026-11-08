@@ -1,0 +1,933 @@
+fileFormatVersion: 2
+guid: d0b281b4c2df504a8cbfc0918463cba5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 29720911458035012
+    second: Guest_Tourist_SE_Idle_0
+  - first:
+      213: 712392138518410664
+    second: Guest_Tourist_SE_Idle_1
+  - first:
+      213: 217942160554628536
+    second: Guest_Tourist_SE_Walk_0
+  - first:
+      213: 261390151852713447
+    second: Guest_Tourist_SE_Walk_1
+  - first:
+      213: 547114201603593687
+    second: Guest_Tourist_SE_Walk_2
+  - first:
+      213: 983718579261371861
+    second: Guest_Tourist_SE_Walk_3
+  - first:
+      213: 415004915321824559
+    second: Guest_Tourist_SE_Cheer_0
+  - first:
+      213: 106812278963938717
+    second: Guest_Tourist_SE_Cheer_1
+  - first:
+      213: 365668330055550363
+    second: Guest_Tourist_SW_Idle_0
+  - first:
+      213: 941899583898207625
+    second: Guest_Tourist_SW_Idle_1
+  - first:
+      213: 453221606941685149
+    second: Guest_Tourist_SW_Walk_0
+  - first:
+      213: 1028540291626845529
+    second: Guest_Tourist_SW_Walk_1
+  - first:
+      213: 707255191555794357
+    second: Guest_Tourist_SW_Walk_2
+  - first:
+      213: 872071625115215304
+    second: Guest_Tourist_SW_Walk_3
+  - first:
+      213: 660356356514375086
+    second: Guest_Tourist_SW_Cheer_0
+  - first:
+      213: 311927729144677666
+    second: Guest_Tourist_SW_Cheer_1
+  - first:
+      213: 236133050390762932
+    second: Guest_Tourist_NW_Idle_0
+  - first:
+      213: 398879240444986817
+    second: Guest_Tourist_NW_Idle_1
+  - first:
+      213: 1085736241731212593
+    second: Guest_Tourist_NW_Walk_0
+  - first:
+      213: 1141851707503355199
+    second: Guest_Tourist_NW_Walk_1
+  - first:
+      213: 725493359929652648
+    second: Guest_Tourist_NW_Walk_2
+  - first:
+      213: 152589611401303486
+    second: Guest_Tourist_NW_Walk_3
+  - first:
+      213: 699115007738697019
+    second: Guest_Tourist_NW_Cheer_0
+  - first:
+      213: 232396963514262884
+    second: Guest_Tourist_NW_Cheer_1
+  - first:
+      213: 625457371969942848
+    second: Guest_Tourist_NE_Idle_0
+  - first:
+      213: 667719547239855448
+    second: Guest_Tourist_NE_Idle_1
+  - first:
+      213: 875366619379226022
+    second: Guest_Tourist_NE_Walk_0
+  - first:
+      213: 1137815028224583083
+    second: Guest_Tourist_NE_Walk_1
+  - first:
+      213: 691945192317052258
+    second: Guest_Tourist_NE_Walk_2
+  - first:
+      213: 176563643657553362
+    second: Guest_Tourist_NE_Walk_3
+  - first:
+      213: 414647976182752734
+    second: Guest_Tourist_NE_Cheer_0
+  - first:
+      213: 909787354714408258
+    second: Guest_Tourist_NE_Cheer_1
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 4096
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Guest_Tourist_SE_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 573
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58a39eac0e4b5344ad6980ec7de528d3
+      internalID: 29720911458035012
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Tourist_SE_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 573
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84f62b162cf95d2abf73c4493aa55321
+      internalID: 712392138518410664
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Tourist_SE_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 573
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ad13d31f5fa5524b81dcdf82bd0e18a
+      internalID: 217942160554628536
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Tourist_SE_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 573
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77b9775fbebe58159cd50e6a36cae70b
+      internalID: 261390151852713447
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Tourist_SE_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 573
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e25a0e12ea750a38c41b6ee3aa8c3ea
+      internalID: 547114201603593687
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Tourist_SE_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 573
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8f1dfe708c55cc2912587ce355c5508
+      internalID: 983718579261371861
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Tourist_SE_Cheer_0
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 573
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75075dca051b545ebe598c1d76222a4b
+      internalID: 415004915321824559
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Tourist_SE_Cheer_1
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 573
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dfe89c815715c92a819d9699006bee1
+      internalID: 106812278963938717
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Tourist_SW_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 382
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b7bcfcc5e9655e99ad1e9c2ed7d5c65
+      internalID: 365668330055550363
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Tourist_SW_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 382
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e5c468e08aa529db700af8ee0d57a38
+      internalID: 941899583898207625
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Tourist_SW_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 382
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 363b8b239f8757a1a9a365aabe189440
+      internalID: 453221606941685149
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Tourist_SW_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 382
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3985c5cfe31e5207bc69828063f00f9d
+      internalID: 1028540291626845529
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Tourist_SW_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 382
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 684dc699b71951cc91689ff58414cd14
+      internalID: 707255191555794357
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Tourist_SW_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 382
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fa28bc689f757499d8106153f263aba
+      internalID: 872071625115215304
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Tourist_SW_Cheer_0
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 382
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3322165178a57f9b58730664dc7fbbd
+      internalID: 660356356514375086
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Tourist_SW_Cheer_1
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 382
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ab1912d37905cc2aff4902ab908b760
+      internalID: 311927729144677666
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Tourist_NW_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 191
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e89bd8850d3357f9950a033265ee271c
+      internalID: 236133050390762932
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Tourist_NW_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 191
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3933294024925367b69c5d66ff1d9989
+      internalID: 398879240444986817
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Tourist_NW_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 191
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7d1a07ed8ef5eb7b457e707fd0c8343
+      internalID: 1085736241731212593
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Tourist_NW_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 191
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74e24dc36db55bc09dbd389624d247b1
+      internalID: 1141851707503355199
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Tourist_NW_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 191
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 493d239c24d55e2a89c4670f74690ea4
+      internalID: 725493359929652648
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Tourist_NW_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 191
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6812407e5925806a16c3eb623dac14c
+      internalID: 152589611401303486
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Tourist_NW_Cheer_0
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 191
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0127ad322e575eebb94599841f2ace41
+      internalID: 699115007738697019
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Tourist_NW_Cheer_1
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 191
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41a3bbb3f2525831b66bc51b1d72ebb2
+      internalID: 232396963514262884
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Tourist_NE_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 181399b5ce1b5eb280c5ee1e3380bdaf
+      internalID: 625457371969942848
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Tourist_NE_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 0
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1b98dda1e5a5e31b2ed0e08e16a5dac
+      internalID: 667719547239855448
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Tourist_NE_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 0
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cb1f7d8708f5724828273f696773902
+      internalID: 875366619379226022
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Tourist_NE_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 0
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14e9239fa855556586b45b4166dd4e42
+      internalID: 1137815028224583083
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Tourist_NE_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 0
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c338f3b52631565a8e14d20bd6f2f49e
+      internalID: 691945192317052258
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Tourist_NE_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 0
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1615f6d381185a8d8b236477c9ffb985
+      internalID: 176563643657553362
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Tourist_NE_Cheer_0
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 0
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fb03acbee1f5db487c75591820f06d2
+      internalID: 414647976182752734
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Tourist_NE_Cheer_1
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 0
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d780d8c8528502190ef595ebd758aed
+      internalID: 909787354714408258
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: f4aceb6eef82562c88dee01a040be6df
+    internalID: 0
+    vertices: []
+    indices:
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Guest_Tourist_SE_Idle_0: 29720911458035012
+      Guest_Tourist_SE_Idle_1: 712392138518410664
+      Guest_Tourist_SE_Walk_0: 217942160554628536
+      Guest_Tourist_SE_Walk_1: 261390151852713447
+      Guest_Tourist_SE_Walk_2: 547114201603593687
+      Guest_Tourist_SE_Walk_3: 983718579261371861
+      Guest_Tourist_SE_Cheer_0: 415004915321824559
+      Guest_Tourist_SE_Cheer_1: 106812278963938717
+      Guest_Tourist_SW_Idle_0: 365668330055550363
+      Guest_Tourist_SW_Idle_1: 941899583898207625
+      Guest_Tourist_SW_Walk_0: 453221606941685149
+      Guest_Tourist_SW_Walk_1: 1028540291626845529
+      Guest_Tourist_SW_Walk_2: 707255191555794357
+      Guest_Tourist_SW_Walk_3: 872071625115215304
+      Guest_Tourist_SW_Cheer_0: 660356356514375086
+      Guest_Tourist_SW_Cheer_1: 311927729144677666
+      Guest_Tourist_NW_Idle_0: 236133050390762932
+      Guest_Tourist_NW_Idle_1: 398879240444986817
+      Guest_Tourist_NW_Walk_0: 1085736241731212593
+      Guest_Tourist_NW_Walk_1: 1141851707503355199
+      Guest_Tourist_NW_Walk_2: 725493359929652648
+      Guest_Tourist_NW_Walk_3: 152589611401303486
+      Guest_Tourist_NW_Cheer_0: 699115007738697019
+      Guest_Tourist_NW_Cheer_1: 232396963514262884
+      Guest_Tourist_NE_Idle_0: 625457371969942848
+      Guest_Tourist_NE_Idle_1: 667719547239855448
+      Guest_Tourist_NE_Walk_0: 875366619379226022
+      Guest_Tourist_NE_Walk_1: 1137815028224583083
+      Guest_Tourist_NE_Walk_2: 691945192317052258
+      Guest_Tourist_NE_Walk_3: 176563643657553362
+      Guest_Tourist_NE_Cheer_0: 414647976182752734
+      Guest_Tourist_NE_Cheer_1: 909787354714408258
+  mipmapLimitGroupName:
+  pSDRemoveMatte: 0
+  userData:
+  assetBundleName:
+  assetBundleVariant:

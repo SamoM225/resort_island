@@ -1,0 +1,933 @@
+fileFormatVersion: 2
+guid: 801c57b8519755c38239c4803536b72f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 973222832186303877
+    second: VIP_PopDancer_SE_Idle_0
+  - first:
+      213: 831824116688389529
+    second: VIP_PopDancer_SE_Idle_1
+  - first:
+      213: 890705552610624970
+    second: VIP_PopDancer_SE_Walk_0
+  - first:
+      213: 1080310599063639324
+    second: VIP_PopDancer_SE_Walk_1
+  - first:
+      213: 770172988887442722
+    second: VIP_PopDancer_SE_Walk_2
+  - first:
+      213: 828959701031044467
+    second: VIP_PopDancer_SE_Walk_3
+  - first:
+      213: 766367521818351084
+    second: VIP_PopDancer_SE_Wave_0
+  - first:
+      213: 1060101060866643266
+    second: VIP_PopDancer_SE_Wave_1
+  - first:
+      213: 939429592046163407
+    second: VIP_PopDancer_SW_Idle_0
+  - first:
+      213: 627618222381204978
+    second: VIP_PopDancer_SW_Idle_1
+  - first:
+      213: 642147807692129543
+    second: VIP_PopDancer_SW_Walk_0
+  - first:
+      213: 531221139067229573
+    second: VIP_PopDancer_SW_Walk_1
+  - first:
+      213: 252808281166599456
+    second: VIP_PopDancer_SW_Walk_2
+  - first:
+      213: 1106598935912355091
+    second: VIP_PopDancer_SW_Walk_3
+  - first:
+      213: 694277990669608394
+    second: VIP_PopDancer_SW_Wave_0
+  - first:
+      213: 1091637101462140270
+    second: VIP_PopDancer_SW_Wave_1
+  - first:
+      213: 789775020592174489
+    second: VIP_PopDancer_NW_Idle_0
+  - first:
+      213: 1146654707217900852
+    second: VIP_PopDancer_NW_Idle_1
+  - first:
+      213: 1036213788339049766
+    second: VIP_PopDancer_NW_Walk_0
+  - first:
+      213: 276480038375060784
+    second: VIP_PopDancer_NW_Walk_1
+  - first:
+      213: 475429753283081656
+    second: VIP_PopDancer_NW_Walk_2
+  - first:
+      213: 564721842706765194
+    second: VIP_PopDancer_NW_Walk_3
+  - first:
+      213: 152902705869473071
+    second: VIP_PopDancer_NW_Wave_0
+  - first:
+      213: 856796620355208702
+    second: VIP_PopDancer_NW_Wave_1
+  - first:
+      213: 318984006351303992
+    second: VIP_PopDancer_NE_Idle_0
+  - first:
+      213: 1041774918448604516
+    second: VIP_PopDancer_NE_Idle_1
+  - first:
+      213: 590568630551180737
+    second: VIP_PopDancer_NE_Walk_0
+  - first:
+      213: 1073341751562675687
+    second: VIP_PopDancer_NE_Walk_1
+  - first:
+      213: 454216670266824
+    second: VIP_PopDancer_NE_Walk_2
+  - first:
+      213: 284810677865502133
+    second: VIP_PopDancer_NE_Walk_3
+  - first:
+      213: 415158240750970297
+    second: VIP_PopDancer_NE_Wave_0
+  - first:
+      213: 189216069726541282
+    second: VIP_PopDancer_NE_Wave_1
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 4096
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: VIP_PopDancer_SE_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 573
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b19b9a4f371a5aecbe335f6ba2e28736
+      internalID: 973222832186303877
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_PopDancer_SE_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 573
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c65cade674c35bc5889eb6440d5ee36a
+      internalID: 831824116688389529
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_PopDancer_SE_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 573
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f02f4a09aede58ba9face17da60bc7f2
+      internalID: 890705552610624970
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_PopDancer_SE_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 573
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7baa07bd2285e68b7c818287b79fb5b
+      internalID: 1080310599063639324
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_PopDancer_SE_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 573
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1e4dc6678f256de90efe23f69607647
+      internalID: 770172988887442722
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_PopDancer_SE_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 573
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05082a2079575508a8cf343fe123785c
+      internalID: 828959701031044467
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_PopDancer_SE_Wave_0
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 573
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11c933cbb7e556e0824ff2b7ce9697d3
+      internalID: 766367521818351084
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_PopDancer_SE_Wave_1
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 573
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbb72b33e85f5f58a7efb2b44c6932f3
+      internalID: 1060101060866643266
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_PopDancer_SW_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 382
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47412bce607f57c6befbc1369c28c9cc
+      internalID: 939429592046163407
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_PopDancer_SW_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 382
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67f4fea8a9085bb79ec913d40d13a231
+      internalID: 627618222381204978
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_PopDancer_SW_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 382
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f86ed1c6a9f533fb80ed5d7ea782ebd
+      internalID: 642147807692129543
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_PopDancer_SW_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 382
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b39a182f6c557babccf396965e3ff6b
+      internalID: 531221139067229573
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_PopDancer_SW_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 382
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e822fb94be605e1a8d4010e9d8cf8863
+      internalID: 252808281166599456
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_PopDancer_SW_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 382
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 604d2da6845751a6b50ab8b582d644c0
+      internalID: 1106598935912355091
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_PopDancer_SW_Wave_0
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 382
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2911f56f82845eddb61fa9c193533401
+      internalID: 694277990669608394
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_PopDancer_SW_Wave_1
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 382
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7adc31802c095a16a035828bf7f392fb
+      internalID: 1091637101462140270
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_PopDancer_NW_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 191
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f181bc87d87f5c86bff1b0547afc0d23
+      internalID: 789775020592174489
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_PopDancer_NW_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 191
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a9eeeaa5502577e9935a958c9458cfb
+      internalID: 1146654707217900852
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_PopDancer_NW_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 191
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 984dd53b00b750d18f0ab4f786813dfc
+      internalID: 1036213788339049766
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_PopDancer_NW_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 191
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6a38e5ca9ea59e39bb07e74c9fbd8d3
+      internalID: 276480038375060784
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_PopDancer_NW_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 191
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6eb12e2dc2a05adfbd63c54eb0ff5d50
+      internalID: 475429753283081656
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_PopDancer_NW_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 191
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3362157d6ba25758bbf2daac281ff5de
+      internalID: 564721842706765194
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_PopDancer_NW_Wave_0
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 191
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff0cec591ca75b038ec6ab1f75f0aa91
+      internalID: 152902705869473071
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_PopDancer_NW_Wave_1
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 191
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 067f46abadb750efacc84c92adb3c1a7
+      internalID: 856796620355208702
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_PopDancer_NE_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e07bdcae51d059aab65558c02dbc569d
+      internalID: 318984006351303992
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_PopDancer_NE_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 0
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85f1950d90bb5ec8985c78adf8db43f7
+      internalID: 1041774918448604516
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_PopDancer_NE_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 0
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21d12c96916e5cba91b594336f0fa92d
+      internalID: 590568630551180737
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_PopDancer_NE_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 0
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b079d725640b599f9d1183a2c83a4b10
+      internalID: 1073341751562675687
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_PopDancer_NE_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 0
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12badeb4a03651cc8156fd2e769e039f
+      internalID: 454216670266824
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_PopDancer_NE_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 0
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19a9bb5fbba3589883d8678a162ead1f
+      internalID: 284810677865502133
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_PopDancer_NE_Wave_0
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 0
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75ca1caeae835b1497073cf2f0f1a100
+      internalID: 415158240750970297
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_PopDancer_NE_Wave_1
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 0
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b23c904ea9f5688ae28dd6b1f895315
+      internalID: 189216069726541282
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: e8450c9f0c415e68ba93f5fe3249ca1a
+    internalID: 0
+    vertices: []
+    indices:
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      VIP_PopDancer_SE_Idle_0: 973222832186303877
+      VIP_PopDancer_SE_Idle_1: 831824116688389529
+      VIP_PopDancer_SE_Walk_0: 890705552610624970
+      VIP_PopDancer_SE_Walk_1: 1080310599063639324
+      VIP_PopDancer_SE_Walk_2: 770172988887442722
+      VIP_PopDancer_SE_Walk_3: 828959701031044467
+      VIP_PopDancer_SE_Wave_0: 766367521818351084
+      VIP_PopDancer_SE_Wave_1: 1060101060866643266
+      VIP_PopDancer_SW_Idle_0: 939429592046163407
+      VIP_PopDancer_SW_Idle_1: 627618222381204978
+      VIP_PopDancer_SW_Walk_0: 642147807692129543
+      VIP_PopDancer_SW_Walk_1: 531221139067229573
+      VIP_PopDancer_SW_Walk_2: 252808281166599456
+      VIP_PopDancer_SW_Walk_3: 1106598935912355091
+      VIP_PopDancer_SW_Wave_0: 694277990669608394
+      VIP_PopDancer_SW_Wave_1: 1091637101462140270
+      VIP_PopDancer_NW_Idle_0: 789775020592174489
+      VIP_PopDancer_NW_Idle_1: 1146654707217900852
+      VIP_PopDancer_NW_Walk_0: 1036213788339049766
+      VIP_PopDancer_NW_Walk_1: 276480038375060784
+      VIP_PopDancer_NW_Walk_2: 475429753283081656
+      VIP_PopDancer_NW_Walk_3: 564721842706765194
+      VIP_PopDancer_NW_Wave_0: 152902705869473071
+      VIP_PopDancer_NW_Wave_1: 856796620355208702
+      VIP_PopDancer_NE_Idle_0: 318984006351303992
+      VIP_PopDancer_NE_Idle_1: 1041774918448604516
+      VIP_PopDancer_NE_Walk_0: 590568630551180737
+      VIP_PopDancer_NE_Walk_1: 1073341751562675687
+      VIP_PopDancer_NE_Walk_2: 454216670266824
+      VIP_PopDancer_NE_Walk_3: 284810677865502133
+      VIP_PopDancer_NE_Wave_0: 415158240750970297
+      VIP_PopDancer_NE_Wave_1: 189216069726541282
+  mipmapLimitGroupName:
+  pSDRemoveMatte: 0
+  userData:
+  assetBundleName:
+  assetBundleVariant:

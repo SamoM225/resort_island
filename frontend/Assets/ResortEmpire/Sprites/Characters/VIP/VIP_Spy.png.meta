@@ -1,0 +1,933 @@
+fileFormatVersion: 2
+guid: 6520561e5a7a5c15807c7338a62358ed
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 511520280668624340
+    second: VIP_Spy_SE_Idle_0
+  - first:
+      213: 340986052777588166
+    second: VIP_Spy_SE_Idle_1
+  - first:
+      213: 583519702490383769
+    second: VIP_Spy_SE_Walk_0
+  - first:
+      213: 602762748047443404
+    second: VIP_Spy_SE_Walk_1
+  - first:
+      213: 829689303337612644
+    second: VIP_Spy_SE_Walk_2
+  - first:
+      213: 599916417785103861
+    second: VIP_Spy_SE_Walk_3
+  - first:
+      213: 47186405323498988
+    second: VIP_Spy_SE_Wave_0
+  - first:
+      213: 592529550419891506
+    second: VIP_Spy_SE_Wave_1
+  - first:
+      213: 920085763401307620
+    second: VIP_Spy_SW_Idle_0
+  - first:
+      213: 881935310497301905
+    second: VIP_Spy_SW_Idle_1
+  - first:
+      213: 133458850607289695
+    second: VIP_Spy_SW_Walk_0
+  - first:
+      213: 242562132605359586
+    second: VIP_Spy_SW_Walk_1
+  - first:
+      213: 295316167371793715
+    second: VIP_Spy_SW_Walk_2
+  - first:
+      213: 665556294472496464
+    second: VIP_Spy_SW_Walk_3
+  - first:
+      213: 72334301962401111
+    second: VIP_Spy_SW_Wave_0
+  - first:
+      213: 955900194858075546
+    second: VIP_Spy_SW_Wave_1
+  - first:
+      213: 764144389879494061
+    second: VIP_Spy_NW_Idle_0
+  - first:
+      213: 836774748527101277
+    second: VIP_Spy_NW_Idle_1
+  - first:
+      213: 1120440986707391881
+    second: VIP_Spy_NW_Walk_0
+  - first:
+      213: 120193179277968857
+    second: VIP_Spy_NW_Walk_1
+  - first:
+      213: 424757612496614723
+    second: VIP_Spy_NW_Walk_2
+  - first:
+      213: 872855621562942921
+    second: VIP_Spy_NW_Walk_3
+  - first:
+      213: 510604569238750667
+    second: VIP_Spy_NW_Wave_0
+  - first:
+      213: 225739034204898650
+    second: VIP_Spy_NW_Wave_1
+  - first:
+      213: 390842715466044915
+    second: VIP_Spy_NE_Idle_0
+  - first:
+      213: 1148677571410220415
+    second: VIP_Spy_NE_Idle_1
+  - first:
+      213: 687198015281886689
+    second: VIP_Spy_NE_Walk_0
+  - first:
+      213: 1088846831121794496
+    second: VIP_Spy_NE_Walk_1
+  - first:
+      213: 518774849429280075
+    second: VIP_Spy_NE_Walk_2
+  - first:
+      213: 655734685638362611
+    second: VIP_Spy_NE_Walk_3
+  - first:
+      213: 727574012160402874
+    second: VIP_Spy_NE_Wave_0
+  - first:
+      213: 137950243166119336
+    second: VIP_Spy_NE_Wave_1
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 4096
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: VIP_Spy_SE_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 567
+        width: 276
+        height: 189
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.391534}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0e443c1c1bf59889cc634871afe098d
+      internalID: 511520280668624340
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_Spy_SE_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 567
+        width: 276
+        height: 189
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.391534}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ce2d7a73873506a91f656a576586103
+      internalID: 340986052777588166
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_Spy_SE_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 567
+        width: 276
+        height: 189
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.391534}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b0173742e0c50eaa6cd48034f59a335
+      internalID: 583519702490383769
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_Spy_SE_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 567
+        width: 276
+        height: 189
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.391534}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4eb43a74aea5e9284de3679ae394e7d
+      internalID: 602762748047443404
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_Spy_SE_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 567
+        width: 276
+        height: 189
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.391534}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5413605e22a25fceb3ac48c97bff11de
+      internalID: 829689303337612644
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_Spy_SE_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 567
+        width: 276
+        height: 189
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.391534}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9db4ff8858c58bab1d43a0c438e1222
+      internalID: 599916417785103861
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_Spy_SE_Wave_0
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 567
+        width: 276
+        height: 189
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.391534}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45536ba67957521eb5f5e32832e239ef
+      internalID: 47186405323498988
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_Spy_SE_Wave_1
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 567
+        width: 276
+        height: 189
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.391534}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 845141f33a325c83858d75c588b8f70b
+      internalID: 592529550419891506
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_Spy_SW_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 378
+        width: 276
+        height: 189
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.391534}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2caa88991aed56919427b55b344cf601
+      internalID: 920085763401307620
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_Spy_SW_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 378
+        width: 276
+        height: 189
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.391534}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9abf833954045ad6ab8dc7030c9f2984
+      internalID: 881935310497301905
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_Spy_SW_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 378
+        width: 276
+        height: 189
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.391534}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb091e36911650e2a536771568415792
+      internalID: 133458850607289695
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_Spy_SW_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 378
+        width: 276
+        height: 189
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.391534}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81ac206c5aec5806b7b2ad2800901a94
+      internalID: 242562132605359586
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_Spy_SW_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 378
+        width: 276
+        height: 189
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.391534}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bddb8c636a5b5970aabd73a049b7dd19
+      internalID: 295316167371793715
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_Spy_SW_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 378
+        width: 276
+        height: 189
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.391534}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b283a8cc87a355039d7cfc810bc33d67
+      internalID: 665556294472496464
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_Spy_SW_Wave_0
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 378
+        width: 276
+        height: 189
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.391534}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7c4b634e99f5e258bb2c1a9e28484c7
+      internalID: 72334301962401111
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_Spy_SW_Wave_1
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 378
+        width: 276
+        height: 189
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.391534}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78164fc99362519eb45a15dbf68012a9
+      internalID: 955900194858075546
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_Spy_NW_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 189
+        width: 276
+        height: 189
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.391534}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0e2b77e7c585a57b67b44e4376a21bc
+      internalID: 764144389879494061
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_Spy_NW_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 189
+        width: 276
+        height: 189
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.391534}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbae19d5e0c75d5c81a61bae36a7af08
+      internalID: 836774748527101277
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_Spy_NW_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 189
+        width: 276
+        height: 189
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.391534}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dd601073afa5ac0841a2b5e50932323
+      internalID: 1120440986707391881
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_Spy_NW_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 189
+        width: 276
+        height: 189
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.391534}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f22fc9ad52e53169219d19dc78a5ee9
+      internalID: 120193179277968857
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_Spy_NW_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 189
+        width: 276
+        height: 189
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.391534}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1232ff90bc30503290464acf6c698021
+      internalID: 424757612496614723
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_Spy_NW_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 189
+        width: 276
+        height: 189
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.391534}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dd462e576ef59559a8ab70c84c46e47
+      internalID: 872855621562942921
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_Spy_NW_Wave_0
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 189
+        width: 276
+        height: 189
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.391534}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d776653baa855f959039c76e4886a63c
+      internalID: 510604569238750667
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_Spy_NW_Wave_1
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 189
+        width: 276
+        height: 189
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.391534}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 478063a6150d5bb5b322069dfd59095f
+      internalID: 225739034204898650
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_Spy_NE_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 276
+        height: 189
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.391534}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77d96d5fbc7a5722bf06235745e76256
+      internalID: 390842715466044915
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_Spy_NE_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 0
+        width: 276
+        height: 189
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.391534}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 475a07d9ef95512cbe6bb4c0413330f3
+      internalID: 1148677571410220415
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_Spy_NE_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 0
+        width: 276
+        height: 189
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.391534}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d714fd4a1be5ae6bfcc60ce546698c9
+      internalID: 687198015281886689
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_Spy_NE_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 0
+        width: 276
+        height: 189
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.391534}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac8ff3292e0e551d913485c5b9c6dce8
+      internalID: 1088846831121794496
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_Spy_NE_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 0
+        width: 276
+        height: 189
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.391534}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9640d2d9ee15250b3d3e81302ad308e
+      internalID: 518774849429280075
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_Spy_NE_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 0
+        width: 276
+        height: 189
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.391534}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ee911e7285e5029944ef341904365c4
+      internalID: 655734685638362611
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_Spy_NE_Wave_0
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 0
+        width: 276
+        height: 189
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.391534}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60f7ab05ed7350bcb9ff28f6d9a69a90
+      internalID: 727574012160402874
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_Spy_NE_Wave_1
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 0
+        width: 276
+        height: 189
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.391534}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 909110f75a7a591fb673cbeb622fa7cc
+      internalID: 137950243166119336
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5f407eb780c1590c801f1528d98c6087
+    internalID: 0
+    vertices: []
+    indices:
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      VIP_Spy_SE_Idle_0: 511520280668624340
+      VIP_Spy_SE_Idle_1: 340986052777588166
+      VIP_Spy_SE_Walk_0: 583519702490383769
+      VIP_Spy_SE_Walk_1: 602762748047443404
+      VIP_Spy_SE_Walk_2: 829689303337612644
+      VIP_Spy_SE_Walk_3: 599916417785103861
+      VIP_Spy_SE_Wave_0: 47186405323498988
+      VIP_Spy_SE_Wave_1: 592529550419891506
+      VIP_Spy_SW_Idle_0: 920085763401307620
+      VIP_Spy_SW_Idle_1: 881935310497301905
+      VIP_Spy_SW_Walk_0: 133458850607289695
+      VIP_Spy_SW_Walk_1: 242562132605359586
+      VIP_Spy_SW_Walk_2: 295316167371793715
+      VIP_Spy_SW_Walk_3: 665556294472496464
+      VIP_Spy_SW_Wave_0: 72334301962401111
+      VIP_Spy_SW_Wave_1: 955900194858075546
+      VIP_Spy_NW_Idle_0: 764144389879494061
+      VIP_Spy_NW_Idle_1: 836774748527101277
+      VIP_Spy_NW_Walk_0: 1120440986707391881
+      VIP_Spy_NW_Walk_1: 120193179277968857
+      VIP_Spy_NW_Walk_2: 424757612496614723
+      VIP_Spy_NW_Walk_3: 872855621562942921
+      VIP_Spy_NW_Wave_0: 510604569238750667
+      VIP_Spy_NW_Wave_1: 225739034204898650
+      VIP_Spy_NE_Idle_0: 390842715466044915
+      VIP_Spy_NE_Idle_1: 1148677571410220415
+      VIP_Spy_NE_Walk_0: 687198015281886689
+      VIP_Spy_NE_Walk_1: 1088846831121794496
+      VIP_Spy_NE_Walk_2: 518774849429280075
+      VIP_Spy_NE_Walk_3: 655734685638362611
+      VIP_Spy_NE_Wave_0: 727574012160402874
+      VIP_Spy_NE_Wave_1: 137950243166119336
+  mipmapLimitGroupName:
+  pSDRemoveMatte: 0
+  userData:
+  assetBundleName:
+  assetBundleVariant:

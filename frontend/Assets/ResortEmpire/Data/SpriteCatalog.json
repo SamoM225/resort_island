@@ -1,0 +1,4134 @@
+{
+ "pixelsPerUnit": 128,
+ "cellSize": [
+  1,
+  0.5,
+  1
+ ],
+ "groundHeightUnits": {
+  "water": 0,
+  "sand": 0.0735,
+  "grass": 0.147
+ },
+ "pivot": "footprint centre at water level",
+ "pathMaskBits": {
+  "1": "-x",
+  "2": "+x",
+  "4": "-y",
+  "8": "+y"
+ },
+ "sheets": [
+  {
+   "path": "Assets/ResortEmpire/Sprites/Buildings/BeachBar.png",
+   "size": [
+    1336,
+    681
+   ],
+   "sprites": [
+    {
+     "sprite": "BeachBar_Lv1_R0",
+     "footprint": [
+      2,
+      2
+     ],
+     "rectPx": [
+      2,
+      454,
+      330,
+      223
+     ],
+     "pivot": [
+      0.40606,
+      0.3139
+     ],
+     "name": "beach_bar",
+     "level": 1,
+     "rotation": 0
+    },
+    {
+     "sprite": "BeachBar_Lv1_R1",
+     "footprint": [
+      2,
+      2
+     ],
+     "rectPx": [
+      336,
+      454,
+      330,
+      211
+     ],
+     "pivot": [
+      0.40606,
+      0.33175
+     ],
+     "name": "beach_bar",
+     "level": 1,
+     "rotation": 1
+    },
+    {
+     "sprite": "BeachBar_Lv1_R2",
+     "footprint": [
+      2,
+      2
+     ],
+     "rectPx": [
+      682,
+      454,
+      306,
+      211
+     ],
+     "pivot": [
+      0.43791,
+      0.33175
+     ],
+     "name": "beach_bar",
+     "level": 1,
+     "rotation": 2
+    },
+    {
+     "sprite": "BeachBar_Lv1_R3",
+     "footprint": [
+      2,
+      2
+     ],
+     "rectPx": [
+      1016,
+      454,
+      306,
+      223
+     ],
+     "pivot": [
+      0.43791,
+      0.3139
+     ],
+     "name": "beach_bar",
+     "level": 1,
+     "rotation": 3
+    },
+    {
+     "sprite": "BeachBar_Lv2_R0",
+     "footprint": [
+      2,
+      2
+     ],
+     "rectPx": [
+      2,
+      227,
+      330,
+      223
+     ],
+     "pivot": [
+      0.40606,
+      0.3139
+     ],
+     "name": "beach_bar",
+     "level": 2,
+     "rotation": 0
+    },
+    {
+     "sprite": "BeachBar_Lv2_R1",
+     "footprint": [
+      2,
+      2
+     ],
+     "rectPx": [
+      336,
+      227,
+      330,
+      211
+     ],
+     "pivot": [
+      0.40606,
+      0.33175
+     ],
+     "name": "beach_bar",
+     "level": 2,
+     "rotation": 1
+    },
+    {
+     "sprite": "BeachBar_Lv2_R2",
+     "footprint": [
+      2,
+      2
+     ],
+     "rectPx": [
+      682,
+      227,
+      306,
+      211
+     ],
+     "pivot": [
+      0.43791,
+      0.33175
+     ],
+     "name": "beach_bar",
+     "level": 2,
+     "rotation": 2
+    },
+    {
+     "sprite": "BeachBar_Lv2_R3",
+     "footprint": [
+      2,
+      2
+     ],
+     "rectPx": [
+      1016,
+      227,
+      306,
+      223
+     ],
+     "pivot": [
+      0.43791,
+      0.3139
+     ],
+     "name": "beach_bar",
+     "level": 2,
+     "rotation": 3
+    },
+    {
+     "sprite": "BeachBar_Lv3_R0",
+     "footprint": [
+      2,
+      2
+     ],
+     "rectPx": [
+      2,
+      0,
+      330,
+      223
+     ],
+     "pivot": [
+      0.40606,
+      0.3139
+     ],
+     "name": "beach_bar",
+     "level": 3,
+     "rotation": 0
+    },
+    {
+     "sprite": "BeachBar_Lv3_R1",
+     "footprint": [
+      2,
+      2
+     ],
+     "rectPx": [
+      336,
+      0,
+      330,
+      211
+     ],
+     "pivot": [
+      0.40606,
+      0.33175
+     ],
+     "name": "beach_bar",
+     "level": 3,
+     "rotation": 1
+    },
+    {
+     "sprite": "BeachBar_Lv3_R2",
+     "footprint": [
+      2,
+      2
+     ],
+     "rectPx": [
+      682,
+      0,
+      306,
+      211
+     ],
+     "pivot": [
+      0.43791,
+      0.33175
+     ],
+     "name": "beach_bar",
+     "level": 3,
+     "rotation": 2
+    },
+    {
+     "sprite": "BeachBar_Lv3_R3",
+     "footprint": [
+      2,
+      2
+     ],
+     "rectPx": [
+      1016,
+      0,
+      306,
+      223
+     ],
+     "pivot": [
+      0.43791,
+      0.3139
+     ],
+     "name": "beach_bar",
+     "level": 3,
+     "rotation": 3
+    }
+   ]
+  },
+  {
+   "path": "Assets/ResortEmpire/Sprites/Buildings/Bungalows.png",
+   "size": [
+    1732,
+    819
+   ],
+   "sprites": [
+    {
+     "sprite": "Bungalows_Lv1_R0",
+     "footprint": [
+      3,
+      3
+     ],
+     "rectPx": [
+      2,
+      546,
+      429,
+      269
+     ],
+     "pivot": [
+      0.46154,
+      0.37918
+     ],
+     "name": "bungalows",
+     "level": 1,
+     "rotation": 0
+    },
+    {
+     "sprite": "Bungalows_Lv1_R1",
+     "footprint": [
+      3,
+      3
+     ],
+     "rectPx": [
+      435,
+      546,
+      429,
+      269
+     ],
+     "pivot": [
+      0.46154,
+      0.37918
+     ],
+     "name": "bungalows",
+     "level": 1,
+     "rotation": 1
+    },
+    {
+     "sprite": "Bungalows_Lv1_R2",
+     "footprint": [
+      3,
+      3
+     ],
+     "rectPx": [
+      868,
+      546,
+      429,
+      205
+     ],
+     "pivot": [
+      0.46154,
+      0.49756
+     ],
+     "name": "bungalows",
+     "level": 1,
+     "rotation": 2
+    },
+    {
+     "sprite": "Bungalows_Lv1_R3",
+     "footprint": [
+      3,
+      3
+     ],
+     "rectPx": [
+      1317,
+      546,
+      396,
+      269
+     ],
+     "pivot": [
+      0.5,
+      0.37918
+     ],
+     "name": "bungalows",
+     "level": 1,
+     "rotation": 3
+    },
+    {
+     "sprite": "Bungalows_Lv2_R0",
+     "footprint": [
+      3,
+      3
+     ],
+     "rectPx": [
+      2,
+      273,
+      429,
+      269
+     ],
+     "pivot": [
+      0.46154,
+      0.37918
+     ],
+     "name": "bungalows",
+     "level": 2,
+     "rotation": 0
+    },
+    {
+     "sprite": "Bungalows_Lv2_R1",
+     "footprint": [
+      3,
+      3
+     ],
+     "rectPx": [
+      435,
+      273,
+      429,
+      269
+     ],
+     "pivot": [
+      0.46154,
+      0.37918
+     ],
+     "name": "bungalows",
+     "level": 2,
+     "rotation": 1
+    },
+    {
+     "sprite": "Bungalows_Lv2_R2",
+     "footprint": [
+      3,
+      3
+     ],
+     "rectPx": [
+      868,
+      273,
+      429,
+      205
+     ],
+     "pivot": [
+      0.46154,
+      0.49756
+     ],
+     "name": "bungalows",
+     "level": 2,
+     "rotation": 2
+    },
+    {
+     "sprite": "Bungalows_Lv2_R3",
+     "footprint": [
+      3,
+      3
+     ],
+     "rectPx": [
+      1317,
+      273,
+      396,
+      269
+     ],
+     "pivot": [
+      0.5,
+      0.37918
+     ],
+     "name": "bungalows",
+     "level": 2,
+     "rotation": 3
+    },
+    {
+     "sprite": "Bungalows_Lv3_R0",
+     "footprint": [
+      3,
+      3
+     ],
+     "rectPx": [
+      2,
+      0,
+      429,
+      269
+     ],
+     "pivot": [
+      0.46154,
+      0.37918
+     ],
+     "name": "bungalows",
+     "level": 3,
+     "rotation": 0
+    },
+    {
+     "sprite": "Bungalows_Lv3_R1",
+     "footprint": [
+      3,
+      3
+     ],
+     "rectPx": [
+      435,
+      0,
+      429,
+      269
+     ],
+     "pivot": [
+      0.46154,
+      0.37918
+     ],
+     "name": "bungalows",
+     "level": 3,
+     "rotation": 1
+    },
+    {
+     "sprite": "Bungalows_Lv3_R2",
+     "footprint": [
+      3,
+      3
+     ],
+     "rectPx": [
+      868,
+      0,
+      429,
+      269
+     ],
+     "pivot": [
+      0.46154,
+      0.37918
+     ],
+     "name": "bungalows",
+     "level": 3,
+     "rotation": 2
+    },
+    {
+     "sprite": "Bungalows_Lv3_R3",
+     "footprint": [
+      3,
+      3
+     ],
+     "rectPx": [
+      1301,
+      0,
+      429,
+      269
+     ],
+     "pivot": [
+      0.46154,
+      0.37918
+     ],
+     "name": "bungalows",
+     "level": 3,
+     "rotation": 3
+    }
+   ]
+  },
+  {
+   "path": "Assets/ResortEmpire/Sprites/Buildings/Plot2x2.png",
+   "size": [
+    1112,
+    164
+   ],
+   "sprites": [
+    {
+     "sprite": "Plot2x2_R0",
+     "footprint": [
+      2,
+      2
+     ],
+     "rectPx": [
+      2,
+      0,
+      274,
+      160
+     ],
+     "pivot": [
+      0.48905,
+      0.4375
+     ],
+     "name": "plot_2x2",
+     "rotation": 0
+    },
+    {
+     "sprite": "Plot2x2_R1",
+     "footprint": [
+      2,
+      2
+     ],
+     "rectPx": [
+      280,
+      0,
+      274,
+      160
+     ],
+     "pivot": [
+      0.48905,
+      0.4375
+     ],
+     "name": "plot_2x2",
+     "rotation": 1
+    },
+    {
+     "sprite": "Plot2x2_R2",
+     "footprint": [
+      2,
+      2
+     ],
+     "rectPx": [
+      558,
+      0,
+      274,
+      160
+     ],
+     "pivot": [
+      0.48905,
+      0.4375
+     ],
+     "name": "plot_2x2",
+     "rotation": 2
+    },
+    {
+     "sprite": "Plot2x2_R3",
+     "footprint": [
+      2,
+      2
+     ],
+     "rectPx": [
+      836,
+      0,
+      274,
+      160
+     ],
+     "pivot": [
+      0.48905,
+      0.4375
+     ],
+     "name": "plot_2x2",
+     "rotation": 3
+    }
+   ]
+  },
+  {
+   "path": "Assets/ResortEmpire/Sprites/Buildings/Plot3x3.png",
+   "size": [
+    1624,
+    228
+   ],
+   "sprites": [
+    {
+     "sprite": "Plot3x3_R0",
+     "footprint": [
+      3,
+      3
+     ],
+     "rectPx": [
+      2,
+      0,
+      402,
+      224
+     ],
+     "pivot": [
+      0.49254,
+      0.45536
+     ],
+     "name": "plot_3x3",
+     "rotation": 0
+    },
+    {
+     "sprite": "Plot3x3_R1",
+     "footprint": [
+      3,
+      3
+     ],
+     "rectPx": [
+      408,
+      0,
+      402,
+      224
+     ],
+     "pivot": [
+      0.49254,
+      0.45536
+     ],
+     "name": "plot_3x3",
+     "rotation": 1
+    },
+    {
+     "sprite": "Plot3x3_R2",
+     "footprint": [
+      3,
+      3
+     ],
+     "rectPx": [
+      814,
+      0,
+      402,
+      224
+     ],
+     "pivot": [
+      0.49254,
+      0.45536
+     ],
+     "name": "plot_3x3",
+     "rotation": 2
+    },
+    {
+     "sprite": "Plot3x3_R3",
+     "footprint": [
+      3,
+      3
+     ],
+     "rectPx": [
+      1220,
+      0,
+      402,
+      224
+     ],
+     "pivot": [
+      0.49254,
+      0.45536
+     ],
+     "name": "plot_3x3",
+     "rotation": 3
+    }
+   ]
+  },
+  {
+   "path": "Assets/ResortEmpire/Sprites/Buildings/Pool.png",
+   "size": [
+    1728,
+    795
+   ],
+   "sprites": [
+    {
+     "sprite": "Pool_Lv1_R0",
+     "footprint": [
+      3,
+      3
+     ],
+     "rectPx": [
+      17,
+      530,
+      397,
+      211
+     ],
+     "pivot": [
+      0.49874,
+      0.48341
+     ],
+     "name": "pool",
+     "level": 1,
+     "rotation": 0
+    },
+    {
+     "sprite": "Pool_Lv1_R1",
+     "footprint": [
+      3,
+      3
+     ],
+     "rectPx": [
+      449,
+      530,
+      397,
+      211
+     ],
+     "pivot": [
+      0.49874,
+      0.48341
+     ],
+     "name": "pool",
+     "level": 1,
+     "rotation": 1
+    },
+    {
+     "sprite": "Pool_Lv1_R2",
+     "footprint": [
+      3,
+      3
+     ],
+     "rectPx": [
+      881,
+      530,
+      397,
+      261
+     ],
+     "pivot": [
+      0.49874,
+      0.3908
+     ],
+     "name": "pool",
+     "level": 1,
+     "rotation": 2
+    },
+    {
+     "sprite": "Pool_Lv1_R3",
+     "footprint": [
+      3,
+      3
+     ],
+     "rectPx": [
+      1298,
+      530,
+      428,
+      211
+     ],
+     "pivot": [
+      0.46262,
+      0.48341
+     ],
+     "name": "pool",
+     "level": 1,
+     "rotation": 3
+    },
+    {
+     "sprite": "Pool_Lv2_R0",
+     "footprint": [
+      3,
+      3
+     ],
+     "rectPx": [
+      14,
+      265,
+      404,
+      230
+     ],
+     "pivot": [
+      0.4901,
+      0.44348
+     ],
+     "name": "pool",
+     "level": 2,
+     "rotation": 0
+    },
+    {
+     "sprite": "Pool_Lv2_R1",
+     "footprint": [
+      3,
+      3
+     ],
+     "rectPx": [
+      446,
+      265,
+      403,
+      211
+     ],
+     "pivot": [
+      0.49132,
+      0.48341
+     ],
+     "name": "pool",
+     "level": 2,
+     "rotation": 1
+    },
+    {
+     "sprite": "Pool_Lv2_R2",
+     "footprint": [
+      3,
+      3
+     ],
+     "rectPx": [
+      881,
+      265,
+      397,
+      261
+     ],
+     "pivot": [
+      0.49874,
+      0.3908
+     ],
+     "name": "pool",
+     "level": 2,
+     "rotation": 2
+    },
+    {
+     "sprite": "Pool_Lv2_R3",
+     "footprint": [
+      3,
+      3
+     ],
+     "rectPx": [
+      1298,
+      265,
+      428,
+      229
+     ],
+     "pivot": [
+      0.46262,
+      0.44541
+     ],
+     "name": "pool",
+     "level": 2,
+     "rotation": 3
+    },
+    {
+     "sprite": "Pool_Lv3_R0",
+     "footprint": [
+      3,
+      3
+     ],
+     "rectPx": [
+      14,
+      0,
+      404,
+      244
+     ],
+     "pivot": [
+      0.4901,
+      0.41803
+     ],
+     "name": "pool",
+     "level": 3,
+     "rotation": 0
+    },
+    {
+     "sprite": "Pool_Lv3_R1",
+     "footprint": [
+      3,
+      3
+     ],
+     "rectPx": [
+      446,
+      0,
+      403,
+      240
+     ],
+     "pivot": [
+      0.49132,
+      0.425
+     ],
+     "name": "pool",
+     "level": 3,
+     "rotation": 1
+    },
+    {
+     "sprite": "Pool_Lv3_R2",
+     "footprint": [
+      3,
+      3
+     ],
+     "rectPx": [
+      881,
+      0,
+      397,
+      240
+     ],
+     "pivot": [
+      0.49874,
+      0.425
+     ],
+     "name": "pool",
+     "level": 3,
+     "rotation": 2
+    },
+    {
+     "sprite": "Pool_Lv3_R3",
+     "footprint": [
+      3,
+      3
+     ],
+     "rectPx": [
+      1313,
+      0,
+      397,
+      245
+     ],
+     "pivot": [
+      0.49874,
+      0.41633
+     ],
+     "name": "pool",
+     "level": 3,
+     "rotation": 3
+    }
+   ]
+  },
+  {
+   "path": "Assets/ResortEmpire/Sprites/Buildings/Reception.png",
+   "size": [
+    1988,
+    1104
+   ],
+   "sprites": [
+    {
+     "sprite": "Reception_Lv1_R0",
+     "footprint": [
+      3,
+      3
+     ],
+     "rectPx": [
+      39,
+      736,
+      418,
+      252
+     ],
+     "pivot": [
+      0.47368,
+      0.40476
+     ],
+     "name": "reception",
+     "level": 1,
+     "rotation": 0
+    },
+    {
+     "sprite": "Reception_Lv1_R1",
+     "footprint": [
+      3,
+      3
+     ],
+     "rectPx": [
+      536,
+      736,
+      418,
+      235
+     ],
+     "pivot": [
+      0.47368,
+      0.43404
+     ],
+     "name": "reception",
+     "level": 1,
+     "rotation": 1
+    },
+    {
+     "sprite": "Reception_Lv1_R2",
+     "footprint": [
+      3,
+      3
+     ],
+     "rectPx": [
+      1044,
+      736,
+      396,
+      235
+     ],
+     "pivot": [
+      0.5,
+      0.43404
+     ],
+     "name": "reception",
+     "level": 1,
+     "rotation": 2
+    },
+    {
+     "sprite": "Reception_Lv1_R3",
+     "footprint": [
+      3,
+      3
+     ],
+     "rectPx": [
+      1541,
+      736,
+      396,
+      252
+     ],
+     "pivot": [
+      0.5,
+      0.40476
+     ],
+     "name": "reception",
+     "level": 1,
+     "rotation": 3
+    },
+    {
+     "sprite": "Reception_Lv2_R0",
+     "footprint": [
+      3,
+      3
+     ],
+     "rectPx": [
+      21,
+      368,
+      455,
+      301
+     ],
+     "pivot": [
+      0.43516,
+      0.33887
+     ],
+     "name": "reception",
+     "level": 2,
+     "rotation": 0
+    },
+    {
+     "sprite": "Reception_Lv2_R1",
+     "footprint": [
+      3,
+      3
+     ],
+     "rectPx": [
+      518,
+      368,
+      455,
+      283
+     ],
+     "pivot": [
+      0.43516,
+      0.36042
+     ],
+     "name": "reception",
+     "level": 2,
+     "rotation": 1
+    },
+    {
+     "sprite": "Reception_Lv2_R2",
+     "footprint": [
+      3,
+      3
+     ],
+     "rectPx": [
+      1032,
+      368,
+      420,
+      283
+     ],
+     "pivot": [
+      0.47143,
+      0.36042
+     ],
+     "name": "reception",
+     "level": 2,
+     "rotation": 2
+    },
+    {
+     "sprite": "Reception_Lv2_R3",
+     "footprint": [
+      3,
+      3
+     ],
+     "rectPx": [
+      1529,
+      368,
+      420,
+      316
+     ],
+     "pivot": [
+      0.47143,
+      0.32278
+     ],
+     "name": "reception",
+     "level": 2,
+     "rotation": 3
+    },
+    {
+     "sprite": "Reception_Lv3_R0",
+     "footprint": [
+      3,
+      3
+     ],
+     "rectPx": [
+      2,
+      0,
+      493,
+      350
+     ],
+     "pivot": [
+      0.40162,
+      0.29143
+     ],
+     "name": "reception",
+     "level": 3,
+     "rotation": 0
+    },
+    {
+     "sprite": "Reception_Lv3_R1",
+     "footprint": [
+      3,
+      3
+     ],
+     "rectPx": [
+      499,
+      0,
+      493,
+      332
+     ],
+     "pivot": [
+      0.40162,
+      0.30723
+     ],
+     "name": "reception",
+     "level": 3,
+     "rotation": 1
+    },
+    {
+     "sprite": "Reception_Lv3_R2",
+     "footprint": [
+      3,
+      3
+     ],
+     "rectPx": [
+      1014,
+      0,
+      457,
+      332
+     ],
+     "pivot": [
+      0.43326,
+      0.30723
+     ],
+     "name": "reception",
+     "level": 3,
+     "rotation": 2
+    },
+    {
+     "sprite": "Reception_Lv3_R3",
+     "footprint": [
+      3,
+      3
+     ],
+     "rectPx": [
+      1511,
+      0,
+      457,
+      364
+     ],
+     "pivot": [
+      0.43326,
+      0.28022
+     ],
+     "name": "reception",
+     "level": 3,
+     "rotation": 3
+    }
+   ]
+  },
+  {
+   "path": "Assets/ResortEmpire/Sprites/Buildings/Restaurant.png",
+   "size": [
+    1828,
+    918
+   ],
+   "sprites": [
+    {
+     "sprite": "Restaurant_Lv1_R0",
+     "footprint": [
+      3,
+      3
+     ],
+     "rectPx": [
+      5,
+      612,
+      447,
+      294
+     ],
+     "pivot": [
+      0.44295,
+      0.34694
+     ],
+     "name": "restaurant",
+     "level": 1,
+     "rotation": 0
+    },
+    {
+     "sprite": "Restaurant_Lv1_R1",
+     "footprint": [
+      3,
+      3
+     ],
+     "rectPx": [
+      462,
+      612,
+      447,
+      274
+     ],
+     "pivot": [
+      0.44295,
+      0.37226
+     ],
+     "name": "restaurant",
+     "level": 1,
+     "rotation": 1
+    },
+    {
+     "sprite": "Restaurant_Lv1_R2",
+     "footprint": [
+      3,
+      3
+     ],
+     "rectPx": [
+      925,
+      612,
+      434,
+      274
+     ],
+     "pivot": [
+      0.45622,
+      0.37226
+     ],
+     "name": "restaurant",
+     "level": 1,
+     "rotation": 2
+    },
+    {
+     "sprite": "Restaurant_Lv1_R3",
+     "footprint": [
+      3,
+      3
+     ],
+     "rectPx": [
+      1382,
+      612,
+      434,
+      277
+     ],
+     "pivot": [
+      0.45622,
+      0.36823
+     ],
+     "name": "restaurant",
+     "level": 1,
+     "rotation": 3
+    },
+    {
+     "sprite": "Restaurant_Lv2_R0",
+     "footprint": [
+      3,
+      3
+     ],
+     "rectPx": [
+      5,
+      306,
+      447,
+      294
+     ],
+     "pivot": [
+      0.44295,
+      0.34694
+     ],
+     "name": "restaurant",
+     "level": 2,
+     "rotation": 0
+    },
+    {
+     "sprite": "Restaurant_Lv2_R1",
+     "footprint": [
+      3,
+      3
+     ],
+     "rectPx": [
+      462,
+      306,
+      447,
+      277
+     ],
+     "pivot": [
+      0.44295,
+      0.36823
+     ],
+     "name": "restaurant",
+     "level": 2,
+     "rotation": 1
+    },
+    {
+     "sprite": "Restaurant_Lv2_R2",
+     "footprint": [
+      3,
+      3
+     ],
+     "rectPx": [
+      925,
+      306,
+      435,
+      277
+     ],
+     "pivot": [
+      0.45517,
+      0.36823
+     ],
+     "name": "restaurant",
+     "level": 2,
+     "rotation": 2
+    },
+    {
+     "sprite": "Restaurant_Lv2_R3",
+     "footprint": [
+      3,
+      3
+     ],
+     "rectPx": [
+      1382,
+      306,
+      435,
+      277
+     ],
+     "pivot": [
+      0.45517,
+      0.36823
+     ],
+     "name": "restaurant",
+     "level": 2,
+     "rotation": 3
+    },
+    {
+     "sprite": "Restaurant_Lv3_R0",
+     "footprint": [
+      3,
+      3
+     ],
+     "rectPx": [
+      2,
+      0,
+      453,
+      302
+     ],
+     "pivot": [
+      0.43709,
+      0.33775
+     ],
+     "name": "restaurant",
+     "level": 3,
+     "rotation": 0
+    },
+    {
+     "sprite": "Restaurant_Lv3_R1",
+     "footprint": [
+      3,
+      3
+     ],
+     "rectPx": [
+      459,
+      0,
+      453,
+      277
+     ],
+     "pivot": [
+      0.43709,
+      0.36823
+     ],
+     "name": "restaurant",
+     "level": 3,
+     "rotation": 1
+    },
+    {
+     "sprite": "Restaurant_Lv3_R2",
+     "footprint": [
+      3,
+      3
+     ],
+     "rectPx": [
+      925,
+      0,
+      435,
+      277
+     ],
+     "pivot": [
+      0.45517,
+      0.36823
+     ],
+     "name": "restaurant",
+     "level": 3,
+     "rotation": 2
+    },
+    {
+     "sprite": "Restaurant_Lv3_R3",
+     "footprint": [
+      3,
+      3
+     ],
+     "rectPx": [
+      1382,
+      0,
+      435,
+      296
+     ],
+     "pivot": [
+      0.45517,
+      0.34459
+     ],
+     "name": "restaurant",
+     "level": 3,
+     "rotation": 3
+    }
+   ]
+  },
+  {
+   "path": "Assets/ResortEmpire/Sprites/Buildings/Shop.png",
+   "size": [
+    1260,
+    215
+   ],
+   "sprites": [
+    {
+     "sprite": "Shop_R0",
+     "footprint": [
+      2,
+      2
+     ],
+     "rectPx": [
+      2,
+      0,
+      311,
+      211
+     ],
+     "pivot": [
+      0.43087,
+      0.33175
+     ],
+     "name": "shop",
+     "rotation": 0
+    },
+    {
+     "sprite": "Shop_R1",
+     "footprint": [
+      2,
+      2
+     ],
+     "rectPx": [
+      317,
+      0,
+      311,
+      193
+     ],
+     "pivot": [
+      0.43087,
+      0.36269
+     ],
+     "name": "shop",
+     "rotation": 1
+    },
+    {
+     "sprite": "Shop_R2",
+     "footprint": [
+      2,
+      2
+     ],
+     "rectPx": [
+      649,
+      0,
+      276,
+      193
+     ],
+     "pivot": [
+      0.48551,
+      0.36269
+     ],
+     "name": "shop",
+     "rotation": 2
+    },
+    {
+     "sprite": "Shop_R3",
+     "footprint": [
+      2,
+      2
+     ],
+     "rectPx": [
+      964,
+      0,
+      276,
+      211
+     ],
+     "pivot": [
+      0.48551,
+      0.33175
+     ],
+     "name": "shop",
+     "rotation": 3
+    }
+   ]
+  },
+  {
+   "path": "Assets/ResortEmpire/Sprites/Buildings/Souvenir.png",
+   "size": [
+    1240,
+    212
+   ],
+   "sprites": [
+    {
+     "sprite": "Souvenir_R0",
+     "footprint": [
+      2,
+      2
+     ],
+     "rectPx": [
+      2,
+      0,
+      306,
+      208
+     ],
+     "pivot": [
+      0.43791,
+      0.33654
+     ],
+     "name": "souvenir",
+     "rotation": 0
+    },
+    {
+     "sprite": "Souvenir_R1",
+     "footprint": [
+      2,
+      2
+     ],
+     "rectPx": [
+      312,
+      0,
+      306,
+      189
+     ],
+     "pivot": [
+      0.43791,
+      0.37037
+     ],
+     "name": "souvenir",
+     "rotation": 1
+    },
+    {
+     "sprite": "Souvenir_R2",
+     "footprint": [
+      2,
+      2
+     ],
+     "rectPx": [
+      634,
+      0,
+      282,
+      189
+     ],
+     "pivot": [
+      0.47518,
+      0.37037
+     ],
+     "name": "souvenir",
+     "rotation": 2
+    },
+    {
+     "sprite": "Souvenir_R3",
+     "footprint": [
+      2,
+      2
+     ],
+     "rectPx": [
+      942,
+      0,
+      285,
+      208
+     ],
+     "pivot": [
+      0.47018,
+      0.33654
+     ],
+     "name": "souvenir",
+     "rotation": 3
+    }
+   ]
+  },
+  {
+   "path": "Assets/ResortEmpire/Sprites/Buildings/Spa.png",
+   "size": [
+    1752,
+    270
+   ],
+   "sprites": [
+    {
+     "sprite": "Spa_R0",
+     "footprint": [
+      3,
+      3
+     ],
+     "rectPx": [
+      21,
+      0,
+      396,
+      263
+     ],
+     "pivot": [
+      0.5,
+      0.38783
+     ],
+     "name": "spa",
+     "rotation": 0
+    },
+    {
+     "sprite": "Spa_R1",
+     "footprint": [
+      3,
+      3
+     ],
+     "rectPx": [
+      440,
+      0,
+      434,
+      266
+     ],
+     "pivot": [
+      0.45622,
+      0.38346
+     ],
+     "name": "spa",
+     "rotation": 1
+    },
+    {
+     "sprite": "Spa_R2",
+     "footprint": [
+      3,
+      3
+     ],
+     "rectPx": [
+      883,
+      0,
+      423,
+      252
+     ],
+     "pivot": [
+      0.46809,
+      0.40476
+     ],
+     "name": "spa",
+     "rotation": 2
+    },
+    {
+     "sprite": "Spa_R3",
+     "footprint": [
+      3,
+      3
+     ],
+     "rectPx": [
+      1322,
+      0,
+      422,
+      228
+     ],
+     "pivot": [
+      0.46919,
+      0.44737
+     ],
+     "name": "spa",
+     "rotation": 3
+    }
+   ]
+  },
+  {
+   "path": "Assets/ResortEmpire/Sprites/Buildings/Villa.png",
+   "size": [
+    1752,
+    277
+   ],
+   "sprites": [
+    {
+     "sprite": "Villa_R0",
+     "footprint": [
+      3,
+      3
+     ],
+     "rectPx": [
+      16,
+      0,
+      406,
+      273
+     ],
+     "pivot": [
+      0.48768,
+      0.37363
+     ],
+     "name": "villa",
+     "rotation": 0
+    },
+    {
+     "sprite": "Villa_R1",
+     "footprint": [
+      3,
+      3
+     ],
+     "rectPx": [
+      440,
+      0,
+      434,
+      229
+     ],
+     "pivot": [
+      0.45622,
+      0.44541
+     ],
+     "name": "villa",
+     "rotation": 1
+    },
+    {
+     "sprite": "Villa_R2",
+     "footprint": [
+      3,
+      3
+     ],
+     "rectPx": [
+      897,
+      0,
+      396,
+      229
+     ],
+     "pivot": [
+      0.5,
+      0.44541
+     ],
+     "name": "villa",
+     "rotation": 2
+    },
+    {
+     "sprite": "Villa_R3",
+     "footprint": [
+      3,
+      3
+     ],
+     "rectPx": [
+      1335,
+      0,
+      396,
+      273
+     ],
+     "pivot": [
+      0.5,
+      0.37363
+     ],
+     "name": "villa",
+     "rotation": 3
+    }
+   ]
+  },
+  {
+   "path": "Assets/ResortEmpire/Sprites/Decor/Bush.png",
+   "size": [
+    576,
+    88
+   ],
+   "sprites": [
+    {
+     "sprite": "Bush_R0",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      2,
+      0,
+      140,
+      82
+     ],
+     "pivot": [
+      0.5,
+      0.46341
+     ],
+     "name": "bush",
+     "rotation": 0
+    },
+    {
+     "sprite": "Bush_R1",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      146,
+      0,
+      140,
+      84
+     ],
+     "pivot": [
+      0.5,
+      0.45238
+     ],
+     "name": "bush",
+     "rotation": 1
+    },
+    {
+     "sprite": "Bush_R2",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      290,
+      0,
+      140,
+      79
+     ],
+     "pivot": [
+      0.5,
+      0.48101
+     ],
+     "name": "bush",
+     "rotation": 2
+    },
+    {
+     "sprite": "Bush_R3",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      434,
+      0,
+      140,
+      83
+     ],
+     "pivot": [
+      0.5,
+      0.45783
+     ],
+     "name": "bush",
+     "rotation": 3
+    }
+   ]
+  },
+  {
+   "path": "Assets/ResortEmpire/Sprites/Decor/Jungle.png",
+   "size": [
+    672,
+    146
+   ],
+   "sprites": [
+    {
+     "sprite": "Jungle_R0",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      3,
+      0,
+      162,
+      142
+     ],
+     "pivot": [
+      0.4321,
+      0.26761
+     ],
+     "name": "jungle",
+     "rotation": 0
+    },
+    {
+     "sprite": "Jungle_R1",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      170,
+      0,
+      164,
+      141
+     ],
+     "pivot": [
+      0.42683,
+      0.2695
+     ],
+     "name": "jungle",
+     "rotation": 1
+    },
+    {
+     "sprite": "Jungle_R2",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      339,
+      0,
+      162,
+      139
+     ],
+     "pivot": [
+      0.4321,
+      0.27338
+     ],
+     "name": "jungle",
+     "rotation": 2
+    },
+    {
+     "sprite": "Jungle_R3",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      507,
+      0,
+      162,
+      141
+     ],
+     "pivot": [
+      0.4321,
+      0.2695
+     ],
+     "name": "jungle",
+     "rotation": 3
+    }
+   ]
+  },
+  {
+   "path": "Assets/ResortEmpire/Sprites/Decor/JungleB.png",
+   "size": [
+    604,
+    127
+   ],
+   "sprites": [
+    {
+     "sprite": "JungleB_R0",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      4,
+      0,
+      143,
+      120
+     ],
+     "pivot": [
+      0.48951,
+      0.31667
+     ],
+     "name": "jungle_b",
+     "rotation": 0
+    },
+    {
+     "sprite": "JungleB_R1",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      155,
+      0,
+      143,
+      123
+     ],
+     "pivot": [
+      0.48951,
+      0.30894
+     ],
+     "name": "jungle_b",
+     "rotation": 1
+    },
+    {
+     "sprite": "JungleB_R2",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      304,
+      0,
+      146,
+      123
+     ],
+     "pivot": [
+      0.47945,
+      0.30894
+     ],
+     "name": "jungle_b",
+     "rotation": 2
+    },
+    {
+     "sprite": "JungleB_R3",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      455,
+      0,
+      147,
+      120
+     ],
+     "pivot": [
+      0.47619,
+      0.31667
+     ],
+     "name": "jungle_b",
+     "rotation": 3
+    }
+   ]
+  },
+  {
+   "path": "Assets/ResortEmpire/Sprites/Decor/Loungers.png",
+   "size": [
+    688,
+    129
+   ],
+   "sprites": [
+    {
+     "sprite": "Loungers_R0",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      2,
+      0,
+      168,
+      125
+     ],
+     "pivot": [
+      0.41667,
+      0.304
+     ],
+     "name": "loungers",
+     "rotation": 0
+    },
+    {
+     "sprite": "Loungers_R1",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      174,
+      0,
+      168,
+      109
+     ],
+     "pivot": [
+      0.41667,
+      0.34862
+     ],
+     "name": "loungers",
+     "rotation": 1
+    },
+    {
+     "sprite": "Loungers_R2",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      360,
+      0,
+      140,
+      109
+     ],
+     "pivot": [
+      0.5,
+      0.34862
+     ],
+     "name": "loungers",
+     "rotation": 2
+    },
+    {
+     "sprite": "Loungers_R3",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      532,
+      0,
+      140,
+      125
+     ],
+     "pivot": [
+      0.5,
+      0.304
+     ],
+     "name": "loungers",
+     "rotation": 3
+    }
+   ]
+  },
+  {
+   "path": "Assets/ResortEmpire/Sprites/Decor/Palm.png",
+   "size": [
+    992,
+    208
+   ],
+   "sprites": [
+    {
+     "sprite": "Palm_R0",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      4,
+      0,
+      239,
+      186
+     ],
+     "pivot": [
+      0.29707,
+      0.2043
+     ],
+     "name": "palm",
+     "rotation": 0
+    },
+    {
+     "sprite": "Palm_R1",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      259,
+      0,
+      226,
+      193
+     ],
+     "pivot": [
+      0.38496,
+      0.19689
+     ],
+     "name": "palm",
+     "rotation": 1
+    },
+    {
+     "sprite": "Palm_R2",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      501,
+      0,
+      238,
+      204
+     ],
+     "pivot": [
+      0.34874,
+      0.18627
+     ],
+     "name": "palm",
+     "rotation": 2
+    },
+    {
+     "sprite": "Palm_R3",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      746,
+      0,
+      244,
+      200
+     ],
+     "pivot": [
+      0.28689,
+      0.19
+     ],
+     "name": "palm",
+     "rotation": 3
+    }
+   ]
+  },
+  {
+   "path": "Assets/ResortEmpire/Sprites/Decor/PalmB.png",
+   "size": [
+    928,
+    184
+   ],
+   "sprites": [
+    {
+     "sprite": "PalmB_R0",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      4,
+      0,
+      224,
+      162
+     ],
+     "pivot": [
+      0.31696,
+      0.23457
+     ],
+     "name": "palm_b",
+     "rotation": 0
+    },
+    {
+     "sprite": "PalmB_R1",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      243,
+      0,
+      210,
+      170
+     ],
+     "pivot": [
+      0.41429,
+      0.22353
+     ],
+     "name": "palm_b",
+     "rotation": 1
+    },
+    {
+     "sprite": "PalmB_R2",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      468,
+      0,
+      223,
+      180
+     ],
+     "pivot": [
+      0.3722,
+      0.21111
+     ],
+     "name": "palm_b",
+     "rotation": 2
+    },
+    {
+     "sprite": "PalmB_R3",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      698,
+      0,
+      228,
+      177
+     ],
+     "pivot": [
+      0.30702,
+      0.21469
+     ],
+     "name": "palm_b",
+     "rotation": 3
+    }
+   ]
+  },
+  {
+   "path": "Assets/ResortEmpire/Sprites/Decor/Rocks.png",
+   "size": [
+    576,
+    82
+   ],
+   "sprites": [
+    {
+     "sprite": "Rocks_R0",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      2,
+      0,
+      140,
+      78
+     ],
+     "pivot": [
+      0.5,
+      0.48718
+     ],
+     "name": "rocks",
+     "rotation": 0
+    },
+    {
+     "sprite": "Rocks_R1",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      146,
+      0,
+      140,
+      76
+     ],
+     "pivot": [
+      0.5,
+      0.5
+     ],
+     "name": "rocks",
+     "rotation": 1
+    },
+    {
+     "sprite": "Rocks_R2",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      290,
+      0,
+      140,
+      76
+     ],
+     "pivot": [
+      0.5,
+      0.5
+     ],
+     "name": "rocks",
+     "rotation": 2
+    },
+    {
+     "sprite": "Rocks_R3",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      434,
+      0,
+      140,
+      76
+     ],
+     "pivot": [
+      0.5,
+      0.5
+     ],
+     "name": "rocks",
+     "rotation": 3
+    }
+   ]
+  },
+  {
+   "path": "Assets/ResortEmpire/Sprites/Decor/TikiTorch.png",
+   "size": [
+    592,
+    143
+   ],
+   "sprites": [
+    {
+     "sprite": "TikiTorch_R0",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      2,
+      0,
+      144,
+      139
+     ],
+     "pivot": [
+      0.48611,
+      0.27338
+     ],
+     "name": "tiki_torch",
+     "rotation": 0
+    },
+    {
+     "sprite": "TikiTorch_R1",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      150,
+      0,
+      144,
+      139
+     ],
+     "pivot": [
+      0.48611,
+      0.27338
+     ],
+     "name": "tiki_torch",
+     "rotation": 1
+    },
+    {
+     "sprite": "TikiTorch_R2",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      298,
+      0,
+      144,
+      139
+     ],
+     "pivot": [
+      0.48611,
+      0.27338
+     ],
+     "name": "tiki_torch",
+     "rotation": 2
+    },
+    {
+     "sprite": "TikiTorch_R3",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      446,
+      0,
+      144,
+      139
+     ],
+     "pivot": [
+      0.48611,
+      0.27338
+     ],
+     "name": "tiki_torch",
+     "rotation": 3
+    }
+   ]
+  },
+  {
+   "path": "Assets/ResortEmpire/Sprites/Transport/Ferry.png",
+   "size": [
+    1600,
+    251
+   ],
+   "sprites": [
+    {
+     "sprite": "Ferry_R0",
+     "footprint": [
+      2,
+      4
+     ],
+     "rectPx": [
+      2,
+      0,
+      396,
+      247
+     ],
+     "pivot": [
+      0.5,
+      0.41296
+     ],
+     "name": "ferry",
+     "rotation": 0
+    },
+    {
+     "sprite": "Ferry_R1",
+     "footprint": [
+      4,
+      2
+     ],
+     "rectPx": [
+      402,
+      0,
+      396,
+      211
+     ],
+     "pivot": [
+      0.5,
+      0.48341
+     ],
+     "name": "ferry",
+     "rotation": 1
+    },
+    {
+     "sprite": "Ferry_R2",
+     "footprint": [
+      2,
+      4
+     ],
+     "rectPx": [
+      802,
+      0,
+      396,
+      211
+     ],
+     "pivot": [
+      0.5,
+      0.48341
+     ],
+     "name": "ferry",
+     "rotation": 2
+    },
+    {
+     "sprite": "Ferry_R3",
+     "footprint": [
+      4,
+      2
+     ],
+     "rectPx": [
+      1202,
+      0,
+      396,
+      247
+     ],
+     "pivot": [
+      0.5,
+      0.41296
+     ],
+     "name": "ferry",
+     "rotation": 3
+    }
+   ]
+  },
+  {
+   "path": "Assets/ResortEmpire/Sprites/Transport/Helicopter.png",
+   "size": [
+    1256,
+    213
+   ],
+   "sprites": [
+    {
+     "sprite": "Helicopter_R0",
+     "footprint": [
+      2,
+      2
+     ],
+     "rectPx": [
+      23,
+      0,
+      268,
+      183
+     ],
+     "pivot": [
+      0.5,
+      0.38251
+     ],
+     "name": "helicopter",
+     "rotation": 0
+    },
+    {
+     "sprite": "Helicopter_R1",
+     "footprint": [
+      2,
+      2
+     ],
+     "rectPx": [
+      337,
+      0,
+      268,
+      209
+     ],
+     "pivot": [
+      0.5,
+      0.33493
+     ],
+     "name": "helicopter",
+     "rotation": 1
+    },
+    {
+     "sprite": "Helicopter_R2",
+     "footprint": [
+      2,
+      2
+     ],
+     "rectPx": [
+      630,
+      0,
+      310,
+      209
+     ],
+     "pivot": [
+      0.43226,
+      0.33493
+     ],
+     "name": "helicopter",
+     "rotation": 2
+    },
+    {
+     "sprite": "Helicopter_R3",
+     "footprint": [
+      2,
+      2
+     ],
+     "rectPx": [
+      944,
+      0,
+      310,
+      183
+     ],
+     "pivot": [
+      0.43226,
+      0.38251
+     ],
+     "name": "helicopter",
+     "rotation": 3
+    }
+   ]
+  },
+  {
+   "path": "Assets/ResortEmpire/Sprites/Transport/Helipad.png",
+   "size": [
+    1188,
+    190
+   ],
+   "sprites": [
+    {
+     "sprite": "Helipad_R0",
+     "footprint": [
+      2,
+      2
+     ],
+     "rectPx": [
+      2,
+      0,
+      293,
+      140
+     ],
+     "pivot": [
+      0.45734,
+      0.5
+     ],
+     "name": "helipad",
+     "rotation": 0
+    },
+    {
+     "sprite": "Helipad_R1",
+     "footprint": [
+      2,
+      2
+     ],
+     "rectPx": [
+      311,
+      0,
+      268,
+      140
+     ],
+     "pivot": [
+      0.5,
+      0.5
+     ],
+     "name": "helipad",
+     "rotation": 1
+    },
+    {
+     "sprite": "Helipad_R2",
+     "footprint": [
+      2,
+      2
+     ],
+     "rectPx": [
+      608,
+      0,
+      268,
+      140
+     ],
+     "pivot": [
+      0.5,
+      0.5
+     ],
+     "name": "helipad",
+     "rotation": 2
+    },
+    {
+     "sprite": "Helipad_R3",
+     "footprint": [
+      2,
+      2
+     ],
+     "rectPx": [
+      905,
+      0,
+      268,
+      186
+     ],
+     "pivot": [
+      0.5,
+      0.37634
+     ],
+     "name": "helipad",
+     "rotation": 3
+    }
+   ]
+  },
+  {
+   "path": "Assets/ResortEmpire/Sprites/Transport/Pier.png",
+   "size": [
+    1380,
+    209
+   ],
+   "sprites": [
+    {
+     "sprite": "Pier_R0",
+     "footprint": [
+      1,
+      4
+     ],
+     "rectPx": [
+      4,
+      0,
+      337,
+      203
+     ],
+     "pivot": [
+      0.49258,
+      0.49261
+     ],
+     "name": "pier",
+     "rotation": 0
+    },
+    {
+     "sprite": "Pier_R1",
+     "footprint": [
+      4,
+      1
+     ],
+     "rectPx": [
+      347,
+      0,
+      341,
+      202
+     ],
+     "pivot": [
+      0.4868,
+      0.4901
+     ],
+     "name": "pier",
+     "rotation": 1
+    },
+    {
+     "sprite": "Pier_R2",
+     "footprint": [
+      1,
+      4
+     ],
+     "rectPx": [
+      692,
+      0,
+      341,
+      205
+     ],
+     "pivot": [
+      0.4868,
+      0.48293
+     ],
+     "name": "pier",
+     "rotation": 2
+    },
+    {
+     "sprite": "Pier_R3",
+     "footprint": [
+      4,
+      1
+     ],
+     "rectPx": [
+      1038,
+      0,
+      338,
+      199
+     ],
+     "pivot": [
+      0.49112,
+      0.50251
+     ],
+     "name": "pier",
+     "rotation": 3
+    }
+   ]
+  },
+  {
+   "path": "Assets/ResortEmpire/Sprites/Transport/Seaplane.png",
+   "size": [
+    1600,
+    253
+   ],
+   "sprites": [
+    {
+     "sprite": "Seaplane_R0",
+     "footprint": [
+      3,
+      3
+     ],
+     "rectPx": [
+      2,
+      0,
+      396,
+      232
+     ],
+     "pivot": [
+      0.5,
+      0.43966
+     ],
+     "name": "seaplane",
+     "rotation": 0
+    },
+    {
+     "sprite": "Seaplane_R1",
+     "footprint": [
+      3,
+      3
+     ],
+     "rectPx": [
+      402,
+      0,
+      396,
+      249
+     ],
+     "pivot": [
+      0.5,
+      0.40964
+     ],
+     "name": "seaplane",
+     "rotation": 1
+    },
+    {
+     "sprite": "Seaplane_R2",
+     "footprint": [
+      3,
+      3
+     ],
+     "rectPx": [
+      802,
+      0,
+      396,
+      249
+     ],
+     "pivot": [
+      0.5,
+      0.40964
+     ],
+     "name": "seaplane",
+     "rotation": 2
+    },
+    {
+     "sprite": "Seaplane_R3",
+     "footprint": [
+      3,
+      3
+     ],
+     "rectPx": [
+      1202,
+      0,
+      396,
+      232
+     ],
+     "pivot": [
+      0.5,
+      0.43966
+     ],
+     "name": "seaplane",
+     "rotation": 3
+    }
+   ]
+  },
+  {
+   "path": "Assets/ResortEmpire/Sprites/Terrain/Terrain.png",
+   "size": [
+    584,
+    496
+   ],
+   "sprites": [
+    {
+     "sprite": "Terrain_Deep_R0",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      2,
+      372,
+      142,
+      101
+     ],
+     "pivot": [
+      0.5,
+      0.61386
+     ],
+     "rotation": 0,
+     "tile": "deep"
+    },
+    {
+     "sprite": "Terrain_Deep_R1",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      148,
+      372,
+      142,
+      101
+     ],
+     "pivot": [
+      0.5,
+      0.61386
+     ],
+     "rotation": 1,
+     "tile": "deep"
+    },
+    {
+     "sprite": "Terrain_Deep_R2",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      294,
+      372,
+      142,
+      101
+     ],
+     "pivot": [
+      0.5,
+      0.61386
+     ],
+     "rotation": 2,
+     "tile": "deep"
+    },
+    {
+     "sprite": "Terrain_Deep_R3",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      440,
+      372,
+      142,
+      101
+     ],
+     "pivot": [
+      0.5,
+      0.61386
+     ],
+     "rotation": 3,
+     "tile": "deep"
+    },
+    {
+     "sprite": "Terrain_Shallow_R0",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      2,
+      248,
+      142,
+      101
+     ],
+     "pivot": [
+      0.5,
+      0.61386
+     ],
+     "rotation": 0,
+     "tile": "shallow"
+    },
+    {
+     "sprite": "Terrain_Shallow_R1",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      148,
+      248,
+      142,
+      101
+     ],
+     "pivot": [
+      0.5,
+      0.61386
+     ],
+     "rotation": 1,
+     "tile": "shallow"
+    },
+    {
+     "sprite": "Terrain_Shallow_R2",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      294,
+      248,
+      142,
+      101
+     ],
+     "pivot": [
+      0.5,
+      0.61386
+     ],
+     "rotation": 2,
+     "tile": "shallow"
+    },
+    {
+     "sprite": "Terrain_Shallow_R3",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      440,
+      248,
+      142,
+      101
+     ],
+     "pivot": [
+      0.5,
+      0.61386
+     ],
+     "rotation": 3,
+     "tile": "shallow"
+    },
+    {
+     "sprite": "Terrain_Sand_R0",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      2,
+      124,
+      142,
+      110
+     ],
+     "pivot": [
+      0.5,
+      0.56364
+     ],
+     "rotation": 0,
+     "tile": "sand"
+    },
+    {
+     "sprite": "Terrain_Sand_R1",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      148,
+      124,
+      142,
+      110
+     ],
+     "pivot": [
+      0.5,
+      0.56364
+     ],
+     "rotation": 1,
+     "tile": "sand"
+    },
+    {
+     "sprite": "Terrain_Sand_R2",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      294,
+      124,
+      142,
+      110
+     ],
+     "pivot": [
+      0.5,
+      0.56364
+     ],
+     "rotation": 2,
+     "tile": "sand"
+    },
+    {
+     "sprite": "Terrain_Sand_R3",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      440,
+      124,
+      142,
+      110
+     ],
+     "pivot": [
+      0.5,
+      0.56364
+     ],
+     "rotation": 3,
+     "tile": "sand"
+    },
+    {
+     "sprite": "Terrain_Grass_R0",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      2,
+      0,
+      142,
+      120
+     ],
+     "pivot": [
+      0.5,
+      0.51667
+     ],
+     "rotation": 0,
+     "tile": "grass"
+    },
+    {
+     "sprite": "Terrain_Grass_R1",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      148,
+      0,
+      142,
+      120
+     ],
+     "pivot": [
+      0.5,
+      0.51667
+     ],
+     "rotation": 1,
+     "tile": "grass"
+    },
+    {
+     "sprite": "Terrain_Grass_R2",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      294,
+      0,
+      142,
+      120
+     ],
+     "pivot": [
+      0.5,
+      0.51667
+     ],
+     "rotation": 2,
+     "tile": "grass"
+    },
+    {
+     "sprite": "Terrain_Grass_R3",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      440,
+      0,
+      142,
+      120
+     ],
+     "pivot": [
+      0.5,
+      0.51667
+     ],
+     "rotation": 3,
+     "tile": "grass"
+    }
+   ]
+  },
+  {
+   "path": "Assets/ResortEmpire/Sprites/Paths/Path_Stone.png",
+   "size": [
+    1152,
+    160
+   ],
+   "sprites": [
+    {
+     "sprite": "Path_Stone_00",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      2,
+      80,
+      140,
+      76
+     ],
+     "pivot": [
+      0.5,
+      0.5
+     ],
+     "style": "stone",
+     "mask": 0
+    },
+    {
+     "sprite": "Path_Stone_01",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      146,
+      80,
+      140,
+      76
+     ],
+     "pivot": [
+      0.5,
+      0.5
+     ],
+     "style": "stone",
+     "mask": 1
+    },
+    {
+     "sprite": "Path_Stone_02",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      290,
+      80,
+      140,
+      76
+     ],
+     "pivot": [
+      0.5,
+      0.5
+     ],
+     "style": "stone",
+     "mask": 2
+    },
+    {
+     "sprite": "Path_Stone_03",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      434,
+      80,
+      140,
+      76
+     ],
+     "pivot": [
+      0.5,
+      0.5
+     ],
+     "style": "stone",
+     "mask": 3
+    },
+    {
+     "sprite": "Path_Stone_04",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      578,
+      80,
+      140,
+      76
+     ],
+     "pivot": [
+      0.5,
+      0.5
+     ],
+     "style": "stone",
+     "mask": 4
+    },
+    {
+     "sprite": "Path_Stone_05",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      722,
+      80,
+      140,
+      76
+     ],
+     "pivot": [
+      0.5,
+      0.5
+     ],
+     "style": "stone",
+     "mask": 5
+    },
+    {
+     "sprite": "Path_Stone_06",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      866,
+      80,
+      140,
+      76
+     ],
+     "pivot": [
+      0.5,
+      0.5
+     ],
+     "style": "stone",
+     "mask": 6
+    },
+    {
+     "sprite": "Path_Stone_07",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      1010,
+      80,
+      140,
+      76
+     ],
+     "pivot": [
+      0.5,
+      0.5
+     ],
+     "style": "stone",
+     "mask": 7
+    },
+    {
+     "sprite": "Path_Stone_08",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      2,
+      0,
+      140,
+      76
+     ],
+     "pivot": [
+      0.5,
+      0.5
+     ],
+     "style": "stone",
+     "mask": 8
+    },
+    {
+     "sprite": "Path_Stone_09",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      146,
+      0,
+      140,
+      76
+     ],
+     "pivot": [
+      0.5,
+      0.5
+     ],
+     "style": "stone",
+     "mask": 9
+    },
+    {
+     "sprite": "Path_Stone_10",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      290,
+      0,
+      140,
+      76
+     ],
+     "pivot": [
+      0.5,
+      0.5
+     ],
+     "style": "stone",
+     "mask": 10
+    },
+    {
+     "sprite": "Path_Stone_11",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      434,
+      0,
+      140,
+      76
+     ],
+     "pivot": [
+      0.5,
+      0.5
+     ],
+     "style": "stone",
+     "mask": 11
+    },
+    {
+     "sprite": "Path_Stone_12",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      578,
+      0,
+      140,
+      76
+     ],
+     "pivot": [
+      0.5,
+      0.5
+     ],
+     "style": "stone",
+     "mask": 12
+    },
+    {
+     "sprite": "Path_Stone_13",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      722,
+      0,
+      140,
+      76
+     ],
+     "pivot": [
+      0.5,
+      0.5
+     ],
+     "style": "stone",
+     "mask": 13
+    },
+    {
+     "sprite": "Path_Stone_14",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      866,
+      0,
+      140,
+      76
+     ],
+     "pivot": [
+      0.5,
+      0.5
+     ],
+     "style": "stone",
+     "mask": 14
+    },
+    {
+     "sprite": "Path_Stone_15",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      1010,
+      0,
+      140,
+      76
+     ],
+     "pivot": [
+      0.5,
+      0.5
+     ],
+     "style": "stone",
+     "mask": 15
+    }
+   ]
+  },
+  {
+   "path": "Assets/ResortEmpire/Sprites/Paths/Path_Gravel.png",
+   "size": [
+    1152,
+    160
+   ],
+   "sprites": [
+    {
+     "sprite": "Path_Gravel_00",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      2,
+      80,
+      140,
+      76
+     ],
+     "pivot": [
+      0.5,
+      0.5
+     ],
+     "style": "gravel",
+     "mask": 0
+    },
+    {
+     "sprite": "Path_Gravel_01",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      146,
+      80,
+      140,
+      76
+     ],
+     "pivot": [
+      0.5,
+      0.5
+     ],
+     "style": "gravel",
+     "mask": 1
+    },
+    {
+     "sprite": "Path_Gravel_02",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      290,
+      80,
+      140,
+      76
+     ],
+     "pivot": [
+      0.5,
+      0.5
+     ],
+     "style": "gravel",
+     "mask": 2
+    },
+    {
+     "sprite": "Path_Gravel_03",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      434,
+      80,
+      140,
+      76
+     ],
+     "pivot": [
+      0.5,
+      0.5
+     ],
+     "style": "gravel",
+     "mask": 3
+    },
+    {
+     "sprite": "Path_Gravel_04",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      578,
+      80,
+      140,
+      76
+     ],
+     "pivot": [
+      0.5,
+      0.5
+     ],
+     "style": "gravel",
+     "mask": 4
+    },
+    {
+     "sprite": "Path_Gravel_05",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      722,
+      80,
+      140,
+      76
+     ],
+     "pivot": [
+      0.5,
+      0.5
+     ],
+     "style": "gravel",
+     "mask": 5
+    },
+    {
+     "sprite": "Path_Gravel_06",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      866,
+      80,
+      140,
+      76
+     ],
+     "pivot": [
+      0.5,
+      0.5
+     ],
+     "style": "gravel",
+     "mask": 6
+    },
+    {
+     "sprite": "Path_Gravel_07",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      1010,
+      80,
+      140,
+      76
+     ],
+     "pivot": [
+      0.5,
+      0.5
+     ],
+     "style": "gravel",
+     "mask": 7
+    },
+    {
+     "sprite": "Path_Gravel_08",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      2,
+      0,
+      140,
+      76
+     ],
+     "pivot": [
+      0.5,
+      0.5
+     ],
+     "style": "gravel",
+     "mask": 8
+    },
+    {
+     "sprite": "Path_Gravel_09",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      146,
+      0,
+      140,
+      76
+     ],
+     "pivot": [
+      0.5,
+      0.5
+     ],
+     "style": "gravel",
+     "mask": 9
+    },
+    {
+     "sprite": "Path_Gravel_10",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      290,
+      0,
+      140,
+      76
+     ],
+     "pivot": [
+      0.5,
+      0.5
+     ],
+     "style": "gravel",
+     "mask": 10
+    },
+    {
+     "sprite": "Path_Gravel_11",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      434,
+      0,
+      140,
+      76
+     ],
+     "pivot": [
+      0.5,
+      0.5
+     ],
+     "style": "gravel",
+     "mask": 11
+    },
+    {
+     "sprite": "Path_Gravel_12",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      578,
+      0,
+      140,
+      76
+     ],
+     "pivot": [
+      0.5,
+      0.5
+     ],
+     "style": "gravel",
+     "mask": 12
+    },
+    {
+     "sprite": "Path_Gravel_13",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      722,
+      0,
+      140,
+      76
+     ],
+     "pivot": [
+      0.5,
+      0.5
+     ],
+     "style": "gravel",
+     "mask": 13
+    },
+    {
+     "sprite": "Path_Gravel_14",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      866,
+      0,
+      140,
+      76
+     ],
+     "pivot": [
+      0.5,
+      0.5
+     ],
+     "style": "gravel",
+     "mask": 14
+    },
+    {
+     "sprite": "Path_Gravel_15",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      1010,
+      0,
+      140,
+      76
+     ],
+     "pivot": [
+      0.5,
+      0.5
+     ],
+     "style": "gravel",
+     "mask": 15
+    }
+   ]
+  },
+  {
+   "path": "Assets/ResortEmpire/Sprites/Paths/Path_Wood.png",
+   "size": [
+    1152,
+    160
+   ],
+   "sprites": [
+    {
+     "sprite": "Path_Wood_00",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      2,
+      80,
+      140,
+      76
+     ],
+     "pivot": [
+      0.5,
+      0.5
+     ],
+     "style": "wood",
+     "mask": 0
+    },
+    {
+     "sprite": "Path_Wood_01",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      146,
+      80,
+      140,
+      76
+     ],
+     "pivot": [
+      0.5,
+      0.5
+     ],
+     "style": "wood",
+     "mask": 1
+    },
+    {
+     "sprite": "Path_Wood_02",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      290,
+      80,
+      140,
+      76
+     ],
+     "pivot": [
+      0.5,
+      0.5
+     ],
+     "style": "wood",
+     "mask": 2
+    },
+    {
+     "sprite": "Path_Wood_03",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      434,
+      80,
+      140,
+      76
+     ],
+     "pivot": [
+      0.5,
+      0.5
+     ],
+     "style": "wood",
+     "mask": 3
+    },
+    {
+     "sprite": "Path_Wood_04",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      578,
+      80,
+      140,
+      76
+     ],
+     "pivot": [
+      0.5,
+      0.5
+     ],
+     "style": "wood",
+     "mask": 4
+    },
+    {
+     "sprite": "Path_Wood_05",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      722,
+      80,
+      140,
+      76
+     ],
+     "pivot": [
+      0.5,
+      0.5
+     ],
+     "style": "wood",
+     "mask": 5
+    },
+    {
+     "sprite": "Path_Wood_06",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      866,
+      80,
+      140,
+      76
+     ],
+     "pivot": [
+      0.5,
+      0.5
+     ],
+     "style": "wood",
+     "mask": 6
+    },
+    {
+     "sprite": "Path_Wood_07",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      1010,
+      80,
+      140,
+      76
+     ],
+     "pivot": [
+      0.5,
+      0.5
+     ],
+     "style": "wood",
+     "mask": 7
+    },
+    {
+     "sprite": "Path_Wood_08",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      2,
+      0,
+      140,
+      76
+     ],
+     "pivot": [
+      0.5,
+      0.5
+     ],
+     "style": "wood",
+     "mask": 8
+    },
+    {
+     "sprite": "Path_Wood_09",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      146,
+      0,
+      140,
+      76
+     ],
+     "pivot": [
+      0.5,
+      0.5
+     ],
+     "style": "wood",
+     "mask": 9
+    },
+    {
+     "sprite": "Path_Wood_10",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      290,
+      0,
+      140,
+      76
+     ],
+     "pivot": [
+      0.5,
+      0.5
+     ],
+     "style": "wood",
+     "mask": 10
+    },
+    {
+     "sprite": "Path_Wood_11",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      434,
+      0,
+      140,
+      76
+     ],
+     "pivot": [
+      0.5,
+      0.5
+     ],
+     "style": "wood",
+     "mask": 11
+    },
+    {
+     "sprite": "Path_Wood_12",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      578,
+      0,
+      140,
+      76
+     ],
+     "pivot": [
+      0.5,
+      0.5
+     ],
+     "style": "wood",
+     "mask": 12
+    },
+    {
+     "sprite": "Path_Wood_13",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      722,
+      0,
+      140,
+      76
+     ],
+     "pivot": [
+      0.5,
+      0.5
+     ],
+     "style": "wood",
+     "mask": 13
+    },
+    {
+     "sprite": "Path_Wood_14",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      866,
+      0,
+      140,
+      76
+     ],
+     "pivot": [
+      0.5,
+      0.5
+     ],
+     "style": "wood",
+     "mask": 14
+    },
+    {
+     "sprite": "Path_Wood_15",
+     "footprint": [
+      1,
+      1
+     ],
+     "rectPx": [
+      1010,
+      0,
+      140,
+      76
+     ],
+     "pivot": [
+      0.5,
+      0.5
+     ],
+     "style": "wood",
+     "mask": 15
+    }
+   ]
+  }
+ ]
+}

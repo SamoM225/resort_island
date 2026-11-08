@@ -1,0 +1,933 @@
+fileFormatVersion: 2
+guid: 5aa0276583275eec9a674a7690f810c1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 27984912421660130
+    second: VIP_FilmStar_SE_Idle_0
+  - first:
+      213: 162010322966160769
+    second: VIP_FilmStar_SE_Idle_1
+  - first:
+      213: 742991626722661746
+    second: VIP_FilmStar_SE_Walk_0
+  - first:
+      213: 409256812933686565
+    second: VIP_FilmStar_SE_Walk_1
+  - first:
+      213: 117159084331599328
+    second: VIP_FilmStar_SE_Walk_2
+  - first:
+      213: 269123097685132570
+    second: VIP_FilmStar_SE_Walk_3
+  - first:
+      213: 322828032094561770
+    second: VIP_FilmStar_SE_Wave_0
+  - first:
+      213: 419725627317912872
+    second: VIP_FilmStar_SE_Wave_1
+  - first:
+      213: 538235225041458640
+    second: VIP_FilmStar_SW_Idle_0
+  - first:
+      213: 973029944100402553
+    second: VIP_FilmStar_SW_Idle_1
+  - first:
+      213: 366869799474636228
+    second: VIP_FilmStar_SW_Walk_0
+  - first:
+      213: 746146927597970939
+    second: VIP_FilmStar_SW_Walk_1
+  - first:
+      213: 767657179590907371
+    second: VIP_FilmStar_SW_Walk_2
+  - first:
+      213: 324659101755569656
+    second: VIP_FilmStar_SW_Walk_3
+  - first:
+      213: 706266724008363479
+    second: VIP_FilmStar_SW_Wave_0
+  - first:
+      213: 288836386292962620
+    second: VIP_FilmStar_SW_Wave_1
+  - first:
+      213: 1046208693759395239
+    second: VIP_FilmStar_NW_Idle_0
+  - first:
+      213: 670681241171846543
+    second: VIP_FilmStar_NW_Idle_1
+  - first:
+      213: 239012858568262918
+    second: VIP_FilmStar_NW_Walk_0
+  - first:
+      213: 71382372928746903
+    second: VIP_FilmStar_NW_Walk_1
+  - first:
+      213: 597161794361775576
+    second: VIP_FilmStar_NW_Walk_2
+  - first:
+      213: 851859556065228282
+    second: VIP_FilmStar_NW_Walk_3
+  - first:
+      213: 1019266385844385121
+    second: VIP_FilmStar_NW_Wave_0
+  - first:
+      213: 616427157881566529
+    second: VIP_FilmStar_NW_Wave_1
+  - first:
+      213: 427579047367325151
+    second: VIP_FilmStar_NE_Idle_0
+  - first:
+      213: 533971780569875802
+    second: VIP_FilmStar_NE_Idle_1
+  - first:
+      213: 1060784167596082659
+    second: VIP_FilmStar_NE_Walk_0
+  - first:
+      213: 729847157658731881
+    second: VIP_FilmStar_NE_Walk_1
+  - first:
+      213: 216449688575767941
+    second: VIP_FilmStar_NE_Walk_2
+  - first:
+      213: 734726235000042908
+    second: VIP_FilmStar_NE_Walk_3
+  - first:
+      213: 56982182563583375
+    second: VIP_FilmStar_NE_Wave_0
+  - first:
+      213: 960406297269708117
+    second: VIP_FilmStar_NE_Wave_1
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 4096
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: VIP_FilmStar_SE_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 561
+        width: 276
+        height: 187
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.395722}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f50c4d4af50956e2ac89fe68e6f61148
+      internalID: 27984912421660130
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_FilmStar_SE_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 561
+        width: 276
+        height: 187
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.395722}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f40a5925f735ac2be30a01181305c4e
+      internalID: 162010322966160769
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_FilmStar_SE_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 561
+        width: 276
+        height: 187
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.395722}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54a79fe1ffc357e69161582343969af1
+      internalID: 742991626722661746
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_FilmStar_SE_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 561
+        width: 276
+        height: 187
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.395722}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f99536ecf0585948a46e08e99922f27b
+      internalID: 409256812933686565
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_FilmStar_SE_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 561
+        width: 276
+        height: 187
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.395722}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed9282f9ca975fcb8d234114b4e7cba1
+      internalID: 117159084331599328
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_FilmStar_SE_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 561
+        width: 276
+        height: 187
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.395722}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2f0dd0ef8d3565ea41f7cf25b44c808
+      internalID: 269123097685132570
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_FilmStar_SE_Wave_0
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 561
+        width: 276
+        height: 187
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.395722}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25f7c9bb76995abd8f1539859cf759c0
+      internalID: 322828032094561770
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_FilmStar_SE_Wave_1
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 561
+        width: 276
+        height: 187
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.395722}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d574aa7d4af515b94bfcf3d57f1b554
+      internalID: 419725627317912872
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_FilmStar_SW_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 374
+        width: 276
+        height: 187
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.395722}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0016d35aa2435df5a4cde2e266c66e04
+      internalID: 538235225041458640
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_FilmStar_SW_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 374
+        width: 276
+        height: 187
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.395722}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 735668c5e25451ef8f40b3e6009a733a
+      internalID: 973029944100402553
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_FilmStar_SW_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 374
+        width: 276
+        height: 187
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.395722}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d10da0d99e155b46b26d141493ae3dcd
+      internalID: 366869799474636228
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_FilmStar_SW_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 374
+        width: 276
+        height: 187
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.395722}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57543f6cc6c856f1900c246d434e20f0
+      internalID: 746146927597970939
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_FilmStar_SW_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 374
+        width: 276
+        height: 187
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.395722}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3434fb3708f5ffcb339fe3f62858e0b
+      internalID: 767657179590907371
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_FilmStar_SW_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 374
+        width: 276
+        height: 187
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.395722}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ee1264d767e5740b2ed428382dd8e87
+      internalID: 324659101755569656
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_FilmStar_SW_Wave_0
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 374
+        width: 276
+        height: 187
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.395722}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbee8a5ac0425942a8eb2d53345d5ef7
+      internalID: 706266724008363479
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_FilmStar_SW_Wave_1
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 374
+        width: 276
+        height: 187
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.395722}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bec62de250a51c29f3b15b808233343
+      internalID: 288836386292962620
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_FilmStar_NW_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 187
+        width: 276
+        height: 187
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.395722}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cab849a3b0905985a5ee547898621331
+      internalID: 1046208693759395239
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_FilmStar_NW_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 187
+        width: 276
+        height: 187
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.395722}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f82f60135aa5adba9001860c76decfa
+      internalID: 670681241171846543
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_FilmStar_NW_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 187
+        width: 276
+        height: 187
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.395722}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 190bc832eb4b5aac8dfc34451efa64fb
+      internalID: 239012858568262918
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_FilmStar_NW_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 187
+        width: 276
+        height: 187
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.395722}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c3a7cd8ffb95efa814543d0e3536669
+      internalID: 71382372928746903
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_FilmStar_NW_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 187
+        width: 276
+        height: 187
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.395722}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a87bc5094fe5229b49d7f185bd598d5
+      internalID: 597161794361775576
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_FilmStar_NW_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 187
+        width: 276
+        height: 187
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.395722}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89ac95f08a1f54118e88e67434600328
+      internalID: 851859556065228282
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_FilmStar_NW_Wave_0
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 187
+        width: 276
+        height: 187
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.395722}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9a72152192358d6909bddcd5588e4e9
+      internalID: 1019266385844385121
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_FilmStar_NW_Wave_1
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 187
+        width: 276
+        height: 187
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.395722}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 416d6faeb56e56c1ab0fbdb7678ee7df
+      internalID: 616427157881566529
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_FilmStar_NE_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 276
+        height: 187
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.395722}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b2adb711caa5b6daaeb8282289b043b
+      internalID: 427579047367325151
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_FilmStar_NE_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 0
+        width: 276
+        height: 187
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.395722}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bac6e63270b6540fb62789a46c1c63a2
+      internalID: 533971780569875802
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_FilmStar_NE_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 0
+        width: 276
+        height: 187
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.395722}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18b62ef3650557fa8ac00061ba99c287
+      internalID: 1060784167596082659
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_FilmStar_NE_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 0
+        width: 276
+        height: 187
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.395722}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a448856777e458b3a72e318d5af1d18d
+      internalID: 729847157658731881
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_FilmStar_NE_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 0
+        width: 276
+        height: 187
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.395722}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c438cbf82e455f68913e3d3c04fe1d0
+      internalID: 216449688575767941
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_FilmStar_NE_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 0
+        width: 276
+        height: 187
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.395722}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6e9c26ebe2a5a37910ae51a676646a2
+      internalID: 734726235000042908
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_FilmStar_NE_Wave_0
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 0
+        width: 276
+        height: 187
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.395722}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84db8d4c13c9565eb2c3e5d7a15049d6
+      internalID: 56982182563583375
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_FilmStar_NE_Wave_1
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 0
+        width: 276
+        height: 187
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.395722}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e58f37eb6345f37aa6deff4470ea430
+      internalID: 960406297269708117
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 1d211a3669a45027b37ebcc3009eab71
+    internalID: 0
+    vertices: []
+    indices:
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      VIP_FilmStar_SE_Idle_0: 27984912421660130
+      VIP_FilmStar_SE_Idle_1: 162010322966160769
+      VIP_FilmStar_SE_Walk_0: 742991626722661746
+      VIP_FilmStar_SE_Walk_1: 409256812933686565
+      VIP_FilmStar_SE_Walk_2: 117159084331599328
+      VIP_FilmStar_SE_Walk_3: 269123097685132570
+      VIP_FilmStar_SE_Wave_0: 322828032094561770
+      VIP_FilmStar_SE_Wave_1: 419725627317912872
+      VIP_FilmStar_SW_Idle_0: 538235225041458640
+      VIP_FilmStar_SW_Idle_1: 973029944100402553
+      VIP_FilmStar_SW_Walk_0: 366869799474636228
+      VIP_FilmStar_SW_Walk_1: 746146927597970939
+      VIP_FilmStar_SW_Walk_2: 767657179590907371
+      VIP_FilmStar_SW_Walk_3: 324659101755569656
+      VIP_FilmStar_SW_Wave_0: 706266724008363479
+      VIP_FilmStar_SW_Wave_1: 288836386292962620
+      VIP_FilmStar_NW_Idle_0: 1046208693759395239
+      VIP_FilmStar_NW_Idle_1: 670681241171846543
+      VIP_FilmStar_NW_Walk_0: 239012858568262918
+      VIP_FilmStar_NW_Walk_1: 71382372928746903
+      VIP_FilmStar_NW_Walk_2: 597161794361775576
+      VIP_FilmStar_NW_Walk_3: 851859556065228282
+      VIP_FilmStar_NW_Wave_0: 1019266385844385121
+      VIP_FilmStar_NW_Wave_1: 616427157881566529
+      VIP_FilmStar_NE_Idle_0: 427579047367325151
+      VIP_FilmStar_NE_Idle_1: 533971780569875802
+      VIP_FilmStar_NE_Walk_0: 1060784167596082659
+      VIP_FilmStar_NE_Walk_1: 729847157658731881
+      VIP_FilmStar_NE_Walk_2: 216449688575767941
+      VIP_FilmStar_NE_Walk_3: 734726235000042908
+      VIP_FilmStar_NE_Wave_0: 56982182563583375
+      VIP_FilmStar_NE_Wave_1: 960406297269708117
+  mipmapLimitGroupName:
+  pSDRemoveMatte: 0
+  userData:
+  assetBundleName:
+  assetBundleVariant:

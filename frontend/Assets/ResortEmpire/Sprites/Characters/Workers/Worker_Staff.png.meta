@@ -1,0 +1,933 @@
+fileFormatVersion: 2
+guid: 744d10b9b34a59e68dc83a0542226eb1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 719018938711229726
+    second: Worker_Staff_SE_Idle_0
+  - first:
+      213: 52785305911621073
+    second: Worker_Staff_SE_Idle_1
+  - first:
+      213: 212184887181792591
+    second: Worker_Staff_SE_Walk_0
+  - first:
+      213: 1055740903953876384
+    second: Worker_Staff_SE_Walk_1
+  - first:
+      213: 344927296611919288
+    second: Worker_Staff_SE_Walk_2
+  - first:
+      213: 969266909558502719
+    second: Worker_Staff_SE_Walk_3
+  - first:
+      213: 141338002815743450
+    second: Worker_Staff_SE_Work_0
+  - first:
+      213: 810024179975988687
+    second: Worker_Staff_SE_Work_1
+  - first:
+      213: 716916546989352293
+    second: Worker_Staff_SW_Idle_0
+  - first:
+      213: 849460112470525385
+    second: Worker_Staff_SW_Idle_1
+  - first:
+      213: 701968360721925428
+    second: Worker_Staff_SW_Walk_0
+  - first:
+      213: 735170318487885140
+    second: Worker_Staff_SW_Walk_1
+  - first:
+      213: 575252137139758493
+    second: Worker_Staff_SW_Walk_2
+  - first:
+      213: 869085076714562914
+    second: Worker_Staff_SW_Walk_3
+  - first:
+      213: 100555711259502042
+    second: Worker_Staff_SW_Work_0
+  - first:
+      213: 1113347084349179274
+    second: Worker_Staff_SW_Work_1
+  - first:
+      213: 1096461731241629023
+    second: Worker_Staff_NW_Idle_0
+  - first:
+      213: 496742347014227264
+    second: Worker_Staff_NW_Idle_1
+  - first:
+      213: 227007415004886291
+    second: Worker_Staff_NW_Walk_0
+  - first:
+      213: 312306556187563371
+    second: Worker_Staff_NW_Walk_1
+  - first:
+      213: 1079216410241091022
+    second: Worker_Staff_NW_Walk_2
+  - first:
+      213: 62640282846659970
+    second: Worker_Staff_NW_Walk_3
+  - first:
+      213: 220316817485198653
+    second: Worker_Staff_NW_Work_0
+  - first:
+      213: 95395645049157060
+    second: Worker_Staff_NW_Work_1
+  - first:
+      213: 736658963705894366
+    second: Worker_Staff_NE_Idle_0
+  - first:
+      213: 151870555923039631
+    second: Worker_Staff_NE_Idle_1
+  - first:
+      213: 721882666647209273
+    second: Worker_Staff_NE_Walk_0
+  - first:
+      213: 103271450998441225
+    second: Worker_Staff_NE_Walk_1
+  - first:
+      213: 906693105346245972
+    second: Worker_Staff_NE_Walk_2
+  - first:
+      213: 390593142066205968
+    second: Worker_Staff_NE_Walk_3
+  - first:
+      213: 21861654709941753
+    second: Worker_Staff_NE_Work_0
+  - first:
+      213: 49679701121856873
+    second: Worker_Staff_NE_Work_1
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 4096
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Worker_Staff_SE_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 555
+        width: 276
+        height: 185
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.400000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd7675447388553fb78062525aea622e
+      internalID: 719018938711229726
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Staff_SE_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 555
+        width: 276
+        height: 185
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.400000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc30c420314c54769062ef09d65ff6e7
+      internalID: 52785305911621073
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Staff_SE_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 555
+        width: 276
+        height: 185
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.400000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe7d2a20b8925f7c9820bbe688bbf4d6
+      internalID: 212184887181792591
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Staff_SE_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 555
+        width: 276
+        height: 185
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.400000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78c59f66ad025ea4993ca2bd07eeed76
+      internalID: 1055740903953876384
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Staff_SE_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 555
+        width: 276
+        height: 185
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.400000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4712a02c92d653558e037717435ba806
+      internalID: 344927296611919288
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Staff_SE_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 555
+        width: 276
+        height: 185
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.400000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11d56c62171050bdb537ea1f629c40cb
+      internalID: 969266909558502719
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Staff_SE_Work_0
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 555
+        width: 276
+        height: 185
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.400000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4dfdfa9b1de05f48aea709cf2d1fd36d
+      internalID: 141338002815743450
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Staff_SE_Work_1
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 555
+        width: 276
+        height: 185
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.400000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4198b401e9835f8f901f3f25e527dba0
+      internalID: 810024179975988687
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Staff_SW_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 370
+        width: 276
+        height: 185
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.400000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b90da509098591a96a32495c4eb16c2
+      internalID: 716916546989352293
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Staff_SW_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 370
+        width: 276
+        height: 185
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.400000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2edbd0bef175039a45b31879d80e190
+      internalID: 849460112470525385
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Staff_SW_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 370
+        width: 276
+        height: 185
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.400000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e224cd78ffa5584cb8a50e785dcd0ba6
+      internalID: 701968360721925428
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Staff_SW_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 370
+        width: 276
+        height: 185
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.400000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7502c7d4751c556c8dda13c82a0f2543
+      internalID: 735170318487885140
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Staff_SW_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 370
+        width: 276
+        height: 185
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.400000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 561f41327d52543186398c4a65e5255d
+      internalID: 575252137139758493
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Staff_SW_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 370
+        width: 276
+        height: 185
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.400000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61549240aeda5198a48680925a6ec6f2
+      internalID: 869085076714562914
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Staff_SW_Work_0
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 370
+        width: 276
+        height: 185
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.400000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f18dd2c1ebb538e9034344a4cd36a04
+      internalID: 100555711259502042
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Staff_SW_Work_1
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 370
+        width: 276
+        height: 185
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.400000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d28e0071bed55d99d69a63926e288a8
+      internalID: 1113347084349179274
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Staff_NW_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 185
+        width: 276
+        height: 185
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.400000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7e42dedc05f52aa93109935dedec081
+      internalID: 1096461731241629023
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Staff_NW_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 185
+        width: 276
+        height: 185
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.400000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfb2d77c4e60513284cf763925ed2997
+      internalID: 496742347014227264
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Staff_NW_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 185
+        width: 276
+        height: 185
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.400000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2ef93b3e4ad53e1920c54efb8fb874f
+      internalID: 227007415004886291
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Staff_NW_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 185
+        width: 276
+        height: 185
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.400000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 584d8d973495575fb4c9d3aa2dc6a4d6
+      internalID: 312306556187563371
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Staff_NW_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 185
+        width: 276
+        height: 185
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.400000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dbc145462105a399e9f2b1d2ac69b02
+      internalID: 1079216410241091022
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Staff_NW_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 185
+        width: 276
+        height: 185
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.400000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50e3b95f3c295a45bf9b9a0feb5cb255
+      internalID: 62640282846659970
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Staff_NW_Work_0
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 185
+        width: 276
+        height: 185
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.400000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9317c9f0081552c2b1c6263e4b6f2eeb
+      internalID: 220316817485198653
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Staff_NW_Work_1
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 185
+        width: 276
+        height: 185
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.400000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd4183267a1f5285aa76d73d88e4fd13
+      internalID: 95395645049157060
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Staff_NE_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 276
+        height: 185
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.400000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ef4b13ef18657b6930337e944aa8b91
+      internalID: 736658963705894366
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Staff_NE_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 0
+        width: 276
+        height: 185
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.400000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 453a577eb2f251a7ac57795fecec346f
+      internalID: 151870555923039631
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Staff_NE_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 0
+        width: 276
+        height: 185
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.400000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad39b12b890954a29e99d878ff23cfd3
+      internalID: 721882666647209273
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Staff_NE_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 0
+        width: 276
+        height: 185
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.400000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b36ad63b7e0959e89304af2d01849126
+      internalID: 103271450998441225
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Staff_NE_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 0
+        width: 276
+        height: 185
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.400000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8809418309c4587798ddb91bd9b4d088
+      internalID: 906693105346245972
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Staff_NE_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 0
+        width: 276
+        height: 185
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.400000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c4a69f9202854578167e71f912cded0
+      internalID: 390593142066205968
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Staff_NE_Work_0
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 0
+        width: 276
+        height: 185
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.400000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6f5bafce9dd590c831dcc7d205aa76f
+      internalID: 21861654709941753
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Staff_NE_Work_1
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 0
+        width: 276
+        height: 185
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.400000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74ac09316d0b5744a09869a053cc97d8
+      internalID: 49679701121856873
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 28d1549029d6562980cf536bdfb8e47b
+    internalID: 0
+    vertices: []
+    indices:
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Worker_Staff_SE_Idle_0: 719018938711229726
+      Worker_Staff_SE_Idle_1: 52785305911621073
+      Worker_Staff_SE_Walk_0: 212184887181792591
+      Worker_Staff_SE_Walk_1: 1055740903953876384
+      Worker_Staff_SE_Walk_2: 344927296611919288
+      Worker_Staff_SE_Walk_3: 969266909558502719
+      Worker_Staff_SE_Work_0: 141338002815743450
+      Worker_Staff_SE_Work_1: 810024179975988687
+      Worker_Staff_SW_Idle_0: 716916546989352293
+      Worker_Staff_SW_Idle_1: 849460112470525385
+      Worker_Staff_SW_Walk_0: 701968360721925428
+      Worker_Staff_SW_Walk_1: 735170318487885140
+      Worker_Staff_SW_Walk_2: 575252137139758493
+      Worker_Staff_SW_Walk_3: 869085076714562914
+      Worker_Staff_SW_Work_0: 100555711259502042
+      Worker_Staff_SW_Work_1: 1113347084349179274
+      Worker_Staff_NW_Idle_0: 1096461731241629023
+      Worker_Staff_NW_Idle_1: 496742347014227264
+      Worker_Staff_NW_Walk_0: 227007415004886291
+      Worker_Staff_NW_Walk_1: 312306556187563371
+      Worker_Staff_NW_Walk_2: 1079216410241091022
+      Worker_Staff_NW_Walk_3: 62640282846659970
+      Worker_Staff_NW_Work_0: 220316817485198653
+      Worker_Staff_NW_Work_1: 95395645049157060
+      Worker_Staff_NE_Idle_0: 736658963705894366
+      Worker_Staff_NE_Idle_1: 151870555923039631
+      Worker_Staff_NE_Walk_0: 721882666647209273
+      Worker_Staff_NE_Walk_1: 103271450998441225
+      Worker_Staff_NE_Walk_2: 906693105346245972
+      Worker_Staff_NE_Walk_3: 390593142066205968
+      Worker_Staff_NE_Work_0: 21861654709941753
+      Worker_Staff_NE_Work_1: 49679701121856873
+  mipmapLimitGroupName:
+  pSDRemoveMatte: 0
+  userData:
+  assetBundleName:
+  assetBundleVariant:

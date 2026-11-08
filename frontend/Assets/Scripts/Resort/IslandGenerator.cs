@@ -8,10 +8,7 @@ namespace ResortIsland.Resort
     {
         Water,
         Sand,
-        Grass,
-        Hills,
-        Mountains,
-        Rocks
+        Grass
     }
 
     [Serializable]
@@ -21,6 +18,9 @@ namespace ResortIsland.Resort
         public int y;
         public TerrainType terrainType;
         public bool isLand;
+        public bool isShallow;
+        /// Steps (4-neighbourhood) to the nearest water tile; 0 for water, 1 for the beach edge.
+        public int shoreDistance;
         public bool isBuildable;
         public bool isOccupied;
         public float elevation;
@@ -48,7 +48,7 @@ namespace ResortIsland.Resort
         }
     }
 
-    /// Generates the logical island first, then derives an isometric colored mesh from it.
+    /// Generates the logical island first, then draws it with the ResortEmpire terrain sprites.
     /// TileData is the authoritative source used by gameplay systems.
     /// Tiles are drawn exactly on the cells of the scene Grid (isometric layout), so buildings
     /// placed through ResortManager line up with the generated terrain. The mesh is generated
@@ -56,14 +56,18 @@ namespace ResortIsland.Resort
     [ExecuteAlways]
     public sealed class IslandGenerator : MonoBehaviour
     {
+        /// Height of the sand / grass surface above the water level (see ResortEmpire/Data/SpriteCatalog.json).
+        public const float SandHeight = 0.0735f;
+        public const float GrassHeight = 0.147f;
+
         private const string RenderObjectName = "GeneratedIsland";
         private const string SortingLayerName = "Ground";
 
         [Header("Grid")]
         [Tooltip("Isometric Grid the island is drawn on. Found automatically when empty.")]
         [SerializeField] private Grid grid;
-        [SerializeField, Min(1)] private int mapWidth = 64;
-        [SerializeField, Min(1)] private int mapHeight = 64;
+        [SerializeField, Min(1)] private int mapWidth = 32;
+        [SerializeField, Min(1)] private int mapHeight = 32;
         [SerializeField] private int seed = 1337;
 
         [Header("Island shape")]
@@ -71,35 +75,33 @@ namespace ResortIsland.Resort
         [SerializeField, Range(0f, 0.2f)] private float coastlineIrregularity = 0.07f;
         [SerializeField, Min(0.01f)] private float noiseScale = 1.8f;
         [SerializeField, Min(0f)] private float beachWidth = 0.055f;
-
-        [Header("Terrain thresholds")]
-        [SerializeField, Range(0f, 1f)] private float hillThreshold = 0.54f;
-        [SerializeField, Range(0f, 1f)] private float mountainThreshold = 0.70f;
-        [SerializeField, Range(0f, 1f)] private float rockThreshold = 0.84f;
-        [SerializeField, Range(0f, 1f)] private float mountainDensity = 0.85f;
         [SerializeField] private bool sandBuildable = true;
         [SerializeField] private bool grassBuildable = true;
-        [SerializeField] private bool hillsBuildable = true;
+        [Tooltip("Water this many cells from the shore (or closer) is drawn as shallow water.")]
+        [SerializeField, Min(0)] private int shallowRange = 2;
 
-        [Header("Isometric rendering")]
-        [Tooltip("World height of one elevation level (mountains = 2 levels, rocks = 3).")]
-        [SerializeField, Min(0f)] private float heightStep = 0.2f;
-        [Tooltip("Also draw water tiles (useful in the Scene view). Colour matches the camera background.")]
+        [Header("Terrain sprites (ResortEmpire/Sprites/Terrain/Terrain.png)")]
+        [Tooltip("Variants R0-R3 of each surface; a variant is picked per cell from the seed.")]
+        [SerializeField] private Sprite[] deepWaterSprites;
+        [SerializeField] private Sprite[] shallowWaterSprites;
+        [SerializeField] private Sprite[] sandSprites;
+        [SerializeField] private Sprite[] grassSprites;
+        [Tooltip("Also draw water tiles.")]
         [SerializeField] private bool drawWater = true;
+        [Tooltip("Deep water drawn this many cells beyond the map edge, so the sea reaches past the screen. Visual only.")]
+        [SerializeField, Min(0)] private int waterMargin = 24;
 
         [Header("Debug")]
         [Tooltip("Generate when the component is enabled (also in edit mode).")]
         [SerializeField] private bool generateOnStart = true;
         [SerializeField] private bool showGrid;
+        [Tooltip("Tint buildable cells green.")]
         [SerializeField] private bool highlightBuildable;
 
         private readonly List<TileData> tiles = new List<TileData>();
         private readonly List<TileData> waterLayer = new List<TileData>();
         private readonly List<TileData> sandLayer = new List<TileData>();
         private readonly List<TileData> grassLayer = new List<TileData>();
-        private readonly List<TileData> hillsLayer = new List<TileData>();
-        private readonly List<TileData> mountainsLayer = new List<TileData>();
-        private readonly List<TileData> rocksLayer = new List<TileData>();
         private TileData[,] tileLookup;
         private GameObject renderObject;
         private MeshFilter meshFilter;
@@ -108,14 +110,8 @@ namespace ResortIsland.Resort
         private Material generatedMaterial;
         private bool regenerateQueued;
 
-        private static readonly Color32 WaterColor = new Color32(30, 159, 196, 255);
-        private static readonly Color32 SandColor = new Color32(224, 193, 111, 255);
-        private static readonly Color32 GrassColor = new Color32(91, 166, 78, 255);
-        private static readonly Color32 HillsColor = new Color32(66, 125, 61, 255);
-        private static readonly Color32 MountainsColor = new Color32(112, 105, 94, 255);
-        private static readonly Color32 RocksColor = new Color32(65, 65, 65, 255);
         private static readonly Color32 White = new Color32(255, 255, 255, 255);
-        private static readonly Color32 Black = new Color32(0, 0, 0, 255);
+        private static readonly Color32 BuildableTint = new Color32(190, 255, 190, 255);
 
         public int MapWidth => mapWidth;
         public int MapHeight => mapHeight;
@@ -124,9 +120,6 @@ namespace ResortIsland.Resort
         public IReadOnlyList<TileData> WaterLayer => waterLayer;
         public IReadOnlyList<TileData> SandLayer => sandLayer;
         public IReadOnlyList<TileData> GrassLayer => grassLayer;
-        public IReadOnlyList<TileData> HillsLayer => hillsLayer;
-        public IReadOnlyList<TileData> MountainsLayer => mountainsLayer;
-        public IReadOnlyList<TileData> RocksLayer => rocksLayer;
 
         private void OnEnable()
         {
@@ -177,14 +170,17 @@ namespace ResortIsland.Resort
                     float centerBias = Mathf.Clamp01(1f - distance / Mathf.Max(islandRadius, 0.001f));
 
                     tile.elevation = Mathf.Clamp01(elevationNoise * 0.75f + centerBias * 0.25f);
-                    tile.terrainType = ResolveTerrain(edge, tile.elevation, centerBias);
+                    tile.terrainType = ResolveTerrain(edge);
                     tile.isLand = tile.terrainType != TerrainType.Water;
                     tile.isBuildable = IsTerrainBuildable(tile.terrainType);
                     tileLookup[x, y] = tile;
                     tiles.Add(tile);
-                    LayerFor(tile.terrainType).Add(tile);
                 }
             }
+
+            MarkShallowWater();
+            ComputeShoreDistance();
+            foreach (TileData tile in tiles) LayerFor(tile.terrainType).Add(tile);
 
             BuildMesh();
             Validate();
@@ -198,16 +194,62 @@ namespace ResortIsland.Resort
             return false;
         }
 
-        private TerrainType ResolveTerrain(float edge, float elevation, float centerBias)
+        private TerrainType ResolveTerrain(float edge)
         {
             if (edge <= 0f) return TerrainType.Water;
             if (edge < beachWidth) return TerrainType.Sand;
-            if (elevation >= rockThreshold && centerBias > 0.35f) return TerrainType.Rocks;
-            float mountainCutoff = mountainThreshold + (1f - mountainDensity) * 0.2f;
-            if (elevation >= mountainCutoff && centerBias > 0.30f && mountainDensity > 0f)
-                return TerrainType.Mountains;
-            if (elevation >= hillThreshold && centerBias > 0.12f) return TerrainType.Hills;
             return TerrainType.Grass;
+        }
+
+        // Water within shallowRange cells of any land is shallow, the rest is deep.
+        private void MarkShallowWater()
+        {
+            foreach (TileData tile in tiles)
+            {
+                if (tile.isLand) continue;
+                for (int dy = -shallowRange; dy <= shallowRange && !tile.isShallow; dy++)
+                for (int dx = -shallowRange; dx <= shallowRange; dx++)
+                {
+                    if (TryGetTile(tile.x + dx, tile.y + dy, out var other) && other.isLand)
+                    {
+                        tile.isShallow = true;
+                        break;
+                    }
+                }
+            }
+        }
+
+        // Multi-source BFS from all water tiles; the outside of the map counts as water.
+        private void ComputeShoreDistance()
+        {
+            var queue = new Queue<TileData>();
+            foreach (TileData tile in tiles)
+            {
+                tile.shoreDistance = tile.isLand ? int.MaxValue : 0;
+                if (!tile.isLand) queue.Enqueue(tile);
+            }
+
+            int[] dx = { 1, -1, 0, 0 };
+            int[] dy = { 0, 0, 1, -1 };
+            while (queue.Count > 0)
+            {
+                TileData current = queue.Dequeue();
+                for (int i = 0; i < 4; i++)
+                {
+                    if (TryGetTile(current.x + dx[i], current.y + dy[i], out var next) &&
+                        next.shoreDistance == int.MaxValue)
+                    {
+                        next.shoreDistance = current.shoreDistance + 1;
+                        queue.Enqueue(next);
+                    }
+                }
+            }
+
+            foreach (TileData tile in tiles)
+            {
+                bool onMapEdge = tile.x == 0 || tile.y == 0 || tile.x == mapWidth - 1 || tile.y == mapHeight - 1;
+                if (tile.isLand && onMapEdge) tile.shoreDistance = Mathf.Min(tile.shoreDistance, 1);
+            }
         }
 
         private List<TileData> LayerFor(TerrainType terrain)
@@ -216,9 +258,6 @@ namespace ResortIsland.Resort
             {
                 case TerrainType.Sand: return sandLayer;
                 case TerrainType.Grass: return grassLayer;
-                case TerrainType.Hills: return hillsLayer;
-                case TerrainType.Mountains: return mountainsLayer;
-                case TerrainType.Rocks: return rocksLayer;
                 default: return waterLayer;
             }
         }
@@ -226,8 +265,7 @@ namespace ResortIsland.Resort
         private bool IsTerrainBuildable(TerrainType terrain)
         {
             if (terrain == TerrainType.Sand) return sandBuildable;
-            if (terrain == TerrainType.Grass) return grassBuildable;
-            return terrain == TerrainType.Hills && hillsBuildable;
+            return terrain == TerrainType.Grass && grassBuildable;
         }
 
         public bool TryGetTile(int x, int y, out TileData tile)
@@ -247,6 +285,20 @@ namespace ResortIsland.Resort
             // public integer API remains a conventional 0..width/height coordinate.
             return TryGetTile(coordinate.x + mapWidth / 2, coordinate.y + mapHeight / 2, out tile);
         }
+
+        /// Height of the surface above the water level; objects standing on the cell are shifted up by this.
+        public static float GroundHeightOf(TerrainType terrain)
+        {
+            switch (terrain)
+            {
+                case TerrainType.Sand: return SandHeight;
+                case TerrainType.Grass: return GrassHeight;
+                default: return 0f;
+            }
+        }
+
+        public float GroundHeightAt(Vector3Int cell)
+            => TryGetTile(cell, out var tile) ? GroundHeightOf(tile.terrainType) : 0f;
 
         public bool IsBuildableArea(Vector2Int origin, Vector2Int size, bool requireUnoccupied = true)
         {
@@ -269,18 +321,97 @@ namespace ResortIsland.Resort
             return true;
         }
 
+        // ---- building sites (cell coordinates = centered Grid coordinates) --------------------
+
+        private Vector2Int CellToTile(Vector3Int cell) => new Vector2Int(cell.x + mapWidth / 2, cell.y + mapHeight / 2);
+
+        /// Footprint starting at originCell is entirely buildable (and unoccupied when requested).
+        public bool IsAreaBuildable(Vector3Int originCell, Vector2Int size, bool requireUnoccupied = true)
+            => IsBuildableArea(CellToTile(originCell), size, requireUnoccupied);
+
+        public bool TrySetOccupied(Vector3Int originCell, Vector2Int size, bool occupied)
+            => TrySetOccupiedArea(CellToTile(originCell), size, occupied);
+
+        /// Finds a free site for a building: inland (nearest to the island centre, never on the
+        /// waterline) or, with preferShore, on the beach. Keeps a one-cell gap to other buildings.
+        public bool TryFindSite(Vector2Int size, bool preferShore, out Vector3Int originCell)
+        {
+            originCell = default;
+            if (tileLookup == null || size.x < 1 || size.y < 1) return false;
+
+            float centerX = mapWidth / 2;
+            float centerY = mapHeight / 2;
+            float bestScore = float.MaxValue;
+            bool found = false;
+
+            for (int y = 0; y < mapHeight; y++)
+            for (int x = 0; x < mapWidth; x++)
+            {
+                var origin = new Vector2Int(x, y);
+                if (!IsBuildableArea(origin, size) || !IsRingUnoccupied(origin, size)) continue;
+
+                int minShore = int.MaxValue;
+                for (int ty = y; ty < y + size.y; ty++)
+                for (int tx = x; tx < x + size.x; tx++)
+                    minShore = Mathf.Min(minShore, tileLookup[tx, ty].shoreDistance);
+                if (!preferShore && minShore < 2) continue;
+
+                float dx = x + (size.x - 1) * 0.5f - centerX;
+                float dy = y + (size.y - 1) * 0.5f - centerY;
+                float distance = Mathf.Sqrt(dx * dx + dy * dy);
+                float score = preferShore ? minShore * 1000f + distance : distance;
+                if (score >= bestScore) continue;
+
+                bestScore = score;
+                found = true;
+                originCell = new Vector3Int(x - mapWidth / 2, y - mapHeight / 2, 0);
+            }
+            return found;
+        }
+
+        private bool IsRingUnoccupied(Vector2Int origin, Vector2Int size)
+        {
+            for (int y = origin.y - 1; y <= origin.y + size.y; y++)
+            for (int x = origin.x - 1; x <= origin.x + size.x; x++)
+            {
+                bool inside = x >= origin.x && x < origin.x + size.x && y >= origin.y && y < origin.y + size.y;
+                if (!inside && TryGetTile(x, y, out var tile) && tile.isOccupied) return false;
+            }
+            return true;
+        }
+
+        /// The free buildable cells closest to the island centre (used to spawn workers).
+        public void TryFindFreeCells(int count, List<Vector3Int> result)
+        {
+            result.Clear();
+            if (tileLookup == null || count <= 0) return;
+
+            var candidates = new List<TileData>();
+            foreach (TileData tile in tiles)
+                if (tile.isBuildable && !tile.isOccupied) candidates.Add(tile);
+
+            float centerX = mapWidth / 2;
+            float centerY = mapHeight / 2;
+            candidates.Sort((a, b) =>
+            {
+                float da = (a.x - centerX) * (a.x - centerX) + (a.y - centerY) * (a.y - centerY);
+                float db = (b.x - centerX) * (b.x - centerX) + (b.y - centerY) * (b.y - centerY);
+                return da.CompareTo(db);
+            });
+
+            for (int i = 0; i < candidates.Count && result.Count < count; i++)
+                result.Add(new Vector3Int(candidates[i].x - mapWidth / 2, candidates[i].y - mapHeight / 2, 0));
+        }
+
         private void ClearLayers()
         {
             tiles.Clear();
             waterLayer.Clear();
             sandLayer.Clear();
             grassLayer.Clear();
-            hillsLayer.Clear();
-            mountainsLayer.Clear();
-            rocksLayer.Clear();
         }
 
-        // ---- isometric rendering -------------------------------------------------------------
+        // ---- isometric sprite rendering ------------------------------------------------------
 
         private Vector3Int CellOf(TileData tile) => new Vector3Int(tile.x - mapWidth / 2, tile.y - mapHeight / 2, 0);
 
@@ -288,18 +419,23 @@ namespace ResortIsland.Resort
         private Vector3 CellCenterLocal(TileData tile)
             => transform.InverseTransformPoint(grid.GetCellCenterWorld(CellOf(tile)));
 
-        private float LiftOf(TerrainType terrain)
+        private Sprite SpriteFor(TileData tile)
         {
-            switch (terrain)
+            Sprite[] variants;
+            switch (tile.terrainType)
             {
-                case TerrainType.Mountains: return heightStep * 2f;
-                case TerrainType.Rocks: return heightStep * 3f;
-                default: return 0f;
+                case TerrainType.Sand: variants = sandSprites; break;
+                case TerrainType.Grass: variants = grassSprites; break;
+                default: variants = tile.isShallow ? shallowWaterSprites : deepWaterSprites; break;
+            }
+            if (variants == null || variants.Length == 0) return null;
+
+            unchecked
+            {
+                int hash = (tile.x * 73856093) ^ (tile.y * 19349663) ^ (seed * 83492791);
+                return variants[(hash & 0x7fffffff) % variants.Length];
             }
         }
-
-        private float LiftAt(int x, int y)
-            => TryGetTile(x, y, out var tile) ? LiftOf(tile.terrainType) : 0f;
 
         private void EnsureRendering()
         {
@@ -335,54 +471,74 @@ namespace ResortIsland.Resort
         {
             EnsureRendering();
 
-            // Back-to-front: on an isometric grid tiles with a higher x+y are further from the camera.
+            // Back-to-front: on an isometric grid tiles with a higher x+y are further from the camera,
+            // so nearer slabs are drawn later and cover the sides of the ones behind them.
             var order = new List<TileData>(tiles.Count);
             foreach (TileData tile in tiles)
                 if (drawWater || tile.isLand) order.Add(tile);
+
+            // Endless-looking sea: deep water around the map. These cells exist only for rendering.
+            if (drawWater && waterMargin > 0)
+            {
+                for (int y = -waterMargin; y < mapHeight + waterMargin; y++)
+                for (int x = -waterMargin; x < mapWidth + waterMargin; x++)
+                {
+                    bool insideMap = x >= 0 && x < mapWidth && y >= 0 && y < mapHeight;
+                    if (!insideMap) order.Add(new TileData(x, y));
+                }
+            }
+
             order.Sort((a, b) =>
             {
                 int c = (b.x + b.y).CompareTo(a.x + a.y);
                 return c != 0 ? c : a.x.CompareTo(b.x);
             });
 
-            var vertices = new List<Vector3>(order.Count * 8);
-            var colors = new List<Color32>(order.Count * 8);
-            var indices = new List<int>(order.Count * 12);
+            var vertices = new List<Vector3>(order.Count * 4);
+            var uvs = new List<Vector2>(order.Count * 4);
+            var colors = new List<Color32>(order.Count * 4);
+            var indices = new List<int>(order.Count * 6);
 
-            Vector3 cellSize = grid.cellSize;
-            float hx = cellSize.x * 0.5f;
-            float hy = cellSize.y * 0.5f;
-
+            Texture2D texture = null;
+            bool missingSprites = false;
             foreach (TileData tile in order)
             {
+                Sprite sprite = SpriteFor(tile);
+                if (sprite == null) { missingSprites = true; continue; }
+                if (texture == null) texture = sprite.texture;
+                else if (sprite.texture != texture)
+                {
+                    Debug.LogWarning("IslandGenerator: all terrain sprites must come from the same sheet (Terrain.png).");
+                    continue;
+                }
+
+                // Sprite pivot sits on the cell centre; the sheet's pivots are authored for that.
+                float ppu = sprite.pixelsPerUnit;
+                Rect rect = sprite.textureRect;
                 Vector3 c = CellCenterLocal(tile);
-                float lift = LiftOf(tile.terrainType);
-                Color32 top = ColorFor(tile);
+                float x0 = c.x - sprite.pivot.x / ppu;
+                float y0 = c.y - sprite.pivot.y / ppu;
+                float x1 = x0 + rect.width / ppu;
+                float y1 = y0 + rect.height / ppu;
 
-                Vector3 left = new Vector3(c.x - hx, c.y, c.z);
-                Vector3 bottom = new Vector3(c.x, c.y - hy, c.z);
-                Vector3 right = new Vector3(c.x + hx, c.y, c.z);
-                Vector3 back = new Vector3(c.x, c.y + hy, c.z);
-                Vector3 up = new Vector3(0f, lift, 0f);
+                float u0 = rect.xMin / texture.width, u1 = rect.xMax / texture.width;
+                float v0 = rect.yMin / texture.height, v1 = rect.yMax / texture.height;
 
-                // Side walls toward the viewer, only where this tile stands above its neighbour.
-                float liftLeft = LiftAt(tile.x - 1, tile.y);   // neighbour across the bottom-left edge
-                float liftRight = LiftAt(tile.x, tile.y - 1);  // neighbour across the bottom-right edge
-                if (lift > liftLeft)
-                {
-                    var low = new Vector3(0f, liftLeft, 0f);
-                    AddQuad(vertices, colors, indices, left + up, bottom + up, bottom + low, left + low,
-                        Shade(top, 0.78f));
-                }
-                if (lift > liftRight)
-                {
-                    var low = new Vector3(0f, liftRight, 0f);
-                    AddQuad(vertices, colors, indices, bottom + up, right + up, right + low, bottom + low,
-                        Shade(top, 0.58f));
-                }
-
-                AddQuad(vertices, colors, indices, left + up, bottom + up, right + up, back + up, top);
+                int start = vertices.Count;
+                vertices.Add(new Vector3(x0, y0, c.z)); uvs.Add(new Vector2(u0, v0));
+                vertices.Add(new Vector3(x0, y1, c.z)); uvs.Add(new Vector2(u0, v1));
+                vertices.Add(new Vector3(x1, y1, c.z)); uvs.Add(new Vector2(u1, v1));
+                vertices.Add(new Vector3(x1, y0, c.z)); uvs.Add(new Vector2(u1, v0));
+                Color32 color = highlightBuildable && tile.isBuildable ? BuildableTint : White;
+                for (int i = 0; i < 4; i++) colors.Add(color);
+                indices.Add(start); indices.Add(start + 1); indices.Add(start + 2);
+                indices.Add(start); indices.Add(start + 2); indices.Add(start + 3);
             }
+
+            if (missingSprites)
+                Debug.LogError("IslandGenerator: terrain sprites are not assigned. Assign the Terrain_* sprites " +
+                               "from ResortEmpire/Sprites/Terrain/Terrain.png in the Inspector.");
+            if (texture != null) generatedMaterial.mainTexture = texture;
 
             if (generatedMesh == null)
                 generatedMesh = new Mesh { name = "Generated Island Mesh", hideFlags = HideFlags.HideAndDontSave };
@@ -391,46 +547,11 @@ namespace ResortIsland.Resort
                 ? UnityEngine.Rendering.IndexFormat.UInt32
                 : UnityEngine.Rendering.IndexFormat.UInt16;
             generatedMesh.SetVertices(vertices);
+            generatedMesh.SetUVs(0, uvs);
             generatedMesh.SetColors(colors);
             generatedMesh.SetIndices(indices, MeshTopology.Triangles, 0);
             generatedMesh.RecalculateBounds();
             meshFilter.sharedMesh = generatedMesh;
-        }
-
-        private static void AddQuad(List<Vector3> vertices, List<Color32> colors, List<int> indices,
-            Vector3 a, Vector3 b, Vector3 c, Vector3 d, Color32 color)
-        {
-            int start = vertices.Count;
-            vertices.Add(a); vertices.Add(b); vertices.Add(c); vertices.Add(d);
-            for (int i = 0; i < 4; i++) colors.Add(color);
-            indices.Add(start); indices.Add(start + 1); indices.Add(start + 2);
-            indices.Add(start); indices.Add(start + 2); indices.Add(start + 3);
-        }
-
-        private static Color32 Shade(Color32 color, float factor)
-            => new Color32((byte)(color.r * factor), (byte)(color.g * factor), (byte)(color.b * factor), color.a);
-
-        private Color32 ColorFor(TileData tile)
-        {
-            Color32 color = BaseColorFor(tile.terrainType);
-            if (tile.isLand)
-                color = Color32.Lerp(color, tile.elevation > 0.5f ? White : Black,
-                    Mathf.Abs(tile.elevation - 0.5f) * 0.18f);
-            if (highlightBuildable && tile.isBuildable) color = Color32.Lerp(color, White, 0.25f);
-            return color;
-        }
-
-        private static Color32 BaseColorFor(TerrainType terrain)
-        {
-            switch (terrain)
-            {
-                case TerrainType.Sand: return SandColor;
-                case TerrainType.Grass: return GrassColor;
-                case TerrainType.Hills: return HillsColor;
-                case TerrainType.Mountains: return MountainsColor;
-                case TerrainType.Rocks: return RocksColor;
-                default: return WaterColor;
-            }
         }
 
         private void DestroyRendering()
@@ -459,8 +580,6 @@ namespace ResortIsland.Resort
             {
                 if (tile.terrainType == TerrainType.Water && tile.isBuildable)
                     Debug.LogError("IslandGenerator: water tile marked buildable.");
-                if ((tile.terrainType == TerrainType.Mountains || tile.terrainType == TerrainType.Rocks) &&
-                    tile.isBuildable) Debug.LogError("IslandGenerator: elevated tile marked buildable.");
             }
             for (int x = 0; x < mapWidth; x++)
             {

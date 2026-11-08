@@ -1,0 +1,413 @@
+fileFormatVersion: 2
+guid: adbf0ef3db665cc78cfd473f4bac1e0f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 140108303254705489
+    second: BeachBar_Lv1_R0
+  - first:
+      213: 108684096585577748
+    second: BeachBar_Lv1_R1
+  - first:
+      213: 815390192752387425
+    second: BeachBar_Lv1_R2
+  - first:
+      213: 162219115402069494
+    second: BeachBar_Lv1_R3
+  - first:
+      213: 367223121088578951
+    second: BeachBar_Lv2_R0
+  - first:
+      213: 257249103566472450
+    second: BeachBar_Lv2_R1
+  - first:
+      213: 337850696111674766
+    second: BeachBar_Lv2_R2
+  - first:
+      213: 309075559637542350
+    second: BeachBar_Lv2_R3
+  - first:
+      213: 150701647288071427
+    second: BeachBar_Lv3_R0
+  - first:
+      213: 82030284254270896
+    second: BeachBar_Lv3_R1
+  - first:
+      213: 635867583138559264
+    second: BeachBar_Lv3_R2
+  - first:
+      213: 813472563445814536
+    second: BeachBar_Lv3_R3
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 4096
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 128
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BeachBar_Lv1_R0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 454
+        width: 330
+        height: 223
+      alignment: 9
+      pivot: {x: 0.406061, y: 0.313901}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ea2669c78ba5244982a765b8c36fab8
+      internalID: 140108303254705489
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BeachBar_Lv1_R1
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 454
+        width: 330
+        height: 211
+      alignment: 9
+      pivot: {x: 0.406061, y: 0.331754}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0477cca0933a54b1809c0b30bfdace10
+      internalID: 108684096585577748
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BeachBar_Lv1_R2
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 454
+        width: 306
+        height: 211
+      alignment: 9
+      pivot: {x: 0.437908, y: 0.331754}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bda312918bd50b6b8b9712697e83b73
+      internalID: 815390192752387425
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BeachBar_Lv1_R3
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 454
+        width: 306
+        height: 223
+      alignment: 9
+      pivot: {x: 0.437908, y: 0.313901}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fc7dddfc5cb567b89778cd20f6322ab
+      internalID: 162219115402069494
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BeachBar_Lv2_R0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 227
+        width: 330
+        height: 223
+      alignment: 9
+      pivot: {x: 0.406061, y: 0.313901}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ea8591d2a225c7582bf312c805db68c
+      internalID: 367223121088578951
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BeachBar_Lv2_R1
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 227
+        width: 330
+        height: 211
+      alignment: 9
+      pivot: {x: 0.406061, y: 0.331754}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05991e6bb13051eda8ee3c75902476a5
+      internalID: 257249103566472450
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BeachBar_Lv2_R2
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 227
+        width: 306
+        height: 211
+      alignment: 9
+      pivot: {x: 0.437908, y: 0.331754}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 672ba8927f9b573cb891bc04aacf7c3e
+      internalID: 337850696111674766
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BeachBar_Lv2_R3
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 227
+        width: 306
+        height: 223
+      alignment: 9
+      pivot: {x: 0.437908, y: 0.313901}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 724a1fb1343952fabf4fa291be3cb379
+      internalID: 309075559637542350
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BeachBar_Lv3_R0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 0
+        width: 330
+        height: 223
+      alignment: 9
+      pivot: {x: 0.406061, y: 0.313901}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0ce9198c32b53a090cdf64e0d264d39
+      internalID: 150701647288071427
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BeachBar_Lv3_R1
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 0
+        width: 330
+        height: 211
+      alignment: 9
+      pivot: {x: 0.406061, y: 0.331754}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7ddaea44d3b58aa9036c28182caedc2
+      internalID: 82030284254270896
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BeachBar_Lv3_R2
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 0
+        width: 306
+        height: 211
+      alignment: 9
+      pivot: {x: 0.437908, y: 0.331754}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65d11645bcc85f6b9be9b96c95049e89
+      internalID: 635867583138559264
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BeachBar_Lv3_R3
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 0
+        width: 306
+        height: 223
+      alignment: 9
+      pivot: {x: 0.437908, y: 0.313901}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 556bc857fd6f508baf55a922f28fc849
+      internalID: 813472563445814536
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5df73b4f59a25ba08f70a6afcc3e0d66
+    internalID: 0
+    vertices: []
+    indices:
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      BeachBar_Lv1_R0: 140108303254705489
+      BeachBar_Lv1_R1: 108684096585577748
+      BeachBar_Lv1_R2: 815390192752387425
+      BeachBar_Lv1_R3: 162219115402069494
+      BeachBar_Lv2_R0: 367223121088578951
+      BeachBar_Lv2_R1: 257249103566472450
+      BeachBar_Lv2_R2: 337850696111674766
+      BeachBar_Lv2_R3: 309075559637542350
+      BeachBar_Lv3_R0: 150701647288071427
+      BeachBar_Lv3_R1: 82030284254270896
+      BeachBar_Lv3_R2: 635867583138559264
+      BeachBar_Lv3_R3: 813472563445814536
+  mipmapLimitGroupName:
+  pSDRemoveMatte: 0
+  userData:
+  assetBundleName:
+  assetBundleVariant:

@@ -8,9 +8,12 @@ namespace ResortIsland.Config
     {
         [SerializeField] private BuildingConfig building;
         [SerializeField] private Vector3Int cell;
+        [Tooltip("The island generator picks the site; 'cell' is only the fallback when no site is found.")]
+        [SerializeField] private bool autoPlace = true;
 
         public BuildingConfig Building => building;
         public Vector3Int Cell => cell;
+        public bool AutoPlace => autoPlace;
     }
 
     [CreateAssetMenu(fileName = "ResortStartConfig", menuName = "ResortIsland/Config/ResortStartConfig")]

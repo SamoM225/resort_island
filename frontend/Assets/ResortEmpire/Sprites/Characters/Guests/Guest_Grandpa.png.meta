@@ -1,0 +1,933 @@
+fileFormatVersion: 2
+guid: 9e472e5ae11f571ebcdf6c1aba2533bc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 920691945731052929
+    second: Guest_Grandpa_SE_Idle_0
+  - first:
+      213: 227126088858092904
+    second: Guest_Grandpa_SE_Idle_1
+  - first:
+      213: 932405148220953868
+    second: Guest_Grandpa_SE_Walk_0
+  - first:
+      213: 63981608607696309
+    second: Guest_Grandpa_SE_Walk_1
+  - first:
+      213: 567925760900986142
+    second: Guest_Grandpa_SE_Walk_2
+  - first:
+      213: 444600062788466165
+    second: Guest_Grandpa_SE_Walk_3
+  - first:
+      213: 864621052756895217
+    second: Guest_Grandpa_SE_Cheer_0
+  - first:
+      213: 364289265660830999
+    second: Guest_Grandpa_SE_Cheer_1
+  - first:
+      213: 690148349676115378
+    second: Guest_Grandpa_SW_Idle_0
+  - first:
+      213: 914848320446883259
+    second: Guest_Grandpa_SW_Idle_1
+  - first:
+      213: 379306899679716609
+    second: Guest_Grandpa_SW_Walk_0
+  - first:
+      213: 34666816896169463
+    second: Guest_Grandpa_SW_Walk_1
+  - first:
+      213: 377830317196637637
+    second: Guest_Grandpa_SW_Walk_2
+  - first:
+      213: 118253883210175942
+    second: Guest_Grandpa_SW_Walk_3
+  - first:
+      213: 400292196018296263
+    second: Guest_Grandpa_SW_Cheer_0
+  - first:
+      213: 45636440710288786
+    second: Guest_Grandpa_SW_Cheer_1
+  - first:
+      213: 937620302153405854
+    second: Guest_Grandpa_NW_Idle_0
+  - first:
+      213: 898359313071556009
+    second: Guest_Grandpa_NW_Idle_1
+  - first:
+      213: 1053297235233260863
+    second: Guest_Grandpa_NW_Walk_0
+  - first:
+      213: 240790214866593172
+    second: Guest_Grandpa_NW_Walk_1
+  - first:
+      213: 331285015112992026
+    second: Guest_Grandpa_NW_Walk_2
+  - first:
+      213: 79840457196234208
+    second: Guest_Grandpa_NW_Walk_3
+  - first:
+      213: 1023449171920921867
+    second: Guest_Grandpa_NW_Cheer_0
+  - first:
+      213: 280639956964676926
+    second: Guest_Grandpa_NW_Cheer_1
+  - first:
+      213: 172245117152736685
+    second: Guest_Grandpa_NE_Idle_0
+  - first:
+      213: 682100130371654919
+    second: Guest_Grandpa_NE_Idle_1
+  - first:
+      213: 749843036987127235
+    second: Guest_Grandpa_NE_Walk_0
+  - first:
+      213: 1023620968375891260
+    second: Guest_Grandpa_NE_Walk_1
+  - first:
+      213: 7951004130194823
+    second: Guest_Grandpa_NE_Walk_2
+  - first:
+      213: 218879409081234938
+    second: Guest_Grandpa_NE_Walk_3
+  - first:
+      213: 1119747551436404140
+    second: Guest_Grandpa_NE_Cheer_0
+  - first:
+      213: 624685608226899243
+    second: Guest_Grandpa_NE_Cheer_1
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 4096
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Guest_Grandpa_SE_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 573
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94920efddf2353b4a33381bc89f31f0f
+      internalID: 920691945731052929
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Grandpa_SE_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 573
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbd195caec045c28aebe7105d5b232f2
+      internalID: 227126088858092904
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Grandpa_SE_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 573
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 899db350ddb65cb396dd4237cf7e1ecf
+      internalID: 932405148220953868
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Grandpa_SE_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 573
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fa796061e0b5adfb14b5c291e8dbb2c
+      internalID: 63981608607696309
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Grandpa_SE_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 573
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afd9aa544b3e531390ba64dc489d3160
+      internalID: 567925760900986142
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Grandpa_SE_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 573
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df024a911010514b940c0a63dfd265bd
+      internalID: 444600062788466165
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Grandpa_SE_Cheer_0
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 573
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4c0744db468537e8ec5fa816daf8182
+      internalID: 864621052756895217
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Grandpa_SE_Cheer_1
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 573
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce9c0bce568f54f9bd90b3812e25bb3e
+      internalID: 364289265660830999
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Grandpa_SW_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 382
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78e0ff6e5a3b5df4845ff6dd40d50603
+      internalID: 690148349676115378
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Grandpa_SW_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 382
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b51727a80f2f5fc289b4962f5d323852
+      internalID: 914848320446883259
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Grandpa_SW_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 382
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbc3e32b680b5d82a3a0ec6e35506b9e
+      internalID: 379306899679716609
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Grandpa_SW_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 382
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adb403c451bb52369eae47d2a2aba732
+      internalID: 34666816896169463
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Grandpa_SW_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 382
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 233e92f1f5fc5e5795057e1f8f1dacdc
+      internalID: 377830317196637637
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Grandpa_SW_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 382
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e54260d752b5ec1842e5557b6a701fc
+      internalID: 118253883210175942
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Grandpa_SW_Cheer_0
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 382
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb71dd9b8d8059ff95c3108214e3e16f
+      internalID: 400292196018296263
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Grandpa_SW_Cheer_1
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 382
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e24233a18a155a99a7cbf06c8c2f8816
+      internalID: 45636440710288786
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Grandpa_NW_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 191
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 258402f6c62b523c91585fcf612551c2
+      internalID: 937620302153405854
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Grandpa_NW_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 191
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ae60ec2b1f6544abe19dc2c61b33254
+      internalID: 898359313071556009
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Grandpa_NW_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 191
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb3eb5c5246e5d609322780fcac5c96d
+      internalID: 1053297235233260863
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Grandpa_NW_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 191
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b00391cf1a345683bafd06fa0cb4ce33
+      internalID: 240790214866593172
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Grandpa_NW_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 191
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4e73040eeec54feac609ec6048a4521
+      internalID: 331285015112992026
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Grandpa_NW_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 191
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf4e3afff9cd54a39738c5d87b9de45b
+      internalID: 79840457196234208
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Grandpa_NW_Cheer_0
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 191
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb60fc870ba6535ab5d60e262cac044a
+      internalID: 1023449171920921867
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Grandpa_NW_Cheer_1
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 191
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4706714ba1cf5d97b6320615baf47cf3
+      internalID: 280639956964676926
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Grandpa_NE_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de33a8e165d655b88c2df0226dd6a6f3
+      internalID: 172245117152736685
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Grandpa_NE_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 0
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30effdf6c3ac5b70ae60b2ccae584248
+      internalID: 682100130371654919
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Grandpa_NE_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 0
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a929d6f68edc5d62b46c96ed62345353
+      internalID: 749843036987127235
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Grandpa_NE_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 0
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fec1f903f85051b9b14f5fa40160d3a4
+      internalID: 1023620968375891260
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Grandpa_NE_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 0
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 298ecaa875955745a9a61d981f097345
+      internalID: 7951004130194823
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Grandpa_NE_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 0
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 589ce3b278e456989ed3e3894ea69043
+      internalID: 218879409081234938
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Grandpa_NE_Cheer_0
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 0
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 015c43ba35155e8287d7149e0ee4f5bf
+      internalID: 1119747551436404140
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Grandpa_NE_Cheer_1
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 0
+        width: 276
+        height: 191
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.387435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecbe65b2634d5d6193de2c76df262158
+      internalID: 624685608226899243
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 894e65ec59c4567d861011b86d49786f
+    internalID: 0
+    vertices: []
+    indices:
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Guest_Grandpa_SE_Idle_0: 920691945731052929
+      Guest_Grandpa_SE_Idle_1: 227126088858092904
+      Guest_Grandpa_SE_Walk_0: 932405148220953868
+      Guest_Grandpa_SE_Walk_1: 63981608607696309
+      Guest_Grandpa_SE_Walk_2: 567925760900986142
+      Guest_Grandpa_SE_Walk_3: 444600062788466165
+      Guest_Grandpa_SE_Cheer_0: 864621052756895217
+      Guest_Grandpa_SE_Cheer_1: 364289265660830999
+      Guest_Grandpa_SW_Idle_0: 690148349676115378
+      Guest_Grandpa_SW_Idle_1: 914848320446883259
+      Guest_Grandpa_SW_Walk_0: 379306899679716609
+      Guest_Grandpa_SW_Walk_1: 34666816896169463
+      Guest_Grandpa_SW_Walk_2: 377830317196637637
+      Guest_Grandpa_SW_Walk_3: 118253883210175942
+      Guest_Grandpa_SW_Cheer_0: 400292196018296263
+      Guest_Grandpa_SW_Cheer_1: 45636440710288786
+      Guest_Grandpa_NW_Idle_0: 937620302153405854
+      Guest_Grandpa_NW_Idle_1: 898359313071556009
+      Guest_Grandpa_NW_Walk_0: 1053297235233260863
+      Guest_Grandpa_NW_Walk_1: 240790214866593172
+      Guest_Grandpa_NW_Walk_2: 331285015112992026
+      Guest_Grandpa_NW_Walk_3: 79840457196234208
+      Guest_Grandpa_NW_Cheer_0: 1023449171920921867
+      Guest_Grandpa_NW_Cheer_1: 280639956964676926
+      Guest_Grandpa_NE_Idle_0: 172245117152736685
+      Guest_Grandpa_NE_Idle_1: 682100130371654919
+      Guest_Grandpa_NE_Walk_0: 749843036987127235
+      Guest_Grandpa_NE_Walk_1: 1023620968375891260
+      Guest_Grandpa_NE_Walk_2: 7951004130194823
+      Guest_Grandpa_NE_Walk_3: 218879409081234938
+      Guest_Grandpa_NE_Cheer_0: 1119747551436404140
+      Guest_Grandpa_NE_Cheer_1: 624685608226899243
+  mipmapLimitGroupName:
+  pSDRemoveMatte: 0
+  userData:
+  assetBundleName:
+  assetBundleVariant:

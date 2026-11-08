@@ -1,0 +1,517 @@
+fileFormatVersion: 2
+guid: 3684350f5f98504b999176c67cd4d630
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 352822386992768488
+    second: Terrain_Deep_R0
+  - first:
+      213: 290791732649702788
+    second: Terrain_Deep_R1
+  - first:
+      213: 174369707924768078
+    second: Terrain_Deep_R2
+  - first:
+      213: 866594066635134349
+    second: Terrain_Deep_R3
+  - first:
+      213: 966308086427084064
+    second: Terrain_Shallow_R0
+  - first:
+      213: 115799645052446038
+    second: Terrain_Shallow_R1
+  - first:
+      213: 886469103412430191
+    second: Terrain_Shallow_R2
+  - first:
+      213: 1097855396017673687
+    second: Terrain_Shallow_R3
+  - first:
+      213: 980455269747295615
+    second: Terrain_Sand_R0
+  - first:
+      213: 1079766976414119320
+    second: Terrain_Sand_R1
+  - first:
+      213: 631655932156290452
+    second: Terrain_Sand_R2
+  - first:
+      213: 366280332327466341
+    second: Terrain_Sand_R3
+  - first:
+      213: 180704870621758865
+    second: Terrain_Grass_R0
+  - first:
+      213: 1002851860092511565
+    second: Terrain_Grass_R1
+  - first:
+      213: 853418546831078762
+    second: Terrain_Grass_R2
+  - first:
+      213: 786022137103451407
+    second: Terrain_Grass_R3
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 4096
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 128
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Terrain_Deep_R0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 372
+        width: 142
+        height: 101
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.613861}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bf060f4a8d254eaa3fce4238649cb82
+      internalID: 352822386992768488
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain_Deep_R1
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 372
+        width: 142
+        height: 101
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.613861}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89d22aedc9c55b45863c4b05f007d147
+      internalID: 290791732649702788
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain_Deep_R2
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 372
+        width: 142
+        height: 101
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.613861}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d289ffeec9c45942959414ea294ef499
+      internalID: 174369707924768078
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain_Deep_R3
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 372
+        width: 142
+        height: 101
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.613861}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e41c50f2968d5b689a9d5ba920aa22a7
+      internalID: 866594066635134349
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain_Shallow_R0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 248
+        width: 142
+        height: 101
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.613861}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 494ba58dcd7a5162969c0594f6d7d617
+      internalID: 966308086427084064
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain_Shallow_R1
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 248
+        width: 142
+        height: 101
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.613861}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 948b72f1d3a75c2fa5e81499caa02a9a
+      internalID: 115799645052446038
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain_Shallow_R2
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 248
+        width: 142
+        height: 101
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.613861}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d500091c6c605fcda28e6c8567a055b5
+      internalID: 886469103412430191
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain_Shallow_R3
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 248
+        width: 142
+        height: 101
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.613861}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 303cb55f5b9951468316182ceca6a7e5
+      internalID: 1097855396017673687
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain_Sand_R0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 124
+        width: 142
+        height: 110
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.563636}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edac3c6ad5ee56c7b518473fdc4b5f1d
+      internalID: 980455269747295615
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain_Sand_R1
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 124
+        width: 142
+        height: 110
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.563636}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5297ab6cb3b15f7791f4b561b3f4f005
+      internalID: 1079766976414119320
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain_Sand_R2
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 124
+        width: 142
+        height: 110
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.563636}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dcdb42fb416505fa6ba5e941974f881
+      internalID: 631655932156290452
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain_Sand_R3
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 124
+        width: 142
+        height: 110
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.563636}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 104f4ae35d6b50c48ace7e45a6538343
+      internalID: 366280332327466341
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain_Grass_R0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 0
+        width: 142
+        height: 120
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.516667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cd079db038c5c59820d7b7116e5053b
+      internalID: 180704870621758865
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain_Grass_R1
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 0
+        width: 142
+        height: 120
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.516667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2b42ae9bcd65b69b8896b377b59f418
+      internalID: 1002851860092511565
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain_Grass_R2
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 0
+        width: 142
+        height: 120
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.516667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6076b1f0f4dd5d978298cce9ca0529f2
+      internalID: 853418546831078762
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain_Grass_R3
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 0
+        width: 142
+        height: 120
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.516667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dc405c923b2544990d941e03d49131d
+      internalID: 786022137103451407
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 764d8c4b120550c797f098bcb1903f34
+    internalID: 0
+    vertices: []
+    indices:
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Terrain_Deep_R0: 352822386992768488
+      Terrain_Deep_R1: 290791732649702788
+      Terrain_Deep_R2: 174369707924768078
+      Terrain_Deep_R3: 866594066635134349
+      Terrain_Shallow_R0: 966308086427084064
+      Terrain_Shallow_R1: 115799645052446038
+      Terrain_Shallow_R2: 886469103412430191
+      Terrain_Shallow_R3: 1097855396017673687
+      Terrain_Sand_R0: 980455269747295615
+      Terrain_Sand_R1: 1079766976414119320
+      Terrain_Sand_R2: 631655932156290452
+      Terrain_Sand_R3: 366280332327466341
+      Terrain_Grass_R0: 180704870621758865
+      Terrain_Grass_R1: 1002851860092511565
+      Terrain_Grass_R2: 853418546831078762
+      Terrain_Grass_R3: 786022137103451407
+  mipmapLimitGroupName:
+  pSDRemoveMatte: 0
+  userData:
+  assetBundleName:
+  assetBundleVariant:
