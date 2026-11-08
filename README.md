@@ -86,6 +86,32 @@ Hra sa pri prvom spustení zaregistruje anonymne a dostane token (Laravel Sanctu
 
 Zabanovaný hráč dostane na každý endpoint s tokenom aj na login `403 { "message": "This account is banned.", "reason": "..." }`. Ban a unban robí admin v paneli (*Players*); tokeny ostávajú platné, takže po unbane hra funguje ďalej.
 
+### Analytika
+
+`POST /api/v1/analytics/events` (token, max 30 dávok/min) uloží dávku udalostí hráča do `analytics_events` (hodnoty udalosti v JSONB stĺpci `payload`). Odpoveď `202 { "accepted": n }`; ak je čo i len jedna udalosť neplatná, neuloží sa nič (`422`).
+
+```json
+{
+  "app_version": "0.3.0",
+  "platform": "android",
+  "events": [
+    { "name": "wave_complete", "occurred_at": "2026-11-07T10:15:00+01:00", "session_id": "<uuid>",
+      "payload": { "wave": 3, "rating": 4, "drain_duration_s": 21.5, "worker_moves_pre_wave": 2, "worker_moves_in_wave": 1 } }
+  ]
+}
+```
+
+Pravidlá: max 100 udalostí v dávke, `name` v snake_case (max 64 znakov), `payload` je objekt do 4 KB, `session_id` je UUID. V admin paneli sú udalosti v *Analytics events* (filter podľa názvu a dňa, detail s payloadom).
+
+Návrh udalostí pre metriky z nefunkčných požiadaviek:
+
+| Udalosť | Payload | Metrika |
+| --- | --- | --- |
+| `wave_start` | `wave` | wave_complete_rate (spolu s `wave_complete`) |
+| `wave_complete` | `wave`, `rating`, `satisfaction`, `drain_duration_s`, `worker_moves_pre_wave`, `worker_moves_in_wave` | rozdelenie hodnotení, dĺžka dobehu, presuny pred vlnou / počas vlny |
+| `upgrade_offered`, `upgrade_taken` | `building`, `level` | upgrade_take_rate |
+| `session_start`, `session_end` | `duration_s` (pri `session_end`) | dĺžka session |
+
 ### Herné configy
 
 Počiatočné dáta sú v `backend/database/game-configs/{key}.json` (`economy`, `wave_system`, `energy`, `needs`, `buildings`, `unlocks`, `waves`).
