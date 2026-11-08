@@ -1,0 +1,25 @@
+{
+    "version": 1,
+    "data": {
+        "wave_timer_s": 90,
+        "service_time_s": 12,
+        "utilization_staffed": 1.0,
+        "utilization_empty": 0.33,
+        "worker_slots": 1,
+        "bottleneck_threshold": 4,
+        "bottleneck_hysteresis_s": 3,
+        "patience_grace_s": 10,
+        "patience_floor_after_s": 30,
+        "unit_floor": 0.25,
+        "wave_floor": 0.4,
+        "rating_thresholds": [0.4, 0.55, 0.7, 0.8, 0.9, 1.0],
+        "new_need_debut_ratio": 0.5,
+        "demand_growth_per_wave": 0.25,
+        "rush": {
+            "wave": 2,
+            "time_s": 45,
+            "units": 6,
+            "duration_s": 10
+        }
+    }
+}
