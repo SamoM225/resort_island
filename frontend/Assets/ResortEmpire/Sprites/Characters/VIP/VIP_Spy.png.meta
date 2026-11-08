@@ -4,10 +4,10 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: 511520280668624340
-    second: VIP_Spy_SE_Idle_0
+    second: VIP_Spy_SE_Rest_0
   - first:
       213: 340986052777588166
-    second: VIP_Spy_SE_Idle_1
+    second: VIP_Spy_SE_Rest_1
   - first:
       213: 583519702490383769
     second: VIP_Spy_SE_Walk_0
@@ -28,10 +28,10 @@ TextureImporter:
     second: VIP_Spy_SE_Wave_1
   - first:
       213: 920085763401307620
-    second: VIP_Spy_SW_Idle_0
+    second: VIP_Spy_SW_Rest_0
   - first:
       213: 881935310497301905
-    second: VIP_Spy_SW_Idle_1
+    second: VIP_Spy_SW_Rest_1
   - first:
       213: 133458850607289695
     second: VIP_Spy_SW_Walk_0
@@ -52,10 +52,10 @@ TextureImporter:
     second: VIP_Spy_SW_Wave_1
   - first:
       213: 764144389879494061
-    second: VIP_Spy_NW_Idle_0
+    second: VIP_Spy_NW_Rest_0
   - first:
       213: 836774748527101277
-    second: VIP_Spy_NW_Idle_1
+    second: VIP_Spy_NW_Rest_1
   - first:
       213: 1120440986707391881
     second: VIP_Spy_NW_Walk_0
@@ -76,10 +76,10 @@ TextureImporter:
     second: VIP_Spy_NW_Wave_1
   - first:
       213: 390842715466044915
-    second: VIP_Spy_NE_Idle_0
+    second: VIP_Spy_NE_Rest_0
   - first:
       213: 1148677571410220415
-    second: VIP_Spy_NE_Idle_1
+    second: VIP_Spy_NE_Rest_1
   - first:
       213: 687198015281886689
     second: VIP_Spy_NE_Walk_0
@@ -180,7 +180,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: VIP_Spy_SE_Idle_0
+      name: VIP_Spy_SE_Rest_0
       rect:
         serializedVersion: 2
         x: 0
@@ -202,7 +202,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VIP_Spy_SE_Idle_1
+      name: VIP_Spy_SE_Rest_1
       rect:
         serializedVersion: 2
         x: 276
@@ -356,7 +356,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VIP_Spy_SW_Idle_0
+      name: VIP_Spy_SW_Rest_0
       rect:
         serializedVersion: 2
         x: 0
@@ -378,7 +378,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VIP_Spy_SW_Idle_1
+      name: VIP_Spy_SW_Rest_1
       rect:
         serializedVersion: 2
         x: 276
@@ -532,7 +532,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VIP_Spy_NW_Idle_0
+      name: VIP_Spy_NW_Rest_0
       rect:
         serializedVersion: 2
         x: 0
@@ -554,7 +554,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VIP_Spy_NW_Idle_1
+      name: VIP_Spy_NW_Rest_1
       rect:
         serializedVersion: 2
         x: 276
@@ -708,7 +708,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VIP_Spy_NE_Idle_0
+      name: VIP_Spy_NE_Rest_0
       rect:
         serializedVersion: 2
         x: 0
@@ -730,7 +730,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VIP_Spy_NE_Idle_1
+      name: VIP_Spy_NE_Rest_1
       rect:
         serializedVersion: 2
         x: 276
@@ -894,32 +894,32 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      VIP_Spy_SE_Idle_0: 511520280668624340
-      VIP_Spy_SE_Idle_1: 340986052777588166
+      VIP_Spy_SE_Rest_0: 511520280668624340
+      VIP_Spy_SE_Rest_1: 340986052777588166
       VIP_Spy_SE_Walk_0: 583519702490383769
       VIP_Spy_SE_Walk_1: 602762748047443404
       VIP_Spy_SE_Walk_2: 829689303337612644
       VIP_Spy_SE_Walk_3: 599916417785103861
       VIP_Spy_SE_Wave_0: 47186405323498988
       VIP_Spy_SE_Wave_1: 592529550419891506
-      VIP_Spy_SW_Idle_0: 920085763401307620
-      VIP_Spy_SW_Idle_1: 881935310497301905
+      VIP_Spy_SW_Rest_0: 920085763401307620
+      VIP_Spy_SW_Rest_1: 881935310497301905
       VIP_Spy_SW_Walk_0: 133458850607289695
       VIP_Spy_SW_Walk_1: 242562132605359586
       VIP_Spy_SW_Walk_2: 295316167371793715
       VIP_Spy_SW_Walk_3: 665556294472496464
       VIP_Spy_SW_Wave_0: 72334301962401111
       VIP_Spy_SW_Wave_1: 955900194858075546
-      VIP_Spy_NW_Idle_0: 764144389879494061
-      VIP_Spy_NW_Idle_1: 836774748527101277
+      VIP_Spy_NW_Rest_0: 764144389879494061
+      VIP_Spy_NW_Rest_1: 836774748527101277
       VIP_Spy_NW_Walk_0: 1120440986707391881
       VIP_Spy_NW_Walk_1: 120193179277968857
       VIP_Spy_NW_Walk_2: 424757612496614723
       VIP_Spy_NW_Walk_3: 872855621562942921
       VIP_Spy_NW_Wave_0: 510604569238750667
       VIP_Spy_NW_Wave_1: 225739034204898650
-      VIP_Spy_NE_Idle_0: 390842715466044915
-      VIP_Spy_NE_Idle_1: 1148677571410220415
+      VIP_Spy_NE_Rest_0: 390842715466044915
+      VIP_Spy_NE_Rest_1: 1148677571410220415
       VIP_Spy_NE_Walk_0: 687198015281886689
       VIP_Spy_NE_Walk_1: 1088846831121794496
       VIP_Spy_NE_Walk_2: 518774849429280075

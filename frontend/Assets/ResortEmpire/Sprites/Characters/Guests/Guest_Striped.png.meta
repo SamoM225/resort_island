@@ -4,10 +4,10 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: 110671708557464965
-    second: Guest_Striped_SE_Idle_0
+    second: Guest_Striped_SE_Rest_0
   - first:
       213: 518072148799448518
-    second: Guest_Striped_SE_Idle_1
+    second: Guest_Striped_SE_Rest_1
   - first:
       213: 1079748937890207052
     second: Guest_Striped_SE_Walk_0
@@ -28,10 +28,10 @@ TextureImporter:
     second: Guest_Striped_SE_Cheer_1
   - first:
       213: 506772374741476741
-    second: Guest_Striped_SW_Idle_0
+    second: Guest_Striped_SW_Rest_0
   - first:
       213: 626473401417700638
-    second: Guest_Striped_SW_Idle_1
+    second: Guest_Striped_SW_Rest_1
   - first:
       213: 76194495730881907
     second: Guest_Striped_SW_Walk_0
@@ -52,10 +52,10 @@ TextureImporter:
     second: Guest_Striped_SW_Cheer_1
   - first:
       213: 250316741560763816
-    second: Guest_Striped_NW_Idle_0
+    second: Guest_Striped_NW_Rest_0
   - first:
       213: 246846298823501240
-    second: Guest_Striped_NW_Idle_1
+    second: Guest_Striped_NW_Rest_1
   - first:
       213: 77484857572517337
     second: Guest_Striped_NW_Walk_0
@@ -76,10 +76,10 @@ TextureImporter:
     second: Guest_Striped_NW_Cheer_1
   - first:
       213: 110874786817586677
-    second: Guest_Striped_NE_Idle_0
+    second: Guest_Striped_NE_Rest_0
   - first:
       213: 496561662847976873
-    second: Guest_Striped_NE_Idle_1
+    second: Guest_Striped_NE_Rest_1
   - first:
       213: 85739880280421670
     second: Guest_Striped_NE_Walk_0
@@ -180,7 +180,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Guest_Striped_SE_Idle_0
+      name: Guest_Striped_SE_Rest_0
       rect:
         serializedVersion: 2
         x: 0
@@ -202,7 +202,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Guest_Striped_SE_Idle_1
+      name: Guest_Striped_SE_Rest_1
       rect:
         serializedVersion: 2
         x: 276
@@ -356,7 +356,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Guest_Striped_SW_Idle_0
+      name: Guest_Striped_SW_Rest_0
       rect:
         serializedVersion: 2
         x: 0
@@ -378,7 +378,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Guest_Striped_SW_Idle_1
+      name: Guest_Striped_SW_Rest_1
       rect:
         serializedVersion: 2
         x: 276
@@ -532,7 +532,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Guest_Striped_NW_Idle_0
+      name: Guest_Striped_NW_Rest_0
       rect:
         serializedVersion: 2
         x: 0
@@ -554,7 +554,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Guest_Striped_NW_Idle_1
+      name: Guest_Striped_NW_Rest_1
       rect:
         serializedVersion: 2
         x: 276
@@ -708,7 +708,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Guest_Striped_NE_Idle_0
+      name: Guest_Striped_NE_Rest_0
       rect:
         serializedVersion: 2
         x: 0
@@ -730,7 +730,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Guest_Striped_NE_Idle_1
+      name: Guest_Striped_NE_Rest_1
       rect:
         serializedVersion: 2
         x: 276
@@ -894,32 +894,32 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Guest_Striped_SE_Idle_0: 110671708557464965
-      Guest_Striped_SE_Idle_1: 518072148799448518
+      Guest_Striped_SE_Rest_0: 110671708557464965
+      Guest_Striped_SE_Rest_1: 518072148799448518
       Guest_Striped_SE_Walk_0: 1079748937890207052
       Guest_Striped_SE_Walk_1: 665584355623613812
       Guest_Striped_SE_Walk_2: 819053851543385587
       Guest_Striped_SE_Walk_3: 1083380230463563219
       Guest_Striped_SE_Cheer_0: 271541122050467131
       Guest_Striped_SE_Cheer_1: 235984780636046784
-      Guest_Striped_SW_Idle_0: 506772374741476741
-      Guest_Striped_SW_Idle_1: 626473401417700638
+      Guest_Striped_SW_Rest_0: 506772374741476741
+      Guest_Striped_SW_Rest_1: 626473401417700638
       Guest_Striped_SW_Walk_0: 76194495730881907
       Guest_Striped_SW_Walk_1: 294549234924569891
       Guest_Striped_SW_Walk_2: 66661939971249459
       Guest_Striped_SW_Walk_3: 891075745972471148
       Guest_Striped_SW_Cheer_0: 229989905794192767
       Guest_Striped_SW_Cheer_1: 593093384514741685
-      Guest_Striped_NW_Idle_0: 250316741560763816
-      Guest_Striped_NW_Idle_1: 246846298823501240
+      Guest_Striped_NW_Rest_0: 250316741560763816
+      Guest_Striped_NW_Rest_1: 246846298823501240
       Guest_Striped_NW_Walk_0: 77484857572517337
       Guest_Striped_NW_Walk_1: 131564367825175882
       Guest_Striped_NW_Walk_2: 1022337501987480893
       Guest_Striped_NW_Walk_3: 802622809252562341
       Guest_Striped_NW_Cheer_0: 195956923257271711
       Guest_Striped_NW_Cheer_1: 536737954916722071
-      Guest_Striped_NE_Idle_0: 110874786817586677
-      Guest_Striped_NE_Idle_1: 496561662847976873
+      Guest_Striped_NE_Rest_0: 110874786817586677
+      Guest_Striped_NE_Rest_1: 496561662847976873
       Guest_Striped_NE_Walk_0: 85739880280421670
       Guest_Striped_NE_Walk_1: 374082260712961418
       Guest_Striped_NE_Walk_2: 435925562276562427

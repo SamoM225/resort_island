@@ -138,7 +138,7 @@ MonoBehaviour:
   - {fileID: 1106937904220824922, guid: 84044792228a5d6f835ac7c4972330e9, type: 3}
   - {fileID: 151975905310696841, guid: 84044792228a5d6f835ac7c4972330e9, type: 3}
   - {fileID: 568820013060593081, guid: 84044792228a5d6f835ac7c4972330e9, type: 3}
-  idleFps: 2
+  restFps: 2
   walkFps: 8
   actionFps: 4
 --- !u!114 &52918809999809115

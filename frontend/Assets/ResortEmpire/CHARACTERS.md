@@ -14,7 +14,7 @@ Priečinok `ResortEmpire` vlož do `Assets/`. Spojí sa s tým, čo tam už má�
 ## Ako je sheet usporiadaný
 Každá postavička = 1 PNG, už rozrezané (Sprite Mode = Multiple), pivot je pri nohách.
 - **Riadky = smer:** SE, SW, NW, NE (SE = pohyb po mriežke v smere +x, SW = +y, NW = −x, NE = −y).
-- **Stĺpce = snímky:** Idle_0–1, Walk_0–3 a jedna akcia_0–1
+- **Stĺpce = snímky:** Rest_0–1, Walk_0–3 a jedna akcia_0–1
   (hostia **Cheer** = spokojný, pracovníci **Work** = obsluhuje, VIP **Wave** = máva).
 
 Pixels Per Unit = 256 (postavičky sú kreslené v 2× rozlíšení, takže sú ostré, ale veľkosťou sedia k budovám).
@@ -23,6 +23,6 @@ Pixels Per Unit = 256 (postavičky sú kreslené v 2× rozlíšení, takže sú 
 1. V Project okne rozbaľ sheet (šípka pri PNG).
 2. Označ napr. `Guest_Tourist_SE_Walk_0` až `_3` a pretiahni ich do Scene.
 3. Unity sa spýta, kam uložiť animáciu – ulož ako `Tourist_Walk_SE.anim`. Vytvorí aj Animator.
-4. Rýchlosť: v okne Animation nastav Samples = 8 (Walk), 2 (Idle), 4 (Cheer/Work/Wave).
+4. Rýchlosť: v okne Animation nastav Samples = 8 (Walk), 2 (Rest), 4 (Cheer/Work/Wave).
 
 Bublina = samostatný SpriteRenderer ako dieťa postavičky, posunutý nad hlavu (približne Y = 0.65).

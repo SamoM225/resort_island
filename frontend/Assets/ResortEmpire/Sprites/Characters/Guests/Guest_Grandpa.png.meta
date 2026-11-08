@@ -4,10 +4,10 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: 920691945731052929
-    second: Guest_Grandpa_SE_Idle_0
+    second: Guest_Grandpa_SE_Rest_0
   - first:
       213: 227126088858092904
-    second: Guest_Grandpa_SE_Idle_1
+    second: Guest_Grandpa_SE_Rest_1
   - first:
       213: 932405148220953868
     second: Guest_Grandpa_SE_Walk_0
@@ -28,10 +28,10 @@ TextureImporter:
     second: Guest_Grandpa_SE_Cheer_1
   - first:
       213: 690148349676115378
-    second: Guest_Grandpa_SW_Idle_0
+    second: Guest_Grandpa_SW_Rest_0
   - first:
       213: 914848320446883259
-    second: Guest_Grandpa_SW_Idle_1
+    second: Guest_Grandpa_SW_Rest_1
   - first:
       213: 379306899679716609
     second: Guest_Grandpa_SW_Walk_0
@@ -52,10 +52,10 @@ TextureImporter:
     second: Guest_Grandpa_SW_Cheer_1
   - first:
       213: 937620302153405854
-    second: Guest_Grandpa_NW_Idle_0
+    second: Guest_Grandpa_NW_Rest_0
   - first:
       213: 898359313071556009
-    second: Guest_Grandpa_NW_Idle_1
+    second: Guest_Grandpa_NW_Rest_1
   - first:
       213: 1053297235233260863
     second: Guest_Grandpa_NW_Walk_0
@@ -76,10 +76,10 @@ TextureImporter:
     second: Guest_Grandpa_NW_Cheer_1
   - first:
       213: 172245117152736685
-    second: Guest_Grandpa_NE_Idle_0
+    second: Guest_Grandpa_NE_Rest_0
   - first:
       213: 682100130371654919
-    second: Guest_Grandpa_NE_Idle_1
+    second: Guest_Grandpa_NE_Rest_1
   - first:
       213: 749843036987127235
     second: Guest_Grandpa_NE_Walk_0
@@ -180,7 +180,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Guest_Grandpa_SE_Idle_0
+      name: Guest_Grandpa_SE_Rest_0
       rect:
         serializedVersion: 2
         x: 0
@@ -202,7 +202,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Guest_Grandpa_SE_Idle_1
+      name: Guest_Grandpa_SE_Rest_1
       rect:
         serializedVersion: 2
         x: 276
@@ -356,7 +356,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Guest_Grandpa_SW_Idle_0
+      name: Guest_Grandpa_SW_Rest_0
       rect:
         serializedVersion: 2
         x: 0
@@ -378,7 +378,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Guest_Grandpa_SW_Idle_1
+      name: Guest_Grandpa_SW_Rest_1
       rect:
         serializedVersion: 2
         x: 276
@@ -532,7 +532,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Guest_Grandpa_NW_Idle_0
+      name: Guest_Grandpa_NW_Rest_0
       rect:
         serializedVersion: 2
         x: 0
@@ -554,7 +554,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Guest_Grandpa_NW_Idle_1
+      name: Guest_Grandpa_NW_Rest_1
       rect:
         serializedVersion: 2
         x: 276
@@ -708,7 +708,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Guest_Grandpa_NE_Idle_0
+      name: Guest_Grandpa_NE_Rest_0
       rect:
         serializedVersion: 2
         x: 0
@@ -730,7 +730,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Guest_Grandpa_NE_Idle_1
+      name: Guest_Grandpa_NE_Rest_1
       rect:
         serializedVersion: 2
         x: 276
@@ -894,32 +894,32 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Guest_Grandpa_SE_Idle_0: 920691945731052929
-      Guest_Grandpa_SE_Idle_1: 227126088858092904
+      Guest_Grandpa_SE_Rest_0: 920691945731052929
+      Guest_Grandpa_SE_Rest_1: 227126088858092904
       Guest_Grandpa_SE_Walk_0: 932405148220953868
       Guest_Grandpa_SE_Walk_1: 63981608607696309
       Guest_Grandpa_SE_Walk_2: 567925760900986142
       Guest_Grandpa_SE_Walk_3: 444600062788466165
       Guest_Grandpa_SE_Cheer_0: 864621052756895217
       Guest_Grandpa_SE_Cheer_1: 364289265660830999
-      Guest_Grandpa_SW_Idle_0: 690148349676115378
-      Guest_Grandpa_SW_Idle_1: 914848320446883259
+      Guest_Grandpa_SW_Rest_0: 690148349676115378
+      Guest_Grandpa_SW_Rest_1: 914848320446883259
       Guest_Grandpa_SW_Walk_0: 379306899679716609
       Guest_Grandpa_SW_Walk_1: 34666816896169463
       Guest_Grandpa_SW_Walk_2: 377830317196637637
       Guest_Grandpa_SW_Walk_3: 118253883210175942
       Guest_Grandpa_SW_Cheer_0: 400292196018296263
       Guest_Grandpa_SW_Cheer_1: 45636440710288786
-      Guest_Grandpa_NW_Idle_0: 937620302153405854
-      Guest_Grandpa_NW_Idle_1: 898359313071556009
+      Guest_Grandpa_NW_Rest_0: 937620302153405854
+      Guest_Grandpa_NW_Rest_1: 898359313071556009
       Guest_Grandpa_NW_Walk_0: 1053297235233260863
       Guest_Grandpa_NW_Walk_1: 240790214866593172
       Guest_Grandpa_NW_Walk_2: 331285015112992026
       Guest_Grandpa_NW_Walk_3: 79840457196234208
       Guest_Grandpa_NW_Cheer_0: 1023449171920921867
       Guest_Grandpa_NW_Cheer_1: 280639956964676926
-      Guest_Grandpa_NE_Idle_0: 172245117152736685
-      Guest_Grandpa_NE_Idle_1: 682100130371654919
+      Guest_Grandpa_NE_Rest_0: 172245117152736685
+      Guest_Grandpa_NE_Rest_1: 682100130371654919
       Guest_Grandpa_NE_Walk_0: 749843036987127235
       Guest_Grandpa_NE_Walk_1: 1023620968375891260
       Guest_Grandpa_NE_Walk_2: 7951004130194823

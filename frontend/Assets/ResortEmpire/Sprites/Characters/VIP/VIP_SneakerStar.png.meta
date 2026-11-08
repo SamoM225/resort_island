@@ -4,10 +4,10 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: 978386117877257578
-    second: VIP_SneakerStar_SE_Idle_0
+    second: VIP_SneakerStar_SE_Rest_0
   - first:
       213: 1025533014957319650
-    second: VIP_SneakerStar_SE_Idle_1
+    second: VIP_SneakerStar_SE_Rest_1
   - first:
       213: 1060335659053278592
     second: VIP_SneakerStar_SE_Walk_0
@@ -28,10 +28,10 @@ TextureImporter:
     second: VIP_SneakerStar_SE_Wave_1
   - first:
       213: 549330807482381729
-    second: VIP_SneakerStar_SW_Idle_0
+    second: VIP_SneakerStar_SW_Rest_0
   - first:
       213: 263305152351008080
-    second: VIP_SneakerStar_SW_Idle_1
+    second: VIP_SneakerStar_SW_Rest_1
   - first:
       213: 548361717342471429
     second: VIP_SneakerStar_SW_Walk_0
@@ -52,10 +52,10 @@ TextureImporter:
     second: VIP_SneakerStar_SW_Wave_1
   - first:
       213: 35349810863011232
-    second: VIP_SneakerStar_NW_Idle_0
+    second: VIP_SneakerStar_NW_Rest_0
   - first:
       213: 1137938642495759782
-    second: VIP_SneakerStar_NW_Idle_1
+    second: VIP_SneakerStar_NW_Rest_1
   - first:
       213: 421392000156493157
     second: VIP_SneakerStar_NW_Walk_0
@@ -76,10 +76,10 @@ TextureImporter:
     second: VIP_SneakerStar_NW_Wave_1
   - first:
       213: 940791549927867732
-    second: VIP_SneakerStar_NE_Idle_0
+    second: VIP_SneakerStar_NE_Rest_0
   - first:
       213: 782593057167746449
-    second: VIP_SneakerStar_NE_Idle_1
+    second: VIP_SneakerStar_NE_Rest_1
   - first:
       213: 995210759252829672
     second: VIP_SneakerStar_NE_Walk_0
@@ -180,7 +180,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: VIP_SneakerStar_SE_Idle_0
+      name: VIP_SneakerStar_SE_Rest_0
       rect:
         serializedVersion: 2
         x: 0
@@ -202,7 +202,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VIP_SneakerStar_SE_Idle_1
+      name: VIP_SneakerStar_SE_Rest_1
       rect:
         serializedVersion: 2
         x: 276
@@ -356,7 +356,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VIP_SneakerStar_SW_Idle_0
+      name: VIP_SneakerStar_SW_Rest_0
       rect:
         serializedVersion: 2
         x: 0
@@ -378,7 +378,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VIP_SneakerStar_SW_Idle_1
+      name: VIP_SneakerStar_SW_Rest_1
       rect:
         serializedVersion: 2
         x: 276
@@ -532,7 +532,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VIP_SneakerStar_NW_Idle_0
+      name: VIP_SneakerStar_NW_Rest_0
       rect:
         serializedVersion: 2
         x: 0
@@ -554,7 +554,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VIP_SneakerStar_NW_Idle_1
+      name: VIP_SneakerStar_NW_Rest_1
       rect:
         serializedVersion: 2
         x: 276
@@ -708,7 +708,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VIP_SneakerStar_NE_Idle_0
+      name: VIP_SneakerStar_NE_Rest_0
       rect:
         serializedVersion: 2
         x: 0
@@ -730,7 +730,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VIP_SneakerStar_NE_Idle_1
+      name: VIP_SneakerStar_NE_Rest_1
       rect:
         serializedVersion: 2
         x: 276
@@ -894,32 +894,32 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      VIP_SneakerStar_SE_Idle_0: 978386117877257578
-      VIP_SneakerStar_SE_Idle_1: 1025533014957319650
+      VIP_SneakerStar_SE_Rest_0: 978386117877257578
+      VIP_SneakerStar_SE_Rest_1: 1025533014957319650
       VIP_SneakerStar_SE_Walk_0: 1060335659053278592
       VIP_SneakerStar_SE_Walk_1: 659724966124000664
       VIP_SneakerStar_SE_Walk_2: 1054166787347936749
       VIP_SneakerStar_SE_Walk_3: 743568452759627060
       VIP_SneakerStar_SE_Wave_0: 592714479311205717
       VIP_SneakerStar_SE_Wave_1: 1085082444500850116
-      VIP_SneakerStar_SW_Idle_0: 549330807482381729
-      VIP_SneakerStar_SW_Idle_1: 263305152351008080
+      VIP_SneakerStar_SW_Rest_0: 549330807482381729
+      VIP_SneakerStar_SW_Rest_1: 263305152351008080
       VIP_SneakerStar_SW_Walk_0: 548361717342471429
       VIP_SneakerStar_SW_Walk_1: 265903703874041293
       VIP_SneakerStar_SW_Walk_2: 224645238679057758
       VIP_SneakerStar_SW_Walk_3: 870654959337088433
       VIP_SneakerStar_SW_Wave_0: 364138188033504666
       VIP_SneakerStar_SW_Wave_1: 1134890258364523808
-      VIP_SneakerStar_NW_Idle_0: 35349810863011232
-      VIP_SneakerStar_NW_Idle_1: 1137938642495759782
+      VIP_SneakerStar_NW_Rest_0: 35349810863011232
+      VIP_SneakerStar_NW_Rest_1: 1137938642495759782
       VIP_SneakerStar_NW_Walk_0: 421392000156493157
       VIP_SneakerStar_NW_Walk_1: 592251436771136913
       VIP_SneakerStar_NW_Walk_2: 442031867828884881
       VIP_SneakerStar_NW_Walk_3: 778867307996767553
       VIP_SneakerStar_NW_Wave_0: 843975472468792661
       VIP_SneakerStar_NW_Wave_1: 965198697104438642
-      VIP_SneakerStar_NE_Idle_0: 940791549927867732
-      VIP_SneakerStar_NE_Idle_1: 782593057167746449
+      VIP_SneakerStar_NE_Rest_0: 940791549927867732
+      VIP_SneakerStar_NE_Rest_1: 782593057167746449
       VIP_SneakerStar_NE_Walk_0: 995210759252829672
       VIP_SneakerStar_NE_Walk_1: 660055535902582068
       VIP_SneakerStar_NE_Walk_2: 240872790709552434

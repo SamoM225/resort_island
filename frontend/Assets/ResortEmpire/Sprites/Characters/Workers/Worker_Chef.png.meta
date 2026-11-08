@@ -4,10 +4,10 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: 912755386536813890
-    second: Worker_Chef_SE_Idle_0
+    second: Worker_Chef_SE_Rest_0
   - first:
       213: 398514205739808093
-    second: Worker_Chef_SE_Idle_1
+    second: Worker_Chef_SE_Rest_1
   - first:
       213: 757019846897628502
     second: Worker_Chef_SE_Walk_0
@@ -28,10 +28,10 @@ TextureImporter:
     second: Worker_Chef_SE_Work_1
   - first:
       213: 1069972574723364269
-    second: Worker_Chef_SW_Idle_0
+    second: Worker_Chef_SW_Rest_0
   - first:
       213: 926443141985736107
-    second: Worker_Chef_SW_Idle_1
+    second: Worker_Chef_SW_Rest_1
   - first:
       213: 1014857453560952160
     second: Worker_Chef_SW_Walk_0
@@ -52,10 +52,10 @@ TextureImporter:
     second: Worker_Chef_SW_Work_1
   - first:
       213: 797104210172142999
-    second: Worker_Chef_NW_Idle_0
+    second: Worker_Chef_NW_Rest_0
   - first:
       213: 264222067221136769
-    second: Worker_Chef_NW_Idle_1
+    second: Worker_Chef_NW_Rest_1
   - first:
       213: 657494733999482354
     second: Worker_Chef_NW_Walk_0
@@ -76,10 +76,10 @@ TextureImporter:
     second: Worker_Chef_NW_Work_1
   - first:
       213: 316284185140974962
-    second: Worker_Chef_NE_Idle_0
+    second: Worker_Chef_NE_Rest_0
   - first:
       213: 942499606088087025
-    second: Worker_Chef_NE_Idle_1
+    second: Worker_Chef_NE_Rest_1
   - first:
       213: 429762378928477694
     second: Worker_Chef_NE_Walk_0
@@ -180,7 +180,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Worker_Chef_SE_Idle_0
+      name: Worker_Chef_SE_Rest_0
       rect:
         serializedVersion: 2
         x: 0
@@ -202,7 +202,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Worker_Chef_SE_Idle_1
+      name: Worker_Chef_SE_Rest_1
       rect:
         serializedVersion: 2
         x: 276
@@ -356,7 +356,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Worker_Chef_SW_Idle_0
+      name: Worker_Chef_SW_Rest_0
       rect:
         serializedVersion: 2
         x: 0
@@ -378,7 +378,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Worker_Chef_SW_Idle_1
+      name: Worker_Chef_SW_Rest_1
       rect:
         serializedVersion: 2
         x: 276
@@ -532,7 +532,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Worker_Chef_NW_Idle_0
+      name: Worker_Chef_NW_Rest_0
       rect:
         serializedVersion: 2
         x: 0
@@ -554,7 +554,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Worker_Chef_NW_Idle_1
+      name: Worker_Chef_NW_Rest_1
       rect:
         serializedVersion: 2
         x: 276
@@ -708,7 +708,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Worker_Chef_NE_Idle_0
+      name: Worker_Chef_NE_Rest_0
       rect:
         serializedVersion: 2
         x: 0
@@ -730,7 +730,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Worker_Chef_NE_Idle_1
+      name: Worker_Chef_NE_Rest_1
       rect:
         serializedVersion: 2
         x: 276
@@ -894,32 +894,32 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Worker_Chef_SE_Idle_0: 912755386536813890
-      Worker_Chef_SE_Idle_1: 398514205739808093
+      Worker_Chef_SE_Rest_0: 912755386536813890
+      Worker_Chef_SE_Rest_1: 398514205739808093
       Worker_Chef_SE_Walk_0: 757019846897628502
       Worker_Chef_SE_Walk_1: 867207574869120442
       Worker_Chef_SE_Walk_2: 1048594947196286226
       Worker_Chef_SE_Walk_3: 389008159926130075
       Worker_Chef_SE_Work_0: 595955775065126216
       Worker_Chef_SE_Work_1: 1115455798916580784
-      Worker_Chef_SW_Idle_0: 1069972574723364269
-      Worker_Chef_SW_Idle_1: 926443141985736107
+      Worker_Chef_SW_Rest_0: 1069972574723364269
+      Worker_Chef_SW_Rest_1: 926443141985736107
       Worker_Chef_SW_Walk_0: 1014857453560952160
       Worker_Chef_SW_Walk_1: 351795801659573674
       Worker_Chef_SW_Walk_2: 194556949728724329
       Worker_Chef_SW_Walk_3: 764236808614610183
       Worker_Chef_SW_Work_0: 932719911745115433
       Worker_Chef_SW_Work_1: 316891859769832917
-      Worker_Chef_NW_Idle_0: 797104210172142999
-      Worker_Chef_NW_Idle_1: 264222067221136769
+      Worker_Chef_NW_Rest_0: 797104210172142999
+      Worker_Chef_NW_Rest_1: 264222067221136769
       Worker_Chef_NW_Walk_0: 657494733999482354
       Worker_Chef_NW_Walk_1: 678065660892173753
       Worker_Chef_NW_Walk_2: 627733875436652008
       Worker_Chef_NW_Walk_3: 834989741170500878
       Worker_Chef_NW_Work_0: 805274532070065594
       Worker_Chef_NW_Work_1: 678722569732646189
-      Worker_Chef_NE_Idle_0: 316284185140974962
-      Worker_Chef_NE_Idle_1: 942499606088087025
+      Worker_Chef_NE_Rest_0: 316284185140974962
+      Worker_Chef_NE_Rest_1: 942499606088087025
       Worker_Chef_NE_Walk_0: 429762378928477694
       Worker_Chef_NE_Walk_1: 394309168368043515
       Worker_Chef_NE_Walk_2: 288342576187995408

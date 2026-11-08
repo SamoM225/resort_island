@@ -4,10 +4,10 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: 441346735345194473
-    second: Worker_Lifeguard_SE_Idle_0
+    second: Worker_Lifeguard_SE_Rest_0
   - first:
       213: 42171702567720416
-    second: Worker_Lifeguard_SE_Idle_1
+    second: Worker_Lifeguard_SE_Rest_1
   - first:
       213: 592195529606563175
     second: Worker_Lifeguard_SE_Walk_0
@@ -28,10 +28,10 @@ TextureImporter:
     second: Worker_Lifeguard_SE_Work_1
   - first:
       213: 411882306342454585
-    second: Worker_Lifeguard_SW_Idle_0
+    second: Worker_Lifeguard_SW_Rest_0
   - first:
       213: 354035796511835614
-    second: Worker_Lifeguard_SW_Idle_1
+    second: Worker_Lifeguard_SW_Rest_1
   - first:
       213: 256746711295366621
     second: Worker_Lifeguard_SW_Walk_0
@@ -52,10 +52,10 @@ TextureImporter:
     second: Worker_Lifeguard_SW_Work_1
   - first:
       213: 78905296005068240
-    second: Worker_Lifeguard_NW_Idle_0
+    second: Worker_Lifeguard_NW_Rest_0
   - first:
       213: 870481043649893802
-    second: Worker_Lifeguard_NW_Idle_1
+    second: Worker_Lifeguard_NW_Rest_1
   - first:
       213: 460836462698763751
     second: Worker_Lifeguard_NW_Walk_0
@@ -76,10 +76,10 @@ TextureImporter:
     second: Worker_Lifeguard_NW_Work_1
   - first:
       213: 1006973343894742323
-    second: Worker_Lifeguard_NE_Idle_0
+    second: Worker_Lifeguard_NE_Rest_0
   - first:
       213: 287963792852399464
-    second: Worker_Lifeguard_NE_Idle_1
+    second: Worker_Lifeguard_NE_Rest_1
   - first:
       213: 518092449324103121
     second: Worker_Lifeguard_NE_Walk_0
@@ -180,7 +180,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Worker_Lifeguard_SE_Idle_0
+      name: Worker_Lifeguard_SE_Rest_0
       rect:
         serializedVersion: 2
         x: 0
@@ -202,7 +202,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Worker_Lifeguard_SE_Idle_1
+      name: Worker_Lifeguard_SE_Rest_1
       rect:
         serializedVersion: 2
         x: 276
@@ -356,7 +356,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Worker_Lifeguard_SW_Idle_0
+      name: Worker_Lifeguard_SW_Rest_0
       rect:
         serializedVersion: 2
         x: 0
@@ -378,7 +378,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Worker_Lifeguard_SW_Idle_1
+      name: Worker_Lifeguard_SW_Rest_1
       rect:
         serializedVersion: 2
         x: 276
@@ -532,7 +532,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Worker_Lifeguard_NW_Idle_0
+      name: Worker_Lifeguard_NW_Rest_0
       rect:
         serializedVersion: 2
         x: 0
@@ -554,7 +554,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Worker_Lifeguard_NW_Idle_1
+      name: Worker_Lifeguard_NW_Rest_1
       rect:
         serializedVersion: 2
         x: 276
@@ -708,7 +708,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Worker_Lifeguard_NE_Idle_0
+      name: Worker_Lifeguard_NE_Rest_0
       rect:
         serializedVersion: 2
         x: 0
@@ -730,7 +730,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Worker_Lifeguard_NE_Idle_1
+      name: Worker_Lifeguard_NE_Rest_1
       rect:
         serializedVersion: 2
         x: 276
@@ -894,32 +894,32 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Worker_Lifeguard_SE_Idle_0: 441346735345194473
-      Worker_Lifeguard_SE_Idle_1: 42171702567720416
+      Worker_Lifeguard_SE_Rest_0: 441346735345194473
+      Worker_Lifeguard_SE_Rest_1: 42171702567720416
       Worker_Lifeguard_SE_Walk_0: 592195529606563175
       Worker_Lifeguard_SE_Walk_1: 180575242720572811
       Worker_Lifeguard_SE_Walk_2: 974649715601249545
       Worker_Lifeguard_SE_Walk_3: 523073913102181852
       Worker_Lifeguard_SE_Work_0: 237134497327531479
       Worker_Lifeguard_SE_Work_1: 881148551247852900
-      Worker_Lifeguard_SW_Idle_0: 411882306342454585
-      Worker_Lifeguard_SW_Idle_1: 354035796511835614
+      Worker_Lifeguard_SW_Rest_0: 411882306342454585
+      Worker_Lifeguard_SW_Rest_1: 354035796511835614
       Worker_Lifeguard_SW_Walk_0: 256746711295366621
       Worker_Lifeguard_SW_Walk_1: 964297433126090006
       Worker_Lifeguard_SW_Walk_2: 658923222350321110
       Worker_Lifeguard_SW_Walk_3: 559230126462477669
       Worker_Lifeguard_SW_Work_0: 819922833473549631
       Worker_Lifeguard_SW_Work_1: 37682479163987452
-      Worker_Lifeguard_NW_Idle_0: 78905296005068240
-      Worker_Lifeguard_NW_Idle_1: 870481043649893802
+      Worker_Lifeguard_NW_Rest_0: 78905296005068240
+      Worker_Lifeguard_NW_Rest_1: 870481043649893802
       Worker_Lifeguard_NW_Walk_0: 460836462698763751
       Worker_Lifeguard_NW_Walk_1: 878691848606434782
       Worker_Lifeguard_NW_Walk_2: 33395817316234649
       Worker_Lifeguard_NW_Walk_3: 731213609976116587
       Worker_Lifeguard_NW_Work_0: 804590548048749924
       Worker_Lifeguard_NW_Work_1: 749998396139091377
-      Worker_Lifeguard_NE_Idle_0: 1006973343894742323
-      Worker_Lifeguard_NE_Idle_1: 287963792852399464
+      Worker_Lifeguard_NE_Rest_0: 1006973343894742323
+      Worker_Lifeguard_NE_Rest_1: 287963792852399464
       Worker_Lifeguard_NE_Walk_0: 518092449324103121
       Worker_Lifeguard_NE_Walk_1: 223879510216426987
       Worker_Lifeguard_NE_Walk_2: 1072678628030817693

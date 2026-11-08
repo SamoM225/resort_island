@@ -73,7 +73,7 @@ namespace ResortIsland.Characters
 
         private void Rest()
         {
-            view.SetState(CharacterState.Idle);
+            view.SetState(CharacterState.Rest);
             restUntil = Time.time + Random.Range(restSeconds.x, restSeconds.y);
         }
     }

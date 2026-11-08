@@ -4,10 +4,10 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: 973222832186303877
-    second: VIP_PopDancer_SE_Idle_0
+    second: VIP_PopDancer_SE_Rest_0
   - first:
       213: 831824116688389529
-    second: VIP_PopDancer_SE_Idle_1
+    second: VIP_PopDancer_SE_Rest_1
   - first:
       213: 890705552610624970
     second: VIP_PopDancer_SE_Walk_0
@@ -28,10 +28,10 @@ TextureImporter:
     second: VIP_PopDancer_SE_Wave_1
   - first:
       213: 939429592046163407
-    second: VIP_PopDancer_SW_Idle_0
+    second: VIP_PopDancer_SW_Rest_0
   - first:
       213: 627618222381204978
-    second: VIP_PopDancer_SW_Idle_1
+    second: VIP_PopDancer_SW_Rest_1
   - first:
       213: 642147807692129543
     second: VIP_PopDancer_SW_Walk_0
@@ -52,10 +52,10 @@ TextureImporter:
     second: VIP_PopDancer_SW_Wave_1
   - first:
       213: 789775020592174489
-    second: VIP_PopDancer_NW_Idle_0
+    second: VIP_PopDancer_NW_Rest_0
   - first:
       213: 1146654707217900852
-    second: VIP_PopDancer_NW_Idle_1
+    second: VIP_PopDancer_NW_Rest_1
   - first:
       213: 1036213788339049766
     second: VIP_PopDancer_NW_Walk_0
@@ -76,10 +76,10 @@ TextureImporter:
     second: VIP_PopDancer_NW_Wave_1
   - first:
       213: 318984006351303992
-    second: VIP_PopDancer_NE_Idle_0
+    second: VIP_PopDancer_NE_Rest_0
   - first:
       213: 1041774918448604516
-    second: VIP_PopDancer_NE_Idle_1
+    second: VIP_PopDancer_NE_Rest_1
   - first:
       213: 590568630551180737
     second: VIP_PopDancer_NE_Walk_0
@@ -180,7 +180,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: VIP_PopDancer_SE_Idle_0
+      name: VIP_PopDancer_SE_Rest_0
       rect:
         serializedVersion: 2
         x: 0
@@ -202,7 +202,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VIP_PopDancer_SE_Idle_1
+      name: VIP_PopDancer_SE_Rest_1
       rect:
         serializedVersion: 2
         x: 276
@@ -356,7 +356,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VIP_PopDancer_SW_Idle_0
+      name: VIP_PopDancer_SW_Rest_0
       rect:
         serializedVersion: 2
         x: 0
@@ -378,7 +378,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VIP_PopDancer_SW_Idle_1
+      name: VIP_PopDancer_SW_Rest_1
       rect:
         serializedVersion: 2
         x: 276
@@ -532,7 +532,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VIP_PopDancer_NW_Idle_0
+      name: VIP_PopDancer_NW_Rest_0
       rect:
         serializedVersion: 2
         x: 0
@@ -554,7 +554,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VIP_PopDancer_NW_Idle_1
+      name: VIP_PopDancer_NW_Rest_1
       rect:
         serializedVersion: 2
         x: 276
@@ -708,7 +708,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VIP_PopDancer_NE_Idle_0
+      name: VIP_PopDancer_NE_Rest_0
       rect:
         serializedVersion: 2
         x: 0
@@ -730,7 +730,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VIP_PopDancer_NE_Idle_1
+      name: VIP_PopDancer_NE_Rest_1
       rect:
         serializedVersion: 2
         x: 276
@@ -894,32 +894,32 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      VIP_PopDancer_SE_Idle_0: 973222832186303877
-      VIP_PopDancer_SE_Idle_1: 831824116688389529
+      VIP_PopDancer_SE_Rest_0: 973222832186303877
+      VIP_PopDancer_SE_Rest_1: 831824116688389529
       VIP_PopDancer_SE_Walk_0: 890705552610624970
       VIP_PopDancer_SE_Walk_1: 1080310599063639324
       VIP_PopDancer_SE_Walk_2: 770172988887442722
       VIP_PopDancer_SE_Walk_3: 828959701031044467
       VIP_PopDancer_SE_Wave_0: 766367521818351084
       VIP_PopDancer_SE_Wave_1: 1060101060866643266
-      VIP_PopDancer_SW_Idle_0: 939429592046163407
-      VIP_PopDancer_SW_Idle_1: 627618222381204978
+      VIP_PopDancer_SW_Rest_0: 939429592046163407
+      VIP_PopDancer_SW_Rest_1: 627618222381204978
       VIP_PopDancer_SW_Walk_0: 642147807692129543
       VIP_PopDancer_SW_Walk_1: 531221139067229573
       VIP_PopDancer_SW_Walk_2: 252808281166599456
       VIP_PopDancer_SW_Walk_3: 1106598935912355091
       VIP_PopDancer_SW_Wave_0: 694277990669608394
       VIP_PopDancer_SW_Wave_1: 1091637101462140270
-      VIP_PopDancer_NW_Idle_0: 789775020592174489
-      VIP_PopDancer_NW_Idle_1: 1146654707217900852
+      VIP_PopDancer_NW_Rest_0: 789775020592174489
+      VIP_PopDancer_NW_Rest_1: 1146654707217900852
       VIP_PopDancer_NW_Walk_0: 1036213788339049766
       VIP_PopDancer_NW_Walk_1: 276480038375060784
       VIP_PopDancer_NW_Walk_2: 475429753283081656
       VIP_PopDancer_NW_Walk_3: 564721842706765194
       VIP_PopDancer_NW_Wave_0: 152902705869473071
       VIP_PopDancer_NW_Wave_1: 856796620355208702
-      VIP_PopDancer_NE_Idle_0: 318984006351303992
-      VIP_PopDancer_NE_Idle_1: 1041774918448604516
+      VIP_PopDancer_NE_Rest_0: 318984006351303992
+      VIP_PopDancer_NE_Rest_1: 1041774918448604516
       VIP_PopDancer_NE_Walk_0: 590568630551180737
       VIP_PopDancer_NE_Walk_1: 1073341751562675687
       VIP_PopDancer_NE_Walk_2: 454216670266824

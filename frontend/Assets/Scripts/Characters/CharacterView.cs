@@ -4,22 +4,22 @@ namespace ResortIsland.Characters
 {
     public enum CharacterState
     {
-        Idle,
+        Rest,
         Walk,
         Action   // Cheer (guests), Work (workers), Wave (VIP)
     }
 
-    /// Plays the ResortEmpire character sheets: 4 directions x (Idle 2, Walk 4, Action 2) frames.
+    /// Plays the ResortEmpire character sheets: 4 directions x (Rest 2, Walk 4, Action 2) frames.
     /// Directions are screen compass directions (the sheet rows): SE, SW, NW, NE.
     [RequireComponent(typeof(SpriteRenderer))]
     public class CharacterView : MonoBehaviour
     {
-        private const int FramesPerDirection = 8;   // Idle_0-1, Walk_0-3, Action_0-1
-        private const int IdleOffset = 0, WalkOffset = 2, ActionOffset = 6;
+        private const int FramesPerDirection = 8;   // Rest 0-1, Walk 0-3, Action 0-1
+        private const int RestOffset = 0, WalkOffset = 2, ActionOffset = 6;
 
-        [Tooltip("32 sprites, rows in the order SE, SW, NW, NE; per row Idle_0, Idle_1, Walk_0-3, Action_0, Action_1.")]
+        [Tooltip("32 sprites, rows in the order SE, SW, NW, NE; per row 2 rest frames, Walk_0-3, Action_0, Action_1.")]
         [SerializeField] private Sprite[] frames;
-        [SerializeField] private float idleFps = 2f;
+        [SerializeField] private float restFps = 2f;
         [SerializeField] private float walkFps = 8f;
         [SerializeField] private float actionFps = 4f;
 
@@ -71,7 +71,7 @@ namespace ResortIsland.Characters
             {
                 case CharacterState.Walk: offset = WalkOffset; count = 4; fps = walkFps; break;
                 case CharacterState.Action: offset = ActionOffset; count = 2; fps = actionFps; break;
-                default: offset = IdleOffset; count = 2; fps = idleFps; break;
+                default: offset = RestOffset; count = 2; fps = restFps; break;
             }
 
             int frame = (int)(clock * fps) % count;

@@ -4,10 +4,10 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: 3953971097658843
-    second: Worker_Bartender_SE_Idle_0
+    second: Worker_Bartender_SE_Rest_0
   - first:
       213: 308490961350149617
-    second: Worker_Bartender_SE_Idle_1
+    second: Worker_Bartender_SE_Rest_1
   - first:
       213: 90134613926839768
     second: Worker_Bartender_SE_Walk_0
@@ -28,10 +28,10 @@ TextureImporter:
     second: Worker_Bartender_SE_Work_1
   - first:
       213: 252358844624876944
-    second: Worker_Bartender_SW_Idle_0
+    second: Worker_Bartender_SW_Rest_0
   - first:
       213: 1019947874347963754
-    second: Worker_Bartender_SW_Idle_1
+    second: Worker_Bartender_SW_Rest_1
   - first:
       213: 440133586462778819
     second: Worker_Bartender_SW_Walk_0
@@ -52,10 +52,10 @@ TextureImporter:
     second: Worker_Bartender_SW_Work_1
   - first:
       213: 176849027841713534
-    second: Worker_Bartender_NW_Idle_0
+    second: Worker_Bartender_NW_Rest_0
   - first:
       213: 588617917842552288
-    second: Worker_Bartender_NW_Idle_1
+    second: Worker_Bartender_NW_Rest_1
   - first:
       213: 181047195213346053
     second: Worker_Bartender_NW_Walk_0
@@ -76,10 +76,10 @@ TextureImporter:
     second: Worker_Bartender_NW_Work_1
   - first:
       213: 1147658200624063906
-    second: Worker_Bartender_NE_Idle_0
+    second: Worker_Bartender_NE_Rest_0
   - first:
       213: 982740899490276814
-    second: Worker_Bartender_NE_Idle_1
+    second: Worker_Bartender_NE_Rest_1
   - first:
       213: 297172806810031601
     second: Worker_Bartender_NE_Walk_0
@@ -180,7 +180,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Worker_Bartender_SE_Idle_0
+      name: Worker_Bartender_SE_Rest_0
       rect:
         serializedVersion: 2
         x: 0
@@ -202,7 +202,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Worker_Bartender_SE_Idle_1
+      name: Worker_Bartender_SE_Rest_1
       rect:
         serializedVersion: 2
         x: 276
@@ -356,7 +356,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Worker_Bartender_SW_Idle_0
+      name: Worker_Bartender_SW_Rest_0
       rect:
         serializedVersion: 2
         x: 0
@@ -378,7 +378,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Worker_Bartender_SW_Idle_1
+      name: Worker_Bartender_SW_Rest_1
       rect:
         serializedVersion: 2
         x: 276
@@ -532,7 +532,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Worker_Bartender_NW_Idle_0
+      name: Worker_Bartender_NW_Rest_0
       rect:
         serializedVersion: 2
         x: 0
@@ -554,7 +554,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Worker_Bartender_NW_Idle_1
+      name: Worker_Bartender_NW_Rest_1
       rect:
         serializedVersion: 2
         x: 276
@@ -708,7 +708,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Worker_Bartender_NE_Idle_0
+      name: Worker_Bartender_NE_Rest_0
       rect:
         serializedVersion: 2
         x: 0
@@ -730,7 +730,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Worker_Bartender_NE_Idle_1
+      name: Worker_Bartender_NE_Rest_1
       rect:
         serializedVersion: 2
         x: 276
@@ -894,32 +894,32 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Worker_Bartender_SE_Idle_0: 3953971097658843
-      Worker_Bartender_SE_Idle_1: 308490961350149617
+      Worker_Bartender_SE_Rest_0: 3953971097658843
+      Worker_Bartender_SE_Rest_1: 308490961350149617
       Worker_Bartender_SE_Walk_0: 90134613926839768
       Worker_Bartender_SE_Walk_1: 591181309743056322
       Worker_Bartender_SE_Walk_2: 1064124979087615307
       Worker_Bartender_SE_Walk_3: 514221721224455488
       Worker_Bartender_SE_Work_0: 623910875134825781
       Worker_Bartender_SE_Work_1: 921462549242934712
-      Worker_Bartender_SW_Idle_0: 252358844624876944
-      Worker_Bartender_SW_Idle_1: 1019947874347963754
+      Worker_Bartender_SW_Rest_0: 252358844624876944
+      Worker_Bartender_SW_Rest_1: 1019947874347963754
       Worker_Bartender_SW_Walk_0: 440133586462778819
       Worker_Bartender_SW_Walk_1: 1106274465244026308
       Worker_Bartender_SW_Walk_2: 586427247291254234
       Worker_Bartender_SW_Walk_3: 895237805453812997
       Worker_Bartender_SW_Work_0: 1121034879969215853
       Worker_Bartender_SW_Work_1: 851629965785560496
-      Worker_Bartender_NW_Idle_0: 176849027841713534
-      Worker_Bartender_NW_Idle_1: 588617917842552288
+      Worker_Bartender_NW_Rest_0: 176849027841713534
+      Worker_Bartender_NW_Rest_1: 588617917842552288
       Worker_Bartender_NW_Walk_0: 181047195213346053
       Worker_Bartender_NW_Walk_1: 397476678271419744
       Worker_Bartender_NW_Walk_2: 438824362892654078
       Worker_Bartender_NW_Walk_3: 134310969493157321
       Worker_Bartender_NW_Work_0: 1124498030516978946
       Worker_Bartender_NW_Work_1: 118447483443139960
-      Worker_Bartender_NE_Idle_0: 1147658200624063906
-      Worker_Bartender_NE_Idle_1: 982740899490276814
+      Worker_Bartender_NE_Rest_0: 1147658200624063906
+      Worker_Bartender_NE_Rest_1: 982740899490276814
       Worker_Bartender_NE_Walk_0: 297172806810031601
       Worker_Bartender_NE_Walk_1: 577752538504975704
       Worker_Bartender_NE_Walk_2: 242124005064635818

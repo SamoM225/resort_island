@@ -4,10 +4,10 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: 544209516842808777
-    second: Worker_Receptionist_SE_Idle_0
+    second: Worker_Receptionist_SE_Rest_0
   - first:
       213: 1029560706696730025
-    second: Worker_Receptionist_SE_Idle_1
+    second: Worker_Receptionist_SE_Rest_1
   - first:
       213: 1032746435671987692
     second: Worker_Receptionist_SE_Walk_0
@@ -28,10 +28,10 @@ TextureImporter:
     second: Worker_Receptionist_SE_Work_1
   - first:
       213: 443984772217415159
-    second: Worker_Receptionist_SW_Idle_0
+    second: Worker_Receptionist_SW_Rest_0
   - first:
       213: 1152815411631371548
-    second: Worker_Receptionist_SW_Idle_1
+    second: Worker_Receptionist_SW_Rest_1
   - first:
       213: 297779692752963013
     second: Worker_Receptionist_SW_Walk_0
@@ -52,10 +52,10 @@ TextureImporter:
     second: Worker_Receptionist_SW_Work_1
   - first:
       213: 506066125591024940
-    second: Worker_Receptionist_NW_Idle_0
+    second: Worker_Receptionist_NW_Rest_0
   - first:
       213: 756661981072242005
-    second: Worker_Receptionist_NW_Idle_1
+    second: Worker_Receptionist_NW_Rest_1
   - first:
       213: 592029906077578541
     second: Worker_Receptionist_NW_Walk_0
@@ -76,10 +76,10 @@ TextureImporter:
     second: Worker_Receptionist_NW_Work_1
   - first:
       213: 422482856452257043
-    second: Worker_Receptionist_NE_Idle_0
+    second: Worker_Receptionist_NE_Rest_0
   - first:
       213: 95490310228882920
-    second: Worker_Receptionist_NE_Idle_1
+    second: Worker_Receptionist_NE_Rest_1
   - first:
       213: 180247321747109206
     second: Worker_Receptionist_NE_Walk_0
@@ -180,7 +180,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Worker_Receptionist_SE_Idle_0
+      name: Worker_Receptionist_SE_Rest_0
       rect:
         serializedVersion: 2
         x: 0
@@ -202,7 +202,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Worker_Receptionist_SE_Idle_1
+      name: Worker_Receptionist_SE_Rest_1
       rect:
         serializedVersion: 2
         x: 276
@@ -356,7 +356,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Worker_Receptionist_SW_Idle_0
+      name: Worker_Receptionist_SW_Rest_0
       rect:
         serializedVersion: 2
         x: 0
@@ -378,7 +378,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Worker_Receptionist_SW_Idle_1
+      name: Worker_Receptionist_SW_Rest_1
       rect:
         serializedVersion: 2
         x: 276
@@ -532,7 +532,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Worker_Receptionist_NW_Idle_0
+      name: Worker_Receptionist_NW_Rest_0
       rect:
         serializedVersion: 2
         x: 0
@@ -554,7 +554,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Worker_Receptionist_NW_Idle_1
+      name: Worker_Receptionist_NW_Rest_1
       rect:
         serializedVersion: 2
         x: 276
@@ -708,7 +708,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Worker_Receptionist_NE_Idle_0
+      name: Worker_Receptionist_NE_Rest_0
       rect:
         serializedVersion: 2
         x: 0
@@ -730,7 +730,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Worker_Receptionist_NE_Idle_1
+      name: Worker_Receptionist_NE_Rest_1
       rect:
         serializedVersion: 2
         x: 276
@@ -894,32 +894,32 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Worker_Receptionist_SE_Idle_0: 544209516842808777
-      Worker_Receptionist_SE_Idle_1: 1029560706696730025
+      Worker_Receptionist_SE_Rest_0: 544209516842808777
+      Worker_Receptionist_SE_Rest_1: 1029560706696730025
       Worker_Receptionist_SE_Walk_0: 1032746435671987692
       Worker_Receptionist_SE_Walk_1: 305240378928653647
       Worker_Receptionist_SE_Walk_2: 993933807221839282
       Worker_Receptionist_SE_Walk_3: 280557866183714095
       Worker_Receptionist_SE_Work_0: 177261615977620872
       Worker_Receptionist_SE_Work_1: 531640567266473429
-      Worker_Receptionist_SW_Idle_0: 443984772217415159
-      Worker_Receptionist_SW_Idle_1: 1152815411631371548
+      Worker_Receptionist_SW_Rest_0: 443984772217415159
+      Worker_Receptionist_SW_Rest_1: 1152815411631371548
       Worker_Receptionist_SW_Walk_0: 297779692752963013
       Worker_Receptionist_SW_Walk_1: 313311957668287758
       Worker_Receptionist_SW_Walk_2: 414994981951251897
       Worker_Receptionist_SW_Walk_3: 55093378495350198
       Worker_Receptionist_SW_Work_0: 125461613642466758
       Worker_Receptionist_SW_Work_1: 571604728642245978
-      Worker_Receptionist_NW_Idle_0: 506066125591024940
-      Worker_Receptionist_NW_Idle_1: 756661981072242005
+      Worker_Receptionist_NW_Rest_0: 506066125591024940
+      Worker_Receptionist_NW_Rest_1: 756661981072242005
       Worker_Receptionist_NW_Walk_0: 592029906077578541
       Worker_Receptionist_NW_Walk_1: 755271382910735623
       Worker_Receptionist_NW_Walk_2: 1043045156507686173
       Worker_Receptionist_NW_Walk_3: 1065728550966412675
       Worker_Receptionist_NW_Work_0: 381355583163798820
       Worker_Receptionist_NW_Work_1: 276726142851437882
-      Worker_Receptionist_NE_Idle_0: 422482856452257043
-      Worker_Receptionist_NE_Idle_1: 95490310228882920
+      Worker_Receptionist_NE_Rest_0: 422482856452257043
+      Worker_Receptionist_NE_Rest_1: 95490310228882920
       Worker_Receptionist_NE_Walk_0: 180247321747109206
       Worker_Receptionist_NE_Walk_1: 821275963954312450
       Worker_Receptionist_NE_Walk_2: 415820128452453634
