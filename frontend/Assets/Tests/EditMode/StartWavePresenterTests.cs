@@ -48,6 +48,21 @@ namespace ResortIsland.Tests
         }
 
         [Test]
+        public void Button_IsActiveAgainAfterUpgrade()
+        {
+            view.Click();
+            machine.TryTransitionTo(GameState.WaveActive);
+            machine.TryTransitionTo(GameState.WaveResolving);
+            machine.TryTransitionTo(GameState.WaveComplete);
+            machine.TryTransitionTo(GameState.Upgrade);
+            Assert.IsFalse(view.Interactable);
+
+            machine.TryTransitionTo(GameState.AwaitingWave);
+
+            Assert.IsTrue(view.Interactable);
+        }
+
+        [Test]
         public void Dispose_StopsReactingToClicks()
         {
             presenter.Dispose();

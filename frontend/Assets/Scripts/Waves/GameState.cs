@@ -3,6 +3,10 @@ namespace ResortIsland.Waves
     public enum GameState
     {
         AwaitingWave,
-        WaveIncoming
+        WaveIncoming,
+        WaveActive,
+        WaveResolving,
+        WaveComplete,
+        Upgrade
     }
 }
