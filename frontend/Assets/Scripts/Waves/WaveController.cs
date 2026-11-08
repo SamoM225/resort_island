@@ -1,4 +1,5 @@
 using UnityEngine;
+using ResortIsland.Analytics;
 using ResortIsland.Backend;
 using ResortIsland.Config;
 using ResortIsland.UI;
@@ -13,6 +14,7 @@ namespace ResortIsland.Waves
         private readonly GameStateMachine stateMachine = new GameStateMachine();
         private StartWavePresenter startWavePresenter;
         private WaveForecastPresenter waveForecastPresenter;
+        private WaveCompletionTracker waveCompletionTracker;
 
         public IGameState State => stateMachine;
         public IWavePlanner Planner { get; private set; }
@@ -21,12 +23,14 @@ namespace ResortIsland.Waves
         {
             BindStartWave();
             BindForecast();
+            BindAnalytics();
         }
 
         private void OnDestroy()
         {
             startWavePresenter?.Dispose();
             waveForecastPresenter?.Dispose();
+            waveCompletionTracker?.Dispose();
         }
 
         private void BindStartWave()
@@ -58,6 +62,18 @@ namespace ResortIsland.Waves
             }
 
             waveForecastPresenter = new WaveForecastPresenter(stateMachine, Planner, waveForecast);
+        }
+
+        private void BindAnalytics()
+        {
+            IAnalytics analytics = AnalyticsService.Current;
+            if (analytics == null)
+            {
+                Debug.LogWarning("[WaveController] Analytics service is not running, waves will not be logged.");
+                return;
+            }
+
+            waveCompletionTracker = new WaveCompletionTracker(stateMachine, analytics);
         }
     }
 }
