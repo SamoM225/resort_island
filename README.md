@@ -69,8 +69,8 @@ Testy: `php artisan test --compact`, formátovanie: `vendor/bin/pint`.
 ### Databáza
 
 - Schéma sa mení **len migráciami** (`php artisan make:migration ...`). Nasadenú migráciu už neupravujeme, pridáme novú.
-- `php artisan migrate --seed` je bezpečné spúšťať opakovane — deploy ho spúšťa vždy. Testovací používateľ `test@example.com` sa seeduje len lokálne.
-- Tabuľky: `users` (email + heslo), `game_configs` (verzované herné configy).
+- `php artisan migrate --seed` je bezpečné spúšťať opakovane — deploy ho spúšťa vždy. Testovací používateľ `test@example.com` a admin `admin@example.com` (heslo `password`) sa seedujú len lokálne.
+- Tabuľky: `users` (hráči), `admins` (účty do admin panelu), `game_configs` (verzované herné configy).
 
 ### Herné configy
 
@@ -84,6 +84,17 @@ Zmena configu = upraviť JSON **a zvýšiť `version`**. Pri deployi sa nová ve
 ```
 
 Cachovanie: odpoveď sa drží v Laravel cache (zmaže sa pri každom zápise configu) a má `Cache-Control: public, max-age=60` + `ETag`. Klient pošle `If-None-Match` s posledným ETagom a ak sa nič nezmenilo, dostane `304 Not Modified` bez tela.
+
+## Admin panel (Web UI)
+
+Filament panel na `/admin` (lokálne `http://localhost:8000/admin`, prihlásenie `admin@example.com` / `password`).
+Admini sú oddelení od hráčov (tabuľka `admins`, guard `admin`) — hráčsky účet sa do panelu neprihlási.
+
+Admina na dev/prod serveri vytvorí:
+
+```bash
+docker compose exec app php artisan make:filament-user
+```
 
 ## CI/CD — nastavenie (raz, robí admin repa)
 

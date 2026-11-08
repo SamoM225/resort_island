@@ -2,6 +2,11 @@
 # All configuration comes from environment variables at runtime — the image contains no .env and no secrets.
 FROM serversideup/php:8.4-fpm-nginx
 
+# intl is required by the Filament admin panel.
+USER root
+RUN install-php-extensions intl
+USER www-data
+
 # On start the container caches config/routes/views. Migrations are NOT run here:
 # deploy/deploy.sh runs them explicitly, so a failing migration fails the pipeline.
 ENV AUTORUN_ENABLED=true \
