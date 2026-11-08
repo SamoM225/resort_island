@@ -33,6 +33,7 @@ namespace ResortIsland.Tests
             WavePlan plan = PlannerWith(StartingNeeds.From(configs.Buildings).ToArray()).Plan(1);
 
             Assert.AreEqual(1, plan.Wave);
+            Assert.AreEqual(12, plan.Guests);
             Assert.AreEqual("rooms 8, drinks 8, food 6", Describe(plan));
         }
 

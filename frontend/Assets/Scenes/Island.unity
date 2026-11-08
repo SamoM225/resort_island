@@ -1879,7 +1879,7 @@ MonoBehaviour:
   - {fileID: 16087562497658974, guid: b3e16432a1f05fe45253b2f2cae61ded, type: 3}
   guestCount: 6
   vipCount: 1
-  spawnOnStart: 1
+  spawnOnStart: 0
 --- !u!114 &553181436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13240,6 +13240,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: ResortIsland::ResortIsland.Waves.WaveController
   startWaveButton: {fileID: 560321616}
   waveForecast: {fileID: 528321466}
+  ferryArrival: {fileID: 897653336}
+  guestSpawner: {fileID: 897653335}
 --- !u!4 &2006021455
 Transform:
   m_ObjectHideFlags: 0
@@ -13752,6 +13754,101 @@ Transform:
   - {fileID: 1160656679}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &897653334
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 897653338}
+  - component: {fileID: 897653337}
+  - component: {fileID: 897653336}
+  - component: {fileID: 897653335}
+  m_Layer: 0
+  m_Name: Guest Arrival
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &897653335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 897653334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0f84556e1241254e8a80fd731ebbaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: ResortIsland::ResortIsland.Characters.GuestSpawner
+  resort: {fileID: 553181434}
+  island: {fileID: 553181437}
+  pier: {fileID: 897653337}
+  guestPrefabs:
+  - {fileID: 27673137565229853, guid: 06967ed632740743262240a7ff8d2de1, type: 3}
+  - {fileID: 13284045464615692, guid: 368bef3b54d7d9de580fb393466646ef, type: 3}
+  - {fileID: 54141917371313809, guid: 13a85f25ea6e1afb248d917e41b880e8, type: 3}
+  - {fileID: 15030702767787598, guid: 6467c7facd050609722a983d13e1a11b, type: 3}
+  - {fileID: 58393276065491732, guid: 8ea502f8e88147140f5c4484fa9e8945, type: 3}
+  - {fileID: 44705443634291984, guid: 456b67875a161028797c86092f52b874, type: 3}
+--- !u!114 &897653336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 897653334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffc508f8c17e0984fa94c4a33fb07be6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: ResortIsland::ResortIsland.Resort.FerryArrival
+  pier: {fileID: 897653337}
+  resort: {fileID: 553181434}
+  sprites:
+  - {fileID: 366833796374775104, guid: f52264640a9753f88d63c30f68930d64, type: 3}
+  - {fileID: 819458524392568223, guid: f52264640a9753f88d63c30f68930d64, type: 3}
+  - {fileID: 955698631949047213, guid: f52264640a9753f88d63c30f68930d64, type: 3}
+  - {fileID: 506056574728611249, guid: f52264640a9753f88d63c30f68930d64, type: 3}
+  sailSeconds: 2.5
+  dockedSeconds: 1
+  sailDistanceCells: 10
+--- !u!114 &897653337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 897653334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa9cebbb938914841945672dff0bd81c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: ResortIsland::ResortIsland.Resort.Pier
+  resort: {fileID: 553181434}
+  island: {fileID: 553181437}
+  grid: {fileID: 1397287497}
+  risingSprite: {fileID: 350107938135713190, guid: ce3a75a470555766bb477d46c86602f6, type: 3}
+  fallingSprite: {fileID: 41980698340472220, guid: ce3a75a470555766bb477d46c86602f6, type: 3}
+--- !u!4 &897653338
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 897653334}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -13767,3 +13864,4 @@ SceneRoots:
   - {fileID: 553181435}
   - {fileID: 1970383990}
   - {fileID: 1439530510}
+  - {fileID: 897653338}

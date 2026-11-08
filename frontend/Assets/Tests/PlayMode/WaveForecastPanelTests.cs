@@ -34,7 +34,7 @@ namespace ResortIsland.Tests
         {
             go.SetActive(false);
 
-            panel.Show(new WavePlan(1, new[] { new NeedDemand("rooms", 8) }));
+            panel.Show(new WavePlan(1, 12, new[] { new NeedDemand("rooms", 8) }));
 
             Assert.IsTrue(go.activeSelf);
             Assert.AreEqual("Next wave: Rooms 8", label.text);

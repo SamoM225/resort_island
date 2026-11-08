@@ -26,7 +26,7 @@ namespace ResortIsland.Waves
                 .Where(demand => activeNeeds.Contains(demand.Key))
                 .Select(demand => new NeedDemand(demand.Key, demand.Value))
                 .ToList();
-            return new WavePlan(wave, needs);
+            return new WavePlan(wave, config.Guests, needs);
         }
     }
 }

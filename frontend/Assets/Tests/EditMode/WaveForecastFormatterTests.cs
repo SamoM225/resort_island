@@ -9,7 +9,7 @@ namespace ResortIsland.Tests
         [Test]
         public void Format_ListsEveryNeedWithItsUnits()
         {
-            WavePlan plan = new WavePlan(1, new[] { new NeedDemand("rooms", 8), new NeedDemand("drinks", 8), new NeedDemand("food", 6) });
+            WavePlan plan = new WavePlan(1, 12, new[] { new NeedDemand("rooms", 8), new NeedDemand("drinks", 8), new NeedDemand("food", 6) });
 
             Assert.AreEqual("Next wave: Rooms 8 · Drinks 8 · Food 6", WaveForecastFormatter.Format(plan));
         }
