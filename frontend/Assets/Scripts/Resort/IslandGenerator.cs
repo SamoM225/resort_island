@@ -435,9 +435,9 @@ namespace ResortIsland.Resort
 
         private void DestroyRendering()
         {
-            DestroyObject(renderObject);
-            DestroyObject(generatedMesh);
-            DestroyObject(generatedMaterial);
+            DestroyUnityObject(renderObject);
+            DestroyUnityObject(generatedMesh);
+            DestroyUnityObject(generatedMaterial);
             renderObject = null;
             meshFilter = null;
             meshRenderer = null;
@@ -445,7 +445,7 @@ namespace ResortIsland.Resort
             generatedMaterial = null;
         }
 
-        private static void DestroyObject(UnityEngine.Object obj)
+        private static void DestroyUnityObject(UnityEngine.Object obj)
         {
             if (obj == null) return;
             if (Application.isPlaying) Destroy(obj);
