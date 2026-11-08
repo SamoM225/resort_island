@@ -12,11 +12,13 @@ namespace ResortIsland.Analytics
 
         private readonly IGameState state;
         private readonly IAnalytics analytics;
+        private readonly IWaveMetric[] metrics;
 
-        public WaveCompletionTracker(IGameState state, IAnalytics analytics)
+        public WaveCompletionTracker(IGameState state, IAnalytics analytics, params IWaveMetric[] metrics)
         {
             this.state = state ?? throw new ArgumentNullException(nameof(state));
             this.analytics = analytics ?? throw new ArgumentNullException(nameof(analytics));
+            this.metrics = metrics ?? Array.Empty<IWaveMetric>();
 
             state.Changed += OnStateChanged;
         }
@@ -29,11 +31,19 @@ namespace ResortIsland.Analytics
         private void OnStateChanged(GameState current)
         {
             if (current == GameState.WaveIncoming)
-                Track(StartEvent);
+                analytics.Track(StartEvent, WavePayload());
             else if (current == GameState.WaveComplete)
-                Track(CompleteEvent);
+                analytics.Track(CompleteEvent, CompletePayload());
         }
 
-        private void Track(string name) => analytics.Track(name, new Dictionary<string, object> { [WaveKey] = state.NextWave });
+        private Dictionary<string, object> WavePayload() => new Dictionary<string, object> { [WaveKey] = state.NextWave };
+
+        private Dictionary<string, object> CompletePayload()
+        {
+            Dictionary<string, object> payload = WavePayload();
+            foreach (IWaveMetric metric in metrics)
+                metric.AddTo(payload);
+            return payload;
+        }
     }
 }
