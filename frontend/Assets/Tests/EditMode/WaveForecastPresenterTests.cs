@@ -59,7 +59,7 @@ namespace ResortIsland.Tests
 
         private class FakePlanner : IWavePlanner
         {
-            public WavePlan Result = new WavePlan(1, new[] { new NeedDemand("rooms", 8) });
+            public WavePlan Result = new WavePlan(1, 12, new[] { new NeedDemand("rooms", 8) });
             public int RequestedWave;
 
             public WavePlan Plan(int wave)
