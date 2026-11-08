@@ -2,7 +2,8 @@
     "name": "ResortIsland",
     "rootNamespace": "ResortIsland",
     "references": [
-        "UnityEngine.UI"
+        "UnityEngine.UI",
+        "Unity.TextMeshPro"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
