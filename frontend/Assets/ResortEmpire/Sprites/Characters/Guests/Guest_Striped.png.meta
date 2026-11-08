@@ -1,0 +1,933 @@
+fileFormatVersion: 2
+guid: 88a6a203d42f53e9b3da61bf8e20a1c8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 110671708557464965
+    second: Guest_Striped_SE_Idle_0
+  - first:
+      213: 518072148799448518
+    second: Guest_Striped_SE_Idle_1
+  - first:
+      213: 1079748937890207052
+    second: Guest_Striped_SE_Walk_0
+  - first:
+      213: 665584355623613812
+    second: Guest_Striped_SE_Walk_1
+  - first:
+      213: 819053851543385587
+    second: Guest_Striped_SE_Walk_2
+  - first:
+      213: 1083380230463563219
+    second: Guest_Striped_SE_Walk_3
+  - first:
+      213: 271541122050467131
+    second: Guest_Striped_SE_Cheer_0
+  - first:
+      213: 235984780636046784
+    second: Guest_Striped_SE_Cheer_1
+  - first:
+      213: 506772374741476741
+    second: Guest_Striped_SW_Idle_0
+  - first:
+      213: 626473401417700638
+    second: Guest_Striped_SW_Idle_1
+  - first:
+      213: 76194495730881907
+    second: Guest_Striped_SW_Walk_0
+  - first:
+      213: 294549234924569891
+    second: Guest_Striped_SW_Walk_1
+  - first:
+      213: 66661939971249459
+    second: Guest_Striped_SW_Walk_2
+  - first:
+      213: 891075745972471148
+    second: Guest_Striped_SW_Walk_3
+  - first:
+      213: 229989905794192767
+    second: Guest_Striped_SW_Cheer_0
+  - first:
+      213: 593093384514741685
+    second: Guest_Striped_SW_Cheer_1
+  - first:
+      213: 250316741560763816
+    second: Guest_Striped_NW_Idle_0
+  - first:
+      213: 246846298823501240
+    second: Guest_Striped_NW_Idle_1
+  - first:
+      213: 77484857572517337
+    second: Guest_Striped_NW_Walk_0
+  - first:
+      213: 131564367825175882
+    second: Guest_Striped_NW_Walk_1
+  - first:
+      213: 1022337501987480893
+    second: Guest_Striped_NW_Walk_2
+  - first:
+      213: 802622809252562341
+    second: Guest_Striped_NW_Walk_3
+  - first:
+      213: 195956923257271711
+    second: Guest_Striped_NW_Cheer_0
+  - first:
+      213: 536737954916722071
+    second: Guest_Striped_NW_Cheer_1
+  - first:
+      213: 110874786817586677
+    second: Guest_Striped_NE_Idle_0
+  - first:
+      213: 496561662847976873
+    second: Guest_Striped_NE_Idle_1
+  - first:
+      213: 85739880280421670
+    second: Guest_Striped_NE_Walk_0
+  - first:
+      213: 374082260712961418
+    second: Guest_Striped_NE_Walk_1
+  - first:
+      213: 435925562276562427
+    second: Guest_Striped_NE_Walk_2
+  - first:
+      213: 34992177862493550
+    second: Guest_Striped_NE_Walk_3
+  - first:
+      213: 235273432029812020
+    second: Guest_Striped_NE_Cheer_0
+  - first:
+      213: 635712772411082033
+    second: Guest_Striped_NE_Cheer_1
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 4096
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Guest_Striped_SE_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 582
+        width: 276
+        height: 194
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.381443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9670dfabec7254559a7370c49999362b
+      internalID: 110671708557464965
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Striped_SE_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 582
+        width: 276
+        height: 194
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.381443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3414d578647c5db89c88abeacbf16797
+      internalID: 518072148799448518
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Striped_SE_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 582
+        width: 276
+        height: 194
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.381443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84e390f4b0515b2d9e988a5f903c5fb0
+      internalID: 1079748937890207052
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Striped_SE_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 582
+        width: 276
+        height: 194
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.381443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edf24cd7688e5549842e54ba8a98965b
+      internalID: 665584355623613812
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Striped_SE_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 582
+        width: 276
+        height: 194
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.381443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a788b9523a485bafa4fd58745ecfaa8d
+      internalID: 819053851543385587
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Striped_SE_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 582
+        width: 276
+        height: 194
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.381443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15f8326cf6335a0eaf735da35ee4c833
+      internalID: 1083380230463563219
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Striped_SE_Cheer_0
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 582
+        width: 276
+        height: 194
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.381443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28e1a392adeb51f6aa0d3583e5d067a8
+      internalID: 271541122050467131
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Striped_SE_Cheer_1
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 582
+        width: 276
+        height: 194
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.381443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18a751ad7f8358808fe61f3c097dfa1a
+      internalID: 235984780636046784
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Striped_SW_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 388
+        width: 276
+        height: 194
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.381443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06958ad22e2f56049e581051eacb0b30
+      internalID: 506772374741476741
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Striped_SW_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 388
+        width: 276
+        height: 194
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.381443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f57f356f0a0d56a6a09cc7825776f307
+      internalID: 626473401417700638
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Striped_SW_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 388
+        width: 276
+        height: 194
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.381443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c1520e8c6d054e1bd933ecabff6b2d4
+      internalID: 76194495730881907
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Striped_SW_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 388
+        width: 276
+        height: 194
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.381443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d8843fdf29854548c41af4a534f7664
+      internalID: 294549234924569891
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Striped_SW_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 388
+        width: 276
+        height: 194
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.381443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 958a28d2a8cf5527967c9e5aa6f2bdb2
+      internalID: 66661939971249459
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Striped_SW_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 388
+        width: 276
+        height: 194
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.381443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1addaa8e768e5b60b72c55e97a932de1
+      internalID: 891075745972471148
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Striped_SW_Cheer_0
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 388
+        width: 276
+        height: 194
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.381443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 583b6950a81f53e98d0d875b253e93b0
+      internalID: 229989905794192767
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Striped_SW_Cheer_1
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 388
+        width: 276
+        height: 194
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.381443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ee5373d27f053319b86be2ee95dc444
+      internalID: 593093384514741685
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Striped_NW_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 194
+        width: 276
+        height: 194
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.381443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c27dbb1b92b54d0835a280dc0d4dbfb
+      internalID: 250316741560763816
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Striped_NW_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 194
+        width: 276
+        height: 194
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.381443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b255dd575c535d689cc0e3c008a43ef3
+      internalID: 246846298823501240
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Striped_NW_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 194
+        width: 276
+        height: 194
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.381443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4d54f07af535970a679ec7bbb80b9ba
+      internalID: 77484857572517337
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Striped_NW_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 194
+        width: 276
+        height: 194
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.381443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 706b731ee3775a658cdd1f80c3d5794c
+      internalID: 131564367825175882
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Striped_NW_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 194
+        width: 276
+        height: 194
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.381443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49877773c2005656866150e0b667b2a0
+      internalID: 1022337501987480893
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Striped_NW_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 194
+        width: 276
+        height: 194
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.381443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16a27db1b6885681bdce8aedc804da99
+      internalID: 802622809252562341
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Striped_NW_Cheer_0
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 194
+        width: 276
+        height: 194
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.381443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 046e2fd18b955c51a06a21a58428240e
+      internalID: 195956923257271711
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Striped_NW_Cheer_1
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 194
+        width: 276
+        height: 194
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.381443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c038f6b6be945e8d9dedcc9b578efeb7
+      internalID: 536737954916722071
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Striped_NE_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 276
+        height: 194
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.381443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ac571ee74fc51019a507a844b38df1e
+      internalID: 110874786817586677
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Striped_NE_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 0
+        width: 276
+        height: 194
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.381443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b67f6a58993854449724bc7f94a6eb2c
+      internalID: 496561662847976873
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Striped_NE_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 0
+        width: 276
+        height: 194
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.381443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d21217bf05f85eddaf09494077dd309b
+      internalID: 85739880280421670
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Striped_NE_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 0
+        width: 276
+        height: 194
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.381443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57fd0a0ec4645e3eb514f76a32443095
+      internalID: 374082260712961418
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Striped_NE_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 0
+        width: 276
+        height: 194
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.381443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d5b81f11d025b1d87ef829d6edef975
+      internalID: 435925562276562427
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Striped_NE_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 0
+        width: 276
+        height: 194
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.381443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3dd5da61b855d949c7fb3d429d24dc3
+      internalID: 34992177862493550
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Striped_NE_Cheer_0
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 0
+        width: 276
+        height: 194
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.381443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 427da8b6bf6b5c13b9c24bf54c95c02f
+      internalID: 235273432029812020
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guest_Striped_NE_Cheer_1
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 0
+        width: 276
+        height: 194
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.381443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b977db5b61655ca79d358e3447c4a0b8
+      internalID: 635712772411082033
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: ad850837271c58adb860da1264026113
+    internalID: 0
+    vertices: []
+    indices:
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Guest_Striped_SE_Idle_0: 110671708557464965
+      Guest_Striped_SE_Idle_1: 518072148799448518
+      Guest_Striped_SE_Walk_0: 1079748937890207052
+      Guest_Striped_SE_Walk_1: 665584355623613812
+      Guest_Striped_SE_Walk_2: 819053851543385587
+      Guest_Striped_SE_Walk_3: 1083380230463563219
+      Guest_Striped_SE_Cheer_0: 271541122050467131
+      Guest_Striped_SE_Cheer_1: 235984780636046784
+      Guest_Striped_SW_Idle_0: 506772374741476741
+      Guest_Striped_SW_Idle_1: 626473401417700638
+      Guest_Striped_SW_Walk_0: 76194495730881907
+      Guest_Striped_SW_Walk_1: 294549234924569891
+      Guest_Striped_SW_Walk_2: 66661939971249459
+      Guest_Striped_SW_Walk_3: 891075745972471148
+      Guest_Striped_SW_Cheer_0: 229989905794192767
+      Guest_Striped_SW_Cheer_1: 593093384514741685
+      Guest_Striped_NW_Idle_0: 250316741560763816
+      Guest_Striped_NW_Idle_1: 246846298823501240
+      Guest_Striped_NW_Walk_0: 77484857572517337
+      Guest_Striped_NW_Walk_1: 131564367825175882
+      Guest_Striped_NW_Walk_2: 1022337501987480893
+      Guest_Striped_NW_Walk_3: 802622809252562341
+      Guest_Striped_NW_Cheer_0: 195956923257271711
+      Guest_Striped_NW_Cheer_1: 536737954916722071
+      Guest_Striped_NE_Idle_0: 110874786817586677
+      Guest_Striped_NE_Idle_1: 496561662847976873
+      Guest_Striped_NE_Walk_0: 85739880280421670
+      Guest_Striped_NE_Walk_1: 374082260712961418
+      Guest_Striped_NE_Walk_2: 435925562276562427
+      Guest_Striped_NE_Walk_3: 34992177862493550
+      Guest_Striped_NE_Cheer_0: 235273432029812020
+      Guest_Striped_NE_Cheer_1: 635712772411082033
+  mipmapLimitGroupName:
+  pSDRemoveMatte: 0
+  userData:
+  assetBundleName:
+  assetBundleVariant:

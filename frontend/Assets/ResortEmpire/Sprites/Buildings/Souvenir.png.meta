@@ -1,0 +1,205 @@
+fileFormatVersion: 2
+guid: 2938262d65905a3990ca7e60064bc2fc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 319256010000016691
+    second: Souvenir_R0
+  - first:
+      213: 827206281619113398
+    second: Souvenir_R1
+  - first:
+      213: 414075836904478054
+    second: Souvenir_R2
+  - first:
+      213: 191647975471531495
+    second: Souvenir_R3
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 4096
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 128
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Souvenir_R0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 0
+        width: 306
+        height: 208
+      alignment: 9
+      pivot: {x: 0.437908, y: 0.336538}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58f6a24b4ee35789b3019055e2b67d5b
+      internalID: 319256010000016691
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Souvenir_R1
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 0
+        width: 306
+        height: 189
+      alignment: 9
+      pivot: {x: 0.437908, y: 0.370370}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f96df0db90ad57b6b06010984eefb50d
+      internalID: 827206281619113398
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Souvenir_R2
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 0
+        width: 282
+        height: 189
+      alignment: 9
+      pivot: {x: 0.475177, y: 0.370370}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f60d68166bce584b8e62085375dfc1dd
+      internalID: 414075836904478054
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Souvenir_R3
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 0
+        width: 285
+        height: 208
+      alignment: 9
+      pivot: {x: 0.470175, y: 0.336538}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd7878768e795cbba49ffdb57e6511a4
+      internalID: 191647975471531495
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 3f02d8b44d2b5e8489cd5c7fd3cf523b
+    internalID: 0
+    vertices: []
+    indices:
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Souvenir_R0: 319256010000016691
+      Souvenir_R1: 827206281619113398
+      Souvenir_R2: 414075836904478054
+      Souvenir_R3: 191647975471531495
+  mipmapLimitGroupName:
+  pSDRemoveMatte: 0
+  userData:
+  assetBundleName:
+  assetBundleVariant:

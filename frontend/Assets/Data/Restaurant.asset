@@ -17,4 +17,6 @@ MonoBehaviour:
   servedNeed: {fileID: 11400000, guid: 6a290c64803903c4a9935a8c3d8de3b8, type: 2}
   unlockId: 
   maxCount: 1
+  footprint: {x: 3, y: 3}
+  preferShore: 0
   prefab: {fileID: 8139934373621059213, guid: 6ad73a6834dbffe488bbad3e723d83be, type: 3}

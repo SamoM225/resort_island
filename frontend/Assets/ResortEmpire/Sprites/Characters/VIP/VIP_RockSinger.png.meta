@@ -1,0 +1,933 @@
+fileFormatVersion: 2
+guid: 2ee79bf27bc05b9d900c4a3eb661aa63
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 795637303766431070
+    second: VIP_RockSinger_SE_Idle_0
+  - first:
+      213: 460716946242606399
+    second: VIP_RockSinger_SE_Idle_1
+  - first:
+      213: 942638725360461232
+    second: VIP_RockSinger_SE_Walk_0
+  - first:
+      213: 1036740340125160945
+    second: VIP_RockSinger_SE_Walk_1
+  - first:
+      213: 73838674081105292
+    second: VIP_RockSinger_SE_Walk_2
+  - first:
+      213: 1001720038376031580
+    second: VIP_RockSinger_SE_Walk_3
+  - first:
+      213: 548353295114634630
+    second: VIP_RockSinger_SE_Wave_0
+  - first:
+      213: 386102092860233151
+    second: VIP_RockSinger_SE_Wave_1
+  - first:
+      213: 874523660370408883
+    second: VIP_RockSinger_SW_Idle_0
+  - first:
+      213: 594946755607934432
+    second: VIP_RockSinger_SW_Idle_1
+  - first:
+      213: 864776880978859435
+    second: VIP_RockSinger_SW_Walk_0
+  - first:
+      213: 207988244825625989
+    second: VIP_RockSinger_SW_Walk_1
+  - first:
+      213: 646594938567886257
+    second: VIP_RockSinger_SW_Walk_2
+  - first:
+      213: 478800452694922693
+    second: VIP_RockSinger_SW_Walk_3
+  - first:
+      213: 331774267476075865
+    second: VIP_RockSinger_SW_Wave_0
+  - first:
+      213: 228410051307582824
+    second: VIP_RockSinger_SW_Wave_1
+  - first:
+      213: 753261936461436313
+    second: VIP_RockSinger_NW_Idle_0
+  - first:
+      213: 1112419202114147660
+    second: VIP_RockSinger_NW_Idle_1
+  - first:
+      213: 784547777608320462
+    second: VIP_RockSinger_NW_Walk_0
+  - first:
+      213: 339176757751207375
+    second: VIP_RockSinger_NW_Walk_1
+  - first:
+      213: 1052519465258083799
+    second: VIP_RockSinger_NW_Walk_2
+  - first:
+      213: 346443962663355761
+    second: VIP_RockSinger_NW_Walk_3
+  - first:
+      213: 562581414862288161
+    second: VIP_RockSinger_NW_Wave_0
+  - first:
+      213: 848731786196891020
+    second: VIP_RockSinger_NW_Wave_1
+  - first:
+      213: 994655891666646380
+    second: VIP_RockSinger_NE_Idle_0
+  - first:
+      213: 933817445174510887
+    second: VIP_RockSinger_NE_Idle_1
+  - first:
+      213: 161238772129883562
+    second: VIP_RockSinger_NE_Walk_0
+  - first:
+      213: 348518712615847286
+    second: VIP_RockSinger_NE_Walk_1
+  - first:
+      213: 872993403939677614
+    second: VIP_RockSinger_NE_Walk_2
+  - first:
+      213: 540311222639449566
+    second: VIP_RockSinger_NE_Walk_3
+  - first:
+      213: 994402019636696414
+    second: VIP_RockSinger_NE_Wave_0
+  - first:
+      213: 41824085769115005
+    second: VIP_RockSinger_NE_Wave_1
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 4096
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: VIP_RockSinger_SE_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 558
+        width: 276
+        height: 186
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.397849}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc38ad1f6fcf564f81d3cd5142411e13
+      internalID: 795637303766431070
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_RockSinger_SE_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 558
+        width: 276
+        height: 186
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.397849}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 426b9d3591705567a583ebf871c9a280
+      internalID: 460716946242606399
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_RockSinger_SE_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 558
+        width: 276
+        height: 186
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.397849}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb186553815d580db6bf2713fc66d9c1
+      internalID: 942638725360461232
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_RockSinger_SE_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 558
+        width: 276
+        height: 186
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.397849}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b86ef0aed99954489a2bd034dda26a55
+      internalID: 1036740340125160945
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_RockSinger_SE_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 558
+        width: 276
+        height: 186
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.397849}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4b4c7bb821d5b2798a69bab8c48783f
+      internalID: 73838674081105292
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_RockSinger_SE_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 558
+        width: 276
+        height: 186
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.397849}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 869aa51600d654e5950008f735f60831
+      internalID: 1001720038376031580
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_RockSinger_SE_Wave_0
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 558
+        width: 276
+        height: 186
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.397849}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0f1abaee315548298ae5c52fe0a099e
+      internalID: 548353295114634630
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_RockSinger_SE_Wave_1
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 558
+        width: 276
+        height: 186
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.397849}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 908d1089a2f15d89afa09e801ec76413
+      internalID: 386102092860233151
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_RockSinger_SW_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 372
+        width: 276
+        height: 186
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.397849}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e775d322f175553e81dea112e56623bc
+      internalID: 874523660370408883
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_RockSinger_SW_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 372
+        width: 276
+        height: 186
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.397849}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 570786f66a065a9a892a32eea3312443
+      internalID: 594946755607934432
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_RockSinger_SW_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 372
+        width: 276
+        height: 186
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.397849}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e907816a39851b48333f15348ef6263
+      internalID: 864776880978859435
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_RockSinger_SW_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 372
+        width: 276
+        height: 186
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.397849}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bcff082824a5c6e807a4807c03d174b
+      internalID: 207988244825625989
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_RockSinger_SW_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 372
+        width: 276
+        height: 186
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.397849}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d795e366b2b15533b53f03330172e491
+      internalID: 646594938567886257
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_RockSinger_SW_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 372
+        width: 276
+        height: 186
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.397849}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14b64f5b357f529c9471825ef43d14c0
+      internalID: 478800452694922693
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_RockSinger_SW_Wave_0
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 372
+        width: 276
+        height: 186
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.397849}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 600b1fbf54f55c9fb71d719970fc4d4e
+      internalID: 331774267476075865
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_RockSinger_SW_Wave_1
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 372
+        width: 276
+        height: 186
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.397849}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0059011200b25a309ea75947d0ba95d1
+      internalID: 228410051307582824
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_RockSinger_NW_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 186
+        width: 276
+        height: 186
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.397849}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22d702b4e11e527da8d282fb723730e1
+      internalID: 753261936461436313
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_RockSinger_NW_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 186
+        width: 276
+        height: 186
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.397849}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5b31a34a88e58fd948cb93a4a7857ab
+      internalID: 1112419202114147660
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_RockSinger_NW_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 186
+        width: 276
+        height: 186
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.397849}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96790c19652359928104acb7d65c675c
+      internalID: 784547777608320462
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_RockSinger_NW_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 186
+        width: 276
+        height: 186
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.397849}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ad843e50e745c598fcc74bc7afba889
+      internalID: 339176757751207375
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_RockSinger_NW_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 186
+        width: 276
+        height: 186
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.397849}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dc60c32e8f051619d3c5809b9ed89a7
+      internalID: 1052519465258083799
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_RockSinger_NW_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 186
+        width: 276
+        height: 186
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.397849}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 794bbd3b03d9566a88f0a97473464f1d
+      internalID: 346443962663355761
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_RockSinger_NW_Wave_0
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 186
+        width: 276
+        height: 186
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.397849}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74743e798b695f0ea8e849348b8a350e
+      internalID: 562581414862288161
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_RockSinger_NW_Wave_1
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 186
+        width: 276
+        height: 186
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.397849}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2767e00a48d5fb78d90f9c81b7f9c79
+      internalID: 848731786196891020
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_RockSinger_NE_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 276
+        height: 186
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.397849}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef10038637dd528098a44dcdbee7ece6
+      internalID: 994655891666646380
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_RockSinger_NE_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 0
+        width: 276
+        height: 186
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.397849}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6de5b757bc075a96bf72cc3ee565d484
+      internalID: 933817445174510887
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_RockSinger_NE_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 0
+        width: 276
+        height: 186
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.397849}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29923e45f68a502e999ceafd09d3ce61
+      internalID: 161238772129883562
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_RockSinger_NE_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 0
+        width: 276
+        height: 186
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.397849}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cde207e1da451448df055fe1ecb334d
+      internalID: 348518712615847286
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_RockSinger_NE_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 0
+        width: 276
+        height: 186
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.397849}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8b1c878c35a565da836004c30c5a865
+      internalID: 872993403939677614
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_RockSinger_NE_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 0
+        width: 276
+        height: 186
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.397849}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1fee5f3833a5612a736b9d743d0127b
+      internalID: 540311222639449566
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_RockSinger_NE_Wave_0
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 0
+        width: 276
+        height: 186
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.397849}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 752aec1e73e35776885ec74228999fce
+      internalID: 994402019636696414
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_RockSinger_NE_Wave_1
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 0
+        width: 276
+        height: 186
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.397849}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52d3241f38855f248dcfa56b22f13677
+      internalID: 41824085769115005
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 1134a019c77b5d07a9d4f669769b328d
+    internalID: 0
+    vertices: []
+    indices:
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      VIP_RockSinger_SE_Idle_0: 795637303766431070
+      VIP_RockSinger_SE_Idle_1: 460716946242606399
+      VIP_RockSinger_SE_Walk_0: 942638725360461232
+      VIP_RockSinger_SE_Walk_1: 1036740340125160945
+      VIP_RockSinger_SE_Walk_2: 73838674081105292
+      VIP_RockSinger_SE_Walk_3: 1001720038376031580
+      VIP_RockSinger_SE_Wave_0: 548353295114634630
+      VIP_RockSinger_SE_Wave_1: 386102092860233151
+      VIP_RockSinger_SW_Idle_0: 874523660370408883
+      VIP_RockSinger_SW_Idle_1: 594946755607934432
+      VIP_RockSinger_SW_Walk_0: 864776880978859435
+      VIP_RockSinger_SW_Walk_1: 207988244825625989
+      VIP_RockSinger_SW_Walk_2: 646594938567886257
+      VIP_RockSinger_SW_Walk_3: 478800452694922693
+      VIP_RockSinger_SW_Wave_0: 331774267476075865
+      VIP_RockSinger_SW_Wave_1: 228410051307582824
+      VIP_RockSinger_NW_Idle_0: 753261936461436313
+      VIP_RockSinger_NW_Idle_1: 1112419202114147660
+      VIP_RockSinger_NW_Walk_0: 784547777608320462
+      VIP_RockSinger_NW_Walk_1: 339176757751207375
+      VIP_RockSinger_NW_Walk_2: 1052519465258083799
+      VIP_RockSinger_NW_Walk_3: 346443962663355761
+      VIP_RockSinger_NW_Wave_0: 562581414862288161
+      VIP_RockSinger_NW_Wave_1: 848731786196891020
+      VIP_RockSinger_NE_Idle_0: 994655891666646380
+      VIP_RockSinger_NE_Idle_1: 933817445174510887
+      VIP_RockSinger_NE_Walk_0: 161238772129883562
+      VIP_RockSinger_NE_Walk_1: 348518712615847286
+      VIP_RockSinger_NE_Walk_2: 872993403939677614
+      VIP_RockSinger_NE_Walk_3: 540311222639449566
+      VIP_RockSinger_NE_Wave_0: 994402019636696414
+      VIP_RockSinger_NE_Wave_1: 41824085769115005
+  mipmapLimitGroupName:
+  pSDRemoveMatte: 0
+  userData:
+  assetBundleName:
+  assetBundleVariant:

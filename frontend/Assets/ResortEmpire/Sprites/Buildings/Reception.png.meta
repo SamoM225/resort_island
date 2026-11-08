@@ -1,0 +1,413 @@
+fileFormatVersion: 2
+guid: 2ca8d917f5b75e188d743841f8074808
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 41599999373604169
+    second: Reception_Lv1_R0
+  - first:
+      213: 538134383888508410
+    second: Reception_Lv1_R1
+  - first:
+      213: 43520042544604438
+    second: Reception_Lv1_R2
+  - first:
+      213: 565993376427685319
+    second: Reception_Lv1_R3
+  - first:
+      213: 410114057646404914
+    second: Reception_Lv2_R0
+  - first:
+      213: 686747151366665714
+    second: Reception_Lv2_R1
+  - first:
+      213: 652495788946118086
+    second: Reception_Lv2_R2
+  - first:
+      213: 352034027125933537
+    second: Reception_Lv2_R3
+  - first:
+      213: 874521728666760558
+    second: Reception_Lv3_R0
+  - first:
+      213: 227458389093914045
+    second: Reception_Lv3_R1
+  - first:
+      213: 741450655715698034
+    second: Reception_Lv3_R2
+  - first:
+      213: 1141438393465865585
+    second: Reception_Lv3_R3
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 4096
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 128
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Reception_Lv1_R0
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 736
+        width: 418
+        height: 252
+      alignment: 9
+      pivot: {x: 0.473684, y: 0.404762}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab874e9d712c50408e8ebce7057494d6
+      internalID: 41599999373604169
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reception_Lv1_R1
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 736
+        width: 418
+        height: 235
+      alignment: 9
+      pivot: {x: 0.473684, y: 0.434043}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a16d9db803d45109a6ca51423be99216
+      internalID: 538134383888508410
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reception_Lv1_R2
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 736
+        width: 396
+        height: 235
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.434043}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72c1e015ee8f5148902c559b2102247b
+      internalID: 43520042544604438
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reception_Lv1_R3
+      rect:
+        serializedVersion: 2
+        x: 1541
+        y: 736
+        width: 396
+        height: 252
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.404762}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d862d95532035afcabd9dd38f4daa953
+      internalID: 565993376427685319
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reception_Lv2_R0
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 368
+        width: 455
+        height: 301
+      alignment: 9
+      pivot: {x: 0.435165, y: 0.338870}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b189ef051d2550b8c8eb0e3f08e6199
+      internalID: 410114057646404914
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reception_Lv2_R1
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 368
+        width: 455
+        height: 283
+      alignment: 9
+      pivot: {x: 0.435165, y: 0.360424}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3c6015612b95a349e62175ff022ed65
+      internalID: 686747151366665714
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reception_Lv2_R2
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 368
+        width: 420
+        height: 283
+      alignment: 9
+      pivot: {x: 0.471429, y: 0.360424}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c8460844ffa5c769cad21476d4d6b0b
+      internalID: 652495788946118086
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reception_Lv2_R3
+      rect:
+        serializedVersion: 2
+        x: 1529
+        y: 368
+        width: 420
+        height: 316
+      alignment: 9
+      pivot: {x: 0.471429, y: 0.322785}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb1cbf519c18587caf284e35496bf1f5
+      internalID: 352034027125933537
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reception_Lv3_R0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 0
+        width: 493
+        height: 350
+      alignment: 9
+      pivot: {x: 0.401623, y: 0.291429}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fce5c4c6f1ae54cebe04d4b8ad89d7df
+      internalID: 874521728666760558
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reception_Lv3_R1
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 0
+        width: 493
+        height: 332
+      alignment: 9
+      pivot: {x: 0.401623, y: 0.307229}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 844dbdecc0615d2586ead51722bdb3b3
+      internalID: 227458389093914045
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reception_Lv3_R2
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 0
+        width: 457
+        height: 332
+      alignment: 9
+      pivot: {x: 0.433260, y: 0.307229}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82e6e5d456105985849cc267f950cf52
+      internalID: 741450655715698034
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reception_Lv3_R3
+      rect:
+        serializedVersion: 2
+        x: 1511
+        y: 0
+        width: 457
+        height: 364
+      alignment: 9
+      pivot: {x: 0.433260, y: 0.280220}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7f0c066f2e65ba4b96fa2f15492005d
+      internalID: 1141438393465865585
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 574d1c21fd8d5ea387f00ce706ab6c8a
+    internalID: 0
+    vertices: []
+    indices:
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Reception_Lv1_R0: 41599999373604169
+      Reception_Lv1_R1: 538134383888508410
+      Reception_Lv1_R2: 43520042544604438
+      Reception_Lv1_R3: 565993376427685319
+      Reception_Lv2_R0: 410114057646404914
+      Reception_Lv2_R1: 686747151366665714
+      Reception_Lv2_R2: 652495788946118086
+      Reception_Lv2_R3: 352034027125933537
+      Reception_Lv3_R0: 874521728666760558
+      Reception_Lv3_R1: 227458389093914045
+      Reception_Lv3_R2: 741450655715698034
+      Reception_Lv3_R3: 1141438393465865585
+  mipmapLimitGroupName:
+  pSDRemoveMatte: 0
+  userData:
+  assetBundleName:
+  assetBundleVariant:

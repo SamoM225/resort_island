@@ -1,0 +1,205 @@
+fileFormatVersion: 2
+guid: a24dc18612af5e728a2891faedbbdc8d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 466669186491770344
+    second: Helicopter_R0
+  - first:
+      213: 565958800422553013
+    second: Helicopter_R1
+  - first:
+      213: 888785135248537072
+    second: Helicopter_R2
+  - first:
+      213: 863387726839678334
+    second: Helicopter_R3
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 4096
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 128
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Helicopter_R0
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 0
+        width: 268
+        height: 183
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.382514}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 820fae67127050ff91b4b5ba5c5fec87
+      internalID: 466669186491770344
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Helicopter_R1
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 0
+        width: 268
+        height: 209
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.334928}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47a34311c6f257f78b967ece4d296440
+      internalID: 565958800422553013
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Helicopter_R2
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 0
+        width: 310
+        height: 209
+      alignment: 9
+      pivot: {x: 0.432258, y: 0.334928}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 935b27beb98e55a7ae8b756f5db44133
+      internalID: 888785135248537072
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Helicopter_R3
+      rect:
+        serializedVersion: 2
+        x: 944
+        y: 0
+        width: 310
+        height: 183
+      alignment: 9
+      pivot: {x: 0.432258, y: 0.382514}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e808c2ae24e252d2a12edee729daff42
+      internalID: 863387726839678334
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 9e23c7249366575fb8b021f3e3127353
+    internalID: 0
+    vertices: []
+    indices:
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Helicopter_R0: 466669186491770344
+      Helicopter_R1: 565958800422553013
+      Helicopter_R2: 888785135248537072
+      Helicopter_R3: 863387726839678334
+  mipmapLimitGroupName:
+  pSDRemoveMatte: 0
+  userData:
+  assetBundleName:
+  assetBundleVariant:

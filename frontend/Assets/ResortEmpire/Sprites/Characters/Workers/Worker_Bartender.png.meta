@@ -1,0 +1,933 @@
+fileFormatVersion: 2
+guid: e91d4fcb98eb5528b92756d712081b77
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3953971097658843
+    second: Worker_Bartender_SE_Idle_0
+  - first:
+      213: 308490961350149617
+    second: Worker_Bartender_SE_Idle_1
+  - first:
+      213: 90134613926839768
+    second: Worker_Bartender_SE_Walk_0
+  - first:
+      213: 591181309743056322
+    second: Worker_Bartender_SE_Walk_1
+  - first:
+      213: 1064124979087615307
+    second: Worker_Bartender_SE_Walk_2
+  - first:
+      213: 514221721224455488
+    second: Worker_Bartender_SE_Walk_3
+  - first:
+      213: 623910875134825781
+    second: Worker_Bartender_SE_Work_0
+  - first:
+      213: 921462549242934712
+    second: Worker_Bartender_SE_Work_1
+  - first:
+      213: 252358844624876944
+    second: Worker_Bartender_SW_Idle_0
+  - first:
+      213: 1019947874347963754
+    second: Worker_Bartender_SW_Idle_1
+  - first:
+      213: 440133586462778819
+    second: Worker_Bartender_SW_Walk_0
+  - first:
+      213: 1106274465244026308
+    second: Worker_Bartender_SW_Walk_1
+  - first:
+      213: 586427247291254234
+    second: Worker_Bartender_SW_Walk_2
+  - first:
+      213: 895237805453812997
+    second: Worker_Bartender_SW_Walk_3
+  - first:
+      213: 1121034879969215853
+    second: Worker_Bartender_SW_Work_0
+  - first:
+      213: 851629965785560496
+    second: Worker_Bartender_SW_Work_1
+  - first:
+      213: 176849027841713534
+    second: Worker_Bartender_NW_Idle_0
+  - first:
+      213: 588617917842552288
+    second: Worker_Bartender_NW_Idle_1
+  - first:
+      213: 181047195213346053
+    second: Worker_Bartender_NW_Walk_0
+  - first:
+      213: 397476678271419744
+    second: Worker_Bartender_NW_Walk_1
+  - first:
+      213: 438824362892654078
+    second: Worker_Bartender_NW_Walk_2
+  - first:
+      213: 134310969493157321
+    second: Worker_Bartender_NW_Walk_3
+  - first:
+      213: 1124498030516978946
+    second: Worker_Bartender_NW_Work_0
+  - first:
+      213: 118447483443139960
+    second: Worker_Bartender_NW_Work_1
+  - first:
+      213: 1147658200624063906
+    second: Worker_Bartender_NE_Idle_0
+  - first:
+      213: 982740899490276814
+    second: Worker_Bartender_NE_Idle_1
+  - first:
+      213: 297172806810031601
+    second: Worker_Bartender_NE_Walk_0
+  - first:
+      213: 577752538504975704
+    second: Worker_Bartender_NE_Walk_1
+  - first:
+      213: 242124005064635818
+    second: Worker_Bartender_NE_Walk_2
+  - first:
+      213: 214129427945243975
+    second: Worker_Bartender_NE_Walk_3
+  - first:
+      213: 858888739149493540
+    second: Worker_Bartender_NE_Work_0
+  - first:
+      213: 76729743211804129
+    second: Worker_Bartender_NE_Work_1
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 4096
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Worker_Bartender_SE_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 549
+        width: 276
+        height: 183
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.404372}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51d2fde2460d5920b67a7d73868b1cd6
+      internalID: 3953971097658843
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Bartender_SE_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 549
+        width: 276
+        height: 183
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.404372}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3c696cb93825d1984ae326c2705c94f
+      internalID: 308490961350149617
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Bartender_SE_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 549
+        width: 276
+        height: 183
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.404372}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7afbe89efc995ccf81e88291caa6b1ae
+      internalID: 90134613926839768
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Bartender_SE_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 549
+        width: 276
+        height: 183
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.404372}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18e8d4de4eb756d59b93f11060e2d031
+      internalID: 591181309743056322
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Bartender_SE_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 549
+        width: 276
+        height: 183
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.404372}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7830369d7ab50039e4ec557c4c553ba
+      internalID: 1064124979087615307
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Bartender_SE_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 549
+        width: 276
+        height: 183
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.404372}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fab1bb02a1b45685b6c7612a1689f72e
+      internalID: 514221721224455488
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Bartender_SE_Work_0
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 549
+        width: 276
+        height: 183
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.404372}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40509a4783525efca5bdfcc2ba21de11
+      internalID: 623910875134825781
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Bartender_SE_Work_1
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 549
+        width: 276
+        height: 183
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.404372}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d99af2ab278530e959e346ea8400a14
+      internalID: 921462549242934712
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Bartender_SW_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 366
+        width: 276
+        height: 183
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.404372}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfd2ebd08a3c5723b239c0a256179f6c
+      internalID: 252358844624876944
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Bartender_SW_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 366
+        width: 276
+        height: 183
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.404372}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c184bebb71a05eac9063bf0d8818ad33
+      internalID: 1019947874347963754
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Bartender_SW_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 366
+        width: 276
+        height: 183
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.404372}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ed53826bcc4577d8bb1ac7ccf898785
+      internalID: 440133586462778819
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Bartender_SW_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 366
+        width: 276
+        height: 183
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.404372}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf80ff9c6b865acbac4e05de44784e77
+      internalID: 1106274465244026308
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Bartender_SW_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 366
+        width: 276
+        height: 183
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.404372}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09531b90401d5c46bb822b5aa970f280
+      internalID: 586427247291254234
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Bartender_SW_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 366
+        width: 276
+        height: 183
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.404372}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3902a6bfa627557a91871a6fb50968f5
+      internalID: 895237805453812997
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Bartender_SW_Work_0
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 366
+        width: 276
+        height: 183
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.404372}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fce8f48ae17250cd9a99f5bf2cf7eff2
+      internalID: 1121034879969215853
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Bartender_SW_Work_1
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 366
+        width: 276
+        height: 183
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.404372}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4933cd9544b58e78e7993eddd868084
+      internalID: 851629965785560496
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Bartender_NW_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 183
+        width: 276
+        height: 183
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.404372}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e23dbe5dbcf54c99c0142590fd49bae
+      internalID: 176849027841713534
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Bartender_NW_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 183
+        width: 276
+        height: 183
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.404372}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cde59e0219a59d29b879590a2b15623
+      internalID: 588617917842552288
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Bartender_NW_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 183
+        width: 276
+        height: 183
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.404372}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 828ae3cac03f5178b1cc0ed18c573a06
+      internalID: 181047195213346053
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Bartender_NW_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 183
+        width: 276
+        height: 183
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.404372}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24c4e534793658caadf4e3d9c723e7d8
+      internalID: 397476678271419744
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Bartender_NW_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 183
+        width: 276
+        height: 183
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.404372}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f307ee4a52bf51dda285bb049681ad1a
+      internalID: 438824362892654078
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Bartender_NW_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 183
+        width: 276
+        height: 183
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.404372}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ace07e154d9598c9a845f30c609bc32
+      internalID: 134310969493157321
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Bartender_NW_Work_0
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 183
+        width: 276
+        height: 183
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.404372}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7544ef85be55273a4a528dbe2312cd9
+      internalID: 1124498030516978946
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Bartender_NW_Work_1
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 183
+        width: 276
+        height: 183
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.404372}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01a8160e8ee45857b5705425460c1419
+      internalID: 118447483443139960
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Bartender_NE_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 276
+        height: 183
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.404372}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09640ebcfbaa5727b146260c32908451
+      internalID: 1147658200624063906
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Bartender_NE_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 0
+        width: 276
+        height: 183
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.404372}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07e8257b910855d1aed43dda22cc1ec5
+      internalID: 982740899490276814
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Bartender_NE_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 0
+        width: 276
+        height: 183
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.404372}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 578552f1e6f058a08e280367925d5491
+      internalID: 297172806810031601
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Bartender_NE_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 0
+        width: 276
+        height: 183
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.404372}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 949301e3e05b585a91cc874719ec98cc
+      internalID: 577752538504975704
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Bartender_NE_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 0
+        width: 276
+        height: 183
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.404372}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ae7e89219d65491bbe425a6b7c93c19
+      internalID: 242124005064635818
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Bartender_NE_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 0
+        width: 276
+        height: 183
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.404372}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0c7908ad825589b85714231f7947141
+      internalID: 214129427945243975
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Bartender_NE_Work_0
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 0
+        width: 276
+        height: 183
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.404372}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae215344b26257f4882872b2b14bd27a
+      internalID: 858888739149493540
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Bartender_NE_Work_1
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 0
+        width: 276
+        height: 183
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.404372}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 548ca268498d50688f8bf1f0229d07ee
+      internalID: 76729743211804129
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 0bf34941a2755a95b90e6de60c0d51ec
+    internalID: 0
+    vertices: []
+    indices:
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Worker_Bartender_SE_Idle_0: 3953971097658843
+      Worker_Bartender_SE_Idle_1: 308490961350149617
+      Worker_Bartender_SE_Walk_0: 90134613926839768
+      Worker_Bartender_SE_Walk_1: 591181309743056322
+      Worker_Bartender_SE_Walk_2: 1064124979087615307
+      Worker_Bartender_SE_Walk_3: 514221721224455488
+      Worker_Bartender_SE_Work_0: 623910875134825781
+      Worker_Bartender_SE_Work_1: 921462549242934712
+      Worker_Bartender_SW_Idle_0: 252358844624876944
+      Worker_Bartender_SW_Idle_1: 1019947874347963754
+      Worker_Bartender_SW_Walk_0: 440133586462778819
+      Worker_Bartender_SW_Walk_1: 1106274465244026308
+      Worker_Bartender_SW_Walk_2: 586427247291254234
+      Worker_Bartender_SW_Walk_3: 895237805453812997
+      Worker_Bartender_SW_Work_0: 1121034879969215853
+      Worker_Bartender_SW_Work_1: 851629965785560496
+      Worker_Bartender_NW_Idle_0: 176849027841713534
+      Worker_Bartender_NW_Idle_1: 588617917842552288
+      Worker_Bartender_NW_Walk_0: 181047195213346053
+      Worker_Bartender_NW_Walk_1: 397476678271419744
+      Worker_Bartender_NW_Walk_2: 438824362892654078
+      Worker_Bartender_NW_Walk_3: 134310969493157321
+      Worker_Bartender_NW_Work_0: 1124498030516978946
+      Worker_Bartender_NW_Work_1: 118447483443139960
+      Worker_Bartender_NE_Idle_0: 1147658200624063906
+      Worker_Bartender_NE_Idle_1: 982740899490276814
+      Worker_Bartender_NE_Walk_0: 297172806810031601
+      Worker_Bartender_NE_Walk_1: 577752538504975704
+      Worker_Bartender_NE_Walk_2: 242124005064635818
+      Worker_Bartender_NE_Walk_3: 214129427945243975
+      Worker_Bartender_NE_Work_0: 858888739149493540
+      Worker_Bartender_NE_Work_1: 76729743211804129
+  mipmapLimitGroupName:
+  pSDRemoveMatte: 0
+  userData:
+  assetBundleName:
+  assetBundleVariant:

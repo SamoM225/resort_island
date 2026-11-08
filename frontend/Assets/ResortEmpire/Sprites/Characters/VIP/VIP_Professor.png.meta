@@ -1,0 +1,933 @@
+fileFormatVersion: 2
+guid: 1f041d283fce53c188f992acb4432d59
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 423952713749673398
+    second: VIP_Professor_SE_Idle_0
+  - first:
+      213: 485819983237514557
+    second: VIP_Professor_SE_Idle_1
+  - first:
+      213: 754694112515814901
+    second: VIP_Professor_SE_Walk_0
+  - first:
+      213: 1012645953796875730
+    second: VIP_Professor_SE_Walk_1
+  - first:
+      213: 632421829612569923
+    second: VIP_Professor_SE_Walk_2
+  - first:
+      213: 980155693124814123
+    second: VIP_Professor_SE_Walk_3
+  - first:
+      213: 151935098691065223
+    second: VIP_Professor_SE_Wave_0
+  - first:
+      213: 1134674380836611394
+    second: VIP_Professor_SE_Wave_1
+  - first:
+      213: 1145677084163753451
+    second: VIP_Professor_SW_Idle_0
+  - first:
+      213: 769190909342172632
+    second: VIP_Professor_SW_Idle_1
+  - first:
+      213: 321589614405563690
+    second: VIP_Professor_SW_Walk_0
+  - first:
+      213: 598173627727955308
+    second: VIP_Professor_SW_Walk_1
+  - first:
+      213: 655926886384489764
+    second: VIP_Professor_SW_Walk_2
+  - first:
+      213: 630665893670765968
+    second: VIP_Professor_SW_Walk_3
+  - first:
+      213: 400013610680296723
+    second: VIP_Professor_SW_Wave_0
+  - first:
+      213: 797468642402325951
+    second: VIP_Professor_SW_Wave_1
+  - first:
+      213: 1099720203245171993
+    second: VIP_Professor_NW_Idle_0
+  - first:
+      213: 82122707530593542
+    second: VIP_Professor_NW_Idle_1
+  - first:
+      213: 913077360036054334
+    second: VIP_Professor_NW_Walk_0
+  - first:
+      213: 158586901381682433
+    second: VIP_Professor_NW_Walk_1
+  - first:
+      213: 910381441198228909
+    second: VIP_Professor_NW_Walk_2
+  - first:
+      213: 377524325067064579
+    second: VIP_Professor_NW_Walk_3
+  - first:
+      213: 636549952225506701
+    second: VIP_Professor_NW_Wave_0
+  - first:
+      213: 798470264289646075
+    second: VIP_Professor_NW_Wave_1
+  - first:
+      213: 383707984677721474
+    second: VIP_Professor_NE_Idle_0
+  - first:
+      213: 784730674040468895
+    second: VIP_Professor_NE_Idle_1
+  - first:
+      213: 1081962960067650990
+    second: VIP_Professor_NE_Walk_0
+  - first:
+      213: 110447674396611894
+    second: VIP_Professor_NE_Walk_1
+  - first:
+      213: 694965347418850581
+    second: VIP_Professor_NE_Walk_2
+  - first:
+      213: 1140378854343107943
+    second: VIP_Professor_NE_Walk_3
+  - first:
+      213: 710077240860624175
+    second: VIP_Professor_NE_Wave_0
+  - first:
+      213: 1050813101354558874
+    second: VIP_Professor_NE_Wave_1
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 4096
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: VIP_Professor_SE_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 567
+        width: 276
+        height: 189
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.391534}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5064f3d283eb51bb8b142e3f3e7b3055
+      internalID: 423952713749673398
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_Professor_SE_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 567
+        width: 276
+        height: 189
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.391534}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba8166bdb758556cb2a4e4b3110bb134
+      internalID: 485819983237514557
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_Professor_SE_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 567
+        width: 276
+        height: 189
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.391534}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 954c5f7656685fc0a50f7d3195592903
+      internalID: 754694112515814901
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_Professor_SE_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 567
+        width: 276
+        height: 189
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.391534}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9aa68647424d5b448e1d39bec0d5e499
+      internalID: 1012645953796875730
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_Professor_SE_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 567
+        width: 276
+        height: 189
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.391534}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cf7c42106cf59fc89feb7233c562795
+      internalID: 632421829612569923
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_Professor_SE_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 567
+        width: 276
+        height: 189
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.391534}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5aff908e27a501b93ecd0cefb0203b7
+      internalID: 980155693124814123
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_Professor_SE_Wave_0
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 567
+        width: 276
+        height: 189
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.391534}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bafbc4bb1c5d5d00853c5670a2ee2c18
+      internalID: 151935098691065223
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_Professor_SE_Wave_1
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 567
+        width: 276
+        height: 189
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.391534}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d43f65a9cb3b5d60b17910efaf978e15
+      internalID: 1134674380836611394
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_Professor_SW_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 378
+        width: 276
+        height: 189
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.391534}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25b6ed5f9da55e32952c76352c09a5c1
+      internalID: 1145677084163753451
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_Professor_SW_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 378
+        width: 276
+        height: 189
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.391534}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c40f8ede5c953c48c823c96ed818499
+      internalID: 769190909342172632
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_Professor_SW_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 378
+        width: 276
+        height: 189
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.391534}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad8b0f86177b511a955c556e26b823af
+      internalID: 321589614405563690
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_Professor_SW_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 378
+        width: 276
+        height: 189
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.391534}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64386ae2e78e5f2c8b25288bfcee006d
+      internalID: 598173627727955308
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_Professor_SW_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 378
+        width: 276
+        height: 189
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.391534}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 693b5a002cb953b19e0d41dea63fa668
+      internalID: 655926886384489764
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_Professor_SW_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 378
+        width: 276
+        height: 189
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.391534}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a095318703345bc5ba6d65e74fe131ea
+      internalID: 630665893670765968
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_Professor_SW_Wave_0
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 378
+        width: 276
+        height: 189
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.391534}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 187d9d5a94a153c7bdd4911b7ca6136c
+      internalID: 400013610680296723
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_Professor_SW_Wave_1
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 378
+        width: 276
+        height: 189
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.391534}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bbf669481cb5445a728fa8b665fab80
+      internalID: 797468642402325951
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_Professor_NW_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 189
+        width: 276
+        height: 189
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.391534}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30d5284c2a615ef19c0a2994eed35964
+      internalID: 1099720203245171993
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_Professor_NW_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 189
+        width: 276
+        height: 189
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.391534}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ef0eae9379556e38594d6c5ef7a2e53
+      internalID: 82122707530593542
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_Professor_NW_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 189
+        width: 276
+        height: 189
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.391534}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90db9a4edfc157f79dd1183895706b1e
+      internalID: 913077360036054334
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_Professor_NW_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 189
+        width: 276
+        height: 189
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.391534}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36274ef64cf65ad8a89a774e76cdede6
+      internalID: 158586901381682433
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_Professor_NW_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 189
+        width: 276
+        height: 189
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.391534}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c536941b9fe59ca8da858a9908954c9
+      internalID: 910381441198228909
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_Professor_NW_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 189
+        width: 276
+        height: 189
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.391534}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09e11bcfd9095a7bbcf124940d0f79bb
+      internalID: 377524325067064579
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_Professor_NW_Wave_0
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 189
+        width: 276
+        height: 189
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.391534}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 119f5ce07a155f089ee732e0a69eb227
+      internalID: 636549952225506701
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_Professor_NW_Wave_1
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 189
+        width: 276
+        height: 189
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.391534}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2bfffd12c6e575cb18af9adec86fb81
+      internalID: 798470264289646075
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_Professor_NE_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 276
+        height: 189
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.391534}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d15148931d9b5ed08f4988534ae6a308
+      internalID: 383707984677721474
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_Professor_NE_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 0
+        width: 276
+        height: 189
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.391534}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b163ae446db50e9902aae3adb7412cc
+      internalID: 784730674040468895
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_Professor_NE_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 0
+        width: 276
+        height: 189
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.391534}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a0dab7d91935faf88cd3fceec9f16ac
+      internalID: 1081962960067650990
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_Professor_NE_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 0
+        width: 276
+        height: 189
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.391534}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f16bfc2c8d2e5d3886027b791dabd084
+      internalID: 110447674396611894
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_Professor_NE_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 0
+        width: 276
+        height: 189
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.391534}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a039ab4787bb56999c49dcbf9f96b596
+      internalID: 694965347418850581
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_Professor_NE_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 0
+        width: 276
+        height: 189
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.391534}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50291d46c818583c81153d93dc2a4cf7
+      internalID: 1140378854343107943
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_Professor_NE_Wave_0
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 0
+        width: 276
+        height: 189
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.391534}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7d4259c6a92595abbf2f73ff2095fa0
+      internalID: 710077240860624175
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_Professor_NE_Wave_1
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 0
+        width: 276
+        height: 189
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.391534}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d7ce040a519550bb1b3fba2e1778a89
+      internalID: 1050813101354558874
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 28cb914029c35a85b10fcf21c1637ef5
+    internalID: 0
+    vertices: []
+    indices:
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      VIP_Professor_SE_Idle_0: 423952713749673398
+      VIP_Professor_SE_Idle_1: 485819983237514557
+      VIP_Professor_SE_Walk_0: 754694112515814901
+      VIP_Professor_SE_Walk_1: 1012645953796875730
+      VIP_Professor_SE_Walk_2: 632421829612569923
+      VIP_Professor_SE_Walk_3: 980155693124814123
+      VIP_Professor_SE_Wave_0: 151935098691065223
+      VIP_Professor_SE_Wave_1: 1134674380836611394
+      VIP_Professor_SW_Idle_0: 1145677084163753451
+      VIP_Professor_SW_Idle_1: 769190909342172632
+      VIP_Professor_SW_Walk_0: 321589614405563690
+      VIP_Professor_SW_Walk_1: 598173627727955308
+      VIP_Professor_SW_Walk_2: 655926886384489764
+      VIP_Professor_SW_Walk_3: 630665893670765968
+      VIP_Professor_SW_Wave_0: 400013610680296723
+      VIP_Professor_SW_Wave_1: 797468642402325951
+      VIP_Professor_NW_Idle_0: 1099720203245171993
+      VIP_Professor_NW_Idle_1: 82122707530593542
+      VIP_Professor_NW_Walk_0: 913077360036054334
+      VIP_Professor_NW_Walk_1: 158586901381682433
+      VIP_Professor_NW_Walk_2: 910381441198228909
+      VIP_Professor_NW_Walk_3: 377524325067064579
+      VIP_Professor_NW_Wave_0: 636549952225506701
+      VIP_Professor_NW_Wave_1: 798470264289646075
+      VIP_Professor_NE_Idle_0: 383707984677721474
+      VIP_Professor_NE_Idle_1: 784730674040468895
+      VIP_Professor_NE_Walk_0: 1081962960067650990
+      VIP_Professor_NE_Walk_1: 110447674396611894
+      VIP_Professor_NE_Walk_2: 694965347418850581
+      VIP_Professor_NE_Walk_3: 1140378854343107943
+      VIP_Professor_NE_Wave_0: 710077240860624175
+      VIP_Professor_NE_Wave_1: 1050813101354558874
+  mipmapLimitGroupName:
+  pSDRemoveMatte: 0
+  userData:
+  assetBundleName:
+  assetBundleVariant:

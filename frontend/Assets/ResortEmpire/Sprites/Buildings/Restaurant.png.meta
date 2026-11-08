@@ -1,0 +1,413 @@
+fileFormatVersion: 2
+guid: 6faa38a436345b4d9afa60589ca8b271
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1150667738688882077
+    second: Restaurant_Lv1_R0
+  - first:
+      213: 986815104723268983
+    second: Restaurant_Lv1_R1
+  - first:
+      213: 435541932740187495
+    second: Restaurant_Lv1_R2
+  - first:
+      213: 510547423827449308
+    second: Restaurant_Lv1_R3
+  - first:
+      213: 966657809416172867
+    second: Restaurant_Lv2_R0
+  - first:
+      213: 1150613071494419901
+    second: Restaurant_Lv2_R1
+  - first:
+      213: 922507630597338611
+    second: Restaurant_Lv2_R2
+  - first:
+      213: 931144949470287214
+    second: Restaurant_Lv2_R3
+  - first:
+      213: 995281837269529961
+    second: Restaurant_Lv3_R0
+  - first:
+      213: 754157223069140442
+    second: Restaurant_Lv3_R1
+  - first:
+      213: 839979210564945186
+    second: Restaurant_Lv3_R2
+  - first:
+      213: 616002887000114588
+    second: Restaurant_Lv3_R3
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 4096
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 128
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Restaurant_Lv1_R0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 612
+        width: 447
+        height: 294
+      alignment: 9
+      pivot: {x: 0.442953, y: 0.346939}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fed54490bc20504585bfb07fbbca54c3
+      internalID: 1150667738688882077
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Restaurant_Lv1_R1
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 612
+        width: 447
+        height: 274
+      alignment: 9
+      pivot: {x: 0.442953, y: 0.372263}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e50b1fb8bcc2559cb7b6720835a8407c
+      internalID: 986815104723268983
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Restaurant_Lv1_R2
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 612
+        width: 434
+        height: 274
+      alignment: 9
+      pivot: {x: 0.456221, y: 0.372263}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da51e3666085553d971992599ee0d620
+      internalID: 435541932740187495
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Restaurant_Lv1_R3
+      rect:
+        serializedVersion: 2
+        x: 1382
+        y: 612
+        width: 434
+        height: 277
+      alignment: 9
+      pivot: {x: 0.456221, y: 0.368231}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9a7f54b6b8c571f800de95ab58a6144
+      internalID: 510547423827449308
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Restaurant_Lv2_R0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 306
+        width: 447
+        height: 294
+      alignment: 9
+      pivot: {x: 0.442953, y: 0.346939}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e954965712315dcc8453dd4e9af1a180
+      internalID: 966657809416172867
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Restaurant_Lv2_R1
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 306
+        width: 447
+        height: 277
+      alignment: 9
+      pivot: {x: 0.442953, y: 0.368231}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84752693f9e05eee94ae9704b09dd70d
+      internalID: 1150613071494419901
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Restaurant_Lv2_R2
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 306
+        width: 435
+        height: 277
+      alignment: 9
+      pivot: {x: 0.455172, y: 0.368231}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e610ebd9822d5193b777fde5b13dfaa6
+      internalID: 922507630597338611
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Restaurant_Lv2_R3
+      rect:
+        serializedVersion: 2
+        x: 1382
+        y: 306
+        width: 435
+        height: 277
+      alignment: 9
+      pivot: {x: 0.455172, y: 0.368231}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8c9e4fe2d6a56278c02d1dec2748fd8
+      internalID: 931144949470287214
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Restaurant_Lv3_R0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 0
+        width: 453
+        height: 302
+      alignment: 9
+      pivot: {x: 0.437086, y: 0.337748}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7ce85ca388b5c52a5567f544ae1ef8c
+      internalID: 995281837269529961
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Restaurant_Lv3_R1
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 0
+        width: 453
+        height: 277
+      alignment: 9
+      pivot: {x: 0.437086, y: 0.368231}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30add7bd594e50c4ae32d86a3738aca2
+      internalID: 754157223069140442
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Restaurant_Lv3_R2
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 0
+        width: 435
+        height: 277
+      alignment: 9
+      pivot: {x: 0.455172, y: 0.368231}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e3ff517b6e25ae8a985fffd7ccf5908
+      internalID: 839979210564945186
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Restaurant_Lv3_R3
+      rect:
+        serializedVersion: 2
+        x: 1382
+        y: 0
+        width: 435
+        height: 296
+      alignment: 9
+      pivot: {x: 0.455172, y: 0.344595}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a34e9a9e89b95843b23bb9d7ada9b136
+      internalID: 616002887000114588
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 67baf2791de55dfd86505a031dad713e
+    internalID: 0
+    vertices: []
+    indices:
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Restaurant_Lv1_R0: 1150667738688882077
+      Restaurant_Lv1_R1: 986815104723268983
+      Restaurant_Lv1_R2: 435541932740187495
+      Restaurant_Lv1_R3: 510547423827449308
+      Restaurant_Lv2_R0: 966657809416172867
+      Restaurant_Lv2_R1: 1150613071494419901
+      Restaurant_Lv2_R2: 922507630597338611
+      Restaurant_Lv2_R3: 931144949470287214
+      Restaurant_Lv3_R0: 995281837269529961
+      Restaurant_Lv3_R1: 754157223069140442
+      Restaurant_Lv3_R2: 839979210564945186
+      Restaurant_Lv3_R3: 616002887000114588
+  mipmapLimitGroupName:
+  pSDRemoveMatte: 0
+  userData:
+  assetBundleName:
+  assetBundleVariant:

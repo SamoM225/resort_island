@@ -1,0 +1,387 @@
+fileFormatVersion: 2
+guid: cd2afc2b287d5606a27ce3a29e8b8959
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 504139974970209741
+    second: Bubble_Alert
+  - first:
+      213: 1031329521763730762
+    second: Bubble_Angry
+  - first:
+      213: 540860879314691503
+    second: Bubble_Happy
+  - first:
+      213: 1143280865096103303
+    second: Bubble_Love
+  - first:
+      213: 372617031018276204
+    second: Bubble_NeedDrinks
+  - first:
+      213: 1141253862087542268
+    second: Bubble_NeedFood
+  - first:
+      213: 724896805248128310
+    second: Bubble_NeedOceanview
+  - first:
+      213: 828387231390577975
+    second: Bubble_NeedRelax
+  - first:
+      213: 666908327539930406
+    second: Bubble_NeedRooms
+  - first:
+      213: 227204052740736316
+    second: Bubble_Vip
+  - first:
+      213: 819593313400440090
+    second: Bubble_Waiting
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 4096
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 320
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Bubble_Alert
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 136
+        width: 136
+        height: 136
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.044118}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 215dc2ca212f5d62b196238cd5b4e0ae
+      internalID: 504139974970209741
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bubble_Angry
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 136
+        width: 136
+        height: 136
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.044118}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19234fcd3034539f85a5e7cc3bf10ab8
+      internalID: 1031329521763730762
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bubble_Happy
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 136
+        width: 136
+        height: 136
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.044118}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93328a87c8c25630866cb2ac5ebc4b36
+      internalID: 540860879314691503
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bubble_Love
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 136
+        width: 136
+        height: 136
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.044118}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f89d8bb9daef504eadcc3eb81029e695
+      internalID: 1143280865096103303
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bubble_NeedDrinks
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 136
+        width: 136
+        height: 136
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.044118}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 719dc580c85756f1b86ad5ff07ddc146
+      internalID: 372617031018276204
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bubble_NeedFood
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 136
+        width: 136
+        height: 136
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.044118}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 383f68493f0f59a498b2f78d43ae0a3a
+      internalID: 1141253862087542268
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bubble_NeedOceanview
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 136
+        height: 136
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.044118}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b98b4b5989252bea1c2611df300ba06
+      internalID: 724896805248128310
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bubble_NeedRelax
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 0
+        width: 136
+        height: 136
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.044118}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c33076029d35758bc621162df797cd6
+      internalID: 828387231390577975
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bubble_NeedRooms
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 0
+        width: 136
+        height: 136
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.044118}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78f378e0f5a757f995e078a5e27b38eb
+      internalID: 666908327539930406
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bubble_Vip
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 0
+        width: 136
+        height: 136
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.044118}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbbc6e52801156e5b28d32d85ae699f0
+      internalID: 227204052740736316
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bubble_Waiting
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 0
+        width: 136
+        height: 136
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.044118}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d18a3d0c627e53b7bcc333311ff238a3
+      internalID: 819593313400440090
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 4f07ca55badb5f658444632973061384
+    internalID: 0
+    vertices: []
+    indices:
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Bubble_Alert: 504139974970209741
+      Bubble_Angry: 1031329521763730762
+      Bubble_Happy: 540860879314691503
+      Bubble_Love: 1143280865096103303
+      Bubble_NeedDrinks: 372617031018276204
+      Bubble_NeedFood: 1141253862087542268
+      Bubble_NeedOceanview: 724896805248128310
+      Bubble_NeedRelax: 828387231390577975
+      Bubble_NeedRooms: 666908327539930406
+      Bubble_Vip: 227204052740736316
+      Bubble_Waiting: 819593313400440090
+  mipmapLimitGroupName:
+  pSDRemoveMatte: 0
+  userData:
+  assetBundleName:
+  assetBundleVariant:

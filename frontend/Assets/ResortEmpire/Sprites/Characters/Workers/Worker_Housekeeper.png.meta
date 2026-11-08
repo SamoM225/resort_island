@@ -1,0 +1,933 @@
+fileFormatVersion: 2
+guid: 169945e2a85b522e8d0394e00c422191
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 991194140964140395
+    second: Worker_Housekeeper_SE_Idle_0
+  - first:
+      213: 263477765054498220
+    second: Worker_Housekeeper_SE_Idle_1
+  - first:
+      213: 114516492883043763
+    second: Worker_Housekeeper_SE_Walk_0
+  - first:
+      213: 748061248826074592
+    second: Worker_Housekeeper_SE_Walk_1
+  - first:
+      213: 283019647669216603
+    second: Worker_Housekeeper_SE_Walk_2
+  - first:
+      213: 833767156240774595
+    second: Worker_Housekeeper_SE_Walk_3
+  - first:
+      213: 878957826387666309
+    second: Worker_Housekeeper_SE_Work_0
+  - first:
+      213: 767494229852931488
+    second: Worker_Housekeeper_SE_Work_1
+  - first:
+      213: 886002626938119470
+    second: Worker_Housekeeper_SW_Idle_0
+  - first:
+      213: 652683379305162038
+    second: Worker_Housekeeper_SW_Idle_1
+  - first:
+      213: 574556043505128722
+    second: Worker_Housekeeper_SW_Walk_0
+  - first:
+      213: 714222252849890566
+    second: Worker_Housekeeper_SW_Walk_1
+  - first:
+      213: 263429939552413046
+    second: Worker_Housekeeper_SW_Walk_2
+  - first:
+      213: 159586171953902999
+    second: Worker_Housekeeper_SW_Walk_3
+  - first:
+      213: 852598244686001637
+    second: Worker_Housekeeper_SW_Work_0
+  - first:
+      213: 444800495512163803
+    second: Worker_Housekeeper_SW_Work_1
+  - first:
+      213: 70561256631498232
+    second: Worker_Housekeeper_NW_Idle_0
+  - first:
+      213: 431110613073204549
+    second: Worker_Housekeeper_NW_Idle_1
+  - first:
+      213: 714919484465071611
+    second: Worker_Housekeeper_NW_Walk_0
+  - first:
+      213: 453794754510783861
+    second: Worker_Housekeeper_NW_Walk_1
+  - first:
+      213: 632691913381590486
+    second: Worker_Housekeeper_NW_Walk_2
+  - first:
+      213: 512037244029089072
+    second: Worker_Housekeeper_NW_Walk_3
+  - first:
+      213: 1071315777959777551
+    second: Worker_Housekeeper_NW_Work_0
+  - first:
+      213: 185239635552089501
+    second: Worker_Housekeeper_NW_Work_1
+  - first:
+      213: 731109320411227541
+    second: Worker_Housekeeper_NE_Idle_0
+  - first:
+      213: 369819563219731935
+    second: Worker_Housekeeper_NE_Idle_1
+  - first:
+      213: 848958558164686224
+    second: Worker_Housekeeper_NE_Walk_0
+  - first:
+      213: 580403017108800811
+    second: Worker_Housekeeper_NE_Walk_1
+  - first:
+      213: 93605883281220946
+    second: Worker_Housekeeper_NE_Walk_2
+  - first:
+      213: 748242091830875545
+    second: Worker_Housekeeper_NE_Walk_3
+  - first:
+      213: 432321065059779928
+    second: Worker_Housekeeper_NE_Work_0
+  - first:
+      213: 79862344342181354
+    second: Worker_Housekeeper_NE_Work_1
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 4096
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Worker_Housekeeper_SE_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 576
+        width: 276
+        height: 192
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.385417}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83d39df7e8d45f58aa6639c5f38f754b
+      internalID: 991194140964140395
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Housekeeper_SE_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 576
+        width: 276
+        height: 192
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.385417}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5cc7314343351fd88358aa28fdc5946
+      internalID: 263477765054498220
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Housekeeper_SE_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 576
+        width: 276
+        height: 192
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.385417}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ded85eb9e97c5c3f9943f1137376f207
+      internalID: 114516492883043763
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Housekeeper_SE_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 576
+        width: 276
+        height: 192
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.385417}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ef0eb5d4bd65711814fbdb106263466
+      internalID: 748061248826074592
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Housekeeper_SE_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 576
+        width: 276
+        height: 192
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.385417}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49a939a4598e5e64b1a732cf76a7feb7
+      internalID: 283019647669216603
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Housekeeper_SE_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 576
+        width: 276
+        height: 192
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.385417}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed1586495bcd579183077d76180b3833
+      internalID: 833767156240774595
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Housekeeper_SE_Work_0
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 576
+        width: 276
+        height: 192
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.385417}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21772e761bc7560c97c3fa28064c84a9
+      internalID: 878957826387666309
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Housekeeper_SE_Work_1
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 576
+        width: 276
+        height: 192
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.385417}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07f1689794bf5c52a1530aa7e4dd7d5c
+      internalID: 767494229852931488
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Housekeeper_SW_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 276
+        height: 192
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.385417}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4c3a8f7a8c75bc3bd0625c406b0fcac
+      internalID: 886002626938119470
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Housekeeper_SW_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 384
+        width: 276
+        height: 192
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.385417}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd47efc454ca5f9b9b6f529812b84602
+      internalID: 652683379305162038
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Housekeeper_SW_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 384
+        width: 276
+        height: 192
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.385417}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 983e85ed52725ef79673bf3d57032d7e
+      internalID: 574556043505128722
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Housekeeper_SW_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 384
+        width: 276
+        height: 192
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.385417}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddafb7cd427c5c289db23de7dfe5bdc6
+      internalID: 714222252849890566
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Housekeeper_SW_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 384
+        width: 276
+        height: 192
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.385417}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de741f88cc3956798d6046bf8298bbb0
+      internalID: 263429939552413046
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Housekeeper_SW_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 384
+        width: 276
+        height: 192
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.385417}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0913fcf69ff65b938373df225382e325
+      internalID: 159586171953902999
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Housekeeper_SW_Work_0
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 384
+        width: 276
+        height: 192
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.385417}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98765f3b3b4f51ee96031cf2a31de5aa
+      internalID: 852598244686001637
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Housekeeper_SW_Work_1
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 384
+        width: 276
+        height: 192
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.385417}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e9bba4fb46d5c2fa17ef1a79d468258
+      internalID: 444800495512163803
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Housekeeper_NW_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 276
+        height: 192
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.385417}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f66330fe3ee25625900b4c712d46aa07
+      internalID: 70561256631498232
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Housekeeper_NW_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 192
+        width: 276
+        height: 192
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.385417}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5402ab186c0455b1a04d08e53a50c3e8
+      internalID: 431110613073204549
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Housekeeper_NW_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 192
+        width: 276
+        height: 192
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.385417}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9f591605fc35a2f8dbfd6d2f10b8337
+      internalID: 714919484465071611
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Housekeeper_NW_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 192
+        width: 276
+        height: 192
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.385417}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24a26909b0cd52a9af984ecf26093263
+      internalID: 453794754510783861
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Housekeeper_NW_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 192
+        width: 276
+        height: 192
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.385417}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9253bc7b55595c0599baaef6cf5a13b9
+      internalID: 632691913381590486
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Housekeeper_NW_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 192
+        width: 276
+        height: 192
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.385417}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e785ed5d9aa5b4a98df2705e1feff85
+      internalID: 512037244029089072
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Housekeeper_NW_Work_0
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 192
+        width: 276
+        height: 192
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.385417}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3c19e34ddc4540ca5116f71859c5b21
+      internalID: 1071315777959777551
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Housekeeper_NW_Work_1
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 192
+        width: 276
+        height: 192
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.385417}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44096e8c7a7559ceb8fade0e10012bb5
+      internalID: 185239635552089501
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Housekeeper_NE_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 276
+        height: 192
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.385417}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dee89230bb4352528c0a508949160a16
+      internalID: 731109320411227541
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Housekeeper_NE_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 0
+        width: 276
+        height: 192
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.385417}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82fad65c6ba252219368fd7d3b3043a5
+      internalID: 369819563219731935
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Housekeeper_NE_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 0
+        width: 276
+        height: 192
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.385417}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e79740db561b54e9877932f262acc054
+      internalID: 848958558164686224
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Housekeeper_NE_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 0
+        width: 276
+        height: 192
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.385417}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d9fab1afa145f29bf3b83724c0cd63b
+      internalID: 580403017108800811
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Housekeeper_NE_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 0
+        width: 276
+        height: 192
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.385417}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 847cf0a536685969ab35531c0a81ce4c
+      internalID: 93605883281220946
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Housekeeper_NE_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 0
+        width: 276
+        height: 192
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.385417}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bb0fe9017a95b53865ed133aa696dab
+      internalID: 748242091830875545
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Housekeeper_NE_Work_0
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 0
+        width: 276
+        height: 192
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.385417}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f816f0414a05fd9a0468df421139329
+      internalID: 432321065059779928
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Housekeeper_NE_Work_1
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 0
+        width: 276
+        height: 192
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.385417}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1d69066fe62560eb4f48db77e81c65a
+      internalID: 79862344342181354
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: c699f53825965dbfa88057ea96d30bd1
+    internalID: 0
+    vertices: []
+    indices:
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Worker_Housekeeper_SE_Idle_0: 991194140964140395
+      Worker_Housekeeper_SE_Idle_1: 263477765054498220
+      Worker_Housekeeper_SE_Walk_0: 114516492883043763
+      Worker_Housekeeper_SE_Walk_1: 748061248826074592
+      Worker_Housekeeper_SE_Walk_2: 283019647669216603
+      Worker_Housekeeper_SE_Walk_3: 833767156240774595
+      Worker_Housekeeper_SE_Work_0: 878957826387666309
+      Worker_Housekeeper_SE_Work_1: 767494229852931488
+      Worker_Housekeeper_SW_Idle_0: 886002626938119470
+      Worker_Housekeeper_SW_Idle_1: 652683379305162038
+      Worker_Housekeeper_SW_Walk_0: 574556043505128722
+      Worker_Housekeeper_SW_Walk_1: 714222252849890566
+      Worker_Housekeeper_SW_Walk_2: 263429939552413046
+      Worker_Housekeeper_SW_Walk_3: 159586171953902999
+      Worker_Housekeeper_SW_Work_0: 852598244686001637
+      Worker_Housekeeper_SW_Work_1: 444800495512163803
+      Worker_Housekeeper_NW_Idle_0: 70561256631498232
+      Worker_Housekeeper_NW_Idle_1: 431110613073204549
+      Worker_Housekeeper_NW_Walk_0: 714919484465071611
+      Worker_Housekeeper_NW_Walk_1: 453794754510783861
+      Worker_Housekeeper_NW_Walk_2: 632691913381590486
+      Worker_Housekeeper_NW_Walk_3: 512037244029089072
+      Worker_Housekeeper_NW_Work_0: 1071315777959777551
+      Worker_Housekeeper_NW_Work_1: 185239635552089501
+      Worker_Housekeeper_NE_Idle_0: 731109320411227541
+      Worker_Housekeeper_NE_Idle_1: 369819563219731935
+      Worker_Housekeeper_NE_Walk_0: 848958558164686224
+      Worker_Housekeeper_NE_Walk_1: 580403017108800811
+      Worker_Housekeeper_NE_Walk_2: 93605883281220946
+      Worker_Housekeeper_NE_Walk_3: 748242091830875545
+      Worker_Housekeeper_NE_Work_0: 432321065059779928
+      Worker_Housekeeper_NE_Work_1: 79862344342181354
+  mipmapLimitGroupName:
+  pSDRemoveMatte: 0
+  userData:
+  assetBundleName:
+  assetBundleVariant:

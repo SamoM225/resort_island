@@ -1727,6 +1727,7 @@ GameObject:
   - component: {fileID: 553181432}
   - component: {fileID: 553181436}
   - component: {fileID: 553181437}
+  - component: {fileID: 553181440}
   m_Layer: 0
   m_Name: ResortManager
   m_TagString: Untagged
@@ -1781,6 +1782,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 781a73c1bb0b7894691bde068c673304, type: 2}
   - {fileID: 11400000, guid: b9631220baefef541a3330821abb0648, type: 2}
   - {fileID: 11400000, guid: c34b09a974bc0e043b70a6491b267613, type: 2}
+  - {fileID: 11400000, guid: c3e5071929bd4f60a1b2c3d4e5f60712, type: 2}
+  - {fileID: 11400000, guid: d4f6182a3acd4071b2c3d4e5f6071823, type: 2}
 --- !u!4 &553181435
 Transform:
   m_ObjectHideFlags: 0
@@ -1816,18 +1819,67 @@ MonoBehaviour:
   coastlineIrregularity: 0.07
   noiseScale: 1.8
   beachWidth: 0.055
-  hillThreshold: 0.54
-  mountainThreshold: 0.7
-  rockThreshold: 0.84
-  mountainDensity: 0.85
   sandBuildable: 1
   grassBuildable: 1
-  hillsBuildable: 1
-  heightStep: 0.2
+  shallowRange: 2
+  deepWaterSprites:
+  - {fileID: 352822386992768488, guid: 3684350f5f98504b999176c67cd4d630, type: 3}
+  - {fileID: 290791732649702788, guid: 3684350f5f98504b999176c67cd4d630, type: 3}
+  - {fileID: 174369707924768078, guid: 3684350f5f98504b999176c67cd4d630, type: 3}
+  - {fileID: 866594066635134349, guid: 3684350f5f98504b999176c67cd4d630, type: 3}
+  shallowWaterSprites:
+  - {fileID: 966308086427084064, guid: 3684350f5f98504b999176c67cd4d630, type: 3}
+  - {fileID: 115799645052446038, guid: 3684350f5f98504b999176c67cd4d630, type: 3}
+  - {fileID: 886469103412430191, guid: 3684350f5f98504b999176c67cd4d630, type: 3}
+  - {fileID: 1097855396017673687, guid: 3684350f5f98504b999176c67cd4d630, type: 3}
+  sandSprites:
+  - {fileID: 980455269747295615, guid: 3684350f5f98504b999176c67cd4d630, type: 3}
+  - {fileID: 1079766976414119320, guid: 3684350f5f98504b999176c67cd4d630, type: 3}
+  - {fileID: 631655932156290452, guid: 3684350f5f98504b999176c67cd4d630, type: 3}
+  - {fileID: 366280332327466341, guid: 3684350f5f98504b999176c67cd4d630, type: 3}
+  grassSprites:
+  - {fileID: 180704870621758865, guid: 3684350f5f98504b999176c67cd4d630, type: 3}
+  - {fileID: 1002851860092511565, guid: 3684350f5f98504b999176c67cd4d630, type: 3}
+  - {fileID: 853418546831078762, guid: 3684350f5f98504b999176c67cd4d630, type: 3}
+  - {fileID: 786022137103451407, guid: 3684350f5f98504b999176c67cd4d630, type: 3}
   drawWater: 1
+  waterMargin: 24
   generateOnStart: 1
   showGrid: 0
   highlightBuildable: 0
+--- !u!114 &553181440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 553181431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 410539ef4ec53b245c0cd0c0163a6212, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: ResortIsland::ResortIsland.Characters.CharacterDebug
+  resort: {fileID: 553181434}
+  island: {fileID: 553181437}
+  guestPrefabs:
+  - {fileID: 54141917371313809, guid: 13a85f25ea6e1afb248d917e41b880e8, type: 3}
+  - {fileID: 15030702767787598, guid: 6467c7facd050609722a983d13e1a11b, type: 3}
+  - {fileID: 44705443634291984, guid: 456b67875a161028797c86092f52b874, type: 3}
+  - {fileID: 13284045464615692, guid: 368bef3b54d7d9de580fb393466646ef, type: 3}
+  - {fileID: 58393276065491732, guid: 8ea502f8e88147140f5c4484fa9e8945, type: 3}
+  - {fileID: 27673137565229853, guid: 06967ed632740743262240a7ff8d2de1, type: 3}
+  vipPrefabs:
+  - {fileID: 69947026814923889, guid: 8de6e9676c5af41d53a7ecc1380650ea, type: 3}
+  - {fileID: 62269343851243785, guid: ef20846fc4ef58dd25f7d8c6761deaf5, type: 3}
+  - {fileID: 70630088499126657, guid: a4c1630b5d216448fb888503ec3d54e7, type: 3}
+  - {fileID: 61198080696492358, guid: 18bbba690191d533133a99f9ebb50ad0, type: 3}
+  - {fileID: 28935236644636209, guid: c9a1491e9023f764cdac2202ba95ad66, type: 3}
+  - {fileID: 19731982543270847, guid: 78defdd63e4b791111822b5f59e3549c, type: 3}
+  - {fileID: 38676357312116471, guid: 35851d93fcef6f58af7dcb768a9eaf01, type: 3}
+  - {fileID: 16087562497658974, guid: b3e16432a1f05fe45253b2f2cae61ded, type: 3}
+  guestCount: 6
+  vipCount: 1
+  spawnOnStart: 1
 --- !u!114 &553181436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12621,7 +12673,7 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 1080, y: 1920}
+  m_ReferenceResolution: {x: 1688, y: 780}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
@@ -13247,7 +13299,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d94d9a88e6c4b67a3d42ab31f4f1c70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  backgroundArt: {fileID: 2800000, guid: 4e2b7c1d9a5f46b8a0c3d7e2f6a1b9c4, type: 3}
+  plankSprite: {fileID: 21300000, guid: 56bb19c0d3e55bd3a4cc8d6ed11a7097, type: 3}
+  coinIcon: {fileID: 21300000, guid: 60700ad206635dac86902888c93f3d6a, type: 3}
+  gemIcon: {fileID: 21300000, guid: 1af66345753956c08704accfe3ecc271, type: 3}
+  energyIcon: {fileID: 21300000, guid: b0f2381097915f96910b2c9d02bbb7d5, type: 3}
+  resortValueIcon: {fileID: 21300000, guid: 8ff1ffc746535227918ae3aae8ea01da, type: 3}
+  reputationIcon: {fileID: 21300000, guid: c95e551c76b75e99a5daa0703b375367, type: 3}
 --- !u!1 &2019461900
 GameObject:
   m_ObjectHideFlags: 0
@@ -13294,85 +13351,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   config: {fileID: 11400000, guid: 5f9f6e1c4d5b4af6b7c8d9e0f1a2b3c4, type: 2}
   autosaveDelay: 1
---- !u!1 &1792828539
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1792828542}
-  - component: {fileID: 1792828541}
-  - component: {fileID: 1792828540}
-  m_Layer: 0
-  m_Name: EventSystem
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1792828540
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1792828539}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01614664b831546d2ae94a42149d80ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.UI.InputSystemUIInputModule
-  m_SendPointerHoverToParent: 1
-  m_MoveRepeatDelay: 0.5
-  m_MoveRepeatRate: 0.1
-  m_XRTrackingOrigin: {fileID: 0}
-  m_ActionsAsset: {fileID: -944628639613478452, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_PointAction: {fileID: -1654692200621890270, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_MoveAction: {fileID: -8784545083839296357, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_SubmitAction: {fileID: 392368643174621059, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_CancelAction: {fileID: 7727032971491509709, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_LeftClickAction: {fileID: 3001919216989983466, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_MiddleClickAction: {fileID: -2185481485913320682, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_RightClickAction: {fileID: -4090225696740746782, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_ScrollWheelAction: {fileID: 6240969308177333660, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_TrackedDevicePositionAction: {fileID: 6564999863303420839, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_TrackedDeviceOrientationAction: {fileID: 7970375526676320489, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_DeselectOnBackgroundClick: 1
-  m_PointerBehavior: 0
-  m_CursorLockBehavior: 0
-  m_ScrollDeltaPerTick: 6
---- !u!114 &1792828541
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1792828539}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.EventSystems.EventSystem
-  m_FirstSelected: {fileID: 0}
-  m_sendNavigationEvents: 1
-  m_DragThreshold: 10
---- !u!4 &1792828542
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1792828539}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1800015170
 GameObject:
   m_ObjectHideFlags: 0
@@ -13789,4 +13767,3 @@ SceneRoots:
   - {fileID: 553181435}
   - {fileID: 1970383990}
   - {fileID: 1439530510}
-  - {fileID: 1792828542}

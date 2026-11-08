@@ -1,0 +1,517 @@
+fileFormatVersion: 2
+guid: f61a87e0862e503ab65f4c5b2536f5df
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1148021660626359746
+    second: Path_Stone_00
+  - first:
+      213: 970212529934202260
+    second: Path_Stone_01
+  - first:
+      213: 1013893279828071729
+    second: Path_Stone_02
+  - first:
+      213: 898492212622530004
+    second: Path_Stone_03
+  - first:
+      213: 451611908899198379
+    second: Path_Stone_04
+  - first:
+      213: 130468952563701038
+    second: Path_Stone_05
+  - first:
+      213: 904026845373945269
+    second: Path_Stone_06
+  - first:
+      213: 113177186294896060
+    second: Path_Stone_07
+  - first:
+      213: 963403074440598861
+    second: Path_Stone_08
+  - first:
+      213: 679796108086764860
+    second: Path_Stone_09
+  - first:
+      213: 407860282697532774
+    second: Path_Stone_10
+  - first:
+      213: 111738021997884680
+    second: Path_Stone_11
+  - first:
+      213: 485281059027297546
+    second: Path_Stone_12
+  - first:
+      213: 171675084280186309
+    second: Path_Stone_13
+  - first:
+      213: 513775988234302926
+    second: Path_Stone_14
+  - first:
+      213: 59731277140100385
+    second: Path_Stone_15
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 4096
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 128
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Path_Stone_00
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 80
+        width: 140
+        height: 76
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.500000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03c1fbf5f3c655f6a3a1a95db5b7cc68
+      internalID: 1148021660626359746
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Path_Stone_01
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 80
+        width: 140
+        height: 76
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.500000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78d14a3dcb34576599a8c683b0da4c41
+      internalID: 970212529934202260
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Path_Stone_02
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 80
+        width: 140
+        height: 76
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.500000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29dfb4661fa6513684f74ba826c189e2
+      internalID: 1013893279828071729
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Path_Stone_03
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 80
+        width: 140
+        height: 76
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.500000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5243573f19a5ea5a09a642a2d1d3825
+      internalID: 898492212622530004
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Path_Stone_04
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 80
+        width: 140
+        height: 76
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.500000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16cc4d35c0a55adcbe9859077ed47962
+      internalID: 451611908899198379
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Path_Stone_05
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 80
+        width: 140
+        height: 76
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.500000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cf52d6880125f9f9b80bcfa5adb97eb
+      internalID: 130468952563701038
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Path_Stone_06
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 80
+        width: 140
+        height: 76
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.500000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dbee0d0aaa959e8af0837c2eac6fba4
+      internalID: 904026845373945269
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Path_Stone_07
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 80
+        width: 140
+        height: 76
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.500000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa90736cce0a5d088105c74a169ac6fb
+      internalID: 113177186294896060
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Path_Stone_08
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 0
+        width: 140
+        height: 76
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.500000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04855f61d89351eab0aff48883c12cd0
+      internalID: 963403074440598861
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Path_Stone_09
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 0
+        width: 140
+        height: 76
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.500000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79554f13e5715e65a803115f2b10d713
+      internalID: 679796108086764860
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Path_Stone_10
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 0
+        width: 140
+        height: 76
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.500000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e0fa80291df5e28890aa23136f7aeff
+      internalID: 407860282697532774
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Path_Stone_11
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 0
+        width: 140
+        height: 76
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.500000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a64ea2b90255fc582e01619629f90b3
+      internalID: 111738021997884680
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Path_Stone_12
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 0
+        width: 140
+        height: 76
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.500000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 004e8e4c7c4a5815b9c768ffbec95cfc
+      internalID: 485281059027297546
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Path_Stone_13
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 0
+        width: 140
+        height: 76
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.500000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e5ba071c9ae5f86be59a95e1b54ac2d
+      internalID: 171675084280186309
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Path_Stone_14
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 0
+        width: 140
+        height: 76
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.500000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28e489c5ede2510ab991b86a9b720820
+      internalID: 513775988234302926
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Path_Stone_15
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 0
+        width: 140
+        height: 76
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.500000}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 693be4b4cab953e4819a447320c34dcc
+      internalID: 59731277140100385
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: ad4deb1b56a05be4a8cc579974df208d
+    internalID: 0
+    vertices: []
+    indices:
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Path_Stone_00: 1148021660626359746
+      Path_Stone_01: 970212529934202260
+      Path_Stone_02: 1013893279828071729
+      Path_Stone_03: 898492212622530004
+      Path_Stone_04: 451611908899198379
+      Path_Stone_05: 130468952563701038
+      Path_Stone_06: 904026845373945269
+      Path_Stone_07: 113177186294896060
+      Path_Stone_08: 963403074440598861
+      Path_Stone_09: 679796108086764860
+      Path_Stone_10: 407860282697532774
+      Path_Stone_11: 111738021997884680
+      Path_Stone_12: 485281059027297546
+      Path_Stone_13: 171675084280186309
+      Path_Stone_14: 513775988234302926
+      Path_Stone_15: 59731277140100385
+  mipmapLimitGroupName:
+  pSDRemoveMatte: 0
+  userData:
+  assetBundleName:
+  assetBundleVariant:

@@ -1,0 +1,933 @@
+fileFormatVersion: 2
+guid: 61cead4d1a6f583090263093ff0a9272
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 978386117877257578
+    second: VIP_SneakerStar_SE_Idle_0
+  - first:
+      213: 1025533014957319650
+    second: VIP_SneakerStar_SE_Idle_1
+  - first:
+      213: 1060335659053278592
+    second: VIP_SneakerStar_SE_Walk_0
+  - first:
+      213: 659724966124000664
+    second: VIP_SneakerStar_SE_Walk_1
+  - first:
+      213: 1054166787347936749
+    second: VIP_SneakerStar_SE_Walk_2
+  - first:
+      213: 743568452759627060
+    second: VIP_SneakerStar_SE_Walk_3
+  - first:
+      213: 592714479311205717
+    second: VIP_SneakerStar_SE_Wave_0
+  - first:
+      213: 1085082444500850116
+    second: VIP_SneakerStar_SE_Wave_1
+  - first:
+      213: 549330807482381729
+    second: VIP_SneakerStar_SW_Idle_0
+  - first:
+      213: 263305152351008080
+    second: VIP_SneakerStar_SW_Idle_1
+  - first:
+      213: 548361717342471429
+    second: VIP_SneakerStar_SW_Walk_0
+  - first:
+      213: 265903703874041293
+    second: VIP_SneakerStar_SW_Walk_1
+  - first:
+      213: 224645238679057758
+    second: VIP_SneakerStar_SW_Walk_2
+  - first:
+      213: 870654959337088433
+    second: VIP_SneakerStar_SW_Walk_3
+  - first:
+      213: 364138188033504666
+    second: VIP_SneakerStar_SW_Wave_0
+  - first:
+      213: 1134890258364523808
+    second: VIP_SneakerStar_SW_Wave_1
+  - first:
+      213: 35349810863011232
+    second: VIP_SneakerStar_NW_Idle_0
+  - first:
+      213: 1137938642495759782
+    second: VIP_SneakerStar_NW_Idle_1
+  - first:
+      213: 421392000156493157
+    second: VIP_SneakerStar_NW_Walk_0
+  - first:
+      213: 592251436771136913
+    second: VIP_SneakerStar_NW_Walk_1
+  - first:
+      213: 442031867828884881
+    second: VIP_SneakerStar_NW_Walk_2
+  - first:
+      213: 778867307996767553
+    second: VIP_SneakerStar_NW_Walk_3
+  - first:
+      213: 843975472468792661
+    second: VIP_SneakerStar_NW_Wave_0
+  - first:
+      213: 965198697104438642
+    second: VIP_SneakerStar_NW_Wave_1
+  - first:
+      213: 940791549927867732
+    second: VIP_SneakerStar_NE_Idle_0
+  - first:
+      213: 782593057167746449
+    second: VIP_SneakerStar_NE_Idle_1
+  - first:
+      213: 995210759252829672
+    second: VIP_SneakerStar_NE_Walk_0
+  - first:
+      213: 660055535902582068
+    second: VIP_SneakerStar_NE_Walk_1
+  - first:
+      213: 240872790709552434
+    second: VIP_SneakerStar_NE_Walk_2
+  - first:
+      213: 166235631861245356
+    second: VIP_SneakerStar_NE_Walk_3
+  - first:
+      213: 432577062985205138
+    second: VIP_SneakerStar_NE_Wave_0
+  - first:
+      213: 217831280184448323
+    second: VIP_SneakerStar_NE_Wave_1
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 4096
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: VIP_SneakerStar_SE_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 558
+        width: 276
+        height: 186
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.397849}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc347aab1520593dbbd4eb541e11a69d
+      internalID: 978386117877257578
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_SneakerStar_SE_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 558
+        width: 276
+        height: 186
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.397849}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1276689916085559a8c472936f9bc02c
+      internalID: 1025533014957319650
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_SneakerStar_SE_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 558
+        width: 276
+        height: 186
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.397849}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5e9fc280f785bda8cda5f4b89f08c64
+      internalID: 1060335659053278592
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_SneakerStar_SE_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 558
+        width: 276
+        height: 186
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.397849}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27fc3a0077035ed28d20a7647477101a
+      internalID: 659724966124000664
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_SneakerStar_SE_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 558
+        width: 276
+        height: 186
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.397849}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d100ca954a585adabbe4a34a034017da
+      internalID: 1054166787347936749
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_SneakerStar_SE_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 558
+        width: 276
+        height: 186
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.397849}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 377a69467fa75bc2820370aa0be95caa
+      internalID: 743568452759627060
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_SneakerStar_SE_Wave_0
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 558
+        width: 276
+        height: 186
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.397849}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e909aeb7e22a5fa5bf6a7541771cd552
+      internalID: 592714479311205717
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_SneakerStar_SE_Wave_1
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 558
+        width: 276
+        height: 186
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.397849}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ada7e0c6ba245bc6abada48cb7264439
+      internalID: 1085082444500850116
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_SneakerStar_SW_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 372
+        width: 276
+        height: 186
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.397849}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f161c37ccb4f5c78b109dc5498f8ad03
+      internalID: 549330807482381729
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_SneakerStar_SW_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 372
+        width: 276
+        height: 186
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.397849}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35a5121bfee05f838df867e719e2e818
+      internalID: 263305152351008080
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_SneakerStar_SW_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 372
+        width: 276
+        height: 186
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.397849}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ef7151798305b288fa08b6d1ba6de45
+      internalID: 548361717342471429
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_SneakerStar_SW_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 372
+        width: 276
+        height: 186
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.397849}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0d6e14a4cc75511ba220d6a37f68871
+      internalID: 265903703874041293
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_SneakerStar_SW_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 372
+        width: 276
+        height: 186
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.397849}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee5a728826cd59289e279971b394a325
+      internalID: 224645238679057758
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_SneakerStar_SW_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 372
+        width: 276
+        height: 186
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.397849}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9a1cb6c83685867b23e716a041b4e77
+      internalID: 870654959337088433
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_SneakerStar_SW_Wave_0
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 372
+        width: 276
+        height: 186
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.397849}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a985af7d8e95266a8ebb8d88f0e26ac
+      internalID: 364138188033504666
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_SneakerStar_SW_Wave_1
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 372
+        width: 276
+        height: 186
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.397849}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b24efa352ca536d8d4fea7235634192
+      internalID: 1134890258364523808
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_SneakerStar_NW_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 186
+        width: 276
+        height: 186
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.397849}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b05ac2af772c57c1aa937632af69eccb
+      internalID: 35349810863011232
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_SneakerStar_NW_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 186
+        width: 276
+        height: 186
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.397849}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 087e45f09970552682e89ff86797fd60
+      internalID: 1137938642495759782
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_SneakerStar_NW_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 186
+        width: 276
+        height: 186
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.397849}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 364d1278c64257c69160ca3ba2a94106
+      internalID: 421392000156493157
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_SneakerStar_NW_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 186
+        width: 276
+        height: 186
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.397849}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68ea66bf14565e6f858e701c0a2170be
+      internalID: 592251436771136913
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_SneakerStar_NW_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 186
+        width: 276
+        height: 186
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.397849}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4a98a245fc45a60962ea8228b8ee14b
+      internalID: 442031867828884881
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_SneakerStar_NW_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 186
+        width: 276
+        height: 186
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.397849}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38dd2c13b3c859b9ad5d70361427fefb
+      internalID: 778867307996767553
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_SneakerStar_NW_Wave_0
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 186
+        width: 276
+        height: 186
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.397849}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03513ec26ef15b11bc625d34a6fdb180
+      internalID: 843975472468792661
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_SneakerStar_NW_Wave_1
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 186
+        width: 276
+        height: 186
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.397849}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c52fa8192b8e5225b22ae83bafaed829
+      internalID: 965198697104438642
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_SneakerStar_NE_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 276
+        height: 186
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.397849}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8493b7086aaf5ef9b1045bee7ded83ae
+      internalID: 940791549927867732
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_SneakerStar_NE_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 0
+        width: 276
+        height: 186
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.397849}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d34dd8f4986d5ddea7321a1271d84c00
+      internalID: 782593057167746449
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_SneakerStar_NE_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 0
+        width: 276
+        height: 186
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.397849}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82296dd05618506dbbea2b12db72892d
+      internalID: 995210759252829672
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_SneakerStar_NE_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 0
+        width: 276
+        height: 186
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.397849}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ba0eee32298546a91bbb76a0066aa52
+      internalID: 660055535902582068
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_SneakerStar_NE_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 0
+        width: 276
+        height: 186
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.397849}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 769c47aff1845a72aa620e5f5d231536
+      internalID: 240872790709552434
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_SneakerStar_NE_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 0
+        width: 276
+        height: 186
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.397849}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fc42df333905c179aacd98d4f3b4b57
+      internalID: 166235631861245356
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_SneakerStar_NE_Wave_0
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 0
+        width: 276
+        height: 186
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.397849}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96a2e57fc5845c58ace96283f4ff1ffa
+      internalID: 432577062985205138
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VIP_SneakerStar_NE_Wave_1
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 0
+        width: 276
+        height: 186
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.397849}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b15c23415b8055ed930e847b1a08b338
+      internalID: 217831280184448323
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: f07a36fcef1d5851a100c8baf9e45356
+    internalID: 0
+    vertices: []
+    indices:
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      VIP_SneakerStar_SE_Idle_0: 978386117877257578
+      VIP_SneakerStar_SE_Idle_1: 1025533014957319650
+      VIP_SneakerStar_SE_Walk_0: 1060335659053278592
+      VIP_SneakerStar_SE_Walk_1: 659724966124000664
+      VIP_SneakerStar_SE_Walk_2: 1054166787347936749
+      VIP_SneakerStar_SE_Walk_3: 743568452759627060
+      VIP_SneakerStar_SE_Wave_0: 592714479311205717
+      VIP_SneakerStar_SE_Wave_1: 1085082444500850116
+      VIP_SneakerStar_SW_Idle_0: 549330807482381729
+      VIP_SneakerStar_SW_Idle_1: 263305152351008080
+      VIP_SneakerStar_SW_Walk_0: 548361717342471429
+      VIP_SneakerStar_SW_Walk_1: 265903703874041293
+      VIP_SneakerStar_SW_Walk_2: 224645238679057758
+      VIP_SneakerStar_SW_Walk_3: 870654959337088433
+      VIP_SneakerStar_SW_Wave_0: 364138188033504666
+      VIP_SneakerStar_SW_Wave_1: 1134890258364523808
+      VIP_SneakerStar_NW_Idle_0: 35349810863011232
+      VIP_SneakerStar_NW_Idle_1: 1137938642495759782
+      VIP_SneakerStar_NW_Walk_0: 421392000156493157
+      VIP_SneakerStar_NW_Walk_1: 592251436771136913
+      VIP_SneakerStar_NW_Walk_2: 442031867828884881
+      VIP_SneakerStar_NW_Walk_3: 778867307996767553
+      VIP_SneakerStar_NW_Wave_0: 843975472468792661
+      VIP_SneakerStar_NW_Wave_1: 965198697104438642
+      VIP_SneakerStar_NE_Idle_0: 940791549927867732
+      VIP_SneakerStar_NE_Idle_1: 782593057167746449
+      VIP_SneakerStar_NE_Walk_0: 995210759252829672
+      VIP_SneakerStar_NE_Walk_1: 660055535902582068
+      VIP_SneakerStar_NE_Walk_2: 240872790709552434
+      VIP_SneakerStar_NE_Walk_3: 166235631861245356
+      VIP_SneakerStar_NE_Wave_0: 432577062985205138
+      VIP_SneakerStar_NE_Wave_1: 217831280184448323
+  mipmapLimitGroupName:
+  pSDRemoveMatte: 0
+  userData:
+  assetBundleName:
+  assetBundleVariant:

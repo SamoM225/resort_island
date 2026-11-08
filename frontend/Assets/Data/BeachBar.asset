@@ -15,4 +15,6 @@ MonoBehaviour:
   id: beachbar
   displayName: "Pl\xE1\u017Eov\xFD bar"
   servedNeed: {fileID: 11400000, guid: 1dd2397fa4beb18439ce47103671cee5, type: 2}
+  footprint: {x: 2, y: 2}
+  preferShore: 1
   prefab: {fileID: 1897786383352521886, guid: 80046c0dd5069854b99e29b1394b0149, type: 3}

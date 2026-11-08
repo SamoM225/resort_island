@@ -1,0 +1,933 @@
+fileFormatVersion: 2
+guid: ad44044f5f0453158c4def05da1d43fb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 912755386536813890
+    second: Worker_Chef_SE_Idle_0
+  - first:
+      213: 398514205739808093
+    second: Worker_Chef_SE_Idle_1
+  - first:
+      213: 757019846897628502
+    second: Worker_Chef_SE_Walk_0
+  - first:
+      213: 867207574869120442
+    second: Worker_Chef_SE_Walk_1
+  - first:
+      213: 1048594947196286226
+    second: Worker_Chef_SE_Walk_2
+  - first:
+      213: 389008159926130075
+    second: Worker_Chef_SE_Walk_3
+  - first:
+      213: 595955775065126216
+    second: Worker_Chef_SE_Work_0
+  - first:
+      213: 1115455798916580784
+    second: Worker_Chef_SE_Work_1
+  - first:
+      213: 1069972574723364269
+    second: Worker_Chef_SW_Idle_0
+  - first:
+      213: 926443141985736107
+    second: Worker_Chef_SW_Idle_1
+  - first:
+      213: 1014857453560952160
+    second: Worker_Chef_SW_Walk_0
+  - first:
+      213: 351795801659573674
+    second: Worker_Chef_SW_Walk_1
+  - first:
+      213: 194556949728724329
+    second: Worker_Chef_SW_Walk_2
+  - first:
+      213: 764236808614610183
+    second: Worker_Chef_SW_Walk_3
+  - first:
+      213: 932719911745115433
+    second: Worker_Chef_SW_Work_0
+  - first:
+      213: 316891859769832917
+    second: Worker_Chef_SW_Work_1
+  - first:
+      213: 797104210172142999
+    second: Worker_Chef_NW_Idle_0
+  - first:
+      213: 264222067221136769
+    second: Worker_Chef_NW_Idle_1
+  - first:
+      213: 657494733999482354
+    second: Worker_Chef_NW_Walk_0
+  - first:
+      213: 678065660892173753
+    second: Worker_Chef_NW_Walk_1
+  - first:
+      213: 627733875436652008
+    second: Worker_Chef_NW_Walk_2
+  - first:
+      213: 834989741170500878
+    second: Worker_Chef_NW_Walk_3
+  - first:
+      213: 805274532070065594
+    second: Worker_Chef_NW_Work_0
+  - first:
+      213: 678722569732646189
+    second: Worker_Chef_NW_Work_1
+  - first:
+      213: 316284185140974962
+    second: Worker_Chef_NE_Idle_0
+  - first:
+      213: 942499606088087025
+    second: Worker_Chef_NE_Idle_1
+  - first:
+      213: 429762378928477694
+    second: Worker_Chef_NE_Walk_0
+  - first:
+      213: 394309168368043515
+    second: Worker_Chef_NE_Walk_1
+  - first:
+      213: 288342576187995408
+    second: Worker_Chef_NE_Walk_2
+  - first:
+      213: 417471828479747528
+    second: Worker_Chef_NE_Walk_3
+  - first:
+      213: 772320130065151440
+    second: Worker_Chef_NE_Work_0
+  - first:
+      213: 612665746407724322
+    second: Worker_Chef_NE_Work_1
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 4096
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Worker_Chef_SE_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 606
+        width: 276
+        height: 202
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.366337}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd048ab8b1cd5376b1578b15cdf81040
+      internalID: 912755386536813890
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Chef_SE_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 606
+        width: 276
+        height: 202
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.366337}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74b999e64cf855bd88491eb7b2c35909
+      internalID: 398514205739808093
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Chef_SE_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 606
+        width: 276
+        height: 202
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.366337}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b7ec454cf455d8e8b6df5cbe5b15e71
+      internalID: 757019846897628502
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Chef_SE_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 606
+        width: 276
+        height: 202
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.366337}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c02cc4cb76a15eaaaa48d20110a6c359
+      internalID: 867207574869120442
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Chef_SE_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 606
+        width: 276
+        height: 202
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.366337}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e5fb9aea29d563a95e627af4f7e357b
+      internalID: 1048594947196286226
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Chef_SE_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 606
+        width: 276
+        height: 202
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.366337}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3a06e2cf3de5fe5b8fafbb5660b988b
+      internalID: 389008159926130075
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Chef_SE_Work_0
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 606
+        width: 276
+        height: 202
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.366337}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65ef5ec354265802b22b53f526170ecf
+      internalID: 595955775065126216
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Chef_SE_Work_1
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 606
+        width: 276
+        height: 202
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.366337}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a01f1475b9455048eddb69bfc0d3b2d
+      internalID: 1115455798916580784
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Chef_SW_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 404
+        width: 276
+        height: 202
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.366337}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 241f0470603759a1a2d9275782882088
+      internalID: 1069972574723364269
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Chef_SW_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 404
+        width: 276
+        height: 202
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.366337}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 156c8bbecf96512dab7f3d91ef7030ec
+      internalID: 926443141985736107
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Chef_SW_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 404
+        width: 276
+        height: 202
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.366337}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6af0c16c318d545cb6a44754aab453e9
+      internalID: 1014857453560952160
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Chef_SW_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 404
+        width: 276
+        height: 202
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.366337}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43931417d5c75c018752304b9dd15832
+      internalID: 351795801659573674
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Chef_SW_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 404
+        width: 276
+        height: 202
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.366337}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6ffc200e9b8524fa7df29c0b7cff572
+      internalID: 194556949728724329
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Chef_SW_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 404
+        width: 276
+        height: 202
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.366337}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af29d1c8c38554d5a1eaf1a901bfc091
+      internalID: 764236808614610183
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Chef_SW_Work_0
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 404
+        width: 276
+        height: 202
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.366337}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5e505a0d1435d1586226183d58c5dc3
+      internalID: 932719911745115433
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Chef_SW_Work_1
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 404
+        width: 276
+        height: 202
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.366337}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 808a316ea3e852f4bbca678fad316dd0
+      internalID: 316891859769832917
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Chef_NW_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 202
+        width: 276
+        height: 202
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.366337}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c561fd2365d05a829765358096a88452
+      internalID: 797104210172142999
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Chef_NW_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 202
+        width: 276
+        height: 202
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.366337}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e635dc4b518c54a9bb697cb2f9291222
+      internalID: 264222067221136769
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Chef_NW_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 202
+        width: 276
+        height: 202
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.366337}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed3cf7377a5d517b9edd9998da687f0b
+      internalID: 657494733999482354
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Chef_NW_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 202
+        width: 276
+        height: 202
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.366337}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2dc14b22f975c37bef4950fdd4ca743
+      internalID: 678065660892173753
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Chef_NW_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 202
+        width: 276
+        height: 202
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.366337}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a68c4a2da7015f17989247841f9ab589
+      internalID: 627733875436652008
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Chef_NW_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 202
+        width: 276
+        height: 202
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.366337}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3f7da933f9352f6895c9b68f270b6ce
+      internalID: 834989741170500878
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Chef_NW_Work_0
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 202
+        width: 276
+        height: 202
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.366337}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89e71f41f4735e55b487cff88fa01e7e
+      internalID: 805274532070065594
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Chef_NW_Work_1
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 202
+        width: 276
+        height: 202
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.366337}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 017b970677d85acc94fc7939efb8d008
+      internalID: 678722569732646189
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Chef_NE_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 276
+        height: 202
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.366337}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e5ad2f4a9965bdb81d09f0cef17340e
+      internalID: 316284185140974962
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Chef_NE_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 0
+        width: 276
+        height: 202
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.366337}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca8f2e401d725663824f113295f06dea
+      internalID: 942499606088087025
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Chef_NE_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 0
+        width: 276
+        height: 202
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.366337}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94a484fe2c595ed0aeded7f1000a81f5
+      internalID: 429762378928477694
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Chef_NE_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 0
+        width: 276
+        height: 202
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.366337}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7509900bc785eaf9c5ee346bfca684a
+      internalID: 394309168368043515
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Chef_NE_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 0
+        width: 276
+        height: 202
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.366337}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ede39cbb5e65d518c68031c711b884d
+      internalID: 288342576187995408
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Chef_NE_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 0
+        width: 276
+        height: 202
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.366337}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a3cf250537254fc929bce04dde392a9
+      internalID: 417471828479747528
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Chef_NE_Work_0
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 0
+        width: 276
+        height: 202
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.366337}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ba0196afebe521f8cff1e23c71d0a3f
+      internalID: 772320130065151440
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worker_Chef_NE_Work_1
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 0
+        width: 276
+        height: 202
+      alignment: 9
+      pivot: {x: 0.500000, y: 0.366337}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 601cca9474d1539d9c9e2f131b30be24
+      internalID: 612665746407724322
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: ec81fb3727e352e99539dd3180167f88
+    internalID: 0
+    vertices: []
+    indices:
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Worker_Chef_SE_Idle_0: 912755386536813890
+      Worker_Chef_SE_Idle_1: 398514205739808093
+      Worker_Chef_SE_Walk_0: 757019846897628502
+      Worker_Chef_SE_Walk_1: 867207574869120442
+      Worker_Chef_SE_Walk_2: 1048594947196286226
+      Worker_Chef_SE_Walk_3: 389008159926130075
+      Worker_Chef_SE_Work_0: 595955775065126216
+      Worker_Chef_SE_Work_1: 1115455798916580784
+      Worker_Chef_SW_Idle_0: 1069972574723364269
+      Worker_Chef_SW_Idle_1: 926443141985736107
+      Worker_Chef_SW_Walk_0: 1014857453560952160
+      Worker_Chef_SW_Walk_1: 351795801659573674
+      Worker_Chef_SW_Walk_2: 194556949728724329
+      Worker_Chef_SW_Walk_3: 764236808614610183
+      Worker_Chef_SW_Work_0: 932719911745115433
+      Worker_Chef_SW_Work_1: 316891859769832917
+      Worker_Chef_NW_Idle_0: 797104210172142999
+      Worker_Chef_NW_Idle_1: 264222067221136769
+      Worker_Chef_NW_Walk_0: 657494733999482354
+      Worker_Chef_NW_Walk_1: 678065660892173753
+      Worker_Chef_NW_Walk_2: 627733875436652008
+      Worker_Chef_NW_Walk_3: 834989741170500878
+      Worker_Chef_NW_Work_0: 805274532070065594
+      Worker_Chef_NW_Work_1: 678722569732646189
+      Worker_Chef_NE_Idle_0: 316284185140974962
+      Worker_Chef_NE_Idle_1: 942499606088087025
+      Worker_Chef_NE_Walk_0: 429762378928477694
+      Worker_Chef_NE_Walk_1: 394309168368043515
+      Worker_Chef_NE_Walk_2: 288342576187995408
+      Worker_Chef_NE_Walk_3: 417471828479747528
+      Worker_Chef_NE_Work_0: 772320130065151440
+      Worker_Chef_NE_Work_1: 612665746407724322
+  mipmapLimitGroupName:
+  pSDRemoveMatte: 0
+  userData:
+  assetBundleName:
+  assetBundleVariant:

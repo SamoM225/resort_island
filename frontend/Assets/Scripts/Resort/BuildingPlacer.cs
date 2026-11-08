@@ -40,26 +40,29 @@ namespace ResortIsland.Resort
 
         private void UpdateDragging(Vector3Int cell)
         {
-            bool valid = cell == dragged.Cell || resort.IsFree(cell);
+            // the cell under the cursor is the middle of the building footprint
+            Vector2Int size = dragged.Footprint;
+            Vector3Int origin = resort.OriginFor(cell, size);
+            bool valid = resort.IsAreaFree(origin, size, dragged);
 
-            dragged.transform.position = resort.CellToWorld(cell);
+            dragged.transform.position = resort.FootprintToWorld(origin, size);
             ResortSorting.Apply(dragged.gameObject);
             SetAlpha(dragged.gameObject, valid ? 0.7f : 0.25f);
 
             if (Input.GetMouseButtonDown(1))
-                EndDrag(false, cell);
+                EndDrag(false, origin);
             else if (!Input.GetMouseButton(0))
-                EndDrag(valid, cell);
+                EndDrag(valid, origin);
         }
 
-        private void EndDrag(bool commit, Vector3Int cell)
+        private void EndDrag(bool commit, Vector3Int origin)
         {
             SetAlpha(dragged.gameObject, 1f);
 
-            if (commit && cell != dragged.Cell)
-                resort.MoveBuilding(dragged, cell);
+            if (commit && origin != dragged.Cell)
+                resort.MoveBuilding(dragged, origin);
             else
-                dragged.SetCell(dragged.Cell, resort.CellToWorld(dragged.Cell));   
+                resort.RefreshPosition(dragged);
 
             dragged = null;
         }

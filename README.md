@@ -3,20 +3,31 @@
 Monorepo pre hru Resort Island.
 
 - `frontend/` – Unity klient (URP 2D)
+- `backend/` – Laravel API (herné configy, hráči)
+
 ## Procedural island
 
-`frontend/Assets/Scripts/Resort/IslandGenerator.cs` generates the island when the `Island` scene
-starts. It is already attached to the `ResortManager` object in `frontend/Assets/Scenes/Island.unity`.
-Change its serialized map, seed, coastline, noise, and terrain threshold fields in the Inspector,
-or use **Generate island** from the component context menu to regenerate it.
+`frontend/Assets/Scripts/Resort/IslandGenerator.cs` generates an isometric island on the scene `Grid`
+and draws it with the terrain sprites from `frontend/Assets/ResortEmpire/Sprites/Terrain/Terrain.png`
+(deep water, shallow water, sand, grass). It runs in edit mode too, so the island is visible in the
+Scene view. It is attached to the `ResortManager` object in `frontend/Assets/Scenes/Island.unity`.
+Change its map size, seed, coastline and noise fields in the Inspector, or use **Generate island**
+from the component context menu to regenerate it.
 
 `TileData` is the authoritative per-cell data source. Use `IslandGenerator.TryGetTile(x, y, out tile)`
 for 0-based map coordinates, `IsBuildableArea` for multi-tile validation, and
-`TrySetOccupiedArea` to reserve a rectangular area. Terrain-specific lists (`GrassLayer`,
-`MountainsLayer`, etc.) provide logical layer views. Existing centered resort `Vector3Int`
-coordinates are accepted by the `TryGetTile(Vector3Int, ...)` overload.
+`TrySetOccupiedArea` to reserve a rectangular area. Terrain-specific lists (`WaterLayer`, `SandLayer`,
+`GrassLayer`) provide logical layer views. Existing centered resort `Vector3Int`
+coordinates are accepted by the `TryGetTile(Vector3Int, ...)` overload. `GroundHeightAt(cell)` gives the
+surface height above water (sand 0.0735, grass 0.147); `ResortManager.CellToWorld` adds it to buildings.
 
-- `backend/` – Laravel API (herné configy, hráči)
+Buildings use `BuildingConfig.Footprint` (Reception, Restaurant, Pool, Bungalows 3×3; Beach bar 2×2) and
+occupy every cell of it. On a new game `ResortManager` asks `IslandGenerator.TryFindSite` for a spot:
+inland nearest to the island centre, or on the beach for buildings with `Prefer Shore`. Starting
+buildings come from `ResortStartConfig` (`Auto Place` falls back to the configured cell). A save whose
+buildings do not fit the generated island is discarded and a new game starts.
+
+Sprite sheets (buildings, decor, paths, transport) are in `frontend/Assets/ResortEmpire/`, see its `README.md`.
 
 ## Branching (GitFlow)
 

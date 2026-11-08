@@ -15,14 +15,17 @@ MonoBehaviour:
   startingBuildings:
   - building: {fileID: 11400000, guid: 781a73c1bb0b7894691bde068c673304, type: 2}
     cell: {x: -2, y: 2, z: 0}
+    autoPlace: 1
   - building: {fileID: 11400000, guid: b9631220baefef541a3330821abb0648, type: 2}
     cell: {x: 0, y: 0, z: 0}
+    autoPlace: 1
   - building: {fileID: 11400000, guid: c34b09a974bc0e043b70a6491b267613, type: 2}
     cell: {x: 2, y: -2, z: 0}
+    autoPlace: 1
   activeNeeds:
   - {fileID: 11400000, guid: 1a29d538c6b47314fa8245eba5b7b640, type: 2}
   - {fileID: 11400000, guid: 6a290c64803903c4a9935a8c3d8de3b8, type: 2}
   - {fileID: 11400000, guid: 1dd2397fa4beb18439ce47103671cee5, type: 2}
   startingWorkers: 2
-  workerPrefab: {fileID: 4333669440486028526, guid: 98ce31407375f5244b8466406c95990e, type: 3}
+  workerPrefab: {fileID: 57323380237942254, guid: c03e0f78aaf1f3781222caff5b4a6f57, type: 3}
   workerStartCell: {x: -2, y: -2, z: 0}
