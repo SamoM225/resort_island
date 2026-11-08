@@ -225,7 +225,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 7
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -351,9 +351,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d95a2e3b2fb4b9ca1eb3fd4aab7ec41, type: 3}
   m_Name:
   m_EditorClassIdentifier: Assembly-CSharp::ResortIsland.Resort.IslandGenerator
-  mapWidth: 64
-  mapHeight: 64
-  tileSize: 0.25
+  grid: {fileID: 1397287497}
+  mapWidth: 32
+  mapHeight: 32
   seed: 1337
   islandRadius: 0.4
   coastlineIrregularity: 0.07
@@ -366,6 +366,8 @@ MonoBehaviour:
   sandBuildable: 1
   grassBuildable: 1
   hillsBuildable: 1
+  heightStep: 0.2
+  drawWater: 1
   generateOnStart: 1
   showGrid: 0
   highlightBuildable: 0
