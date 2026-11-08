@@ -2,20 +2,24 @@
 
 namespace Database\Seeders;
 
+use App\Models\User;
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
 {
+    use WithoutModelEvents;
+
     /**
-     * Seed the application's database. Runs on every deploy, so every seeder here must be idempotent.
-     * Model events stay on: publishing a config has to clear the cached configs response.
+     * Seed the application's database.
      */
     public function run(): void
     {
-        $this->call(GameConfigSeeder::class);
+        // User::factory(10)->create();
 
-        if (app()->environment(['local', 'testing'])) {
-            $this->call([UserSeeder::class, AdminSeeder::class]);
-        }
+        User::factory()->create([
+            'name' => 'Test User',
+            'email' => 'test@example.com',
+        ]);
     }
 }

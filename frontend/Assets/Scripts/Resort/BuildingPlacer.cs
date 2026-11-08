@@ -19,13 +19,7 @@ namespace ResortIsland.Resort
         {
             if (resort == null || !resort.IsReady) return;
 
-            if (!TryGetMouseCell(out var cell))
-            {
-                if (dragged != null && !Input.GetMouseButton(0))
-                    EndDrag(false, dragged.Cell);
-                return;
-            }
-
+            var cell = MouseCell();
             if (dragged != null) UpdateDragging(cell);
             else TryStartDrag(cell);
         }
@@ -64,17 +58,11 @@ namespace ResortIsland.Resort
             dragged = null;
         }
 
-        private bool TryGetMouseCell(out Vector3Int cell)
+        private Vector3Int MouseCell()
         {
-            cell = default;
-
-            Vector3 mouse = Input.mousePosition;
-            if (!new Rect(0f, 0f, Screen.width, Screen.height).Contains(mouse)) return false;
-
-            Vector3 world = cam.ScreenToWorldPoint(mouse);
+            Vector3 world = cam.ScreenToWorldPoint(Input.mousePosition);
             world.z = 0f;
-            cell = resort.WorldToCell(world);
-            return true;
+            return resort.WorldToCell(world);
         }
 
         private static void SetAlpha(GameObject go, float alpha)
