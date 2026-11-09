@@ -15,6 +15,7 @@ MonoBehaviour:
   id: reception
   displayName: Recepcia
   servedNeed: {fileID: 11400000, guid: 1a29d538c6b47314fa8245eba5b7b640, type: 2}
+  maxCount: 3
   footprint: {x: 3, y: 3}
   preferShore: 0
   prefab: {fileID: 2447218708707773911, guid: 3191e96b966964e47876702d69561131, type: 3}
