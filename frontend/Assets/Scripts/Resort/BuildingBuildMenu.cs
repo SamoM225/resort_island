@@ -68,7 +68,7 @@ namespace ResortIsland.Resort
             var cancel = NewButton("Cancel", panel);
             cancel.onClick.AddListener(Cancel);
 
-            status = NewText("Выберите здание", transform);
+            status = NewText("Choose a building", transform);
             var statusRect = (RectTransform)status.transform;
             statusRect.anchorMin = new Vector2(0f, 0f);
             statusRect.anchorMax = new Vector2(0f, 0f);
@@ -81,15 +81,15 @@ namespace ResortIsland.Resort
         private void Select(BuildingConfig config)
         {
             if (placer.SelectBuilding(config))
-                status.text = "Кликните по карте: " + config.DisplayName;
+                status.text = "Click on the map: " + config.DisplayName;
             else
-                status.text = "Здание недоступно";
+                status.text = "This building is unavailable";
         }
 
         private void Cancel()
         {
             placer.CancelPlacement();
-            status.text = "Выберите здание";
+            status.text = "Choose a bulding";
         }
 
         private void Refresh()
