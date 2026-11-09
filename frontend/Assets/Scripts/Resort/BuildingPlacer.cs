@@ -1,4 +1,6 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
+using ResortIsland.Config;
 
 namespace ResortIsland.Resort
 {
@@ -9,6 +11,8 @@ namespace ResortIsland.Resort
         [SerializeField] private ResortManager resort;
 
         private PlacedBuilding dragged;
+        private BuildingConfig selectedConfig;
+        private BuildingBuildMenu menu;
 
         private void Awake()
         {
@@ -19,6 +23,12 @@ namespace ResortIsland.Resort
         {
             if (resort == null || !resort.IsReady) return;
 
+            if (menu == null)
+            {
+                menu = BuildingBuildMenu.Create(resort, this);
+                if (menu == null) return;
+            }
+
             if (!TryGetMouseCell(out var cell))
             {
                 if (dragged != null && !Input.GetMouseButton(0))
@@ -26,17 +36,47 @@ namespace ResortIsland.Resort
                 return;
             }
 
+            if (selectedConfig != null)
+            {
+                if (Input.GetKeyDown(KeyCode.Escape) || Input.GetMouseButtonDown(1))
+                {
+                    CancelPlacement();
+                    return;
+                }
+
+                if (Input.GetMouseButtonDown(0) && !IsPointerOverUi())
+                {
+                    Vector3Int origin = resort.OriginFor(cell, selectedConfig.Footprint);
+                    if (resort.TryPlaceBuilding(selectedConfig, origin))
+                        CancelPlacement();
+                }
+                return;
+            }
+
             if (dragged != null) UpdateDragging(cell);
             else TryStartDrag(cell);
         }
 
+        public bool SelectBuilding(BuildingConfig config)
+        {
+            if (resort == null || !resort.CanBuild(config)) return false;
+            selectedConfig = config;
+            return true;
+        }
+
+        public void CancelPlacement() => selectedConfig = null;
+
         private void TryStartDrag(Vector3Int cell)
         {
             if (!Input.GetMouseButtonDown(0)) return;
+            if (IsPointerOverUi()) return;
 
             if (resort.TryGetBuilding(cell, out var building))
                 dragged = building;
         }
+
+        private static bool IsPointerOverUi()
+            => EventSystem.current != null && EventSystem.current.IsPointerOverGameObject();
 
         private void UpdateDragging(Vector3Int cell)
         {

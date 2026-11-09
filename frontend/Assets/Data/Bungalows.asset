@@ -16,7 +16,7 @@ MonoBehaviour:
   displayName: Bungalovy
   servedNeed: {fileID: 11400000, guid: f6083a4c5cef4293d4e5f60718293a45, type: 2}
   unlockId: bungalows
-  maxCount: 1
+  maxCount: 3
   footprint: {x: 3, y: 3}
   preferShore: 0
   prefab: {fileID: 5830224953786231021, guid: b2d4f6081a3c4e5f9a0b1c2d3e4f5a61, type: 3}
