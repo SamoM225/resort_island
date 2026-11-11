@@ -81,7 +81,7 @@ Testy: `php artisan test --compact`, formátovanie: `vendor/bin/pint`.
 
 - Schéma sa mení **len migráciami** (`php artisan make:migration ...`). Nasadenú migráciu už neupravujeme, pridáme novú.
 - `php artisan migrate --seed` je bezpečné spúšťať opakovane — deploy ho spúšťa vždy. Testovací používateľ `test@example.com` a admin `admin@example.com` (heslo `password`) sa seedujú len lokálne.
-- Tabuľky: `users` (hráči), `admins` (účty do admin panelu), `personal_access_tokens` (API tokeny hráčov), `game_configs` (verzované herné configy).
+- Tabuľky: `users` (hráči), `admins` (účty do admin panelu), `personal_access_tokens` (API tokeny hráčov), `player_saves` (záloha savu hráča), `game_configs` (verzované herné configy).
 
 ### Hráči a API tokeny
 
@@ -96,6 +96,19 @@ Hra sa pri prvom spustení zaregistruje anonymne a dostane token (Laravel Sanctu
 | `GET /api/v1/me` | token | aktuálny hráč |
 
 Zabanovaný hráč dostane na každý endpoint s tokenom aj na login `403 { "message": "This account is banned.", "reason": "..." }`. Ban a unban robí admin v paneli (*Players*); tokeny ostávajú platné, takže po unbane hra funguje ďalej.
+
+### Ukladanie hry (save)
+
+Hra je offline-first: všetko (ekonomika aj mapa — budovy a unlocky) je v jednom lokálnom `save.json` (Unity `SaveStore` → `SaveSystem`: atomický zápis, `.bak`, verzia a migrácie). `PlayerEconomy` a `ResortManager` zapisujú do toho istého objektu; starý `resort_save.json` sa pri prvom spustení raz importuje a premenuje na `.imported`.
+
+Po uložení sa save zálohuje na BE (najviac raz za 30 s, pri prechode appky na pozadie hneď):
+
+| Endpoint | Auth | Popis |
+| --- | --- | --- |
+| `PUT /api/v1/me/save` | token | `{ save_version, saved_at, save: {…} }`; prvá záloha `201`, ďalšie `200`. Save starší než uložený (iné zariadenie medzitým hralo) → `409` + uložený save, nič sa neprepíše. Max 256 KB, 20/min |
+| `GET /api/v1/me/save` | token | `{ data: { save_version, saved_at, uploaded_at, save } }`, `404` keď hráč zálohu nemá |
+
+Hra, ktorá začína od nuly (nová inštalácia, nečitateľný save), sa najprv opýta BE na zálohu; ak existuje, nahradí ňou novú hru a scéna sa načíta znova. Kým BE neodpovie (aj offline, aj po reštarte), nová hra sa na BE **nenahráva**, aby neprepísala progres, ktorý sa dá obnoviť. Admin vidí zálohu v detaile hráča (*Players* → *Save backup*). Unity menu *Tools → Resort Island → Save → Delete Save* zmaže aj token, takže ďalší Play je nový hráč bez obnovy.
 
 ### Analytika
 

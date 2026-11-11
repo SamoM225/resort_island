@@ -3,6 +3,7 @@ using System.IO;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 using ResortIsland.Config;
+using ResortIsland.Save;
 
 namespace ResortIsland.Resort
 {
@@ -27,7 +28,10 @@ namespace ResortIsland.Resort
         public BuildingConfig[] Catalog => catalog;
         public IReadOnlyList<NeedConfig> ActiveNeeds => activeNeeds;
 
-        private string SavePath => Path.Combine(Application.persistentDataPath, "resort_save.json");
+        // The map used to have its own file; it now lives in the shared save (SaveStore). A legacy file is imported once.
+        private string LegacySavePath => Path.Combine(Application.persistentDataPath, "resort_save.json");
+
+        private SaveStore store;
 
         private void Start()
         {
@@ -37,7 +41,10 @@ namespace ResortIsland.Resort
                 return;
             }
 
-            Debug.Log("Súbor uloženia: " + SavePath);
+            store = SaveStore.Shared;
+            if (!store.IsLoaded)
+                Debug.LogError("ResortManager: uloženie nie je načítané (načíta ho PlayerEconomy), mapa sa nebude ukladať.");
+
             if (!LoadGame()) StartNewGame();
 
             Unlocks.OnUnlocked += OnUnlocked;
@@ -216,12 +223,15 @@ namespace ResortIsland.Resort
 
         public void ResetGame()
         {
-            if (File.Exists(SavePath)) File.Delete(SavePath);
+            if (File.Exists(LegacySavePath)) File.Delete(LegacySavePath);
+            if (store != null && store.IsLoaded) store.Data.resort = new ResortSave();
             StartNewGame();
         }
 
         public void SaveGame()
         {
+            if (store == null || !store.IsLoaded) return;
+
             var save = new ResortSave();
             foreach (var b in buildings)
             {
@@ -234,19 +244,22 @@ namespace ResortIsland.Resort
             }
             save.unlocks.AddRange(Unlocks.All);
 
-            Directory.CreateDirectory(Application.persistentDataPath);
-            File.WriteAllText(SavePath, JsonUtility.ToJson(save, true));
+            store.Data.resort = save;
+            try { store.Save(); }
+            catch (System.Exception e) { Debug.LogError("Uloženie mapy zlyhalo: " + e.Message); }
         }
 
         private bool LoadGame()
         {
-            if (!File.Exists(SavePath)) return false;
+            ResortSave save = store != null && store.IsLoaded ? store.Data.resort : null;
+            bool fromLegacyFile = false;
+            if ((save == null || save.buildings.Count == 0) && TryReadLegacySave(out var legacy))
+            {
+                save = legacy;
+                fromLegacyFile = true;
+            }
 
-            ResortSave save;
-            try { save = JsonUtility.FromJson<ResortSave>(File.ReadAllText(SavePath)); }
-            catch { return false; }
-
-            if (save == null || save.buildings.Count == 0) return false;
+            if (save == null || save.buildings == null || save.buildings.Count == 0) return false;
 
             ClearWorld();
             Unlocks.Load(save.unlocks);
@@ -273,7 +286,37 @@ namespace ResortIsland.Resort
 
             SetupNeedsAndWorkers();
             Debug.Log($"Načítaná hra: {buildings.Count} budov");
+
+            if (fromLegacyFile && store != null && store.IsLoaded)
+            {
+                SaveGame();
+                RetireLegacySave();
+                Debug.Log("Mapa prenesená zo starého resort_save.json do spoločného uloženia.");
+            }
             return true;
+        }
+
+        private bool TryReadLegacySave(out ResortSave legacy)
+        {
+            legacy = null;
+            if (!File.Exists(LegacySavePath)) return false;
+
+            try { legacy = JsonUtility.FromJson<ResortSave>(File.ReadAllText(LegacySavePath)); }
+            catch { return false; }
+
+            return legacy != null;
+        }
+
+        // Kept as .imported instead of deleted, in case the import has to be checked.
+        private void RetireLegacySave()
+        {
+            string imported = LegacySavePath + ".imported";
+            try
+            {
+                if (File.Exists(imported)) File.Delete(imported);
+                File.Move(LegacySavePath, imported);
+            }
+            catch (IOException e) { Debug.LogWarning("Starý resort_save.json sa nepodarilo premenovať: " + e.Message); }
         }
 
         private BuildingConfig FindConfig(string id)

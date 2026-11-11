@@ -7,6 +7,7 @@ use App\Http\Controllers\Api\V1\Auth\LinkEmailController;
 use App\Http\Controllers\Api\V1\Auth\LoginController;
 use App\Http\Controllers\Api\V1\Auth\LogoutController;
 use App\Http\Controllers\Api\V1\GameConfigController;
+use App\Http\Controllers\Api\V1\PlayerSaveController;
 use Illuminate\Support\Facades\Route;
 
 Route::prefix('v1')->name('api.v1.')->group(function () {
@@ -25,6 +26,11 @@ Route::prefix('v1')->name('api.v1.')->group(function () {
         Route::post('auth/logout', LogoutController::class)->name('auth.logout');
         Route::get('me', CurrentPlayerController::class)->name('me');
         Route::post('me/email', LinkEmailController::class)->name('me.email');
+
+        Route::middleware('throttle:player-save')->group(function () {
+            Route::get('me/save', [PlayerSaveController::class, 'show'])->name('me.save.show');
+            Route::put('me/save', [PlayerSaveController::class, 'update'])->name('me.save.update');
+        });
 
         Route::post('analytics/events', AnalyticsEventController::class)
             ->middleware('throttle:analytics')
