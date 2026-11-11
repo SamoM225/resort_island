@@ -1,11 +1,13 @@
 import argparse
 import heapq
 import json
+import math
 import sys
 from dataclasses import dataclass
 from pathlib import Path
 
 DEFAULT_CONFIGS = Path(__file__).resolve().parents[2] / "backend" / "database" / "game-configs"
+DEFAULT_RATING_CASES = Path(__file__).resolve().parent / "fixtures" / "wave_rating_cases.json"
 RATINGS = ("1*", "2*", "3*", "4*", "5*", "Perfect")
 FIVE_STARS = RATINGS.index("5*")
 WR7_FROM_WAVE = 3
@@ -100,6 +102,23 @@ class WaveRules:
         reached = [index for index, threshold in enumerate(self.rating_thresholds) if satisfaction + EPSILON >= threshold]
         return max(reached, default=0)
 
+    def satisfaction(self, waits_by_need, weights):
+        weighted = 0.0
+        total_weight = 0.0
+        for need, need_waits in waits_by_need.items():
+            weight = weights[need]
+            for wait in need_waits:
+                weighted += self.contribution(wait) * weight
+                total_weight += weight
+        if total_weight == 0:
+            return 1.0
+        return max(self.wave_floor, weighted / total_weight)
+
+
+def wave_coins(units, rating, economy):
+    """Coins = units of the wave x coins_per_unit x coins_rating_mult[rating], rounded half up (build document 4.8)."""
+    return math.floor(units * economy["coins_per_unit"] * economy["coins_rating_mult"][rating] + 0.5)
+
 
 class Resort:
     def __init__(self, configs):
@@ -138,22 +157,19 @@ class WaveSimulator:
         self.resort = resort
         self.rules = rules
 
-    def satisfaction(self, wave, capacity, empty_building):
+    def unit_waits(self, wave, capacity, empty_building):
         demand = self.resort.demand_in(wave)
-        weighted = 0.0
-        total_weight = 0.0
+        result = {}
         for building in self.resort.buildings_in(wave):
             unit_arrivals = arrivals(demand[building.need], 0.0, self.rules.wave_timer)
             if wave == self.rules.rush_wave and building.id == empty_building:
                 unit_arrivals += arrivals(self.rules.rush_units, self.rules.rush_time, self.rules.rush_duration)
             duration = self.rules.service_duration(staffed=building.id != empty_building)
-            weight = self.resort.weights[building.need]
-            for wait in waits(unit_arrivals, capacity, duration):
-                weighted += self.rules.contribution(wait) * weight
-                total_weight += weight
-        if total_weight == 0:
-            return 1.0
-        return max(self.rules.wave_floor, weighted / total_weight)
+            result[building.need] = waits(unit_arrivals, capacity, duration)
+        return result
+
+    def satisfaction(self, wave, capacity, empty_building):
+        return self.rules.satisfaction(self.unit_waits(wave, capacity, empty_building), self.resort.weights)
 
     def best_static_placement(self, wave, capacity):
         satisfaction, empty_building = max(
@@ -176,6 +192,58 @@ def evaluate(configs):
         )
         for wave in resort.waves
     ]
+
+
+SYNTHETIC_RATING_CASES = [
+    ("nobody waited", {"rooms": [0.0] * 8, "drinks": [4.5] * 8}),
+    ("everyone waited too long", {"rooms": [45.0] * 10, "food": [120.0] * 6}),
+    ("waits around the grace and the floor", {"drinks": [10.0, 10.5, 20.0, 29.9, 30.0, 31.0], "ocean_view": [0.0, 25.0]}),
+    ("no guests", {}),
+]
+
+
+def rating_case(name, waits_by_need, rules, weights, economy, wave=None):
+    satisfaction = rules.satisfaction(waits_by_need, weights)
+    rating = rules.rating(satisfaction)
+    units = sum(len(need_waits) for need_waits in waits_by_need.values())
+    return {
+        "name": name,
+        "wave": wave,
+        "waits": waits_by_need,
+        "units": units,
+        "satisfaction": satisfaction,
+        "rating": rating + 1,
+        "coins": wave_coins(units, rating, economy),
+    }
+
+
+def rating_cases(configs):
+    """
+    Wait times of every wave (no intervention and fully upgraded) plus edge cases, with the satisfaction,
+    rating (1-5 stars, 6 = Perfect) and coins this model gives. The game (C#) and the backend (PHP)
+    compute the same cases and must get the same results.
+    """
+    resort = Resort(configs)
+    rules = WaveRules(configs["wave_system"])
+    simulator = WaveSimulator(resort, rules)
+    economy = configs["economy"]
+    cases = []
+    for wave in resort.waves:
+        for scenario, capacity in (("no intervention, Lv1", resort.capacities[0]), ("fully upgraded", resort.capacities[-1])):
+            best = simulator.best_static_placement(wave, capacity)
+            waits_by_need = simulator.unit_waits(wave, capacity, best.empty_building)
+            cases.append(rating_case(f"wave {wave}, {scenario}, {best.empty_building} empty", waits_by_need, rules, resort.weights, economy, wave))
+    cases += [rating_case(name, waits_by_need, rules, resort.weights, economy) for name, waits_by_need in SYNTHETIC_RATING_CASES]
+    wave_system = configs["wave_system"]
+    return {
+        "generated_by": "python3 tools/wave_sim/wave_sim.py --export-rating-cases (do not edit by hand)",
+        "rules": {
+            "wave_system": {key: wave_system[key] for key in ("patience_grace_s", "patience_floor_after_s", "unit_floor", "wave_floor", "rating_thresholds")},
+            "economy": {key: economy[key] for key in ("coins_per_unit", "coins_rating_mult")},
+            "needs": [{"id": need, "satisfaction_weight": weight} for need, weight in resort.weights.items()],
+        },
+        "cases": cases,
+    }
 
 
 def describe(result):
@@ -207,7 +275,20 @@ def main(argv=None):
         default=str(DEFAULT_CONFIGS),
         help="directory with {key}.json game configs (default: backend/database/game-configs) or a saved GET /api/v1/configs response",
     )
+    parser.add_argument(
+        "--export-rating-cases",
+        nargs="?",
+        const=str(DEFAULT_RATING_CASES),
+        metavar="PATH",
+        help=f"write wave rating test cases for the game and the backend (default: {DEFAULT_RATING_CASES.relative_to(DEFAULT_CONFIGS.parents[2])})",
+    )
     args = parser.parse_args(argv)
+    if args.export_rating_cases:
+        path = Path(args.export_rating_cases)
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(json.dumps(rating_cases(load_configs(args.configs)), indent=2) + "\n", encoding="utf-8")
+        print(f"Wave rating cases written to {path}")
+        return 0
     reports = evaluate(load_configs(args.configs))
     print(format_report(reports, args.configs))
     return 1 if any(report.wr7_violated or report.wr8_violated for report in reports) else 0

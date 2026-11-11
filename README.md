@@ -81,7 +81,7 @@ Testy: `php artisan test --compact`, formátovanie: `vendor/bin/pint`.
 
 - Schéma sa mení **len migráciami** (`php artisan make:migration ...`). Nasadenú migráciu už neupravujeme, pridáme novú.
 - `php artisan migrate --seed` je bezpečné spúšťať opakovane — deploy ho spúšťa vždy. Testovací používateľ `test@example.com` a admin `admin@example.com` (heslo `password`) sa seedujú len lokálne.
-- Tabuľky: `users` (hráči), `admins` (účty do admin panelu), `personal_access_tokens` (API tokeny hráčov), `player_saves` (záloha savu hráča), `game_configs` (verzované herné configy).
+- Tabuľky: `users` (hráči), `admins` (účty do admin panelu), `personal_access_tokens` (API tokeny hráčov), `player_saves` (záloha savu hráča), `wave_results` (vlny prepočítané BE), `game_configs` (verzované herné configy).
 
 ### Hráči a API tokeny
 
@@ -109,6 +109,20 @@ Po uložení sa save zálohuje na BE (najviac raz za 30 s, pri prechode appky na
 | `GET /api/v1/me/save` | token | `{ data: { save_version, saved_at, uploaded_at, save } }`, `404` keď hráč zálohu nemá |
 
 Hra, ktorá začína od nuly (nová inštalácia, nečitateľný save), sa najprv opýta BE na zálohu; ak existuje, nahradí ňou novú hru a scéna sa načíta znova. Kým BE neodpovie (aj offline, aj po reštarte), nová hra sa na BE **nenahráva**, aby neprepísala progres, ktorý sa dá obnoviť. Admin vidí zálohu v detaile hráča (*Players* → *Save backup*). Unity menu *Tools → Resort Island → Save → Delete Save* zmaže aj token, takže ďalší Play je nový hráč bez obnovy.
+
+### Hodnotenie vlny
+
+Jeden model na troch miestach, ktoré musia dávať rovnaké čísla: `tools/wave_sim/wave_sim.py` (simulácia), Unity `WaveRating` + `WaveScore` (hra) a BE `App\Services\WaveRating`.
+
+- **Spokojnosť:** každá jednotka potreby prispieva podľa čakania (príchod → usadenie, obsluha sa nepočíta): do `patience_grace_s` 100 %, potom lineárne na `unit_floor` pri `patience_floor_after_s`. Vážený priemer podľa `satisfaction_weight` potreby, najmenej `wave_floor`. Vlna bez hostí = 100 %.
+- **Hodnotenie:** najvyšší dosiahnutý prah z `rating_thresholds` → 1–5 ★, 6 = Perfect.
+- **Coins:** jednotky vlny × `coins_per_unit` × `coins_rating_mult[hodnotenie]`, zaokrúhlené (pri pasívnej hre vlny 1–3 = 1 930, 4–6 = 3 901 — sedí s build dokumentom).
+
+**Test proti `wave_sim.py`:** `python3 tools/wave_sim/wave_sim.py --export-rating-cases` zapíše `tools/wave_sim/fixtures/wave_rating_cases.json` — čakania každej jednotky pre všetky vlny (bez zásahu aj plne vylepšený rezort) a okrajové prípady, s očakávanou spokojnosťou, hodnotením a coins. Unity test `WaveRatingTests` aj BE test `WaveRatingTest` prepočítajú všetky prípady. Python test zlyhá, ak fixture nesedí s configmi v `backend/database/game-configs` → po zmene configov alebo modelu fixture pregeneruj a commitni.
+
+**BE overenie:** po vlne hra pošle čakania na `POST /api/v1/me/waves` (`{ wave, waits: { need: [s, …] }, client: { satisfaction, rating, coins } }`, token, 30/min). BE vlnu prepočíta s aktuálnymi configmi, uloží výsledok (`wave_results`) a vráti ho s `matches_client`. Pri savoch admin vidí *Coins check*: uložené coins nesmú presiahnuť štartovné + coins z prepočítaných vĺn.
+
+**Napojenie v hre** (keď bude rad pri budovách): pri usadení jednotky `score.RecordWait(need, čakanie)`, na konci vlny `economy.AddCoins(score.Coins)` a `reporter.Report(score)` (`WaveResultReporter`). `WaveScore` je `IWaveResult`, takže ho vie zalogovať aj analytika (`WaveRatingMetric`).
 
 ### Analytika
 

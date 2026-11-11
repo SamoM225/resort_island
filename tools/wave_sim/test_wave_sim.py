@@ -116,5 +116,40 @@ class CommandLineTests(unittest.TestCase):
         self.assertEqual(1, run_cli(configs))
 
 
+class WaveRatingCasesTests(unittest.TestCase):
+    def test_coins_are_units_times_coins_per_unit_times_rating_multiplier_rounded(self):
+        economy = {"coins_per_unit": 16, "coins_rating_mult": [0.4, 0.6, 0.8, 1.0, 1.2, 1.3]}
+
+        self.assertEqual(294, wave_sim.wave_coins(46, 0, economy))
+        self.assertEqual(458, wave_sim.wave_coins(22, 5, economy))
+        self.assertEqual(3, wave_sim.wave_coins(1, 0, {"coins_per_unit": 6.25, "coins_rating_mult": [0.4]}))
+
+    def test_wave_cases_give_the_simulated_satisfaction(self):
+        configs = fixture_configs()
+        reports = {report.wave: report for report in wave_sim.evaluate(configs)}
+
+        for case in wave_sim.rating_cases(configs)["cases"]:
+            if case["wave"] is not None and "no intervention" in case["name"]:
+                self.assertEqual(reports[case["wave"]].no_intervention.satisfaction, case["satisfaction"])
+                self.assertEqual(reports[case["wave"]].no_intervention.rating + 1, case["rating"])
+
+    def test_units_include_the_rush(self):
+        configs = fixture_configs()
+        rush = configs["wave_system"]["rush"]
+        case = next(c for c in wave_sim.rating_cases(configs)["cases"] if c["wave"] == rush["wave"])
+
+        self.assertEqual(sum(configs["waves"]["waves"][rush["wave"] - 1]["demand"].values()) + rush["units"], case["units"])
+
+    def test_committed_cases_match_the_backend_configs(self):
+        expected = wave_sim.rating_cases(wave_sim.load_configs(wave_sim.DEFAULT_CONFIGS))
+        committed = json.loads(wave_sim.DEFAULT_RATING_CASES.read_text(encoding="utf-8"))
+
+        self.assertEqual(
+            expected,
+            committed,
+            "Regenerate the cases: python3 tools/wave_sim/wave_sim.py --export-rating-cases",
+        )
+
+
 if __name__ == "__main__":
     unittest.main()
