@@ -1,0 +1,34 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     */
+    public function up(): void
+    {
+        Schema::create('wave_results', function (Blueprint $table) {
+            $table->id();
+            $table->foreignId('user_id')->index()->constrained()->cascadeOnDelete();
+            $table->unsignedInteger('wave');
+            $table->unsignedInteger('units');
+            $table->double('satisfaction');
+            $table->unsignedTinyInteger('rating');
+            $table->unsignedInteger('coins');
+            $table->unsignedInteger('client_coins')->nullable();
+            $table->timestamp('created_at')->nullable();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
+    {
+        Schema::dropIfExists('wave_results');
+    }
+};
