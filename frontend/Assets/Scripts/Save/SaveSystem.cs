@@ -95,8 +95,23 @@ namespace ResortIsland.Save
 
             data.saveVersion = migrator.CurrentVersion;
             data.savedAtUtc = DateTime.UtcNow.ToString("o", CultureInfo.InvariantCulture);
-            string json = JsonConvert.SerializeObject(data, Formatting.Indented);
+            WriteAtomically(JsonConvert.SerializeObject(data, Formatting.Indented));
+        }
 
+        /// <summary>
+        /// Replaces the save with JSON from elsewhere (the backend backup). It is not trusted:
+        /// the next Load validates, migrates and sanitizes it like any other save.
+        /// </summary>
+        public void Import(string json)
+        {
+            if (string.IsNullOrEmpty(json))
+                throw new ArgumentException("Save JSON is empty.", nameof(json));
+
+            WriteAtomically(json);
+        }
+
+        private void WriteAtomically(string json)
+        {
             Directory.CreateDirectory(directory);
             using (FileStream stream = new FileStream(TempPath, FileMode.Create, FileAccess.Write, FileShare.None))
             {

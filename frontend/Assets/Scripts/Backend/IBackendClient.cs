@@ -5,5 +5,7 @@ namespace ResortIsland.Backend
     public interface IBackendClient
     {
         void PostJson(string path, string json, string token, Action<BackendResponse> done);
+        void PutJson(string path, string json, string token, Action<BackendResponse> done);
+        void GetJson(string path, string token, Action<BackendResponse> done);
     }
 }

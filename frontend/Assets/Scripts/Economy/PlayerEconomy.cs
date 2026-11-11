@@ -24,7 +24,7 @@ namespace ResortIsland.Economy
         public event Action<int> OnResortValueChanged;
         public event Action<int> OnReputationChanged;
 
-        private SaveSystem saveSystem;
+        private SaveStore store;
         private bool canSave;
         private bool isDirty;
         private float dirtySince;
@@ -37,15 +37,15 @@ namespace ResortIsland.Economy
                 return;
             }
 
-            saveSystem = SaveSystem.CreateDefault();
+            store = SaveStore.Shared;
             LoadGame();
         }
 
         private void LoadGame()
         {
-            LoadResult result = saveSystem.Load(config);
+            LoadResult result = store.Load(config);
             canSave = result.CanSave;
-            ApplySaveData(result.Data);
+            ApplySaveData(store.Data);
 
             switch (result.Status)
             {
@@ -79,7 +79,11 @@ namespace ResortIsland.Economy
                 return;
             }
 
-            ApplySaveData(SaveData.CreateNew(config));
+            if (store == null || !store.IsLoaded)
+                return;
+
+            store.Data.economy = SaveData.CreateNew(config).economy;
+            ApplySaveData(store.Data);
             SaveNow();
             Debug.Log($"[PlayerEconomy] New player initialized with {Coins} Coins and {Gems} Gems (from {config.name}).");
         }
@@ -100,19 +104,17 @@ namespace ResortIsland.Economy
             OnReputationChanged?.Invoke(Reputation);
         }
 
-        private SaveData ToSaveData()
+        /// <summary>Writes the current values into the shared save; the map in it belongs to ResortManager.</summary>
+        private void WriteToSave(SaveData data)
         {
-            return new SaveData
+            data.configVersion = config.ConfigVersion;
+            data.economy = new EconomySaveData
             {
-                configVersion = config.ConfigVersion,
-                economy = new EconomySaveData
-                {
-                    coins = Coins,
-                    gems = Gems,
-                    energy = Energy,
-                    resortValue = ResortValue,
-                    reputation = Reputation
-                }
+                coins = Coins,
+                gems = Gems,
+                energy = Energy,
+                resortValue = ResortValue,
+                reputation = Reputation
             };
         }
 
@@ -132,8 +134,12 @@ namespace ResortIsland.Economy
         // Mobile OSes can kill a paused app without calling OnApplicationQuit.
         private void OnApplicationPause(bool paused)
         {
-            if (paused && isDirty)
-                SaveNow();
+            if (!paused) return;
+
+            if (isDirty)
+                SaveNow(uploadNow: true);
+            else
+                store?.FlushBackup();
         }
 
         private void OnApplicationQuit()
@@ -142,13 +148,14 @@ namespace ResortIsland.Economy
                 SaveNow();
         }
 
-        private void SaveNow()
+        private void SaveNow(bool uploadNow = false)
         {
-            if (!canSave || saveSystem == null) return;
+            if (!canSave || store == null || !store.IsLoaded) return;
 
             try
             {
-                saveSystem.Save(ToSaveData());
+                WriteToSave(store.Data);
+                store.Save(uploadNow);
                 isDirty = false;
             }
             catch (Exception e)

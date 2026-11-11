@@ -10,6 +10,15 @@ namespace ResortIsland.Backend
         private const int TimeoutSeconds = 10;
 
         public void PostJson(string path, string json, string token, Action<BackendResponse> done)
+            => Send(UnityWebRequest.kHttpVerbPOST, path, json, token, done);
+
+        public void PutJson(string path, string json, string token, Action<BackendResponse> done)
+            => Send(UnityWebRequest.kHttpVerbPUT, path, json, token, done);
+
+        public void GetJson(string path, string token, Action<BackendResponse> done)
+            => Send(UnityWebRequest.kHttpVerbGET, path, null, token, done);
+
+        private static void Send(string method, string path, string json, string token, Action<BackendResponse> done)
         {
             if (!TryGetUrl(path, out string url))
             {
@@ -17,13 +26,16 @@ namespace ResortIsland.Backend
                 return;
             }
 
-            UnityWebRequest request = new UnityWebRequest(url, UnityWebRequest.kHttpVerbPOST)
+            UnityWebRequest request = new UnityWebRequest(url, method)
             {
-                uploadHandler = new UploadHandlerRaw(Encoding.UTF8.GetBytes(json)),
                 downloadHandler = new DownloadHandlerBuffer(),
                 timeout = TimeoutSeconds
             };
-            request.SetRequestHeader("Content-Type", "application/json");
+            if (json != null)
+            {
+                request.uploadHandler = new UploadHandlerRaw(Encoding.UTF8.GetBytes(json));
+                request.SetRequestHeader("Content-Type", "application/json");
+            }
             request.SetRequestHeader("Accept", "application/json");
             if (token != null)
                 request.SetRequestHeader("Authorization", "Bearer " + token);
