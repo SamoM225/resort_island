@@ -40,6 +40,28 @@ namespace ResortIsland.Waves
             guestArrivalPresenter?.Dispose();
         }
 
+        /// Moves the Start Wave button and the forecast to other views (the bottom bar of the HUD).
+        /// The game rules stay in the presenters; the views assigned in the scene are hidden.
+        public void UseViews(IStartWaveView startView, IWaveForecastView forecastView)
+        {
+            if (startView != null)
+            {
+                startWavePresenter?.Dispose();
+                startWavePresenter = new StartWavePresenter(stateMachine, stateMachine, startView);
+                if (startWaveButton != null && !ReferenceEquals(startView, startWaveButton))
+                    startWaveButton.gameObject.SetActive(false);
+            }
+
+            if (forecastView != null)
+            {
+                waveForecastPresenter?.Dispose();
+                waveForecastPresenter = Planner != null ? new WaveForecastPresenter(stateMachine, Planner, forecastView) : null;
+                if (waveForecastPresenter == null) forecastView.Hide();
+                if (waveForecast != null && !ReferenceEquals(forecastView, waveForecast))
+                    waveForecast.gameObject.SetActive(false);
+            }
+        }
+
         private void BindStartWave()
         {
             if (startWaveButton == null)

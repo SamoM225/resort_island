@@ -41,6 +41,7 @@ namespace ResortIsland.UI
         [SerializeField] private Sprite reputationIcon;
 
         private Sprite croppedPlank;
+        private GameObject toolbarCanvas;
         private TMP_Text coinsText;
         private TMP_Text gemsText;
         private TMP_Text energyText;
@@ -73,6 +74,12 @@ namespace ResortIsland.UI
             economy.OnResortValueChanged += UpdateResortValue;
             economy.OnReputationChanged += UpdateReputation;
             RefreshTexts();
+        }
+
+        /// Hidden while a full-screen mode (e.g. the build menu) shows its own top bar.
+        public void SetToolbarVisible(bool visible)
+        {
+            if (toolbarCanvas != null) toolbarCanvas.SetActive(visible);
         }
 
         private void UpdateCoins(int value) { displayedCoins = value; RefreshTexts(); }
@@ -109,6 +116,7 @@ namespace ResortIsland.UI
         private void BuildToolbar()
         {
             var canvasObject = new GameObject("Top Toolbar Canvas");
+            toolbarCanvas = canvasObject;
             canvasObject.transform.SetParent(transform, false);
             var canvas = canvasObject.AddComponent<Canvas>();
             canvas.renderMode = RenderMode.ScreenSpaceOverlay;
