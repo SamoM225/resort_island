@@ -20,3 +20,9 @@ MonoBehaviour:
   footprint: {x: 3, y: 3}
   preferShore: 0
   prefab: {fileID: 4720113842675120011, guid: a1c3e5f7092b4d6e8f0a1b2c3d4e5f60, type: 3}
+  entrance: {x: -1, y: 1}
+  rotationSprites:
+  - {fileID: 91618976299775297, guid: 8e99b720d34257578153d7fa4984cdc0, type: 3}
+  - {fileID: 128983136787453222, guid: 8e99b720d34257578153d7fa4984cdc0, type: 3}
+  - {fileID: 317280172531803442, guid: 8e99b720d34257578153d7fa4984cdc0, type: 3}
+  - {fileID: 759875760311670140, guid: 8e99b720d34257578153d7fa4984cdc0, type: 3}
