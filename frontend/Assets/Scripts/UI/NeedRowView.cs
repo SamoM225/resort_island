@@ -1,14 +1,21 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace ResortIsland.UI
 {
     public class NeedRowView : MonoBehaviour
     {
+        private static readonly Color Done = new Color32(0x10, 0xB9, 0x81, 255);
+        private static readonly Color InProgress = new Color32(0xF5, 0x9E, 0x0B, 255);
+        private static readonly Color Problem = new Color32(0xEF, 0x44, 0x44, 255);
+
         [SerializeField] private TMP_Text label;
         [SerializeField] private TMP_Text queueText;
-        [SerializeField] private RectTransform fill;     
+        [SerializeField] private RectTransform fill;
         [SerializeField] private GameObject warningIcon;
+
+        private Image fillImage;
 
         public void Set(string needName, int served, int total, int queue, bool warning)
         {
@@ -24,6 +31,10 @@ namespace ResortIsland.UI
                 fill.anchorMax = new Vector2(ratio, 1f);
                 fill.offsetMin = Vector2.zero;
                 fill.offsetMax = Vector2.zero;
+
+                if (fillImage == null) fillImage = fill.GetComponent<Image>();
+                if (fillImage != null)
+                    fillImage.color = warning ? Problem : (total > 0 && served >= total ? Done : InProgress);
             }
 
             if (warningIcon != null) warningIcon.SetActive(warning);
