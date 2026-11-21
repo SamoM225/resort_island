@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aca84ddc008d40ed0050a0d41f8bde66, type: 3}
+  m_Name: BuildMenuSkin
+  m_EditorClassIdentifier: ResortIsland::ResortIsland.UI.BuildMenuSkin
+  buttonOrange: {fileID: 21300000, guid: 130e284a75c9561a9db63bcb3a0963dd, type: 3}
+  buttonPurple: {fileID: 21300000, guid: 9dd45832b4f45e61a220cc5e9171bd47, type: 3}
+  buttonBlue: {fileID: 21300000, guid: 0397fa7093e15147a56102b1f93dee50, type: 3}
+  coinIcon: {fileID: 21300000, guid: 60700ad206635dac86902888c93f3d6a, type: 3}
+  hammerIcon: {fileID: 21300000, guid: b00005eeafda56279ef4bef78c8f9fd1, type: 3}
+  padlockIcon: {fileID: 21300000, guid: 0aa42af642d45b9c9934f3b16ec1cbe9, type: 3}
+  buttonTeal: {fileID: 21300000, guid: 885111c7fe205a05b0efafa5649d79f6, type: 3}
+  shipIcon: {fileID: 21300000, guid: 56951bc633005682a84a4afd118d81f3, type: 3}
+  workersIcon: {fileID: 21300000, guid: 69517ffb58ce53a88f50b84f5de6664d, type: 3}
+  needIcons:
+  - needId: rooms
+    icon: {fileID: 21300000, guid: 7630d3f4ef255f0c92be45b3e67642fb, type: 3}
+  - needId: food
+    icon: {fileID: 21300000, guid: d483bd3c8695568b913094543acb2295, type: 3}
+  - needId: drinks
+    icon: {fileID: 21300000, guid: 4c9a0e3cb3b453159fc83db7dd1bd6ee, type: 3}
+  - needId: relax
+    icon: {fileID: 21300000, guid: bee760eb36f85da1b8aee70f141822b9, type: 3}
+  - needId: ocean_view
+    icon: {fileID: 21300000, guid: b309bcb592225b42bf4c369601bced35, type: 3}
+  toolbarPlank: {fileID: 21300000, guid: 56bb19c0d3e55bd3a4cc8d6ed11a7097, type: 3}
+  buttonGrey: {fileID: 21300000, guid: aab69c14db1f5daca8b12e62fcafb02d, type: 3}
+  buttonRoundGreen: {fileID: 21300000, guid: 7abe7259e04b51c996793f116789eb41, type: 3}
+  spyglassIcon: {fileID: 21300000, guid: e43f82f4462c52dda071f7f166ba06f2, type: 3}
+  gearIcon: {fileID: 21300000, guid: b87134d87da5594a99f5cc76e24c085e, type: 3}
+  energyIcon: {fileID: 21300000, guid: b0f2381097915f96910b2c9d02bbb7d5, type: 3}
+  crownIcon: {fileID: 21300000, guid: 8ff1ffc746535227918ae3aae8ea01da, type: 3}
