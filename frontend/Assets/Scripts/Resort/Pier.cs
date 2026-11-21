@@ -15,6 +15,8 @@ namespace ResortIsland.Resort
 
         public bool HasDock { get; private set; }
         public Dock Dock { get; private set; }
+        /// Build has run (with or without finding a dock).
+        public bool IsBuilt { get; private set; }
 
         private void Update()
         {
@@ -23,6 +25,7 @@ namespace ResortIsland.Resort
 
             enabled = false;
             Build();
+            IsBuilt = true;
         }
 
         private void Build()

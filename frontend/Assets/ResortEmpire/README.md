@@ -22,3 +22,6 @@ Pri R1 a R3 sa footprint prehodí (2×4 → 4×2).
 
 ## Maska chodníka
 1 = sused −x, 2 = +x, 4 = −y, 8 = +y. Súčet = číslo spritu (`03` rovný kus, `15` križovatka).
+
+Pozor: x/y tu sú osi kresby, nie Unity izometrického Gridu. Na obrazovke ide rameno bitu 1 hore-vľavo
+(Grid +y), 2 dole-vpravo (−y), 4 hore-vpravo (+x), 8 dole-vľavo (−x). V kóde to rieši `PathFinder.Directions`.
