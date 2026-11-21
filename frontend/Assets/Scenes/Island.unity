@@ -717,6 +717,11 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!224 &230603270 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 4336611213964715942, guid: 9fa199baf3a511a48b50489d8a1bda30, type: 3}
+  m_PrefabInstance: {fileID: 825638455}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &322579727
 GameObject:
   m_ObjectHideFlags: 0
@@ -2311,6 +2316,103 @@ RectTransform:
   m_AnchoredPosition: {x: -50, y: 0}
   m_SizeDelta: {x: 70, y: 70}
   m_Pivot: {x: 1, y: 0.5}
+--- !u!1001 &825638455
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1493726867}
+    m_Modifications:
+    - target: {fileID: 1884835624631252978, guid: 9fa199baf3a511a48b50489d8a1bda30, type: 3}
+      propertyPath: m_Name
+      value: ToastPanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 4336611213964715942, guid: 9fa199baf3a511a48b50489d8a1bda30, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4336611213964715942, guid: 9fa199baf3a511a48b50489d8a1bda30, type: 3}
+      propertyPath: m_Pivot.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4336611213964715942, guid: 9fa199baf3a511a48b50489d8a1bda30, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4336611213964715942, guid: 9fa199baf3a511a48b50489d8a1bda30, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4336611213964715942, guid: 9fa199baf3a511a48b50489d8a1bda30, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4336611213964715942, guid: 9fa199baf3a511a48b50489d8a1bda30, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4336611213964715942, guid: 9fa199baf3a511a48b50489d8a1bda30, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 800
+      objectReference: {fileID: 0}
+    - target: {fileID: 4336611213964715942, guid: 9fa199baf3a511a48b50489d8a1bda30, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 110
+      objectReference: {fileID: 0}
+    - target: {fileID: 4336611213964715942, guid: 9fa199baf3a511a48b50489d8a1bda30, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4336611213964715942, guid: 9fa199baf3a511a48b50489d8a1bda30, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4336611213964715942, guid: 9fa199baf3a511a48b50489d8a1bda30, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4336611213964715942, guid: 9fa199baf3a511a48b50489d8a1bda30, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4336611213964715942, guid: 9fa199baf3a511a48b50489d8a1bda30, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4336611213964715942, guid: 9fa199baf3a511a48b50489d8a1bda30, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4336611213964715942, guid: 9fa199baf3a511a48b50489d8a1bda30, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4336611213964715942, guid: 9fa199baf3a511a48b50489d8a1bda30, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4336611213964715942, guid: 9fa199baf3a511a48b50489d8a1bda30, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -170
+      objectReference: {fileID: 0}
+    - target: {fileID: 4336611213964715942, guid: 9fa199baf3a511a48b50489d8a1bda30, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4336611213964715942, guid: 9fa199baf3a511a48b50489d8a1bda30, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4336611213964715942, guid: 9fa199baf3a511a48b50489d8a1bda30, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9fa199baf3a511a48b50489d8a1bda30, type: 3}
 --- !u!1 &861825179
 GameObject:
   m_ObjectHideFlags: 0
@@ -7525,7 +7627,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.42830187, g: 1, b: 0.48175082, a: 1}
+  m_Color: {r: 0.9372549, g: 0.26666668, b: 0.26666668, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -7600,7 +7702,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.42830187, g: 1, b: 0.48175082, a: 1}
+  m_Color: {r: 0.9607843, g: 0.61960787, b: 0.043137256, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -12735,6 +12837,7 @@ RectTransform:
   m_Children:
   - {fileID: 117006984}
   - {fileID: 141176114}
+  - {fileID: 230603270}
   m_Father: {fileID: 1439530510}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -13116,7 +13219,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.42830187, g: 1, b: 0.48175082, a: 1}
+  m_Color: {r: 0.0627451, g: 0.7254902, b: 0.5058824, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
