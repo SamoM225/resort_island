@@ -23,6 +23,7 @@ namespace ResortIsland.Waves
 
         public IGameState State => stateMachine;
         public IWavePlanner Planner { get; private set; }
+        public WaveArrivalsPresenter Arrivals { get; private set; }
 
         private void Start()
         {
@@ -30,6 +31,12 @@ namespace ResortIsland.Waves
             BindForecast();
             BindAnalytics();
             BindArrival();
+            BindWaveArrivals();
+        }
+
+        private void Update()
+        {
+            Arrivals?.Tick(Time.deltaTime);
         }
 
         private void OnDestroy()
@@ -38,6 +45,7 @@ namespace ResortIsland.Waves
             waveForecastPresenter?.Dispose();
             waveCompletionTracker?.Dispose();
             guestArrivalPresenter?.Dispose();
+            Arrivals?.Dispose();
         }
 
         /// Moves the Start Wave button and the forecast to other views (the bottom bar of the HUD).
@@ -117,6 +125,15 @@ namespace ResortIsland.Waves
             }
 
             guestArrivalPresenter = new GuestArrivalPresenter(stateMachine, stateMachine, Planner, ferryArrival, guestSpawner);
+        }
+
+        private void BindWaveArrivals()
+        {
+            GameConfigs configs = GameConfigService.Current;
+            if (Planner == null || configs?.WaveSystem == null)
+                return;
+
+            Arrivals = new WaveArrivalsPresenter(stateMachine, Planner, configs.WaveSystem.WaveTimerS);
         }
     }
 }
