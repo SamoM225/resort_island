@@ -1,5 +1,7 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
+using ResortIsland.Waves;
 
 namespace ResortIsland.UI
 {
@@ -11,7 +13,7 @@ namespace ResortIsland.UI
         [SerializeField, Min(0)] private int served = 4;
         [SerializeField, Min(0)] private int total = 8;
         [SerializeField, Min(0)] private int queue = 0;
-        [SerializeField, Min(0)] private int queueWarningThreshold = 5;   
+        [SerializeField, Min(0)] private int queueWarningThreshold = 5;
 
         public string Label => label;
         public int Served => served;
@@ -20,17 +22,55 @@ namespace ResortIsland.UI
         public int QueueWarningThreshold => queueWarningThreshold;
     }
 
-    public class NeedsPanel : MonoBehaviour
+    public class NeedsPanel : MonoBehaviour, INeedsView
     {
+        private const int DefaultWarningThreshold = 5;
+
         [Header("Rows and dummy data (same order)")]
         [SerializeField] private NeedRowView[] rows;
         [SerializeField] private NeedRowData[] data;
 
+        private bool live;
+        private int thresholdOverride;
+
         private void Start() => Refresh();
+
+        
+        public void SetWarningThreshold(int threshold) => thresholdOverride = threshold;
+
+        
+        public void Show(IReadOnlyList<NeedRowState> needs)
+        {
+            live = true;
+            if (rows == null) return;
+
+            for (int i = 0; i < rows.Length; i++)
+            {
+                if (rows[i] == null) continue;
+
+                bool hasNeed = needs != null && i < needs.Count;
+                rows[i].gameObject.SetActive(hasNeed);
+                if (!hasNeed) continue;
+
+                NeedRowState need = needs[i];
+                rows[i].Set(need.Name, need.Served, need.Total, need.Queue, need.Queue > WarningThresholdFor(i));
+            }
+        }
+
+        private int WarningThresholdFor(int index)
+        {
+            if (thresholdOverride > 0)
+                return thresholdOverride;
+
+            return data != null && index < data.Length && data[index] != null
+                ? data[index].QueueWarningThreshold
+                : DefaultWarningThreshold;
+        }
 
         [ContextMenu("Refresh")]
         public void Refresh()
         {
+            if (live) return;
             if (rows == null || data == null) return;
 
             int count = Mathf.Min(rows.Length, data.Length);
@@ -44,7 +84,7 @@ namespace ResortIsland.UI
         }
 
 #if UNITY_EDITOR
-        // zmena čísla v Inspectore sa hneď prejaví v paneli
+       
         private void OnValidate() => UnityEditor.EditorApplication.delayCall += DelayedRefresh;
 
         private void DelayedRefresh()
