@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using ResortIsland.Analytics;
 using ResortIsland.Backend;
@@ -20,9 +21,12 @@ namespace ResortIsland.Waves
         private WaveForecastPresenter waveForecastPresenter;
         private WaveCompletionTracker waveCompletionTracker;
         private GuestArrivalPresenter guestArrivalPresenter;
+        private WaveDrain waveDrain;
 
         public IGameState State => stateMachine;
         public IWavePlanner Planner { get; private set; }
+        public WaveArrivalsPresenter Arrivals { get; private set; }
+        public List<IBuildingQueue> BuildingQueues { get; } = new List<IBuildingQueue>();
 
         private void Start()
         {
@@ -30,6 +34,13 @@ namespace ResortIsland.Waves
             BindForecast();
             BindAnalytics();
             BindArrival();
+            BindWaveArrivals();
+        }
+
+        private void Update()
+        {
+            Arrivals?.Tick(Time.deltaTime);
+            waveDrain?.Check();
         }
 
         private void OnDestroy()
@@ -38,6 +49,7 @@ namespace ResortIsland.Waves
             waveForecastPresenter?.Dispose();
             waveCompletionTracker?.Dispose();
             guestArrivalPresenter?.Dispose();
+            Arrivals?.Dispose();
         }
 
         /// Moves the Start Wave button and the forecast to other views (the bottom bar of the HUD).
@@ -117,6 +129,16 @@ namespace ResortIsland.Waves
             }
 
             guestArrivalPresenter = new GuestArrivalPresenter(stateMachine, stateMachine, Planner, ferryArrival, guestSpawner);
+        }
+
+        private void BindWaveArrivals()
+        {
+            GameConfigs configs = GameConfigService.Current;
+            if (Planner == null || configs?.WaveSystem == null)
+                return;
+
+            Arrivals = new WaveArrivalsPresenter(stateMachine, Planner, configs.WaveSystem.WaveTimerS);
+            waveDrain = new WaveDrain(stateMachine, stateMachine, Arrivals, () => BuildingQueues);
         }
     }
 }
