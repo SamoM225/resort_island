@@ -42,10 +42,7 @@ namespace ResortIsland.Waves
                 return;
 
             Release();
-            WavePlan plan = planner.Plan(state.NextWave);
-            if (plan == null)
-                return;
-
+            WavePlan plan = planner.Plan(state.NextWave) ?? new WavePlan(state.NextWave, 0, Array.Empty<NeedDemand>());
             Current = new WaveArrivals(plan, waveTimer);
             Current.UnitArrived += OnUnitArrived;
         }

@@ -92,7 +92,8 @@ namespace ResortIsland.Tests
             StartWave();
             presenter.Tick(90.0);
 
-            Assert.IsNull(presenter.Current);
+            Assert.AreEqual(0, presenter.Current.Total);
+            Assert.IsTrue(presenter.Current.TimerEnded);
             CollectionAssert.IsEmpty(arrived);
         }
 

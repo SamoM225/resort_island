@@ -29,6 +29,7 @@ namespace ResortIsland.Waves
         public int Total => schedule.Count;
         public int Arrived => next;
         public bool AllArrived => next == schedule.Count;
+        public bool TimerEnded => clock + Tolerance >= Duration;
         public double TimeUntilNext => AllArrived ? double.PositiveInfinity : Math.Max(0.0, schedule[next].At - clock);
 
         public void Tick(double seconds)
