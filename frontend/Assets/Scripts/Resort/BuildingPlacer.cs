@@ -2,6 +2,8 @@ using System;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using ResortIsland.Config;
+using ResortIsland.UI;
+using ResortIsland.Characters;
 using System.Collections.Generic;
 
 namespace ResortIsland.Resort
@@ -50,6 +52,7 @@ namespace ResortIsland.Resort
         private int dragRotation;
         private bool dragMoved;
         private bool dragRotationManual;
+        private Vector3 dragStartMouse;
 
         private PathTool pathTool;
         private bool painting;
@@ -81,6 +84,11 @@ namespace ResortIsland.Resort
             if (SelectedPlaced == null) SelectedPlaced = null; // the building was destroyed (new game)
 
             if (painting && !Input.GetMouseButton(0)) EndPaint();
+            if (Input.GetKeyDown(KeyCode.Escape) && resort.SelectedWorker != null)
+            {
+                resort.ClearWorkerSelection();
+                HidePreview();
+            }
             if (Input.GetKeyDown(KeyCode.R) && pathTool == PathTool.None) RotateSelection();
 
             if (!TryGetMouseCell(out var cell))
@@ -207,7 +215,26 @@ namespace ResortIsland.Resort
                 if (Input.GetMouseButtonDown(0)) pressOnIsland = false;
                 return;
             }
+            if (Input.GetMouseButtonDown(0))
+            {
+                Vector3 world = cam.ScreenToWorldPoint(Input.mousePosition);
+                world.z = 0f;
+                Collider2D hit = Physics2D.OverlapPoint(world);
+                if (hit != null && hit.GetComponentInParent<WorkerAI>() != null)
+                {
+                    pressOnIsland = false;
+                    return;
+                }
+            }
             bool onBuilding = resort.TryGetBuilding(cell, out var building);
+
+            if (onBuilding && resort.SelectedWorker != null)
+            {
+                bool occupied = resort.HasWorkerAtBuilding(building);
+                ShowPreview(building.Cell, building.Footprint,
+                    _ => !occupied, occupied ? InvalidCell : SelectedCell);
+                ShowEntrance(building.EntranceCell, !occupied);
+            }
 
             if (Input.GetMouseButtonDown(1) && onBuilding)
             {
@@ -218,17 +245,24 @@ namespace ResortIsland.Resort
             // a tap on empty land (not a drag of the view) clears the selection
             if (Input.GetMouseButtonDown(0)) pressOnIsland = !onBuilding;
             if (Input.GetMouseButtonUp(0) && pressOnIsland && !CameraController.DraggedThisPress && !onBuilding)
+            {
+                resort.ClearWorkerSelection();
                 SelectedPlaced = null;
+            }
             if (!Input.GetMouseButtonDown(0) || !onBuilding) return;
             dragged = building;
             dragRotation = building.Rotation;
             dragMoved = false;
             dragRotationManual = false;
             lastAutoOrigin = building.Cell;
+            dragStartMouse = Input.mousePosition;
         }
 
         private void UpdateDragging(Vector3Int cell)
         {
+            if (!dragMoved && (Input.mousePosition - dragStartMouse).sqrMagnitude > 64f)
+                dragMoved = true;
+
             // the cell under the cursor is the middle of the building footprint
             Vector2Int size = BuildingRotation.Size(dragged.Config.Footprint, dragRotation);
             Vector3Int origin = resort.OriginFor(cell, size);
@@ -274,7 +308,10 @@ namespace ResortIsland.Resort
             bool changed = origin != building.Cell || dragRotation != building.Rotation;
             if (!dragMoved && dragRotation == building.Rotation)
             {
-                // a tap: select it
+                // Assignment starts only after the worker avatar itself was clicked.
+                if (resort.SelectedWorker != null &&
+                    !resort.ReassignSelectedWorker(building))
+                    ShowWorkerError();
                 SelectedPlaced = building;
                 resort.RefreshPosition(building);
             }
@@ -474,6 +511,15 @@ namespace ResortIsland.Resort
             previewSprite = Sprite.Create(previewTexture, new Rect(0f, 0f, width, height),
                 new Vector2(0.5f, 0.5f), width);
             previewSprite.name = "Building Placement Cell";
+        }
+
+        private void ShowWorkerError()
+        {
+            var hud = FindFirstObjectByType<BuildModeHud>();
+            if (hud != null)
+                hud.ShowMessage("На этом здании уже есть работник");
+            else
+                Debug.LogWarning("На этом здании уже есть работник");
         }
 
         private void OnDestroy()
