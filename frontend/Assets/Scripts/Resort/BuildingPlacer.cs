@@ -517,9 +517,9 @@ namespace ResortIsland.Resort
         {
             var hud = FindFirstObjectByType<BuildModeHud>();
             if (hud != null)
-                hud.ShowMessage("На этом здании уже есть работник");
+                hud.ShowMessage("There is already a worker on this building. ");
             else
-                Debug.LogWarning("На этом здании уже есть работник");
+                Debug.LogWarning("There is already a worker on this building. ");
         }
 
         private void OnDestroy()
