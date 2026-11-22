@@ -2,7 +2,7 @@ using System;
 
 namespace ResortIsland.Waves
 {
-    public class WaveWaits : IDisposable
+    public class WaveWaits : IWaveResult, IDisposable
     {
         private readonly IGameState state;
         private readonly WaveRating rating;
@@ -19,6 +19,9 @@ namespace ResortIsland.Waves
         }
 
         public WaveScore Current { get; private set; }
+
+        public int Rating => Current?.Rating ?? 0;
+        public float Satisfaction => Current?.Satisfaction ?? 0f;
 
         public void Dispose()
         {

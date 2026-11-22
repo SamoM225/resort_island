@@ -11,7 +11,7 @@ namespace ResortIsland.Waves
     /// and keeps the result to check the coins in the player's save. The game never waits for it:
     /// reports are queued and the ones that could not be sent go with the next report or flush.
     /// </summary>
-    public class WaveResultReporter
+    public class WaveResultReporter : IWaveReporter
     {
         public const string Endpoint = "/api/v1/me/waves";
 
