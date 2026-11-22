@@ -31,6 +31,8 @@ namespace ResortIsland.Waves
         public WaveArrivalsPresenter Arrivals { get; private set; }
         public List<IBuildingQueue> BuildingQueues { get; } = new List<IBuildingQueue>();
         public WaveBuildings Buildings { get; private set; }
+        public IWaveResult Result => waveWaits;
+        public WaveScore Score => waveWaits?.Current;
 
         private void Start()
         {

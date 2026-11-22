@@ -36,20 +36,8 @@ namespace ResortIsland.Waves
             presenter?.Dispose();
         }
 
-        private IWaveResult FindResult()
-        {
-            foreach (MonoBehaviour behaviour in FindObjectsByType<MonoBehaviour>(FindObjectsSortMode.None))
-            {
-                if (behaviour is IWaveResult found)
-                    return found;
-            }
+        private IWaveResult FindResult() => waveController.Result;
 
-            return null;
-        }
-
-        private int CalculateCoins(IWaveResult result)
-        {
-            return 0;
-        }
+        private int CalculateCoins(IWaveResult result) => waveController.Score?.Coins ?? 0;
     }
 }
