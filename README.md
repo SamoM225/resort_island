@@ -27,6 +27,76 @@ inland nearest to the island centre, or on the beach for buildings with `Prefer 
 buildings come from `ResortStartConfig` (`Auto Place` falls back to the configured cell). A save whose
 buildings do not fit the generated island is discarded and a new game starts.
 
+### Natočenie a vchod budov
+
+Budova má rotáciu 0–3 (stĺpce R0–R3 v sheetoch, sprity v `BuildingConfig.Rotation Sprites`) a **vchod**:
+`BuildingConfig.Entrance` je bunka pred dverami v R0 relatívne k originu footprintu, napr. (-1, 1) = stred
+ľavej prednej strany. Pri otáčaní sa prepočíta (`BuildingRotation`): R0 ľavá predná, R1 ľavá zadná, R2 pravá
+zadná, R3 pravá predná strana. Vygenerovaný chodník vedie len k vchodu. Budovu nejde postaviť tak, aby mala
+vchod vo vode alebo pod inou budovou, ani zastavať cudzí vchod. Pri novej hre sa budovy natočia vchodom
+k stredu ostrova.
+
+Pri stavaní a presúvaní sa budova sama natočí vchodom k najbližšiemu chodníku (`ResortManager.AutoRotation`),
+kým ju hráč neotočí ručne: **R**, tlačidlo *Rotate* v build menu (budova, ktorá sa stavia, ťahá alebo je vybraná
+ťuknutím), alebo pravý klik na budovu. Ručné otočenie postavenej budovy je povolené vždy. Ak má potom vchod
+zablokovaný, chodník k nemu nevedie a menu na to upozorní. V build menu náhľad ukáže vchod žltou bunkou
+(červenou, ak je zablokovaný). Mimo build menu sa značky neukazujú.
+
+Postavičky (`CharacterWander`) chodia po chodníkoch od vchodu k vchodu, vojdú dverami dnu, chvíľu ostanú a vyjdú.
+Mimo chodníka idú len tam, kam chodník nevedie.
+
+### Chodníky
+
+`PathNetwork` (`frontend/Assets/Scripts/Resort/PathNetwork.cs`) drží bunky chodníkov troch druhov:
+**Main** (bunka pristátia mola, hlavný chodník, nedá sa zmazať ani zastavať), **Auto** (vygenerovaný pre
+konkrétnu budovu) a **Manual** (postavený hráčom). Každá budova sa napojí na najbližší chodník spojený
+s hlavným chodníkom. Bez mola je stredom siete prvá budova (Recepcia). Trasu hľadá `PathFinder`
+(Dijkstra po mriežke so 4 smermi, zatáčka je drahšia, po existujúcom chodníku je krok lacnejší), takže
+chodníky vychádzajú rovné alebo v tvare L.
+
+- Položenie budovy vygeneruje jej chodník.
+- Presun budovy zmaže jej vygenerovaný chodník a postaví nový. Budovy, ktorým presun prerušil
+  napojenie, sa napoja znova.
+- V menu **Path** / **Erase path** sa ťahaním myšou kladie alebo maže chodník. Zmazaný chodník sa sám
+  nevráti, kým sa nepresunie budova, ktorej patril.
+- Chodník pod novou budovou zmizne. Chodníky sa ukladajú do `resort_save.json`. Staré uloženia bez
+  chodníkov ich dostanú vygenerované pri načítaní.
+
+Štýly chodníkov (White Paving – predvolený, Sand Trail, Boardwalk, Gravel, Stepping Stones, Cobblestone,
+Promenade) sú v `frontend/Assets/Resources/PathStyles.asset`: tier, cena za dlaždicu, vlna odomknutia a levely, kde každý level
+je jeden sheet `ResortEmpire/Sprites/Paths/Path_*.png` (8 × 2 bunky). Sprity sa z neho vyrežú za behu,
+v asete stačí nastaviť `Face Center` (stred plochy v prvej bunke). Každá bunka chodníka si pamätá štýl a level.
+
+**Herný HUD** (`BuildModeHud.GameHud.cs`) podľa predlohy `predloha.html` (návrh v 844×390, v Unity v 2× mierke):
+- spodný bar: doska `Toolbar_Plank` s tlačidlami *Build* (odznak = počet budov, ktoré sa dajú postaviť a hráč
+  ich ešte nemá), *Workers* (vysúvací panel potrieb), okrúhle *Start Wave*, *Forecast* (ukáže/skryje kartu vlny)
+  a *Settings*,
+- karta *Next wave* vpravo hore: počet hostí a potreby. Potreba, ktorú predošlá vlna nemala, má štítok *NEW*,
+- vľavo hore mince (+), energia a hodnota resortu. Nahrádzajú dosku `HomeScreenController`.
+
+Start Wave a predpoveď ovládajú tie isté presentery ako predtým, `WaveController.UseViews` ich len presmeruje
+na HUD. Pôvodné objekty v *Wave UI* a tlačidlo *BtnNeeds* sa za behu skryjú. Ikony a tlačidlá berie HUD
+z `Resources/BuildMenuSkin.asset`. *Settings* a mincové *+* zatiaľ len oznámia, že prídu neskôr.
+
+**Kamera** (`CameraController`, pridá sa na hlavnú kameru za behu): ťahanie ľavým tlačidlom alebo prstom po
+prázdnom ostrove (budova sa ťahá za budovu), stredné tlačidlo kdekoľvek, koliesko / pinch / Q, E na zoom
+(k kurzoru), šípky / WASD na posun. Kamera neodíde z ostrova. Pri stavaní sa budova položí až na pustenie
+prsta, takže posun počas stavania nič nepostaví.
+
+**Build menu** (tlačidlá *Build* / *Paths* v spodnom paneli) má dve záložky:
+- *Buildings*: karty budov (počet, cena `BuildingConfig.Cost`, zámok). Vyber kartu a ťukni na ostrov.
+- *Paths*: editor chodníkov s nástrojmi Draw / Upgrade / Restyle / Erase, kartami štýlov, panelom
+  levelov a tlačidlami X (vráti všetky zmeny) a Done (zaplatí nové a zmenené dlaždice). Kým editor nie je
+  potvrdený, zmeny sa neukladajú.
+
+`PathRenderer` (na objekte `ResortManager`) kreslí sprity podľa štýlu, levelu a masky susedov.
+Zmeny sa animujú: nový chodník rastie dlaždica po dlaždici od existujúcej siete (dopad s odrazom a
+prachom), zmazaný sa stiahne od konca. Poradie počíta `PathStagger`, časovanie sa nastavuje v Inspectore
+v sekcii *Animation* na `PathRenderer`.
+Bity masky zodpovedajú smerom v `PathFinder.Directions`: 1 = +y, 2 = −y, 4 = +x, 8 = −x. Osi kresby
+nie sú totožné s osami Gridu.
+Iný štýl nastavíš výmenou 16 spritov v Inspectore.
+
 Sprite sheets (buildings, decor, paths, transport) are in `frontend/Assets/ResortEmpire/`, see its `README.md`.
 
 ## Branching (GitFlow)
