@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Attributes\Fillable;
 use Illuminate\Database\Eloquent\Attributes\Hidden;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
@@ -35,6 +36,16 @@ class User extends Authenticatable
             'password' => 'hashed',
             'banned_at' => 'datetime',
         ];
+    }
+
+    /**
+     * Backup of the game's save. Not named save(), that is Eloquent's save.
+     *
+     * @return HasOne<PlayerSave, $this>
+     */
+    public function gameSave(): HasOne
+    {
+        return $this->hasOne(PlayerSave::class);
     }
 
     public function isAnonymous(): bool

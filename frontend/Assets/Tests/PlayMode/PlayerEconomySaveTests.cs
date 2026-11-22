@@ -32,6 +32,8 @@ namespace ResortIsland.Tests
                 File.Move(file, Path.Combine(backupDirectory, Path.GetFileName(file)));
 
             config = ScriptableObject.CreateInstance<PlayerEconomyConfig>();
+            // A fresh shared save for every test, without the backend backup.
+            SaveStore.ResetShared(new SaveStore(SaveSystem.CreateDefault(), null, null));
         }
 
         [TearDown]
@@ -46,6 +48,7 @@ namespace ResortIsland.Tests
             foreach (string file in Directory.GetFiles(backupDirectory))
                 File.Move(file, Path.Combine(Application.persistentDataPath, Path.GetFileName(file)));
             Directory.Delete(backupDirectory, true);
+            SaveStore.ResetShared();
         }
 
         private PlayerEconomy StartGame()

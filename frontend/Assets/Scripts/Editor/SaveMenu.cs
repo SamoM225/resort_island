@@ -1,6 +1,7 @@
 using System.IO;
 using UnityEditor;
 using UnityEngine;
+using ResortIsland.Backend;
 using ResortIsland.Save;
 
 namespace ResortIsland.Editor
@@ -25,12 +26,18 @@ namespace ResortIsland.Editor
                 return;
             }
 
-            if (!EditorUtility.DisplayDialog("Delete Save", "Delete the local save and all its backups? The next Play starts a new game.", "Delete", "Cancel"))
+            if (!EditorUtility.DisplayDialog("Delete Save", "Delete the local save and all its backups? The next Play starts a new game as a new player (otherwise the backend backup would be restored).", "Delete", "Cancel"))
                 return;
 
+            // A new player, so the backup of the old one on the backend is not restored.
+            new PlayerPrefsTokenStore().Clear();
+
             if (!Directory.Exists(Application.persistentDataPath)) return;
-            foreach (string file in Directory.GetFiles(Application.persistentDataPath, "save.*"))
-                File.Delete(file);
+            foreach (string pattern in new[] { "save.*", "resort_save.json*" })
+            {
+                foreach (string file in Directory.GetFiles(Application.persistentDataPath, pattern))
+                    File.Delete(file);
+            }
             Debug.Log("[SaveMenu] Save deleted.");
         }
     }
