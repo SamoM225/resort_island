@@ -1,6 +1,8 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 using ResortIsland.Config;
+using ResortIsland.Resort;
 
 namespace ResortIsland.Save
 {
@@ -19,12 +21,20 @@ namespace ResortIsland.Save
         public int configVersion;
         public string savedAtUtc;
         public EconomySaveData economy = new EconomySaveData();
+        /// <summary>The island map: placed buildings and unlocks. Saves from before it was added load with an empty map.</summary>
+        public ResortSave resort = new ResortSave();
+        /// <summary>
+        /// True for a game that started from scratch until the backend said whether this player has a backed up save.
+        /// While true the save is not uploaded, so a fresh game never overwrites progress that could be restored.
+        /// </summary>
+        public bool backupCheckPending;
 
         public static SaveData CreateNew(PlayerEconomyConfig config)
         {
             return new SaveData
             {
                 configVersion = config.ConfigVersion,
+                backupCheckPending = true,
                 economy = new EconomySaveData
                 {
                     coins = config.StartingCoins,
@@ -41,6 +51,12 @@ namespace ResortIsland.Save
         {
             if (economy == null)
                 economy = CreateNew(config).economy;
+            if (resort == null)
+                resort = new ResortSave();
+            if (resort.buildings == null)
+                resort.buildings = new List<BuildingSave>();
+            if (resort.unlocks == null)
+                resort.unlocks = new List<string>();
 
             economy.coins = Mathf.Max(0, economy.coins);
             economy.gems = Mathf.Max(0, economy.gems);

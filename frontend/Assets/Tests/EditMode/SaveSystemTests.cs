@@ -5,6 +5,7 @@ using Newtonsoft.Json.Linq;
 using UnityEditor;
 using UnityEngine;
 using ResortIsland.Config;
+using ResortIsland.Resort;
 using ResortIsland.Save;
 
 namespace ResortIsland.Tests
@@ -116,6 +117,48 @@ namespace ResortIsland.Tests
             Assert.AreEqual(55, result.Data.economy.energy);
             Assert.AreEqual(31000, result.Data.economy.resortValue);
             Assert.AreEqual(3, result.Data.economy.reputation);
+        }
+
+        [Test]
+        public void SaveThenLoad_KeepsTheMap()
+        {
+            SaveSystem system = CreateSystem();
+            SaveData data = CreateData(coins: 10);
+            data.resort.buildings.Add(new BuildingSave { buildingId = "reception", cellX = -2, cellY = 3 });
+            data.resort.unlocks.Add("pool");
+            system.Save(data);
+
+            ResortSave map = system.Load(config).Data.resort;
+
+            Assert.AreEqual(1, map.buildings.Count);
+            Assert.AreEqual("reception", map.buildings[0].buildingId);
+            Assert.AreEqual(-2, map.buildings[0].cellX);
+            Assert.AreEqual(3, map.buildings[0].cellY);
+            CollectionAssert.AreEqual(new[] { "pool" }, map.unlocks);
+        }
+
+        [Test]
+        public void Load_SaveFromBeforeTheMap_StartsWithEmptyMap()
+        {
+            File.Copy(Path.Combine(FixturesDirectory, "save_v1.json"), SavePath);
+
+            ResortSave map = CreateSystem().Load(config).Data.resort;
+
+            Assert.IsNotNull(map);
+            Assert.IsEmpty(map.buildings);
+            Assert.IsEmpty(map.unlocks);
+        }
+
+        [Test]
+        public void Import_ReplacesSaveAndKeepsPreviousAsBackup()
+        {
+            SaveSystem system = CreateSystem();
+            system.Save(CreateData(coins: 111));
+
+            system.Import("{ \"saveVersion\": 1, \"economy\": { \"coins\": 999 } }");
+
+            Assert.AreEqual(999, system.Load(config).Data.economy.coins);
+            Assert.AreEqual(111, JObject.Parse(File.ReadAllText(BackupPath))["economy"]["coins"].Value<int>());
         }
 
         [Test]
