@@ -6,6 +6,7 @@ namespace ResortIsland.Resort
     [Serializable]
     public class BuildingSave
     {
+        public string instanceId;
         public string buildingId;
         public int cellX;
         public int cellY;
@@ -43,5 +44,13 @@ namespace ResortIsland.Resort
         public int pathStyleVersion;
         /// 0 = saved before buildings had a rotation and an entrance.
         public int buildingVersion;
+    }
+
+    [Serializable]
+    public class BuildingLayoutSave
+    {
+        public int saveVersion = 1;
+        public string savedAtUtc;
+        public List<BuildingSave> buildings = new List<BuildingSave>();
     }
 }
