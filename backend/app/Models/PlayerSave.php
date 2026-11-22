@@ -32,6 +32,29 @@ class PlayerSave extends Model
         ];
     }
 
+    public function savedCoins(): ?int
+    {
+        $coins = data_get($this->data, 'economy.coins');
+
+        return is_int($coins) ? $coins : null;
+    }
+
+    /**
+     * The most coins the player can have: starting coins plus the coins of every wave the backend rated.
+     * Spending only lowers it, so a save with more coins was not earned by playing.
+     */
+    public function earnedCoins(): int
+    {
+        $startingCoins = (int) data_get(GameConfig::query()->latestVersions()->where('key', 'economy')->value('data'), 'starting_coins', 0);
+
+        return $startingCoins + (int) $this->user->waveResults()->sum('coins');
+    }
+
+    public function coinsExceedEarned(): bool
+    {
+        return $this->savedCoins() !== null && $this->savedCoins() > $this->earnedCoins();
+    }
+
     /**
      * @return BelongsTo<User, $this>
      */

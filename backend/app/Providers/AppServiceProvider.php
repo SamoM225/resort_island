@@ -30,6 +30,8 @@ class AppServiceProvider extends ServiceProvider
 
         RateLimiter::for('analytics', fn (Request $request) => Limit::perMinute(30)->by($request->user()?->id ?: $request->ip()));
 
+        RateLimiter::for('wave-results', fn (Request $request) => Limit::perMinute(30)->by($request->user()?->id ?: $request->ip()));
+
         RateLimiter::for('player-save', fn (Request $request) => Limit::perMinute(20)->by($request->user()?->id ?: $request->ip()));
     }
 }
