@@ -22,11 +22,14 @@ namespace ResortIsland.Waves
         private WaveCompletionTracker waveCompletionTracker;
         private GuestArrivalPresenter guestArrivalPresenter;
         private WaveDrain waveDrain;
+        private WaveTicker waveTicker;
+        private WaveWaits waveWaits;
 
         public IGameState State => stateMachine;
         public IWavePlanner Planner { get; private set; }
         public WaveArrivalsPresenter Arrivals { get; private set; }
         public List<IBuildingQueue> BuildingQueues { get; } = new List<IBuildingQueue>();
+        public WaveBuildings Buildings { get; private set; }
 
         private void Start()
         {
@@ -39,7 +42,7 @@ namespace ResortIsland.Waves
 
         private void Update()
         {
-            Arrivals?.Tick(Time.deltaTime);
+            waveTicker?.Tick(Time.deltaTime);
             waveDrain?.Check();
         }
 
@@ -50,6 +53,7 @@ namespace ResortIsland.Waves
             waveCompletionTracker?.Dispose();
             guestArrivalPresenter?.Dispose();
             Arrivals?.Dispose();
+            waveWaits?.Dispose();
         }
 
         /// Moves the Start Wave button and the forecast to other views (the bottom bar of the HUD).
@@ -138,6 +142,11 @@ namespace ResortIsland.Waves
                 return;
 
             Arrivals = new WaveArrivalsPresenter(stateMachine, Planner, configs.WaveSystem.WaveTimerS);
+            Buildings = WaveBuildings.From(configs);
+            BuildingQueues.AddRange(Buildings.Queues);
+            Arrivals.UnitArrived += Buildings.Arrive;
+            waveTicker = new WaveTicker(Arrivals, Buildings);
+            waveWaits = new WaveWaits(stateMachine, WaveRating.From(configs), Buildings);
             waveDrain = new WaveDrain(stateMachine, stateMachine, Arrivals, () => BuildingQueues);
         }
     }

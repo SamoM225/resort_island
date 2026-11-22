@@ -24,6 +24,8 @@ namespace ResortIsland.Waves
 
         public WaveArrivals Current { get; private set; }
 
+        public double TimeUntilNext => state.Current == GameState.WaveActive && Current != null ? Current.TimeUntilNext : double.PositiveInfinity;
+
         public void Dispose()
         {
             state.Changed -= OnStateChanged;
