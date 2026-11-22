@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.Tilemaps;
 using ResortIsland.Config;
 using ResortIsland.Save;
+using ResortIsland.Characters;
 
 namespace ResortIsland.Resort
 {
@@ -240,6 +241,7 @@ namespace ResortIsland.Resort
 
             placed.Init(config);
             placed.SetRotation(rotation);
+            placed.gameObject.AddComponent<BuildingOccupancy>().Init(config);
             Register(placed, origin);
             buildings.Add(placed);
 

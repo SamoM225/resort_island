@@ -37,7 +37,12 @@ namespace ResortIsland.Waves
             if (state.Current != GameState.WaveIncoming)
                 return;
 
-            guests.Spawn(planner.Plan(state.NextWave)?.Guests ?? 0);
+            WavePlan plan = planner.Plan(state.NextWave);
+            int count = plan?.Guests ?? 0;
+            if (guests is INeedAwareGuestSpawner needAware)
+                needAware.Spawn(count, plan?.Needs);
+            else
+                guests.Spawn(count);
             transitions.TryTransitionTo(GameState.WaveActive);
         }
     }
