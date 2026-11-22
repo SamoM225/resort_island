@@ -581,7 +581,7 @@ namespace ResortIsland.Resort
                 if (File.Exists(imported)) File.Delete(imported);
                 File.Move(LegacySavePath, imported);
             }
-            catch (IOException e) { Debug.LogWarning("Starý resort_save.json sa nepodarilo premenovať: " + e.Message); 
+            catch (IOException e) { Debug.LogWarning("Starý resort_save.json sa nepodarilo premenovať: " + e.Message); }
         }
         
         private void LoadPaths(ResortSave save, List<PlacedBuilding> loaded)
