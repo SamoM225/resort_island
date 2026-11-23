@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System;
 using System.IO;
 using UnityEngine;
 using UnityEngine.Tilemaps;
@@ -47,6 +48,8 @@ namespace ResortIsland.Resort
 
         // The map used to have its own file; it now lives in the shared save (SaveStore). A legacy file is imported once.
         private string LegacySavePath => Path.Combine(Application.persistentDataPath, "resort_save.json");
+        public string BuildingLayoutSavePath => Path.Combine(Application.persistentDataPath, "building_layout.json");
+        public bool HasBuildingLayoutSave() => File.Exists(BuildingLayoutSavePath);
 
         private SaveStore store;
 
@@ -504,6 +507,182 @@ namespace ResortIsland.Resort
             try { store.Save(); }
             catch (System.Exception e) { Debug.LogError("Uloženie mapy zlyhalo: " + e.Message); }
 
+        }
+
+        /// Saves only the building layout to a dedicated local JSON file.
+        public bool SaveBuildingLayout(out string error)
+        {
+            error = null;
+            try
+            {
+                var layout = new BuildingLayoutSave
+                {
+                    saveVersion = 1,
+                    savedAtUtc = DateTime.UtcNow.ToString("o")
+                };
+                for (int i = 0; i < buildings.Count; i++)
+                {
+                    PlacedBuilding building = buildings[i];
+                    if (building == null || building.Config == null)
+                    {
+                        error = "Layout contains an invalid building.";
+                        return false;
+                    }
+                    layout.buildings.Add(new BuildingSave
+                    {
+                        instanceId = "building_" + i.ToString("D3"),
+                        buildingId = building.Config.Id,
+                        cellX = building.Cell.x,
+                        cellY = building.Cell.y,
+                        rotation = building.Rotation
+                    });
+                }
+
+                string temp = BuildingLayoutSavePath + ".tmp";
+                Directory.CreateDirectory(Application.persistentDataPath);
+                File.WriteAllText(temp, JsonUtility.ToJson(layout, true));
+                if (File.Exists(BuildingLayoutSavePath))
+                {
+                    try
+                    {
+                        File.Replace(temp, BuildingLayoutSavePath, BuildingLayoutSavePath + ".bak");
+                    }
+                    catch (Exception e) when (e is IOException || e is PlatformNotSupportedException)
+                    {
+                        File.Copy(temp, BuildingLayoutSavePath, true);
+                        File.Delete(temp);
+                    }
+                }
+                else
+                {
+                    File.Move(temp, BuildingLayoutSavePath);
+                }
+                return true;
+            }
+            catch (Exception e)
+            {
+                error = e.Message;
+                return false;
+            }
+        }
+
+        /// Validates a complete building layout before clearing or creating anything.
+        public bool LoadBuildingLayout(out string error)
+        {
+            error = null;
+            if (!File.Exists(BuildingLayoutSavePath))
+            {
+                error = "Saved layout file was not found.";
+                return false;
+            }
+
+            BuildingLayoutSave layout;
+            try
+            {
+                layout = JsonUtility.FromJson<BuildingLayoutSave>(File.ReadAllText(BuildingLayoutSavePath));
+            }
+            catch (Exception e)
+            {
+                error = "Invalid JSON: " + e.Message;
+                return false;
+            }
+
+            if (layout == null)
+            {
+                error = "Saved layout is empty.";
+                return false;
+            }
+            if (layout.saveVersion != 1)
+            {
+                error = "Unsupported layout save version: " + layout.saveVersion + ".";
+                return false;
+            }
+            if (layout.buildings == null)
+            {
+                error = "Saved layout has no building list.";
+                return false;
+            }
+
+            var footprintCells = new HashSet<Vector3Int>();
+            var instanceIds = new HashSet<string>(System.StringComparer.Ordinal);
+            foreach (BuildingSave buildingSave in layout.buildings)
+            {
+                if (buildingSave == null)
+                {
+                    error = "Saved layout contains an invalid building entry.";
+                    return false;
+                }
+                if (!string.IsNullOrEmpty(buildingSave.instanceId) &&
+                    !instanceIds.Add(buildingSave.instanceId))
+                {
+                    error = "Saved layout contains duplicate building IDs.";
+                    return false;
+                }
+
+                BuildingConfig config = FindConfig(buildingSave.buildingId);
+                if (config == null)
+                {
+                    error = "Unknown building type: " + buildingSave.buildingId + ".";
+                    return false;
+                }
+                if (config.Prefab == null)
+                {
+                    error = "Building type has no prefab: " + buildingSave.buildingId + ".";
+                    return false;
+                }
+
+                int rotation = BuildingRotation.Normalize(buildingSave.rotation);
+                Vector2Int size = BuildingRotation.Size(config.Footprint, rotation);
+                var origin = new Vector3Int(buildingSave.cellX, buildingSave.cellY, 0);
+                for (int y = 0; y < size.y; y++)
+                for (int x = 0; x < size.x; x++)
+                {
+                    var cell = new Vector3Int(origin.x + x, origin.y + y, 0);
+                    if (!footprintCells.Add(cell))
+                    {
+                        error = "Saved buildings overlap at tile " + cell.x + "," + cell.y + ".";
+                        return false;
+                    }
+                    if (!IsLayoutCellValid(cell))
+                    {
+                        error = "A saved building is outside the map or on unbuildable ground at " +
+                                cell.x + "," + cell.y + ".";
+                        return false;
+                    }
+                }
+            }
+
+            ClearWorld();
+            foreach (BuildingSave buildingSave in layout.buildings)
+            {
+                BuildingConfig config = FindConfig(buildingSave.buildingId);
+                int rotation = BuildingRotation.Normalize(buildingSave.rotation);
+                var origin = new Vector3Int(buildingSave.cellX, buildingSave.cellY, 0);
+                PlaceBuilding(config, origin, rotation, false);
+            }
+
+            if (pathsReady)
+            {
+                pathsGenerated = false;
+                GenerateAllPaths();
+            }
+            SetupNeedsAndWorkers();
+            SaveGame();
+            return true;
+        }
+
+        private bool IsLayoutCellValid(Vector3Int cell)
+        {
+            if (groundTilemap != null && !groundTilemap.HasTile(cell))
+                return false;
+            if (islandGenerator != null)
+            {
+                if (!islandGenerator.TryGetTile(cell, out TileData tile))
+                    return false;
+                if (!tile.isBuildable)
+                    return false;
+            }
+            return true;
         }
 
         private bool LoadGame()

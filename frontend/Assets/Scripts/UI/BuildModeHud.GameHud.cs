@@ -1,4 +1,6 @@
 using System.Collections.Generic;
+using System;
+using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -67,6 +69,15 @@ namespace ResortIsland.UI
         private RectTransform toast;
         private TMP_Text toastText;
         private float toastUntil;
+        private RectTransform layoutActions;
+        private bool layoutOperationRunning;
+        private RectTransform layoutDialogBackdrop;
+        private RectTransform layoutDialog;
+        private TMP_Text layoutDialogText;
+        private RectTransform layoutDialogConfirm;
+        private RectTransform layoutDialogCancel;
+        private TMP_Text layoutDialogCancelText;
+        private Action layoutDialogAction;
 
         private void BuildGameHud(RectTransform parent)
         {
@@ -74,6 +85,8 @@ namespace ResortIsland.UI
             BuildWaveCard(parent);
             BuildBottomBar(parent);
             BuildToast(parent);
+            BuildLayoutActions(parent);
+            BuildLayoutDialog(parent);
         }
 
         /// Start Wave and the forecast move from the old scene UI here; the Workers button replaces the old
@@ -98,6 +111,10 @@ namespace ResortIsland.UI
         {
             waveCard.gameObject.SetActive(!building && !waveCardHidden);
             toast.gameObject.SetActive(false);
+            if (building && layoutActions != null)
+                layoutActions.gameObject.SetActive(false);
+            if (building)
+                HideLayoutDialog();
         }
 
         private void RefreshGameHud()
@@ -139,6 +156,211 @@ namespace ResortIsland.UI
         {
             if (needsPanel != null) needsPanel.Toggle();
             else ShowToast("There is no workers panel in this scene");
+        }
+
+        private void ToggleLayoutActions()
+        {
+            if (layoutActions == null) return;
+            bool open = !layoutActions.gameObject.activeSelf;
+            if (open)
+            {
+                layoutActions.gameObject.SetActive(true);
+                StartCoroutine(AnimateLayoutPanel(open));
+            }
+            else
+            {
+                StartCoroutine(CloseLayoutPanel());
+            }
+        }
+
+        private void BuildLayoutActions(RectTransform parent)
+        {
+            layoutActions = NewRect("BuildingLayoutActions", parent);
+            Place(layoutActions, new Vector2(0.5f, 0f), new Vector2(0.5f, 0f),
+                new Vector2(0f, MainBarHeight + 30f), new Vector2(420f, 112f),
+                new Vector2(0.5f, 0f));
+            AddImage(layoutActions, UiShapes.Panel(CardCream, Outline, 18, 3), true).type = Image.Type.Sliced;
+
+            RectTransform save = NewRect("SaveLayout", layoutActions);
+            Place(save, new Vector2(0f, 0.5f), new Vector2(0f, 0.5f),
+                new Vector2(20f, 0f), new Vector2(180f, 72f), new Vector2(0f, 0.5f));
+            AddImage(save, UiShapes.Panel(PlusGreen, Outline, 14, 2), true).type = Image.Type.Sliced;
+            AddButton(save, () =>
+            {
+                if (layoutOperationRunning) return;
+                layoutOperationRunning = true;
+                try
+                {
+                    if (resort == null)
+                    {
+                        ShowLayoutDialog("Save failed: Resort manager is not available.", null);
+                        return;
+                    }
+                    if (resort.SaveBuildingLayout(out string error))
+                        ShowLayoutDialog("Layout saved successfully.", null);
+                    else
+                        ShowLayoutDialog("Save failed: " + error, null);
+                }
+                finally
+                {
+                    layoutOperationRunning = false;
+                }
+            });
+            NewText("SaveLabel", save, "SAVE LAYOUT", 24f, Color.white, TextAlignmentOptions.Center);
+
+            RectTransform load = NewRect("LoadLayout", layoutActions);
+            Place(load, new Vector2(1f, 0.5f), new Vector2(1f, 0.5f),
+                new Vector2(-20f, 0f), new Vector2(180f, 72f), new Vector2(1f, 0.5f));
+            AddImage(load, UiShapes.Panel(NewOutline, Outline, 14, 2), true).type = Image.Type.Sliced;
+            AddButton(load, () =>
+            {
+                if (layoutOperationRunning) return;
+                layoutOperationRunning = true;
+                try
+                {
+                    if (resort == null)
+                    {
+                        ShowLayoutDialog("Load failed: Resort manager is not available.", null);
+                        return;
+                    }
+                    if (!resort.HasBuildingLayoutSave())
+                    {
+                        ShowLayoutDialog("No saved layout found.", null);
+                    }
+                    else
+                    {
+                        ShowLayoutDialog("Load the saved building layout?", () =>
+                        {
+                            if (resort.LoadBuildingLayout(out string error))
+                            {
+                                layoutActions.gameObject.SetActive(false);
+                                ShowLayoutDialog("Layout loaded successfully.", null);
+                            }
+                            else
+                            {
+                                ShowLayoutDialog("Load failed: " + error, null);
+                            }
+                        });
+                    }
+                }
+                finally
+                {
+                    layoutOperationRunning = false;
+                }
+            });
+            NewText("LoadLabel", load, "LOAD LAYOUT", 24f, Color.white, TextAlignmentOptions.Center);
+            layoutActions.gameObject.SetActive(false);
+        }
+
+        private void BuildLayoutDialog(RectTransform parent)
+        {
+            layoutDialogBackdrop = NewRect("LayoutDialogBackdrop", parent);
+            Place(layoutDialogBackdrop, Vector2.zero, Vector2.one, Vector2.zero, Vector2.zero);
+            Image backdropImage = AddImage(layoutDialogBackdrop,
+                UiShapes.Panel(new Color(0f, 0f, 0f, 0.62f), new Color(0f, 0f, 0f, 0f), 0, 0),
+                true);
+            backdropImage.raycastTarget = true;
+            layoutDialogBackdrop.gameObject.SetActive(false);
+
+            layoutDialog = NewRect("LayoutDialog", layoutDialogBackdrop);
+            Place(layoutDialog, new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f),
+                Vector2.zero, new Vector2(620f, 260f), new Vector2(0.5f, 0.5f));
+            AddImage(layoutDialog, UiShapes.Panel(CardCream, Outline, 22, 4), false).type = Image.Type.Sliced;
+
+            layoutDialogText = NewText("Message", layoutDialog, "", 30f, TextDark,
+                TextAlignmentOptions.Center);
+            Place((RectTransform)layoutDialogText.transform,
+                new Vector2(0f, 0.5f), new Vector2(1f, 0.5f),
+                new Vector2(0f, 38f), new Vector2(-60f, 140f), new Vector2(0.5f, 0.5f));
+
+            layoutDialogConfirm = NewRect("Confirm", layoutDialog);
+            Place(layoutDialogConfirm, new Vector2(0f, 0f), new Vector2(0f, 0f),
+                new Vector2(170f, 34f), new Vector2(190f, 72f), new Vector2(0.5f, 0f));
+            AddImage(layoutDialogConfirm, UiShapes.Panel(PlusGreen, Outline, 14, 2), true).type = Image.Type.Sliced;
+            AddButton(layoutDialogConfirm, () =>
+            {
+                Action action = layoutDialogAction;
+                HideLayoutDialog();
+                action?.Invoke();
+            });
+            TMP_Text confirmText = NewText("ConfirmLabel", layoutDialogConfirm, "CONFIRM",
+                24f, Color.white, TextAlignmentOptions.Center);
+            Stretch((RectTransform)confirmText.transform, 8f, 8f, 8f, 8f);
+
+            layoutDialogCancel = NewRect("Cancel", layoutDialog);
+            Place(layoutDialogCancel, new Vector2(1f, 0f), new Vector2(1f, 0f),
+                new Vector2(-170f, 34f), new Vector2(190f, 72f), new Vector2(0.5f, 0f));
+            AddImage(layoutDialogCancel, UiShapes.Panel(Grey, Outline, 14, 2), true).type = Image.Type.Sliced;
+            AddButton(layoutDialogCancel, HideLayoutDialog);
+            layoutDialogCancelText = NewText("CancelLabel", layoutDialogCancel, "CANCEL",
+                24f, TextDark, TextAlignmentOptions.Center);
+            Stretch((RectTransform)layoutDialogCancelText.transform, 8f, 8f, 8f, 8f);
+        }
+
+        private void ShowLayoutDialog(string message, Action confirmAction)
+        {
+            if (layoutDialog == null || layoutDialogBackdrop == null) return;
+            layoutDialogAction = confirmAction;
+            layoutDialogText.text = message;
+            layoutDialogConfirm.gameObject.SetActive(confirmAction != null);
+            layoutDialogCancelText.text = confirmAction != null ? "CANCEL" : "OK";
+            layoutDialogBackdrop.gameObject.SetActive(true);
+            layoutDialog.gameObject.SetActive(true);
+            layoutDialog.localScale = Vector3.one * 0.86f;
+            StartCoroutine(AnimateLayoutDialog(true));
+        }
+
+        private void HideLayoutDialog()
+        {
+            layoutDialogAction = null;
+            if (layoutDialog == null || layoutDialogBackdrop == null) return;
+            layoutDialog.localScale = Vector3.one;
+            layoutDialog.gameObject.SetActive(false);
+            layoutDialogBackdrop.gameObject.SetActive(false);
+        }
+
+        private IEnumerator CloseLayoutPanel()
+        {
+            yield return AnimateLayoutPanel(false);
+            layoutActions.gameObject.SetActive(false);
+            layoutActions.localScale = Vector3.one;
+        }
+
+        private IEnumerator AnimateLayoutPanel(bool opening)
+        {
+            float duration = 0.18f;
+            float elapsed = 0f;
+            layoutActions.localScale = opening ? Vector3.one * 0.86f : Vector3.one;
+            while (elapsed < duration)
+            {
+                elapsed += Time.unscaledDeltaTime;
+                float t = Mathf.Clamp01(elapsed / duration);
+                float eased = 1f - Mathf.Pow(1f - t, 3f);
+                float scale = opening
+                    ? Mathf.Lerp(0.86f, 1f, eased)
+                    : Mathf.Lerp(1f, 0.86f, eased);
+                layoutActions.localScale = Vector3.one * scale;
+                yield return null;
+            }
+            layoutActions.localScale = Vector3.one;
+        }
+
+        private IEnumerator AnimateLayoutDialog(bool opening)
+        {
+            float duration = 0.16f;
+            float elapsed = 0f;
+            while (elapsed < duration)
+            {
+                elapsed += Time.unscaledDeltaTime;
+                float t = Mathf.Clamp01(elapsed / duration);
+                float eased = 1f - Mathf.Pow(1f - t, 3f);
+                float scale = opening
+                    ? Mathf.Lerp(0.86f, 1f, eased)
+                    : Mathf.Lerp(1f, 0.86f, eased);
+                layoutDialog.localScale = Vector3.one * scale;
+                yield return null;
+            }
+            layoutDialog.localScale = Vector3.one;
         }
 
         private void ToggleWaveCard()
@@ -348,8 +570,8 @@ namespace ResortIsland.UI
             x += StartItemWidth + gap;
             BarItem("Forecast", skin != null ? skin.ButtonTeal : null, skin != null ? skin.SpyglassIcon : null, x, ToggleWaveCard);
             x += BarItemWidth + gap;
-            BarItem("Settings", skin != null ? skin.ButtonGrey : null, skin != null ? skin.GearIcon : null, x,
-                () => ShowToast("Settings are coming soon"));
+            BarItem("Layout", skin != null ? skin.ButtonGrey : null, skin != null ? skin.GearIcon : null, x,
+                ToggleLayoutActions);
 
             // red count of buildings that are new to build
             buildBadge = NewRect("Badge", build);
