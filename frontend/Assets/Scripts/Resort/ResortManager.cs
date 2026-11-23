@@ -5,10 +5,13 @@ using UnityEngine;
 using UnityEngine.Tilemaps;
 using ResortIsland.Config;
 using ResortIsland.Save;
+using ResortIsland.Characters;
+using ResortIsland.Waves;
+using System;
 
 namespace ResortIsland.Resort
 {
-    public class ResortManager : MonoBehaviour
+    public class ResortManager : MonoBehaviour, IWorkerMoves
     {
         [Header("Scene")]
         [SerializeField] private Grid grid;
@@ -45,6 +48,8 @@ namespace ResortIsland.Resort
         public PathNetwork Paths => paths;
         public bool PathsReady => pathsReady;
         public PathStyleCatalog PathStyles => pathStyles;
+        public IReadOnlyList<GameObject> Workers => workers;
+        public event Action Moved;
 
         // The map used to have its own file; it now lives in the shared save (SaveStore). A legacy file is imported once.
         private string LegacySavePath => Path.Combine(Application.persistentDataPath, "resort_save.json");
@@ -222,6 +227,7 @@ namespace ResortIsland.Resort
             if (placed == null) return false;
 
             UpdatePaths(connected, placed);
+            SyncWorkers();
             SaveGame();
             return true;
         }
@@ -812,23 +818,172 @@ namespace ResortIsland.Resort
         {
             activeNeeds.Clear();
             activeNeeds.AddRange(startConfig.ActiveNeeds);
+            SyncWorkers();
+        }
 
-            // workers start on free land close to the centre of the generated island
-            var spawnCells = new List<Vector3Int>();
-            if (islandGenerator != null)
-                islandGenerator.TryFindFreeCells(startConfig.StartingWorkers, spawnCells);
+        public IReadOnlyList<PlacedBuilding> BuildingList => buildings;
+        public WorkerAI SelectedWorker { get; private set; }
 
-            for (int i = 0; i < startConfig.StartingWorkers; i++)
+        /// Creates/removes workers and repairs assignments whenever the building list changes.
+        public void SyncWorkers()
+        {
+            for (int i = workers.Count - 1; i >= 0; i--)
+                if (workers[i] == null) workers.RemoveAt(i);
+
+            int required = WorkerAssignment.RequiredWorkerCount(buildings.Count);
+            while (workers.Count > required)
             {
-                if (startConfig.WorkerPrefab == null) break;
-
-                var cell = i < spawnCells.Count
-                    ? spawnCells[i]
-                    : startConfig.WorkerStartCell + new Vector3Int(i, -i, 0);
-                var worker = Instantiate(startConfig.WorkerPrefab, CellToWorld(cell), Quaternion.identity);
-                ResortSorting.Apply(worker);
-                workers.Add(worker);
+                GameObject extra = workers[workers.Count - 1];
+                workers.RemoveAt(workers.Count - 1);
+                if (extra != null) Destroy(extra);
             }
+            if (SelectedWorker != null && !workers.Contains(SelectedWorker.gameObject))
+                ClearWorkerSelection();
+
+            if (required > 0 && startConfig != null && startConfig.WorkerPrefab != null)
+            {
+                while (workers.Count < required)
+                {
+                    Vector3Int spawn = startConfig.WorkerStartCell;
+                    if (islandGenerator != null)
+                    {
+                        var free = new List<Vector3Int>();
+                        islandGenerator.TryFindFreeCells(required - workers.Count + 4, free);
+                        if (free.Count > workers.Count)
+                            spawn = free[workers.Count];
+                    }
+                    GameObject worker = Instantiate(startConfig.WorkerPrefab, CellToWorld(spawn), Quaternion.identity);
+                    ResortSorting.Apply(worker);
+                    WorkerAI ai = worker.GetComponent<WorkerAI>();
+                    if (ai == null) ai = worker.AddComponent<WorkerAI>();
+                    ai.Initialize(this);
+                    workers.Add(worker);
+                }
+            }
+
+            var assigned = new HashSet<PlacedBuilding>();
+            foreach (GameObject workerObject in workers)
+            {
+                if (workerObject == null) continue;
+                WorkerAI ai = workerObject.GetComponent<WorkerAI>();
+                if (ai == null) continue;
+                if (ai.AssignedBuilding == null || !buildings.Contains(ai.AssignedBuilding) ||
+                    assigned.Contains(ai.AssignedBuilding))
+                {
+                    ai.Assign(null, Vector3Int.zero);
+                    continue;
+                }
+                assigned.Add(ai.AssignedBuilding);
+            }
+
+            foreach (PlacedBuilding building in buildings)
+            {
+                if (assigned.Contains(building)) continue;
+                foreach (GameObject workerObject in workers)
+                {
+                    if (workerObject == null) continue;
+                    WorkerAI ai = workerObject.GetComponent<WorkerAI>();
+                    if (ai == null || ai.AssignedBuilding != null) continue;
+                    ai.Assign(building, FindWorkerSlot(building, ai));
+                    assigned.Add(building);
+                    break;
+                }
+            }
+        }
+
+        public void SelectWorker(WorkerAI worker)
+        {
+            ClearWorkerSelection();
+            if (worker == null) return;
+            SelectedWorker = worker;
+            worker.SetSelected(true);
+        }
+
+        public bool HasWorkerAtBuilding(PlacedBuilding building)
+        {
+            if (building == null) return false;
+            foreach (GameObject workerObject in workers)
+            {
+                if (workerObject == null) continue;
+                WorkerAI worker = workerObject.GetComponent<WorkerAI>();
+                if (worker != null && worker.AssignedBuilding == building)
+                    return true;
+            }
+            return false;
+        }
+
+        /// A tap on a free building moves the currently selected worker there.
+        public bool ReassignSelectedWorker(PlacedBuilding target)
+        {
+            if (target == null || !buildings.Contains(target) || SelectedWorker == null)
+                return false;
+            foreach (GameObject workerObject in workers)
+            {
+                if (workerObject == null) continue;
+                WorkerAI assignedWorker = workerObject.GetComponent<WorkerAI>();
+                if (assignedWorker != null && assignedWorker.AssignedBuilding == target)
+                    return false;
+            }
+
+            WorkerAI selectedWorker = SelectedWorker;
+            selectedWorker.Assign(target, FindWorkerSlot(target, selectedWorker));
+            selectedWorker.SetSelected(false);
+            SelectedWorker = null;
+            Moved?.Invoke();
+            return true;
+        }
+
+        public void ClearWorkerSelection()
+        {
+            if (SelectedWorker != null)
+                SelectedWorker.SetSelected(false);
+            SelectedWorker = null;
+        }
+
+        public Vector3Int FindWorkerSlot(PlacedBuilding building, WorkerAI ignoreWorker)
+        {
+            if (building == null) return Vector3Int.zero;
+            Vector3Int entrance = building.EntranceCell;
+            Vector3Int[] offsets =
+            {
+                Vector3Int.up, Vector3Int.down, Vector3Int.right, Vector3Int.left,
+                new Vector3Int(1, 1, 0), new Vector3Int(1, -1, 0),
+                new Vector3Int(-1, 1, 0), new Vector3Int(-1, -1, 0)
+            };
+
+            foreach (Vector3Int offset in offsets)
+            {
+                Vector3Int candidate = entrance + offset;
+                if (!IsFree(candidate) || candidate == entrance) continue;
+                bool used = false;
+                foreach (GameObject workerObject in workers)
+                {
+                    if (workerObject == null) continue;
+                    WorkerAI other = workerObject.GetComponent<WorkerAI>();
+                    if (other == null || other == ignoreWorker) continue;
+                    if (other.AssignedSlot == candidate ||
+                        WorldToCell(workerObject.transform.position) == candidate)
+                    {
+                        used = true;
+                        break;
+                    }
+                }
+                if (!used) return candidate;
+            }
+            return IsUsableEntrance(entrance) ? entrance : building.Cell;
+        }
+
+        public bool RemoveBuilding(PlacedBuilding building)
+        {
+            if (building == null || !buildings.Contains(building)) return false;
+            var connected = ConnectedBuildings();
+            Unregister(building);
+            buildings.Remove(building);
+            Destroy(building.gameObject);
+            if (pathsReady) paths.Reconnect(Footprints(), connected);
+            SyncWorkers();
+            SaveGame();
+            return true;
         }
 
         private void ClearWorld()
