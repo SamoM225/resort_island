@@ -22,24 +22,30 @@ namespace ResortIsland.Waves
         private WaveCompletionTracker waveCompletionTracker;
         private GuestArrivalPresenter guestArrivalPresenter;
         private WaveDrain waveDrain;
+        private WaveTicker waveTicker;
+        private WaveWaits waveWaits;
+        private WaveScoreReport waveScoreReport;
 
         public IGameState State => stateMachine;
         public IWavePlanner Planner { get; private set; }
         public WaveArrivalsPresenter Arrivals { get; private set; }
         public List<IBuildingQueue> BuildingQueues { get; } = new List<IBuildingQueue>();
+        public WaveBuildings Buildings { get; private set; }
+        public IWaveResult Result => waveWaits;
+        public WaveScore Score => waveWaits?.Current;
 
         private void Start()
         {
             BindStartWave();
             BindForecast();
+            BindWaveArrivals();
             BindAnalytics();
             BindArrival();
-            BindWaveArrivals();
         }
 
         private void Update()
         {
-            Arrivals?.Tick(Time.deltaTime);
+            waveTicker?.Tick(Time.deltaTime);
             waveDrain?.Check();
         }
 
@@ -50,6 +56,8 @@ namespace ResortIsland.Waves
             waveCompletionTracker?.Dispose();
             guestArrivalPresenter?.Dispose();
             Arrivals?.Dispose();
+            waveWaits?.Dispose();
+            waveScoreReport?.Dispose();
         }
 
         /// Moves the Start Wave button and the forecast to other views (the bottom bar of the HUD).
@@ -114,7 +122,9 @@ namespace ResortIsland.Waves
                 return;
             }
 
-            waveCompletionTracker = new WaveCompletionTracker(stateMachine, analytics);
+            waveCompletionTracker = waveWaits != null
+                ? new WaveCompletionTracker(stateMachine, analytics, new WaveRatingMetric(waveWaits))
+                : new WaveCompletionTracker(stateMachine, analytics);
         }
 
         private void BindArrival()
@@ -138,6 +148,13 @@ namespace ResortIsland.Waves
                 return;
 
             Arrivals = new WaveArrivalsPresenter(stateMachine, Planner, configs.WaveSystem.WaveTimerS);
+            Buildings = WaveBuildings.From(configs);
+            BuildingQueues.AddRange(Buildings.Queues);
+            Arrivals.UnitArrived += Buildings.Arrive;
+            waveTicker = new WaveTicker(Arrivals, Buildings);
+            waveWaits = new WaveWaits(stateMachine, WaveRating.From(configs), Buildings);
+            IBackendClient client = new UnityBackendClient();
+            waveScoreReport = new WaveScoreReport(stateMachine, waveWaits, new WaveResultReporter(client, new AnonymousPlayerAuth(client, new PlayerPrefsTokenStore())));
             waveDrain = new WaveDrain(stateMachine, stateMachine, Arrivals, () => BuildingQueues);
         }
     }

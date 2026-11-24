@@ -1,14 +1,17 @@
 using System.Collections.Generic;
+using System;
 using System.IO;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 using ResortIsland.Config;
 using ResortIsland.Save;
 using ResortIsland.Characters;
+using ResortIsland.Waves;
+using System;
 
 namespace ResortIsland.Resort
 {
-    public class ResortManager : MonoBehaviour
+    public class ResortManager : MonoBehaviour, IWorkerMoves
     {
         [Header("Scene")]
         [SerializeField] private Grid grid;
@@ -45,9 +48,13 @@ namespace ResortIsland.Resort
         public PathNetwork Paths => paths;
         public bool PathsReady => pathsReady;
         public PathStyleCatalog PathStyles => pathStyles;
+        public IReadOnlyList<GameObject> Workers => workers;
+        public event Action Moved;
 
         // The map used to have its own file; it now lives in the shared save (SaveStore). A legacy file is imported once.
         private string LegacySavePath => Path.Combine(Application.persistentDataPath, "resort_save.json");
+        public string BuildingLayoutSavePath => Path.Combine(Application.persistentDataPath, "building_layout.json");
+        public bool HasBuildingLayoutSave() => File.Exists(BuildingLayoutSavePath);
 
         private SaveStore store;
 
@@ -220,6 +227,7 @@ namespace ResortIsland.Resort
             if (placed == null) return false;
 
             UpdatePaths(connected, placed);
+            SyncWorkers();
             SaveGame();
             return true;
         }
@@ -508,6 +516,182 @@ namespace ResortIsland.Resort
 
         }
 
+        /// Saves only the building layout to a dedicated local JSON file.
+        public bool SaveBuildingLayout(out string error)
+        {
+            error = null;
+            try
+            {
+                var layout = new BuildingLayoutSave
+                {
+                    saveVersion = 1,
+                    savedAtUtc = DateTime.UtcNow.ToString("o")
+                };
+                for (int i = 0; i < buildings.Count; i++)
+                {
+                    PlacedBuilding building = buildings[i];
+                    if (building == null || building.Config == null)
+                    {
+                        error = "Layout contains an invalid building.";
+                        return false;
+                    }
+                    layout.buildings.Add(new BuildingSave
+                    {
+                        instanceId = "building_" + i.ToString("D3"),
+                        buildingId = building.Config.Id,
+                        cellX = building.Cell.x,
+                        cellY = building.Cell.y,
+                        rotation = building.Rotation
+                    });
+                }
+
+                string temp = BuildingLayoutSavePath + ".tmp";
+                Directory.CreateDirectory(Application.persistentDataPath);
+                File.WriteAllText(temp, JsonUtility.ToJson(layout, true));
+                if (File.Exists(BuildingLayoutSavePath))
+                {
+                    try
+                    {
+                        File.Replace(temp, BuildingLayoutSavePath, BuildingLayoutSavePath + ".bak");
+                    }
+                    catch (Exception e) when (e is IOException || e is PlatformNotSupportedException)
+                    {
+                        File.Copy(temp, BuildingLayoutSavePath, true);
+                        File.Delete(temp);
+                    }
+                }
+                else
+                {
+                    File.Move(temp, BuildingLayoutSavePath);
+                }
+                return true;
+            }
+            catch (Exception e)
+            {
+                error = e.Message;
+                return false;
+            }
+        }
+
+        /// Validates a complete building layout before clearing or creating anything.
+        public bool LoadBuildingLayout(out string error)
+        {
+            error = null;
+            if (!File.Exists(BuildingLayoutSavePath))
+            {
+                error = "Saved layout file was not found.";
+                return false;
+            }
+
+            BuildingLayoutSave layout;
+            try
+            {
+                layout = JsonUtility.FromJson<BuildingLayoutSave>(File.ReadAllText(BuildingLayoutSavePath));
+            }
+            catch (Exception e)
+            {
+                error = "Invalid JSON: " + e.Message;
+                return false;
+            }
+
+            if (layout == null)
+            {
+                error = "Saved layout is empty.";
+                return false;
+            }
+            if (layout.saveVersion != 1)
+            {
+                error = "Unsupported layout save version: " + layout.saveVersion + ".";
+                return false;
+            }
+            if (layout.buildings == null)
+            {
+                error = "Saved layout has no building list.";
+                return false;
+            }
+
+            var footprintCells = new HashSet<Vector3Int>();
+            var instanceIds = new HashSet<string>(System.StringComparer.Ordinal);
+            foreach (BuildingSave buildingSave in layout.buildings)
+            {
+                if (buildingSave == null)
+                {
+                    error = "Saved layout contains an invalid building entry.";
+                    return false;
+                }
+                if (!string.IsNullOrEmpty(buildingSave.instanceId) &&
+                    !instanceIds.Add(buildingSave.instanceId))
+                {
+                    error = "Saved layout contains duplicate building IDs.";
+                    return false;
+                }
+
+                BuildingConfig config = FindConfig(buildingSave.buildingId);
+                if (config == null)
+                {
+                    error = "Unknown building type: " + buildingSave.buildingId + ".";
+                    return false;
+                }
+                if (config.Prefab == null)
+                {
+                    error = "Building type has no prefab: " + buildingSave.buildingId + ".";
+                    return false;
+                }
+
+                int rotation = BuildingRotation.Normalize(buildingSave.rotation);
+                Vector2Int size = BuildingRotation.Size(config.Footprint, rotation);
+                var origin = new Vector3Int(buildingSave.cellX, buildingSave.cellY, 0);
+                for (int y = 0; y < size.y; y++)
+                for (int x = 0; x < size.x; x++)
+                {
+                    var cell = new Vector3Int(origin.x + x, origin.y + y, 0);
+                    if (!footprintCells.Add(cell))
+                    {
+                        error = "Saved buildings overlap at tile " + cell.x + "," + cell.y + ".";
+                        return false;
+                    }
+                    if (!IsLayoutCellValid(cell))
+                    {
+                        error = "A saved building is outside the map or on unbuildable ground at " +
+                                cell.x + "," + cell.y + ".";
+                        return false;
+                    }
+                }
+            }
+
+            ClearWorld();
+            foreach (BuildingSave buildingSave in layout.buildings)
+            {
+                BuildingConfig config = FindConfig(buildingSave.buildingId);
+                int rotation = BuildingRotation.Normalize(buildingSave.rotation);
+                var origin = new Vector3Int(buildingSave.cellX, buildingSave.cellY, 0);
+                PlaceBuilding(config, origin, rotation, false);
+            }
+
+            if (pathsReady)
+            {
+                pathsGenerated = false;
+                GenerateAllPaths();
+            }
+            SetupNeedsAndWorkers();
+            SaveGame();
+            return true;
+        }
+
+        private bool IsLayoutCellValid(Vector3Int cell)
+        {
+            if (groundTilemap != null && !groundTilemap.HasTile(cell))
+                return false;
+            if (islandGenerator != null)
+            {
+                if (!islandGenerator.TryGetTile(cell, out TileData tile))
+                    return false;
+                if (!tile.isBuildable)
+                    return false;
+            }
+            return true;
+        }
+
         private bool LoadGame()
         {
             ResortSave save = store != null && store.IsLoaded ? store.Data.resort : null;
@@ -635,23 +819,172 @@ namespace ResortIsland.Resort
         {
             activeNeeds.Clear();
             activeNeeds.AddRange(startConfig.ActiveNeeds);
+            SyncWorkers();
+        }
 
-            // workers start on free land close to the centre of the generated island
-            var spawnCells = new List<Vector3Int>();
-            if (islandGenerator != null)
-                islandGenerator.TryFindFreeCells(startConfig.StartingWorkers, spawnCells);
+        public IReadOnlyList<PlacedBuilding> BuildingList => buildings;
+        public WorkerAI SelectedWorker { get; private set; }
 
-            for (int i = 0; i < startConfig.StartingWorkers; i++)
+        /// Creates/removes workers and repairs assignments whenever the building list changes.
+        public void SyncWorkers()
+        {
+            for (int i = workers.Count - 1; i >= 0; i--)
+                if (workers[i] == null) workers.RemoveAt(i);
+
+            int required = WorkerAssignment.RequiredWorkerCount(buildings.Count);
+            while (workers.Count > required)
             {
-                if (startConfig.WorkerPrefab == null) break;
-
-                var cell = i < spawnCells.Count
-                    ? spawnCells[i]
-                    : startConfig.WorkerStartCell + new Vector3Int(i, -i, 0);
-                var worker = Instantiate(startConfig.WorkerPrefab, CellToWorld(cell), Quaternion.identity);
-                ResortSorting.Apply(worker);
-                workers.Add(worker);
+                GameObject extra = workers[workers.Count - 1];
+                workers.RemoveAt(workers.Count - 1);
+                if (extra != null) Destroy(extra);
             }
+            if (SelectedWorker != null && !workers.Contains(SelectedWorker.gameObject))
+                ClearWorkerSelection();
+
+            if (required > 0 && startConfig != null && startConfig.WorkerPrefab != null)
+            {
+                while (workers.Count < required)
+                {
+                    Vector3Int spawn = startConfig.WorkerStartCell;
+                    if (islandGenerator != null)
+                    {
+                        var free = new List<Vector3Int>();
+                        islandGenerator.TryFindFreeCells(required - workers.Count + 4, free);
+                        if (free.Count > workers.Count)
+                            spawn = free[workers.Count];
+                    }
+                    GameObject worker = Instantiate(startConfig.WorkerPrefab, CellToWorld(spawn), Quaternion.identity);
+                    ResortSorting.Apply(worker);
+                    WorkerAI ai = worker.GetComponent<WorkerAI>();
+                    if (ai == null) ai = worker.AddComponent<WorkerAI>();
+                    ai.Initialize(this);
+                    workers.Add(worker);
+                }
+            }
+
+            var assigned = new HashSet<PlacedBuilding>();
+            foreach (GameObject workerObject in workers)
+            {
+                if (workerObject == null) continue;
+                WorkerAI ai = workerObject.GetComponent<WorkerAI>();
+                if (ai == null) continue;
+                if (ai.AssignedBuilding == null || !buildings.Contains(ai.AssignedBuilding) ||
+                    assigned.Contains(ai.AssignedBuilding))
+                {
+                    ai.Assign(null, Vector3Int.zero);
+                    continue;
+                }
+                assigned.Add(ai.AssignedBuilding);
+            }
+
+            foreach (PlacedBuilding building in buildings)
+            {
+                if (assigned.Contains(building)) continue;
+                foreach (GameObject workerObject in workers)
+                {
+                    if (workerObject == null) continue;
+                    WorkerAI ai = workerObject.GetComponent<WorkerAI>();
+                    if (ai == null || ai.AssignedBuilding != null) continue;
+                    ai.Assign(building, FindWorkerSlot(building, ai));
+                    assigned.Add(building);
+                    break;
+                }
+            }
+        }
+
+        public void SelectWorker(WorkerAI worker)
+        {
+            ClearWorkerSelection();
+            if (worker == null) return;
+            SelectedWorker = worker;
+            worker.SetSelected(true);
+        }
+
+        public bool HasWorkerAtBuilding(PlacedBuilding building)
+        {
+            if (building == null) return false;
+            foreach (GameObject workerObject in workers)
+            {
+                if (workerObject == null) continue;
+                WorkerAI worker = workerObject.GetComponent<WorkerAI>();
+                if (worker != null && worker.AssignedBuilding == building)
+                    return true;
+            }
+            return false;
+        }
+
+        /// A tap on a free building moves the currently selected worker there.
+        public bool ReassignSelectedWorker(PlacedBuilding target)
+        {
+            if (target == null || !buildings.Contains(target) || SelectedWorker == null)
+                return false;
+            foreach (GameObject workerObject in workers)
+            {
+                if (workerObject == null) continue;
+                WorkerAI assignedWorker = workerObject.GetComponent<WorkerAI>();
+                if (assignedWorker != null && assignedWorker.AssignedBuilding == target)
+                    return false;
+            }
+
+            WorkerAI selectedWorker = SelectedWorker;
+            selectedWorker.Assign(target, FindWorkerSlot(target, selectedWorker));
+            selectedWorker.SetSelected(false);
+            SelectedWorker = null;
+            Moved?.Invoke();
+            return true;
+        }
+
+        public void ClearWorkerSelection()
+        {
+            if (SelectedWorker != null)
+                SelectedWorker.SetSelected(false);
+            SelectedWorker = null;
+        }
+
+        public Vector3Int FindWorkerSlot(PlacedBuilding building, WorkerAI ignoreWorker)
+        {
+            if (building == null) return Vector3Int.zero;
+            Vector3Int entrance = building.EntranceCell;
+            Vector3Int[] offsets =
+            {
+                Vector3Int.up, Vector3Int.down, Vector3Int.right, Vector3Int.left,
+                new Vector3Int(1, 1, 0), new Vector3Int(1, -1, 0),
+                new Vector3Int(-1, 1, 0), new Vector3Int(-1, -1, 0)
+            };
+
+            foreach (Vector3Int offset in offsets)
+            {
+                Vector3Int candidate = entrance + offset;
+                if (!IsFree(candidate) || candidate == entrance) continue;
+                bool used = false;
+                foreach (GameObject workerObject in workers)
+                {
+                    if (workerObject == null) continue;
+                    WorkerAI other = workerObject.GetComponent<WorkerAI>();
+                    if (other == null || other == ignoreWorker) continue;
+                    if (other.AssignedSlot == candidate ||
+                        WorldToCell(workerObject.transform.position) == candidate)
+                    {
+                        used = true;
+                        break;
+                    }
+                }
+                if (!used) return candidate;
+            }
+            return IsUsableEntrance(entrance) ? entrance : building.Cell;
+        }
+
+        public bool RemoveBuilding(PlacedBuilding building)
+        {
+            if (building == null || !buildings.Contains(building)) return false;
+            var connected = ConnectedBuildings();
+            Unregister(building);
+            buildings.Remove(building);
+            Destroy(building.gameObject);
+            if (pathsReady) paths.Reconnect(Footprints(), connected);
+            SyncWorkers();
+            SaveGame();
+            return true;
         }
 
         private void ClearWorld()

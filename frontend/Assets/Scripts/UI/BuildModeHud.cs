@@ -360,8 +360,13 @@ namespace ResortIsland.UI
             Refresh();
         }
 
-        private void ShowMessage(string text)
+        public void ShowMessage(string text)
         {
+            if (!string.IsNullOrEmpty(text) && toast != null && toastText != null)
+            {
+                ShowToast(text);
+                return;
+            }
             message = text;
             messageUntil = Time.unscaledTime + MessageSeconds;
             Refresh();
