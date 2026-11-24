@@ -249,6 +249,7 @@ namespace ResortIsland.Resort
 
             placed.Init(config);
             placed.SetRotation(rotation);
+            placed.gameObject.AddComponent<BuildingOccupancy>().Init(config);
             Register(placed, origin);
             buildings.Add(placed);
 
