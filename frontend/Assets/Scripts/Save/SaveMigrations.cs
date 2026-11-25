@@ -28,6 +28,7 @@ namespace ResortIsland.Save
     {
         private static readonly ISaveMigration[] Steps =
         {
+            new SaveV1ToV2()
         };
 
         public static SaveMigrator CreateDefault() => new SaveMigrator(SaveData.CurrentVersion, Steps);
