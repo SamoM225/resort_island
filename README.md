@@ -59,11 +59,12 @@ chodníky vychádzajú rovné alebo v tvare L.
   napojenie, sa napoja znova.
 - V menu **Path** / **Erase path** sa ťahaním myšou kladie alebo maže chodník. Zmazaný chodník sa sám
   nevráti, kým sa nepresunie budova, ktorej patril.
-- Chodník pod novou budovou zmizne. Chodníky sa ukladajú do `resort_save.json`. Staré uloženia bez
+- Chodník pod novou budovou zmizne. Chodníky sa ukladajú do `save.json`. Staré uloženia bez
   chodníkov ich dostanú vygenerované pri načítaní.
 
 Štýly chodníkov (White Paving – predvolený, Sand Trail, Boardwalk, Gravel, Stepping Stones, Cobblestone,
-Promenade) sú v `frontend/Assets/Resources/PathStyles.asset`: tier, cena za dlaždicu, vlna odomknutia a levely, kde každý level
+Promenade) majú vzhľad v `frontend/Assets/Resources/PathStyles.asset` (názov, tier a levely) a čísla v configu `paths`
+(vlna odomknutia, pre každý level cena a hodnota rezortu za dlaždicu, rýchlosť hostí) — viď *Laditeľné parametre*. Každý level
 je jeden sheet `ResortEmpire/Sprites/Paths/Path_*.png` (8 × 2 bunky). Sprity sa z neho vyrežú za behu,
 v asete stačí nastaviť `Face Center` (stred plochy v prvej bunke). Každá bunka chodníka si pamätá štýl a level.
 
@@ -222,7 +223,7 @@ Návrh udalostí pre metriky z nefunkčných požiadaviek:
 
 ### Herné configy
 
-Zdroj pravdy je databáza; configy sa menia v admin paneli (*Game configs*). Súbory `backend/database/game-configs/{key}.json` (`economy`, `wave_system`, `energy`, `needs`, `buildings`, `unlocks`, `waves`) sú počiatočné dáta: seed zo súboru pridá config, ktorý v DB ešte nie je, alebo verziu vyššiu než má DB. Úpravy z admin panelu nikdy neprepíše (len vypíše, že ponechal verziu z DB).
+Zdroj pravdy je databáza; configy sa menia v admin paneli (*Game configs*). Súbory `backend/database/game-configs/{key}.json` (`economy`, `wave_system`, `energy`, `needs`, `buildings`, `unlocks`, `paths`, `waves`) sú počiatočné dáta: seed zo súboru pridá config, ktorý v DB ešte nie je, alebo verziu vyššiu než má DB. Úpravy z admin panelu nikdy neprepíše (len vypíše, že ponechal verziu z DB).
 
 | | dev (aj lokálne) | prod |
 | --- | --- | --- |
@@ -232,6 +233,27 @@ Zdroj pravdy je databáza; configy sa menia v admin paneli (*Game configs*). Sú
 Režim určuje `APP_ENV` (`local`/`development` = dev), dá sa prepísať premennou `GAME_CONFIGS_FREE_EDITING=true|false`.
 
 V admin paneli: zoznam najnovších verzií, detail s rozbaľovacím stromom a históriou verzií, úprava v JSON editore (chyby s cestou, napr. `buildings.0.id`), **Download** jedného configu (formát súborov v repe), **Download all** (formát `GET /api/v1/configs`) a **Upload** jedného/viacerých súborov alebo celého „Download all“ — publikuje sa všetko alebo nič.
+
+**Laditeľné parametre.** Všetky čísla hry sú v configoch, nie v kóde ani v Unity assetoch (tie držia len vzhľad):
+
+| Čo | Kde |
+| --- | --- |
+| cena budovy, max. počet, hodnota rezortu za postavenie | `buildings.buildings[].cost`, `max_count`, `resort_value` |
+| kapacita a cena upgradu budovy, hodnota rezortu za upgrade | `buildings.levels[].capacity`, `upgrade_cost`, `resort_value` |
+| cena odomknutia, pracovníci navyše | `unlocks.unlocks[].cost`, `workers_added` |
+| chodníky: vlna odomknutia, cena a hodnota rezortu za dlaždicu, rýchlosť hostí | `paths.styles[].unlock_wave`, `levels[].cost_per_tile`, `value_per_tile`, `guest_speed_pct` |
+| počet pracovníkov na štarte | `economy.starting_workers` (+ `workers_added` každého odomknutia) |
+| hodnota rezortu za hodnotenie vlny (1★…5★, Perfect) | `economy.resort_value_by_rating` |
+| prah varovania na paneli potrieb (dĺžka radu) | `wave_system.bottleneck_threshold` |
+
+Hodnota rezortu len rastie: pripíše sa pri postavení budovy, pri položení/vylepšení chodníka (každá nová alebo zmenená dlaždica,
+rovnako ako cena) a pri *Claim* na Wave Complete. Budova alebo štýl, ktorý config nepozná, sa nedá postaviť; hra si nedomýšľa
+vlastné hodnoty. Unity má kópiu configov v `frontend/Assets/Resources/GameConfigs.json` (použije sa pred prvým stiahnutím
+a bez siete) — po zmene súborov v `backend/database/game-configs` ju aktualizuj (*Download all* z lokálneho admin panelu);
+`tools/wave_sim` test zlyhá, ak sa líši. Cache stiahnutých configov bez nových polí sa zahodí a hra použije túto kópiu.
+
+`wave_sim.py` berie počet pracovníkov z configu (`starting_workers` + odomknutia): budovy, na ktoré pracovníci nestačia,
+nechá prázdne tak, aby výsledok bol čo najlepší.
 
 Wave sim v CI kontroluje len súbory v repe. Zmenu z admin panelu over pred playtestom: *Download all* → `python3 tools/wave_sim/wave_sim.py --configs <stiahnutý súbor>` → *Upload*.
 

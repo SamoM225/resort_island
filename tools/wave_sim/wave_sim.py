@@ -1,5 +1,6 @@
 import argparse
 import heapq
+import itertools
 import json
 import math
 import sys
@@ -47,7 +48,7 @@ class Building:
 class WaveResult:
     satisfaction: float
     rating: int
-    empty_building: str
+    empty_buildings: tuple
 
 
 @dataclass(frozen=True)
@@ -123,6 +124,8 @@ def wave_coins(units, rating, economy):
 class Resort:
     def __init__(self, configs):
         unlock_waves = {unlock["id"]: unlock["after_wave"] for unlock in configs["unlocks"]["unlocks"]}
+        self.starting_workers = configs["economy"]["starting_workers"]
+        self.workers_added = [(unlock["after_wave"], unlock["workers_added"]) for unlock in configs["unlocks"]["unlocks"]]
         self.buildings = [
             Building(building["id"], building["need"], unlock_waves[building["unlock"]] if building["unlock"] else 0)
             for building in configs["buildings"]["buildings"]
@@ -137,6 +140,13 @@ class Resort:
 
     def buildings_in(self, wave):
         return [building for building in self.buildings if building.unlocked_after_wave < wave]
+
+    def workers_in(self, wave):
+        """starting_workers plus the workers every unlock bought before this wave brings (like the game)."""
+        return self.starting_workers + sum(added for after_wave, added in self.workers_added if after_wave < wave)
+
+    def empty_count(self, wave):
+        return max(0, len(self.buildings_in(wave)) - self.workers_in(wave))
 
     def demand_in(self, wave):
         return {building.need: self.table[wave].get(building.need, 0) for building in self.buildings_in(wave)}
@@ -157,25 +167,30 @@ class WaveSimulator:
         self.resort = resort
         self.rules = rules
 
-    def unit_waits(self, wave, capacity, empty_building):
+    def unit_waits(self, wave, capacity, empty_buildings):
+        """empty_buildings: ids of the buildings without a worker; the rush of the rush wave hits the first one."""
         demand = self.resort.demand_in(wave)
+        rushed = empty_buildings[0] if empty_buildings else None
         result = {}
         for building in self.resort.buildings_in(wave):
             unit_arrivals = arrivals(demand[building.need], 0.0, self.rules.wave_timer)
-            if wave == self.rules.rush_wave and building.id == empty_building:
+            if wave == self.rules.rush_wave and building.id == rushed:
                 unit_arrivals += arrivals(self.rules.rush_units, self.rules.rush_time, self.rules.rush_duration)
-            duration = self.rules.service_duration(staffed=building.id != empty_building)
+            duration = self.rules.service_duration(staffed=building.id not in empty_buildings)
             result[building.need] = waits(unit_arrivals, capacity, duration)
         return result
 
-    def satisfaction(self, wave, capacity, empty_building):
-        return self.rules.satisfaction(self.unit_waits(wave, capacity, empty_building), self.resort.weights)
+    def satisfaction(self, wave, capacity, empty_buildings):
+        return self.rules.satisfaction(self.unit_waits(wave, capacity, empty_buildings), self.resort.weights)
 
     def best_static_placement(self, wave, capacity):
-        satisfaction, empty_building = max(
-            (self.satisfaction(wave, capacity, building.id), building.id) for building in self.resort.buildings_in(wave)
+        """The best way to leave the buildings the workers cannot cover empty (starting_workers + unlocks)."""
+        ids = [building.id for building in self.resort.buildings_in(wave)]
+        satisfaction, empty_buildings = max(
+            (self.satisfaction(wave, capacity, empty), empty)
+            for empty in itertools.combinations(ids, self.resort.empty_count(wave))
         )
-        return WaveResult(satisfaction, self.rules.rating(satisfaction), empty_building)
+        return WaveResult(satisfaction, self.rules.rating(satisfaction), empty_buildings)
 
 
 def evaluate(configs):
@@ -231,8 +246,8 @@ def rating_cases(configs):
     for wave in resort.waves:
         for scenario, capacity in (("no intervention, Lv1", resort.capacities[0]), ("fully upgraded", resort.capacities[-1])):
             best = simulator.best_static_placement(wave, capacity)
-            waits_by_need = simulator.unit_waits(wave, capacity, best.empty_building)
-            cases.append(rating_case(f"wave {wave}, {scenario}, {best.empty_building} empty", waits_by_need, rules, resort.weights, economy, wave))
+            waits_by_need = simulator.unit_waits(wave, capacity, best.empty_buildings)
+            cases.append(rating_case(f"wave {wave}, {scenario}, {empty_label(best)}", waits_by_need, rules, resort.weights, economy, wave))
     cases += [rating_case(name, waits_by_need, rules, resort.weights, economy) for name, waits_by_need in SYNTHETIC_RATING_CASES]
     wave_system = configs["wave_system"]
     return {
@@ -246,8 +261,12 @@ def rating_cases(configs):
     }
 
 
+def empty_label(result):
+    return " + ".join(result.empty_buildings) + " empty" if result.empty_buildings else "every building staffed"
+
+
 def describe(result):
-    return f"{RATINGS[result.rating]:<8}{result.satisfaction * 100:6.1f} %  ({result.empty_building} empty)"
+    return f"{RATINGS[result.rating]:<8}{result.satisfaction * 100:6.1f} %  ({empty_label(result)})"
 
 
 def format_report(reports, source):
