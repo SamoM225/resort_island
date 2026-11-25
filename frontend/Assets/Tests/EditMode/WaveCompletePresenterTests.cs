@@ -155,6 +155,27 @@ namespace ResortIsland.Tests
         }
 
         [Test]
+        public void RestoredOnWaveComplete_ShowsTheResultAgainAndClaimPays()
+        {
+            presenter.Dispose();
+            GameStateMachine restored = new GameStateMachine();
+            restored.Restore(4, GameState.WaveComplete);
+            var restoredView = new FakeWaveCompleteView();
+
+            using (new WaveCompletePresenter(restored, restored, () => result, _ => 120, amount => coinsAdded += amount, restoredView))
+            {
+                Assert.IsTrue(restoredView.IsShown);
+                Assert.AreEqual(4, restoredView.Stars);
+
+                restoredView.Click();
+            }
+
+            Assert.AreEqual(120, coinsAdded);
+            Assert.AreEqual(GameState.AwaitingWave, restored.Current);
+            Assert.AreEqual(5, restored.NextWave);
+        }
+
+        [Test]
         public void LeavingWaveComplete_HidesPanel()
         {
             GoToWaveComplete();
