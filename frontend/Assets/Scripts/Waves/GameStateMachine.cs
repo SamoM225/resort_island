@@ -27,6 +27,19 @@ namespace ResortIsland.Waves
 
         public bool CanTransitionTo(GameState next) => NextState[Current] == next;
 
+        /// <summary>
+        /// Puts the game back where a save left it, before anything listens (no Changed): the wave loop goes on
+        /// from there without the transitions being played again (no second wave_complete, no second report).
+        /// </summary>
+        public void Restore(int nextWave, GameState state)
+        {
+            if (nextWave < 1)
+                throw new ArgumentOutOfRangeException(nameof(nextWave), "Waves start at 1.");
+
+            NextWave = nextWave;
+            Current = state;
+        }
+
         public bool TryTransitionTo(GameState next)
         {
             if (!CanTransitionTo(next))

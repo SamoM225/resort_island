@@ -39,6 +39,14 @@ namespace ResortIsland.Economy
 
             store = SaveStore.Shared;
             LoadGame();
+            // a save written by someone else (map, wave progress) carries the current coins, energy… too
+            store.Saving += WriteToSave;
+        }
+
+        private void OnDestroy()
+        {
+            if (store != null)
+                store.Saving -= WriteToSave;
         }
 
         private void LoadGame()

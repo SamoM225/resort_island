@@ -23,6 +23,12 @@ namespace ResortIsland.Waves
         public int Rating => Current?.Rating ?? 0;
         public float Satisfaction => Current?.Satisfaction ?? 0f;
 
+        /// <summary>The score of a finished wave restored from the save (Wave Complete waiting for Claim).</summary>
+        public void Restore(WaveScore score)
+        {
+            Current = score ?? throw new ArgumentNullException(nameof(score));
+        }
+
         public void Dispose()
         {
             state.Changed -= OnStateChanged;
