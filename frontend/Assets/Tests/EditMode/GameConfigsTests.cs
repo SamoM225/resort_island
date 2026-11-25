@@ -30,6 +30,7 @@ namespace ResortIsland.Tests
             Assert.AreEqual(0.33f, configs.WaveSystem.UtilizationEmpty);
             Assert.AreEqual(2, configs.WaveSystem.Rush.Wave);
             Assert.AreEqual(3, configs.Energy.BoostCost);
+            Assert.AreEqual(30, configs.Graphics.TargetFrameRate);
             Assert.AreEqual(1.5f, configs.Needs.Needs.Single(need => need.Id == "ocean_view").SatisfactionWeight);
             CollectionAssert.AreEqual(new[] { 3, 5, 7 }, configs.Buildings.Levels.Select(level => level.Capacity));
             Assert.AreEqual("drinks", configs.Buildings.Buildings.Single(building => building.Id == "beachbar").Need);
@@ -43,6 +44,13 @@ namespace ResortIsland.Tests
         public void Parse_MissingConfig_Throws()
         {
             Assert.Catch<JsonException>(() => GameConfigs.Parse(ResponseWithout("waves")));
+        }
+
+        [Test]
+        public void Parse_MissingGraphics_Throws()
+        {
+            // an old cached response without graphics falls back to the bundled copy, which has it
+            Assert.Catch<JsonException>(() => GameConfigs.Parse(ResponseWithout("graphics")));
         }
 
         [Test]

@@ -243,6 +243,11 @@ Wave sim v CI kontroluje len súbory v repe. Zmenu z admin panelu over pred play
 
 Cachovanie: odpoveď sa drží v Laravel cache (zmaže sa pri každom zápise configu) a má `Cache-Control: public, max-age=60` + `ETag`. Klient pošle `If-None-Match` s posledným ETagom a ak sa nič nezmenilo, dostane `304 Not Modified` bez tela.
 
+**Frame rate:** config `graphics` → `target_frame_rate` (30). Hra ho nastaví pri štarte (`Application.targetFrameRate`,
+`vSyncCount = 0`, inak ho desktop a Editor ignorujú) a znova po stiahnutí configov, takže zmena v admin paneli platí
+bez novej verzie hry. Overenie na zariadení: Development Build → Unity Profiler (*Attach to Player*) alebo
+`adb shell dumpsys gfxinfo com.DefaultCompany.urp_2d` (aktuálny Android identifier) — frame time má byť okolo 33 ms (30 fps).
+
 ## Admin panel (Web UI)
 
 Filament panel na `/admin` (lokálne `http://localhost:8000/admin`, prihlásenie `admin@example.com` / `password`).
