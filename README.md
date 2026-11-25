@@ -121,7 +121,7 @@ Manuálne spustenie workflowu (Actions → CI/CD → Run workflow) zbehne testy 
 
 V repozitári nie sú žiadne secrets — všetko sa nastavuje env premennými (`.env` lokálne a na serveri, v CI GitHub secrets).
 
-Hra si prostredie vyberá podľa typu buildu (`frontend/Assets/Scripts/Backend/BackendEnvironment.cs`): Editor a Development Build → dev, release build → prod. URL sú v `frontend/Assets/Resources/BackendConfig.asset`; v Editore sa dá cez `editorOverrideUrl` pripojiť na lokálny BE.
+Hra si prostredie vyberá podľa typu buildu (`frontend/Assets/Scripts/Backend/BackendEnvironment.cs`): Editor a Development Build → dev, release build → prod. URL sú v `frontend/Assets/Resources/BackendConfig.asset` (dev = `https://resort-island.majercik.dev`, prod zatiaľ nie je); v Editore sa dá cez `editorOverrideUrl` pripojiť na lokálny BE.
 
 ### Server (dev / prod)
 

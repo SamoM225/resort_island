@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48e8620671d643e9bda2c9e8cb7df280, type: 3}
   m_Name: BackendConfig
   m_EditorClassIdentifier:
-  developmentUrl: https://dev-api.resort-island.invalid
+  developmentUrl: https://resort-island.majercik.dev
   productionUrl: https://api.resort-island.invalid
   editorOverrideUrl: 

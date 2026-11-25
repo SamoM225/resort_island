@@ -13,7 +13,7 @@ namespace ResortIsland.Config
 
         [Header("Environments")]
         [Tooltip("Used by the Editor and Development Builds.")]
-        [SerializeField] private string developmentUrl = "https://dev-api.resort-island.invalid";
+        [SerializeField] private string developmentUrl = "https://resort-island.majercik.dev";
         [Tooltip("Used by release builds.")]
         [SerializeField] private string productionUrl = "https://api.resort-island.invalid";
 
