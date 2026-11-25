@@ -120,6 +120,11 @@ def wave_coins(units, rating, economy):
     return math.floor(units * economy["coins_per_unit"] * economy["coins_rating_mult"][rating] + 0.5)
 
 
+def wave_energy(rating, energy):
+    """Energy for Claim = drop_by_rating of the stars; Perfect gets the 5-star value (drop_by_rating has 1-5 stars)."""
+    return energy["drop_by_rating"][min(rating, FIVE_STARS)]
+
+
 class Resort:
     def __init__(self, configs):
         unlock_waves = {unlock["id"]: unlock["after_wave"] for unlock in configs["unlocks"]["unlocks"]}
@@ -220,13 +225,14 @@ def rating_case(name, waits_by_need, rules, weights, economy, wave=None):
 def rating_cases(configs):
     """
     Wait times of every wave (no intervention and fully upgraded) plus edge cases, with the satisfaction,
-    rating (1-5 stars, 6 = Perfect) and coins this model gives. The game (C#) and the backend (PHP)
+    rating (1-5 stars, 6 = Perfect), coins and energy this model gives. The game (C#) and the backend (PHP)
     compute the same cases and must get the same results.
     """
     resort = Resort(configs)
     rules = WaveRules(configs["wave_system"])
     simulator = WaveSimulator(resort, rules)
     economy = configs["economy"]
+    energy = configs["energy"]
     cases = []
     for wave in resort.waves:
         for scenario, capacity in (("no intervention, Lv1", resort.capacities[0]), ("fully upgraded", resort.capacities[-1])):
@@ -235,11 +241,14 @@ def rating_cases(configs):
             cases.append(rating_case(f"wave {wave}, {scenario}, {best.empty_building} empty", waits_by_need, rules, resort.weights, economy, wave))
     cases += [rating_case(name, waits_by_need, rules, resort.weights, economy) for name, waits_by_need in SYNTHETIC_RATING_CASES]
     wave_system = configs["wave_system"]
+    for case in cases:
+        case["energy"] = wave_energy(case["rating"] - 1, energy)
     return {
         "generated_by": "python3 tools/wave_sim/wave_sim.py --export-rating-cases (do not edit by hand)",
         "rules": {
             "wave_system": {key: wave_system[key] for key in ("patience_grace_s", "patience_floor_after_s", "unit_floor", "wave_floor", "rating_thresholds")},
             "economy": {key: economy[key] for key in ("coins_per_unit", "coins_rating_mult")},
+            "energy": {"drop_by_rating": energy["drop_by_rating"]},
             "needs": [{"id": need, "satisfaction_weight": weight} for need, weight in resort.weights.items()],
         },
         "cases": cases,

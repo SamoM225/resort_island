@@ -11,6 +11,7 @@ namespace ResortIsland.Waves
         [SerializeField] private PlayerEconomy economy;
 
         private WaveCompletePresenter presenter;
+        private WaveEnergyReward energyReward;
 
         private void Start()
         {
@@ -19,6 +20,9 @@ namespace ResortIsland.Waves
                 Debug.LogError("[WaveCompleteBinder] Priraď Wave Controller, View a Player Economy v Inspectore.");
                 return;
             }
+
+            // energy of the wave on Claim (energy.drop_by_rating), capped at max_energy by the economy
+            energyReward = new WaveEnergyReward(waveController.State, () => waveController.Score, economy.RestoreEnergy);
 
             IGameState state = waveController.State;
             IGameStateTransitions transitions = state as IGameStateTransitions;
@@ -34,6 +38,7 @@ namespace ResortIsland.Waves
         private void OnDestroy()
         {
             presenter?.Dispose();
+            energyReward?.Dispose();
         }
 
         private IWaveResult FindResult() => waveController.Result;

@@ -18,10 +18,10 @@ function waveRatingFromCases(): WaveRating
 {
     $rules = waveRatingCases()['rules'];
 
-    return WaveRating::fromRules($rules['wave_system'], $rules['economy'], $rules['needs']);
+    return WaveRating::fromRules($rules['wave_system'], $rules['economy'], $rules['needs'], $rules['energy']);
 }
 
-test('every case from wave_sim gets the same satisfaction, rating and coins', function () {
+test('every case from wave_sim gets the same satisfaction, rating, coins and energy', function () {
     $rating = waveRatingFromCases();
     $cases = waveRatingCases()['cases'];
 
@@ -33,7 +33,8 @@ test('every case from wave_sim gets the same satisfaction, rating and coins', fu
         expect($result['units'])->toBe($case['units'], $case['name'])
             ->and($result['satisfaction'])->toEqualWithDelta($case['satisfaction'], 1e-9, $case['name'])
             ->and($result['rating'])->toBe($case['rating'], $case['name'])
-            ->and($result['coins'])->toBe($case['coins'], $case['name']);
+            ->and($result['coins'])->toBe($case['coins'], $case['name'])
+            ->and($result['energy'])->toBe($case['energy'], $case['name']);
     }
 });
 
@@ -45,6 +46,7 @@ test('the backend rates with the configs it serves to the game', function () {
 
     expect(Arr::only($served['wave_system'], array_keys($rules['wave_system'])))->toEqual($rules['wave_system'])
         ->and(Arr::only($served['economy'], array_keys($rules['economy'])))->toEqual($rules['economy'])
+        ->and(Arr::only($served['energy'], array_keys($rules['energy'])))->toEqual($rules['energy'])
         ->and(WaveRating::fromCurrentConfigs()->evaluate(['rooms' => [0, 20]])['rating'])->toBe(4);
 });
 

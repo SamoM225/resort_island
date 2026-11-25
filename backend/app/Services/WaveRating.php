@@ -10,10 +10,13 @@ use InvalidArgumentException;
  * every unit of a need contributes by how long it waited until it was seated, weighted by its need;
  * the weighted average (at least wave_floor) is the satisfaction, the highest reached threshold the rating
  * (1-5 stars, 6 = Perfect), and the coins are units x coins_per_unit x the rating's multiplier.
+ * The energy the player gets on Claim is drop_by_rating of the stars; Perfect gets the 5-star drop.
  */
 class WaveRating
 {
     public const PERFECT = 6;
+
+    public const FIVE_STARS = 5;
 
     private const EPSILON = 1e-9;
 
@@ -21,23 +24,30 @@ class WaveRating
      * @param  array{patience_grace_s: int|float, patience_floor_after_s: int|float, unit_floor: int|float, wave_floor: int|float, rating_thresholds: list<int|float>}  $waveSystem
      * @param  array{coins_per_unit: int|float, coins_rating_mult: list<int|float>}  $economy
      * @param  array<string, int|float>  $weights  need id => satisfaction weight
+     * @param  array{drop_by_rating: list<int>}  $energy
      */
     public function __construct(
         private readonly array $waveSystem,
         private readonly array $economy,
         private readonly array $weights,
+        private readonly array $energy,
     ) {
         if (count($waveSystem['rating_thresholds']) !== self::PERFECT || count($economy['coins_rating_mult']) !== self::PERFECT) {
             throw new InvalidArgumentException('Configs need 6 rating thresholds and coin multipliers (1-5 stars and Perfect).');
+        }
+
+        if (count($energy['drop_by_rating'] ?? []) !== self::FIVE_STARS) {
+            throw new InvalidArgumentException('The energy config needs 5 drop_by_rating values (1-5 stars; Perfect gets the 5-star one).');
         }
     }
 
     /**
      * @param  list<array{id: string, satisfaction_weight: int|float}>  $needs
+     * @param  array{drop_by_rating: list<int>}  $energy
      */
-    public static function fromRules(array $waveSystem, array $economy, array $needs): self
+    public static function fromRules(array $waveSystem, array $economy, array $needs, array $energy): self
     {
-        return new self($waveSystem, $economy, array_column($needs, 'satisfaction_weight', 'id'));
+        return new self($waveSystem, $economy, array_column($needs, 'satisfaction_weight', 'id'), $energy);
     }
 
     /**
@@ -45,9 +55,9 @@ class WaveRating
      */
     public static function fromCurrentConfigs(): self
     {
-        $configs = GameConfig::query()->latestVersions()->whereIn('key', ['wave_system', 'economy', 'needs'])->pluck('data', 'key');
+        $configs = GameConfig::query()->latestVersions()->whereIn('key', ['wave_system', 'economy', 'needs', 'energy'])->pluck('data', 'key');
 
-        return self::fromRules($configs['wave_system'], $configs['economy'], $configs['needs']['needs']);
+        return self::fromRules($configs['wave_system'], $configs['economy'], $configs['needs']['needs'], $configs['energy']);
     }
 
     public function hasNeed(string $need): bool
@@ -115,8 +125,16 @@ class WaveRating
     }
 
     /**
+     * Energy for claiming a wave with this rating (1-5 stars, 6 = Perfect).
+     */
+    public function energy(int $rating): int
+    {
+        return (int) $this->energy['drop_by_rating'][min($rating, self::FIVE_STARS) - 1];
+    }
+
+    /**
      * @param  array<string, list<int|float>>  $waitsByNeed
-     * @return array{units: int, satisfaction: float, rating: int, coins: int}
+     * @return array{units: int, satisfaction: float, rating: int, coins: int, energy: int}
      */
     public function evaluate(array $waitsByNeed): array
     {
@@ -129,6 +147,7 @@ class WaveRating
             'satisfaction' => $satisfaction,
             'rating' => $rating,
             'coins' => $this->coins($units, $rating),
+            'energy' => $this->energy($rating),
         ];
     }
 }

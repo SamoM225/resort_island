@@ -14,7 +14,7 @@ class WaveResultResource extends JsonResource
     /**
      * Transform the resource into an array.
      *
-     * @return array{wave: int, units: int, satisfaction: float, rating: int, coins: int, matches_client: bool|null}
+     * @return array{wave: int, units: int, satisfaction: float, rating: int, coins: int, energy: int, matches_client: bool|null}
      */
     public function toArray(Request $request): array
     {
@@ -24,6 +24,7 @@ class WaveResultResource extends JsonResource
             'satisfaction' => $this->satisfaction,
             'rating' => $this->rating,
             'coins' => $this->coins,
+            'energy' => $this->energy,
             'matches_client' => $this->matchesClient(),
         ];
     }

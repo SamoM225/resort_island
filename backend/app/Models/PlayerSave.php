@@ -55,6 +55,31 @@ class PlayerSave extends Model
         return $this->savedCoins() !== null && $this->savedCoins() > $this->earnedCoins();
     }
 
+    public function savedEnergy(): ?int
+    {
+        $energy = data_get($this->data, 'economy.energy');
+
+        return is_int($energy) ? $energy : null;
+    }
+
+    /**
+     * The most energy the player can have: starting energy plus the energy of every wave the backend rated,
+     * never above max_energy (the game caps every reward). Boosts only lower it.
+     */
+    public function earnedEnergy(): int
+    {
+        $economy = GameConfig::query()->latestVersions()->where('key', 'economy')->value('data');
+        $earned = (int) data_get($economy, 'starting_energy', 0) + (int) $this->user->waveResults()->sum('energy');
+        $maxEnergy = data_get($economy, 'max_energy');
+
+        return is_int($maxEnergy) ? min($earned, $maxEnergy) : $earned;
+    }
+
+    public function energyExceedsEarned(): bool
+    {
+        return $this->savedEnergy() !== null && $this->savedEnergy() > $this->earnedEnergy();
+    }
+
     /**
      * @return BelongsTo<User, $this>
      */

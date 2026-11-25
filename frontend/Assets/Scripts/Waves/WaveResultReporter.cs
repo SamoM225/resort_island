@@ -37,7 +37,7 @@ namespace ResortIsland.Waves
             {
                 wave = score.Wave,
                 waits = score.Waits,
-                client = new { satisfaction = score.SatisfactionRatio, rating = score.Rating, coins = score.Coins }
+                client = new { satisfaction = score.SatisfactionRatio, rating = score.Rating, coins = score.Coins, energy = score.Energy }
             }));
             Flush();
         }

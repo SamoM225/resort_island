@@ -124,6 +124,17 @@ class WaveRatingCasesTests(unittest.TestCase):
         self.assertEqual(458, wave_sim.wave_coins(22, 5, economy))
         self.assertEqual(3, wave_sim.wave_coins(1, 0, {"coins_per_unit": 6.25, "coins_rating_mult": [0.4]}))
 
+    def test_energy_is_drop_by_rating_and_perfect_gets_the_five_star_drop(self):
+        energy = {"drop_by_rating": [0, 1, 2, 3, 5]}
+
+        self.assertEqual([0, 1, 2, 3, 5, 5], [wave_sim.wave_energy(rating, energy) for rating in range(len(wave_sim.RATINGS))])
+
+    def test_every_case_has_the_energy_of_its_rating(self):
+        configs = fixture_configs()
+
+        for case in wave_sim.rating_cases(configs)["cases"]:
+            self.assertEqual(wave_sim.wave_energy(case["rating"] - 1, configs["energy"]), case["energy"], case["name"])
+
     def test_wave_cases_give_the_simulated_satisfaction(self):
         configs = fixture_configs()
         reports = {report.wave: report for report in wave_sim.evaluate(configs)}

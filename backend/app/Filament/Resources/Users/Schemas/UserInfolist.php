@@ -68,6 +68,14 @@ class UserInfolist
                                 : 'OK (at most '.number_format($record->gameSave->earnedCoins()).' earned)')
                             ->badge()
                             ->color(fn (User $record): string => $record->gameSave->coinsExceedEarned() ? 'danger' : 'success'),
+                        TextEntry::make('save_energy_check')
+                            ->label('Energy check')
+                            ->columnSpan(2)
+                            ->state(fn (User $record): string => $record->gameSave->energyExceedsEarned()
+                                ? 'More energy than earned (at most '.number_format($record->gameSave->earnedEnergy()).': starting energy + rated waves, up to max_energy)'
+                                : 'OK (at most '.number_format($record->gameSave->earnedEnergy()).' earned)')
+                            ->badge()
+                            ->color(fn (User $record): string => $record->gameSave->energyExceedsEarned() ? 'danger' : 'success'),
                         ViewEntry::make('gameSave.data')
                             ->label('Save')
                             ->columnSpanFull()
@@ -81,12 +89,13 @@ class UserInfolist
                             ->label('Last 10')
                             ->state(fn (User $record): array => $record->waveResults()->latest('id')->limit(10)->get()
                                 ->map(fn (WaveResult $result): string => sprintf(
-                                    'Wave %d · %s · %.1f %% · %s coins%s',
+                                    'Wave %d · %s · %.1f %% · %s coins · %d energy%s',
                                     $result->wave,
                                     $result->rating === WaveRating::PERFECT ? 'Perfect' : "{$result->rating}★",
                                     $result->satisfaction * 100,
                                     number_format($result->coins),
-                                    $result->matchesClient() === false ? " (game said {$result->client_coins})" : '',
+                                    $result->energy,
+                                    $result->matchesClient() === false ? " (game said {$result->client_coins} coins, {$result->client_energy} energy)" : '',
                                 ))
                                 ->all())
                             ->listWithLineBreaks()

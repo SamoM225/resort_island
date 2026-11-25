@@ -49,6 +49,7 @@ class StoreWaveResultRequest extends FormRequest
             'waits.*.*' => ['numeric', 'min:0', 'max:'.self::MAX_WAIT_SECONDS],
             'client' => ['nullable', 'array'],
             'client.coins' => ['nullable', 'integer', 'min:0'],
+            'client.energy' => ['nullable', 'integer', 'min:0'],
             'client.rating' => ['nullable', 'integer', 'between:1,'.WaveRating::PERFECT],
             'client.satisfaction' => ['nullable', 'numeric', 'between:0,1'],
         ];

@@ -26,6 +26,15 @@
         1.3
       ]
     },
+    "energy": {
+      "drop_by_rating": [
+        0,
+        1,
+        2,
+        3,
+        5
+      ]
+    },
     "needs": [
       {
         "id": "rooms",
@@ -86,7 +95,8 @@
       "units": 22,
       "satisfaction": 1.0,
       "rating": 6,
-      "coins": 458
+      "coins": 458,
+      "energy": 5
     },
     {
       "name": "wave 1, fully upgraded, restaurant empty",
@@ -124,7 +134,8 @@
       "units": 22,
       "satisfaction": 1.0,
       "rating": 6,
-      "coins": 458
+      "coins": 458,
+      "energy": 5
     },
     {
       "name": "wave 2, no intervention, Lv1, restaurant empty",
@@ -184,7 +195,8 @@
       "units": 44,
       "satisfaction": 0.8238378099173554,
       "rating": 4,
-      "coins": 704
+      "coins": 704,
+      "energy": 3
     },
     {
       "name": "wave 2, fully upgraded, restaurant empty",
@@ -244,7 +256,8 @@
       "units": 44,
       "satisfaction": 0.9680526859504132,
       "rating": 5,
-      "coins": 845
+      "coins": 845,
+      "energy": 5
     },
     {
       "name": "wave 3, no intervention, Lv1, restaurant empty",
@@ -308,7 +321,8 @@
       "units": 48,
       "satisfaction": 0.8584111201298702,
       "rating": 4,
-      "coins": 768
+      "coins": 768,
+      "energy": 3
     },
     {
       "name": "wave 3, fully upgraded, restaurant empty",
@@ -372,7 +386,8 @@
       "units": 48,
       "satisfaction": 1.0,
       "rating": 6,
-      "coins": 998
+      "coins": 998,
+      "energy": 5
     },
     {
       "name": "wave 4, no intervention, Lv1, pool empty",
@@ -446,7 +461,8 @@
       "units": 56,
       "satisfaction": 1.0,
       "rating": 6,
-      "coins": 1165
+      "coins": 1165,
+      "energy": 5
     },
     {
       "name": "wave 4, fully upgraded, restaurant empty",
@@ -520,7 +536,8 @@
       "units": 56,
       "satisfaction": 1.0,
       "rating": 6,
-      "coins": 1165
+      "coins": 1165,
+      "energy": 5
     },
     {
       "name": "wave 5, no intervention, Lv1, pool empty",
@@ -614,7 +631,8 @@
       "units": 76,
       "satisfaction": 0.887270110645933,
       "rating": 4,
-      "coins": 1216
+      "coins": 1216,
+      "energy": 3
     },
     {
       "name": "wave 5, fully upgraded, restaurant empty",
@@ -708,7 +726,8 @@
       "units": 76,
       "satisfaction": 1.0,
       "rating": 6,
-      "coins": 1581
+      "coins": 1581,
+      "energy": 5
     },
     {
       "name": "wave 6, no intervention, Lv1, pool empty",
@@ -821,7 +840,8 @@
       "units": 95,
       "satisfaction": 0.8446069719753928,
       "rating": 4,
-      "coins": 1520
+      "coins": 1520,
+      "energy": 3
     },
     {
       "name": "wave 6, fully upgraded, pool empty",
@@ -934,7 +954,8 @@
       "units": 95,
       "satisfaction": 1.0,
       "rating": 6,
-      "coins": 1976
+      "coins": 1976,
+      "energy": 5
     },
     {
       "name": "wave 7, no intervention, Lv1, bungalows empty",
@@ -1059,7 +1080,8 @@
       "units": 105,
       "satisfaction": 0.9517680047225502,
       "rating": 5,
-      "coins": 2016
+      "coins": 2016,
+      "energy": 5
     },
     {
       "name": "wave 7, fully upgraded, pool empty",
@@ -1184,7 +1206,8 @@
       "units": 105,
       "satisfaction": 1.0,
       "rating": 6,
-      "coins": 2184
+      "coins": 2184,
+      "energy": 5
     },
     {
       "name": "wave 8, no intervention, Lv1, beachbar empty",
@@ -1339,7 +1362,8 @@
       "units": 135,
       "satisfaction": 0.7545488053002717,
       "rating": 3,
-      "coins": 1728
+      "coins": 1728,
+      "energy": 2
     },
     {
       "name": "wave 8, fully upgraded, bungalows empty",
@@ -1494,7 +1518,8 @@
       "units": 135,
       "satisfaction": 1.0,
       "rating": 6,
-      "coins": 2808
+      "coins": 2808,
+      "energy": 5
     },
     {
       "name": "nobody waited",
@@ -1524,7 +1549,8 @@
       "units": 16,
       "satisfaction": 1.0,
       "rating": 6,
-      "coins": 333
+      "coins": 333,
+      "energy": 5
     },
     {
       "name": "everyone waited too long",
@@ -1554,7 +1580,8 @@
       "units": 16,
       "satisfaction": 0.4,
       "rating": 1,
-      "coins": 102
+      "coins": 102,
+      "energy": 0
     },
     {
       "name": "waits around the grace and the floor",
@@ -1576,7 +1603,8 @@
       "units": 8,
       "satisfaction": 0.6129166666666667,
       "rating": 2,
-      "coins": 77
+      "coins": 77,
+      "energy": 1
     },
     {
       "name": "no guests",
@@ -1585,7 +1613,8 @@
       "units": 0,
       "satisfaction": 1.0,
       "rating": 6,
-      "coins": 0
+      "coins": 0,
+      "energy": 5
     }
   ]
 }

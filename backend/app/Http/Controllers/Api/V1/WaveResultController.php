@@ -11,7 +11,7 @@ class WaveResultController extends Controller
 {
     /**
      * Rate a finished wave again from its waits with the current configs and keep the result.
-     * The backend's coins are authoritative; the game's own result is kept to spot mismatches.
+     * The backend's coins and energy are authoritative; the game's own result is kept to spot mismatches.
      */
     public function __invoke(StoreWaveResultRequest $request): JsonResponse
     {
@@ -21,6 +21,7 @@ class WaveResultController extends Controller
             ...$result,
             'wave' => $request->validated('wave'),
             'client_coins' => $request->validated('client.coins'),
+            'client_energy' => $request->validated('client.energy'),
         ]);
 
         return WaveResultResource::make($waveResult)->response()->setStatusCode(201);
