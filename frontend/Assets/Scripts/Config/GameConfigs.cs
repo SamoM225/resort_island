@@ -15,6 +15,7 @@ namespace ResortIsland.Config
         [JsonProperty(Required = Required.Always)] public EconomyConfig Economy { get; set; }
         [JsonProperty(Required = Required.Always)] public WaveSystemConfig WaveSystem { get; set; }
         [JsonProperty(Required = Required.Always)] public EnergyConfig Energy { get; set; }
+        [JsonProperty(Required = Required.Always)] public GraphicsConfig Graphics { get; set; }
         [JsonProperty(Required = Required.Always)] public NeedsConfig Needs { get; set; }
         [JsonProperty(Required = Required.Always)] public BuildingsConfig Buildings { get; set; }
         [JsonProperty(Required = Required.Always)] public UnlocksConfig Unlocks { get; set; }
@@ -80,6 +81,12 @@ namespace ResortIsland.Config
         public float SpeedDurationS { get; set; }
         public int MaxBoostsPerBuildingPerWave { get; set; }
         public int[] DropByRating { get; set; }
+    }
+
+    public class GraphicsConfig
+    {
+        /// <summary>Application.targetFrameRate of the game (frames per second).</summary>
+        [JsonProperty(Required = Required.Always)] public int TargetFrameRate { get; set; }
     }
 
     public class NeedsConfig

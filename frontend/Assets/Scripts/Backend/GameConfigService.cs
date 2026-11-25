@@ -30,6 +30,23 @@ namespace ResortIsland.Backend
             TextAsset bundled = Resources.Load<TextAsset>(GameConfigProvider.BundledResourcePath);
             provider = new GameConfigProvider(GameConfigCache.CreateDefault(), bundled.text);
             Debug.Log($"[GameConfigs] Using {provider.Source} configs.");
+            ApplyFrameRate(provider.Current);
+        }
+
+        /// <summary>graphics.target_frame_rate; also after a download, so a change in the admin panel applies at once.</summary>
+        private static void ApplyFrameRate(GameConfigs configs)
+        {
+            int frameRate = configs?.Graphics?.TargetFrameRate ?? 0;
+            if (frameRate <= 0)
+            {
+                Debug.LogError($"[GameConfigs] graphics.target_frame_rate must be above 0, got {frameRate}; the frame rate stays as it is.");
+                return;
+            }
+
+            // With vSync on, Unity ignores targetFrameRate on desktop and in the Editor (mobile ignores vSync).
+            QualitySettings.vSyncCount = 0;
+            Application.targetFrameRate = frameRate;
+            Debug.Log($"[GameConfigs] Target frame rate {frameRate} fps.");
         }
 
         private void Start()
@@ -71,6 +88,7 @@ namespace ResortIsland.Backend
                 else if (provider.ApplyDownloaded(request.downloadHandler.text, request.GetResponseHeader("ETag"), cacheControl, DateTime.UtcNow))
                 {
                     Debug.Log("[GameConfigs] Downloaded configs from the backend.");
+                    ApplyFrameRate(provider.Current);
                 }
             }
         }

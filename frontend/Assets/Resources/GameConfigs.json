@@ -89,6 +89,13 @@
             }
         },
         {
+            "key": "graphics",
+            "version": 1,
+            "data": {
+                "target_frame_rate": 30
+            }
+        },
+        {
             "key": "needs",
             "version": 1,
             "data": {
