@@ -66,6 +66,19 @@ namespace ResortIsland.Tests
         }
 
         [Test]
+        public void RewardCreatedOnWaveComplete_StillPaysOnClaim()
+        {
+            // e.g. Wave Complete restored from the save after a restart: nothing saw the wave finish
+            reward.Dispose();
+            FinishWave(waitSeconds: 0);
+            reward = new WaveEnergyReward(machine, () => score, amount => energy += amount);
+
+            Claim();
+
+            Assert.AreEqual(5, energy);
+        }
+
+        [Test]
         public void WaveWithoutScore_GivesNothing()
         {
             machine.TryStartWave();
