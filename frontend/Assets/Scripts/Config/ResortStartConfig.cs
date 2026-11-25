@@ -25,14 +25,12 @@ namespace ResortIsland.Config
         [Header("Needs")]
         [SerializeField] private NeedConfig[] activeNeeds;
 
-        [Header("Workers")]
-        [SerializeField] private int startingWorkers = 2;
+        [Header("Workers (their number comes from the game configs: starting_workers + unlocks)")]
         [SerializeField] private GameObject workerPrefab;
         [SerializeField] private Vector3Int workerStartCell = new Vector3Int(-2, -2, 0);
 
         public StartingBuilding[] StartingBuildings => startingBuildings;
         public NeedConfig[] ActiveNeeds => activeNeeds;
-        public int StartingWorkers => startingWorkers;
         public GameObject WorkerPrefab => workerPrefab;
         public Vector3Int WorkerStartCell => workerStartCell;
     }

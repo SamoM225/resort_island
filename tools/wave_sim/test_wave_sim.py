@@ -70,6 +70,29 @@ class ResortTests(unittest.TestCase):
     def test_debut_waves_are_waves_with_a_new_need(self):
         self.assertEqual({4, 7}, self.resort.debut_waves())
 
+    def test_workers_are_starting_workers_plus_workers_of_bought_unlocks(self):
+        self.assertEqual([2, 2, 2, 3, 3, 3, 4, 4], [self.resort.workers_in(wave) for wave in range(1, 9)])
+        self.assertEqual([1] * 8, [self.resort.empty_count(wave) for wave in range(1, 9)])
+
+    def test_more_starting_workers_leave_no_building_empty(self):
+        configs = copy.deepcopy(fixture_configs())
+        configs["economy"]["starting_workers"] = 3
+
+        reports = wave_sim.evaluate(configs)
+        with_two = wave_sim.evaluate(fixture_configs())
+
+        self.assertTrue(all(report.no_intervention.empty_buildings == () for report in reports))
+        for staffed, one_empty in zip(reports, with_two):
+            self.assertGreaterEqual(staffed.no_intervention.satisfaction, one_empty.no_intervention.satisfaction)
+
+    def test_fewer_starting_workers_leave_more_buildings_empty(self):
+        configs = copy.deepcopy(fixture_configs())
+        configs["economy"]["starting_workers"] = 1
+
+        report = wave_sim.evaluate(configs)[0]
+
+        self.assertEqual(2, len(report.no_intervention.empty_buildings))
+
 
 class SimulationTests(unittest.TestCase):
     def test_matches_results_in_build_document(self):
@@ -97,6 +120,18 @@ class SimulationTests(unittest.TestCase):
         configs["wave_system"]["service_time_s"] = 30
 
         self.assertTrue(any(report.wr8_violated for report in wave_sim.evaluate(configs)))
+
+
+class BundledConfigsTests(unittest.TestCase):
+    def test_game_bundles_the_backend_configs(self):
+        bundled = Path(__file__).resolve().parents[2] / "frontend" / "Assets" / "Resources" / "GameConfigs.json"
+
+        self.assertEqual(
+            wave_sim.load_configs(wave_sim.DEFAULT_CONFIGS),
+            wave_sim.load_configs(bundled),
+            "frontend/Assets/Resources/GameConfigs.json differs from backend/database/game-configs: "
+            "update it (admin panel -> Game configs -> Download all, or the same shape by hand).",
+        )
 
 
 class CommandLineTests(unittest.TestCase):

@@ -147,7 +147,7 @@ namespace ResortIsland.UI
             int coins = economy != null ? economy.Coins : int.MaxValue;
             int count = 0;
             foreach (BuildingConfig config in resort.Catalog)
-                if (config != null && resort.CanBuild(config) && resort.CountOf(config) == 0 && config.Cost <= coins)
+                if (config != null && resort.CanBuild(config) && resort.CountOf(config) == 0 && resort.CostOf(config) <= coins)
                     count++;
             return count;
         }

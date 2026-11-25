@@ -1,4 +1,6 @@
+using System;
 using System.Collections.Generic;
+using System.Reflection;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using Newtonsoft.Json.Serialization;
@@ -9,8 +11,25 @@ namespace ResortIsland.Config
     {
         private static readonly JsonSerializer Serializer = JsonSerializer.Create(new JsonSerializerSettings
         {
-            ContractResolver = new DefaultContractResolver { NamingStrategy = new SnakeCaseNamingStrategy() }
+            ContractResolver = new ConfigContractResolver()
         });
+
+        /// <summary>snake_case keys; a [RequiredInConfigs] number missing in the response fails Parse.</summary>
+        private sealed class ConfigContractResolver : DefaultContractResolver
+        {
+            public ConfigContractResolver()
+            {
+                NamingStrategy = new SnakeCaseNamingStrategy();
+            }
+
+            protected override JsonProperty CreateProperty(MemberInfo member, MemberSerialization memberSerialization)
+            {
+                JsonProperty property = base.CreateProperty(member, memberSerialization);
+                if (member.IsDefined(typeof(RequiredInConfigsAttribute), true))
+                    property.Required = Required.Always;
+                return property;
+            }
+        }
 
         [JsonProperty(Required = Required.Always)] public EconomyConfig Economy { get; set; }
         [JsonProperty(Required = Required.Always)] public WaveSystemConfig WaveSystem { get; set; }
@@ -18,6 +37,7 @@ namespace ResortIsland.Config
         [JsonProperty(Required = Required.Always)] public NeedsConfig Needs { get; set; }
         [JsonProperty(Required = Required.Always)] public BuildingsConfig Buildings { get; set; }
         [JsonProperty(Required = Required.Always)] public UnlocksConfig Unlocks { get; set; }
+        [JsonProperty(Required = Required.Always)] public PathsConfig Paths { get; set; }
         [JsonProperty(Required = Required.Always)] public WavesConfig Waves { get; set; }
 
         public static GameConfigs Parse(string response)
@@ -34,6 +54,16 @@ namespace ResortIsland.Config
         }
     }
 
+    /// <summary>
+    /// A number the game cannot do without: GameConfigs.Parse fails when the configs lack it, so an old cached
+    /// response falls back to the bundled configs instead of e.g. free buildings. Only Parse checks it; reading
+    /// part of a config elsewhere (tests, wave_sim fixtures) does not.
+    /// </summary>
+    [AttributeUsage(AttributeTargets.Property)]
+    public sealed class RequiredInConfigsAttribute : Attribute
+    {
+    }
+
     public class EconomyConfig
     {
         public int StartingCoins { get; set; }
@@ -42,8 +72,11 @@ namespace ResortIsland.Config
         public int MaxEnergy { get; set; }
         public int StartingResortValue { get; set; }
         public int StartingReputation { get; set; }
+        [RequiredInConfigs] public int StartingWorkers { get; set; }
         public int CoinsPerUnit { get; set; }
         public float[] CoinsRatingMult { get; set; }
+        /// <summary>Resort value gained for a wave rated 1-5 stars and Perfect (index = rating - 1).</summary>
+        [RequiredInConfigs] public int[] ResortValueByRating { get; set; }
     }
 
     public class WaveSystemConfig
@@ -104,6 +137,8 @@ namespace ResortIsland.Config
         public int Level { get; set; }
         public int Capacity { get; set; }
         public int UpgradeCost { get; set; }
+        /// <summary>Resort value gained when a building is upgraded to this level.</summary>
+        [RequiredInConfigs] public int ResortValue { get; set; }
     }
 
     public class BuildingDefinition
@@ -111,6 +146,11 @@ namespace ResortIsland.Config
         public string Id { get; set; }
         public string Need { get; set; }
         public string Unlock { get; set; }
+        /// <summary>Coins paid for building one from the build menu (0 = free).</summary>
+        [RequiredInConfigs] public int Cost { get; set; }
+        [RequiredInConfigs] public int MaxCount { get; set; }
+        /// <summary>Resort value gained for building one.</summary>
+        [RequiredInConfigs] public int ResortValue { get; set; }
     }
 
     public class UnlocksConfig
@@ -125,6 +165,30 @@ namespace ResortIsland.Config
         public int Cost { get; set; }
         public string Building { get; set; }
         public int WorkersAdded { get; set; }
+    }
+
+    public class PathsConfig
+    {
+        public List<PathStyleConfig> Styles { get; set; }
+    }
+
+    /// <summary>The numbers of a path style; its look (sheets, names) is in Resources/PathStyles.asset.</summary>
+    public class PathStyleConfig
+    {
+        public string Id { get; set; }
+        /// <summary>Can be built from this wave on (1 = from the start).</summary>
+        [RequiredInConfigs] public int UnlockWave { get; set; }
+        /// <summary>Level 1, 2, ... in the order of the levels in PathStyles.asset.</summary>
+        [RequiredInConfigs] public List<PathLevelConfig> Levels { get; set; }
+    }
+
+    public class PathLevelConfig
+    {
+        [RequiredInConfigs] public int CostPerTile { get; set; }
+        /// <summary>Resort value gained for each tile laid or raised to this level.</summary>
+        [RequiredInConfigs] public int ValuePerTile { get; set; }
+        /// <summary>Shown in the build menu; guests do not walk faster yet.</summary>
+        [RequiredInConfigs] public int GuestSpeedPct { get; set; }
     }
 
     public class WavesConfig

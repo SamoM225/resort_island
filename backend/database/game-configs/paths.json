@@ -1,0 +1,33 @@
+{
+    "version": 1,
+    "data": {
+        "styles": [
+            { "id": "white_paving", "unlock_wave": 1, "levels": [
+                { "cost_per_tile": 0, "value_per_tile": 0, "guest_speed_pct": 0 }
+            ] },
+            { "id": "sand_trail", "unlock_wave": 1, "levels": [
+                { "cost_per_tile": 0, "value_per_tile": 0, "guest_speed_pct": 0 },
+                { "cost_per_tile": 5, "value_per_tile": 1, "guest_speed_pct": 5 }
+            ] },
+            { "id": "boardwalk", "unlock_wave": 1, "levels": [
+                { "cost_per_tile": 10, "value_per_tile": 1, "guest_speed_pct": 5 },
+                { "cost_per_tile": 15, "value_per_tile": 2, "guest_speed_pct": 10 },
+                { "cost_per_tile": 20, "value_per_tile": 3, "guest_speed_pct": 15 }
+            ] },
+            { "id": "gravel", "unlock_wave": 1, "levels": [
+                { "cost_per_tile": 15, "value_per_tile": 2, "guest_speed_pct": 5 },
+                { "cost_per_tile": 20, "value_per_tile": 3, "guest_speed_pct": 10 }
+            ] },
+            { "id": "stepping_stones", "unlock_wave": 1, "levels": [
+                { "cost_per_tile": 20, "value_per_tile": 2, "guest_speed_pct": 10 },
+                { "cost_per_tile": 25, "value_per_tile": 3, "guest_speed_pct": 15 }
+            ] },
+            { "id": "cobblestone", "unlock_wave": 6, "levels": [
+                { "cost_per_tile": 25, "value_per_tile": 3, "guest_speed_pct": 15 }
+            ] },
+            { "id": "promenade", "unlock_wave": 8, "levels": [
+                { "cost_per_tile": 40, "value_per_tile": 5, "guest_speed_pct": 20 }
+            ] }
+        ]
+    }
+}

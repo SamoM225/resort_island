@@ -13,12 +13,8 @@ namespace ResortIsland.Config
         [SerializeField] private NeedConfig servedNeed;
 
         [Header("Availability")]
-        [SerializeField] private string unlockId;     
-        [SerializeField] private int maxCount = 1;
-        [Tooltip("Coins paid when the player builds it from the build menu (0 = free).")]
-        [SerializeField, Min(0)] private int cost;
-        [Header("Service")]
-        [SerializeField, Min(1)] private int capacity = 4;
+        [Tooltip("Price, max count, capacity and resort value come from the game configs (buildings.json) by Id.")]
+        [SerializeField] private string unlockId;
 
         [Header("Placement")]
         [Tooltip("Cells occupied on the island grid (matches the ResortEmpire sprite footprint).")]
@@ -39,9 +35,6 @@ namespace ResortIsland.Config
         public string DisplayName => displayName;
         public NeedConfig ServedNeed => servedNeed;
         public string UnlockId => unlockId;
-        public int MaxCount => maxCount;
-        public int Cost => cost;
-        public int Capacity => Mathf.Max(1, capacity);
         public Vector2Int Footprint => new Vector2Int(Mathf.Max(1, footprint.x), Mathf.Max(1, footprint.y));
         public bool PreferShore => preferShore;
         public GameObject Prefab => prefab;

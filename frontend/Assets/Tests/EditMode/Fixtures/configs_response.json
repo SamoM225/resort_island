@@ -2,57 +2,75 @@
     "data": [
         {
             "key": "buildings",
-            "version": 1,
+            "version": 2,
             "data": {
                 "levels": [
                     {
                         "level": 1,
                         "capacity": 3,
-                        "upgrade_cost": 0
+                        "upgrade_cost": 0,
+                        "resort_value": 0
                     },
                     {
                         "level": 2,
                         "capacity": 5,
-                        "upgrade_cost": 500
+                        "upgrade_cost": 500,
+                        "resort_value": 500
                     },
                     {
                         "level": 3,
                         "capacity": 7,
-                        "upgrade_cost": 1200
+                        "upgrade_cost": 1200,
+                        "resort_value": 1200
                     }
                 ],
                 "buildings": [
                     {
                         "id": "reception",
                         "need": "rooms",
-                        "unlock": null
+                        "unlock": null,
+                        "cost": 0,
+                        "max_count": 3,
+                        "resort_value": 1000
                     },
                     {
                         "id": "restaurant",
                         "need": "food",
-                        "unlock": null
+                        "unlock": null,
+                        "cost": 0,
+                        "max_count": 3,
+                        "resort_value": 800
                     },
                     {
                         "id": "beachbar",
                         "need": "drinks",
-                        "unlock": null
+                        "unlock": null,
+                        "cost": 0,
+                        "max_count": 3,
+                        "resort_value": 600
                     },
                     {
                         "id": "pool",
                         "need": "relax",
-                        "unlock": "pool"
+                        "unlock": "pool",
+                        "cost": 0,
+                        "max_count": 3,
+                        "resort_value": 1500
                     },
                     {
                         "id": "bungalows",
                         "need": "ocean_view",
-                        "unlock": "bungalows"
+                        "unlock": "bungalows",
+                        "cost": 0,
+                        "max_count": 3,
+                        "resort_value": 2500
                     }
                 ]
             }
         },
         {
             "key": "economy",
-            "version": 1,
+            "version": 2,
             "data": {
                 "starting_coins": 1000,
                 "starting_gems": 10,
@@ -60,6 +78,7 @@
                 "max_energy": 100,
                 "starting_resort_value": 24500,
                 "starting_reputation": 4,
+                "starting_workers": 2,
                 "coins_per_unit": 16,
                 "coins_rating_mult": [
                     0.4,
@@ -68,6 +87,14 @@
                     1,
                     1.2,
                     1.3
+                ],
+                "resort_value_by_rating": [
+                    10,
+                    25,
+                    50,
+                    100,
+                    150,
+                    200
                 ]
             }
         },
@@ -112,6 +139,116 @@
                     {
                         "id": "ocean_view",
                         "satisfaction_weight": 1.5
+                    }
+                ]
+            }
+        },
+        {
+            "key": "paths",
+            "version": 1,
+            "data": {
+                "styles": [
+                    {
+                        "id": "white_paving",
+                        "unlock_wave": 1,
+                        "levels": [
+                            {
+                                "cost_per_tile": 0,
+                                "value_per_tile": 0,
+                                "guest_speed_pct": 0
+                            }
+                        ]
+                    },
+                    {
+                        "id": "sand_trail",
+                        "unlock_wave": 1,
+                        "levels": [
+                            {
+                                "cost_per_tile": 0,
+                                "value_per_tile": 0,
+                                "guest_speed_pct": 0
+                            },
+                            {
+                                "cost_per_tile": 5,
+                                "value_per_tile": 1,
+                                "guest_speed_pct": 5
+                            }
+                        ]
+                    },
+                    {
+                        "id": "boardwalk",
+                        "unlock_wave": 1,
+                        "levels": [
+                            {
+                                "cost_per_tile": 10,
+                                "value_per_tile": 1,
+                                "guest_speed_pct": 5
+                            },
+                            {
+                                "cost_per_tile": 15,
+                                "value_per_tile": 2,
+                                "guest_speed_pct": 10
+                            },
+                            {
+                                "cost_per_tile": 20,
+                                "value_per_tile": 3,
+                                "guest_speed_pct": 15
+                            }
+                        ]
+                    },
+                    {
+                        "id": "gravel",
+                        "unlock_wave": 1,
+                        "levels": [
+                            {
+                                "cost_per_tile": 15,
+                                "value_per_tile": 2,
+                                "guest_speed_pct": 5
+                            },
+                            {
+                                "cost_per_tile": 20,
+                                "value_per_tile": 3,
+                                "guest_speed_pct": 10
+                            }
+                        ]
+                    },
+                    {
+                        "id": "stepping_stones",
+                        "unlock_wave": 1,
+                        "levels": [
+                            {
+                                "cost_per_tile": 20,
+                                "value_per_tile": 2,
+                                "guest_speed_pct": 10
+                            },
+                            {
+                                "cost_per_tile": 25,
+                                "value_per_tile": 3,
+                                "guest_speed_pct": 15
+                            }
+                        ]
+                    },
+                    {
+                        "id": "cobblestone",
+                        "unlock_wave": 6,
+                        "levels": [
+                            {
+                                "cost_per_tile": 25,
+                                "value_per_tile": 3,
+                                "guest_speed_pct": 15
+                            }
+                        ]
+                    },
+                    {
+                        "id": "promenade",
+                        "unlock_wave": 8,
+                        "levels": [
+                            {
+                                "cost_per_tile": 40,
+                                "value_per_tile": 5,
+                                "guest_speed_pct": 20
+                            }
+                        ]
                     }
                 ]
             }

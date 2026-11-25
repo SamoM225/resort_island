@@ -180,7 +180,7 @@ namespace ResortIsland.Characters
                 if (occupancy == null)
                 {
                     occupancy = building.gameObject.AddComponent<BuildingOccupancy>();
-                    occupancy.Init(building.Config);
+                    occupancy.Init(resort.Tuning.Capacity(1));
                 }
                 if (occupancy.Available <= 0)
                     continue;

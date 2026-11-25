@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using UnityEngine;
-using ResortIsland.Config;
 
 namespace ResortIsland.Characters
 {
@@ -13,9 +12,10 @@ namespace ResortIsland.Characters
         public int Occupancy => occupants.Count;
         public int Available => Mathf.Max(0, capacity - occupants.Count);
 
-        public void Init(BuildingConfig config)
+        /// <summary>capacity: guests served at once, from the game configs (GameTuning.Capacity).</summary>
+        public void Init(int capacity)
         {
-            capacity = config != null ? config.Capacity : 1;
+            this.capacity = Mathf.Max(1, capacity);
         }
 
         public bool TryOccupy(GuestAI guest)

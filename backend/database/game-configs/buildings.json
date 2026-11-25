@@ -1,17 +1,17 @@
 {
-    "version": 1,
+    "version": 2,
     "data": {
         "levels": [
-            { "level": 1, "capacity": 3, "upgrade_cost": 0 },
-            { "level": 2, "capacity": 5, "upgrade_cost": 500 },
-            { "level": 3, "capacity": 7, "upgrade_cost": 1200 }
+            { "level": 1, "capacity": 3, "upgrade_cost": 0, "resort_value": 0 },
+            { "level": 2, "capacity": 5, "upgrade_cost": 500, "resort_value": 500 },
+            { "level": 3, "capacity": 7, "upgrade_cost": 1200, "resort_value": 1200 }
         ],
         "buildings": [
-            { "id": "reception", "need": "rooms", "unlock": null },
-            { "id": "restaurant", "need": "food", "unlock": null },
-            { "id": "beachbar", "need": "drinks", "unlock": null },
-            { "id": "pool", "need": "relax", "unlock": "pool" },
-            { "id": "bungalows", "need": "ocean_view", "unlock": "bungalows" }
+            { "id": "reception", "need": "rooms", "unlock": null, "cost": 0, "max_count": 3, "resort_value": 1000 },
+            { "id": "restaurant", "need": "food", "unlock": null, "cost": 0, "max_count": 3, "resort_value": 800 },
+            { "id": "beachbar", "need": "drinks", "unlock": null, "cost": 0, "max_count": 3, "resort_value": 600 },
+            { "id": "pool", "need": "relax", "unlock": "pool", "cost": 0, "max_count": 3, "resort_value": 1500 },
+            { "id": "bungalows", "need": "ocean_view", "unlock": "bungalows", "cost": 0, "max_count": 3, "resort_value": 2500 }
         ]
     }
 }

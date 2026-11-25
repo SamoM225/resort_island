@@ -1,4 +1,6 @@
 using UnityEngine;
+using ResortIsland.Backend;
+using ResortIsland.Config;
 using ResortIsland.Economy;
 using ResortIsland.UI;
 
@@ -28,7 +30,7 @@ namespace ResortIsland.Waves
                 return;
             }
 
-            presenter = new WaveCompletePresenter(state, transitions, FindResult, CalculateCoins, economy.AddCoins, view);
+            presenter = new WaveCompletePresenter(state, transitions, FindResult, CalculateCoins, ClaimRewards, view);
         }
 
         private void OnDestroy()
@@ -39,5 +41,14 @@ namespace ResortIsland.Waves
         private IWaveResult FindResult() => waveController.Result;
 
         private int CalculateCoins(IWaveResult result) => waveController.Score?.Coins ?? 0;
+
+        // Claim: the coins of the wave and the resort value of its rating (economy.resort_value_by_rating).
+        private void ClaimRewards(int coins)
+        {
+            economy.AddCoins(coins);
+            IWaveResult result = waveController.Result;
+            if (result != null)
+                economy.AddResortValue(new GameTuning(GameConfigService.Current).RatingValue(result.Rating));
+        }
     }
 }

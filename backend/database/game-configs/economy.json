@@ -1,5 +1,5 @@
 {
-    "version": 1,
+    "version": 2,
     "data": {
         "starting_coins": 1000,
         "starting_gems": 10,
@@ -7,7 +7,9 @@
         "max_energy": 100,
         "starting_resort_value": 24500,
         "starting_reputation": 4,
+        "starting_workers": 2,
         "coins_per_unit": 16,
-        "coins_rating_mult": [0.4, 0.6, 0.8, 1.0, 1.2, 1.3]
+        "coins_rating_mult": [0.4, 0.6, 0.8, 1.0, 1.2, 1.3],
+        "resort_value_by_rating": [10, 25, 50, 100, 150, 200]
     }
 }
