@@ -26,7 +26,8 @@ namespace ResortIsland.Tests
             WaveRating rating = new WaveRating(
                 new WaveSystemConfig { PatienceGraceS = 10, PatienceFloorAfterS = 30, UnitFloor = 0.25f, WaveFloor = 0.4f, RatingThresholds = new[] { 0.4f, 0.55f, 0.7f, 0.8f, 0.9f, 1f } },
                 new EconomyConfig { CoinsPerUnit = 16, CoinsRatingMult = new[] { 0.4f, 0.6f, 0.8f, 1f, 1.2f, 1.3f } },
-                new List<NeedDefinition> { new NeedDefinition { Id = "drinks", SatisfactionWeight = 1f } });
+                new List<NeedDefinition> { new NeedDefinition { Id = "drinks", SatisfactionWeight = 1f } },
+                new EnergyConfig { DropByRating = new[] { 0, 1, 2, 3, 5 } });
             WaveScore score = new WaveScore(rating, wave);
             score.RecordWait("drinks", 0);
             score.RecordWait("drinks", 12.5);
@@ -47,6 +48,7 @@ namespace ResortIsland.Tests
             CollectionAssert.AreEqual(new[] { 0.0, 12.5 }, body["waits"]["drinks"].Values<double>());
             Assert.AreEqual(5, body["client"].Value<int>("rating"));
             Assert.AreEqual(38, body["client"].Value<int>("coins"));
+            Assert.AreEqual(5, body["client"].Value<int>("energy"));
             Assert.AreEqual(0, reporter.Pending);
         }
 

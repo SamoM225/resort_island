@@ -32,7 +32,8 @@ namespace ResortIsland.Tests
             return new WaveRating(
                 rules["wave_system"].ToObject<WaveSystemConfig>(SnakeCase),
                 rules["economy"].ToObject<EconomyConfig>(SnakeCase),
-                rules["needs"].ToObject<List<NeedDefinition>>(SnakeCase));
+                rules["needs"].ToObject<List<NeedDefinition>>(SnakeCase),
+                rules["energy"].ToObject<EnergyConfig>(SnakeCase));
         }
 
         private static WaveScore Score(WaveRating rating, JToken testCase)
@@ -47,7 +48,7 @@ namespace ResortIsland.Tests
         }
 
         [Test]
-        public void EveryCaseFromWaveSim_GetsTheSameSatisfactionRatingAndCoins()
+        public void EveryCaseFromWaveSim_GetsTheSameSatisfactionRatingCoinsAndEnergy()
         {
             JObject cases = LoadCases();
             WaveRating rating = RatingFrom(cases);
@@ -62,6 +63,7 @@ namespace ResortIsland.Tests
                 Assert.AreEqual(testCase.Value<double>("satisfaction"), score.SatisfactionRatio, 1e-9, name);
                 Assert.AreEqual(testCase.Value<int>("rating"), score.Rating, name);
                 Assert.AreEqual(testCase.Value<int>("coins"), score.Coins, name);
+                Assert.AreEqual(testCase.Value<int>("energy"), score.Energy, name);
             }
         }
 

@@ -20,7 +20,7 @@ test('backend rates a finished wave from its waits and keeps the result', functi
     $this->postJson(route('api.v1.me.waves.store'), [
         'wave' => 2,
         'waits' => ['rooms' => [0, 20], 'drinks' => [5, 45]],
-        'client' => ['satisfaction' => 0.71875, 'rating' => 3, 'coins' => 51],
+        'client' => ['satisfaction' => 0.71875, 'rating' => 3, 'coins' => 51, 'energy' => 2],
     ])
         ->assertCreated()
         ->assertExactJson(['data' => [
@@ -29,11 +29,12 @@ test('backend rates a finished wave from its waits and keeps the result', functi
             'satisfaction' => 0.71875,
             'rating' => 3,
             'coins' => 51,
+            'energy' => 2,
             'matches_client' => true,
         ]]);
 
-    expect($player->waveResults()->sole()->only('wave', 'units', 'rating', 'coins', 'client_coins'))
-        ->toBe(['wave' => 2, 'units' => 4, 'rating' => 3, 'coins' => 51, 'client_coins' => 51]);
+    expect($player->waveResults()->sole()->only('wave', 'units', 'rating', 'coins', 'energy', 'client_coins', 'client_energy'))
+        ->toBe(['wave' => 2, 'units' => 4, 'rating' => 3, 'coins' => 51, 'energy' => 2, 'client_coins' => 51, 'client_energy' => 2]);
 });
 
 test('the backend coins win over what the game claims', function () {
@@ -51,6 +52,22 @@ test('the backend coins win over what the game claims', function () {
         ->assertJsonPath('data.matches_client', false);
 });
 
+test('a perfect wave gets the five star energy and the game must claim the same', function () {
+    $player = User::factory()->anonymous()->create();
+    Sanctum::actingAs($player);
+
+    $this->postJson(route('api.v1.me.waves.store'), [
+        'wave' => 1,
+        'waits' => ['rooms' => [0, 0]],
+        'client' => ['rating' => 6, 'coins' => 42, 'energy' => 9],
+    ])
+        ->assertCreated()
+        ->assertJsonPath('data.rating', 6)
+        ->assertJsonPath('data.coins', 42)
+        ->assertJsonPath('data.energy', 5)
+        ->assertJsonPath('data.matches_client', false);
+});
+
 test('invalid wave reports are rejected', function (array $body, string $error) {
     Sanctum::actingAs(User::factory()->anonymous()->create());
 
@@ -63,6 +80,7 @@ test('invalid wave reports are rejected', function (array $body, string $error) 
     'wait is not a number' => [['wave' => 1, 'waits' => ['rooms' => ['soon']]], 'waits.rooms.0'],
     'missing wave' => [['waits' => ['rooms' => [1]]], 'wave'],
     'too many units' => [['wave' => 1, 'waits' => ['rooms' => array_fill(0, 2001, 1)]], 'waits'],
+    'negative energy' => [['wave' => 1, 'waits' => ['rooms' => [1]], 'client' => ['energy' => -1]], 'client.energy'],
 ]);
 
 test('wave reports need a player token', function () {
@@ -82,13 +100,29 @@ test('saved coins are checked against the coins the player earned', function () 
     expect($save->coinsExceedEarned())->toBeTrue();
 });
 
-test('admin sees the rated waves and the coins check of a player', function () {
+test('saved energy is checked against the energy the player earned, up to max energy', function () {
     $player = User::factory()->anonymous()->create();
-    WaveResult::factory()->for($player)->create(['wave' => 3, 'rating' => 4, 'satisfaction' => 0.8584, 'coins' => 768, 'client_coins' => 900]);
-    PlayerSave::factory()->for($player)->create(['data' => ['economy' => ['coins' => 99999]]]);
+    WaveResult::factory()->for($player)->create(['energy' => 5]);
+    $save = PlayerSave::factory()->for($player)->create(['data' => ['economy' => ['energy' => 87]]]);
+
+    expect($save->earnedEnergy())->toBe(87)
+        ->and($save->energyExceedsEarned())->toBeFalse();
+
+    $save->update(['data' => ['economy' => ['energy' => 88]]]);
+    expect($save->energyExceedsEarned())->toBeTrue();
+
+    WaveResult::factory()->for($player)->count(10)->create(['energy' => 5]);
+    expect($save->earnedEnergy())->toBe(100);
+});
+
+test('admin sees the rated waves and the coins and energy check of a player', function () {
+    $player = User::factory()->anonymous()->create();
+    WaveResult::factory()->for($player)->create(['wave' => 3, 'rating' => 4, 'satisfaction' => 0.8584, 'coins' => 768, 'energy' => 3, 'client_coins' => 900, 'client_energy' => 3]);
+    PlayerSave::factory()->for($player)->create(['data' => ['economy' => ['coins' => 99999, 'energy' => 99]]]);
     $this->actingAs(Admin::factory()->create(), 'admin');
 
     Livewire::test(ViewUser::class, ['record' => $player->getRouteKey()])
-        ->assertSee('Wave 3 · 4★ · 85.8 % · 768 coins (game said 900)')
-        ->assertSee('More coins than earned (at most 1,768');
+        ->assertSee('Wave 3 · 4★ · 85.8 % · 768 coins · 3 energy (game said 900 coins, 3 energy)')
+        ->assertSee('More coins than earned (at most 1,768')
+        ->assertSee('More energy than earned (at most 85');
 });
