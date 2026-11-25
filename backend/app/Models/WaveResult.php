@@ -10,9 +10,10 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 /**
  * A wave the game finished, rated again by the backend from the reported waits (App\Services\WaveRating).
- * Its coins are what the player was entitled to; client_coins is what the game said it paid out.
+ * Its coins and energy are what the player was entitled to; client_coins and client_energy are what
+ * the game said it paid out.
  */
-#[Fillable(['wave', 'units', 'satisfaction', 'rating', 'coins', 'client_coins'])]
+#[Fillable(['wave', 'units', 'satisfaction', 'rating', 'coins', 'energy', 'client_coins', 'client_energy'])]
 class WaveResult extends Model
 {
     /** @use HasFactory<WaveResultFactory> */
@@ -33,16 +34,23 @@ class WaveResult extends Model
             'satisfaction' => 'float',
             'rating' => 'integer',
             'coins' => 'integer',
+            'energy' => 'integer',
             'client_coins' => 'integer',
+            'client_energy' => 'integer',
         ];
     }
 
     /**
-     * Null when the game did not send its own result.
+     * Null when the game did not send its own result. Games from before the energy reward send no energy.
      */
     public function matchesClient(): ?bool
     {
-        return $this->client_coins === null ? null : $this->client_coins === $this->coins;
+        if ($this->client_coins === null) {
+            return null;
+        }
+
+        return $this->client_coins === $this->coins
+            && ($this->client_energy === null || $this->client_energy === $this->energy);
     }
 
     /**

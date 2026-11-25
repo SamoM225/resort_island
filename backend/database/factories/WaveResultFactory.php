@@ -25,7 +25,9 @@ class WaveResultFactory extends Factory
             'satisfaction' => 0.858,
             'rating' => 4,
             'coins' => 768,
+            'energy' => 3,
             'client_coins' => 768,
+            'client_energy' => 3,
         ];
     }
 }
