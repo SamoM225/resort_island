@@ -37,6 +37,9 @@ namespace ResortIsland.Waves
 
         public int Coins => rating.CoinsFor(Units, Rating);
 
+        /// <summary>Energy the player gets on Claim (energy.drop_by_rating).</summary>
+        public int Energy => rating.EnergyFor(Rating);
+
         public void RecordWait(string needId, double waitSeconds)
         {
             if (!rating.HasNeed(needId))

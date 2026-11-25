@@ -8,12 +8,15 @@ namespace ResortIsland.Waves
     /// How a wave is rated (build document 4.4 and 4.8), the same model as tools/wave_sim/wave_sim.py and the backend:
     /// every unit of a need contributes by how long it waited until it was seated, weighted by its need;
     /// the weighted average (at least wave_floor) is the satisfaction, the highest reached threshold the rating,
-    /// and the coins are units x coins_per_unit x the rating's multiplier.
+    /// and the coins are units x coins_per_unit x the rating's multiplier. The energy for Claim is
+    /// drop_by_rating of the stars; Perfect gets the 5-star drop.
     /// </summary>
     public sealed class WaveRating
     {
         /// <summary>Ratings are 1-5 stars; 6 is Perfect.</summary>
         public const int Perfect = 6;
+
+        public const int FiveStars = 5;
 
         private const double Epsilon = 1e-9;
 
@@ -24,13 +27,15 @@ namespace ResortIsland.Waves
         private readonly double[] ratingThresholds;
         private readonly int coinsPerUnit;
         private readonly double[] coinsRatingMultipliers;
+        private readonly int[] energyDropByRating;
         private readonly Dictionary<string, double> weights = new Dictionary<string, double>();
 
-        public WaveRating(WaveSystemConfig waveSystem, EconomyConfig economy, IEnumerable<NeedDefinition> needs)
+        public WaveRating(WaveSystemConfig waveSystem, EconomyConfig economy, IEnumerable<NeedDefinition> needs, EnergyConfig energy)
         {
             if (waveSystem == null) throw new ArgumentNullException(nameof(waveSystem));
             if (economy == null) throw new ArgumentNullException(nameof(economy));
             if (needs == null) throw new ArgumentNullException(nameof(needs));
+            if (energy == null) throw new ArgumentNullException(nameof(energy));
 
             patienceGrace = Exact(waveSystem.PatienceGraceS);
             patienceFloorAfter = Exact(waveSystem.PatienceFloorAfterS);
@@ -44,9 +49,13 @@ namespace ResortIsland.Waves
 
             if (ratingThresholds.Length != Perfect || coinsRatingMultipliers.Length != Perfect)
                 throw new ArgumentException($"Configs need {Perfect} rating thresholds and coin multipliers (1-5 stars and Perfect).");
+
+            energyDropByRating = energy.DropByRating;
+            if (energyDropByRating == null || energyDropByRating.Length != FiveStars)
+                throw new ArgumentException($"The energy config needs {FiveStars} drop_by_rating values (1-5 stars; Perfect gets the 5-star one).");
         }
 
-        public static WaveRating From(GameConfigs configs) => new WaveRating(configs.WaveSystem, configs.Economy, configs.Needs.Needs);
+        public static WaveRating From(GameConfigs configs) => new WaveRating(configs.WaveSystem, configs.Economy, configs.Needs.Needs, configs.Energy);
 
         public bool HasNeed(string needId) => weights.ContainsKey(needId);
 
@@ -98,6 +107,15 @@ namespace ResortIsland.Waves
                 throw new ArgumentOutOfRangeException(nameof(rating));
 
             return (int)Math.Floor(units * coinsPerUnit * coinsRatingMultipliers[rating - 1] + 0.5);
+        }
+
+        /// <summary>Energy for claiming a wave with this rating (1-5 stars, 6 = Perfect gets the 5-star drop).</summary>
+        public int EnergyFor(int rating)
+        {
+            if (rating < 1 || rating > Perfect)
+                throw new ArgumentOutOfRangeException(nameof(rating));
+
+            return Math.Max(0, energyDropByRating[Math.Min(rating, FiveStars) - 1]);
         }
 
         private double WeightOf(string needId)
