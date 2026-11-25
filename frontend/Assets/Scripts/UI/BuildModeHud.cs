@@ -240,7 +240,9 @@ namespace ResortIsland.UI
                 ShowMessage("Not enough coins · remove some tiles or press X to undo");
                 return false;
             }
+            int value = resort.PendingPathValue;
             resort.CommitPathEdit();
+            economy?.AddResortValue(value);
             return true;
         }
 
@@ -286,7 +288,7 @@ namespace ResortIsland.UI
             {
                 resort.BeginPathEdit();
                 PathStyle style = Styles.Find(selectedStyle);
-                if (style == null || !style.IsUnlocked(ReachedWave)) style = FirstUnlockedStyle();
+                if (style == null || !IsUnlocked(style)) style = FirstUnlockedStyle();
                 SelectStyle(style);
                 SelectTool(PathTool.Draw);
             }
@@ -295,10 +297,12 @@ namespace ResortIsland.UI
             return true;
         }
 
+        private bool IsUnlocked(PathStyle style) => resort.IsPathStyleUnlocked(style.Id, ReachedWave);
+
         private PathStyle FirstUnlockedStyle()
         {
             foreach (PathStyle style in Styles.Styles)
-                if (style != null && style.IsUnlocked(ReachedWave)) return style;
+                if (style != null && IsUnlocked(style)) return style;
             return Styles.FindOrDefault(null);
         }
 
@@ -314,9 +318,9 @@ namespace ResortIsland.UI
         private void SelectStyle(PathStyle style)
         {
             if (style == null) return;
-            if (!style.IsUnlocked(ReachedWave))
+            if (!IsUnlocked(style))
             {
-                ShowMessage(style.DisplayName + " unlocks at wave " + style.UnlockWave);
+                ShowMessage(style.DisplayName + " unlocks at wave " + resort.Tuning.PathUnlockWave(style.Id));
                 return;
             }
 
@@ -344,9 +348,9 @@ namespace ResortIsland.UI
         {
             if (!Unlocks.Has(config.UnlockId))
                 ShowMessage(config.DisplayName + " is still locked");
-            else if (resort.CountOf(config) >= config.MaxCount)
-                ShowMessage("All " + config.MaxCount + " are already built");
-            else if (config.Cost > 0 && economy != null && economy.Coins < config.Cost)
+            else if (resort.CountOf(config) >= resort.MaxCountOf(config))
+                ShowMessage("All " + resort.MaxCountOf(config) + " are already built");
+            else if (resort.CostOf(config) > 0 && economy != null && economy.Coins < resort.CostOf(config))
                 ShowMessage("Not enough coins for " + config.DisplayName);
             else if (placer.SelectBuilding(config))
                 message = null;
@@ -355,8 +359,10 @@ namespace ResortIsland.UI
 
         private void OnBuildingPlaced(BuildingConfig config)
         {
-            if (config.Cost > 0 && economy != null && !economy.TrySpendCoins(config.Cost))
+            int cost = resort.CostOf(config);
+            if (cost > 0 && economy != null && !economy.TrySpendCoins(cost))
                 Debug.LogWarning("[BuildModeHud] " + config.Id + " was placed but the coins were spent meanwhile.");
+            economy?.AddResortValue(resort.ValueOf(config));
             Refresh();
         }
 
@@ -425,12 +431,12 @@ namespace ResortIsland.UI
             foreach (var pair in pathCards)
             {
                 PathStyle style = pair.Key;
-                bool locked = !style.IsUnlocked(wave);
+                bool locked = !resort.IsPathStyleUnlocked(style.Id, wave);
                 int state = locked ? 2 : style.Id == selectedStyle ? 1 : 0;
                 if (SetCardState(pair.Value, state))
                 {
-                    int price = style.CostPerTile(1);
-                    pair.Value.Price.text = locked ? "Wave " + style.UnlockWave : price == 0 ? "Free" : price + "/tile";
+                    int price = resort.PathCostPerTile(style.Id, 1);
+                    pair.Value.Price.text = locked ? "Wave " + resort.Tuning.PathUnlockWave(style.Id) : price == 0 ? "Free" : price + "/tile";
                     pair.Value.PriceIcon.sprite = locked ? padlockIcon : coinIcon;
                 }
             }
@@ -447,7 +453,9 @@ namespace ResortIsland.UI
             }
             PathStyleLevel level = selected?.Level(selectedLevel);
             levelName.text = level != null ? level.Name : "";
-            levelDescription.text = level != null ? level.Description : "";
+            levelDescription.text = level != null
+                ? PathStyleLevel.Describe(resort.Tuning.PathLevel(selected.Id, selected.ClampLevel(selectedLevel)))
+                : "";
 
             foreach (ToolButton tool in tools)
             {
@@ -466,16 +474,18 @@ namespace ResortIsland.UI
                 BuildingConfig config = pair.Key;
                 bool locked = !Unlocks.Has(config.UnlockId);
                 int count = resort.CountOf(config);
-                bool full = count >= config.MaxCount;
+                int maxCount = resort.MaxCountOf(config);
+                int cost = resort.CostOf(config);
+                bool full = count >= maxCount;
                 int state = locked || full ? 2 : placer.SelectedBuilding == config ? 1 : 0;
                 SetCardState(pair.Value, state);
 
                 pair.Value.PriceIcon.sprite = locked ? padlockIcon : coinIcon;
                 pair.Value.PriceIcon.enabled = !full || locked;
                 pair.Value.Price.text = locked ? "Locked"
-                    : full ? count + "/" + config.MaxCount + " built"
-                    : (config.Cost == 0 ? "Free" : config.Cost.ToString("N0")) + "  ·  " + count + "/" + config.MaxCount;
-                pair.Value.Price.color = !locked && !full && config.Cost > coins ? Red : TextDark;
+                    : full ? count + "/" + maxCount + " built"
+                    : (cost == 0 ? "Free" : cost.ToString("N0")) + "  ·  " + count + "/" + maxCount;
+                pair.Value.Price.color = !locked && !full && cost > coins ? Red : TextDark;
             }
         }
 

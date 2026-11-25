@@ -34,6 +34,8 @@ namespace ResortIsland.Waves
             GameConfigs configs = GameConfigService.Current;
             if (configs != null && configs.WaveSystem != null)
                 panel.SetWarningThreshold(configs.WaveSystem.BottleneckThreshold);
+            else
+                Debug.LogError("[NeedsBinder] Game configs are not loaded, the panel will not warn about long queues (bottleneck_threshold).");
 
             presenter = new NeedsPresenter(waveController.State, waveController.Planner, FindProgress(), panel);
         }

@@ -3,6 +3,7 @@ using System;
 using System.IO;
 using UnityEngine;
 using UnityEngine.Tilemaps;
+using ResortIsland.Backend;
 using ResortIsland.Config;
 using ResortIsland.Save;
 using ResortIsland.Characters;
@@ -57,6 +58,22 @@ namespace ResortIsland.Resort
         public bool HasBuildingLayoutSave() => File.Exists(BuildingLayoutSavePath);
 
         private SaveStore store;
+        private GameTuning tuning;
+
+        /// Prices, limits, capacity and workers from the game configs; follows a newer download of them.
+        public GameTuning Tuning
+        {
+            get
+            {
+                GameConfigs current = GameConfigService.Current;
+                if (tuning == null || tuning.Configs != current)
+                {
+                    if (current == null) Debug.LogError("ResortManager: game configs are not loaded, nothing can be built.");
+                    tuning = new GameTuning(current);
+                }
+                return tuning;
+            }
+        }
 
         private void Awake()
         {
@@ -94,7 +111,12 @@ namespace ResortIsland.Resort
             if (IsReady) SaveGame();
         }
 
-        private void OnUnlocked(string id) => SaveGame();
+        private void OnUnlocked(string id)
+        {
+            // an unlock can bring workers (workers_added)
+            SyncWorkers();
+            SaveGame();
+        }
 
         private void Update()
         {
@@ -207,7 +229,15 @@ namespace ResortIsland.Resort
         }
 
         public bool CanBuild(BuildingConfig config)
-            => config != null && Unlocks.Has(config.UnlockId) && CountOf(config) < config.MaxCount;
+            => config != null && Unlocks.Has(config.UnlockId) && CountOf(config) < MaxCountOf(config);
+
+        /// Coins for building one from the build menu (buildings.json).
+        public int CostOf(BuildingConfig config) => config != null ? Tuning.BuildingCost(config.Id) : 0;
+
+        public int MaxCountOf(BuildingConfig config) => config != null ? Tuning.MaxCount(config.Id) : 0;
+
+        /// Resort value the player gets for building one.
+        public int ValueOf(BuildingConfig config) => config != null ? Tuning.BuildingValue(config.Id) : 0;
 
         public bool TryPlaceBuilding(BuildingConfig config, Vector3Int cell, int rotation = 0)
         {
@@ -249,7 +279,7 @@ namespace ResortIsland.Resort
 
             placed.Init(config);
             placed.SetRotation(rotation);
-            placed.gameObject.AddComponent<BuildingOccupancy>().Init(config);
+            placed.gameObject.AddComponent<BuildingOccupancy>().Init(Tuning.Capacity(1));
             Register(placed, origin);
             buildings.Add(placed);
 
@@ -372,8 +402,21 @@ namespace ResortIsland.Resort
         public bool IsEditingPaths => pathEditSnapshot != null;
 
         /// Coins the changes made since BeginPathEdit cost.
-        public int PendingPathCost => pathEditSnapshot == null || pathStyles == null ? 0
-            : PathNetwork.ChangeCost(pathEditSnapshot, paths.Cells, pathStyles.CostPerTile);
+        public int PendingPathCost => pathEditSnapshot == null ? 0
+            : PathNetwork.ChangeCost(pathEditSnapshot, paths.Cells, PathCostPerTile);
+
+        /// Resort value the changes made since BeginPathEdit give (every new or changed tile, like the price).
+        public int PendingPathValue => pathEditSnapshot == null ? 0
+            : PathNetwork.ChangeCost(pathEditSnapshot, paths.Cells, PathValuePerTile);
+
+        public int PathCostPerTile(string style, int level) => Tuning.PathCost(StyleId(style), level);
+
+        public int PathValuePerTile(string style, int level) => Tuning.PathValue(StyleId(style), level);
+
+        public bool IsPathStyleUnlocked(string style, int reachedWave) => Tuning.IsPathUnlocked(StyleId(style), reachedWave);
+
+        // an empty or unknown style is drawn as the default one, so it is priced as the default one too
+        private string StyleId(string style) => pathStyles != null ? pathStyles.FindOrDefault(style)?.Id ?? style : style;
 
         public void BeginPathEdit()
         {
@@ -831,7 +874,7 @@ namespace ResortIsland.Resort
             for (int i = workers.Count - 1; i >= 0; i--)
                 if (workers[i] == null) workers.RemoveAt(i);
 
-            int required = WorkerAssignment.RequiredWorkerCount(buildings.Count);
+            int required = WorkerAssignment.RequiredWorkerCount(buildings.Count, Tuning.Workers(Unlocks.Has));
             while (workers.Count > required)
             {
                 GameObject extra = workers[workers.Count - 1];

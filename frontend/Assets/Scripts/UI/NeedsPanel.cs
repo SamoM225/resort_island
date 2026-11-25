@@ -24,19 +24,18 @@ namespace ResortIsland.UI
 
     public class NeedsPanel : MonoBehaviour, INeedsView
     {
-        private const int DefaultWarningThreshold = 5;
-
-        [Header("Rows and dummy data (same order)")]
+        [Header("Rows and dummy data (same order); the dummy data is only the editor preview")]
         [SerializeField] private NeedRowView[] rows;
         [SerializeField] private NeedRowData[] data;
 
         private bool live;
-        private int thresholdOverride;
+        // bottleneck_threshold from the game configs; null = not set yet, then no row warns
+        private int? warningThreshold;
 
         private void Start() => Refresh();
 
         
-        public void SetWarningThreshold(int threshold) => thresholdOverride = threshold;
+        public void SetWarningThreshold(int threshold) => warningThreshold = threshold;
 
         
         public void Show(IReadOnlyList<NeedRowState> needs)
@@ -53,18 +52,8 @@ namespace ResortIsland.UI
                 if (!hasNeed) continue;
 
                 NeedRowState need = needs[i];
-                rows[i].Set(need.Name, need.Served, need.Total, need.Queue, need.Queue > WarningThresholdFor(i));
+                rows[i].Set(need.Name, need.Served, need.Total, need.Queue, warningThreshold.HasValue && need.Queue > warningThreshold.Value);
             }
-        }
-
-        private int WarningThresholdFor(int index)
-        {
-            if (thresholdOverride > 0)
-                return thresholdOverride;
-
-            return data != null && index < data.Length && data[index] != null
-                ? data[index].QueueWarningThreshold
-                : DefaultWarningThreshold;
         }
 
         [ContextMenu("Refresh")]

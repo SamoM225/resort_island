@@ -26,6 +26,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 1a29d538c6b47314fa8245eba5b7b640, type: 2}
   - {fileID: 11400000, guid: 6a290c64803903c4a9935a8c3d8de3b8, type: 2}
   - {fileID: 11400000, guid: 1dd2397fa4beb18439ce47103671cee5, type: 2}
-  startingWorkers: 2
   workerPrefab: {fileID: 57323380237942254, guid: c03e0f78aaf1f3781222caff5b4a6f57, type: 3}
   workerStartCell: {x: -2, y: -2, z: 0}

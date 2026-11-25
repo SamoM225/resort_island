@@ -6,18 +6,25 @@ namespace ResortIsland.Tests
     public class WorkerAssignmentTests
     {
         [Test]
-        public void RequiredWorkerCount_IsOneLessThanBuildings()
+        public void RequiredWorkerCount_IsTheWorkersOfTheConfigs()
         {
-            Assert.AreEqual(0, WorkerAssignment.RequiredWorkerCount(0));
-            Assert.AreEqual(0, WorkerAssignment.RequiredWorkerCount(1));
-            Assert.AreEqual(2, WorkerAssignment.RequiredWorkerCount(3));
-            Assert.AreEqual(4, WorkerAssignment.RequiredWorkerCount(5));
+            Assert.AreEqual(2, WorkerAssignment.RequiredWorkerCount(3, 2));
+            Assert.AreEqual(2, WorkerAssignment.RequiredWorkerCount(5, 2));
+            Assert.AreEqual(3, WorkerAssignment.RequiredWorkerCount(4, 3));
+        }
+
+        [Test]
+        public void RequiredWorkerCount_IsNeverMoreThanBuildings()
+        {
+            Assert.AreEqual(0, WorkerAssignment.RequiredWorkerCount(0, 2));
+            Assert.AreEqual(1, WorkerAssignment.RequiredWorkerCount(1, 2));
+            Assert.AreEqual(0, WorkerAssignment.RequiredWorkerCount(3, -1));
         }
 
         [Test]
         public void RequiredWorkerCount_RejectsNegativeBuildingCount()
         {
-            Assert.Throws<System.ArgumentOutOfRangeException>(() => WorkerAssignment.RequiredWorkerCount(-1));
+            Assert.Throws<System.ArgumentOutOfRangeException>(() => WorkerAssignment.RequiredWorkerCount(-1, 2));
         }
     }
 }
