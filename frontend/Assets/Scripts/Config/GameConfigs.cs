@@ -18,6 +18,7 @@ namespace ResortIsland.Config
         [JsonProperty(Required = Required.Always)] public NeedsConfig Needs { get; set; }
         [JsonProperty(Required = Required.Always)] public BuildingsConfig Buildings { get; set; }
         [JsonProperty(Required = Required.Always)] public UnlocksConfig Unlocks { get; set; }
+        [JsonProperty(Required = Required.Always)] public PathsConfig Paths { get; set; }
         [JsonProperty(Required = Required.Always)] public WavesConfig Waves { get; set; }
 
         public static GameConfigs Parse(string response)
@@ -42,8 +43,11 @@ namespace ResortIsland.Config
         public int MaxEnergy { get; set; }
         public int StartingResortValue { get; set; }
         public int StartingReputation { get; set; }
+        [JsonProperty(Required = Required.Always)] public int StartingWorkers { get; set; }
         public int CoinsPerUnit { get; set; }
         public float[] CoinsRatingMult { get; set; }
+        /// <summary>Resort value gained for a wave rated 1-5 stars and Perfect (index = rating - 1).</summary>
+        [JsonProperty(Required = Required.Always)] public int[] ResortValueByRating { get; set; }
     }
 
     public class WaveSystemConfig
@@ -104,6 +108,8 @@ namespace ResortIsland.Config
         public int Level { get; set; }
         public int Capacity { get; set; }
         public int UpgradeCost { get; set; }
+        /// <summary>Resort value gained when a building is upgraded to this level.</summary>
+        [JsonProperty(Required = Required.Always)] public int ResortValue { get; set; }
     }
 
     public class BuildingDefinition
@@ -111,6 +117,11 @@ namespace ResortIsland.Config
         public string Id { get; set; }
         public string Need { get; set; }
         public string Unlock { get; set; }
+        /// <summary>Coins paid for building one from the build menu (0 = free).</summary>
+        [JsonProperty(Required = Required.Always)] public int Cost { get; set; }
+        [JsonProperty(Required = Required.Always)] public int MaxCount { get; set; }
+        /// <summary>Resort value gained for building one.</summary>
+        [JsonProperty(Required = Required.Always)] public int ResortValue { get; set; }
     }
 
     public class UnlocksConfig
@@ -125,6 +136,30 @@ namespace ResortIsland.Config
         public int Cost { get; set; }
         public string Building { get; set; }
         public int WorkersAdded { get; set; }
+    }
+
+    public class PathsConfig
+    {
+        public List<PathStyleConfig> Styles { get; set; }
+    }
+
+    /// <summary>The numbers of a path style; its look (sheets, names) is in Resources/PathStyles.asset.</summary>
+    public class PathStyleConfig
+    {
+        public string Id { get; set; }
+        /// <summary>Can be built from this wave on (1 = from the start).</summary>
+        [JsonProperty(Required = Required.Always)] public int UnlockWave { get; set; }
+        /// <summary>Level 1, 2, ... in the order of the levels in PathStyles.asset.</summary>
+        [JsonProperty(Required = Required.Always)] public List<PathLevelConfig> Levels { get; set; }
+    }
+
+    public class PathLevelConfig
+    {
+        [JsonProperty(Required = Required.Always)] public int CostPerTile { get; set; }
+        /// <summary>Resort value gained for each tile laid or raised to this level.</summary>
+        [JsonProperty(Required = Required.Always)] public int ValuePerTile { get; set; }
+        /// <summary>Shown in the build menu; guests do not walk faster yet.</summary>
+        [JsonProperty(Required = Required.Always)] public int GuestSpeedPct { get; set; }
     }
 
     public class WavesConfig

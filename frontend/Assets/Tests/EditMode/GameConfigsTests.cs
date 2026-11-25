@@ -37,6 +37,29 @@ namespace ResortIsland.Tests
             Assert.AreEqual(3, configs.Unlocks.Unlocks.Single(unlock => unlock.Id == "pool").AfterWave);
             Assert.AreEqual(8, configs.Waves.Waves.Count);
             Assert.AreEqual(8, configs.Waves.Waves[0].Demand["rooms"]);
+            Assert.AreEqual(2, configs.Economy.StartingWorkers);
+            Assert.AreEqual(6, configs.Economy.ResortValueByRating.Length);
+            Assert.AreEqual(3, configs.Buildings.Buildings.Single(building => building.Id == "beachbar").MaxCount);
+            Assert.AreEqual(500, configs.Buildings.Levels.Single(level => level.Level == 2).ResortValue);
+            Assert.AreEqual(6, configs.Paths.Styles.Single(style => style.Id == "cobblestone").UnlockWave);
+            Assert.AreEqual(10, configs.Paths.Styles.Single(style => style.Id == "boardwalk").Levels[0].CostPerTile);
+        }
+
+        [Test]
+        public void Parse_MissingTunable_Throws()
+        {
+            // an old cached response without the new numbers must not load as free buildings
+            JObject response = JObject.Parse(ResponseFixture);
+            JObject economy = (JObject)((JArray)response["data"]).Single(item => item.Value<string>("key") == "economy")["data"];
+            economy.Remove("starting_workers");
+
+            Assert.Catch<JsonException>(() => GameConfigs.Parse(response.ToString()));
+        }
+
+        [Test]
+        public void Parse_MissingPaths_Throws()
+        {
+            Assert.Catch<JsonException>(() => GameConfigs.Parse(ResponseWithout("paths")));
         }
 
         [Test]
