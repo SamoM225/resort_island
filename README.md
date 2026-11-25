@@ -171,6 +171,17 @@ Zabanovaný hráč dostane na každý endpoint s tokenom aj na login `403 { "mes
 
 Hra je offline-first: všetko (ekonomika aj mapa — budovy a unlocky) je v jednom lokálnom `save.json` (Unity `SaveStore` → `SaveSystem`: atomický zápis, `.bak`, verzia a migrácie). `PlayerEconomy` a `ResortManager` zapisujú do toho istého objektu; starý `resort_save.json` sa pri prvom spustení raz importuje a premenuje na `.imported`.
 
+Save v2 (v1 sa pri načítaní zmigruje, `SaveV1ToV2`):
+
+- **`wave`** — číslo vlny a stav herného cyklu, zapíše sa pri každej zmene stavu (`WaveProgress`). Po zabití appky
+  počas vlny (príchod, vlna, dobeh) hra pokračuje tou istou vlnou od začiatku a čaká na *Start Wave*. Zabitie na
+  Wave Complete pred *Claim* ukáže Wave Complete znova s rovnakým výsledkom: v save sú čakania vlny
+  (`unclaimedWaits`), z ktorých sa hodnotenie a odmena prepočítajú. Obnova neposiela vlnu na BE ani do analytiky druhýkrát.
+- **`buildingLayout`** — rozloženie budov z *SAVE LAYOUT* / *LOAD LAYOUT* (predtým vlastný `building_layout.json`,
+  ten sa pri prvom spustení raz prenesie a premenuje na `.imported`). Existuje jediný save.
+- Každý zápis savu si vypýta aktuálne hodnoty ekonomiky (`SaveStore.Saving`), takže uloženie postupu vlny po *Claim*
+  nikdy nezapíše coins spred *Claim*.
+
 Po uložení sa save zálohuje na BE (najviac raz za 30 s, pri prechode appky na pozadie hneď):
 
 | Endpoint | Auth | Popis |

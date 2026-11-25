@@ -33,7 +33,7 @@ namespace ResortIsland.Editor
             new PlayerPrefsTokenStore().Clear();
 
             if (!Directory.Exists(Application.persistentDataPath)) return;
-            foreach (string pattern in new[] { "save.*", "resort_save.json*" })
+            foreach (string pattern in new[] { "save.*", "resort_save.json*", "building_layout.json*" })
             {
                 foreach (string file in Directory.GetFiles(Application.persistentDataPath, pattern))
                     File.Delete(file);

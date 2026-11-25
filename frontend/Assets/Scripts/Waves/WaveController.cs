@@ -5,10 +5,13 @@ using ResortIsland.Backend;
 using ResortIsland.Characters;
 using ResortIsland.Config;
 using ResortIsland.Resort;
+using ResortIsland.Save;
 using ResortIsland.UI;
 
 namespace ResortIsland.Waves
 {
+    /// Runs before the binders (Wave Complete, needs panel), so they find the wave progress already restored.
+    [DefaultExecutionOrder(-50)]
     public class WaveController : MonoBehaviour
     {
         [SerializeField] private StartWaveButton startWaveButton;
@@ -25,6 +28,7 @@ namespace ResortIsland.Waves
         private WaveTicker waveTicker;
         private WaveWaits waveWaits;
         private WaveScoreReport waveScoreReport;
+        private WaveProgress waveProgress;
 
         public IGameState State => stateMachine;
         public IWavePlanner Planner { get; private set; }
@@ -36,11 +40,14 @@ namespace ResortIsland.Waves
 
         private void Start()
         {
+            WaveScore unclaimed = RestoreProgress();
             BindStartWave();
             BindForecast();
             BindWaveArrivals();
+            if (unclaimed != null) waveWaits?.Restore(unclaimed);
             BindAnalytics();
             BindArrival();
+            waveProgress = new WaveProgress(stateMachine, () => waveWaits?.Current, SaveProgress);
         }
 
         private void Update()
@@ -58,6 +65,50 @@ namespace ResortIsland.Waves
             Arrivals?.Dispose();
             waveWaits?.Dispose();
             waveScoreReport?.Dispose();
+            waveProgress?.Dispose();
+        }
+
+        /// The wave and state from the save, before anything is bound: a wave killed midway starts again,
+        /// Wave Complete not claimed yet comes back with its result (returned, rated again from the saved waits).
+        private WaveScore RestoreProgress()
+        {
+            SaveStore store = SaveStore.Shared;
+            WaveSaveData saved = store.IsLoaded ? store.Data.wave : null;
+            (int nextWave, GameState state) = WaveProgress.Resume(saved);
+
+            WaveScore unclaimed = null;
+            if (state == GameState.WaveComplete)
+            {
+                GameConfigs configs = GameConfigService.Current;
+                unclaimed = configs != null ? WaveProgress.RestoreScore(WaveRating.From(configs), saved) : null;
+                if (unclaimed == null)
+                {
+                    Debug.LogWarning("[WaveController] The unclaimed wave could not be restored, it is played again.");
+                    state = GameState.AwaitingWave;
+                }
+            }
+
+            stateMachine.Restore(nextWave, state);
+            if (saved != null && (saved.nextWave != nextWave || saved.state != state.ToString()))
+                Debug.Log($"[WaveController] The game was closed in wave {saved.nextWave} ({saved.state}); going on with wave {nextWave} ({state}).");
+            return unclaimed;
+        }
+
+        private static void SaveProgress(WaveSaveData progress)
+        {
+            SaveStore store = SaveStore.Shared;
+            if (!store.IsLoaded)
+                return;
+
+            store.Data.wave = progress;
+            try
+            {
+                store.Save();
+            }
+            catch (System.Exception e)
+            {
+                Debug.LogError("[WaveController] Saving the wave progress failed: " + e.Message);
+            }
         }
 
         /// Moves the Start Wave button and the forecast to other views (the bottom bar of the HUD).

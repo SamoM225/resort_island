@@ -64,6 +64,22 @@ namespace ResortIsland.Tests
         }
 
         [Test]
+        public void Saving_LetsOwnersPutTheirCurrentValuesIn()
+        {
+            client.Responses.Enqueue(new BackendResponse(404, "{}"));
+            SaveStore store = CreateStore();
+            store.Load(config);
+            // e.g. PlayerEconomy: coins claimed a moment ago, not written yet
+            store.Saving += data => data.economy.coins = 2468;
+
+            store.Data.wave = new WaveSaveData { nextWave = 3 };
+            store.Save();
+
+            Assert.AreEqual(2468, SavedCoins());
+            Assert.AreEqual(3, JObject.Parse(File.ReadAllText(SavePath))["wave"].Value<int>("nextWave"));
+        }
+
+        [Test]
         public void Load_HappensOnce()
         {
             client.Responses.Enqueue(new BackendResponse(404, "{}"));

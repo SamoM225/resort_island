@@ -15,7 +15,7 @@ namespace ResortIsland.Save
     public class SaveData
     {
         /// <summary>Bump this together with adding a migration to SaveMigrations.</summary>
-        public const int CurrentVersion = 1;
+        public const int CurrentVersion = 2;
 
         public int saveVersion = CurrentVersion;
         public int configVersion;
@@ -23,6 +23,10 @@ namespace ResortIsland.Save
         public EconomySaveData economy = new EconomySaveData();
         /// <summary>The island map: placed buildings and unlocks. Saves from before it was added load with an empty map.</summary>
         public ResortSave resort = new ResortSave();
+        /// <summary>Wave progress: which wave comes next and where in the wave loop the game was (v2).</summary>
+        public WaveSaveData wave = new WaveSaveData();
+        /// <summary>The building layout of SAVE LAYOUT / LOAD LAYOUT in the build menu; null = none saved (v2).</summary>
+        public BuildingLayoutSave buildingLayout;
         /// <summary>
         /// True for a game that started from scratch until the backend said whether this player has a backed up save.
         /// While true the save is not uploaded, so a fresh game never overwrites progress that could be restored.
@@ -57,6 +61,11 @@ namespace ResortIsland.Save
                 resort.buildings = new List<BuildingSave>();
             if (resort.unlocks == null)
                 resort.unlocks = new List<string>();
+            if (wave == null)
+                wave = new WaveSaveData();
+            wave.nextWave = Mathf.Max(1, wave.nextWave);
+            if (string.IsNullOrEmpty(wave.state))
+                wave.state = WaveSaveData.AwaitingWave;
 
             economy.coins = Mathf.Max(0, economy.coins);
             economy.gems = Mathf.Max(0, economy.gems);
@@ -64,6 +73,19 @@ namespace ResortIsland.Save
             economy.resortValue = Mathf.Max(0, economy.resortValue);
             economy.reputation = Mathf.Clamp(economy.reputation, 0, 5);
         }
+    }
+
+    [Serializable]
+    public class WaveSaveData
+    {
+        public const string AwaitingWave = "AwaitingWave";
+
+        /// <summary>The wave that is played next, or the one being played / waiting for Claim.</summary>
+        public int nextWave = 1;
+        /// <summary>Name of the GameState the game was in (ResortIsland.Waves.GameState).</summary>
+        public string state = AwaitingWave;
+        /// <summary>Waits of a finished wave that was not claimed yet (need id -> seconds), so Wave Complete can show it again.</summary>
+        public Dictionary<string, List<double>> unclaimedWaits;
     }
 
     [Serializable]

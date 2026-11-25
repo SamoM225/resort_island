@@ -34,6 +34,10 @@ namespace ResortIsland.Waves
 
             view.Claimed += OnClaimed;
             state.Changed += OnStateChanged;
+
+            // the game was closed on Wave Complete before Claim and the save brought it back there
+            if (state.Current == GameState.WaveComplete)
+                ShowResult();
         }
 
         public void Dispose()

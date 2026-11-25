@@ -18,6 +18,29 @@ namespace ResortIsland.Tests
         }
 
         [Test]
+        public void Restore_SetsWaveAndStateWithoutNotifying()
+        {
+            GameStateMachine machine = new GameStateMachine();
+            List<GameState> changes = new List<GameState>();
+            machine.Changed += changes.Add;
+
+            machine.Restore(4, GameState.WaveComplete);
+
+            Assert.AreEqual(4, machine.NextWave);
+            Assert.AreEqual(GameState.WaveComplete, machine.Current);
+            Assert.IsEmpty(changes);
+            Assert.IsTrue(machine.TryTransitionTo(GameState.Upgrade));
+            Assert.IsTrue(machine.TryTransitionTo(GameState.AwaitingWave));
+            Assert.AreEqual(5, machine.NextWave);
+        }
+
+        [Test]
+        public void Restore_RejectsWaveZero()
+        {
+            Assert.Throws<ArgumentOutOfRangeException>(() => new GameStateMachine().Restore(0, GameState.AwaitingWave));
+        }
+
+        [Test]
         public void StartWave_MovesToWaveIncomingAndNotifiesOnce()
         {
             GameStateMachine machine = new GameStateMachine();

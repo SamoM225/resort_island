@@ -120,6 +120,67 @@ namespace ResortIsland.Tests
         }
 
         [Test]
+        public void Load_V1Fixture_MigratesToV2WaitingForWaveOne()
+        {
+            File.Copy(Path.Combine(FixturesDirectory, "save_v1.json"), SavePath);
+
+            LoadResult result = CreateSystem().Load(config);
+
+            Assert.AreEqual(LoadStatus.Migrated, result.Status);
+            Assert.AreEqual(2, result.Data.saveVersion);
+            Assert.AreEqual(1, result.Data.wave.nextWave);
+            Assert.AreEqual("AwaitingWave", result.Data.wave.state);
+            Assert.IsNull(result.Data.wave.unclaimedWaits);
+            Assert.IsNull(result.Data.buildingLayout);
+            Assert.AreEqual(4321, result.Data.economy.coins);
+        }
+
+        [Test]
+        public void Load_V2Fixture_LoadsWaveProgressAndBuildingLayout()
+        {
+            File.Copy(Path.Combine(FixturesDirectory, "save_v2.json"), SavePath);
+
+            LoadResult result = CreateSystem().Load(config);
+
+            Assert.AreEqual(LoadStatus.Loaded, result.Status);
+            Assert.AreEqual(4, result.Data.wave.nextWave);
+            Assert.AreEqual("WaveComplete", result.Data.wave.state);
+            CollectionAssert.AreEqual(new[] { 0.0, 12.5 }, result.Data.wave.unclaimedWaits["rooms"]);
+            Assert.AreEqual("restaurant", result.Data.buildingLayout.buildings[0].buildingId);
+            Assert.AreEqual(2, result.Data.buildingLayout.buildings[0].rotation);
+            Assert.AreEqual("reception", result.Data.resort.buildings[0].buildingId);
+        }
+
+        [Test]
+        public void SaveThenLoad_KeepsWaveProgressAndLayout()
+        {
+            SaveSystem system = CreateSystem();
+            SaveData data = CreateData(coins: 10);
+            data.wave = new WaveSaveData { nextWave = 6, state = "WaveActive" };
+            data.buildingLayout = new BuildingLayoutSave();
+            data.buildingLayout.buildings.Add(new BuildingSave { buildingId = "pool", cellX = 1, cellY = 2 });
+            system.Save(data);
+
+            SaveData loaded = system.Load(config).Data;
+
+            Assert.AreEqual(6, loaded.wave.nextWave);
+            Assert.AreEqual("WaveActive", loaded.wave.state);
+            Assert.AreEqual(1, loaded.buildingLayout.buildings.Count);
+            Assert.AreEqual("pool", loaded.buildingLayout.buildings[0].buildingId);
+        }
+
+        [Test]
+        public void Load_BrokenWaveProgress_IsSanitized()
+        {
+            File.WriteAllText(SavePath, "{ \"saveVersion\": 2, \"economy\": { \"coins\": 5 }, \"wave\": { \"nextWave\": -3, \"state\": null } }");
+
+            SaveData loaded = CreateSystem().Load(config).Data;
+
+            Assert.AreEqual(1, loaded.wave.nextWave);
+            Assert.AreEqual("AwaitingWave", loaded.wave.state);
+        }
+
+        [Test]
         public void SaveThenLoad_KeepsTheMap()
         {
             SaveSystem system = CreateSystem();
@@ -180,7 +241,7 @@ namespace ResortIsland.Tests
         [Test]
         public void Load_SaveWithMissingFields_FillsThemFromConfig()
         {
-            File.WriteAllText(SavePath, "{ \"saveVersion\": 1, \"economy\": { \"coins\": 5 } }");
+            File.WriteAllText(SavePath, "{ \"saveVersion\": " + SaveData.CurrentVersion + ", \"economy\": { \"coins\": 5 } }");
 
             LoadResult result = CreateSystem().Load(config);
 

@@ -53,8 +53,9 @@ namespace ResortIsland.Resort
 
         // The map used to have its own file; it now lives in the shared save (SaveStore). A legacy file is imported once.
         private string LegacySavePath => Path.Combine(Application.persistentDataPath, "resort_save.json");
-        public string BuildingLayoutSavePath => Path.Combine(Application.persistentDataPath, "building_layout.json");
-        public bool HasBuildingLayoutSave() => File.Exists(BuildingLayoutSavePath);
+        // SAVE LAYOUT used to write its own building_layout.json; it is now part of the shared save, imported once.
+        private string LegacyLayoutPath => Path.Combine(Application.persistentDataPath, "building_layout.json");
+        public bool HasBuildingLayoutSave() => store != null && store.IsLoaded && store.Data.buildingLayout != null;
 
         private SaveStore store;
 
@@ -81,6 +82,7 @@ namespace ResortIsland.Resort
 
             if (pier == null) pier = FindFirstObjectByType<Pier>();
 
+            ImportLegacyLayout();
             if (!LoadGame()) StartNewGame();
 
             Unlocks.OnUnlocked += OnUnlocked;
@@ -516,10 +518,15 @@ namespace ResortIsland.Resort
 
         }
 
-        /// Saves only the building layout to a dedicated local JSON file.
+        /// Keeps a copy of the building layout in the save (SAVE LAYOUT); LOAD LAYOUT puts the buildings back there.
         public bool SaveBuildingLayout(out string error)
         {
             error = null;
+            if (store == null || !store.IsLoaded)
+            {
+                error = "The save is not loaded.";
+                return false;
+            }
             try
             {
                 var layout = new BuildingLayoutSave
@@ -545,25 +552,8 @@ namespace ResortIsland.Resort
                     });
                 }
 
-                string temp = BuildingLayoutSavePath + ".tmp";
-                Directory.CreateDirectory(Application.persistentDataPath);
-                File.WriteAllText(temp, JsonUtility.ToJson(layout, true));
-                if (File.Exists(BuildingLayoutSavePath))
-                {
-                    try
-                    {
-                        File.Replace(temp, BuildingLayoutSavePath, BuildingLayoutSavePath + ".bak");
-                    }
-                    catch (Exception e) when (e is IOException || e is PlatformNotSupportedException)
-                    {
-                        File.Copy(temp, BuildingLayoutSavePath, true);
-                        File.Delete(temp);
-                    }
-                }
-                else
-                {
-                    File.Move(temp, BuildingLayoutSavePath);
-                }
+                store.Data.buildingLayout = layout;
+                store.Save();
                 return true;
             }
             catch (Exception e)
@@ -577,23 +567,13 @@ namespace ResortIsland.Resort
         public bool LoadBuildingLayout(out string error)
         {
             error = null;
-            if (!File.Exists(BuildingLayoutSavePath))
+            if (!HasBuildingLayoutSave())
             {
-                error = "Saved layout file was not found.";
+                error = "No saved layout found.";
                 return false;
             }
 
-            BuildingLayoutSave layout;
-            try
-            {
-                layout = JsonUtility.FromJson<BuildingLayoutSave>(File.ReadAllText(BuildingLayoutSavePath));
-            }
-            catch (Exception e)
-            {
-                error = "Invalid JSON: " + e.Message;
-                return false;
-            }
-
+            BuildingLayoutSave layout = store.Data.buildingLayout;
             if (layout == null)
             {
                 error = "Saved layout is empty.";
@@ -745,6 +725,40 @@ namespace ResortIsland.Resort
                 Debug.Log("Mapa prenesená zo starého resort_save.json do spoločného uloženia.");
             }
             return true;
+        }
+
+        /// A building_layout.json from before v2 of the save moves into it (unless the save already has a layout)
+        /// and is kept as .imported, so there is one save only.
+        private void ImportLegacyLayout()
+        {
+            if (!File.Exists(LegacyLayoutPath) || store == null || !store.IsLoaded) return;
+
+            if (store.Data.buildingLayout == null)
+            {
+                try
+                {
+                    BuildingLayoutSave layout = JsonUtility.FromJson<BuildingLayoutSave>(File.ReadAllText(LegacyLayoutPath));
+                    if (layout != null && layout.buildings != null)
+                    {
+                        store.Data.buildingLayout = layout;
+                        store.Save();
+                        Debug.Log("Rozloženie budov prenesené z building_layout.json do spoločného uloženia.");
+                    }
+                }
+                catch (Exception e)
+                {
+                    Debug.LogWarning("building_layout.json sa nepodarilo preniesť: " + e.Message);
+                    return;
+                }
+            }
+
+            string imported = LegacyLayoutPath + ".imported";
+            try
+            {
+                if (File.Exists(imported)) File.Delete(imported);
+                File.Move(LegacyLayoutPath, imported);
+            }
+            catch (IOException e) { Debug.LogWarning("Starý building_layout.json sa nepodarilo premenovať: " + e.Message); }
         }
 
         private bool TryReadLegacySave(out ResortSave legacy)

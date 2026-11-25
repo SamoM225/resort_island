@@ -27,6 +27,12 @@ namespace ResortIsland.Save
         public bool IsLoaded => Data != null;
         public bool CanSave => LastLoad != null && LastLoad.CanSave && !retired;
 
+        /// <summary>
+        /// Right before every write: the owners of the data put their current values in, so a save made by one
+        /// of them (e.g. the wave progress on Claim) never writes another one's older values (e.g. the coins just claimed).
+        /// </summary>
+        public event Action<SaveData> Saving;
+
         public SaveStore(SaveSystem saveSystem, SaveBackup backup, Action onRestored)
         {
             this.saveSystem = saveSystem ?? throw new ArgumentNullException(nameof(saveSystem));
@@ -65,6 +71,7 @@ namespace ResortIsland.Save
             if (!IsLoaded || !CanSave)
                 return;
 
+            Saving?.Invoke(Data);
             saveSystem.Save(Data);
             if (!checkingBackup)
                 backup?.Upload(Data, uploadNow);
