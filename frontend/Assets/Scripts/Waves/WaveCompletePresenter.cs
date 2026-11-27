@@ -65,11 +65,14 @@ namespace ResortIsland.Waves
             }
 
             int stars = Math.Clamp(result.Rating, 1, MaxStars);
-            int percent = (int)Math.Round(Math.Clamp(result.Satisfaction, 0f, 1f) * 100f);
+            bool perfect = result.Rating == WaveRating.Perfect;
+
+            int percent = (int)Math.Round(Math.Clamp(result.Satisfaction, 0f, 100f), MidpointRounding.AwayFromZero);
+
             pendingCoins = Math.Max(0, coinReward(result));
 
             isShown = true;
-            view.Show(stars, stars == MaxStars, percent, pendingCoins);
+            view.Show(stars, perfect, percent, pendingCoins);
         }
 
         private void OnClaimed()
