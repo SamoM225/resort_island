@@ -18,7 +18,7 @@ namespace ResortIsland.Tests
         {
             machine = new GameStateMachine();
             view = new FakeWaveCompleteView();
-            result = new FakeWaveResult { Rating = 4, Satisfaction = 0.88f };
+            result = new FakeWaveResult { Rating = 4, Satisfaction = 88f };
             coinsAdded = 0;
             resultAvailable = true;
 
@@ -62,10 +62,23 @@ namespace ResortIsland.Tests
         }
 
         [Test]
-        public void FiveStars_ShowPerfect()
+        public void FiveStars_AreNotPerfect()
         {
             result.Rating = 5;
-            result.Satisfaction = 1f;
+            result.Satisfaction = 90f;
+
+            GoToWaveComplete();
+
+            Assert.AreEqual(5, view.Stars);
+            Assert.IsFalse(view.Perfect);
+            Assert.AreEqual(90, view.Percent);
+        }
+
+        [Test]
+        public void Perfect_IsShownOnlyAtRatingSix()
+        {
+            result.Rating = WaveRating.Perfect;
+            result.Satisfaction = 100f;
 
             GoToWaveComplete();
 
@@ -93,11 +106,31 @@ namespace ResortIsland.Tests
         [Test]
         public void Satisfaction_IsRoundedToWholePercent()
         {
-            result.Satisfaction = 0.884f;
+            result.Satisfaction = 88.4f;
 
             GoToWaveComplete();
 
             Assert.AreEqual(88, view.Percent);
+        }
+
+        [Test]
+        public void Satisfaction_AboveHundred_IsClampedToHundred()
+        {
+            result.Satisfaction = 120f;
+
+            GoToWaveComplete();
+
+            Assert.AreEqual(100, view.Percent);
+        }
+
+        [Test]
+        public void Satisfaction_BelowZero_IsClampedToZero()
+        {
+            result.Satisfaction = -5f;
+
+            GoToWaveComplete();
+
+            Assert.AreEqual(0, view.Percent);
         }
 
         [Test]
